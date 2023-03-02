@@ -1,4 +1,11 @@
 var searchData=
 [
-  ['optimizationapplication_0',['OptimizationApplication',['../da/dab/md__software_kratos_doxygen_applications__optimization_application__r_e_a_d_m_e.html',1,'']]]
+  ['particle_20mechanics_20application_54505',['Particle Mechanics Application',['../d5/dc6/md__home_runner_work__documentation__documentation_master_applications__particle_mechanics_application__r_e_a_d_m_e.html',1,'']]],
+  ['particle_20mechanics_20application_20frequently_20asked_20questions_20_28faqs_29_54506',['Particle Mechanics Application Frequently Asked Questions (FAQs)',['../d1/d36/md__home_runner_work__documentation__documentation_master_applications__particle_mechanics_application__f_a_qs.html',1,'']]],
+  ['penalty_20frictional_20contact_20condition_54507',['Penalty frictional contact condition',['../df/d97/md__home_runner_work__documentation__documentation_master_applications__contact_structural_mecha5399a34ff503ae928d5179d51f402e28.html',1,'']]],
+  ['penalty_20frictionaless_20contact_20condition_54508',['Penalty frictionaless contact condition',['../d1/d75/md__home_runner_work__documentation__documentation_master_applications__contact_structural_mecha84b474a80ab5491a0409fa96e2a92ec1.html',1,'']]],
+  ['pfem_20application_54509',['Pfem Application',['../d5/dda/md__home_runner_work__documentation__documentation_master_applications__pfem_application__r_e_a_d_m_e.html',1,'']]],
+  ['pfem_20solid_20mechanics_20application_54510',['Pfem Solid Mechanics Application',['../d7/d3c/md__home_runner_work__documentation__documentation_master_applications__pfem_solid_mechanics_application__r_e_a_d_m_e.html',1,'']]],
+  ['poromechanics_20application_54511',['Poromechanics Application',['../d1/da7/md__home_runner_work__documentation__documentation_master_applications__poromechanics_application__r_e_a_d_m_e.html',1,'']]],
+  ['poromechanics_20examples_54512',['Poromechanics Examples',['../d5/deb/md__home_runner_work__documentation__documentation_master_applications__poromechanics_application_test_examples__r_e_a_d_m_e.html',1,'']]]
 ];
