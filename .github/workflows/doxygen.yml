@@ -33,9 +33,10 @@ jobs:
         run: cd master/documents && doxygen kratos_doxyfile
       - name: Copy html to documentation repository
         shell: bash
-        run: cp -r master/documents/html doxygen/documents/
+        run: cp -r master/documents/html doxygen/Doxygen_files/
       - name: Update documentation repository
         run: |
+          cd doxygen
           git add .
           git commit -m "update docs"
           git push -f https://$USER_NAME:$GITHUB_TOKEN@github.com/KratosMultiphysics/Documentation.git master
