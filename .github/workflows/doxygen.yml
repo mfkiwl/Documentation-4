@@ -37,6 +37,8 @@ jobs:
       - name: Update documentation repository
         run: |
           cd doxygen
+          git config --local user.name $USER_NAME
+          git config --local user.email "in@valid.email"
           git add .
           git commit -m "update docs"
           git push -f https://$USER_NAME:$GITHUB_TOKEN@github.com/KratosMultiphysics/Documentation.git master
