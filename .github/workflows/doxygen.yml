@@ -13,17 +13,17 @@ jobs:
   doxygen_nightly:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout master
+      - name: Checkout Kratos
         uses: actions/checkout@v3
         with:
           repository: KratosMultiphysics/Kratos
-          ref: master
+          ref: docs/doxygen
           path: master
-      - name: Checkout doxygen branch
+      - name: Checkout Documentation
         uses: actions/checkout@v3
         with:
-          repository: KratosMultiphysics/Kratos
-          ref: docs/doxygen_output
+          repository: KratosMultiphysics/Documentation
+          ref: master
           path: doxygen
       - name: Installing doxygen
         shell: bash
@@ -31,6 +31,14 @@ jobs:
       - name: Build doxygen web page
         shell: bash
         run: cd master/documents && doxygen kratos_doxyfile
-      - name: copy html to docs/doxygen_output branch
+      - name: Copy html to documentation repository
         shell: bash
         run: cp -r master/documents/html doxygen/documents/
+      - name: Update documentation repository
+        run: |
+          git add .
+          git commit -m "update docs"
+          git push -f https://$USER_NAME:$GITHUB_TOKEN@github.com/KratosMultiphysics/Documentation.git master
+        env:
+          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
+          USER_NAME: github-bot
