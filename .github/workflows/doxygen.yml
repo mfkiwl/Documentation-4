@@ -9,9 +9,6 @@ concurrency:
   group: ci-${{ github.head_ref }}
   cancel-in-progress: true
 
-permissions:
-  contents: read|write
-
 jobs:
   doxygen_nightly:
     runs-on: ubuntu-latest
