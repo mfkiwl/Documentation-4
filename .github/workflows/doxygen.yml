@@ -17,7 +17,7 @@ jobs:
         uses: actions/checkout@v3
         with:
           repository: KratosMultiphysics/Kratos
-          ref: docs/doxygen
+          ref: master
           path: master
       - name: Checkout Documentation
         uses: actions/checkout@v3
