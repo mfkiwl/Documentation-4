@@ -271,6 +271,8 @@ Macros</h2></td></tr>
 <tr class="separator:a6135b00508a42f0e8f91d1369644cbc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a54fa1b81aca676fe91e9b11e25232c10"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d67/define_8h.html#a54fa1b81aca676fe91e9b11e25232c10">KRATOS_WATCH_CERR</a>(variable)&#160;&#160;&#160;std::cerr &lt;&lt; #variable &lt;&lt; &quot; : &quot; &lt;&lt; variable &lt;&lt; std::endl;</td></tr>
 <tr class="separator:a54fa1b81aca676fe91e9b11e25232c10"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4e0bb938c8e2bd34fd787f8583ec58f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d67/define_8h.html#ad4e0bb938c8e2bd34fd787f8583ec58f">KRATOS_WATCH_MPI</a>(variable,  mpi_data_comm)&#160;&#160;&#160;std::cout &lt;&lt; &quot;RANK &quot; &lt;&lt; mpi_data_comm.Rank() &lt;&lt; &quot;/&quot; &lt;&lt; mpi_data_comm.Size()  &lt;&lt; &quot;    &quot;; <a class="el" href="../../df/d67/define_8h.html#a6135b00508a42f0e8f91d1369644cbc1">KRATOS_WATCH</a>(variable);</td></tr>
+<tr class="separator:ad4e0bb938c8e2bd34fd787f8583ec58f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="acec28a81d1b75d93638c7500003e4bb3"></a>
@@ -2786,10 +2788,38 @@ Macros</h2></td></tr>
 
 </div>
 </div>
+<a id="ad4e0bb938c8e2bd34fd787f8583ec58f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad4e0bb938c8e2bd34fd787f8583ec58f">&#9670;&nbsp;</a></span>KRATOS_WATCH_MPI</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define KRATOS_WATCH_MPI</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">variable, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">mpi_data_comm&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;std::cout &lt;&lt; &quot;RANK &quot; &lt;&lt; mpi_data_comm.Rank() &lt;&lt; &quot;/&quot; &lt;&lt; mpi_data_comm.Size()  &lt;&lt; &quot;    &quot;; <a class="el" href="../../df/d67/define_8h.html#a6135b00508a42f0e8f91d1369644cbc1">KRATOS_WATCH</a>(variable);</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Mar 7 2023 02:45:47 for KratosMultiphysics by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Wed Mar 8 2023 02:35:04 for KratosMultiphysics by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

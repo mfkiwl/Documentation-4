@@ -882,14 +882,15 @@ $(function() {
 <div class="line"><a name="l00803"></a><span class="lineno">  803</span>&#160;<span class="comment">//Print Trace if defined</span></div>
 <div class="line"><a name="l00804"></a><span class="lineno"><a class="line" href="../../df/d67/define_8h.html#a6135b00508a42f0e8f91d1369644cbc1">  804</a></span>&#160;<span class="preprocessor">#define KRATOS_WATCH(variable) std::cout &lt;&lt; #variable &lt;&lt; &quot; : &quot;</span> &lt;&lt; variable &lt;&lt; std::endl;</div>
 <div class="line"><a name="l00805"></a><span class="lineno"><a class="line" href="../../df/d67/define_8h.html#a54fa1b81aca676fe91e9b11e25232c10">  805</a></span>&#160;<span class="preprocessor">#define KRATOS_WATCH_CERR(variable) std::cerr &lt;&lt; #variable &lt;&lt; &quot; : &quot;</span> &lt;&lt; variable &lt;&lt; std::endl;</div>
-<div class="line"><a name="l00806"></a><span class="lineno">  806</span>&#160; </div>
-<div class="line"><a name="l00807"></a><span class="lineno">  807</span>&#160;}  <span class="comment">/* namespace Kratos.*/</span></div>
-<div class="line"><a name="l00808"></a><span class="lineno">  808</span>&#160; </div>
-<div class="line"><a name="l00809"></a><span class="lineno"><a class="line" href="../../df/d67/define_8h.html#a534cb8a7eac3e4cf5d2c482b87b505a4">  809</a></span>&#160;<span class="preprocessor">#define KRATOS_SERIALIZE_SAVE_BASE_CLASS(Serializer, BaseType) \</span></div>
-<div class="line"><a name="l00810"></a><span class="lineno">  810</span>&#160;<span class="preprocessor">    Serializer.save_base(&quot;BaseClass&quot;</span>,*static_cast&lt;const BaseType *&gt;(this));</div>
-<div class="line"><a name="l00811"></a><span class="lineno">  811</span>&#160; </div>
-<div class="line"><a name="l00812"></a><span class="lineno"><a class="line" href="../../df/d67/define_8h.html#ac41b129afec253cba3e0fc8efa241fd1">  812</a></span>&#160;<span class="preprocessor">#define KRATOS_SERIALIZE_LOAD_BASE_CLASS(Serializer, BaseType) \</span></div>
-<div class="line"><a name="l00813"></a><span class="lineno">  813</span>&#160;<span class="preprocessor">    Serializer.load_base(&quot;BaseClass&quot;</span>,*static_cast&lt;BaseType *&gt;(this));</div>
+<div class="line"><a name="l00806"></a><span class="lineno"><a class="line" href="../../df/d67/define_8h.html#ad4e0bb938c8e2bd34fd787f8583ec58f">  806</a></span>&#160;<span class="preprocessor">#define KRATOS_WATCH_MPI(variable, mpi_data_comm) std::cout &lt;&lt; &quot;RANK &quot;</span> &lt;&lt; mpi_data_comm.Rank() &lt;&lt; &quot;/&quot; &lt;&lt; mpi_data_comm.Size()  &lt;&lt; &quot;    &quot;; KRATOS_WATCH(variable);</div>
+<div class="line"><a name="l00807"></a><span class="lineno">  807</span>&#160; </div>
+<div class="line"><a name="l00808"></a><span class="lineno">  808</span>&#160;}  <span class="comment">/* namespace Kratos.*/</span></div>
+<div class="line"><a name="l00809"></a><span class="lineno">  809</span>&#160; </div>
+<div class="line"><a name="l00810"></a><span class="lineno"><a class="line" href="../../df/d67/define_8h.html#a534cb8a7eac3e4cf5d2c482b87b505a4">  810</a></span>&#160;<span class="preprocessor">#define KRATOS_SERIALIZE_SAVE_BASE_CLASS(Serializer, BaseType) \</span></div>
+<div class="line"><a name="l00811"></a><span class="lineno">  811</span>&#160;<span class="preprocessor">    Serializer.save_base(&quot;BaseClass&quot;</span>,*static_cast&lt;const BaseType *&gt;(this));</div>
+<div class="line"><a name="l00812"></a><span class="lineno">  812</span>&#160; </div>
+<div class="line"><a name="l00813"></a><span class="lineno"><a class="line" href="../../df/d67/define_8h.html#ac41b129afec253cba3e0fc8efa241fd1">  813</a></span>&#160;<span class="preprocessor">#define KRATOS_SERIALIZE_LOAD_BASE_CLASS(Serializer, BaseType) \</span></div>
+<div class="line"><a name="l00814"></a><span class="lineno">  814</span>&#160;<span class="preprocessor">    Serializer.load_base(&quot;BaseClass&quot;</span>,*static_cast&lt;BaseType *&gt;(this));</div>
 <div class="ttc" id="aexception_8h_html"><div class="ttname"><a href="../../dd/d2d/exception_8h.html">exception.h</a></div></div>
 <div class="ttc" id="akratos__export__api_8h_html"><div class="ttname"><a href="../../dc/d25/kratos__export__api_8h.html">kratos_export_api.h</a></div></div>
 <div class="ttc" id="anamespace_kratos_html"><div class="ttname"><a href="../../db/d66/namespace_kratos.html">Kratos</a></div><div class="ttdoc">REF: G. R. Cowper, GAUSSIAN QUADRATURE FORMULAS FOR TRIANGLES.</div><div class="ttdef"><b>Definition:</b> mesh_condition.cpp:21</div></div>
@@ -897,7 +898,7 @@ $(function() {
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Mar 7 2023 02:44:10 for KratosMultiphysics by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Wed Mar 8 2023 02:33:50 for KratosMultiphysics by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>
