@@ -598,7 +598,7 @@ $(function() {
 <div class="line"><a name="l00616"></a><span class="lineno">  616</span>&#160;        <span class="keywordflow">for</span> (std::size_t i_eigenvalue = 0; i_eigenvalue &lt; number_of_eigenvalues; ++i_eigenvalue){</div>
 <div class="line"><a name="l00617"></a><span class="lineno">  617</span>&#160; </div>
 <div class="line"><a name="l00618"></a><span class="lineno">  618</span>&#160;            <span class="comment">// Reset slave dofs</span></div>
-<div class="line"><a name="l00619"></a><span class="lineno">  619</span>&#160;            <a class="code" href="../../db/d66/namespace_kratos.html#a07ef8a5b8886ded903a1e7ad4c0df960">block_for_each</a>(r_model_part.MasterSlaveConstraints(), [&amp;i_eigenvalue, &amp;rEigenvectors](<span class="keyword">const</span> MasterSlaveConstraint&amp; r_master_slave_constraint){</div>
+<div class="line"><a name="l00619"></a><span class="lineno">  619</span>&#160;            <a class="code" href="../../db/d66/namespace_kratos.html#a07ef8a5b8886ded903a1e7ad4c0df960">block_for_each</a>(r_model_part.MasterSlaveConstraints(), [&amp;i_eigenvalue, &amp;rEigenvectors](<span class="keyword">const</span> <a class="code" href="../../d6/de3/class_master_slave_constraint.html">MasterSlaveConstraint</a>&amp; r_master_slave_constraint){</div>
 <div class="line"><a name="l00620"></a><span class="lineno">  620</span>&#160;                const auto&amp; r_slave_dofs_vector = r_master_slave_constraint.GetSlaveDofsVector();</div>
 <div class="line"><a name="l00621"></a><span class="lineno">  621</span>&#160;                for (const auto&amp; r_slave_dof: r_slave_dofs_vector){</div>
 <div class="line"><a name="l00622"></a><span class="lineno">  622</span>&#160;                    AtomicMult(rEigenvectors(i_eigenvalue, r_slave_dof-&gt;EquationId()), 0.0);</div>
@@ -606,7 +606,7 @@ $(function() {
 <div class="line"><a name="l00624"></a><span class="lineno">  624</span>&#160;            });</div>
 <div class="line"><a name="l00625"></a><span class="lineno">  625</span>&#160; </div>
 <div class="line"><a name="l00626"></a><span class="lineno">  626</span>&#160;            <span class="comment">// Apply constraints</span></div>
-<div class="line"><a name="l00627"></a><span class="lineno">  627</span>&#160;            <a class="code" href="../../db/d66/namespace_kratos.html#a07ef8a5b8886ded903a1e7ad4c0df960">block_for_each</a>(r_model_part.MasterSlaveConstraints(), TLS(), [&amp;i_eigenvalue, &amp;rEigenvectors, &amp;r_model_part](<span class="keyword">const</span> MasterSlaveConstraint&amp; r_master_slave_constraint, TLS&amp; rTLS){</div>
+<div class="line"><a name="l00627"></a><span class="lineno">  627</span>&#160;            <a class="code" href="../../db/d66/namespace_kratos.html#a07ef8a5b8886ded903a1e7ad4c0df960">block_for_each</a>(r_model_part.MasterSlaveConstraints(), TLS(), [&amp;i_eigenvalue, &amp;rEigenvectors, &amp;r_model_part](<span class="keyword">const</span> <a class="code" href="../../d6/de3/class_master_slave_constraint.html">MasterSlaveConstraint</a>&amp; r_master_slave_constraint, TLS&amp; rTLS){</div>
 <div class="line"><a name="l00628"></a><span class="lineno">  628</span>&#160;                <span class="comment">// Detect if the constraint is active or not. If the user did not make any choice the constraint</span></div>
 <div class="line"><a name="l00629"></a><span class="lineno">  629</span>&#160;                <span class="comment">// It is active by default</span></div>
 <div class="line"><a name="l00630"></a><span class="lineno">  630</span>&#160;                <span class="keywordtype">bool</span> constraint_is_active = <span class="keyword">true</span>;</div>
@@ -836,6 +836,7 @@ $(function() {
 <div class="ttc" id="aclass_kratos_1_1_ublas_space_html_a15df34b4ef11cda3fd354b5810c831b7"><div class="ttname"><a href="../../d4/d69/class_kratos_1_1_ublas_space.html#a15df34b4ef11cda3fd354b5810c831b7">Kratos::UblasSpace::Resize</a></div><div class="ttdeci">static void Resize(MatrixType &amp;rA, SizeType m, SizeType n)</div><div class="ttdef"><b>Definition:</b> ublas_space.h:545</div></div>
 <div class="ttc" id="aclass_kratos_1_1_ublas_space_html_a487f47451d3d6a201c658c6d7c0097cb"><div class="ttname"><a href="../../d4/d69/class_kratos_1_1_ublas_space.html#a487f47451d3d6a201c658c6d7c0097cb">Kratos::UblasSpace::Size1</a></div><div class="ttdeci">static IndexType Size1(MatrixType const &amp;rM)</div><div class="ttdoc">return number of rows of rM</div><div class="ttdef"><b>Definition:</b> ublas_space.h:184</div></div>
 <div class="ttc" id="aclass_kratos_1_1_ublas_space_html_ab8dc2e6dcff9427aa1e41a23af5e242e"><div class="ttname"><a href="../../d4/d69/class_kratos_1_1_ublas_space.html#ab8dc2e6dcff9427aa1e41a23af5e242e">Kratos::UblasSpace::CreateEmptyVectorPointer</a></div><div class="ttdeci">static VectorPointerType CreateEmptyVectorPointer()</div><div class="ttdef"><b>Definition:</b> ublas_space.h:170</div></div>
+<div class="ttc" id="aclass_master_slave_constraint_html"><div class="ttname"><a href="../../d6/de3/class_master_slave_constraint.html">MasterSlaveConstraint</a></div><div class="ttdoc">A class that implements the interface for different master-slave constraints to be applied on a syste...</div></div>
 <div class="ttc" id="aclass_model_part_html"><div class="ttname"><a href="../../d4/d5e/class_model_part.html">ModelPart</a></div><div class="ttdoc">This class aims to manage meshes for multi-physics simulations.</div><div class="ttdef"><b>Definition:</b> model_part.h:66</div></div>
 <div class="ttc" id="adefine_8h_html_a5eac541f5e39bf0360a12f51f0248513"><div class="ttname"><a href="../../df/d67/define_8h.html#a5eac541f5e39bf0360a12f51f0248513">KRATOS_CATCH</a></div><div class="ttdeci">#define KRATOS_CATCH(MoreInfo)</div><div class="ttdef"><b>Definition:</b> define.h:108</div></div>
 <div class="ttc" id="adefine_8h_html_ab9c29d6a0d19ff26bbc4e45e3181fb3f"><div class="ttname"><a href="../../df/d67/define_8h.html#ab9c29d6a0d19ff26bbc4e45e3181fb3f">KRATOS_TRY</a></div><div class="ttdeci">#define KRATOS_TRY</div><div class="ttdef"><b>Definition:</b> define.h:107</div></div>
@@ -868,7 +869,7 @@ $(function() {
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Mar 8 2023 02:30:40 for KratosMultiphysics by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Thu Mar 9 2023 02:30:37 for KratosMultiphysics by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

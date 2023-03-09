@@ -46,7 +46,7 @@ if (edges && edges.length) {
         </defs>
 
 <script type="text/javascript">
-var viewWidth = 366;
+var viewWidth = 180;
 var viewHeight = 1447;
 var sectionId = 'dynsection-0';
 </script>
@@ -58,233 +58,150 @@ var sectionId = 'dynsection-0';
 <g id="node1" class="node">
 <title>Node1</title>
 <g id="a_node1"><a xlink:title="This object defines an indexed object.">
-<polygon fill="#bfbfbf" stroke="black" points="103.5,-1040.5 103.5,-1438.5 252.5,-1438.5 252.5,-1040.5 103.5,-1040.5"/>
-<text text-anchor="middle" x="178" y="-1426.5" font-family="Helvetica,sans-Serif" font-size="10.00">Kratos::IndexedObject</text>
-<polyline fill="none" stroke="black" points="103.5,-1419.5 252.5,-1419.5 "/>
-<text text-anchor="middle" x="178" y="-1407.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
-<polyline fill="none" stroke="black" points="103.5,-1400.5 252.5,-1400.5 "/>
-<text text-anchor="start" x="111.5" y="-1388.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ IndexedObject()</text>
-<text text-anchor="start" x="111.5" y="-1377.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ ~IndexedObject()</text>
-<text text-anchor="start" x="111.5" y="-1366.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ IndexedObject()</text>
-<text text-anchor="start" x="111.5" y="-1355.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ operator=()</text>
-<text text-anchor="start" x="111.5" y="-1344.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ operator()()</text>
-<text text-anchor="start" x="111.5" y="-1333.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ Id()</text>
-<text text-anchor="start" x="111.5" y="-1322.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ GetId()</text>
-<text text-anchor="start" x="111.5" y="-1311.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ SetId()</text>
-<text text-anchor="start" x="111.5" y="-1300.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ DepricatedIdAccess()</text>
-<text text-anchor="start" x="111.5" y="-1289.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ Info()</text>
-<text text-anchor="start" x="111.5" y="-1278.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ PrintInfo()</text>
-<text text-anchor="start" x="111.5" y="-1267.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ PrintData()</text>
-<text text-anchor="start" x="111.5" y="-1256.5" font-family="Helvetica,sans-Serif" font-size="10.00">* IndexType</text>
-<text text-anchor="start" x="111.5" y="-1245.5" font-family="Helvetica,sans-Serif" font-size="10.00">* result_type</text>
-<text text-anchor="start" x="111.5" y="-1234.5" font-family="Helvetica,sans-Serif" font-size="10.00">* KRATOS_CLASS_POINTER</text>
-<text text-anchor="start" x="111.5" y="-1223.5" font-family="Helvetica,sans-Serif" font-size="10.00">_DEFINITION()</text>
-<text text-anchor="start" x="111.5" y="-1212.5" font-family="Helvetica,sans-Serif" font-size="10.00">* mId</text>
-<text text-anchor="start" x="111.5" y="-1201.5" font-family="Helvetica,sans-Serif" font-size="10.00">* Serializer</text>
-<text text-anchor="start" x="111.5" y="-1190.5" font-family="Helvetica,sans-Serif" font-size="10.00">* save()</text>
-<text text-anchor="start" x="111.5" y="-1179.5" font-family="Helvetica,sans-Serif" font-size="10.00">* load()</text>
-<text text-anchor="start" x="111.5" y="-1168.5" font-family="Helvetica,sans-Serif" font-size="10.00">* IndexedObject()</text>
-<text text-anchor="start" x="111.5" y="-1157.5" font-family="Helvetica,sans-Serif" font-size="10.00">* ~IndexedObject()</text>
-<text text-anchor="start" x="111.5" y="-1146.5" font-family="Helvetica,sans-Serif" font-size="10.00">* IndexedObject()</text>
-<text text-anchor="start" x="111.5" y="-1135.5" font-family="Helvetica,sans-Serif" font-size="10.00">* operator=()</text>
-<text text-anchor="start" x="111.5" y="-1124.5" font-family="Helvetica,sans-Serif" font-size="10.00">* operator()()</text>
-<text text-anchor="start" x="111.5" y="-1113.5" font-family="Helvetica,sans-Serif" font-size="10.00">* Id()</text>
-<text text-anchor="start" x="111.5" y="-1102.5" font-family="Helvetica,sans-Serif" font-size="10.00">* GetId()</text>
-<text text-anchor="start" x="111.5" y="-1091.5" font-family="Helvetica,sans-Serif" font-size="10.00">* SetId()</text>
-<text text-anchor="start" x="111.5" y="-1080.5" font-family="Helvetica,sans-Serif" font-size="10.00">* DepricatedIdAccess()</text>
-<text text-anchor="start" x="111.5" y="-1069.5" font-family="Helvetica,sans-Serif" font-size="10.00">* Info()</text>
-<text text-anchor="start" x="111.5" y="-1058.5" font-family="Helvetica,sans-Serif" font-size="10.00">* PrintInfo()</text>
-<text text-anchor="start" x="111.5" y="-1047.5" font-family="Helvetica,sans-Serif" font-size="10.00">* PrintData()</text>
+<polygon fill="#bfbfbf" stroke="black" points="11.5,-1040.5 11.5,-1438.5 160.5,-1438.5 160.5,-1040.5 11.5,-1040.5"/>
+<text text-anchor="middle" x="86" y="-1426.5" font-family="Helvetica,sans-Serif" font-size="10.00">Kratos::IndexedObject</text>
+<polyline fill="none" stroke="black" points="11.5,-1419.5 160.5,-1419.5 "/>
+<text text-anchor="middle" x="86" y="-1407.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
+<polyline fill="none" stroke="black" points="11.5,-1400.5 160.5,-1400.5 "/>
+<text text-anchor="start" x="19.5" y="-1388.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ IndexedObject()</text>
+<text text-anchor="start" x="19.5" y="-1377.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ ~IndexedObject()</text>
+<text text-anchor="start" x="19.5" y="-1366.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ IndexedObject()</text>
+<text text-anchor="start" x="19.5" y="-1355.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ operator=()</text>
+<text text-anchor="start" x="19.5" y="-1344.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ operator()()</text>
+<text text-anchor="start" x="19.5" y="-1333.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ Id()</text>
+<text text-anchor="start" x="19.5" y="-1322.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ GetId()</text>
+<text text-anchor="start" x="19.5" y="-1311.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ SetId()</text>
+<text text-anchor="start" x="19.5" y="-1300.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ DepricatedIdAccess()</text>
+<text text-anchor="start" x="19.5" y="-1289.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ Info()</text>
+<text text-anchor="start" x="19.5" y="-1278.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ PrintInfo()</text>
+<text text-anchor="start" x="19.5" y="-1267.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ PrintData()</text>
+<text text-anchor="start" x="19.5" y="-1256.5" font-family="Helvetica,sans-Serif" font-size="10.00">* IndexType</text>
+<text text-anchor="start" x="19.5" y="-1245.5" font-family="Helvetica,sans-Serif" font-size="10.00">* result_type</text>
+<text text-anchor="start" x="19.5" y="-1234.5" font-family="Helvetica,sans-Serif" font-size="10.00">* KRATOS_CLASS_POINTER</text>
+<text text-anchor="start" x="19.5" y="-1223.5" font-family="Helvetica,sans-Serif" font-size="10.00">_DEFINITION()</text>
+<text text-anchor="start" x="19.5" y="-1212.5" font-family="Helvetica,sans-Serif" font-size="10.00">* mId</text>
+<text text-anchor="start" x="19.5" y="-1201.5" font-family="Helvetica,sans-Serif" font-size="10.00">* Serializer</text>
+<text text-anchor="start" x="19.5" y="-1190.5" font-family="Helvetica,sans-Serif" font-size="10.00">* save()</text>
+<text text-anchor="start" x="19.5" y="-1179.5" font-family="Helvetica,sans-Serif" font-size="10.00">* load()</text>
+<text text-anchor="start" x="19.5" y="-1168.5" font-family="Helvetica,sans-Serif" font-size="10.00">* IndexedObject()</text>
+<text text-anchor="start" x="19.5" y="-1157.5" font-family="Helvetica,sans-Serif" font-size="10.00">* ~IndexedObject()</text>
+<text text-anchor="start" x="19.5" y="-1146.5" font-family="Helvetica,sans-Serif" font-size="10.00">* IndexedObject()</text>
+<text text-anchor="start" x="19.5" y="-1135.5" font-family="Helvetica,sans-Serif" font-size="10.00">* operator=()</text>
+<text text-anchor="start" x="19.5" y="-1124.5" font-family="Helvetica,sans-Serif" font-size="10.00">* operator()()</text>
+<text text-anchor="start" x="19.5" y="-1113.5" font-family="Helvetica,sans-Serif" font-size="10.00">* Id()</text>
+<text text-anchor="start" x="19.5" y="-1102.5" font-family="Helvetica,sans-Serif" font-size="10.00">* GetId()</text>
+<text text-anchor="start" x="19.5" y="-1091.5" font-family="Helvetica,sans-Serif" font-size="10.00">* SetId()</text>
+<text text-anchor="start" x="19.5" y="-1080.5" font-family="Helvetica,sans-Serif" font-size="10.00">* DepricatedIdAccess()</text>
+<text text-anchor="start" x="19.5" y="-1069.5" font-family="Helvetica,sans-Serif" font-size="10.00">* Info()</text>
+<text text-anchor="start" x="19.5" y="-1058.5" font-family="Helvetica,sans-Serif" font-size="10.00">* PrintInfo()</text>
+<text text-anchor="start" x="19.5" y="-1047.5" font-family="Helvetica,sans-Serif" font-size="10.00">* PrintData()</text>
 </a>
 </g>
 </g>
 <!-- Node2 -->
 <g id="node2" class="node">
 <title>Node2</title>
-<g id="a_node2"><a xlink:href="../../de/d16/class_kratos_1_1_master_slave_constraint.html" target="_top" xlink:title="A class that implements the interface for different master&#45;slave constraints to be applied on a syste...">
-<polygon fill="none" stroke="black" points="0,-121.5 0,-882.5 168,-882.5 168,-121.5 0,-121.5"/>
-<text text-anchor="middle" x="84" y="-870.5" font-family="Helvetica,sans-Serif" font-size="10.00">Kratos::MasterSlaveConstraint</text>
-<polyline fill="none" stroke="black" points="0,-863.5 168,-863.5 "/>
-<text text-anchor="middle" x="84" y="-851.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
-<polyline fill="none" stroke="black" points="0,-844.5 168,-844.5 "/>
-<text text-anchor="start" x="8" y="-832.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ MasterSlaveConstraint()</text>
-<text text-anchor="start" x="8" y="-821.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ ~MasterSlaveConstraint()</text>
-<text text-anchor="start" x="8" y="-810.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ MasterSlaveConstraint()</text>
-<text text-anchor="start" x="8" y="-799.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ operator=()</text>
-<text text-anchor="start" x="8" y="-788.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ Create()</text>
-<text text-anchor="start" x="8" y="-777.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ Create()</text>
-<text text-anchor="start" x="8" y="-766.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ Clone()</text>
-<text text-anchor="start" x="8" y="-755.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ Clear()</text>
-<text text-anchor="start" x="8" y="-744.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ Initialize()</text>
-<text text-anchor="start" x="8" y="-733.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ Finalize()</text>
-<text text-anchor="start" x="8" y="-722.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ InitializeSolutionStep()</text>
-<text text-anchor="start" x="8" y="-711.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ InitializeNonLinearIteration()</text>
-<text text-anchor="start" x="8" y="-700.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ FinalizeNonLinearIteration()</text>
-<text text-anchor="start" x="8" y="-689.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ FinalizeSolutionStep()</text>
-<text text-anchor="start" x="8" y="-678.5" font-family="Helvetica,sans-Serif" font-size="10.00">and 13 more...</text>
-<text text-anchor="start" x="8" y="-667.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ GetInfo()</text>
-<text text-anchor="start" x="8" y="-656.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ PrintInfo()</text>
-<text text-anchor="start" x="8" y="-645.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ Data()</text>
-<text text-anchor="start" x="8" y="-634.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ GetData()</text>
-<text text-anchor="start" x="8" y="-623.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ SetData()</text>
-<text text-anchor="start" x="8" y="-612.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ Has()</text>
-<text text-anchor="start" x="8" y="-601.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ SetValue()</text>
-<text text-anchor="start" x="8" y="-590.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ GetValue()</text>
-<text text-anchor="start" x="8" y="-579.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ GetValue()</text>
-<text text-anchor="start" x="8" y="-568.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ IsActive()</text>
-<text text-anchor="start" x="8" y="-557.5" font-family="Helvetica,sans-Serif" font-size="10.00">* BaseType</text>
-<text text-anchor="start" x="8" y="-546.5" font-family="Helvetica,sans-Serif" font-size="10.00">* IndexType</text>
-<text text-anchor="start" x="8" y="-535.5" font-family="Helvetica,sans-Serif" font-size="10.00">* DofType</text>
-<text text-anchor="start" x="8" y="-524.5" font-family="Helvetica,sans-Serif" font-size="10.00">* DofPointerVectorType</text>
-<text text-anchor="start" x="8" y="-513.5" font-family="Helvetica,sans-Serif" font-size="10.00">* NodeType</text>
-<text text-anchor="start" x="8" y="-502.5" font-family="Helvetica,sans-Serif" font-size="10.00">* EquationIdVectorType</text>
-<text text-anchor="start" x="8" y="-491.5" font-family="Helvetica,sans-Serif" font-size="10.00">* MatrixType</text>
-<text text-anchor="start" x="8" y="-480.5" font-family="Helvetica,sans-Serif" font-size="10.00">* VectorType</text>
-<text text-anchor="start" x="8" y="-469.5" font-family="Helvetica,sans-Serif" font-size="10.00">* VariableType</text>
-<text text-anchor="start" x="8" y="-458.5" font-family="Helvetica,sans-Serif" font-size="10.00">* KRATOS_CLASS_POINTER</text>
-<text text-anchor="start" x="8" y="-447.5" font-family="Helvetica,sans-Serif" font-size="10.00">_DEFINITION()</text>
-<text text-anchor="start" x="8" y="-436.5" font-family="Helvetica,sans-Serif" font-size="10.00">* mData</text>
-<text text-anchor="start" x="8" y="-425.5" font-family="Helvetica,sans-Serif" font-size="10.00">* Serializer</text>
-<text text-anchor="start" x="8" y="-414.5" font-family="Helvetica,sans-Serif" font-size="10.00">* save()</text>
-<text text-anchor="start" x="8" y="-403.5" font-family="Helvetica,sans-Serif" font-size="10.00">* load()</text>
-<text text-anchor="start" x="8" y="-392.5" font-family="Helvetica,sans-Serif" font-size="10.00">* MasterSlaveConstraint()</text>
-<text text-anchor="start" x="8" y="-381.5" font-family="Helvetica,sans-Serif" font-size="10.00">* ~MasterSlaveConstraint()</text>
-<text text-anchor="start" x="8" y="-370.5" font-family="Helvetica,sans-Serif" font-size="10.00">* MasterSlaveConstraint()</text>
-<text text-anchor="start" x="8" y="-359.5" font-family="Helvetica,sans-Serif" font-size="10.00">* operator=()</text>
-<text text-anchor="start" x="8" y="-348.5" font-family="Helvetica,sans-Serif" font-size="10.00">* Create()</text>
-<text text-anchor="start" x="8" y="-337.5" font-family="Helvetica,sans-Serif" font-size="10.00">* Create()</text>
-<text text-anchor="start" x="8" y="-326.5" font-family="Helvetica,sans-Serif" font-size="10.00">* Clone()</text>
-<text text-anchor="start" x="8" y="-315.5" font-family="Helvetica,sans-Serif" font-size="10.00">* Clear()</text>
-<text text-anchor="start" x="8" y="-304.5" font-family="Helvetica,sans-Serif" font-size="10.00">* Initialize()</text>
-<text text-anchor="start" x="8" y="-293.5" font-family="Helvetica,sans-Serif" font-size="10.00">* Finalize()</text>
-<text text-anchor="start" x="8" y="-282.5" font-family="Helvetica,sans-Serif" font-size="10.00">* InitializeSolutionStep()</text>
-<text text-anchor="start" x="8" y="-271.5" font-family="Helvetica,sans-Serif" font-size="10.00">* InitializeNonLinearIteration()</text>
-<text text-anchor="start" x="8" y="-260.5" font-family="Helvetica,sans-Serif" font-size="10.00">* FinalizeNonLinearIteration()</text>
-<text text-anchor="start" x="8" y="-249.5" font-family="Helvetica,sans-Serif" font-size="10.00">* FinalizeSolutionStep()</text>
-<text text-anchor="start" x="8" y="-238.5" font-family="Helvetica,sans-Serif" font-size="10.00">and 13 more...</text>
-<text text-anchor="start" x="8" y="-227.5" font-family="Helvetica,sans-Serif" font-size="10.00">* GetInfo()</text>
-<text text-anchor="start" x="8" y="-216.5" font-family="Helvetica,sans-Serif" font-size="10.00">* PrintInfo()</text>
-<text text-anchor="start" x="8" y="-205.5" font-family="Helvetica,sans-Serif" font-size="10.00">* Data()</text>
-<text text-anchor="start" x="8" y="-194.5" font-family="Helvetica,sans-Serif" font-size="10.00">* GetData()</text>
-<text text-anchor="start" x="8" y="-183.5" font-family="Helvetica,sans-Serif" font-size="10.00">* SetData()</text>
-<text text-anchor="start" x="8" y="-172.5" font-family="Helvetica,sans-Serif" font-size="10.00">* Has()</text>
-<text text-anchor="start" x="8" y="-161.5" font-family="Helvetica,sans-Serif" font-size="10.00">* SetValue()</text>
+<g id="a_node2"><a xlink:href="../../d7/d7a/class_kratos_1_1_properties.html" target="_top" xlink:title="Properties encapsulates data shared by different Elements or Conditions. It can store any type of dat...">
+<polygon fill="none" stroke="black" points="0,-0.5 0,-1003.5 172,-1003.5 172,-0.5 0,-0.5"/>
+<text text-anchor="middle" x="86" y="-991.5" font-family="Helvetica,sans-Serif" font-size="10.00">Kratos::Properties</text>
+<polyline fill="none" stroke="black" points="0,-984.5 172,-984.5 "/>
+<text text-anchor="middle" x="86" y="-972.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
+<polyline fill="none" stroke="black" points="0,-965.5 172,-965.5 "/>
+<text text-anchor="start" x="8" y="-953.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ Properties()</text>
+<text text-anchor="start" x="8" y="-942.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ Properties()</text>
+<text text-anchor="start" x="8" y="-931.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ Properties()</text>
+<text text-anchor="start" x="8" y="-920.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ ~Properties()</text>
+<text text-anchor="start" x="8" y="-909.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ operator=()</text>
+<text text-anchor="start" x="8" y="-898.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ operator()()</text>
+<text text-anchor="start" x="8" y="-887.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ operator()()</text>
+<text text-anchor="start" x="8" y="-876.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ operator[]()</text>
+<text text-anchor="start" x="8" y="-865.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ operator[]()</text>
+<text text-anchor="start" x="8" y="-854.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ operator()()</text>
+<text text-anchor="start" x="8" y="-843.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ operator()()</text>
+<text text-anchor="start" x="8" y="-832.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ operator()()</text>
+<text text-anchor="start" x="8" y="-821.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ operator()()</text>
+<text text-anchor="start" x="8" y="-810.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ operator()()</text>
+<text text-anchor="start" x="8" y="-799.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ operator()()</text>
+<text text-anchor="start" x="8" y="-788.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ Erase()</text>
+<text text-anchor="start" x="8" y="-777.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ GetValue()</text>
+<text text-anchor="start" x="8" y="-766.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ GetValue()</text>
+<text text-anchor="start" x="8" y="-755.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ GetValue()</text>
+<text text-anchor="start" x="8" y="-744.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ GetValue()</text>
+<text text-anchor="start" x="8" y="-733.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ GetValue()</text>
+<text text-anchor="start" x="8" y="-722.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ GetValue()</text>
+<text text-anchor="start" x="8" y="-711.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ SetValue()</text>
+<text text-anchor="start" x="8" y="-700.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ HasVariables()</text>
+<text text-anchor="start" x="8" y="-689.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ GetTable()</text>
+<text text-anchor="start" x="8" y="-678.5" font-family="Helvetica,sans-Serif" font-size="10.00">and 15 more...</text>
+<text text-anchor="start" x="8" y="-667.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ Data()</text>
+<text text-anchor="start" x="8" y="-656.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ Data()</text>
+<text text-anchor="start" x="8" y="-645.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ Tables()</text>
+<text text-anchor="start" x="8" y="-634.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ Tables()</text>
+<text text-anchor="start" x="8" y="-623.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ Has()</text>
+<text text-anchor="start" x="8" y="-612.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ HasTable()</text>
+<text text-anchor="start" x="8" y="-601.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ Info()</text>
+<text text-anchor="start" x="8" y="-590.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ PrintInfo()</text>
+<text text-anchor="start" x="8" y="-579.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ PrintData()</text>
+<text text-anchor="start" x="8" y="-568.5" font-family="Helvetica,sans-Serif" font-size="10.00">* BaseType</text>
+<text text-anchor="start" x="8" y="-557.5" font-family="Helvetica,sans-Serif" font-size="10.00">* ContainerType</text>
+<text text-anchor="start" x="8" y="-546.5" font-family="Helvetica,sans-Serif" font-size="10.00">* NodeType</text>
+<text text-anchor="start" x="8" y="-535.5" font-family="Helvetica,sans-Serif" font-size="10.00">* IndexType</text>
+<text text-anchor="start" x="8" y="-524.5" font-family="Helvetica,sans-Serif" font-size="10.00">* TableType</text>
+<text text-anchor="start" x="8" y="-513.5" font-family="Helvetica,sans-Serif" font-size="10.00">* TablesContainerType</text>
+<text text-anchor="start" x="8" y="-502.5" font-family="Helvetica,sans-Serif" font-size="10.00">* SubPropertiesContainerType</text>
+<text text-anchor="start" x="8" y="-491.5" font-family="Helvetica,sans-Serif" font-size="10.00">* SubPropertiesIterator</text>
+<text text-anchor="start" x="8" y="-480.5" font-family="Helvetica,sans-Serif" font-size="10.00">* SubPropertiesConstantIterator</text>
+<text text-anchor="start" x="8" y="-469.5" font-family="Helvetica,sans-Serif" font-size="10.00">* KRATOS_CLASS_POINTER</text>
+<text text-anchor="start" x="8" y="-458.5" font-family="Helvetica,sans-Serif" font-size="10.00">_DEFINITION()</text>
+<text text-anchor="start" x="8" y="-447.5" font-family="Helvetica,sans-Serif" font-size="10.00">* mData</text>
+<text text-anchor="start" x="8" y="-436.5" font-family="Helvetica,sans-Serif" font-size="10.00">* mTables</text>
+<text text-anchor="start" x="8" y="-425.5" font-family="Helvetica,sans-Serif" font-size="10.00">* mSubPropertiesList</text>
+<text text-anchor="start" x="8" y="-414.5" font-family="Helvetica,sans-Serif" font-size="10.00">* Serializer</text>
+<text text-anchor="start" x="8" y="-403.5" font-family="Helvetica,sans-Serif" font-size="10.00">* save()</text>
+<text text-anchor="start" x="8" y="-392.5" font-family="Helvetica,sans-Serif" font-size="10.00">* load()</text>
+<text text-anchor="start" x="8" y="-381.5" font-family="Helvetica,sans-Serif" font-size="10.00">* Properties()</text>
+<text text-anchor="start" x="8" y="-370.5" font-family="Helvetica,sans-Serif" font-size="10.00">* Properties()</text>
+<text text-anchor="start" x="8" y="-359.5" font-family="Helvetica,sans-Serif" font-size="10.00">* Properties()</text>
+<text text-anchor="start" x="8" y="-348.5" font-family="Helvetica,sans-Serif" font-size="10.00">* ~Properties()</text>
+<text text-anchor="start" x="8" y="-337.5" font-family="Helvetica,sans-Serif" font-size="10.00">* operator=()</text>
+<text text-anchor="start" x="8" y="-326.5" font-family="Helvetica,sans-Serif" font-size="10.00">* operator()()</text>
+<text text-anchor="start" x="8" y="-315.5" font-family="Helvetica,sans-Serif" font-size="10.00">* operator()()</text>
+<text text-anchor="start" x="8" y="-304.5" font-family="Helvetica,sans-Serif" font-size="10.00">* operator[]()</text>
+<text text-anchor="start" x="8" y="-293.5" font-family="Helvetica,sans-Serif" font-size="10.00">* operator[]()</text>
+<text text-anchor="start" x="8" y="-282.5" font-family="Helvetica,sans-Serif" font-size="10.00">* operator()()</text>
+<text text-anchor="start" x="8" y="-271.5" font-family="Helvetica,sans-Serif" font-size="10.00">* operator()()</text>
+<text text-anchor="start" x="8" y="-260.5" font-family="Helvetica,sans-Serif" font-size="10.00">* operator()()</text>
+<text text-anchor="start" x="8" y="-249.5" font-family="Helvetica,sans-Serif" font-size="10.00">* operator()()</text>
+<text text-anchor="start" x="8" y="-238.5" font-family="Helvetica,sans-Serif" font-size="10.00">* operator()()</text>
+<text text-anchor="start" x="8" y="-227.5" font-family="Helvetica,sans-Serif" font-size="10.00">* operator()()</text>
+<text text-anchor="start" x="8" y="-216.5" font-family="Helvetica,sans-Serif" font-size="10.00">* Erase()</text>
+<text text-anchor="start" x="8" y="-205.5" font-family="Helvetica,sans-Serif" font-size="10.00">* GetValue()</text>
+<text text-anchor="start" x="8" y="-194.5" font-family="Helvetica,sans-Serif" font-size="10.00">* GetValue()</text>
+<text text-anchor="start" x="8" y="-183.5" font-family="Helvetica,sans-Serif" font-size="10.00">* GetValue()</text>
+<text text-anchor="start" x="8" y="-172.5" font-family="Helvetica,sans-Serif" font-size="10.00">* GetValue()</text>
+<text text-anchor="start" x="8" y="-161.5" font-family="Helvetica,sans-Serif" font-size="10.00">* GetValue()</text>
 <text text-anchor="start" x="8" y="-150.5" font-family="Helvetica,sans-Serif" font-size="10.00">* GetValue()</text>
-<text text-anchor="start" x="8" y="-139.5" font-family="Helvetica,sans-Serif" font-size="10.00">* GetValue()</text>
-<text text-anchor="start" x="8" y="-128.5" font-family="Helvetica,sans-Serif" font-size="10.00">* IsActive()</text>
+<text text-anchor="start" x="8" y="-139.5" font-family="Helvetica,sans-Serif" font-size="10.00">* SetValue()</text>
+<text text-anchor="start" x="8" y="-128.5" font-family="Helvetica,sans-Serif" font-size="10.00">* HasVariables()</text>
+<text text-anchor="start" x="8" y="-117.5" font-family="Helvetica,sans-Serif" font-size="10.00">* GetTable()</text>
+<text text-anchor="start" x="8" y="-106.5" font-family="Helvetica,sans-Serif" font-size="10.00">and 15 more...</text>
+<text text-anchor="start" x="8" y="-95.5" font-family="Helvetica,sans-Serif" font-size="10.00">* Data()</text>
+<text text-anchor="start" x="8" y="-84.5" font-family="Helvetica,sans-Serif" font-size="10.00">* Data()</text>
+<text text-anchor="start" x="8" y="-73.5" font-family="Helvetica,sans-Serif" font-size="10.00">* Tables()</text>
+<text text-anchor="start" x="8" y="-62.5" font-family="Helvetica,sans-Serif" font-size="10.00">* Tables()</text>
+<text text-anchor="start" x="8" y="-51.5" font-family="Helvetica,sans-Serif" font-size="10.00">* Has()</text>
+<text text-anchor="start" x="8" y="-40.5" font-family="Helvetica,sans-Serif" font-size="10.00">* HasTable()</text>
+<text text-anchor="start" x="8" y="-29.5" font-family="Helvetica,sans-Serif" font-size="10.00">* Info()</text>
+<text text-anchor="start" x="8" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">* PrintInfo()</text>
+<text text-anchor="start" x="8" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">* PrintData()</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node2 -->
 <g id="edge1" class="edge">
 <title>Node1&#45;&gt;Node2</title>
-<path fill="none" stroke="midnightblue" d="M151.39,-1030.3C145.47,-983.99 139.02,-933.48 132.52,-882.66"/>
-<polygon fill="none" stroke="midnightblue" points="147.95,-1030.96 152.69,-1040.43 154.89,-1030.07 147.95,-1030.96"/>
-</g>
-<!-- Node3 -->
-<g id="node3" class="node">
-<title>Node3</title>
-<g id="a_node3"><a xlink:href="../../d7/d7a/class_kratos_1_1_properties.html" target="_top" xlink:title="Properties encapsulates data shared by different Elements or Conditions. It can store any type of dat...">
-<polygon fill="none" stroke="black" points="186,-0.5 186,-1003.5 358,-1003.5 358,-0.5 186,-0.5"/>
-<text text-anchor="middle" x="272" y="-991.5" font-family="Helvetica,sans-Serif" font-size="10.00">Kratos::Properties</text>
-<polyline fill="none" stroke="black" points="186,-984.5 358,-984.5 "/>
-<text text-anchor="middle" x="272" y="-972.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
-<polyline fill="none" stroke="black" points="186,-965.5 358,-965.5 "/>
-<text text-anchor="start" x="194" y="-953.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ Properties()</text>
-<text text-anchor="start" x="194" y="-942.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ Properties()</text>
-<text text-anchor="start" x="194" y="-931.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ Properties()</text>
-<text text-anchor="start" x="194" y="-920.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ ~Properties()</text>
-<text text-anchor="start" x="194" y="-909.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ operator=()</text>
-<text text-anchor="start" x="194" y="-898.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ operator()()</text>
-<text text-anchor="start" x="194" y="-887.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ operator()()</text>
-<text text-anchor="start" x="194" y="-876.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ operator[]()</text>
-<text text-anchor="start" x="194" y="-865.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ operator[]()</text>
-<text text-anchor="start" x="194" y="-854.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ operator()()</text>
-<text text-anchor="start" x="194" y="-843.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ operator()()</text>
-<text text-anchor="start" x="194" y="-832.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ operator()()</text>
-<text text-anchor="start" x="194" y="-821.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ operator()()</text>
-<text text-anchor="start" x="194" y="-810.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ operator()()</text>
-<text text-anchor="start" x="194" y="-799.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ operator()()</text>
-<text text-anchor="start" x="194" y="-788.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ Erase()</text>
-<text text-anchor="start" x="194" y="-777.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ GetValue()</text>
-<text text-anchor="start" x="194" y="-766.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ GetValue()</text>
-<text text-anchor="start" x="194" y="-755.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ GetValue()</text>
-<text text-anchor="start" x="194" y="-744.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ GetValue()</text>
-<text text-anchor="start" x="194" y="-733.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ GetValue()</text>
-<text text-anchor="start" x="194" y="-722.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ GetValue()</text>
-<text text-anchor="start" x="194" y="-711.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ SetValue()</text>
-<text text-anchor="start" x="194" y="-700.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ HasVariables()</text>
-<text text-anchor="start" x="194" y="-689.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ GetTable()</text>
-<text text-anchor="start" x="194" y="-678.5" font-family="Helvetica,sans-Serif" font-size="10.00">and 15 more...</text>
-<text text-anchor="start" x="194" y="-667.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ Data()</text>
-<text text-anchor="start" x="194" y="-656.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ Data()</text>
-<text text-anchor="start" x="194" y="-645.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ Tables()</text>
-<text text-anchor="start" x="194" y="-634.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ Tables()</text>
-<text text-anchor="start" x="194" y="-623.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ Has()</text>
-<text text-anchor="start" x="194" y="-612.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ HasTable()</text>
-<text text-anchor="start" x="194" y="-601.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ Info()</text>
-<text text-anchor="start" x="194" y="-590.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ PrintInfo()</text>
-<text text-anchor="start" x="194" y="-579.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ PrintData()</text>
-<text text-anchor="start" x="194" y="-568.5" font-family="Helvetica,sans-Serif" font-size="10.00">* BaseType</text>
-<text text-anchor="start" x="194" y="-557.5" font-family="Helvetica,sans-Serif" font-size="10.00">* ContainerType</text>
-<text text-anchor="start" x="194" y="-546.5" font-family="Helvetica,sans-Serif" font-size="10.00">* NodeType</text>
-<text text-anchor="start" x="194" y="-535.5" font-family="Helvetica,sans-Serif" font-size="10.00">* IndexType</text>
-<text text-anchor="start" x="194" y="-524.5" font-family="Helvetica,sans-Serif" font-size="10.00">* TableType</text>
-<text text-anchor="start" x="194" y="-513.5" font-family="Helvetica,sans-Serif" font-size="10.00">* TablesContainerType</text>
-<text text-anchor="start" x="194" y="-502.5" font-family="Helvetica,sans-Serif" font-size="10.00">* SubPropertiesContainerType</text>
-<text text-anchor="start" x="194" y="-491.5" font-family="Helvetica,sans-Serif" font-size="10.00">* SubPropertiesIterator</text>
-<text text-anchor="start" x="194" y="-480.5" font-family="Helvetica,sans-Serif" font-size="10.00">* SubPropertiesConstantIterator</text>
-<text text-anchor="start" x="194" y="-469.5" font-family="Helvetica,sans-Serif" font-size="10.00">* KRATOS_CLASS_POINTER</text>
-<text text-anchor="start" x="194" y="-458.5" font-family="Helvetica,sans-Serif" font-size="10.00">_DEFINITION()</text>
-<text text-anchor="start" x="194" y="-447.5" font-family="Helvetica,sans-Serif" font-size="10.00">* mData</text>
-<text text-anchor="start" x="194" y="-436.5" font-family="Helvetica,sans-Serif" font-size="10.00">* mTables</text>
-<text text-anchor="start" x="194" y="-425.5" font-family="Helvetica,sans-Serif" font-size="10.00">* mSubPropertiesList</text>
-<text text-anchor="start" x="194" y="-414.5" font-family="Helvetica,sans-Serif" font-size="10.00">* Serializer</text>
-<text text-anchor="start" x="194" y="-403.5" font-family="Helvetica,sans-Serif" font-size="10.00">* save()</text>
-<text text-anchor="start" x="194" y="-392.5" font-family="Helvetica,sans-Serif" font-size="10.00">* load()</text>
-<text text-anchor="start" x="194" y="-381.5" font-family="Helvetica,sans-Serif" font-size="10.00">* Properties()</text>
-<text text-anchor="start" x="194" y="-370.5" font-family="Helvetica,sans-Serif" font-size="10.00">* Properties()</text>
-<text text-anchor="start" x="194" y="-359.5" font-family="Helvetica,sans-Serif" font-size="10.00">* Properties()</text>
-<text text-anchor="start" x="194" y="-348.5" font-family="Helvetica,sans-Serif" font-size="10.00">* ~Properties()</text>
-<text text-anchor="start" x="194" y="-337.5" font-family="Helvetica,sans-Serif" font-size="10.00">* operator=()</text>
-<text text-anchor="start" x="194" y="-326.5" font-family="Helvetica,sans-Serif" font-size="10.00">* operator()()</text>
-<text text-anchor="start" x="194" y="-315.5" font-family="Helvetica,sans-Serif" font-size="10.00">* operator()()</text>
-<text text-anchor="start" x="194" y="-304.5" font-family="Helvetica,sans-Serif" font-size="10.00">* operator[]()</text>
-<text text-anchor="start" x="194" y="-293.5" font-family="Helvetica,sans-Serif" font-size="10.00">* operator[]()</text>
-<text text-anchor="start" x="194" y="-282.5" font-family="Helvetica,sans-Serif" font-size="10.00">* operator()()</text>
-<text text-anchor="start" x="194" y="-271.5" font-family="Helvetica,sans-Serif" font-size="10.00">* operator()()</text>
-<text text-anchor="start" x="194" y="-260.5" font-family="Helvetica,sans-Serif" font-size="10.00">* operator()()</text>
-<text text-anchor="start" x="194" y="-249.5" font-family="Helvetica,sans-Serif" font-size="10.00">* operator()()</text>
-<text text-anchor="start" x="194" y="-238.5" font-family="Helvetica,sans-Serif" font-size="10.00">* operator()()</text>
-<text text-anchor="start" x="194" y="-227.5" font-family="Helvetica,sans-Serif" font-size="10.00">* operator()()</text>
-<text text-anchor="start" x="194" y="-216.5" font-family="Helvetica,sans-Serif" font-size="10.00">* Erase()</text>
-<text text-anchor="start" x="194" y="-205.5" font-family="Helvetica,sans-Serif" font-size="10.00">* GetValue()</text>
-<text text-anchor="start" x="194" y="-194.5" font-family="Helvetica,sans-Serif" font-size="10.00">* GetValue()</text>
-<text text-anchor="start" x="194" y="-183.5" font-family="Helvetica,sans-Serif" font-size="10.00">* GetValue()</text>
-<text text-anchor="start" x="194" y="-172.5" font-family="Helvetica,sans-Serif" font-size="10.00">* GetValue()</text>
-<text text-anchor="start" x="194" y="-161.5" font-family="Helvetica,sans-Serif" font-size="10.00">* GetValue()</text>
-<text text-anchor="start" x="194" y="-150.5" font-family="Helvetica,sans-Serif" font-size="10.00">* GetValue()</text>
-<text text-anchor="start" x="194" y="-139.5" font-family="Helvetica,sans-Serif" font-size="10.00">* SetValue()</text>
-<text text-anchor="start" x="194" y="-128.5" font-family="Helvetica,sans-Serif" font-size="10.00">* HasVariables()</text>
-<text text-anchor="start" x="194" y="-117.5" font-family="Helvetica,sans-Serif" font-size="10.00">* GetTable()</text>
-<text text-anchor="start" x="194" y="-106.5" font-family="Helvetica,sans-Serif" font-size="10.00">and 15 more...</text>
-<text text-anchor="start" x="194" y="-95.5" font-family="Helvetica,sans-Serif" font-size="10.00">* Data()</text>
-<text text-anchor="start" x="194" y="-84.5" font-family="Helvetica,sans-Serif" font-size="10.00">* Data()</text>
-<text text-anchor="start" x="194" y="-73.5" font-family="Helvetica,sans-Serif" font-size="10.00">* Tables()</text>
-<text text-anchor="start" x="194" y="-62.5" font-family="Helvetica,sans-Serif" font-size="10.00">* Tables()</text>
-<text text-anchor="start" x="194" y="-51.5" font-family="Helvetica,sans-Serif" font-size="10.00">* Has()</text>
-<text text-anchor="start" x="194" y="-40.5" font-family="Helvetica,sans-Serif" font-size="10.00">* HasTable()</text>
-<text text-anchor="start" x="194" y="-29.5" font-family="Helvetica,sans-Serif" font-size="10.00">* Info()</text>
-<text text-anchor="start" x="194" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">* PrintInfo()</text>
-<text text-anchor="start" x="194" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">* PrintData()</text>
-</a>
-</g>
-</g>
-<!-- Node1&#45;&gt;Node3 -->
-<g id="edge2" class="edge">
-<title>Node1&#45;&gt;Node3</title>
-<path fill="none" stroke="midnightblue" d="M204.58,-1030.5C205.71,-1021.65 206.87,-1012.65 208.03,-1003.51"/>
-<polygon fill="none" stroke="midnightblue" points="201.11,-1030.07 203.31,-1040.43 208.05,-1030.96 201.11,-1030.07"/>
+<path fill="none" stroke="midnightblue" d="M86,-1030.22C86,-1021.46 86,-1012.55 86,-1003.51"/>
+<polygon fill="none" stroke="midnightblue" points="82.5,-1030.43 86,-1040.43 89.5,-1030.43 82.5,-1030.43"/>
 </g>
 </g>
 </svg>
