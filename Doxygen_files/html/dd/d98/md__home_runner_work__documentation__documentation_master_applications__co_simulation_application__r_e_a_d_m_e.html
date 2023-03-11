@@ -76,54 +76,61 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><p>The CoSimulation Application contains the core developments in coupling black-box solvers and other software-tools within <a class="el" href="../../db/d66/namespace_kratos.html" title="REF: G. R. Cowper, GAUSSIAN QUADRATURE FORMULAS FOR TRIANGLES.">Kratos</a> Multiphysics.</p>
+<p><a class="anchor" id="overview"></a></p>
 <h1>Overview</h1>
 <ul>
 <li><a href="../../#list-of-features">List of features</a></li>
 <li><a href="../../#dependencies">Dependencies</a></li>
 <li><a href="../../#examples">Examples</a></li>
 <li><a href="../../#user-guide">User Guide</a><ul>
-<li><a href="../../#setting-up-a-coupled-simulation">Setting up a coupled simulation</a></li>
-<li><a href="../../#the-json-configuration-file">The json configuration file</a></li>
+<li><a href="../../#user-guide-setting-up-a-coupled-simulation">Setting up a coupled simulation</a></li>
+<li><a href="../../#user-guide-the-json-configuration-file">The JSON configuration file</a></li>
+<li><a href="../../#user-guide-basic-fsi-example">Basic FSI example</a></li>
 </ul>
 </li>
 <li><a href="../../#developer-guide">Developer Guide</a><ul>
-<li><a href="../../#structure-of-the-application">Structure of the Application</a></li>
-<li><a href="../../#how-to-couple-a-new-solver--software-tool">How to couple a new solver / software-tool?</a></li>
-<li><a href="../../#using-a-solver-in-mpi">Using a solver in MPI</a></li>
+<li><a href="../../#developer-guide_structure-of-the-application">Structure of the Application</a></li>
+<li><a href="../../#developer-guide_how-to-couple-a-new-solver--software-tool">How to couple a new solver / software-tool?</a></li>
+<li><a href="../../#developer-guide_using-a-solver-in-mpi">Using a solver in MPI</a></li>
 </ul>
 </li>
 <li><a href="../../#references">References</a></li>
 </ul>
+<p><a class="anchor" id="list-of-features"></a></p>
 <h1>List of features</h1>
 <ul>
 <li>Various features available for CoSimulation:<ul>
-<li><a href="../../python_scripts/coupled_solvers">Coupling Algorithms</a></li>
-<li><a href="../../python_scripts/solver_wrappers">Wrappers for various solvers and other software-tools</a></li>
-<li><a href="../../python_scripts/data_transfer_operators">Data Transfer Operators (including Mapping)</a></li>
-<li><a href="../../python_scripts/convergence_accelerators">Convergence Accelerators</a></li>
-<li><a href="../../python_scripts/convergence_criteria">Convergence Criteria</a></li>
-<li><a href="../../python_scripts/predictors">Predictors</a></li>
+<li><a href="https://github.com/KratosMultiphysics/Kratos/blob/master/applications/CoSimulationApplication/python_scripts/coupled_solvers">Coupling Algorithms</a></li>
+<li><a href="https://github.com/KratosMultiphysics/Kratos/blob/master/applications/CoSimulationApplication/python_scripts/solver_wrappers">Wrappers for various solvers and other software-tools</a></li>
+<li><a href="https://github.com/KratosMultiphysics/Kratos/blob/master/applications/CoSimulationApplication/python_scripts/data_transfer_operators">Data Transfer Operators (including Mapping)</a></li>
+<li><a href="https://github.com/KratosMultiphysics/Kratos/blob/master/applications/CoSimulationApplication/python_scripts/convergence_accelerators">Convergence Accelerators</a></li>
+<li><a href="https://github.com/KratosMultiphysics/Kratos/blob/master/applications/CoSimulationApplication/python_scripts/convergence_criteria">Convergence Criteria</a></li>
+<li><a href="https://github.com/KratosMultiphysics/Kratos/blob/master/applications/CoSimulationApplication/python_scripts/predictors">Predictors</a></li>
 </ul>
 </li>
 <li>Support for MPI parallelization. This is independent of whether or not the ued solvers support/run in MPI.</li>
 <li>Coupling of <a class="el" href="../../db/d66/namespace_kratos.html" title="REF: G. R. Cowper, GAUSSIAN QUADRATURE FORMULAS FOR TRIANGLES.">Kratos</a> &lt;=&gt; <a class="el" href="../../db/d66/namespace_kratos.html" title="REF: G. R. Cowper, GAUSSIAN QUADRATURE FORMULAS FOR TRIANGLES.">Kratos</a> without overhead since the same database is used and data duplication is avoided.</li>
-<li>The <a href="../../../MappingApplication">MappingApplication</a> is used for mapping between nonmatching grids.</li>
+<li>The <a href="https://github.com/KratosMultiphysics/Kratos/blob/master/applications/MappingApplication">MappingApplication</a> is used for mapping between nonmatching grids.</li>
 </ul>
+<p><a class="anchor" id="dependencies"></a></p>
 <h1>Dependencies</h1>
 <p>The CoSimulation Application itself doesn't have any dependencies (except the <code>KratosCore</code> / <code>KratosMPICore</code> for serial/MPI-compilation).</p>
 <p>For running coupled simulations the solvers to be used have to be available. Those dependencies are python-only.</p>
-<p>The <a href="../../../MappingApplication">MappingApplication</a> is required when mapping is used.</p>
+<p>The <a href="https://github.com/KratosMultiphysics/Kratos/blob/master/applications/MappingApplication">MappingApplication</a> is required when mapping is used.</p>
+<p><a class="anchor" id="examples"></a></p>
 <h1>Examples</h1>
-<p>The examples can be found in the <a href="https://github.com/KratosMultiphysics/Examples/tree/master/co_simulation">examples repository</a>. Please also refer to the [tests](tests) for examples of how the coupling can be configured. Especially the <a href="../../tests/fsi_mok">Mok-FSI</a> and the <a href="../../tests/fsi_wall">Wall-FSI</a> tests are very suitable for getting a basic understanding.</p>
+<p>The examples can be found in the <a href="https://github.com/KratosMultiphysics/Examples/tree/master/co_simulation">examples repository</a>. Please also refer to the [tests](tests) for examples of how the coupling can be configured. Especially the <a href="https://github.com/KratosMultiphysics/Kratos/blob/master/applications/CoSimulationApplication/tests/fsi_mok">Mok-FSI</a> and the <a href="https://github.com/KratosMultiphysics/Kratos/blob/master/applications/CoSimulationApplication/tests/fsi_wall">Wall-FSI</a> tests are very suitable for getting a basic understanding.</p>
+<p><a class="anchor" id="user-guide"></a></p>
 <h1>User Guide</h1>
 <p>This section guides users of the <em><a class="el" href="../../de/dbc/namespace_co_simulation_application.html">CoSimulationApplication</a></em> to setting up and performing coupled simulations. The overall workflow is the same as what is used for most <a class="el" href="../../db/d66/namespace_kratos.html" title="REF: G. R. Cowper, GAUSSIAN QUADRATURE FORMULAS FOR TRIANGLES.">Kratos</a> applications. It consists of the following files:</p>
 <ul>
 <li><b><a class="el" href="../../d9/d3e/_main_kratos_co_sim_8py.html">MainKratosCoSim.py</a></b> This file is to be executed with python to run the coupled simulation</li>
 <li><b>ProjectParametersCoSim.json</b> This file contains the configuration for the coupled simulation</li>
 </ul>
+<p><a class="anchor" id="user-guide-setting-up-a-coupled-simulation"></a></p>
 <h2>Setting up a coupled simulation</h2>
 <p>For running a coulpled simulation at least the two files above are required. In addition, the input for the solvers / codes participating in the coupled simulation are necessary.</p>
-<p>The <b><a class="el" href="../../d9/d3e/_main_kratos_co_sim_8py.html">MainKratosCoSim.py</a></b> file looks like this (see also <a href="../../python_scripts/MainKratosCoSim.py">here</a>:</p>
+<p>The <b><a class="el" href="../../d9/d3e/_main_kratos_co_sim_8py.html">MainKratosCoSim.py</a></b> file looks like this (see also <a href="https://github.com/KratosMultiphysics/Kratos/blob/master/applications/CoSimulationApplication/python_scripts/MainKratosCoSim.py">here</a>:</p>
 <div class="fragment"><div class="line"><span class="keyword">import</span> KratosMultiphysics <span class="keyword">as</span> KM</div>
 <div class="line"><span class="keyword">from</span> KratosMultiphysics.CoSimulationApplication.co_simulation_analysis <span class="keyword">import</span> CoSimulationAnalysis</div>
 <div class="line"> </div>
@@ -143,42 +150,32 @@ $(function() {
 <div class="fragment"><div class="line">python MainKratosCoSim.py</div>
 </div><!-- fragment --><p>If the coupled simulation runs in a distributed environment (MPI) then MPI is required to launch the script</p>
 <div class="fragment"><div class="line">mpiexec -np 4 python MainKratosCoSim.py --using-mpi</div>
-<div class="line">~~~~</div>
-<div class="line"> </div>
-<div class="line">Not the passing of the `--using-mpi` flag which tells Kratos that it runs in MPI.</div>
-<div class="line"> </div>
-<div class="line"> </div>
-<div class="line"> </div>
-<div class="line">### The json configuration file</div>
-<div class="line"> </div>
-<div class="line">The configuration of the coupled simulation is written in `json` format, same as for the rest of Kratos.</div>
-<div class="line"> </div>
-<div class="line">It contains two settings:</div>
-<div class="line">- _problem_data_: this setting contains global settings of the coupled problem.</div>
-<div class="line">  ~~~js</div>
-<div class="line">  &quot;start_time&quot; : 0.0,</div>
-<div class="line">  &quot;end_time&quot; : 15.0,</div>
-<div class="line">  &quot;echo_level&quot; : 0, // verbosity, higher values mean more output</div>
-<div class="line">  &quot;print_colors&quot; : true, // use colors in the prints</div>
-<div class="line">  &quot;parallel_type&quot; : &quot;OpenMP&quot; // or &quot;MPI&quot;</div>
-</div><!-- fragment --><ul>
-<li><em>solver_settings</em>: the settings of the coupled solver. <div class="fragment"><div class="line">  &quot;type&quot; : &quot;coupled_solvers.gauss_seidel_weak&quot;, // type of the coupled solver, see python_scripts/coupled_solvers</div>
-<div class="line">  &quot;predictors&quot; : [], // list of predictors</div>
-<div class="line">  &quot;num_coupling_iterations&quot; : 10, // max number of coupling iterations, only available for strongly coupled solvers</div>
-<div class="line">  &quot;convergence_accelerators&quot; : [] // list of convergence accelerators, only available for strongly coupled solvers</div>
-<div class="line">  &quot;convergence_criteria&quot; : [] // list of convergence criteria, only available for strongly coupled solvers</div>
-<div class="line">  &quot;data_transfer_operators&quot; : {} // map of data transfer operators (e.g. mapping)</div>
-<div class="line">  &quot;coupling_sequence&quot; : [] // list specifying in which order the solvers are called</div>
-<div class="line">  &quot;solvers&quot; : {} // map of solvers participating in the coupled simulation, specifying their input and interfaces</div>
-<div class="line">  ~~~~</div>
-<div class="line"> </div>
-<div class="line">See the next section for a basic example with more explanations.</div>
-<div class="line">### Basic FSI example</div>
-<div class="line"> </div>
-<div class="line">This example is the Wall FSI benchmark, see [1], chapter 7.5.3. The Kratos solvers are used to solve this problem. The input files for this example can be found [here](tests/fsi_wall)</div>
-<div class="line"> </div>
-<div class="line">~~~js</div>
-<div class="line">{</div>
+</div><!-- fragment --><p>Not the passing of the <code>--using-mpi</code> flag which tells <a class="el" href="../../db/d66/namespace_kratos.html" title="REF: G. R. Cowper, GAUSSIAN QUADRATURE FORMULAS FOR TRIANGLES.">Kratos</a> that it runs in MPI.</p>
+<p><a class="anchor" id="user-guide-the-json-configuration-file"></a></p>
+<h2>The JSON configuration file</h2>
+<p>The configuration of the coupled simulation is written in <code>json</code> format, same as for the rest of <a class="el" href="../../db/d66/namespace_kratos.html" title="REF: G. R. Cowper, GAUSSIAN QUADRATURE FORMULAS FOR TRIANGLES.">Kratos</a>.</p>
+<p>It contains two settings:</p><ul>
+<li><em>problem_data</em>: this setting contains global settings of the coupled problem. <div class="fragment"><div class="line">&quot;start_time&quot; : 0.0,</div>
+<div class="line">&quot;end_time&quot; : 15.0,</div>
+<div class="line">&quot;echo_level&quot; : 0, // verbosity, higher values mean more output</div>
+<div class="line">&quot;print_colors&quot; : true, // use colors in the prints</div>
+<div class="line">&quot;parallel_type&quot; : &quot;OpenMP&quot; // or &quot;MPI&quot;</div>
+</div><!-- fragment --></li>
+<li><em>solver_settings</em>: the settings of the coupled solver. <div class="fragment"><div class="line">&quot;type&quot; : &quot;coupled_solvers.gauss_seidel_weak&quot;, // type of the coupled solver, see python_scripts/coupled_solvers</div>
+<div class="line">&quot;predictors&quot; : [], // list of predictors</div>
+<div class="line">&quot;num_coupling_iterations&quot; : 10, // max number of coupling iterations, only available for strongly coupled solvers</div>
+<div class="line">&quot;convergence_accelerators&quot; : [] // list of convergence accelerators, only available for strongly coupled solvers</div>
+<div class="line">&quot;convergence_criteria&quot; : [] // list of convergence criteria, only available for strongly coupled solvers</div>
+<div class="line">&quot;data_transfer_operators&quot; : {} // map of data transfer operators (e.g. mapping)</div>
+<div class="line">&quot;coupling_sequence&quot; : [] // list specifying in which order the solvers are called</div>
+<div class="line">&quot;solvers&quot; : {} // map of solvers participating in the coupled simulation, specifying their input and interfaces</div>
+</div><!-- fragment --></li>
+</ul>
+<p>See the next section for a basic example with more explanations.</p>
+<p><a class="anchor" id="user-guide-basic-fsi-example"></a></p>
+<h2>Basic FSI example</h2>
+<p>This example is the Wall FSI benchmark, see [1], chapter 7.5.3. The <a class="el" href="../../db/d66/namespace_kratos.html" title="REF: G. R. Cowper, GAUSSIAN QUADRATURE FORMULAS FOR TRIANGLES.">Kratos</a> solvers are used to solve this problem. The input files for this example can be found <a href="https://github.com/KratosMultiphysics/Kratos/blob/master/applications/CoSimulationApplication/tests/fsi_wall">here</a></p>
+<div class="fragment"><div class="line">{</div>
 <div class="line">    &quot;problem_data&quot; :</div>
 <div class="line">    {</div>
 <div class="line">        &quot;start_time&quot; : 0.0,</div>
@@ -277,9 +274,9 @@ $(function() {
 <div class="line">        }</div>
 <div class="line">    }</div>
 <div class="line">}</div>
-</div><!-- fragment --></li>
-</ul>
+</div><!-- fragment --><p><a class="anchor" id="developer-guide"></a></p>
 <h1>Developer Guide</h1>
+<p><a class="anchor" id="developer-guide_structure-of-the-application"></a></p>
 <h2>Structure of the Application</h2>
 <p>The <em><a class="el" href="../../de/dbc/namespace_co_simulation_application.html">CoSimulationApplication</a></em> consists of the following main components (taken from [2]):</p><ul>
 <li><b>SolverWrapper</b>: Baseclass and CoSimulationApplication-interface for all solvers/codes participating in the coupled simulation, each solver/code has its own specific version.</li>
@@ -293,25 +290,28 @@ $(function() {
 </ul>
 <p>The following UML diagram shows the relation between these components:</p>
 <p align="center"></p>
-<p><img src="https://github.com/KratosMultiphysics/Documentation/blob/master/Readme_files/CoSimulationApplication/CoSimulation_uml.png" alt="" style="width: 300px;" class="inline"/> </p>
-<p>Besides the functionalities <a href="../../#list-of-features">listed above</a>, the modular design of the application makes it straight forward to add a new or customized version of e.g. a <em>ConvergenceAccelerator</em>. It is not necessary to have those custom python scripts inside the <em><a class="el" href="../../de/dbc/namespace_co_simulation_application.html">CoSimulationApplication</a></em>, it is sufficient that they are in a directory that is included in the <em>PYTHONPATH</em> (e.g. the working directory).</p>
+<p><img src="https://github.com/KratosMultiphysics/Documentation/blob/master/Readme_files/CoSimulationApplication/CoSimulation_uml.png?raw=true" alt="" style="width: 300px;" class="inline"/> </p>
+<p>Besides the functionalities <a href="../../#list-of-features">listed above</a>, the modular design of the application makes it straightforward to add a new or customized version of e.g. a <em>ConvergenceAccelerator</em>. It is not necessary to have those custom python scripts inside the <em><a class="el" href="../../de/dbc/namespace_co_simulation_application.html">CoSimulationApplication</a></em>, it is sufficient that they are in a directory that is included in the <em>PYTHONPATH</em> (e.g. the working directory).</p>
+<p><a class="anchor" id="developer-guide_how-to-couple-a-new-solver--software-tool"></a></p>
 <h2>How to couple a new solver / software-tool?</h2>
 <p>The <em><a class="el" href="../../de/dbc/namespace_co_simulation_application.html">CoSimulationApplication</a></em> is very modular and designed to be extended to coupling of more solvers / software-tools. This requires basically two components on the <a class="el" href="../../db/d66/namespace_kratos.html" title="REF: G. R. Cowper, GAUSSIAN QUADRATURE FORMULAS FOR TRIANGLES.">Kratos</a> side:</p>
-<p>The interface between the <em><a class="el" href="../../de/dbc/namespace_co_simulation_application.html">CoSimulationApplication</a></em> and a solver is done with the <a href="../../python_scripts/base_classes/co_simulation_solver_wrapper.py"><b>SolverWrapper</b></a>. This wrapper is specific to every solver and calls the solver-custom methods based on the input of CoSimulation.</p>
-<p>The second component necessary is an <a href="../../python_scripts/base_classes/co_simulation_io.py"><b>IO</b></a>. This component is used by the SolverWrapper and is responsible for the exchange of data (e.g. mesh, field-quantities, geomety etc) between the solver and the <em><a class="el" href="../../de/dbc/namespace_co_simulation_application.html">CoSimulationApplication</a></em>.</p>
+<p>The interface between the <em><a class="el" href="../../de/dbc/namespace_co_simulation_application.html">CoSimulationApplication</a></em> and a solver is done with the <a href="https://github.com/KratosMultiphysics/Kratos/blob/master/applications/CoSimulationApplication/python_scripts/base_classes/co_simulation_solver_wrapper.py"><b>SolverWrapper</b></a>. This wrapper is specific to every solver and calls the solver-custom methods based on the input of CoSimulation.</p>
+<p>The second component necessary is an <a href="https://github.com/KratosMultiphysics/Kratos/blob/master/applications/CoSimulationApplication/python_scripts/base_classes/co_simulation_io.py"><b>IO</b></a>. This component is used by the SolverWrapper and is responsible for the exchange of data (e.g. mesh, field-quantities, geomety etc) between the solver and the <em><a class="el" href="../../de/dbc/namespace_co_simulation_application.html">CoSimulationApplication</a></em>.</p>
 <p>In principle three different options are possible for exchanging data with CoSimulation:</p>
 <ul>
-<li>For very simple solvers <a class="el" href="../../d8/d24/class_i_o.html" title="IO provides different implementation of input output procedures which can be used to read and write w...">IO</a> can directly be done in python inside the SolverWrapper, which makes a separate <a class="el" href="../../d8/d24/class_i_o.html" title="IO provides different implementation of input output procedures which can be used to read and write w...">IO</a> superfluous (see e.g. a <a href="../../python_scripts/solver_wrappers/sdof">python-only single degree of freedom solver</a>)</li>
-<li>Using the <a href="https://github.com/KratosMultiphysics/CoSimIO"><em>CoSimIO</em></a>. This which is the preferred way of exchanging data with the <em><a class="el" href="../../de/dbc/namespace_co_simulation_application.html">CoSimulationApplication</a></em>. It is currently available for <em>C++</em>, <em>C</em>, and <em>Python</em>. The <em>CoSimIO</em> is included as the <a href="../../python_scripts/solver_wrappers/kratos_co_sim_io.py">KratosCoSimIO</a> and can be used directly. Its modular and Kratos-independent design as <em>detached interface</em> allows for easy integration into other codes.</li>
+<li>For very simple solvers <a class="el" href="../../d8/d24/class_i_o.html" title="IO provides different implementation of input output procedures which can be used to read and write w...">IO</a> can directly be done in python inside the SolverWrapper, which makes a separate <a class="el" href="../../d8/d24/class_i_o.html" title="IO provides different implementation of input output procedures which can be used to read and write w...">IO</a> superfluous (see e.g. a <a href="https://github.com/KratosMultiphysics/Kratos/blob/master/applications/CoSimulationApplication/python_scripts/solver_wrappers/sdof">python-only single degree of freedom solver</a>)</li>
+<li>Using the <a href="https://github.com/KratosMultiphysics/CoSimIO"><em>CoSimIO</em></a>. This which is the preferred way of exchanging data with the <em><a class="el" href="../../de/dbc/namespace_co_simulation_application.html">CoSimulationApplication</a></em>. It is currently available for <em>C++</em>, <em>C</em>, and <em>Python</em>. The <em>CoSimIO</em> is included as the <a href="https://github.com/KratosMultiphysics/Kratos/blob/master/applications/CoSimulationApplication/python_scripts/solver_wrappers/kratos_co_sim_io.py">KratosCoSimIO</a> and can be used directly. Its modular and Kratos-independent design as <em>detached interface</em> allows for easy integration into other codes.</li>
 <li>Using a custom solution based on capabilities that are offered by the solver that is to be coupled.</li>
 </ul>
 <p>The following picture shows the interaction of these components with the <em><a class="el" href="../../de/dbc/namespace_co_simulation_application.html">CoSimulationApplication</a></em> and the external solver:</p>
 <p align="center"></p>
-<p><img src="https://github.com/KratosMultiphysics/Documentation/blob/master/Readme_files/CoSimulationApplication/detached_interface.png" alt="" style="width: 300px;" class="inline"/> </p>
+<p><img src="https://raw.githubusercontent.com/KratosMultiphysics/Documentation/master/Readme_files/CoSimulationApplication/detached_interface.png" alt="" style="width: 300px;" class="inline"/> </p>
+<p><a class="anchor" id="developer-guide_interface-of-solverwrapper"></a></p>
 <h3>Interface of SolverWrapper</h3>
-<p>The <a href="../../python_scripts/base_classes/co_simulation_solver_wrapper.py"><b>SolverWrapper</b></a> is the interface in the <em><a class="el" href="../../de/dbc/namespace_co_simulation_application.html">CoSimulationApplication</a></em> to all involved codes / solvers. It provides the following interface (adapted from [2]), which is also called in this order:</p>
+<p>The <a href="https://github.com/KratosMultiphysics/Kratos/blob/master/applications/CoSimulationApplication/python_scripts/base_classes/co_simulation_solver_wrapper.py"><b>SolverWrapper</b></a> is the interface in the <em><a class="el" href="../../de/dbc/namespace_co_simulation_application.html">CoSimulationApplication</a></em> to all involved codes / solvers. It provides the following interface (adapted from [2]), which is also called in this order:</p>
 <ul>
-<li><b>Initialize</b>: This function is called once at the beginning of the simulation, it e.g .reads the input files and prepares the internal data structures.\ the solution loop into split into the following six functions:<ul>
+<li><b>Initialize</b>: This function is called once at the beginning of the simulation, it e.g .reads the input files and prepares the internal data structures.</li>
+<li>The solution loop is split into the following six functions:<ul>
 <li><b>AdvanceInTime</b>: Advancing in time and preparing the data structure for the next time step.</li>
 <li><b>InitializeSolutionStep</b>: Applying boundary conditions</li>
 <li><b>Predict</b>: Predicting the solution of this time step to accelerate the solution.\ iterate until convergence in a strongly coupled solution:<ul>
@@ -325,42 +325,46 @@ $(function() {
 <li><b>Finalize</b>: Finalizing and cleaning up after the simulation</li>
 </ul>
 <p>Each of these functions can implement functionalities to communicate with the external solver, telling it what to do. However, this is often skipped if the data exchange is used for the synchronization of the solvers. This is often done in "classical" coupling tools. I.e. the code to couple internally duplicates the coupling sequence and synchronizes with the coupling tool through the data exchange.</p>
-<p>An example of a <em>SolverWrapper</em> coupled to an external solver using this approach can be found <a href="../../python_scripts/solver_wrappers/external/external_solver_wrapper.py">here</a>. Only the mesh exchange is done explicitly at the beginning of the simulation, the data exchange is done inside <em>SolveSolutionStep</em>.</p>
-<p>The coupled solver has to duplicate the coupling sequence, it would look e.g. like this (using <em>CoSimIO</em>) for a weak coupling: </p><div class="fragment"><div class="line"># solver initializes ...</div>
+<p>An example of a <em>SolverWrapper</em> coupled to an external solver using this approach can be found <a href="https://github.com/KratosMultiphysics/Kratos/blob/master/applications/CoSimulationApplication/python_scripts/solver_wrappers/external/external_solver_wrapper.py">here</a>. Only the mesh exchange is done explicitly at the beginning of the simulation, the data exchange is done inside <em>SolveSolutionStep</em>.</p>
+<p>The coupled solver has to duplicate the coupling sequence, it would look e.g. like this (using <em>CoSimIO</em>) for a weak coupling: </p><div class="fragment"><div class="line"><span class="comment"># solver initializes ...</span></div>
 <div class="line"> </div>
-<div class="line">CoSimIO::ExportMesh(...) # send meshes to the CoSimulationApplication</div>
+<div class="line">CoSimIO::<a class="code" href="../../d5/d0b/namespace_kratos_1_1_python_1_1_co_sim_i_o___wrappers.html#a35360c148adfc0ae5733d9969cd109ee">ExportMesh</a>(...) <span class="comment"># send meshes to the CoSimulationApplication</span></div>
 <div class="line"> </div>
-<div class="line"># start solution loop</div>
-<div class="line">while time &lt; end_time:</div>
-<div class="line">    CoSimIO::ImportData(...) # get interface data</div>
+<div class="line"><span class="comment"># start solution loop</span></div>
+<div class="line"><span class="keywordflow">while</span> time &lt; end_time:</div>
+<div class="line">    CoSimIO::ImportData(...) <span class="comment"># get interface data</span></div>
 <div class="line"> </div>
-<div class="line">    # solve the time step</div>
+<div class="line">    <span class="comment"># solve the time step</span></div>
 <div class="line"> </div>
-<div class="line">    CoSimIO::ExportData(...) # send new data to the CoSimulationApplication</div>
-</div><!-- fragment --><p>An example for an FSI problem where the structural solver of <a class="el" href="../../db/d66/namespace_kratos.html" title="REF: G. R. Cowper, GAUSSIAN QUADRATURE FORMULAS FOR TRIANGLES.">Kratos</a> is used as an external solver can be found <a href="../../tests/structural_mechanics_analysis_with_co_sim_io.py">here</a>. The <em>CoSimIO</em> is used for communicating between the <em><a class="el" href="../../de/dbc/namespace_co_simulation_application.html">CoSimulationApplication</a></em> and the structural solver</p>
+<div class="line">    CoSimIO::ExportData(...) <span class="comment"># send new data to the CoSimulationApplication</span></div>
+<div class="ttc" id="anamespace_kratos_1_1_python_1_1_co_sim_i_o___wrappers_html_a35360c148adfc0ae5733d9969cd109ee"><div class="ttname"><a href="../../d5/d0b/namespace_kratos_1_1_python_1_1_co_sim_i_o___wrappers.html#a35360c148adfc0ae5733d9969cd109ee">Kratos::Python::CoSimIO_Wrappers::ExportMesh</a></div><div class="ttdeci">void ExportMesh(CoSimIO::Info &amp;rInfo, const Kratos::ModelPart &amp;rModelPart)</div><div class="ttdef"><b>Definition:</b> add_co_sim_io_to_python.cpp:51</div></div>
+</div><!-- fragment --><p>An example for an FSI problem where the structural solver of <a class="el" href="../../db/d66/namespace_kratos.html" title="REF: G. R. Cowper, GAUSSIAN QUADRATURE FORMULAS FOR TRIANGLES.">Kratos</a> is used as an external solver can be found <a href="https://github.com/KratosMultiphysics/Kratos/blob/master/applications/CoSimulationApplication/tests/structural_mechanics_analysis_with_co_sim_io.py">here</a>. The <em>CoSimIO</em> is used for communicating between the <em><a class="el" href="../../de/dbc/namespace_co_simulation_application.html">CoSimulationApplication</a></em> and the structural solver</p>
 <p>While this approach is commonly used, it has the significant drawback that the coupling sequence has to be duplicated, which not only has the potential for bugs and deadlocks but also severly limits the useability when it comes to trying different coupling algorithms. Then not only the input for the <em><a class="el" href="../../de/dbc/namespace_co_simulation_application.html">CoSimulationApplication</a></em> has to be changed but also the source code in the external solver!</p>
-<p>Hence a better solution is proposed in the next section: </p><h3>Remote controlled CoSimulation</h3>
+<p>Hence a better solution is proposed in the next section:</p>
+<p><a class="anchor" id="developer-guide_remote-controller-cosimulation"></a></p>
+<h3>Remote controlled CoSimulation</h3>
 <p>A unique feature of <a class="el" href="../../db/d66/namespace_kratos.html" title="REF: G. R. Cowper, GAUSSIAN QUADRATURE FORMULAS FOR TRIANGLES.">Kratos</a> CoSimulation (in combination with the <em>CoSimIO</em>) is the remotely controlled CoSimulation. The main difference to the "classical" approach which duplicates the coupling sequence in the external solver is to give the full control to CoSimulation. This is the most flexible approach from the point of CoSimulation, as then neither the coupling sequence nor any other coupling logic has to be duplicated in the external solver.</p>
 <p>In this approach the external solver registers the functions necessary to perform coupled simulations through the <em>CoSimIO</em>. These are then called remotely through the <em><a class="el" href="../../de/dbc/namespace_co_simulation_application.html">CoSimulationApplication</a></em>. This way any coupling algorithm can be used without changing anything in the external solver.</p>
-<div class="fragment"><div class="line"># defining functions to be registered</div>
-<div class="line">def SolveSolution()</div>
+<div class="fragment"><div class="line"><span class="comment"># defining functions to be registered</span></div>
+<div class="line"><span class="keyword">def </span>SolveSolution()</div>
 <div class="line">{</div>
-<div class="line">    # external solver solves timestep</div>
+<div class="line">    <span class="comment"># external solver solves timestep</span></div>
 <div class="line">}</div>
 <div class="line"> </div>
 <div class="line">def ExportData()</div>
 <div class="line">{</div>
-<div class="line">    # external solver exports data to the CoSimulationApplication</div>
+<div class="line">    <span class="comment"># external solver exports data to the CoSimulationApplication</span></div>
 <div class="line">}</div>
 <div class="line"> </div>
-<div class="line"># after defining the functions they can be registered in the CoSimIO:</div>
+<div class="line"><span class="comment"># after defining the functions they can be registered in the CoSimIO:</span></div>
 <div class="line"> </div>
 <div class="line">CoSimIO::Register(SolveSolution)</div>
 <div class="line">CoSimIO::Register(ExportData)</div>
-<div class="line"># ...</div>
+<div class="line"><span class="comment"># ...</span></div>
 <div class="line"> </div>
-<div class="line"># After all the functions are registered and the solver is fully initialized for CoSimulation, the Run method is called</div>
-<div class="line">CoSimIO::Run() # this function runs the coupled simulation. It returns only after finishing</div>
+<div class="line"><span class="comment"># After all the functions are registered and the solver is fully initialized for CoSimulation, the Run method is called</span></div>
+<div class="line">CoSimIO::<a class="code" href="../../d1/d06/namespaceconvection__diffusion__benchmarks.html#a9166736958e9164e647298d0c5e521f1">Run</a>() <span class="comment"># this function runs the coupled simulation. It returns only after finishing</span></div>
+<div class="ttc" id="anamespaceconvection__diffusion__benchmarks_html_a9166736958e9164e647298d0c5e521f1"><div class="ttname"><a href="../../d1/d06/namespaceconvection__diffusion__benchmarks.html#a9166736958e9164e647298d0c5e521f1">convection_diffusion_benchmarks.Run</a></div><div class="ttdeci">def Run()</div><div class="ttdef"><b>Definition:</b> convection_diffusion_benchmarks.py:9</div></div>
 </div><!-- fragment --><p>A <a href="https://github.com/KratosMultiphysics/CoSimIO/blob/master/tests/integration_tutorials/cpp/run.cpp">simple example of this can be found in the <em>CoSimIO</em></a>.</p>
 <p>The <em>SolverWrapper</em> for this approach sends a small control signal in each of its functions to the external solver to tell it what to do. This could be implemented as the following:</p>
 <div class="fragment"><div class="line"><span class="keyword">class </span>RemoteControlSolverWrapper(CoSimulationSolverWrapper):</div>
@@ -411,13 +415,15 @@ $(function() {
 <div class="line">            }</div>
 <div class="line">            self.ImportData(data_config)</div>
 <div class="ttc" id="anamespace_kratos_1_1_python_html_a9202d6774c3ecc4b59d6a6809bfa7977"><div class="ttname"><a href="../../da/d07/namespace_kratos_1_1_python.html#a9202d6774c3ecc4b59d6a6809bfa7977">Kratos::Python::InitializeSolutionStep</a></div><div class="ttdeci">void InitializeSolutionStep(ConstructionUtility &amp;rThisUtil, std::string ThermalSubModelPartName, std::string MechanicalSubModelPartName, std::string HeatFluxSubModelPartName, std::string HydraulicPressureSubModelPartName, bool thermal_conditions, bool mechanical_conditions, int phase)</div><div class="ttdef"><b>Definition:</b> add_custom_utilities_to_python.cpp:45</div></div>
-</div><!-- fragment --><p>A full example for this can be found <a href="../../tests/structural_mechanics_analysis_remote_controlled.py">here</a>.</p>
+</div><!-- fragment --><p>A full example for this can be found <a href="https://github.com/KratosMultiphysics/Kratos/blob/master/applications/CoSimulationApplication/tests/structural_mechanics_analysis_remote_controlled.py">here</a>.</p>
 <p>If it is possible for an external solver to implement this approach, it is recommended to use it as it is the most robust and flexible.</p>
 <p>Nevertheless both approaches are possible with the <em><a class="el" href="../../de/dbc/namespace_co_simulation_application.html">CoSimulationApplication</a></em>.</p>
+<p><a class="anchor" id="developer-guide_using-a-solver-in-mpi"></a></p>
 <h2>Using a solver in MPI</h2>
 <p>By default, each <em>SolverWrapper</em> makes use of all ranks in MPI. This can be changed if e.g. the solver that is wrapped by the <em>SolverWrapper</em> does not support MPI or to specify to use less rank.</p>
 <p>The base <em>SolverWrapper</em> provides the <code>_GetDataCommunicator</code> funciton for this purpose. In the baseclass, the default <em>DataCommunicator</em> (which contains all ranks in MPI) is returned. The <em>SolverWrapper</em> will be instantiated on all the ranks on which this <em>DataCommunicator</em> is defined (i.e. on the ranks where <code>data_communicator.IsDefinedOnThisRank() == True</code>).</p>
 <p>If a solver does not support MPI-parallelism then it can only run on one rank. In such cases it should return a <em>DataCommunicator</em> which contains only one rank. For this purpose the function <code>KratosMultiphysics.CoSimulationApplication.utilities.data_communicator_utilities.GetRankZeroDataCommunicator</code> can be used. Other custom solutions are also possible, see for example the <a href="https://github.com/KratosMultiphysics/Kratos/blob/master/applications/CoSimulationApplication/python_scripts/solver_wrappers/kratos/structural_mechanics_wrapper.py">structural_solver_wrapper</a>.</p>
+<p><a class="anchor" id="references"></a></p>
 <h1>References</h1>
 <ul>
 <li>[1] Wall, Wolfgang A., <em>Fluid structure interaction with stabilized finite elements</em>, PhD Thesis, University of Stuttgart, 1999, <a href="http://dx.doi.org/10.18419/opus-127">http://dx.doi.org/10.18419/opus-127</a></li>
@@ -427,7 +433,7 @@ $(function() {
 </div><!-- PageDoc -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 10 2023 02:37:38 for KratosMultiphysics by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Sat Mar 11 2023 02:18:28 for KratosMultiphysics by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>
