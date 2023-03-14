@@ -747,38 +747,37 @@
 <g id="node16" class="node">
 <title>Node16</title>
 <g id="a_node16"><a xlink:href="../../d7/db5/class_kratos_1_1_newmark_quasistatic_u_pw_scheme.html" target="_top" xlink:title=" ">
-<polygon fill="none" stroke="black" points="2349,-1343 2349,-1609 2555,-1609 2555,-1343 2349,-1343"/>
-<text text-anchor="start" x="2357" y="-1597" font-family="Helvetica,sans-Serif" font-size="10.00">Kratos::NewmarkQuasistatic</text>
-<text text-anchor="start" x="2357" y="-1586" font-family="Helvetica,sans-Serif" font-size="10.00">UPwScheme&lt; TSparseSpace,</text>
-<text text-anchor="middle" x="2452" y="-1575" font-family="Helvetica,sans-Serif" font-size="10.00"> TDenseSpace &gt;</text>
-<polyline fill="none" stroke="black" points="2349,-1568 2555,-1568 "/>
-<text text-anchor="start" x="2357" y="-1556" font-family="Helvetica,sans-Serif" font-size="10.00"># mBeta</text>
-<text text-anchor="start" x="2357" y="-1545" font-family="Helvetica,sans-Serif" font-size="10.00"># mGamma</text>
-<text text-anchor="start" x="2357" y="-1534" font-family="Helvetica,sans-Serif" font-size="10.00"># mTheta</text>
-<text text-anchor="start" x="2357" y="-1523" font-family="Helvetica,sans-Serif" font-size="10.00"># mDeltaTime</text>
-<polyline fill="none" stroke="black" points="2349,-1516 2555,-1516 "/>
-<text text-anchor="start" x="2357" y="-1504" font-family="Helvetica,sans-Serif" font-size="10.00">+ KRATOS_CLASS_POINTER</text>
-<text text-anchor="start" x="2357" y="-1493" font-family="Helvetica,sans-Serif" font-size="10.00">_DEFINITION()</text>
-<text text-anchor="start" x="2357" y="-1482" font-family="Helvetica,sans-Serif" font-size="10.00">+ NewmarkQuasistaticUPwScheme()</text>
-<text text-anchor="start" x="2357" y="-1471" font-family="Helvetica,sans-Serif" font-size="10.00">+ ~NewmarkQuasistaticUPwScheme()</text>
-<text text-anchor="start" x="2357" y="-1460" font-family="Helvetica,sans-Serif" font-size="10.00">+ Check()</text>
-<text text-anchor="start" x="2357" y="-1449" font-family="Helvetica,sans-Serif" font-size="10.00">+ Initialize()</text>
-<text text-anchor="start" x="2357" y="-1438" font-family="Helvetica,sans-Serif" font-size="10.00">+ InitializeSolutionStep()</text>
-<text text-anchor="start" x="2357" y="-1427" font-family="Helvetica,sans-Serif" font-size="10.00">+ Predict()</text>
-<text text-anchor="start" x="2357" y="-1416" font-family="Helvetica,sans-Serif" font-size="10.00">+ InitializeNonLinIteration()</text>
-<text text-anchor="start" x="2357" y="-1405" font-family="Helvetica,sans-Serif" font-size="10.00">+ FinalizeNonLinIteration()</text>
-<text text-anchor="start" x="2357" y="-1394" font-family="Helvetica,sans-Serif" font-size="10.00">+ GetDofList()</text>
-<text text-anchor="start" x="2357" y="-1383" font-family="Helvetica,sans-Serif" font-size="10.00">and 12 more...</text>
-<text text-anchor="start" x="2357" y="-1372" font-family="Helvetica,sans-Serif" font-size="10.00"># NewmarkQuasistaticUPwScheme()</text>
-<text text-anchor="start" x="2357" y="-1361" font-family="Helvetica,sans-Serif" font-size="10.00"># SetTimeFactors()</text>
-<text text-anchor="start" x="2357" y="-1350" font-family="Helvetica,sans-Serif" font-size="10.00"># UpdateVariablesDerivatives()</text>
+<polygon fill="none" stroke="black" points="2349,-1348.5 2349,-1603.5 2555,-1603.5 2555,-1348.5 2349,-1348.5"/>
+<text text-anchor="start" x="2357" y="-1591.5" font-family="Helvetica,sans-Serif" font-size="10.00">Kratos::NewmarkQuasistatic</text>
+<text text-anchor="start" x="2357" y="-1580.5" font-family="Helvetica,sans-Serif" font-size="10.00">UPwScheme&lt; TSparseSpace,</text>
+<text text-anchor="middle" x="2452" y="-1569.5" font-family="Helvetica,sans-Serif" font-size="10.00"> TDenseSpace &gt;</text>
+<polyline fill="none" stroke="black" points="2349,-1562.5 2555,-1562.5 "/>
+<text text-anchor="start" x="2357" y="-1550.5" font-family="Helvetica,sans-Serif" font-size="10.00"># mBeta</text>
+<text text-anchor="start" x="2357" y="-1539.5" font-family="Helvetica,sans-Serif" font-size="10.00"># mGamma</text>
+<text text-anchor="start" x="2357" y="-1528.5" font-family="Helvetica,sans-Serif" font-size="10.00"># mTheta</text>
+<text text-anchor="start" x="2357" y="-1517.5" font-family="Helvetica,sans-Serif" font-size="10.00"># mDeltaTime</text>
+<polyline fill="none" stroke="black" points="2349,-1510.5 2555,-1510.5 "/>
+<text text-anchor="start" x="2357" y="-1498.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ KRATOS_CLASS_POINTER</text>
+<text text-anchor="start" x="2357" y="-1487.5" font-family="Helvetica,sans-Serif" font-size="10.00">_DEFINITION()</text>
+<text text-anchor="start" x="2357" y="-1476.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ NewmarkQuasistaticUPwScheme()</text>
+<text text-anchor="start" x="2357" y="-1465.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ ~NewmarkQuasistaticUPwScheme()</text>
+<text text-anchor="start" x="2357" y="-1454.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ Check()</text>
+<text text-anchor="start" x="2357" y="-1443.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ Initialize()</text>
+<text text-anchor="start" x="2357" y="-1432.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ InitializeSolutionStep()</text>
+<text text-anchor="start" x="2357" y="-1421.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ Predict()</text>
+<text text-anchor="start" x="2357" y="-1410.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ InitializeNonLinIteration()</text>
+<text text-anchor="start" x="2357" y="-1399.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ FinalizeNonLinIteration()</text>
+<text text-anchor="start" x="2357" y="-1388.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ GetDofList()</text>
+<text text-anchor="start" x="2357" y="-1377.5" font-family="Helvetica,sans-Serif" font-size="10.00">and 12 more...</text>
+<text text-anchor="start" x="2357" y="-1366.5" font-family="Helvetica,sans-Serif" font-size="10.00"># SetTimeFactors()</text>
+<text text-anchor="start" x="2357" y="-1355.5" font-family="Helvetica,sans-Serif" font-size="10.00"># UpdateVariablesDerivatives()</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node16 -->
 <g id="edge15" class="edge">
 <title>Node1&#45;&gt;Node16</title>
-<path fill="none" stroke="midnightblue" d="M2799.56,-2349.29C2722.65,-2292.16 2620.12,-2202.81 2564,-2099 2480.65,-1944.81 2457.71,-1740.84 2452.24,-1609.27"/>
+<path fill="none" stroke="midnightblue" d="M2799.56,-2349.29C2722.65,-2292.16 2620.12,-2202.81 2564,-2099 2479.47,-1942.63 2457.07,-1735.09 2452.02,-1603.75"/>
 <polygon fill="none" stroke="midnightblue" points="2797.73,-2352.29 2807.86,-2355.4 2801.88,-2346.66 2797.73,-2352.29"/>
 </g>
 <!-- Node25 -->
@@ -2107,8 +2106,8 @@
 <!-- Node16&#45;&gt;Node17 -->
 <g id="edge16" class="edge">
 <title>Node16&#45;&gt;Node17</title>
-<path fill="none" stroke="midnightblue" d="M2470.98,-1332.73C2481.32,-1189.03 2471.09,-971.79 2339,-853 2258.31,-780.44 1937.13,-884.3 1852,-817 1749.84,-736.23 1727.12,-574.69 1722.94,-481.08"/>
-<polygon fill="none" stroke="midnightblue" points="2467.47,-1332.71 2470.2,-1342.95 2474.45,-1333.24 2467.47,-1332.71"/>
+<path fill="none" stroke="midnightblue" d="M2470.57,-1338.22C2481.56,-1194.62 2472.79,-973.32 2339,-853 2258.31,-780.44 1937.13,-884.3 1852,-817 1749.84,-736.23 1727.12,-574.69 1722.94,-481.08"/>
+<polygon fill="none" stroke="midnightblue" points="2467.07,-1338.17 2469.75,-1348.42 2474.04,-1338.74 2467.07,-1338.17"/>
 </g>
 <!-- Node18 -->
 <g id="node18" class="node">
@@ -2142,8 +2141,8 @@
 <!-- Node16&#45;&gt;Node18 -->
 <g id="edge17" class="edge">
 <title>Node16&#45;&gt;Node18</title>
-<path fill="none" stroke="midnightblue" d="M2469.42,-1332.61C2478.16,-1190.36 2466.36,-975.7 2339,-853 2257.84,-774.81 2173.05,-890.95 2088,-817 2005.04,-744.87 1978.71,-618.34 1971.17,-525.35"/>
-<polygon fill="none" stroke="midnightblue" points="2465.92,-1332.51 2468.75,-1342.72 2472.9,-1332.97 2465.92,-1332.51"/>
+<path fill="none" stroke="midnightblue" d="M2469.05,-1338.38C2478.46,-1196.23 2468.1,-977.37 2339,-853 2257.84,-774.81 2173.05,-890.95 2088,-817 2005.04,-744.87 1978.71,-618.34 1971.17,-525.35"/>
+<polygon fill="none" stroke="midnightblue" points="2465.55,-1338.26 2468.34,-1348.48 2472.53,-1338.75 2465.55,-1338.26"/>
 </g>
 <!-- Node20 -->
 <g id="node19" class="node">
@@ -2174,8 +2173,8 @@
 <!-- Node16&#45;&gt;Node20 -->
 <g id="edge18" class="edge">
 <title>Node16&#45;&gt;Node20</title>
-<path fill="none" stroke="midnightblue" d="M2447.93,-1332.89C2439.26,-1202.23 2413.58,-1006.15 2339,-853 2329.63,-833.75 2317.15,-835.85 2307,-817 2254.31,-719.15 2225.78,-594.12 2211.29,-508.51"/>
-<polygon fill="none" stroke="midnightblue" points="2444.44,-1333.21 2448.57,-1342.96 2451.43,-1332.76 2444.44,-1333.21"/>
+<path fill="none" stroke="midnightblue" d="M2448.28,-1338.38C2439.98,-1207.78 2414.63,-1008.31 2339,-853 2329.63,-833.75 2317.15,-835.85 2307,-817 2254.31,-719.15 2225.78,-594.12 2211.29,-508.51"/>
+<polygon fill="none" stroke="midnightblue" points="2444.8,-1338.68 2448.9,-1348.45 2451.78,-1338.25 2444.8,-1338.68"/>
 </g>
 <!-- Node22 -->
 <g id="node20" class="node">
@@ -2204,8 +2203,8 @@
 <!-- Node16&#45;&gt;Node22 -->
 <g id="edge19" class="edge">
 <title>Node16&#45;&gt;Node22</title>
-<path fill="none" stroke="midnightblue" d="M2447.19,-1332.57C2439.63,-1108.85 2425.19,-681.64 2418.97,-497.52"/>
-<polygon fill="none" stroke="midnightblue" points="2443.7,-1332.87 2447.53,-1342.74 2450.69,-1332.63 2443.7,-1332.87"/>
+<path fill="none" stroke="midnightblue" d="M2447.38,-1338.24C2439.88,-1116.14 2425.25,-683.22 2418.97,-497.53"/>
+<polygon fill="none" stroke="midnightblue" points="2443.88,-1338.45 2447.72,-1348.33 2450.88,-1338.21 2443.88,-1338.45"/>
 </g>
 <!-- Node24 -->
 <g id="node21" class="node">
@@ -2234,8 +2233,8 @@
 <!-- Node16&#45;&gt;Node24 -->
 <g id="edge20" class="edge">
 <title>Node16&#45;&gt;Node24</title>
-<path fill="none" stroke="midnightblue" d="M2476.69,-1332.78C2498.81,-1206.6 2532.53,-1017.34 2564,-853 2587.64,-729.54 2616.89,-587.16 2635.5,-497.74"/>
-<polygon fill="none" stroke="midnightblue" points="2473.2,-1332.43 2474.92,-1342.89 2480.09,-1333.64 2473.2,-1332.43"/>
+<path fill="none" stroke="midnightblue" d="M2475.74,-1338.18C2497.84,-1212.04 2532.08,-1019.7 2564,-853 2587.64,-729.54 2616.89,-587.16 2635.5,-497.74"/>
+<polygon fill="none" stroke="midnightblue" points="2472.25,-1337.82 2473.98,-1348.28 2479.15,-1339.03 2472.25,-1337.82"/>
 </g>
 <!-- Node27 -->
 <g id="node24" class="node">

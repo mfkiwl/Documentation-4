@@ -1,8 +1,7 @@
 var searchData=
 [
-  ['master_53942',['Master',['../d9/d54/class_kratos_1_1_coupling_nitsche_condition.html#aaf582651a7ccd0510962eb6120245291af03bde11d261f185cbacfa32c1c6538c',1,'Kratos::CouplingNitscheCondition']]],
   ['master_53943',['MASTER',['../da/d69/class_kratos_1_1_mixed_u_l_m_linear_solver.html#a59fc3b6f674667b166b5549640bb7e32a89a1533c37ec9254f22b5e0f29c9c0ff',1,'Kratos::MixedULMLinearSolver']]],
-  ['master_53944',['Master',['../db/d66/namespace_kratos.html#a8ad8a3150afe1e0563c6972e90a9448caf03bde11d261f185cbacfa32c1c6538c',1,'Kratos']]],
+  ['master_53944',['Master',['../d9/d54/class_kratos_1_1_coupling_nitsche_condition.html#aaf582651a7ccd0510962eb6120245291af03bde11d261f185cbacfa32c1c6538c',1,'Kratos::CouplingNitscheCondition::Master()'],['../db/d66/namespace_kratos.html#a8ad8a3150afe1e0563c6972e90a9448caf03bde11d261f185cbacfa32c1c6538c',1,'Kratos::Master()']]],
   ['masterline2d2n0_53945',['MasterLine2D2N0',['../db/d66/namespace_kratos.html#a188e9cac6b4745a28aa7526cd9099164a1114449e5d1167b23e1ab4535895199d',1,'Kratos']]],
   ['masterline2d2n1_53946',['MasterLine2D2N1',['../db/d66/namespace_kratos.html#a188e9cac6b4745a28aa7526cd9099164a12db56df2d6a2c9948075c2a36b6ead0',1,'Kratos']]],
   ['masterquadrilateral3d4n0_53947',['MasterQuadrilateral3D4N0',['../db/d66/namespace_kratos.html#a644333d70bbceb1cf012a6c50dd52dffa844889c9e9bcca7b799d2d03c92d00ba',1,'Kratos::MasterQuadrilateral3D4N0()'],['../db/d66/namespace_kratos.html#a7a7b6324210530d8d5781490c1c02a55a844889c9e9bcca7b799d2d03c92d00ba',1,'Kratos::MasterQuadrilateral3D4N0()']]],
