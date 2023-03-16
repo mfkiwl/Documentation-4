@@ -111,7 +111,7 @@ $(function() {
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="keyword">class </span>KRATOS_API(STRUCTURAL_MECHANICS_APPLICATION) UpdatedLagrangian</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    : <span class="keyword">public</span> BaseSolidElement</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    : <span class="keyword">public</span> <a class="code" href="../../d3/d17/class_base_solid_element.html">BaseSolidElement</a></div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;{</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="keyword">public</span>:</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
@@ -121,7 +121,7 @@ $(function() {
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keyword">typedef</span> <a class="code" href="../../dc/d8c/class_kratos_1_1_geometry_data.html#a86f17c328cce116053a8786b7a0f404f">GeometryData::IntegrationMethod</a> <a class="code" href="../../db/d66/namespace_kratos.html#a4881ff98773a6b286564292f41914035">IntegrationMethod</a>;</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keyword">typedef</span> BaseSolidElement BaseType;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keyword">typedef</span> <a class="code" href="../../d3/d17/class_base_solid_element.html">BaseSolidElement</a> BaseType;</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keyword">typedef</span> std::size_t <a class="code" href="../../d5/d4d/group___kratos_core.html#ga1ba1e34f0af6a7cfcfa9b43e1f8e8c91">IndexType</a>;</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
@@ -251,7 +251,7 @@ $(function() {
 <div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;    std::vector&lt;Matrix&gt; mF0;    <span class="comment">// The historical total elastic deformation measure</span></div>
 <div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160; </div>
 <div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160; </div>
-<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;    UpdatedLagrangian() : BaseSolidElement()</div>
+<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;    UpdatedLagrangian() : <a class="code" href="../../d3/d17/class_base_solid_element.html">BaseSolidElement</a>()</div>
 <div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;    {</div>
 <div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;    }</div>
 <div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160; </div>
@@ -329,6 +329,7 @@ $(function() {
 <div class="line"><a name="l00495"></a><span class="lineno">  495</span>&#160; </div>
 <div class="line"><a name="l00503"></a><span class="lineno">  503</span>&#160; </div>
 <div class="line"><a name="l00504"></a><span class="lineno">  504</span>&#160;} <span class="comment">// namespace Kratos.</span></div>
+<div class="ttc" id="aclass_base_solid_element_html"><div class="ttname"><a href="../../d3/d17/class_base_solid_element.html">BaseSolidElement</a></div><div class="ttdoc">This is base class used to define the solid elements.</div></div>
 <div class="ttc" id="aclass_kratos_1_1_geometry_data_html_a86f17c328cce116053a8786b7a0f404f"><div class="ttname"><a href="../../dc/d8c/class_kratos_1_1_geometry_data.html#a86f17c328cce116053a8786b7a0f404f">Kratos::GeometryData::IntegrationMethod</a></div><div class="ttdeci">IntegrationMethod</div><div class="ttdef"><b>Definition:</b> geometry_data.h:76</div></div>
 <div class="ttc" id="aclass_kratos_1_1_geometry_html_af9d759d64438a0945bbc7b4be42bf5df"><div class="ttname"><a href="../../dc/dea/class_kratos_1_1_geometry.html#af9d759d64438a0945bbc7b4be42bf5df">Kratos::Geometry::IntegrationMethod</a></div><div class="ttdeci">GeometryData::IntegrationMethod IntegrationMethod</div><div class="ttdef"><b>Definition:</b> geometry.h:122</div></div>
 <div class="ttc" id="aclass_serializer_html"><div class="ttname"><a href="../../d0/dc2/class_serializer.html">Serializer</a></div><div class="ttdoc">The serialization consists in storing the state of an object into a storage format like data file or ...</div></div>
@@ -360,7 +361,7 @@ $(function() {
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Mar 15 2023 02:17:09 for KratosMultiphysics by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Thu Mar 16 2023 02:17:20 for KratosMultiphysics by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

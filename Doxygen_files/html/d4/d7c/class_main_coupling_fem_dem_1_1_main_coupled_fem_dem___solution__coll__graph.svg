@@ -19,14 +19,14 @@
 <text text-anchor="start" x="8" y="-257.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ model</text>
 <text text-anchor="start" x="8" y="-246.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ FEM_Solution</text>
 <text text-anchor="start" x="8" y="-235.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ DEM_Solution</text>
-<text text-anchor="start" x="8" y="-224.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ DoRemeshing</text>
-<text text-anchor="start" x="8" y="-213.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ mmg_parameter_file</text>
-<text text-anchor="start" x="8" y="-202.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ mmg_parameters</text>
-<text text-anchor="start" x="8" y="-191.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ RemeshingProcessMMG</text>
-<text text-anchor="start" x="8" y="-180.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ domain_size</text>
-<text text-anchor="start" x="8" y="-169.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ echo_level</text>
-<text text-anchor="start" x="8" y="-158.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ is_slave</text>
-<text text-anchor="start" x="8" y="-147.5" font-family="Helvetica,sans-Serif" font-size="10.00">and 20 more...</text>
+<text text-anchor="start" x="8" y="-224.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ domain_size</text>
+<text text-anchor="start" x="8" y="-213.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ echo_level</text>
+<text text-anchor="start" x="8" y="-202.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ is_slave</text>
+<text text-anchor="start" x="8" y="-191.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ number_of_nodes_element</text>
+<text text-anchor="start" x="8" y="-180.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ SpheresModelPart</text>
+<text text-anchor="start" x="8" y="-169.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ DEMParameters</text>
+<text text-anchor="start" x="8" y="-158.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ DEMProperties</text>
+<text text-anchor="start" x="8" y="-147.5" font-family="Helvetica,sans-Serif" font-size="10.00">and 16 more...</text>
 <polyline fill="none" stroke="black" points="0,-140.5 194,-140.5 "/>
 <text text-anchor="start" x="8" y="-128.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ __init__()</text>
 <text text-anchor="start" x="8" y="-117.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ Run()</text>
@@ -38,8 +38,8 @@
 <text text-anchor="start" x="8" y="-51.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ Finalize()</text>
 <text text-anchor="start" x="8" y="-40.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ InitializeIntegrationPoints</text>
 <text text-anchor="start" x="8" y="-29.5" font-family="Helvetica,sans-Serif" font-size="10.00">Variables()</text>
-<text text-anchor="start" x="8" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ InitializeMMGvariables()</text>
-<text text-anchor="start" x="8" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">and 28 more...</text>
+<text text-anchor="start" x="8" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ InitializeDummyNodalForces()</text>
+<text text-anchor="start" x="8" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">and 22 more...</text>
 </a>
 </g>
 </g>

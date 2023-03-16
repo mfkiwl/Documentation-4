@@ -151,7 +151,7 @@ $(function() {
 <div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;        )</div>
 <div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    {</div>
 <div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;        <a class="code" href="../../d4/ddc/class_kratos_1_1array__1d.html">array_1d&lt;double, Dimension&gt;</a> principal_stress_vector = <a class="code" href="../../db/d66/namespace_kratos.html#a0060702fbd6c7d45c773436101c9ded3">ZeroVector</a>(<a class="code" href="../../d1/da4/class_kratos_1_1_rankine_yield_surface.html#aa2d0fad0d7ffe3a53c85ac7991bb0e1a">Dimension</a>);</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;        <a class="code" href="../../d8/d03/class_advanced_constitutive_law_utilities.html#a28e905af635d594b8eaac1960b4207d0">AdvancedConstitutiveLawUtilities&lt;VoigtSize&gt;::CalculatePrincipalStresses</a>(principal_stress_vector, rPredictiveStressVector);</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;        <a class="code" href="../../d8/d03/class_advanced_constitutive_law_utilities.html">AdvancedConstitutiveLawUtilities&lt;VoigtSize&gt;::CalculatePrincipalStresses</a>(principal_stress_vector, rPredictiveStressVector);</div>
 <div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;        <span class="comment">// The rEquivalentStress is the maximum principal stress</span></div>
 <div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;        <span class="keywordflow">if</span> constexpr (<a class="code" href="../../d1/da4/class_kratos_1_1_rankine_yield_surface.html#aa2d0fad0d7ffe3a53c85ac7991bb0e1a">Dimension</a> == 3)</div>
 <div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;            rEquivalentStress = <a class="code" href="../../d4/d8c/namespace_kratos_1_1_geometry_functions.html#a819e51c089a0d603f13c6ce87e7cbed5">std::max</a>(<a class="code" href="../../d4/d8c/namespace_kratos_1_1_geometry_functions.html#a819e51c089a0d603f13c6ce87e7cbed5">std::max</a>(principal_stress_vector[0], principal_stress_vector[1]), principal_stress_vector[2]);</div>
@@ -271,7 +271,7 @@ $(function() {
 <div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;} <span class="comment">// namespace Kratos.</span></div>
 <div class="ttc" id="aadvanced__constitutive__law__utilities_8h_html"><div class="ttname"><a href="../../dd/d79/advanced__constitutive__law__utilities_8h.html">advanced_constitutive_law_utilities.h</a></div></div>
 <div class="ttc" id="achecks_8h_html"><div class="ttname"><a href="../../d5/d16/checks_8h.html">checks.h</a></div></div>
-<div class="ttc" id="aclass_advanced_constitutive_law_utilities_html_a28e905af635d594b8eaac1960b4207d0"><div class="ttname"><a href="../../d8/d03/class_advanced_constitutive_law_utilities.html#a28e905af635d594b8eaac1960b4207d0">AdvancedConstitutiveLawUtilities::CalculatePrincipalStresses</a></div><div class="ttdeci">void CalculatePrincipalStresses(array_1d&lt; double, Dimension &gt; &amp;rPrincipalStressVector, const BoundedVectorType &amp;rStressVector)</div><div class="ttdef"><b>Definition:</b> advanced_constitutive_law_utilities.cpp:339</div></div>
+<div class="ttc" id="aclass_advanced_constitutive_law_utilities_html"><div class="ttname"><a href="../../d8/d03/class_advanced_constitutive_law_utilities.html">AdvancedConstitutiveLawUtilities</a></div><div class="ttdoc">This class includes several utilities necessaries for the computation of the constitutive law.</div></div>
 <div class="ttc" id="aclass_kratos_1_1_internals_1_1_matrix_html"><div class="ttname"><a href="../../d9/dbb/class_kratos_1_1_internals_1_1_matrix.html">Kratos::Internals::Matrix&lt; double, AMatrix::dynamic, 1 &gt;</a></div></div>
 <div class="ttc" id="aclass_kratos_1_1_properties_html"><div class="ttname"><a href="../../d7/d7a/class_kratos_1_1_properties.html">Kratos::Properties</a></div><div class="ttdoc">Properties encapsulates data shared by different Elements or Conditions. It can store any type of dat...</div><div class="ttdef"><b>Definition:</b> properties.h:69</div></div>
 <div class="ttc" id="aclass_kratos_1_1_properties_html_a5e62ec0414faf097348f14175190f491"><div class="ttname"><a href="../../d7/d7a/class_kratos_1_1_properties.html#a5e62ec0414faf097348f14175190f491">Kratos::Properties::Has</a></div><div class="ttdeci">bool Has(TVariableType const &amp;rThisVariable) const</div><div class="ttdef"><b>Definition:</b> properties.h:470</div></div>
@@ -311,7 +311,7 @@ $(function() {
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Mar 15 2023 02:14:04 for KratosMultiphysics by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Thu Mar 16 2023 02:14:38 for KratosMultiphysics by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

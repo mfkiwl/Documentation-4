@@ -109,7 +109,7 @@ $(function() {
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<a class="code" href="../../df/d42/mmio_8h.html#a7df73a6dfc48ef4319bb914b8b246c53">KRATOS_API</a>(KRATOS_CORE) <span class="keywordtype">int</span> <a class="code" href="../../d3/d7f/mmio_8c.html#a4d0fe7a313521b054e1eaa7b38c6e514">mm_write_mtx_array_size</a>(FILE *<a class="code" href="../../d8/d57/namespacegenerate__convection__diffusion__explicit__element.html#acf82adfe1bd2c047be0ec9a7f4e4f7bf">f</a>, <span class="keywordtype">int</span> <a class="code" href="../../df/d42/mmio_8h.html#a5e78dbd5fd0fc01ba7b98dd15e27221e">M</a>, <span class="keywordtype">int</span> <a class="code" href="../../df/d42/mmio_8h.html#a3f620e88ba511ca5d32c93b84802ff6e">N</a>);</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="comment">/********************* MM_typecode query fucntions ***************************/</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="comment">/********************* MM_typecode query functions ***************************/</span></div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
 <div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="../../df/d42/mmio_8h.html#a39b0b604a9348b9f662a0587a0c29911">   33</a></span>&#160;<span class="preprocessor">#define mm_is_matrix(typecode)  ((typecode)[0]==&#39;M&#39;)</span></div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
@@ -131,7 +131,7 @@ $(function() {
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<a class="code" href="../../df/d42/mmio_8h.html#a7df73a6dfc48ef4319bb914b8b246c53">KRATOS_API</a>(KRATOS_CORE) <span class="keywordtype">int</span> <a class="code" href="../../d3/d7f/mmio_8c.html#aa1015f3b0282e7ef7ef3448fca37958d">mm_is_valid</a>(<a class="code" href="../../df/d42/mmio_8h.html#a27c4a0610b9f2ecb5edb6430e79ae9ee">MM_typecode</a> <a class="code" href="../../df/d42/mmio_8h.html#a83cee2c2e10bdd70e4d4793702272420">matcode</a>);       <span class="comment">/* too complex for a macro */</span></div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="comment">/********************* MM_typecode modify fucntions ***************************/</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="comment">/********************* MM_typecode modify functions ***************************/</span></div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
 <div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="../../df/d42/mmio_8h.html#ab94a2a33e79dda9a50645718c3055bde">   55</a></span>&#160;<span class="preprocessor">#define mm_set_matrix(typecode) ((*typecode)[0]=&#39;M&#39;)</span></div>
 <div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="../../df/d42/mmio_8h.html#a60425fdf2040cff47da380e2904af1e2">   56</a></span>&#160;<span class="preprocessor">#define mm_set_coordinate(typecode) ((*typecode)[1]=&#39;C&#39;)</span></div>
@@ -172,7 +172,7 @@ $(function() {
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="comment"></span> </div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="comment">   MM_matrix_typecode: 4-character sequence</span></div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<span class="comment">                    ojbect      sparse/     data        storage</span></div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<span class="comment">                    object      sparse/     data        storage</span></div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="comment">                                dense       type        scheme</span></div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="comment"></span> </div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="comment">   string position:  [0]        [1]         [2]         [3]</span></div>
@@ -239,7 +239,7 @@ $(function() {
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Mar 15 2023 02:20:07 for KratosMultiphysics by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Thu Mar 16 2023 02:19:54 for KratosMultiphysics by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

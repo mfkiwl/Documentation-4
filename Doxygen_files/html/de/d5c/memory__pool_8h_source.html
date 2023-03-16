@@ -154,7 +154,7 @@ $(function() {
 <div class="line"><a name="l00099"></a><span class="lineno"><a class="line" href="../../d0/d47/class_kratos_1_1_memory_pool.html#a1cc0e49b986ed793acadb58bc914435b">   99</a></span>&#160;      <span class="keyword">static</span> <a class="code" href="../../d9/d84/class_kratos_1_1_fixed_size_memory_pool.html">FixedSizeMemoryPool</a>* <a class="code" href="../../d0/d47/class_kratos_1_1_memory_pool.html#a1cc0e49b986ed793acadb58bc914435b">GetPoolWithBlockSize</a>(std::size_t BlockSize) {</div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;          <a class="code" href="../../d0/d47/class_kratos_1_1_memory_pool.html#a4d00554944d09151789f9e7506787803">PoolsContainerType</a>&amp; r_pools = <a class="code" href="../../d0/d47/class_kratos_1_1_memory_pool.html#ad0c59f5a23c6eb96380fb09961fc306f">GetInstance</a>().mPools;</div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160; </div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;          <span class="comment">// I would avoid it by defining a max block size, but befor that I should profile to see if is really slows done. Pooyan.</span></div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;          <span class="comment">// I would avoid it by defining a max block size, but before that I should profile to see if it really slows down. Pooyan.</span></div>
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;          <span class="keywordflow">if</span> (r_pools.size() &lt;= BlockSize) { <span class="comment">// This check is extra but is to avoid critical each time</span></div>
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<span class="preprocessor">#pragma omp critical</span></div>
 <div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;          {</div>
@@ -272,7 +272,7 @@ $(function() {
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Mar 15 2023 02:20:07 for KratosMultiphysics by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Thu Mar 16 2023 02:19:54 for KratosMultiphysics by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>
