@@ -2113,35 +2113,36 @@
 <g id="node18" class="node">
 <title>Node18</title>
 <g id="a_node18"><a xlink:href="../../d5/d7c/class_kratos_1_1_newmark_dynamic_u_pw_scheme.html" target="_top" xlink:title=" ">
-<polygon fill="none" stroke="red" points="1861,-292 1861,-525 2079,-525 2079,-292 1861,-292"/>
-<text text-anchor="start" x="1869" y="-513" font-family="Helvetica,sans-Serif" font-size="10.00">Kratos::NewmarkDynamicUPw</text>
-<text text-anchor="middle" x="1970" y="-502" font-family="Helvetica,sans-Serif" font-size="10.00">Scheme&lt; TSparseSpace, TDenseSpace &gt;</text>
-<polyline fill="none" stroke="red" points="1861,-495 2079,-495 "/>
-<text text-anchor="start" x="1869" y="-483" font-family="Helvetica,sans-Serif" font-size="10.00"># mMassMatrix</text>
-<text text-anchor="start" x="1869" y="-472" font-family="Helvetica,sans-Serif" font-size="10.00"># mAccelerationVector</text>
-<text text-anchor="start" x="1869" y="-461" font-family="Helvetica,sans-Serif" font-size="10.00"># mDampingMatrix</text>
-<text text-anchor="start" x="1869" y="-450" font-family="Helvetica,sans-Serif" font-size="10.00"># mVelocityVector</text>
-<polyline fill="none" stroke="red" points="1861,-443 2079,-443 "/>
-<text text-anchor="start" x="1869" y="-431" font-family="Helvetica,sans-Serif" font-size="10.00">+ KRATOS_CLASS_POINTER</text>
-<text text-anchor="start" x="1869" y="-420" font-family="Helvetica,sans-Serif" font-size="10.00">_DEFINITION()</text>
-<text text-anchor="start" x="1869" y="-409" font-family="Helvetica,sans-Serif" font-size="10.00">+ NewmarkDynamicUPwScheme()</text>
-<text text-anchor="start" x="1869" y="-398" font-family="Helvetica,sans-Serif" font-size="10.00">+ ~NewmarkDynamicUPwScheme()</text>
-<text text-anchor="start" x="1869" y="-387" font-family="Helvetica,sans-Serif" font-size="10.00">+ Predict()</text>
-<text text-anchor="start" x="1869" y="-376" font-family="Helvetica,sans-Serif" font-size="10.00">+ CalculateSystemContributions()</text>
-<text text-anchor="start" x="1869" y="-365" font-family="Helvetica,sans-Serif" font-size="10.00">+ CalculateSystemContributions()</text>
-<text text-anchor="start" x="1869" y="-354" font-family="Helvetica,sans-Serif" font-size="10.00">+ CalculateRHSContribution()</text>
-<text text-anchor="start" x="1869" y="-343" font-family="Helvetica,sans-Serif" font-size="10.00">+ CalculateLHSContribution()</text>
-<text text-anchor="start" x="1869" y="-332" font-family="Helvetica,sans-Serif" font-size="10.00">+ CalculateLHSContribution()</text>
-<text text-anchor="start" x="1869" y="-321" font-family="Helvetica,sans-Serif" font-size="10.00"># AddDynamicsToLHS()</text>
-<text text-anchor="start" x="1869" y="-310" font-family="Helvetica,sans-Serif" font-size="10.00"># AddDynamicsToRHS()</text>
-<text text-anchor="start" x="1869" y="-299" font-family="Helvetica,sans-Serif" font-size="10.00"># AddDynamicsToRHS()</text>
+<polygon fill="none" stroke="red" points="1861,-286.5 1861,-530.5 2079,-530.5 2079,-286.5 1861,-286.5"/>
+<text text-anchor="start" x="1869" y="-518.5" font-family="Helvetica,sans-Serif" font-size="10.00">Kratos::NewmarkDynamicUPw</text>
+<text text-anchor="middle" x="1970" y="-507.5" font-family="Helvetica,sans-Serif" font-size="10.00">Scheme&lt; TSparseSpace, TDenseSpace &gt;</text>
+<polyline fill="none" stroke="red" points="1861,-500.5 2079,-500.5 "/>
+<text text-anchor="start" x="1869" y="-488.5" font-family="Helvetica,sans-Serif" font-size="10.00"># mMassMatrix</text>
+<text text-anchor="start" x="1869" y="-477.5" font-family="Helvetica,sans-Serif" font-size="10.00"># mAccelerationVector</text>
+<text text-anchor="start" x="1869" y="-466.5" font-family="Helvetica,sans-Serif" font-size="10.00"># mDampingMatrix</text>
+<text text-anchor="start" x="1869" y="-455.5" font-family="Helvetica,sans-Serif" font-size="10.00"># mVelocityVector</text>
+<polyline fill="none" stroke="red" points="1861,-448.5 2079,-448.5 "/>
+<text text-anchor="start" x="1869" y="-436.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ KRATOS_CLASS_POINTER</text>
+<text text-anchor="start" x="1869" y="-425.5" font-family="Helvetica,sans-Serif" font-size="10.00">_DEFINITION()</text>
+<text text-anchor="start" x="1869" y="-414.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ NewmarkDynamicUPwScheme()</text>
+<text text-anchor="start" x="1869" y="-403.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ ~NewmarkDynamicUPwScheme()</text>
+<text text-anchor="start" x="1869" y="-392.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ Predict()</text>
+<text text-anchor="start" x="1869" y="-381.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ CalculateSystemContributions()</text>
+<text text-anchor="start" x="1869" y="-370.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ CalculateSystemContributions()</text>
+<text text-anchor="start" x="1869" y="-359.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ CalculateRHSContribution()</text>
+<text text-anchor="start" x="1869" y="-348.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ CalculateRHSContribution()</text>
+<text text-anchor="start" x="1869" y="-337.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ CalculateLHSContribution()</text>
+<text text-anchor="start" x="1869" y="-326.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ CalculateLHSContribution()</text>
+<text text-anchor="start" x="1869" y="-315.5" font-family="Helvetica,sans-Serif" font-size="10.00"># AddDynamicsToLHS()</text>
+<text text-anchor="start" x="1869" y="-304.5" font-family="Helvetica,sans-Serif" font-size="10.00"># AddDynamicsToRHS()</text>
+<text text-anchor="start" x="1869" y="-293.5" font-family="Helvetica,sans-Serif" font-size="10.00"># AddDynamicsToRHS()</text>
 </a>
 </g>
 </g>
 <!-- Node16&#45;&gt;Node18 -->
 <g id="edge17" class="edge">
 <title>Node16&#45;&gt;Node18</title>
-<path fill="none" stroke="midnightblue" d="M2469.05,-1338.38C2478.46,-1196.23 2468.1,-977.37 2339,-853 2257.84,-774.81 2173.05,-890.95 2088,-817 2005.04,-744.87 1978.71,-618.34 1971.17,-525.35"/>
+<path fill="none" stroke="midnightblue" d="M2469.05,-1338.38C2478.46,-1196.23 2468.1,-977.37 2339,-853 2257.84,-774.81 2173.05,-890.95 2088,-817 2006.57,-746.2 1979.7,-622.98 1971.61,-530.53"/>
 <polygon fill="none" stroke="midnightblue" points="2465.55,-1338.26 2468.34,-1348.48 2472.53,-1338.75 2465.55,-1338.26"/>
 </g>
 <!-- Node20 -->
