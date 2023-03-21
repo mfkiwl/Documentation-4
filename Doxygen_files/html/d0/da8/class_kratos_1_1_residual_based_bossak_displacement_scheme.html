@@ -77,6 +77,7 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
+<a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="../../d2/dac/class_kratos_1_1_residual_based_bossak_displacement_scheme-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">Kratos::ResidualBasedBossakDisplacementScheme&lt; TSparseSpace, TDenseSpace &gt; Class Template Reference<div class="ingroups"><a class="el" href="../../d5/d4d/group___kratos_core.html">Kratos Core</a></div></div>  </div>
@@ -103,29 +104,28 @@ Collaboration diagram for Kratos::ResidualBasedBossakDisplacementScheme&lt; TSpa
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dac/struct_kratos_1_1_residual_based_bossak_displacement_scheme_1_1_bossak_alpha_method.html">BossakAlphaMethod</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">TODO: Move to ImplicitBaseType.  <a href="../../d0/dac/struct_kratos_1_1_residual_based_bossak_displacement_scheme_1_1_bossak_alpha_method.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bossak Alpha parameters.  <a href="../../d0/dac/struct_kratos_1_1_residual_based_bossak_displacement_scheme_1_1_bossak_alpha_method.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/ded/struct_kratos_1_1_residual_based_bossak_displacement_scheme_1_1_general_vectors.html">GeneralVectors</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vector containing the velocity and acceleration used on integration.  <a href="../../de/ded/struct_kratos_1_1_residual_based_bossak_displacement_scheme_1_1_general_vectors.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Velocities and accelerations used for integration.  <a href="../../de/ded/struct_kratos_1_1_residual_based_bossak_displacement_scheme_1_1_general_vectors.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d7c/struct_kratos_1_1_residual_based_bossak_displacement_scheme_1_1_newmark_method.html">NewmarkMethod</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The Newmark parameters used during integration.  <a href="../../d7/d7c/struct_kratos_1_1_residual_based_bossak_displacement_scheme_1_1_newmark_method.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Newmark parameters used for integration.  <a href="../../d7/d7c/struct_kratos_1_1_residual_based_bossak_displacement_scheme_1_1_newmark_method.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr><td colspan="2"><div class="groupHeader">Life Cycle</div></td></tr>
 <tr class="memitem:a7cb7742aaa1cca109722a929d4da8184"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/da8/class_kratos_1_1_residual_based_bossak_displacement_scheme.html#a7cb7742aaa1cca109722a929d4da8184">ResidualBasedBossakDisplacementScheme</a> (<a class="el" href="../../da/d39/class_parameters.html">Parameters</a> ThisParameters)</td></tr>
-<tr class="memdesc:a7cb7742aaa1cca109722a929d4da8184"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor. (with parameters) @detail The bossak method.  <a href="../../d0/da8/class_kratos_1_1_residual_based_bossak_displacement_scheme.html#a7cb7742aaa1cca109722a929d4da8184">More...</a><br /></td></tr>
+<tr class="memdesc:a7cb7742aaa1cca109722a929d4da8184"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct from a <a class="el" href="../../da/d39/class_parameters.html">Parameters</a> object.  <a href="../../d0/da8/class_kratos_1_1_residual_based_bossak_displacement_scheme.html#a7cb7742aaa1cca109722a929d4da8184">More...</a><br /></td></tr>
 <tr class="separator:a7cb7742aaa1cca109722a929d4da8184"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a61ba8bc848f211e2ce2384e5ea7ce4b7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/da8/class_kratos_1_1_residual_based_bossak_displacement_scheme.html#a61ba8bc848f211e2ce2384e5ea7ce4b7">ResidualBasedBossakDisplacementScheme</a> (const <a class="el" href="../../db/d66/namespace_kratos.html#ac77084a57869cbecf89d3ee2c819c5d3">double</a> Alpha=0.0)</td></tr>
-<tr class="memdesc:a61ba8bc848f211e2ce2384e5ea7ce4b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor. @detail The bossak method.  <a href="../../d0/da8/class_kratos_1_1_residual_based_bossak_displacement_scheme.html#a61ba8bc848f211e2ce2384e5ea7ce4b7">More...</a><br /></td></tr>
+<tr class="memdesc:a61ba8bc848f211e2ce2384e5ea7ce4b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor from a Bossak parameter.  <a href="../../d0/da8/class_kratos_1_1_residual_based_bossak_displacement_scheme.html#a61ba8bc848f211e2ce2384e5ea7ce4b7">More...</a><br /></td></tr>
 <tr class="separator:a61ba8bc848f211e2ce2384e5ea7ce4b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a225a55544fd0cce0a937afd1f3e29a70"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/da8/class_kratos_1_1_residual_based_bossak_displacement_scheme.html#a225a55544fd0cce0a937afd1f3e29a70">ResidualBasedBossakDisplacementScheme</a> (const <a class="el" href="../../db/d66/namespace_kratos.html#ac77084a57869cbecf89d3ee2c819c5d3">double</a> Alpha, const <a class="el" href="../../db/d66/namespace_kratos.html#ac77084a57869cbecf89d3ee2c819c5d3">double</a> NewmarkBeta)</td></tr>
-<tr class="memdesc:a225a55544fd0cce0a937afd1f3e29a70"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor. @detail The bossak method.  <a href="../../d0/da8/class_kratos_1_1_residual_based_bossak_displacement_scheme.html#a225a55544fd0cce0a937afd1f3e29a70">More...</a><br /></td></tr>
+<tr class="memdesc:a225a55544fd0cce0a937afd1f3e29a70"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="../../d0/da8/class_kratos_1_1_residual_based_bossak_displacement_scheme.html#a225a55544fd0cce0a937afd1f3e29a70">More...</a><br /></td></tr>
 <tr class="separator:a225a55544fd0cce0a937afd1f3e29a70"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a713d6e8b2e745a3bb4e482e54c66ef7d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/da8/class_kratos_1_1_residual_based_bossak_displacement_scheme.html#a713d6e8b2e745a3bb4e482e54c66ef7d">ResidualBasedBossakDisplacementScheme</a> (<a class="el" href="../../d0/da8/class_kratos_1_1_residual_based_bossak_displacement_scheme.html">ResidualBasedBossakDisplacementScheme</a> &amp;rOther)</td></tr>
-<tr class="memdesc:a713d6e8b2e745a3bb4e482e54c66ef7d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy Constructor.  <a href="../../d0/da8/class_kratos_1_1_residual_based_bossak_displacement_scheme.html#a713d6e8b2e745a3bb4e482e54c66ef7d">More...</a><br /></td></tr>
 <tr class="separator:a713d6e8b2e745a3bb4e482e54c66ef7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7cfa1ebdd4dccbb505610c8560a86d55"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/da8/class_kratos_1_1_residual_based_bossak_displacement_scheme.html#a908bf7603a68b77ccd9411692b64bae1">BaseTypePointer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/da8/class_kratos_1_1_residual_based_bossak_displacement_scheme.html#a7cfa1ebdd4dccbb505610c8560a86d55">Clone</a> () override</td></tr>
 <tr class="memdesc:a7cfa1ebdd4dccbb505610c8560a86d55"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clone method.  <a href="../../d0/da8/class_kratos_1_1_residual_based_bossak_displacement_scheme.html#a7cfa1ebdd4dccbb505610c8560a86d55">More...</a><br /></td></tr>
@@ -134,13 +134,13 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a3f8bc1df95f6d2a4781ea2db6a83f0e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Input and output</div></td></tr>
 <tr class="memitem:a12d4c116379888affb297435d4f023df"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/da8/class_kratos_1_1_residual_based_bossak_displacement_scheme.html#a12d4c116379888affb297435d4f023df">Info</a> () const override</td></tr>
-<tr class="memdesc:a12d4c116379888affb297435d4f023df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Turn back information as a string.  <a href="../../d0/da8/class_kratos_1_1_residual_based_bossak_displacement_scheme.html#a12d4c116379888affb297435d4f023df">More...</a><br /></td></tr>
+<tr class="memdesc:a12d4c116379888affb297435d4f023df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return information as a string.  <a href="../../d0/da8/class_kratos_1_1_residual_based_bossak_displacement_scheme.html#a12d4c116379888affb297435d4f023df">More...</a><br /></td></tr>
 <tr class="separator:a12d4c116379888affb297435d4f023df"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a40fa3b49f16878406791ff223e6249f8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/da8/class_kratos_1_1_residual_based_bossak_displacement_scheme.html#a40fa3b49f16878406791ff223e6249f8">PrintInfo</a> (std::ostream &amp;rOStream) const override</td></tr>
 <tr class="memdesc:a40fa3b49f16878406791ff223e6249f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Print information about this object.  <a href="../../d0/da8/class_kratos_1_1_residual_based_bossak_displacement_scheme.html#a40fa3b49f16878406791ff223e6249f8">More...</a><br /></td></tr>
 <tr class="separator:a40fa3b49f16878406791ff223e6249f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a18cd2947da9cea3f2646a2fa98bf6704"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/da8/class_kratos_1_1_residual_based_bossak_displacement_scheme.html#a18cd2947da9cea3f2646a2fa98bf6704">PrintData</a> (std::ostream &amp;rOStream) const override</td></tr>
-<tr class="memdesc:a18cd2947da9cea3f2646a2fa98bf6704"><td class="mdescLeft">&#160;</td><td class="mdescRight">Print object's data.  <a href="../../d0/da8/class_kratos_1_1_residual_based_bossak_displacement_scheme.html#a18cd2947da9cea3f2646a2fa98bf6704">More...</a><br /></td></tr>
+<tr class="memdesc:a18cd2947da9cea3f2646a2fa98bf6704"><td class="mdescLeft">&#160;</td><td class="mdescRight">Print the instance's data.  <a href="../../d0/da8/class_kratos_1_1_residual_based_bossak_displacement_scheme.html#a18cd2947da9cea3f2646a2fa98bf6704">More...</a><br /></td></tr>
 <tr class="separator:a18cd2947da9cea3f2646a2fa98bf6704"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_kratos_1_1_residual_based_implicit_time_scheme"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_kratos_1_1_residual_based_implicit_time_scheme')"><img src="../../closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="../../d2/d00/class_kratos_1_1_residual_based_implicit_time_scheme.html">Kratos::ResidualBasedImplicitTimeScheme&lt; TSparseSpace, TDenseSpace &gt;</a></td></tr>
 <tr class="memitem:a35224cf19a5a8248e9eb2465861eda4b inherit pub_methods_class_kratos_1_1_residual_based_implicit_time_scheme"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d00/class_kratos_1_1_residual_based_implicit_time_scheme.html#a35224cf19a5a8248e9eb2465861eda4b">ResidualBasedImplicitTimeScheme</a> ()</td></tr>
@@ -276,22 +276,22 @@ Public Member Functions</h2></td></tr>
 Protected Member Functions</h2></td></tr>
 <tr><td colspan="2"><div class="groupHeader">Protected Operations</div></td></tr>
 <tr class="memitem:a1a2b44609fe2af16e1176ac7e7d93f3e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/da8/class_kratos_1_1_residual_based_bossak_displacement_scheme.html#a1a2b44609fe2af16e1176ac7e7d93f3e">UpdateVelocity</a> (<a class="el" href="../../d4/ddc/class_kratos_1_1array__1d.html">array_1d</a>&lt; <a class="el" href="../../db/d66/namespace_kratos.html#ac77084a57869cbecf89d3ee2c819c5d3">double</a>, 3 &gt; &amp;rCurrentVelocity, const <a class="el" href="../../d4/ddc/class_kratos_1_1array__1d.html">array_1d</a>&lt; <a class="el" href="../../db/d66/namespace_kratos.html#ac77084a57869cbecf89d3ee2c819c5d3">double</a>, 3 &gt; &amp;rDeltaDisplacement, const <a class="el" href="../../d4/ddc/class_kratos_1_1array__1d.html">array_1d</a>&lt; <a class="el" href="../../db/d66/namespace_kratos.html#ac77084a57869cbecf89d3ee2c819c5d3">double</a>, 3 &gt; &amp;rPreviousVelocity, const <a class="el" href="../../d4/ddc/class_kratos_1_1array__1d.html">array_1d</a>&lt; <a class="el" href="../../db/d66/namespace_kratos.html#ac77084a57869cbecf89d3ee2c819c5d3">double</a>, 3 &gt; &amp;rPreviousAcceleration)</td></tr>
-<tr class="memdesc:a1a2b44609fe2af16e1176ac7e7d93f3e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updating first time Derivative.  <a href="../../d0/da8/class_kratos_1_1_residual_based_bossak_displacement_scheme.html#a1a2b44609fe2af16e1176ac7e7d93f3e">More...</a><br /></td></tr>
+<tr class="memdesc:a1a2b44609fe2af16e1176ac7e7d93f3e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update the first time derivative.  <a href="../../d0/da8/class_kratos_1_1_residual_based_bossak_displacement_scheme.html#a1a2b44609fe2af16e1176ac7e7d93f3e">More...</a><br /></td></tr>
 <tr class="separator:a1a2b44609fe2af16e1176ac7e7d93f3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2cad19b0aee36319c795f170c662d5a6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/da8/class_kratos_1_1_residual_based_bossak_displacement_scheme.html#a2cad19b0aee36319c795f170c662d5a6">UpdateAcceleration</a> (<a class="el" href="../../d4/ddc/class_kratos_1_1array__1d.html">array_1d</a>&lt; <a class="el" href="../../db/d66/namespace_kratos.html#ac77084a57869cbecf89d3ee2c819c5d3">double</a>, 3 &gt; &amp;rCurrentAcceleration, const <a class="el" href="../../d4/ddc/class_kratos_1_1array__1d.html">array_1d</a>&lt; <a class="el" href="../../db/d66/namespace_kratos.html#ac77084a57869cbecf89d3ee2c819c5d3">double</a>, 3 &gt; &amp;rDeltaDisplacement, const <a class="el" href="../../d4/ddc/class_kratos_1_1array__1d.html">array_1d</a>&lt; <a class="el" href="../../db/d66/namespace_kratos.html#ac77084a57869cbecf89d3ee2c819c5d3">double</a>, 3 &gt; &amp;rPreviousVelocity, const <a class="el" href="../../d4/ddc/class_kratos_1_1array__1d.html">array_1d</a>&lt; <a class="el" href="../../db/d66/namespace_kratos.html#ac77084a57869cbecf89d3ee2c819c5d3">double</a>, 3 &gt; &amp;rPreviousAcceleration)</td></tr>
-<tr class="memdesc:a2cad19b0aee36319c795f170c662d5a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updating second time Derivative.  <a href="../../d0/da8/class_kratos_1_1_residual_based_bossak_displacement_scheme.html#a2cad19b0aee36319c795f170c662d5a6">More...</a><br /></td></tr>
+<tr class="memdesc:a2cad19b0aee36319c795f170c662d5a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update the second time derivative.  <a href="../../d0/da8/class_kratos_1_1_residual_based_bossak_displacement_scheme.html#a2cad19b0aee36319c795f170c662d5a6">More...</a><br /></td></tr>
 <tr class="separator:a2cad19b0aee36319c795f170c662d5a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5ca9754f4250be33b0a48392c32324ac"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/da8/class_kratos_1_1_residual_based_bossak_displacement_scheme.html#a5ca9754f4250be33b0a48392c32324ac">AddDynamicsToLHS</a> (<a class="el" href="../../d0/da8/class_kratos_1_1_residual_based_bossak_displacement_scheme.html#a720f8b2334bd158ab124d92c5806f50c">LocalSystemMatrixType</a> &amp;LHS_Contribution, <a class="el" href="../../d0/da8/class_kratos_1_1_residual_based_bossak_displacement_scheme.html#a720f8b2334bd158ab124d92c5806f50c">LocalSystemMatrixType</a> &amp;D, <a class="el" href="../../d0/da8/class_kratos_1_1_residual_based_bossak_displacement_scheme.html#a720f8b2334bd158ab124d92c5806f50c">LocalSystemMatrixType</a> &amp;<a class="el" href="../../df/d42/mmio_8h.html#a5e78dbd5fd0fc01ba7b98dd15e27221e">M</a>, const ProcessInfo &amp;rCurrentProcessInfo) override</td></tr>
-<tr class="memdesc:a5ca9754f4250be33b0a48392c32324ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">It adds the dynamic LHS contribution of the elements M*c0 + D*c1 + K.  <a href="../../d0/da8/class_kratos_1_1_residual_based_bossak_displacement_scheme.html#a5ca9754f4250be33b0a48392c32324ac">More...</a><br /></td></tr>
+<tr class="memdesc:a5ca9754f4250be33b0a48392c32324ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add dynamic left hand side contribution from <a class="el" href="../../d5/dd4/class_kratos_1_1_element.html">Element</a> s.  <a href="../../d0/da8/class_kratos_1_1_residual_based_bossak_displacement_scheme.html#a5ca9754f4250be33b0a48392c32324ac">More...</a><br /></td></tr>
 <tr class="separator:a5ca9754f4250be33b0a48392c32324ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a64e8f7bcf4c1433f1b9f24f335ab94fe"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/da8/class_kratos_1_1_residual_based_bossak_displacement_scheme.html#a64e8f7bcf4c1433f1b9f24f335ab94fe">AddDynamicsToRHS</a> (<a class="el" href="../../d5/dd4/class_kratos_1_1_element.html">Element</a> &amp;rElement, <a class="el" href="../../d0/da8/class_kratos_1_1_residual_based_bossak_displacement_scheme.html#ace5084a46ec675691ca3c3a7eeeb85c1">LocalSystemVectorType</a> &amp;RHS_Contribution, <a class="el" href="../../d0/da8/class_kratos_1_1_residual_based_bossak_displacement_scheme.html#a720f8b2334bd158ab124d92c5806f50c">LocalSystemMatrixType</a> &amp;D, <a class="el" href="../../d0/da8/class_kratos_1_1_residual_based_bossak_displacement_scheme.html#a720f8b2334bd158ab124d92c5806f50c">LocalSystemMatrixType</a> &amp;<a class="el" href="../../df/d42/mmio_8h.html#a5e78dbd5fd0fc01ba7b98dd15e27221e">M</a>, const ProcessInfo &amp;rCurrentProcessInfo) override</td></tr>
-<tr class="memdesc:a64e8f7bcf4c1433f1b9f24f335ab94fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">It adds the dynamic RHS contribution of the elements b - (1-alpha)*M*a_n+1 - alpha*M*a_n - D*v_n.  <a href="../../d0/da8/class_kratos_1_1_residual_based_bossak_displacement_scheme.html#a64e8f7bcf4c1433f1b9f24f335ab94fe">More...</a><br /></td></tr>
+<tr class="memdesc:a64e8f7bcf4c1433f1b9f24f335ab94fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add dynamic right hand side contribution from an <a class="el" href="../../d5/dd4/class_kratos_1_1_element.html">Element</a>.  <a href="../../d0/da8/class_kratos_1_1_residual_based_bossak_displacement_scheme.html#a64e8f7bcf4c1433f1b9f24f335ab94fe">More...</a><br /></td></tr>
 <tr class="separator:a64e8f7bcf4c1433f1b9f24f335ab94fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae2c2fee6c979906d79a5e1ce12a91749"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/da8/class_kratos_1_1_residual_based_bossak_displacement_scheme.html#ae2c2fee6c979906d79a5e1ce12a91749">AddDynamicsToRHS</a> (<a class="el" href="../../d1/d6e/class_kratos_1_1_condition.html">Condition</a> &amp;rCondition, <a class="el" href="../../d0/da8/class_kratos_1_1_residual_based_bossak_displacement_scheme.html#ace5084a46ec675691ca3c3a7eeeb85c1">LocalSystemVectorType</a> &amp;RHS_Contribution, <a class="el" href="../../d0/da8/class_kratos_1_1_residual_based_bossak_displacement_scheme.html#a720f8b2334bd158ab124d92c5806f50c">LocalSystemMatrixType</a> &amp;D, <a class="el" href="../../d0/da8/class_kratos_1_1_residual_based_bossak_displacement_scheme.html#a720f8b2334bd158ab124d92c5806f50c">LocalSystemMatrixType</a> &amp;<a class="el" href="../../df/d42/mmio_8h.html#a5e78dbd5fd0fc01ba7b98dd15e27221e">M</a>, const ProcessInfo &amp;rCurrentProcessInfo) override</td></tr>
-<tr class="memdesc:ae2c2fee6c979906d79a5e1ce12a91749"><td class="mdescLeft">&#160;</td><td class="mdescRight">It adds the dynamic RHS contribution of the condition b - (1-alpha)*M*a_n+1 - alpha*M*a_n - D*v_n.  <a href="../../d0/da8/class_kratos_1_1_residual_based_bossak_displacement_scheme.html#ae2c2fee6c979906d79a5e1ce12a91749">More...</a><br /></td></tr>
+<tr class="memdesc:ae2c2fee6c979906d79a5e1ce12a91749"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add dynamic right hand side contribution of a <a class="el" href="../../d1/d6e/class_kratos_1_1_condition.html">Condition</a>.  <a href="../../d0/da8/class_kratos_1_1_residual_based_bossak_displacement_scheme.html#ae2c2fee6c979906d79a5e1ce12a91749">More...</a><br /></td></tr>
 <tr class="separator:ae2c2fee6c979906d79a5e1ce12a91749"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad656c2d4b973a937efcb20cfd4733526"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/da8/class_kratos_1_1_residual_based_bossak_displacement_scheme.html#ad656c2d4b973a937efcb20cfd4733526">AssignSettings</a> (const <a class="el" href="../../da/d39/class_parameters.html">Parameters</a> ThisParameters) override</td></tr>
-<tr class="memdesc:ad656c2d4b973a937efcb20cfd4733526"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method assigns settings to member variables.  <a href="../../d0/da8/class_kratos_1_1_residual_based_bossak_displacement_scheme.html#ad656c2d4b973a937efcb20cfd4733526">More...</a><br /></td></tr>
+<tr class="memdesc:ad656c2d4b973a937efcb20cfd4733526"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assign member variables from <a class="el" href="../../da/d39/class_parameters.html">Parameters</a>.  <a href="../../d0/da8/class_kratos_1_1_residual_based_bossak_displacement_scheme.html#ad656c2d4b973a937efcb20cfd4733526">More...</a><br /></td></tr>
 <tr class="separator:ad656c2d4b973a937efcb20cfd4733526"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Protected Operations</div></td></tr>
 <tr class="inherit_header pro_methods_class_kratos_1_1_scheme"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_kratos_1_1_scheme')"><img src="../../closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="../../d1/da3/class_kratos_1_1_scheme.html">Kratos::Scheme&lt; TSparseSpace, TDenseSpace &gt;</a></td></tr>
@@ -301,16 +301,16 @@ Protected Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
-<tr><td colspan="2"><div class="groupHeader">Protected member Variables</div></td></tr>
 <tr class="memitem:a1534f19cae67e94cfcce008edbd5f6a1"><td class="memItemLeft" align="right" valign="top">TSparseSpace::DofUpdaterPointerType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/da8/class_kratos_1_1_residual_based_bossak_displacement_scheme.html#a1534f19cae67e94cfcce008edbd5f6a1">mpDofUpdater</a> = TSparseSpace::CreateDofUpdater()</td></tr>
 <tr class="separator:a1534f19cae67e94cfcce008edbd5f6a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae8c7650d5854783cd3ec158361ce6c25"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/dac/struct_kratos_1_1_residual_based_bossak_displacement_scheme_1_1_bossak_alpha_method.html">BossakAlphaMethod</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/da8/class_kratos_1_1_residual_based_bossak_displacement_scheme.html#ae8c7650d5854783cd3ec158361ce6c25">mBossak</a></td></tr>
+<tr class="memdesc:ae8c7650d5854783cd3ec158361ce6c25"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bossak Alpha parameters.  <a href="../../d0/da8/class_kratos_1_1_residual_based_bossak_displacement_scheme.html#ae8c7650d5854783cd3ec158361ce6c25">More...</a><br /></td></tr>
 <tr class="separator:ae8c7650d5854783cd3ec158361ce6c25"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa3370588838da8e3529079ece3611665"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d7/d7c/struct_kratos_1_1_residual_based_bossak_displacement_scheme_1_1_newmark_method.html">NewmarkMethod</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/da8/class_kratos_1_1_residual_based_bossak_displacement_scheme.html#aa3370588838da8e3529079ece3611665">mNewmark</a></td></tr>
-<tr class="memdesc:aa3370588838da8e3529079ece3611665"><td class="mdescLeft">&#160;</td><td class="mdescRight">The structure containing the Bossak components.  <a href="../../d0/da8/class_kratos_1_1_residual_based_bossak_displacement_scheme.html#aa3370588838da8e3529079ece3611665">More...</a><br /></td></tr>
+<tr class="memdesc:aa3370588838da8e3529079ece3611665"><td class="mdescLeft">&#160;</td><td class="mdescRight">Newmark Beta parameters.  <a href="../../d0/da8/class_kratos_1_1_residual_based_bossak_displacement_scheme.html#aa3370588838da8e3529079ece3611665">More...</a><br /></td></tr>
 <tr class="separator:aa3370588838da8e3529079ece3611665"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aad203cd0b7ba58f7604d1b7c0d65f81d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../de/ded/struct_kratos_1_1_residual_based_bossak_displacement_scheme_1_1_general_vectors.html">GeneralVectors</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/da8/class_kratos_1_1_residual_based_bossak_displacement_scheme.html#aad203cd0b7ba58f7604d1b7c0d65f81d">mVector</a></td></tr>
-<tr class="memdesc:aad203cd0b7ba58f7604d1b7c0d65f81d"><td class="mdescLeft">&#160;</td><td class="mdescRight">The structure containing the Newmark parameters.  <a href="../../d0/da8/class_kratos_1_1_residual_based_bossak_displacement_scheme.html#aad203cd0b7ba58f7604d1b7c0d65f81d">More...</a><br /></td></tr>
+<tr class="memdesc:aad203cd0b7ba58f7604d1b7c0d65f81d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Aggregate struct for velocities and accelerations.  <a href="../../d0/da8/class_kratos_1_1_residual_based_bossak_displacement_scheme.html#aad203cd0b7ba58f7604d1b7c0d65f81d">More...</a><br /></td></tr>
 <tr class="separator:aad203cd0b7ba58f7604d1b7c0d65f81d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_class_kratos_1_1_residual_based_implicit_time_scheme"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class_kratos_1_1_residual_based_implicit_time_scheme')"><img src="../../closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="../../d2/d00/class_kratos_1_1_residual_based_implicit_time_scheme.html">Kratos::ResidualBasedImplicitTimeScheme&lt; TSparseSpace, TDenseSpace &gt;</a></td></tr>
 <tr class="memitem:a8cf4b33205b2fca2f6a25402a4c0a4e3 inherit pro_attribs_class_kratos_1_1_residual_based_implicit_time_scheme"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/dcc/struct_kratos_1_1_residual_based_implicit_time_scheme_1_1_general_matrices.html">GeneralMatrices</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d00/class_kratos_1_1_residual_based_implicit_time_scheme.html#a8cf4b33205b2fca2f6a25402a4c0a4e3">mMatrix</a></td></tr>
@@ -363,31 +363,31 @@ Protected Attributes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader">Operations</h2></td></tr>
 <tr class="memitem:a0543dc0f20c3a72d924e3acd7aa886da"><td class="memItemLeft" align="right" valign="top">BaseType::Pointer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/da8/class_kratos_1_1_residual_based_bossak_displacement_scheme.html#a0543dc0f20c3a72d924e3acd7aa886da">Create</a> (<a class="el" href="../../da/d39/class_parameters.html">Parameters</a> ThisParameters) const override</td></tr>
-<tr class="memdesc:a0543dc0f20c3a72d924e3acd7aa886da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create method.  <a href="../../d0/da8/class_kratos_1_1_residual_based_bossak_displacement_scheme.html#a0543dc0f20c3a72d924e3acd7aa886da">More...</a><br /></td></tr>
+<tr class="memdesc:a0543dc0f20c3a72d924e3acd7aa886da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a dynamically allocated new scheme from a <a class="el" href="../../da/d39/class_parameters.html">Parameters</a> object.  <a href="../../d0/da8/class_kratos_1_1_residual_based_bossak_displacement_scheme.html#a0543dc0f20c3a72d924e3acd7aa886da">More...</a><br /></td></tr>
 <tr class="separator:a0543dc0f20c3a72d924e3acd7aa886da"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a238752208c10e30eb8c513de676df354"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/da8/class_kratos_1_1_residual_based_bossak_displacement_scheme.html#a238752208c10e30eb8c513de676df354">CalculateBossakCoefficients</a> ()</td></tr>
-<tr class="memdesc:a238752208c10e30eb8c513de676df354"><td class="mdescLeft">&#160;</td><td class="mdescRight">Recalculates the Newmark coefficients, taking into account the alpha parameters.  <a href="../../d0/da8/class_kratos_1_1_residual_based_bossak_displacement_scheme.html#a238752208c10e30eb8c513de676df354">More...</a><br /></td></tr>
+<tr class="memdesc:a238752208c10e30eb8c513de676df354"><td class="mdescLeft">&#160;</td><td class="mdescRight">Recalculate the Newmark coefficients, taking the alpha parameters into account.  <a href="../../d0/da8/class_kratos_1_1_residual_based_bossak_displacement_scheme.html#a238752208c10e30eb8c513de676df354">More...</a><br /></td></tr>
 <tr class="separator:a238752208c10e30eb8c513de676df354"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a116990aa4982ffa3cc1a442948ee89ab"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/da8/class_kratos_1_1_residual_based_bossak_displacement_scheme.html#a116990aa4982ffa3cc1a442948ee89ab">Update</a> (<a class="el" href="../../d4/d5e/class_model_part.html">ModelPart</a> &amp;rModelPart, <a class="el" href="../../d0/da8/class_kratos_1_1_residual_based_bossak_displacement_scheme.html#ab70e3aa4fae78ff5bdc33e7756c57fc4">DofsArrayType</a> &amp;rDofSet, <a class="el" href="../../d0/da8/class_kratos_1_1_residual_based_bossak_displacement_scheme.html#a8a9513d3ce43206d5a67524541ada43b">TSystemMatrixType</a> &amp;<a class="el" href="../../db/d66/namespace_kratos.html#a93c726046cc93621bfee008f1bc8265f">rA</a>, <a class="el" href="../../d0/da8/class_kratos_1_1_residual_based_bossak_displacement_scheme.html#a94e01d2e4137ca0c8cd8c0062e0371b8">TSystemVectorType</a> &amp;rDx, <a class="el" href="../../d0/da8/class_kratos_1_1_residual_based_bossak_displacement_scheme.html#a94e01d2e4137ca0c8cd8c0062e0371b8">TSystemVectorType</a> &amp;rb) override</td></tr>
-<tr class="memdesc:a116990aa4982ffa3cc1a442948ee89ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Performing the update of the solution.  <a href="../../d0/da8/class_kratos_1_1_residual_based_bossak_displacement_scheme.html#a116990aa4982ffa3cc1a442948ee89ab">More...</a><br /></td></tr>
+<tr class="memdesc:a116990aa4982ffa3cc1a442948ee89ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update state variables within a newton iteration at the end of the time step.  <a href="../../d0/da8/class_kratos_1_1_residual_based_bossak_displacement_scheme.html#a116990aa4982ffa3cc1a442948ee89ab">More...</a><br /></td></tr>
 <tr class="separator:a116990aa4982ffa3cc1a442948ee89ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab7ed0718fe2352f9a50861e3cfb07252"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/da8/class_kratos_1_1_residual_based_bossak_displacement_scheme.html#ab7ed0718fe2352f9a50861e3cfb07252">Predict</a> (<a class="el" href="../../d4/d5e/class_model_part.html">ModelPart</a> &amp;rModelPart, <a class="el" href="../../d0/da8/class_kratos_1_1_residual_based_bossak_displacement_scheme.html#ab70e3aa4fae78ff5bdc33e7756c57fc4">DofsArrayType</a> &amp;rDofSet, <a class="el" href="../../d0/da8/class_kratos_1_1_residual_based_bossak_displacement_scheme.html#a8a9513d3ce43206d5a67524541ada43b">TSystemMatrixType</a> &amp;<a class="el" href="../../db/d66/namespace_kratos.html#a93c726046cc93621bfee008f1bc8265f">rA</a>, <a class="el" href="../../d0/da8/class_kratos_1_1_residual_based_bossak_displacement_scheme.html#a94e01d2e4137ca0c8cd8c0062e0371b8">TSystemVectorType</a> &amp;rDx, <a class="el" href="../../d0/da8/class_kratos_1_1_residual_based_bossak_displacement_scheme.html#a94e01d2e4137ca0c8cd8c0062e0371b8">TSystemVectorType</a> &amp;rb) override</td></tr>
-<tr class="memdesc:ab7ed0718fe2352f9a50861e3cfb07252"><td class="mdescLeft">&#160;</td><td class="mdescRight">Performing the prediction of the solution.  <a href="../../d0/da8/class_kratos_1_1_residual_based_bossak_displacement_scheme.html#ab7ed0718fe2352f9a50861e3cfb07252">More...</a><br /></td></tr>
+<tr class="memdesc:ab7ed0718fe2352f9a50861e3cfb07252"><td class="mdescLeft">&#160;</td><td class="mdescRight">Apply the predictor.  <a href="../../d0/da8/class_kratos_1_1_residual_based_bossak_displacement_scheme.html#ab7ed0718fe2352f9a50861e3cfb07252">More...</a><br /></td></tr>
 <tr class="separator:ab7ed0718fe2352f9a50861e3cfb07252"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab08901e339273a5a152d526015fd0f1a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/da8/class_kratos_1_1_residual_based_bossak_displacement_scheme.html#ab08901e339273a5a152d526015fd0f1a">InitializeSolutionStep</a> (<a class="el" href="../../d4/d5e/class_model_part.html">ModelPart</a> &amp;rModelPart, <a class="el" href="../../d0/da8/class_kratos_1_1_residual_based_bossak_displacement_scheme.html#a8a9513d3ce43206d5a67524541ada43b">TSystemMatrixType</a> &amp;A, <a class="el" href="../../d0/da8/class_kratos_1_1_residual_based_bossak_displacement_scheme.html#a94e01d2e4137ca0c8cd8c0062e0371b8">TSystemVectorType</a> &amp;Dx, <a class="el" href="../../d0/da8/class_kratos_1_1_residual_based_bossak_displacement_scheme.html#a94e01d2e4137ca0c8cd8c0062e0371b8">TSystemVectorType</a> &amp;b) override</td></tr>
-<tr class="memdesc:ab08901e339273a5a152d526015fd0f1a"><td class="mdescLeft">&#160;</td><td class="mdescRight">It initializes time step solution. Only for reasons if the time step solution is restarted.  <a href="../../d0/da8/class_kratos_1_1_residual_based_bossak_displacement_scheme.html#ab08901e339273a5a152d526015fd0f1a">More...</a><br /></td></tr>
+<tr class="memdesc:ab08901e339273a5a152d526015fd0f1a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prepare state variables for a new solution step.  <a href="../../d0/da8/class_kratos_1_1_residual_based_bossak_displacement_scheme.html#ab08901e339273a5a152d526015fd0f1a">More...</a><br /></td></tr>
 <tr class="separator:ab08901e339273a5a152d526015fd0f1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2e44d4ef95f261af767f888400441ff4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../db/d66/namespace_kratos.html#ac398e9982e45de7167981e05b7f5ff57">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/da8/class_kratos_1_1_residual_based_bossak_displacement_scheme.html#a2e44d4ef95f261af767f888400441ff4">Check</a> (const <a class="el" href="../../d4/d5e/class_model_part.html">ModelPart</a> &amp;rModelPart) const override</td></tr>
-<tr class="memdesc:a2e44d4ef95f261af767f888400441ff4"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function is designed to be called once to perform all the checks needed on the input provided.  <a href="../../d0/da8/class_kratos_1_1_residual_based_bossak_displacement_scheme.html#a2e44d4ef95f261af767f888400441ff4">More...</a><br /></td></tr>
+<tr class="memdesc:a2e44d4ef95f261af767f888400441ff4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check whether the scheme and the provided <a class="el" href="../../d4/d5e/class_model_part.html">ModelPart</a> are configured correctly.  <a href="../../d0/da8/class_kratos_1_1_residual_based_bossak_displacement_scheme.html#a2e44d4ef95f261af767f888400441ff4">More...</a><br /></td></tr>
 <tr class="separator:a2e44d4ef95f261af767f888400441ff4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae17375a030ace980a84c721205034a2a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/da8/class_kratos_1_1_residual_based_bossak_displacement_scheme.html#ae17375a030ace980a84c721205034a2a">Clear</a> () override</td></tr>
-<tr class="memdesc:ae17375a030ace980a84c721205034a2a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Free memory allocated by this class.  <a href="../../d0/da8/class_kratos_1_1_residual_based_bossak_displacement_scheme.html#ae17375a030ace980a84c721205034a2a">More...</a><br /></td></tr>
+<tr class="memdesc:ae17375a030ace980a84c721205034a2a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Release dynamic memory allocated by this instance.  <a href="../../d0/da8/class_kratos_1_1_residual_based_bossak_displacement_scheme.html#ae17375a030ace980a84c721205034a2a">More...</a><br /></td></tr>
 <tr class="separator:ae17375a030ace980a84c721205034a2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a44400b9ea373e75da8676bc77fedda28"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../da/d39/class_parameters.html">Parameters</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/da8/class_kratos_1_1_residual_based_bossak_displacement_scheme.html#a44400b9ea373e75da8676bc77fedda28">GetDefaultParameters</a> () const override</td></tr>
-<tr class="memdesc:a44400b9ea373e75da8676bc77fedda28"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method provides the defaults parameters to avoid conflicts between the different constructors.  <a href="../../d0/da8/class_kratos_1_1_residual_based_bossak_displacement_scheme.html#a44400b9ea373e75da8676bc77fedda28">More...</a><br /></td></tr>
+<tr class="memdesc:a44400b9ea373e75da8676bc77fedda28"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function returns the default <a class="el" href="../../da/d39/class_parameters.html">Parameters</a> to help avoiding conflicts between different constructors.  <a href="../../d0/da8/class_kratos_1_1_residual_based_bossak_displacement_scheme.html#a44400b9ea373e75da8676bc77fedda28">More...</a><br /></td></tr>
 <tr class="separator:a44400b9ea373e75da8676bc77fedda28"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8b36c02d5e80827b1f1af94c2cac9d68"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/da8/class_kratos_1_1_residual_based_bossak_displacement_scheme.html#a8b36c02d5e80827b1f1af94c2cac9d68">Name</a> ()</td></tr>
-<tr class="memdesc:a8b36c02d5e80827b1f1af94c2cac9d68"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the name of the class as used in the settings (snake_case format)  <a href="../../d0/da8/class_kratos_1_1_residual_based_bossak_displacement_scheme.html#a8b36c02d5e80827b1f1af94c2cac9d68">More...</a><br /></td></tr>
+<tr class="memdesc:a8b36c02d5e80827b1f1af94c2cac9d68"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the name of the class as used in the settings (<em>snake_case</em>).  <a href="../../d0/da8/class_kratos_1_1_residual_based_bossak_displacement_scheme.html#a8b36c02d5e80827b1f1af94c2cac9d68">More...</a><br /></td></tr>
 <tr class="separator:a8b36c02d5e80827b1f1af94c2cac9d68"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
@@ -470,8 +470,8 @@ Additional Inherited Members</h2></td></tr>
 class Kratos::ResidualBasedBossakDisplacementScheme&lt; TSparseSpace, TDenseSpace &gt;</h3>
 
 <p>Bossak integration scheme (for linear and nonlinear dynamic problems) for displacements. </p>
-<p>This is a dynamic implicit scheme based of the Bossak algorithm for displacements. The parameter Alpha of Bossak introduces damping, the value of Bossak is from 0 to -0.5 (negative) Implementation according to: "An alpha modification of Newmark's method; W.L. Wood, M. Bossak, O.C. Zienkiewicz;
-Numerical Methods in Engineering; 1980" </p><dl class="section author"><dt>Author</dt><dd>Josep Maria Carbonell </dd>
+<p>This is a dynamic implicit scheme based on the Bossak algorithm for displacements. The Bossak Alpha parameter ranges from 0 to -0.5, and introduces damping. Implementation according to: "An alpha modification of Newmark's method; W.L. Wood, M. Bossak, O.C. Zienkiewicz;
+         Numerical Methods in Engineering; 1980" </p><dl class="section author"><dt>Author</dt><dd>Josep Maria Carbonell </dd>
 <dd>
 Vicente Mataix Ferrandiz </dd>
 <dd>
@@ -760,10 +760,10 @@ template&lt;class TSparseSpace , class TDenseSpace &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Constructor. (with parameters) @detail The bossak method. </p>
+<p>Construct from a <a class="el" href="../../da/d39/class_parameters.html">Parameters</a> object. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">ThisParameters</td><td>The parameters containing the configuration </td></tr>
+    <tr><td class="paramname">ThisParameters</td><td>The parameters containing the configuration. </td></tr>
   </table>
   </dd>
 </dl>
@@ -796,14 +796,14 @@ template&lt;class TSparseSpace , class TDenseSpace &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Constructor. @detail The bossak method. </p>
+<p>Constructor from a Bossak parameter. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">Alpha</td><td>is the Bossak parameter. Default value is 0, which is the Newmark method </td></tr>
-    <tr><td class="paramname">NewarkBeta</td><td>the Newmark parameter. Default value is 0.25, for mean constant acceleration. </td></tr>
+    <tr><td class="paramname">Alpha</td><td>is the Bossak parameter. Default value is 0, which is the Newmark method. </td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section note"><dt>Note</dt><dd>The Newmark beta parameter is set to 0.25, for mean constant acceleration. </dd></dl>
 
 </div>
 </div>
@@ -843,14 +843,17 @@ template&lt;class TSparseSpace , class TDenseSpace &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Constructor. @detail The bossak method. </p>
+<p>Constructor. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">Alpha</td><td>is the Bossak parameter. Default value is 0, which is the Newmark method </td></tr>
-    <tr><td class="paramname">NewarkBeta</td><td>the Newmark parameter. Default value is 0.25, for mean constant acceleration. </td></tr>
+    <tr><td class="paramname">Alpha</td><td>The Bossak parameter. </td></tr>
+    <tr><td class="paramname">NewarkBeta</td><td>The Newmark parameter. </td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section note"><dt>Note</dt><dd>A Bossak parameter (<em>Alpha</em>) of 0 results in the Newmark method. </dd>
+<dd>
+A Newmark parameter (<em>NewmarkBeta</em>) of 0.25 results in mean constant acceleration. </dd></dl>
 
 </div>
 </div>
@@ -880,8 +883,6 @@ template&lt;class TSparseSpace , class TDenseSpace &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Copy Constructor. </p>
-
 </div>
 </div>
 <a id="a3f8bc1df95f6d2a4781ea2db6a83f0e3"></a>
@@ -908,7 +909,6 @@ template&lt;class TSparseSpace , class TDenseSpace &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Destructor. </p>
 
 </div>
 </div>
@@ -961,13 +961,16 @@ template&lt;class TSparseSpace , class TDenseSpace &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>It adds the dynamic LHS contribution of the elements M*c0 + D*c1 + K. </p>
-<dl class="params"><dt>Parameters</dt><dd>
+<p>Add dynamic left hand side contribution from <a class="el" href="../../d5/dd4/class_kratos_1_1_element.html">Element</a> s. </p>
+<p class="formulaDsp">
+\[ M \cdot c_0 + D \cdot c_1 + K \]
+</p>
+ <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">LHS_Contribution</td><td>The dynamic contribution for the LHS </td></tr>
-    <tr><td class="paramname">D</td><td>The damping matrix </td></tr>
-    <tr><td class="paramname">M</td><td>The mass matrix </td></tr>
-    <tr><td class="paramname">rCurrentProcessInfo</td><td>The current process info instance </td></tr>
+    <tr><td class="paramname">LHS_Contribution</td><td>Dynamic contribution for the left hand side. </td></tr>
+    <tr><td class="paramname">D</td><td>Damping matrix. </td></tr>
+    <tr><td class="paramname">M</td><td>Mass matrix. </td></tr>
+    <tr><td class="paramname">rCurrentProcessInfo</td><td>Current ProcessInfo. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1032,14 +1035,17 @@ template&lt;class TSparseSpace , class TDenseSpace &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>It adds the dynamic RHS contribution of the condition b - (1-alpha)*M*a_n+1 - alpha*M*a_n - D*v_n. </p>
-<dl class="params"><dt>Parameters</dt><dd>
+<p>Add dynamic right hand side contribution of a <a class="el" href="../../d1/d6e/class_kratos_1_1_condition.html">Condition</a>. </p>
+<p class="formulaDsp">
+\[ b - (1-alpha)*M*a_n+1 - alpha*M*a_n - D*v_n \]
+</p>
+ <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">rCondition</td><td>The condition to compute </td></tr>
-    <tr><td class="paramname">RHS_Contribution</td><td>The dynamic contribution for the RHS </td></tr>
-    <tr><td class="paramname">D</td><td>The damping matrix </td></tr>
-    <tr><td class="paramname">M</td><td>The mass matrix </td></tr>
-    <tr><td class="paramname">rCurrentProcessInfo</td><td>The current process info instance </td></tr>
+    <tr><td class="paramname">rCondition</td><td><a class="el" href="../../d1/d6e/class_kratos_1_1_condition.html">Condition</a> to compute the contribution from. </td></tr>
+    <tr><td class="paramname">RHS_Contribution</td><td>Dynamic contribution for the right hand side. </td></tr>
+    <tr><td class="paramname">D</td><td>Damping matrix. </td></tr>
+    <tr><td class="paramname">M</td><td>Mass matrix. </td></tr>
+    <tr><td class="paramname">rCurrentProcessInfo</td><td>Current ProcessInfo. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1104,14 +1110,17 @@ template&lt;class TSparseSpace , class TDenseSpace &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>It adds the dynamic RHS contribution of the elements b - (1-alpha)*M*a_n+1 - alpha*M*a_n - D*v_n. </p>
-<dl class="params"><dt>Parameters</dt><dd>
+<p>Add dynamic right hand side contribution from an <a class="el" href="../../d5/dd4/class_kratos_1_1_element.html">Element</a>. </p>
+<p class="formulaDsp">
+\[ b - (1 - \alpha) \cdot M \cdot a_{n+1} - \alpha \cdot M \cdot a_n - D \cdot v_n \]
+</p>
+ <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">rElement</td><td>The element to compute </td></tr>
-    <tr><td class="paramname">RHS_Contribution</td><td>The dynamic contribution for the RHS </td></tr>
-    <tr><td class="paramname">D</td><td>The damping matrix </td></tr>
-    <tr><td class="paramname">M</td><td>The mass matrix </td></tr>
-    <tr><td class="paramname">rCurrentProcessInfo</td><td>The current process info instance </td></tr>
+    <tr><td class="paramname">rElement</td><td><a class="el" href="../../d5/dd4/class_kratos_1_1_element.html">Element</a> to compute the contribution from. </td></tr>
+    <tr><td class="paramname">RHS_Contribution</td><td>Dynamic contribution for the right hand side. </td></tr>
+    <tr><td class="paramname">D</td><td>Damping matrix. </td></tr>
+    <tr><td class="paramname">M</td><td>Mass matrix. </td></tr>
+    <tr><td class="paramname">rCurrentProcessInfo</td><td>Current ProcessInfo. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1148,13 +1157,7 @@ template&lt;class TSparseSpace , class TDenseSpace &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>This method assigns settings to member variables. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">ThisParameters</td><td><a class="el" href="../../da/d39/class_parameters.html" title="This class provides to Kratos a data structure for I/O based on the standard of JSON.">Parameters</a> that are assigned to the member variables </td></tr>
-  </table>
-  </dd>
-</dl>
+<p>Assign member variables from <a class="el" href="../../da/d39/class_parameters.html">Parameters</a>. </p>
 
 <p>Reimplemented from <a class="el" href="../../d1/da3/class_kratos_1_1_scheme.html#aa8dfc8e2c69b72ec89e2acdbeb017bba">Kratos::Scheme&lt; TSparseSpace, TDenseSpace &gt;</a>.</p>
 
@@ -1187,14 +1190,7 @@ template&lt;class TSparseSpace , class TDenseSpace &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Recalculates the Newmark coefficients, taking into account the alpha parameters. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">beta</td><td>The Bossak beta coefficient </td></tr>
-    <tr><td class="paramname">gamma</td><td>The Bossak gamma coefficient </td></tr>
-  </table>
-  </dd>
-</dl>
+<p>Recalculate the Newmark coefficients, taking the alpha parameters into account. </p>
 
 </div>
 </div>
@@ -1224,14 +1220,14 @@ template&lt;class TSparseSpace , class TDenseSpace &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>This function is designed to be called once to perform all the checks needed on the input provided. </p>
-<p>Checks can be "expensive" as the function is designed to catch user's errors. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Check whether the scheme and the provided <a class="el" href="../../d4/d5e/class_model_part.html">ModelPart</a> are configured correctly. </p>
+<p>Checks may be expensive as the function is designed to catch user errors. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">rModelPart</td><td>The model of the problem to solve </td></tr>
+    <tr><td class="paramname">rModelPart</td><td><a class="el" href="../../d4/d5e/class_model_part.html">ModelPart</a> to check. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Zero means all ok </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>0 if ok, nonzero otherwise. </dd></dl>
 
 <p>Reimplemented from <a class="el" href="../../d1/da3/class_kratos_1_1_scheme.html#abb2db50c7e63c0d68444d486cf1ccccb">Kratos::Scheme&lt; TSparseSpace, TDenseSpace &gt;</a>.</p>
 
@@ -1262,7 +1258,7 @@ template&lt;class TSparseSpace , class TDenseSpace &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Free memory allocated by this class. </p>
+<p>Release dynamic memory allocated by this instance. </p>
 
 <p>Reimplemented from <a class="el" href="../../d1/da3/class_kratos_1_1_scheme.html#aceaa5823608d868fe3d5a446261d5bc5">Kratos::Scheme&lt; TSparseSpace, TDenseSpace &gt;</a>.</p>
 
@@ -1294,6 +1290,7 @@ template&lt;class TSparseSpace , class TDenseSpace &gt; </div>
 </div><div class="memdoc">
 
 <p>Clone method. </p>
+<dl class="section return"><dt>Returns</dt><dd>The pointer of the cloned scheme </dd></dl>
 
 <p>Reimplemented from <a class="el" href="../../d1/da3/class_kratos_1_1_scheme.html#afd523af3c0a75222b3e50e88606444ea">Kratos::Scheme&lt; TSparseSpace, TDenseSpace &gt;</a>.</p>
 
@@ -1327,10 +1324,10 @@ template&lt;class TSparseSpace , class TDenseSpace &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Create method. </p>
+<p>Construct a dynamically allocated new scheme from a <a class="el" href="../../da/d39/class_parameters.html">Parameters</a> object. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">ThisParameters</td><td>The configuration parameters </td></tr>
+    <tr><td class="paramname">ThisParameters</td><td>The configuration parameters. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1366,8 +1363,7 @@ template&lt;class TSparseSpace , class TDenseSpace &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>This method provides the defaults parameters to avoid conflicts between the different constructors. </p>
-<dl class="section return"><dt>Returns</dt><dd>The default parameters </dd></dl>
+<p>This function returns the default <a class="el" href="../../da/d39/class_parameters.html">Parameters</a> to help avoiding conflicts between different constructors. </p>
 
 <p>Reimplemented from <a class="el" href="../../d1/da3/class_kratos_1_1_scheme.html#a3636124004b6b6b1ffc0a9e32fda160d">Kratos::Scheme&lt; TSparseSpace, TDenseSpace &gt;</a>.</p>
 
@@ -1400,7 +1396,7 @@ template&lt;class TSparseSpace , class TDenseSpace &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Turn back information as a string. </p>
+<p>Return information as a string. </p>
 
 <p>Reimplemented from <a class="el" href="../../d1/da3/class_kratos_1_1_scheme.html#ae1b2708d323dabd1a57170e6d0910a9d">Kratos::Scheme&lt; TSparseSpace, TDenseSpace &gt;</a>.</p>
 
@@ -1456,13 +1452,14 @@ template&lt;class TSparseSpace , class TDenseSpace &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>It initializes time step solution. Only for reasons if the time step solution is restarted. </p>
+<p>Prepare state variables for a new solution step. </p>
+<dl class="section note"><dt>Note</dt><dd>This function should be called before solving a solution step, or restarting a failed one. </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">rModelPart</td><td>The model of the problem to solve </td></tr>
-    <tr><td class="paramname">A</td><td>LHS matrix </td></tr>
-    <tr><td class="paramname">Dx</td><td>Incremental update of primary variables </td></tr>
-    <tr><td class="paramname">b</td><td>RHS Vector </td></tr>
+    <tr><td class="paramname">rModelPart</td><td><a class="el" href="../../d4/d5e/class_model_part.html">ModelPart</a> to update. </td></tr>
+    <tr><td class="paramname">A</td><td>Left hand side matrix. </td></tr>
+    <tr><td class="paramname">Dx</td><td>Primary variable updates. </td></tr>
+    <tr><td class="paramname">b</td><td>Right hand side vector. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1518,8 +1515,7 @@ template&lt;class TSparseSpace , class TDenseSpace &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Returns the name of the class as used in the settings (snake_case format) </p>
-<dl class="section return"><dt>Returns</dt><dd>The name of the class </dd></dl>
+<p>Return the name of the class as used in the settings (<em>snake_case</em>). </p>
 
 </div>
 </div>
@@ -1577,14 +1573,17 @@ template&lt;class TSparseSpace , class TDenseSpace &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Performing the prediction of the solution. </p>
-<p>It predicts the solution for the current step x = xold + vold * Dt </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Apply the predictor. </p>
+<p class="formulaDsp">
+\[ x_{k+1} = x_{k} + v_{k} \cdot \Delta t \]
+</p>
+ <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">rModelPart</td><td>The model of the problem to solve </td></tr>
-    <tr><td class="paramname">rDofSet</td><td>set of all primary variables </td></tr>
-    <tr><td class="paramname">rA</td><td>LHS matrix </td></tr>
-    <tr><td class="paramname">rDx</td><td>Incremental update of primary variables </td></tr>
-    <tr><td class="paramname">rb</td><td>RHS Vector </td></tr>
+    <tr><td class="paramname">rModelPart</td><td><a class="el" href="../../d4/d5e/class_model_part.html">ModelPart</a> to update. </td></tr>
+    <tr><td class="paramname">rDofSet</td><td>Set of all primary variables. </td></tr>
+    <tr><td class="paramname">rA</td><td>Left hand side matrix. </td></tr>
+    <tr><td class="paramname">rDx</td><td>Primary variable updates. </td></tr>
+    <tr><td class="paramname">rb</td><td>Right hand side vector. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1621,7 +1620,7 @@ template&lt;class TSparseSpace , class TDenseSpace &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Print object's data. </p>
+<p>Print the instance's data. </p>
 
 <p>Reimplemented from <a class="el" href="../../d1/da3/class_kratos_1_1_scheme.html#a9d1312108df64b3f057cc8525cbc728e">Kratos::Scheme&lt; TSparseSpace, TDenseSpace &gt;</a>.</p>
 
@@ -1717,14 +1716,17 @@ template&lt;class TSparseSpace , class TDenseSpace &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Performing the update of the solution. </p>
-<p>Incremental update within newton iteration. It updates the state variables at the end of the time step u_{n+1}^{k+1}= u_{n+1}^{k}+ \Delta u </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Update state variables within a newton iteration at the end of the time step. </p>
+<p class="formulaDsp">
+\[ u_{n+1}^{k+1} = u_{n+1}^k+ \Delta u \]
+</p>
+ <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">rModelPart</td><td>The model of the problem to solve </td></tr>
-    <tr><td class="paramname">rDofSet</td><td>Set of all primary variables </td></tr>
-    <tr><td class="paramname">rA</td><td>LHS matrix </td></tr>
-    <tr><td class="paramname">rDx</td><td>incremental update of primary variables </td></tr>
-    <tr><td class="paramname">rb</td><td>RHS Vector </td></tr>
+    <tr><td class="paramname">rModelPart</td><td><a class="el" href="../../d4/d5e/class_model_part.html">ModelPart</a> to update. </td></tr>
+    <tr><td class="paramname">rDofSet</td><td>Set of all primary variables. </td></tr>
+    <tr><td class="paramname">rA</td><td>Left hand side matrix. </td></tr>
+    <tr><td class="paramname">rDx</td><td>Primary variable updates. </td></tr>
+    <tr><td class="paramname">rb</td><td>Right hand side vector. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1783,13 +1785,13 @@ template&lt;class TSparseSpace , class TDenseSpace &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Updating second time Derivative. </p>
+<p>Update the second time derivative. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">rCurrentAcceleration</td><td>The current velocity </td></tr>
-    <tr><td class="paramname">rDeltaDisplacement</td><td>The increment of displacement </td></tr>
-    <tr><td class="paramname">rPreviousVelocity</td><td>The previous velocity </td></tr>
-    <tr><td class="paramname">rPreviousAcceleration</td><td>The previous acceleration </td></tr>
+    <tr><td class="paramname">rCurrentAcceleration</td><td>Current velocity. </td></tr>
+    <tr><td class="paramname">rDeltaDisplacement</td><td>Displacement increment. </td></tr>
+    <tr><td class="paramname">rPreviousVelocity</td><td>Previous velocity. </td></tr>
+    <tr><td class="paramname">rPreviousAcceleration</td><td>Previous acceleration. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1844,13 +1846,13 @@ template&lt;class TSparseSpace , class TDenseSpace &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Updating first time Derivative. </p>
+<p>Update the first time derivative. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">rCurrentVelocity</td><td>The current velocity </td></tr>
-    <tr><td class="paramname">rDeltaDisplacement</td><td>The increment of displacement </td></tr>
-    <tr><td class="paramname">rPreviousVelocity</td><td>The previous velocity </td></tr>
-    <tr><td class="paramname">rPreviousAcceleration</td><td>The previous acceleration </td></tr>
+    <tr><td class="paramname">rCurrentVelocity</td><td>Current velocity. </td></tr>
+    <tr><td class="paramname">rDeltaDisplacement</td><td>Displacement increment. </td></tr>
+    <tr><td class="paramname">rPreviousVelocity</td><td>Previous velocity. </td></tr>
+    <tr><td class="paramname">rPreviousAcceleration</td><td>Previous acceleration. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1880,6 +1882,8 @@ template&lt;class TSparseSpace , class TDenseSpace &gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p>Bossak Alpha parameters. </p>
+
 </div>
 </div>
 <a id="aa3370588838da8e3529079ece3611665"></a>
@@ -1904,7 +1908,7 @@ template&lt;class TSparseSpace , class TDenseSpace &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>The structure containing the Bossak components. </p>
+<p>Newmark Beta parameters. </p>
 
 </div>
 </div>
@@ -1929,6 +1933,7 @@ template&lt;class TSparseSpace , class TDenseSpace &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000033">Todo:</a></b></dt><dd>Move to <a class="el" href="../../d0/da8/class_kratos_1_1_residual_based_bossak_displacement_scheme.html#a982fcbc8322251b7d8d3f36dbf0c71b9">ImplicitBaseType</a> </dd></dl>
 
 </div>
 </div>
@@ -1954,7 +1959,7 @@ template&lt;class TSparseSpace , class TDenseSpace &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>The structure containing the Newmark parameters. </p>
+<p>Aggregate struct for velocities and accelerations. </p>
 
 </div>
 </div>
@@ -1964,7 +1969,7 @@ template&lt;class TSparseSpace , class TDenseSpace &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 20 2023 02:28:57 for KratosMultiphysics by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Tue Mar 21 2023 02:13:44 for KratosMultiphysics by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

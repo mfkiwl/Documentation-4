@@ -75,43 +75,49 @@ $(function() {
 <div class="title">Contact Structural Mechanics Application </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p>The Contact Structural Mechanics Application contains the contact mechanics implementations that can be used by the Structural Mechanics Application within <a class="el" href="../../db/d66/namespace_kratos.html" title="REF: G. R. Cowper, GAUSSIAN QUADRATURE FORMULAS FOR TRIANGLES.">Kratos</a> Multiphysics.</p>
+<div class="textblock"><table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadCenter"><b>Application</b>   </th><th class="markdownTableHeadCenter"><b>Description</b>   </th><th class="markdownTableHeadCenter"><b>Status</b>   </th><th class="markdownTableHeadCenter"><b>Authors</b>    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyCenter"><code><a class="el" href="../../d7/d88/namespace_contact_structural_mechanics_application.html">ContactStructuralMechanicsApplication</a></code>   </td><td class="markdownTableBodyCenter">The <em>Contact Structural Mechanics Application</em> contains the contact mechanics implementations that can be used by the <em>Structural Mechanics Application</em> and <em>Constitutive Laws Application</em> within <em><a class="el" href="../../db/d66/namespace_kratos.html" title="REF: G. R. Cowper, GAUSSIAN QUADRATURE FORMULAS FOR TRIANGLES.">Kratos</a> Multiphysics</em>   </td><td class="markdownTableBodyCenter"><img src="https://img.shields.io/badge/Status-%F0%9F%94%A7Maintained-blue" alt="" width="300px" class="inline"/>   </td><td class="markdownTableBodyCenter">Vicente Mataix Ferrándiz *(<a href="#" onclick="location.href='mai'+'lto:'+'vma'+'ta'+'ix@'+'al'+'tai'+'r.'+'com'; return false;">vmata<span style="display: none;">.nosp@m.</span>ix@a<span style="display: none;">.nosp@m.</span>ltair<span style="display: none;">.nosp@m.</span>.com</a>)* <br  />
+ Alejandro Cornejo Velázquez *(<a href="#" onclick="location.href='mai'+'lto:'+'aco'+'rn'+'ejo'+'@c'+'imn'+'e.'+'upc'+'.e'+'du'; return false;">acorn<span style="display: none;">.nosp@m.</span>ejo@<span style="display: none;">.nosp@m.</span>cimne<span style="display: none;">.nosp@m.</span>.upc<span style="display: none;">.nosp@m.</span>.edu</a> )*   </td></tr>
+</table>
 <p align="center"></p>
-<p><img src="https://raw.githubusercontent.com/KratosMultiphysics/Examples/master/contact_structural_mechanics/validation/double_arch/data/result.gif" alt="Solution" style="width: 600px;" class="inline"/> <img src="https://raw.githubusercontent.com/KratosMultiphysics/Examples/master/contact_structural_mechanics/validation/double_arch/data/result_frictional.gif" alt="Solution" style="width: 600px;" class="inline"/> <img src="https://raw.githubusercontent.com/KratosMultiphysics/Examples/master/contact_structural_mechanics/use_cases/in_ring/data/animation.gif" alt="Solution" style="width: 600px;" class="inline"/> <img src="https://github.com/KratosMultiphysics/Examples/raw/master/contact_structural_mechanics/use_cases/hyperelastic_tubes/data/half_cylinders.gif" alt="Solution" style="width: 600px;" class="inline"/> <img src="https://raw.githubusercontent.com/KratosMultiphysics/Examples/master/mmg_remeshing_examples/use_cases/contacting_cylinders/data/nodal_h.gif" alt="Solution" style="width: 600px;" class="inline"/> <img src="https://raw.githubusercontent.com/KratosMultiphysics/Examples/master/contact_structural_mechanics/use_cases/self_contact/data/animation.gif" alt="Solution" style="width: 600px;" class="inline"/> </p>
-<p>The application includes tests to check the proper functioning of the application</p>
-<h2>Features:</h2>
+<p><img src="https://raw.githubusercontent.com/KratosMultiphysics/Examples/master/contact_structural_mechanics/validation/double_arch/data/result.gif" alt="Solution" style="width: 300px;" class="inline"/> <img src="https://raw.githubusercontent.com/KratosMultiphysics/Examples/master/contact_structural_mechanics/validation/double_arch/data/result_frictional.gif" alt="Solution" style="width: 300px;" class="inline"/> <img src="https://raw.githubusercontent.com/KratosMultiphysics/Examples/master/contact_structural_mechanics/use_cases/in_ring/data/animation.gif" alt="Solution" style="width: 300px;" class="inline"/> <img src="https://github.com/KratosMultiphysics/Examples/raw/master/contact_structural_mechanics/use_cases/hyperelastic_tubes/data/half_cylinders.gif" alt="Solution" style="width: 300px;" class="inline"/> <img src="https://raw.githubusercontent.com/KratosMultiphysics/Examples/master/mmg_remeshing_examples/use_cases/contacting_cylinders/data/nodal_h.gif" alt="Solution" style="width: 300px;" class="inline"/> <img src="https://raw.githubusercontent.com/KratosMultiphysics/Examples/master/contact_structural_mechanics/use_cases/self_contact/data/animation.gif" alt="Solution" style="width: 300px;" class="inline"/> </p>
+<p>The application includes tests to check the proper functioning of the application.</p>
+<h1>😎 Features:</h1>
 <ul>
-<li>Mesh tying conditions based in mortar formulation</li>
-<li>Augmented Lagrangian contact conditions based in mortar formulation<ul>
+<li><em>Mesh tying conditions based in mortar formulation</em></li>
+<li><em>Augmented Lagrangian contact conditions based in mortar formulation</em><ul>
 <li>Frictionless formulation</li>
 <li>Frictional formulation</li>
 </ul>
 </li>
-<li>Penalty contact conditions based in mortar formulation<ul>
+<li><em>Penalty contact conditions based in mortar formulation</em><ul>
 <li>Frictionless formulation</li>
 <li>Frictional</li>
 </ul>
 </li>
-<li>Simplified <b>MPC</b> conditions based in mortar formulation. With the mortar formulation the weight are computed, allowing to compute a Simplified <em>NTN</em> and a simplified <em>NTS</em><ul>
+<li><em>Simplified <b>MPC</b> conditions based in mortar formulation. With the mortar formulation the weight are computed, allowing to compute a Simplified *NTN</em> and a simplified *NTS**<ul>
 <li>Frictionless formulation</li>
 <li>Frictional formulation</li>
 <li>Mesh tying formulation, with tension checking</li>
 </ul>
 </li>
-<li>Self-contact compatible</li>
-<li>Strategies, processes, solvers and convergence criterias used by the contact formulation</li>
-<li>Several strategies for adaptive remeshing</li>
-<li>The application includes search utilities in order to create the contact conditions</li>
-<li>Frictional laws (WIP) in order to consider different types of frictional behaviour</li>
-<li>+115 <em>Python</em> unittest, including Validation tests, and +85 cpp tests</li>
+<li><em>Self-contact compatible</em></li>
+<li><em>Strategies, processes, solvers and convergence criterias used by the contact formulation</em></li>
+<li><em>Several strategies for adaptive remeshing</em></li>
+<li><em>The application includes search utilities in order to create the contact conditions</em></li>
+<li>*Frictional laws (<b>WIP</b>) in order to consider different types of frictional behaviour *</li>
+<li><em>+115 Python unittest, including Validation tests, and +85 cpp tests</em></li>
 </ul>
-<h2>Examples:</h2>
+<h1>⚙️ Examples:</h1>
 <p>Examples can be found <a href="https://github.com/KratosMultiphysics/Examples/tree/master/contact_structural_mechanics">here</a>, and <a href="https://github.com/KratosMultiphysics/Examples/tree/master/mmg_remeshing_examples/">here</a> for several contact adaptive remeshing examples </p>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 20 2023 02:28:29 for KratosMultiphysics by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Tue Mar 21 2023 02:13:22 for KratosMultiphysics by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>
