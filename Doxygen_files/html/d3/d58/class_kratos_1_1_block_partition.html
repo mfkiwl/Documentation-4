@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>KratosMultiphysics: Kratos::BlockPartition&lt; TContainerType, TIteratorType, TMaxThreads &gt; Class Template Reference</title>
+<title>KratosMultiphysics: Kratos::BlockPartition&lt; TIterator, MaxThreads &gt; Class Template Reference</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -79,78 +79,72 @@ $(function() {
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="../../dd/d27/class_kratos_1_1_block_partition-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">Kratos::BlockPartition&lt; TContainerType, TIteratorType, TMaxThreads &gt; Class Template Reference</div>  </div>
+<div class="title">Kratos::BlockPartition&lt; TIterator, MaxThreads &gt; Class Template Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
 <p><code>#include &lt;<a class="el" href="../../de/d07/parallel__utilities_8h_source.html">parallel_utilities.h</a>&gt;</code></p>
 <div class="dynheader">
-Collaboration diagram for Kratos::BlockPartition&lt; TContainerType, TIteratorType, TMaxThreads &gt;:</div>
+Collaboration diagram for Kratos::BlockPartition&lt; TIterator, MaxThreads &gt;:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d2/d13/class_kratos_1_1_block_partition__coll__graph.svg" width="246" height="206"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d2/d13/class_kratos_1_1_block_partition__coll__graph.svg" width="207" height="162"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a8effbb24fdb78091bceba337c836c049"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d58/class_kratos_1_1_block_partition.html#a8effbb24fdb78091bceba337c836c049">BlockPartition</a> (TIteratorType it_begin, TIteratorType it_end, <a class="el" href="../../db/d66/namespace_kratos.html#ac398e9982e45de7167981e05b7f5ff57">int</a> Nchunks=ParallelUtilities::GetNumThreads())</td></tr>
-<tr class="separator:a8effbb24fdb78091bceba337c836c049"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a03482ae4932934a1d4d9b451aafc3f32"><td class="memTemplParams" colspan="2">template&lt;class TData &gt; </td></tr>
-<tr class="memitem:a03482ae4932934a1d4d9b451aafc3f32"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d3/d58/class_kratos_1_1_block_partition.html#a03482ae4932934a1d4d9b451aafc3f32">BlockPartition</a> (TData &amp;&amp;rData, <a class="el" href="../../db/d66/namespace_kratos.html#ac398e9982e45de7167981e05b7f5ff57">int</a> Nchunks=ParallelUtilities::GetNumThreads())</td></tr>
-<tr class="separator:a03482ae4932934a1d4d9b451aafc3f32"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a533000ec1a4c98f73346671e566de833"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d58/class_kratos_1_1_block_partition.html#a533000ec1a4c98f73346671e566de833">~BlockPartition</a> ()=default</td></tr>
-<tr class="separator:a533000ec1a4c98f73346671e566de833"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a97cc9cabbc1a22711940c05b451dadfa"><td class="memTemplParams" colspan="2">template&lt;class TUnaryFunction &gt; </td></tr>
-<tr class="memitem:a97cc9cabbc1a22711940c05b451dadfa"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d3/d58/class_kratos_1_1_block_partition.html#a97cc9cabbc1a22711940c05b451dadfa">for_each</a> (TUnaryFunction &amp;&amp;f)</td></tr>
-<tr class="memdesc:a97cc9cabbc1a22711940c05b451dadfa"><td class="mdescLeft">&#160;</td><td class="mdescRight">simple iteration loop. f called on every entry in rData  <a href="../../d3/d58/class_kratos_1_1_block_partition.html#a97cc9cabbc1a22711940c05b451dadfa">More...</a><br /></td></tr>
-<tr class="separator:a97cc9cabbc1a22711940c05b451dadfa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a09e359f61eb280debf197a7c4783ffa1"><td class="memTemplParams" colspan="2">template&lt;class TReducer , class TUnaryFunction &gt; </td></tr>
-<tr class="memitem:a09e359f61eb280debf197a7c4783ffa1"><td class="memTemplItemLeft" align="right" valign="top">TReducer::return_type&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d3/d58/class_kratos_1_1_block_partition.html#a09e359f61eb280debf197a7c4783ffa1">for_each</a> (TUnaryFunction &amp;&amp;f)</td></tr>
-<tr class="memdesc:a09e359f61eb280debf197a7c4783ffa1"><td class="mdescLeft">&#160;</td><td class="mdescRight">loop allowing reductions. f called on every entry in rData the function f needs to return the values to be used by the reducer  <a href="../../d3/d58/class_kratos_1_1_block_partition.html#a09e359f61eb280debf197a7c4783ffa1">More...</a><br /></td></tr>
-<tr class="separator:a09e359f61eb280debf197a7c4783ffa1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa5f5335ad7208f96dfc6f0bf53032c9a"><td class="memTemplParams" colspan="2">template&lt;class TThreadLocalStorage , class TFunction &gt; </td></tr>
-<tr class="memitem:aa5f5335ad7208f96dfc6f0bf53032c9a"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d3/d58/class_kratos_1_1_block_partition.html#aa5f5335ad7208f96dfc6f0bf53032c9a">for_each</a> (const TThreadLocalStorage &amp;rThreadLocalStoragePrototype, TFunction &amp;&amp;f)</td></tr>
-<tr class="memdesc:aa5f5335ad7208f96dfc6f0bf53032c9a"><td class="mdescLeft">&#160;</td><td class="mdescRight">loop with thread local storage (TLS). f called on every entry in rData  <a href="../../d3/d58/class_kratos_1_1_block_partition.html#aa5f5335ad7208f96dfc6f0bf53032c9a">More...</a><br /></td></tr>
-<tr class="separator:aa5f5335ad7208f96dfc6f0bf53032c9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2741481aa565af05939cb23178719f80"><td class="memTemplParams" colspan="2">template&lt;class TReducer , class TThreadLocalStorage , class TFunction &gt; </td></tr>
-<tr class="memitem:a2741481aa565af05939cb23178719f80"><td class="memTemplItemLeft" align="right" valign="top">TReducer::return_type&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d3/d58/class_kratos_1_1_block_partition.html#a2741481aa565af05939cb23178719f80">for_each</a> (const TThreadLocalStorage &amp;rThreadLocalStoragePrototype, TFunction &amp;&amp;f)</td></tr>
-<tr class="memdesc:a2741481aa565af05939cb23178719f80"><td class="mdescLeft">&#160;</td><td class="mdescRight">loop with thread local storage (TLS) allowing reductions. f called on every entry in rData the function f needs to return the values to be used by the reducer  <a href="../../d3/d58/class_kratos_1_1_block_partition.html#a2741481aa565af05939cb23178719f80">More...</a><br /></td></tr>
-<tr class="separator:a2741481aa565af05939cb23178719f80"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8fafa395a4589ddbcd4803f68d1f8235"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d58/class_kratos_1_1_block_partition.html#a8fafa395a4589ddbcd4803f68d1f8235">BlockPartition</a> (TIterator it_begin, TIterator it_end, <a class="el" href="../../db/d66/namespace_kratos.html#ac398e9982e45de7167981e05b7f5ff57">int</a> Nchunks=ParallelUtilities::GetNumThreads())</td></tr>
+<tr class="separator:a8fafa395a4589ddbcd4803f68d1f8235"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee6b5fb7f8fea30420faa3179466c502"><td class="memTemplParams" colspan="2">template&lt;class TUnaryFunction &gt; </td></tr>
+<tr class="memitem:aee6b5fb7f8fea30420faa3179466c502"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d3/d58/class_kratos_1_1_block_partition.html#aee6b5fb7f8fea30420faa3179466c502">for_each</a> (TUnaryFunction &amp;&amp;f)</td></tr>
+<tr class="memdesc:aee6b5fb7f8fea30420faa3179466c502"><td class="mdescLeft">&#160;</td><td class="mdescRight">simple iteration loop. f called on every entry in rData  <a href="../../d3/d58/class_kratos_1_1_block_partition.html#aee6b5fb7f8fea30420faa3179466c502">More...</a><br /></td></tr>
+<tr class="separator:aee6b5fb7f8fea30420faa3179466c502"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4604a9a3c730f5e3c6cc5a29afda6f91"><td class="memTemplParams" colspan="2">template&lt;class TReducer , class TUnaryFunction &gt; </td></tr>
+<tr class="memitem:a4604a9a3c730f5e3c6cc5a29afda6f91"><td class="memTemplItemLeft" align="right" valign="top">TReducer::return_type&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d3/d58/class_kratos_1_1_block_partition.html#a4604a9a3c730f5e3c6cc5a29afda6f91">for_each</a> (TUnaryFunction &amp;&amp;f)</td></tr>
+<tr class="memdesc:a4604a9a3c730f5e3c6cc5a29afda6f91"><td class="mdescLeft">&#160;</td><td class="mdescRight">loop allowing reductions. f called on every entry in rData the function f needs to return the values to be used by the reducer  <a href="../../d3/d58/class_kratos_1_1_block_partition.html#a4604a9a3c730f5e3c6cc5a29afda6f91">More...</a><br /></td></tr>
+<tr class="separator:a4604a9a3c730f5e3c6cc5a29afda6f91"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acef8216f53a3b874d019bcb39c951272"><td class="memTemplParams" colspan="2">template&lt;class TThreadLocalStorage , class TFunction &gt; </td></tr>
+<tr class="memitem:acef8216f53a3b874d019bcb39c951272"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d3/d58/class_kratos_1_1_block_partition.html#acef8216f53a3b874d019bcb39c951272">for_each</a> (const TThreadLocalStorage &amp;rThreadLocalStoragePrototype, TFunction &amp;&amp;f)</td></tr>
+<tr class="memdesc:acef8216f53a3b874d019bcb39c951272"><td class="mdescLeft">&#160;</td><td class="mdescRight">loop with thread local storage (TLS). f called on every entry in rData  <a href="../../d3/d58/class_kratos_1_1_block_partition.html#acef8216f53a3b874d019bcb39c951272">More...</a><br /></td></tr>
+<tr class="separator:acef8216f53a3b874d019bcb39c951272"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a69a96ad35cfa6ea6bbc0274c5768a01a"><td class="memTemplParams" colspan="2">template&lt;class TReducer , class TThreadLocalStorage , class TFunction &gt; </td></tr>
+<tr class="memitem:a69a96ad35cfa6ea6bbc0274c5768a01a"><td class="memTemplItemLeft" align="right" valign="top">TReducer::return_type&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d3/d58/class_kratos_1_1_block_partition.html#a69a96ad35cfa6ea6bbc0274c5768a01a">for_each</a> (const TThreadLocalStorage &amp;rThreadLocalStoragePrototype, TFunction &amp;&amp;f)</td></tr>
+<tr class="memdesc:a69a96ad35cfa6ea6bbc0274c5768a01a"><td class="mdescLeft">&#160;</td><td class="mdescRight">loop with thread local storage (TLS) allowing reductions. f called on every entry in rData the function f needs to return the values to be used by the reducer  <a href="../../d3/d58/class_kratos_1_1_block_partition.html#a69a96ad35cfa6ea6bbc0274c5768a01a">More...</a><br /></td></tr>
+<tr class="separator:a69a96ad35cfa6ea6bbc0274c5768a01a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><h3>template&lt;class TContainerType, class TIteratorType = decltype(std::declval&lt;TContainerType&gt;().begin()), int TMaxThreads = Globals::MaxAllowedThreads&gt;<br />
-class Kratos::BlockPartition&lt; TContainerType, TIteratorType, TMaxThreads &gt;</h3>
+<div class="textblock"><h3>template&lt;class TIterator, int MaxThreads = Globals::MaxAllowedThreads&gt;<br />
+class Kratos::BlockPartition&lt; TIterator, MaxThreads &gt;</h3>
 
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">TContainerType</td><td>- the type of the container used in the loop (must provide random access iterators) </td></tr>
-    <tr><td class="paramname">TIteratorType</td><td>- type of iterator (by default as provided by the TContainerType) </td></tr>
-    <tr><td class="paramname">TMaxThreads</td><td>- maximum number of threads allowed in the partitioning. must be known at compile time to avoid heap allocations in the partitioning </td></tr>
+    <tr><td class="paramname">TIterator</td><td>- type of iterator (must be a random access iterator) </td></tr>
+    <tr><td class="paramname">MaxThreads</td><td>- maximum number of threads allowed in the partitioning. must be known at compile time to avoid heap allocations in the partitioning </td></tr>
   </table>
   </dd>
 </dl>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a8effbb24fdb78091bceba337c836c049"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8effbb24fdb78091bceba337c836c049">&#9670;&nbsp;</a></span>BlockPartition() <span class="overload">[1/2]</span></h2>
+<a id="a8fafa395a4589ddbcd4803f68d1f8235"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8fafa395a4589ddbcd4803f68d1f8235">&#9670;&nbsp;</a></span>BlockPartition()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class TContainerType , class TIteratorType  = decltype(std::declval&lt;TContainerType&gt;().begin()), int TMaxThreads = Globals::MaxAllowedThreads&gt; </div>
+template&lt;class TIterator , int MaxThreads = Globals::MaxAllowedThreads&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../d3/d58/class_kratos_1_1_block_partition.html">Kratos::BlockPartition</a>&lt; TContainerType, TIteratorType, TMaxThreads &gt;::<a class="el" href="../../d3/d58/class_kratos_1_1_block_partition.html">BlockPartition</a> </td>
+          <td class="memname"><a class="el" href="../../d3/d58/class_kratos_1_1_block_partition.html">Kratos::BlockPartition</a>&lt; TIterator, MaxThreads &gt;::<a class="el" href="../../d3/d58/class_kratos_1_1_block_partition.html">BlockPartition</a> </td>
           <td>(</td>
-          <td class="paramtype">TIteratorType&#160;</td>
+          <td class="paramtype">TIterator&#160;</td>
           <td class="paramname"><em>it_begin</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">TIteratorType&#160;</td>
+          <td class="paramtype">TIterator&#160;</td>
           <td class="paramname"><em>it_end</em>, </td>
         </tr>
         <tr>
@@ -182,88 +176,14 @@ template&lt;class TContainerType , class TIteratorType  = decltype(std::declval&
 
 </div>
 </div>
-<a id="a03482ae4932934a1d4d9b451aafc3f32"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a03482ae4932934a1d4d9b451aafc3f32">&#9670;&nbsp;</a></span>BlockPartition() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class TContainerType , class TIteratorType  = decltype(std::declval&lt;TContainerType&gt;().begin()), int TMaxThreads = Globals::MaxAllowedThreads&gt; </div>
-<div class="memtemplate">
-template&lt;class TData &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="../../d3/d58/class_kratos_1_1_block_partition.html">Kratos::BlockPartition</a>&lt; TContainerType, TIteratorType, TMaxThreads &gt;::<a class="el" href="../../d3/d58/class_kratos_1_1_block_partition.html">BlockPartition</a> </td>
-          <td>(</td>
-          <td class="paramtype">TData &amp;&amp;&#160;</td>
-          <td class="paramname"><em>rData</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="../../db/d66/namespace_kratos.html#ac398e9982e45de7167981e05b7f5ff57">int</a>&#160;</td>
-          <td class="paramname"><em>Nchunks</em> = <code>ParallelUtilities::GetNumThreads()</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">rData</td><td>- the continer to be iterated upon </td></tr>
-    <tr><td class="paramname">Nchunks</td><td>- number of threads to be used in the loop (must be lower than TMaxThreads) </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a533000ec1a4c98f73346671e566de833"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a533000ec1a4c98f73346671e566de833">&#9670;&nbsp;</a></span>~BlockPartition()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class TContainerType , class TIteratorType  = decltype(std::declval&lt;TContainerType&gt;().begin()), int TMaxThreads = Globals::MaxAllowedThreads&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual <a class="el" href="../../d3/d58/class_kratos_1_1_block_partition.html">Kratos::BlockPartition</a>&lt; TContainerType, TIteratorType, TMaxThreads &gt;::~<a class="el" href="../../d3/d58/class_kratos_1_1_block_partition.html">BlockPartition</a> </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span><span class="mlabel">default</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="aa5f5335ad7208f96dfc6f0bf53032c9a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa5f5335ad7208f96dfc6f0bf53032c9a">&#9670;&nbsp;</a></span>for_each() <span class="overload">[1/4]</span></h2>
+<a id="acef8216f53a3b874d019bcb39c951272"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acef8216f53a3b874d019bcb39c951272">&#9670;&nbsp;</a></span>for_each() <span class="overload">[1/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class TContainerType , class TIteratorType  = decltype(std::declval&lt;TContainerType&gt;().begin()), int TMaxThreads = Globals::MaxAllowedThreads&gt; </div>
+template&lt;class TIterator , int MaxThreads = Globals::MaxAllowedThreads&gt; </div>
 <div class="memtemplate">
 template&lt;class TThreadLocalStorage , class TFunction &gt; </div>
 <table class="mlabels">
@@ -271,7 +191,7 @@ template&lt;class TThreadLocalStorage , class TFunction &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="../../d3/d58/class_kratos_1_1_block_partition.html">Kratos::BlockPartition</a>&lt; TContainerType, TIteratorType, TMaxThreads &gt;::for_each </td>
+          <td class="memname">void <a class="el" href="../../d3/d58/class_kratos_1_1_block_partition.html">Kratos::BlockPartition</a>&lt; TIterator, MaxThreads &gt;::for_each </td>
           <td>(</td>
           <td class="paramtype">const TThreadLocalStorage &amp;&#160;</td>
           <td class="paramname"><em>rThreadLocalStoragePrototype</em>, </td>
@@ -306,13 +226,13 @@ template&lt;class TThreadLocalStorage , class TFunction &gt; </div>
 
 </div>
 </div>
-<a id="a2741481aa565af05939cb23178719f80"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2741481aa565af05939cb23178719f80">&#9670;&nbsp;</a></span>for_each() <span class="overload">[2/4]</span></h2>
+<a id="a69a96ad35cfa6ea6bbc0274c5768a01a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a69a96ad35cfa6ea6bbc0274c5768a01a">&#9670;&nbsp;</a></span>for_each() <span class="overload">[2/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class TContainerType , class TIteratorType  = decltype(std::declval&lt;TContainerType&gt;().begin()), int TMaxThreads = Globals::MaxAllowedThreads&gt; </div>
+template&lt;class TIterator , int MaxThreads = Globals::MaxAllowedThreads&gt; </div>
 <div class="memtemplate">
 template&lt;class TReducer , class TThreadLocalStorage , class TFunction &gt; </div>
 <table class="mlabels">
@@ -320,7 +240,7 @@ template&lt;class TReducer , class TThreadLocalStorage , class TFunction &gt; </
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">TReducer::return_type <a class="el" href="../../d3/d58/class_kratos_1_1_block_partition.html">Kratos::BlockPartition</a>&lt; TContainerType, TIteratorType, TMaxThreads &gt;::for_each </td>
+          <td class="memname">TReducer::return_type <a class="el" href="../../d3/d58/class_kratos_1_1_block_partition.html">Kratos::BlockPartition</a>&lt; TIterator, MaxThreads &gt;::for_each </td>
           <td>(</td>
           <td class="paramtype">const TThreadLocalStorage &amp;&#160;</td>
           <td class="paramname"><em>rThreadLocalStoragePrototype</em>, </td>
@@ -356,13 +276,13 @@ template&lt;class TReducer , class TThreadLocalStorage , class TFunction &gt; </
 
 </div>
 </div>
-<a id="a97cc9cabbc1a22711940c05b451dadfa"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a97cc9cabbc1a22711940c05b451dadfa">&#9670;&nbsp;</a></span>for_each() <span class="overload">[3/4]</span></h2>
+<a id="aee6b5fb7f8fea30420faa3179466c502"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aee6b5fb7f8fea30420faa3179466c502">&#9670;&nbsp;</a></span>for_each() <span class="overload">[3/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class TContainerType , class TIteratorType  = decltype(std::declval&lt;TContainerType&gt;().begin()), int TMaxThreads = Globals::MaxAllowedThreads&gt; </div>
+template&lt;class TIterator , int MaxThreads = Globals::MaxAllowedThreads&gt; </div>
 <div class="memtemplate">
 template&lt;class TUnaryFunction &gt; </div>
 <table class="mlabels">
@@ -370,7 +290,7 @@ template&lt;class TUnaryFunction &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="../../d3/d58/class_kratos_1_1_block_partition.html">Kratos::BlockPartition</a>&lt; TContainerType, TIteratorType, TMaxThreads &gt;::for_each </td>
+          <td class="memname">void <a class="el" href="../../d3/d58/class_kratos_1_1_block_partition.html">Kratos::BlockPartition</a>&lt; TIterator, MaxThreads &gt;::for_each </td>
           <td>(</td>
           <td class="paramtype">TUnaryFunction &amp;&amp;&#160;</td>
           <td class="paramname"><em>f</em></td><td>)</td>
@@ -394,13 +314,13 @@ template&lt;class TUnaryFunction &gt; </div>
 
 </div>
 </div>
-<a id="a09e359f61eb280debf197a7c4783ffa1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a09e359f61eb280debf197a7c4783ffa1">&#9670;&nbsp;</a></span>for_each() <span class="overload">[4/4]</span></h2>
+<a id="a4604a9a3c730f5e3c6cc5a29afda6f91"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4604a9a3c730f5e3c6cc5a29afda6f91">&#9670;&nbsp;</a></span>for_each() <span class="overload">[4/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class TContainerType , class TIteratorType  = decltype(std::declval&lt;TContainerType&gt;().begin()), int TMaxThreads = Globals::MaxAllowedThreads&gt; </div>
+template&lt;class TIterator , int MaxThreads = Globals::MaxAllowedThreads&gt; </div>
 <div class="memtemplate">
 template&lt;class TReducer , class TUnaryFunction &gt; </div>
 <table class="mlabels">
@@ -408,7 +328,7 @@ template&lt;class TReducer , class TUnaryFunction &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">TReducer::return_type <a class="el" href="../../d3/d58/class_kratos_1_1_block_partition.html">Kratos::BlockPartition</a>&lt; TContainerType, TIteratorType, TMaxThreads &gt;::for_each </td>
+          <td class="memname">TReducer::return_type <a class="el" href="../../d3/d58/class_kratos_1_1_block_partition.html">Kratos::BlockPartition</a>&lt; TIterator, MaxThreads &gt;::for_each </td>
           <td>(</td>
           <td class="paramtype">TUnaryFunction &amp;&amp;&#160;</td>
           <td class="paramname"><em>f</em></td><td>)</td>
@@ -439,7 +359,7 @@ template&lt;class TReducer , class TUnaryFunction &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Mar 22 2023 02:14:43 for KratosMultiphysics by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Thu Mar 23 2023 02:13:51 for KratosMultiphysics by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

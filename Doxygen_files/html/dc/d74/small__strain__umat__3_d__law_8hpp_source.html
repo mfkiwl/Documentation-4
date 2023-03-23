@@ -144,12 +144,12 @@ $(function() {
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;   {</div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;   <span class="keyword">public</span>:</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;      <span class="comment">// The process info type definition</span></div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;      <span class="keyword">typedef</span> ProcessInfo            ProcessInfoType;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;      <span class="keyword">using</span> ProcessInfoType = ProcessInfo;</div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160; </div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;      <span class="comment">// The base class ConstitutiveLaw type definition</span></div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;      <span class="keyword">typedef</span> ConstitutiveLaw        BaseType;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;      <span class="keyword">using</span> BaseType = ConstitutiveLaw;</div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160; </div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;      <span class="keyword">typedef</span> std::size_t             <a class="code" href="../../db/d66/namespace_kratos.html#a8b2d617fdb94b53f5f2bb88e1a7ebc18">SizeType</a>;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;      <span class="keyword">using</span> <a class="code" href="../../db/d66/namespace_kratos.html#a8b2d617fdb94b53f5f2bb88e1a7ebc18">SizeType</a> = std::size_t;</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160; </div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;      <span class="keyword">static</span> constexpr <a class="code" href="../../db/d66/namespace_kratos.html#a8b2d617fdb94b53f5f2bb88e1a7ebc18">SizeType</a> <a class="code" href="../../da/dec/namespace_kratos_1_1_mortar_utilities.html#a67e0ac17841be88205ea3ffb7748688c">Dimension</a> = <a class="code" href="../../db/d66/namespace_kratos.html#a24106e544e4428dde5d7b229f689af37">N_DIM_3D</a>;</div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160; </div>
@@ -404,7 +404,7 @@ $(function() {
 <div class="ttc" id="anamespace_kratos_html_a4643b9cd9a1899940fc45640d6d5f88a"><div class="ttname"><a href="../../db/d66/namespace_kratos.html#a4643b9cd9a1899940fc45640d6d5f88a">Kratos::pF_UMATMod</a></div><div class="ttdeci">void(* pF_UMATMod)(double *STRESS, double *STATEV, double **DDSDDE, double *SSE, double *SPD, double *SCD, double *rpl, double *ddsddt, double *drplde, double *drpldt, double *stran, double *dstran, double *time, double *dtime, double *temp, double *dtemp, double *predef, double *dpred, char *materl, int *ndi, int *nshr, int *ntens, int *nstatv, const double *props, int *nprops, double *coords, double **drot, double *pnewdt, double *celent, double **dfgrd0, double **dfgrd1, int *noel, int *npt, double *kslay, double *kspt, int *kstep, int *kinc)</div><div class="ttdef"><b>Definition:</b> small_strain_umat_3D_law.hpp:46</div></div>
 <div class="ttc" id="anamespace_kratos_html_a8b2d617fdb94b53f5f2bb88e1a7ebc18"><div class="ttname"><a href="../../db/d66/namespace_kratos.html#a8b2d617fdb94b53f5f2bb88e1a7ebc18">Kratos::SizeType</a></div><div class="ttdeci">std::size_t SizeType</div><div class="ttdoc">The definition of the size type.</div><div class="ttdef"><b>Definition:</b> mortar_classes.h:45</div></div>
 <div class="ttc" id="anamespace_kratos_html_a9df0464dffec09b33f41f6bba6c75718"><div class="ttname"><a href="../../db/d66/namespace_kratos.html#a9df0464dffec09b33f41f6bba6c75718">Kratos::VOIGT_SIZE_3D</a></div><div class="ttdeci">constexpr SizeType VOIGT_SIZE_3D</div><div class="ttdef"><b>Definition:</b> geo_mechanics_application_constants.h:48</div></div>
-<div class="ttc" id="anamespacecoupling__interface__data_html_a510a1de887bc31eba21bc48a7a2e3ea4"><div class="ttname"><a href="../../d6/d78/namespacecoupling__interface__data.html#a510a1de887bc31eba21bc48a7a2e3ea4">coupling_interface_data.SetValue</a></div><div class="ttdeci">def SetValue(entity, variable, value)</div><div class="ttdef"><b>Definition:</b> coupling_interface_data.py:253</div></div>
+<div class="ttc" id="anamespacecoupling__interface__data_html_a510a1de887bc31eba21bc48a7a2e3ea4"><div class="ttname"><a href="../../d6/d78/namespacecoupling__interface__data.html#a510a1de887bc31eba21bc48a7a2e3ea4">coupling_interface_data.SetValue</a></div><div class="ttdeci">def SetValue(entity, variable, value)</div><div class="ttdef"><b>Definition:</b> coupling_interface_data.py:256</div></div>
 <div class="ttc" id="anamespaceface__heat_html_a857c2387877438b2689b7c7931bc6840"><div class="ttname"><a href="../../d6/dd7/namespaceface__heat.html#a857c2387877438b2689b7c7931bc6840">face_heat.time</a></div><div class="ttdeci">time</div><div class="ttdef"><b>Definition:</b> face_heat.py:85</div></div>
 <div class="ttc" id="anamespaceode__solve_html_a0b266774af0a13d56a57cf1ada122768"><div class="ttname"><a href="../../d2/df2/namespaceode__solve.html#a0b266774af0a13d56a57cf1ada122768">ode_solve.load</a></div><div class="ttdeci">def load(f)</div><div class="ttdef"><b>Definition:</b> ode_solve.py:307</div></div>
 <div class="ttc" id="anamespacerotating__cone_html_ab33bd86f7a31ca0d8e2b3e69609e3476"><div class="ttname"><a href="../../db/ddc/namespacerotating__cone.html#ab33bd86f7a31ca0d8e2b3e69609e3476">rotating_cone.temp</a></div><div class="ttdeci">float temp</div><div class="ttdef"><b>Definition:</b> rotating_cone.py:85</div></div>
@@ -413,7 +413,7 @@ $(function() {
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Mar 22 2023 02:08:46 for KratosMultiphysics by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Thu Mar 23 2023 02:08:07 for KratosMultiphysics by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

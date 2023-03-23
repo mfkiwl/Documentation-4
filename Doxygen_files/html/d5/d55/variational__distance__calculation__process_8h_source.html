@@ -238,7 +238,7 @@ $(function() {
 <div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;        <span class="comment">// Unfix the distances</span></div>
 <div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="../../d0/d79/namespacesensitivity_matrix.html#af14af89f05a917a288573a4b77c48c1f">nnodes</a> = <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(r_distance_model_part.NumberOfNodes());</div>
 <div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160; </div>
-<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;        <a class="code" href="../../db/d66/namespace_kratos.html#a07ef8a5b8886ded903a1e7ad4c0df960">block_for_each</a>(r_distance_model_part.Nodes(), [](<a class="code" href="../../d5/ddd/class_kratos_1_1_node.html">Node&lt;3&gt;</a>&amp; rNode){</div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;        <a class="code" href="../../db/d66/namespace_kratos.html#a382d1519b254c52c6699149b2192aa8c">block_for_each</a>(r_distance_model_part.Nodes(), [](<a class="code" href="../../d5/ddd/class_kratos_1_1_node.html">Node&lt;3&gt;</a>&amp; rNode){</div>
 <div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;            double&amp; d = rNode.FastGetSolutionStepValue(DISTANCE);</div>
 <div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160; </div>
 <div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;            <span class="comment">// Free the DISTANCE values</span></div>
@@ -262,7 +262,7 @@ $(function() {
 <div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;            }</div>
 <div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;        });</div>
 <div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160; </div>
-<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;        <a class="code" href="../../db/d66/namespace_kratos.html#a07ef8a5b8886ded903a1e7ad4c0df960">block_for_each</a>(r_distance_model_part.Elements(), [<span class="keyword">this</span>](Element&amp; rElem){</div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;        <a class="code" href="../../db/d66/namespace_kratos.html#a382d1519b254c52c6699149b2192aa8c">block_for_each</a>(r_distance_model_part.Elements(), [<span class="keyword">this</span>](Element&amp; rElem){</div>
 <div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;            array_1d&lt;double,TDim+1&gt; distances;</div>
 <div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;            auto&amp; geom = rElem.GetGeometry();</div>
 <div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160; </div>
@@ -334,7 +334,7 @@ $(function() {
 <div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160; </div>
 <div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;        <span class="comment">// Assign the max dist to all of the non-fixed positive nodes</span></div>
 <div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;        <span class="comment">// and the minimum one to the non-fixed negatives</span></div>
-<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;        <a class="code" href="../../db/d66/namespace_kratos.html#a07ef8a5b8886ded903a1e7ad4c0df960">block_for_each</a>(r_distance_model_part.Nodes(), [&amp;min_dist, &amp;max_dist](Node&lt;3&gt;&amp; rNode){</div>
+<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;        <a class="code" href="../../db/d66/namespace_kratos.html#a382d1519b254c52c6699149b2192aa8c">block_for_each</a>(r_distance_model_part.Nodes(), [&amp;min_dist, &amp;max_dist](Node&lt;3&gt;&amp; rNode){</div>
 <div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;            if(!rNode.IsFixed(DISTANCE)){</div>
 <div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;                double&amp; d = rNode.FastGetSolutionStepValue(DISTANCE);</div>
 <div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;                if(d&gt;0){</div>
@@ -668,9 +668,9 @@ $(function() {
 <div class="ttc" id="amodel_8h_html"><div class="ttname"><a href="../../dc/d51/model_8h.html">model.h</a></div></div>
 <div class="ttc" id="anamespace_kratos_1_1_rans_calculation_utilities_html_a9a7c5c44bd54e9eb32335c0980e475ae"><div class="ttname"><a href="../../d1/d7f/namespace_kratos_1_1_rans_calculation_utilities.html#a9a7c5c44bd54e9eb32335c0980e475ae">Kratos::RansCalculationUtilities::MaxIterations</a></div><div class="ttdeci">double const double const int MaxIterations</div><div class="ttdef"><b>Definition:</b> rans_calculation_utilities.h:95</div></div>
 <div class="ttc" id="anamespace_kratos_html"><div class="ttname"><a href="../../db/d66/namespace_kratos.html">Kratos</a></div><div class="ttdoc">REF: G. R. Cowper, GAUSSIAN QUADRATURE FORMULAS FOR TRIANGLES.</div><div class="ttdef"><b>Definition:</b> mesh_condition.cpp:21</div></div>
-<div class="ttc" id="anamespace_kratos_html_a07ef8a5b8886ded903a1e7ad4c0df960"><div class="ttname"><a href="../../db/d66/namespace_kratos.html#a07ef8a5b8886ded903a1e7ad4c0df960">Kratos::block_for_each</a></div><div class="ttdeci">void block_for_each(TContainerType &amp;&amp;v, TFunctionType &amp;&amp;func)</div><div class="ttdoc">simplified version of the basic loop (without reduction) to enable template type deduction</div><div class="ttdef"><b>Definition:</b> parallel_utilities.h:304</div></div>
 <div class="ttc" id="anamespace_kratos_html_a14ab8160ba3f8291244835400249c09d"><div class="ttname"><a href="../../db/d66/namespace_kratos.html#a14ab8160ba3f8291244835400249c09d">Kratos::NodesContainerType</a></div><div class="ttdeci">ModelPart::NodesContainerType NodesContainerType</div><div class="ttdef"><b>Definition:</b> find_conditions_neighbours_process.h:44</div></div>
 <div class="ttc" id="anamespace_kratos_html_a203394fe8334271c208b2765f5b7c1bf"><div class="ttname"><a href="../../db/d66/namespace_kratos.html#a203394fe8334271c208b2765f5b7c1bf">Kratos::operator&lt;&lt;</a></div><div class="ttdeci">std::ostream &amp; operator&lt;&lt;(std::ostream &amp;rOStream, const VariationalDistanceCalculationProcess&lt; TDim, TSparseSpace, TDenseSpace, TLinearSolver &gt; &amp;rThis)</div><div class="ttdoc">output stream function</div><div class="ttdef"><b>Definition:</b> variational_distance_calculation_process.h:662</div></div>
+<div class="ttc" id="anamespace_kratos_html_a382d1519b254c52c6699149b2192aa8c"><div class="ttname"><a href="../../db/d66/namespace_kratos.html#a382d1519b254c52c6699149b2192aa8c">Kratos::block_for_each</a></div><div class="ttdeci">void block_for_each(TIterator itBegin, TIterator itEnd, TFunction &amp;&amp;rFunction)</div><div class="ttdoc">Execute a functor on all items of a range in parallel.</div><div class="ttdef"><b>Definition:</b> parallel_utilities.h:296</div></div>
 <div class="ttc" id="anamespace_kratos_html_a9b8e15e898f2399931e0f4e5d52c921f"><div class="ttname"><a href="../../db/d66/namespace_kratos.html#a9b8e15e898f2399931e0f4e5d52c921f">Kratos::operator&gt;&gt;</a></div><div class="ttdeci">std::istream &amp; operator&gt;&gt;(std::istream &amp;rIStream, VariationalDistanceCalculationProcess&lt; TDim, TSparseSpace, TDenseSpace, TLinearSolver &gt; &amp;rThis)</div><div class="ttdoc">input stream function</div></div>
 <div class="ttc" id="anamespacebase__classes_1_1co__simulation__io_html_a0a50c45fc258fbfff431d2f52471b148"><div class="ttname"><a href="../../dc/d53/namespacebase__classes_1_1co__simulation__io.html#a0a50c45fc258fbfff431d2f52471b148">base_classes.co_simulation_io.Create</a></div><div class="ttdeci">def Create(*args)</div><div class="ttdef"><b>Definition:</b> co_simulation_io.py:4</div></div>
 <div class="ttc" id="anamespaceode__solve_html_aea7ae84efafeddd72467d0d424e4886f"><div class="ttname"><a href="../../d2/df2/namespaceode__solve.html#aea7ae84efafeddd72467d0d424e4886f">ode_solve.d</a></div><div class="ttdeci">int d</div><div class="ttdef"><b>Definition:</b> ode_solve.py:397</div></div>
@@ -685,7 +685,7 @@ $(function() {
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Mar 22 2023 02:13:18 for KratosMultiphysics by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Thu Mar 23 2023 02:12:31 for KratosMultiphysics by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

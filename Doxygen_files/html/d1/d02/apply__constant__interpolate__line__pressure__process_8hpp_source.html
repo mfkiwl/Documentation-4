@@ -182,7 +182,7 @@ $(function() {
 <div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;            <span class="keyword">const</span> <a class="code" href="../../d1/d66/class_kratos_1_1_variable.html">Variable&lt;double&gt;</a> &amp;var = KratosComponents&lt; Variable&lt;double&gt; &gt;::Get(<a class="code" href="../../d4/d21/class_kratos_1_1_apply_constant_interpolate_line_pressure_process.html#a1ff1014aae0cd1df2b45495c9940532b">mVariableName</a>);</div>
 <div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160; </div>
 <div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;            <span class="keywordflow">if</span> (<a class="code" href="../../d4/d21/class_kratos_1_1_apply_constant_interpolate_line_pressure_process.html#adf83a90a8f48662f89db13f6396c78c5">mIsSeepage</a>) {</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;                <a class="code" href="../../db/d66/namespace_kratos.html#a07ef8a5b8886ded903a1e7ad4c0df960">block_for_each</a>(<a class="code" href="../../d4/d21/class_kratos_1_1_apply_constant_interpolate_line_pressure_process.html#a080cc0753d1fb0c3c11717e4efc85871">mrModelPart</a>.Nodes(), [&amp;var, <span class="keyword">this</span>](<a class="code" href="../../d5/ddd/class_kratos_1_1_node.html">Node&lt;3&gt;</a>&amp; rNode) {</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;                <a class="code" href="../../db/d66/namespace_kratos.html#a382d1519b254c52c6699149b2192aa8c">block_for_each</a>(<a class="code" href="../../d4/d21/class_kratos_1_1_apply_constant_interpolate_line_pressure_process.html#a080cc0753d1fb0c3c11717e4efc85871">mrModelPart</a>.Nodes(), [&amp;var, <span class="keyword">this</span>](<a class="code" href="../../d5/ddd/class_kratos_1_1_node.html">Node&lt;3&gt;</a>&amp; rNode) {</div>
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;                    const double pressure = CalculatePressure(rNode);</div>
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160; </div>
 <div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;                    if ((PORE_PRESSURE_SIGN_FACTOR * pressure) &lt; 0.0) {</div>
@@ -193,7 +193,7 @@ $(function() {
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;                    }</div>
 <div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;                });</div>
 <div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;            } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;                <a class="code" href="../../db/d66/namespace_kratos.html#a07ef8a5b8886ded903a1e7ad4c0df960">block_for_each</a>(<a class="code" href="../../d4/d21/class_kratos_1_1_apply_constant_interpolate_line_pressure_process.html#a080cc0753d1fb0c3c11717e4efc85871">mrModelPart</a>.Nodes(), [&amp;var, <span class="keyword">this</span>](<a class="code" href="../../d5/ddd/class_kratos_1_1_node.html">Node&lt;3&gt;</a>&amp; rNode) {</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;                <a class="code" href="../../db/d66/namespace_kratos.html#a382d1519b254c52c6699149b2192aa8c">block_for_each</a>(<a class="code" href="../../d4/d21/class_kratos_1_1_apply_constant_interpolate_line_pressure_process.html#a080cc0753d1fb0c3c11717e4efc85871">mrModelPart</a>.Nodes(), [&amp;var, <span class="keyword">this</span>](<a class="code" href="../../d5/ddd/class_kratos_1_1_node.html">Node&lt;3&gt;</a>&amp; rNode) {</div>
 <div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;                    if (mIsFixed) rNode.Fix(var);</div>
 <div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;                    else if (mIsFixedProvided) rNode.Free(var);</div>
 <div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160; </div>
@@ -495,7 +495,7 @@ $(function() {
 <div class="line"><a name="l00430"></a><span class="lineno">  430</span>&#160;        <a class="code" href="../../df/d67/define_8h.html#ab9c29d6a0d19ff26bbc4e45e3181fb3f">KRATOS_TRY</a></div>
 <div class="line"><a name="l00431"></a><span class="lineno">  431</span>&#160; </div>
 <div class="line"><a name="l00432"></a><span class="lineno">  432</span>&#160;        <span class="keywordtype">int</span> MaxNodeID = -1;</div>
-<div class="line"><a name="l00433"></a><span class="lineno">  433</span>&#160;        <a class="code" href="../../db/d66/namespace_kratos.html#a07ef8a5b8886ded903a1e7ad4c0df960">block_for_each</a>(mrModelPart.Nodes(), [&amp;MaxNodeID](Node&lt;3&gt;&amp; rNode) {</div>
+<div class="line"><a name="l00433"></a><span class="lineno">  433</span>&#160;        <a class="code" href="../../db/d66/namespace_kratos.html#a382d1519b254c52c6699149b2192aa8c">block_for_each</a>(mrModelPart.Nodes(), [&amp;MaxNodeID](Node&lt;3&gt;&amp; rNode) {</div>
 <div class="line"><a name="l00434"></a><span class="lineno">  434</span>&#160;            #pragma omp critical</div>
 <div class="line"><a name="l00435"></a><span class="lineno">  435</span>&#160;            MaxNodeID = std::max&lt;int&gt;(MaxNodeID, rNode.Id());</div>
 <div class="line"><a name="l00436"></a><span class="lineno">  436</span>&#160;        });</div>
@@ -515,7 +515,7 @@ $(function() {
 <div class="line"><a name="l00450"></a><span class="lineno">  450</span>&#160;        mBoundaryNodes.resize(BoundaryNodes.size());</div>
 <div class="line"><a name="l00451"></a><span class="lineno">  451</span>&#160; </div>
 <div class="line"><a name="l00452"></a><span class="lineno">  452</span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> iPosition = 0;</div>
-<div class="line"><a name="l00453"></a><span class="lineno">  453</span>&#160;        <a class="code" href="../../db/d66/namespace_kratos.html#a07ef8a5b8886ded903a1e7ad4c0df960">block_for_each</a>(mrModelPart.Nodes(), [&amp;iPosition, &amp;BoundaryNodes, <span class="keyword">this</span>](Node&lt;3&gt;&amp; rNode) {</div>
+<div class="line"><a name="l00453"></a><span class="lineno">  453</span>&#160;        <a class="code" href="../../db/d66/namespace_kratos.html#a382d1519b254c52c6699149b2192aa8c">block_for_each</a>(mrModelPart.Nodes(), [&amp;iPosition, &amp;BoundaryNodes, <span class="keyword">this</span>](Node&lt;3&gt;&amp; rNode) {</div>
 <div class="line"><a name="l00454"></a><span class="lineno">  454</span>&#160;            const int Id = rNode.Id();</div>
 <div class="line"><a name="l00455"></a><span class="lineno">  455</span>&#160;            for (unsigned int j = 0; j &lt; BoundaryNodes.size(); ++j) {</div>
 <div class="line"><a name="l00456"></a><span class="lineno">  456</span>&#160;                if (Id == BoundaryNodes[j]) {</div>
@@ -713,8 +713,8 @@ $(function() {
 <div class="ttc" id="akratos__parameters_8h_html"><div class="ttname"><a href="../../db/d71/kratos__parameters_8h.html">kratos_parameters.h</a></div></div>
 <div class="ttc" id="anamespace_d_e_m__benchmarks_html_a9635268cbcd16b8b3f12c26323611b53"><div class="ttname"><a href="../../d3/d1a/namespace_d_e_m__benchmarks.html#a9635268cbcd16b8b3f12c26323611b53">DEM_benchmarks.end</a></div><div class="ttdeci">end</div><div class="ttdef"><b>Definition:</b> DEM_benchmarks.py:180</div></div>
 <div class="ttc" id="anamespace_kratos_html"><div class="ttname"><a href="../../db/d66/namespace_kratos.html">Kratos</a></div><div class="ttdoc">REF: G. R. Cowper, GAUSSIAN QUADRATURE FORMULAS FOR TRIANGLES.</div><div class="ttdef"><b>Definition:</b> mesh_condition.cpp:21</div></div>
-<div class="ttc" id="anamespace_kratos_html_a07ef8a5b8886ded903a1e7ad4c0df960"><div class="ttname"><a href="../../db/d66/namespace_kratos.html#a07ef8a5b8886ded903a1e7ad4c0df960">Kratos::block_for_each</a></div><div class="ttdeci">void block_for_each(TContainerType &amp;&amp;v, TFunctionType &amp;&amp;func)</div><div class="ttdoc">simplified version of the basic loop (without reduction) to enable template type deduction</div><div class="ttdef"><b>Definition:</b> parallel_utilities.h:304</div></div>
 <div class="ttc" id="anamespace_kratos_html_a24106e544e4428dde5d7b229f689af37"><div class="ttname"><a href="../../db/d66/namespace_kratos.html#a24106e544e4428dde5d7b229f689af37">Kratos::N_DIM_3D</a></div><div class="ttdeci">constexpr SizeType N_DIM_3D</div><div class="ttdef"><b>Definition:</b> geo_mechanics_application_constants.h:32</div></div>
+<div class="ttc" id="anamespace_kratos_html_a382d1519b254c52c6699149b2192aa8c"><div class="ttname"><a href="../../db/d66/namespace_kratos.html#a382d1519b254c52c6699149b2192aa8c">Kratos::block_for_each</a></div><div class="ttdeci">void block_for_each(TIterator itBegin, TIterator itEnd, TFunction &amp;&amp;rFunction)</div><div class="ttdoc">Execute a functor on all items of a range in parallel.</div><div class="ttdef"><b>Definition:</b> parallel_utilities.h:296</div></div>
 <div class="ttc" id="anamespace_kratos_html_a38dda4adf8a824d2243e42266e9aad63"><div class="ttname"><a href="../../db/d66/namespace_kratos.html#a38dda4adf8a824d2243e42266e9aad63">Kratos::LARGE</a></div><div class="ttdeci">constexpr double LARGE</div><div class="ttdef"><b>Definition:</b> geo_mechanics_application_constants.h:38</div></div>
 <div class="ttc" id="anamespace_kratos_html_a41974f108d9da0c0d4c733a137bbf3a8"><div class="ttname"><a href="../../db/d66/namespace_kratos.html#a41974f108d9da0c0d4c733a137bbf3a8">Kratos::Vector3</a></div><div class="ttdeci">array_1d&lt; double, 3 &gt; Vector3</div><div class="ttdef"><b>Definition:</b> variables.cpp:26</div></div>
 <div class="ttc" id="anamespace_kratos_html_aaff3672cc52b90ee3d84713de272e1b5"><div class="ttname"><a href="../../db/d66/namespace_kratos.html#aaff3672cc52b90ee3d84713de272e1b5">Kratos::noalias</a></div><div class="ttdeci">T &amp; noalias(T &amp;TheMatrix)</div><div class="ttdef"><b>Definition:</b> amatrix_interface.h:484</div></div>
@@ -729,7 +729,7 @@ $(function() {
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Mar 22 2023 02:08:46 for KratosMultiphysics by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Thu Mar 23 2023 02:08:08 for KratosMultiphysics by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

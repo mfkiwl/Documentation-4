@@ -570,7 +570,7 @@ $(function() {
 <div class="line"><a name="l00541"></a><span class="lineno">  541</span>&#160;            <span class="comment">// initialize data</span></div>
 <div class="line"><a name="l00542"></a><span class="lineno">  542</span>&#160;            <a class="code" href="../../d3/dc4/class_variable_utils.html">VariableUtils</a>().SetNonHistoricalVariable(PAIRING_STATUS, 1, mrModelPartDestination.Nodes());</div>
 <div class="line"><a name="l00543"></a><span class="lineno">  543</span>&#160; </div>
-<div class="line"><a name="l00544"></a><span class="lineno">  544</span>&#160;            <a class="code" href="../../db/d66/namespace_kratos.html#a07ef8a5b8886ded903a1e7ad4c0df960">block_for_each</a>(mMapperLocalSystems, [](<span class="keyword">const</span> <a class="code" href="../../de/dd2/namespace_kratos_1_1_mapper_utilities.html#a8f0639520a4ef4975d80d0de7a3926ec">MapperLocalSystemPointer</a>&amp; rpLocalSys){</div>
+<div class="line"><a name="l00544"></a><span class="lineno">  544</span>&#160;            <a class="code" href="../../db/d66/namespace_kratos.html#a382d1519b254c52c6699149b2192aa8c">block_for_each</a>(mMapperLocalSystems, [](<span class="keyword">const</span> <a class="code" href="../../de/dd2/namespace_kratos_1_1_mapper_utilities.html#a8f0639520a4ef4975d80d0de7a3926ec">MapperLocalSystemPointer</a>&amp; rpLocalSys){</div>
 <div class="line"><a name="l00545"></a><span class="lineno">  545</span>&#160;                rpLocalSys-&gt;SetPairingStatusForPrinting();</div>
 <div class="line"><a name="l00546"></a><span class="lineno">  546</span>&#160;            });</div>
 <div class="line"><a name="l00547"></a><span class="lineno">  547</span>&#160; </div>
@@ -588,7 +588,7 @@ $(function() {
 <div class="line"><a name="l00559"></a><span class="lineno">  559</span>&#160; </div>
 <div class="line"><a name="l00560"></a><span class="lineno">  560</span>&#160;            VtkOutput(mrModelPartDestination, vtk_params).PrintOutput(<a class="code" href="../../d3/d16/namespacesp__statistics.html#a12569762dbd6857f994f980ab947d228">file_name</a>);</div>
 <div class="line"><a name="l00561"></a><span class="lineno">  561</span>&#160; </div>
-<div class="line"><a name="l00562"></a><span class="lineno">  562</span>&#160;            <a class="code" href="../../db/d66/namespace_kratos.html#a07ef8a5b8886ded903a1e7ad4c0df960">block_for_each</a>(mrModelPartDestination.Nodes(), [&amp;](Node&lt;3&gt;&amp; rNode){</div>
+<div class="line"><a name="l00562"></a><span class="lineno">  562</span>&#160;            <a class="code" href="../../db/d66/namespace_kratos.html#a382d1519b254c52c6699149b2192aa8c">block_for_each</a>(mrModelPartDestination.Nodes(), [&amp;](Node&lt;3&gt;&amp; rNode){</div>
 <div class="line"><a name="l00563"></a><span class="lineno">  563</span>&#160;                rNode.GetData().Erase(PAIRING_STATUS);</div>
 <div class="line"><a name="l00564"></a><span class="lineno">  564</span>&#160;            });</div>
 <div class="line"><a name="l00565"></a><span class="lineno">  565</span>&#160;        }</div>
@@ -674,7 +674,7 @@ $(function() {
 <div class="ttc" id="anamespace_kratos_1_1_python_html_a4cae71fcb9b031fce91a1795db09a605"><div class="ttname"><a href="../../da/d07/namespace_kratos_1_1_python.html#a4cae71fcb9b031fce91a1795db09a605">Kratos::Python::TransposeMult</a></div><div class="ttdeci">void TransposeMult(SparseSpaceType &amp;dummy, SparseSpaceType::MatrixType &amp;rA, SparseSpaceType::VectorType &amp;rX, SparseSpaceType::VectorType &amp;rY)</div><div class="ttdef"><b>Definition:</b> add_strategies_to_python.cpp:112</div></div>
 <div class="ttc" id="anamespace_kratos_1_1_python_html_ad59ff229bb168646076a9ff504912b4f"><div class="ttname"><a href="../../da/d07/namespace_kratos_1_1_python.html#ad59ff229bb168646076a9ff504912b4f">Kratos::Python::Mult</a></div><div class="ttdeci">void Mult(TSpaceType &amp;dummy, typename TSpaceType::MatrixType &amp;rA, typename TSpaceType::VectorType &amp;rX, typename TSpaceType::VectorType &amp;rY)</div><div class="ttdef"><b>Definition:</b> add_strategies_to_python.cpp:106</div></div>
 <div class="ttc" id="anamespace_kratos_html"><div class="ttname"><a href="../../db/d66/namespace_kratos.html">Kratos</a></div><div class="ttdoc">REF: G. R. Cowper, GAUSSIAN QUADRATURE FORMULAS FOR TRIANGLES.</div><div class="ttdef"><b>Definition:</b> mesh_condition.cpp:21</div></div>
-<div class="ttc" id="anamespace_kratos_html_a07ef8a5b8886ded903a1e7ad4c0df960"><div class="ttname"><a href="../../db/d66/namespace_kratos.html#a07ef8a5b8886ded903a1e7ad4c0df960">Kratos::block_for_each</a></div><div class="ttdeci">void block_for_each(TContainerType &amp;&amp;v, TFunctionType &amp;&amp;func)</div><div class="ttdoc">simplified version of the basic loop (without reduction) to enable template type deduction</div><div class="ttdef"><b>Definition:</b> parallel_utilities.h:304</div></div>
+<div class="ttc" id="anamespace_kratos_html_a382d1519b254c52c6699149b2192aa8c"><div class="ttname"><a href="../../db/d66/namespace_kratos.html#a382d1519b254c52c6699149b2192aa8c">Kratos::block_for_each</a></div><div class="ttdeci">void block_for_each(TIterator itBegin, TIterator itEnd, TFunction &amp;&amp;rFunction)</div><div class="ttdoc">Execute a functor on all items of a range in parallel.</div><div class="ttdef"><b>Definition:</b> parallel_utilities.h:296</div></div>
 <div class="ttc" id="anamespace_kratos_html_a3af372ea08f0c45365786d82a166d8a3"><div class="ttname"><a href="../../db/d66/namespace_kratos.html#a3af372ea08f0c45365786d82a166d8a3">Kratos::unique_ptr</a></div><div class="ttdeci">std::unique_ptr&lt; T &gt; unique_ptr</div><div class="ttdef"><b>Definition:</b> smart_pointers.h:33</div></div>
 <div class="ttc" id="anamespace_mapping_application_html_a0bbb63cbfddc161d2f35fb7be43e0ad1"><div class="ttname"><a href="../../d0/df1/namespace_mapping_application.html#a0bbb63cbfddc161d2f35fb7be43e0ad1">MappingApplication.Mapper</a></div><div class="ttdeci">Mapper</div><div class="ttdef"><b>Definition:</b> MappingApplication.py:39</div></div>
 <div class="ttc" id="anamespacescript_html_a2201e2e84e85608e2a8986b959851d50"><div class="ttname"><a href="../../df/d58/namespacescript.html#a2201e2e84e85608e2a8986b959851d50">script.echo_level</a></div><div class="ttdeci">echo_level</div><div class="ttdef"><b>Definition:</b> script.py:68</div></div>
@@ -687,7 +687,7 @@ $(function() {
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Mar 22 2023 02:08:59 for KratosMultiphysics by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Thu Mar 23 2023 02:08:20 for KratosMultiphysics by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

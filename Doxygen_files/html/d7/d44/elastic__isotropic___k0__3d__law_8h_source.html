@@ -118,9 +118,9 @@ $(function() {
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="keyword">public</span>:</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keyword">typedef</span> ConstitutiveLaw         BaseType;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keyword">using</span> BaseType = ConstitutiveLaw;</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keyword">typedef</span> std::size_t             <a class="code" href="../../db/d66/namespace_kratos.html#a8b2d617fdb94b53f5f2bb88e1a7ebc18">SizeType</a>;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keyword">using</span> <a class="code" href="../../db/d66/namespace_kratos.html#a8b2d617fdb94b53f5f2bb88e1a7ebc18">SizeType</a> = std::size_t;</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keyword">static</span> constexpr <a class="code" href="../../db/d66/namespace_kratos.html#a8b2d617fdb94b53f5f2bb88e1a7ebc18">SizeType</a> <a class="code" href="../../da/dec/namespace_kratos_1_1_mortar_utilities.html#a67e0ac17841be88205ea3ffb7748688c">Dimension</a> = <a class="code" href="../../db/d66/namespace_kratos.html#a24106e544e4428dde5d7b229f689af37">N_DIM_3D</a>;</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
@@ -265,14 +265,14 @@ $(function() {
 <div class="ttc" id="anamespace_kratos_html_a884ade0675a6a17a14d1bce5e3ae2fe3"><div class="ttname"><a href="../../db/d66/namespace_kratos.html#a884ade0675a6a17a14d1bce5e3ae2fe3">Kratos::GeometryType</a></div><div class="ttdeci">Geometry&lt; NodeType &gt; GeometryType</div><div class="ttdoc">The definition of the geometry.</div><div class="ttdef"><b>Definition:</b> mortar_classes.h:39</div></div>
 <div class="ttc" id="anamespace_kratos_html_a8b2d617fdb94b53f5f2bb88e1a7ebc18"><div class="ttname"><a href="../../db/d66/namespace_kratos.html#a8b2d617fdb94b53f5f2bb88e1a7ebc18">Kratos::SizeType</a></div><div class="ttdeci">std::size_t SizeType</div><div class="ttdoc">The definition of the size type.</div><div class="ttdef"><b>Definition:</b> mortar_classes.h:45</div></div>
 <div class="ttc" id="anamespace_kratos_html_a9df0464dffec09b33f41f6bba6c75718"><div class="ttname"><a href="../../db/d66/namespace_kratos.html#a9df0464dffec09b33f41f6bba6c75718">Kratos::VOIGT_SIZE_3D</a></div><div class="ttdeci">constexpr SizeType VOIGT_SIZE_3D</div><div class="ttdef"><b>Definition:</b> geo_mechanics_application_constants.h:48</div></div>
-<div class="ttc" id="anamespacecoupling__interface__data_html_a510a1de887bc31eba21bc48a7a2e3ea4"><div class="ttname"><a href="../../d6/d78/namespacecoupling__interface__data.html#a510a1de887bc31eba21bc48a7a2e3ea4">coupling_interface_data.SetValue</a></div><div class="ttdeci">def SetValue(entity, variable, value)</div><div class="ttdef"><b>Definition:</b> coupling_interface_data.py:253</div></div>
+<div class="ttc" id="anamespacecoupling__interface__data_html_a510a1de887bc31eba21bc48a7a2e3ea4"><div class="ttname"><a href="../../d6/d78/namespacecoupling__interface__data.html#a510a1de887bc31eba21bc48a7a2e3ea4">coupling_interface_data.SetValue</a></div><div class="ttdeci">def SetValue(entity, variable, value)</div><div class="ttdef"><b>Definition:</b> coupling_interface_data.py:256</div></div>
 <div class="ttc" id="anamespaceode__solve_html_a0b266774af0a13d56a57cf1ada122768"><div class="ttname"><a href="../../d2/df2/namespaceode__solve.html#a0b266774af0a13d56a57cf1ada122768">ode_solve.load</a></div><div class="ttdeci">def load(f)</div><div class="ttdef"><b>Definition:</b> ode_solve.py:307</div></div>
 <div class="ttc" id="aserializer_8h_html"><div class="ttname"><a href="../../dd/d5f/serializer_8h.html">serializer.h</a></div></div>
 <div class="ttc" id="atransfer__utility_8h_html_a95ed76edc983cae239b65f370953d216"><div class="ttname"><a href="../../d6/d3f/transfer__utility_8h.html#a95ed76edc983cae239b65f370953d216">KRATOS_CLASS_POINTER_DEFINITION</a></div><div class="ttdeci">KRATOS_CLASS_POINTER_DEFINITION(TransferUtility)</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Mar 22 2023 02:08:46 for KratosMultiphysics by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Thu Mar 23 2023 02:08:07 for KratosMultiphysics by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

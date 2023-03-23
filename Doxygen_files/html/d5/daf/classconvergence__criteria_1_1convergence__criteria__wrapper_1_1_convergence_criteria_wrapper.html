@@ -84,7 +84,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>This class wraps the convergence criteria such that they can be used "automized" =&gt; this class stores the residual and updates the solutions, such that the convergence criteria can be configured through json In case of distributed data, the data is gathered on one rank, the convergence checked and the result broadcasted to the other ranks.  
+<p>This class wraps the convergence criteria such that they can be used "automated".  
  <a href="../../d5/daf/classconvergence__criteria_1_1convergence__criteria__wrapper_1_1_convergence_criteria_wrapper.html#details">More...</a></p>
 <div class="dynheader">
 Collaboration diagram for convergence_criteria.convergence_criteria_wrapper.ConvergenceCriteriaWrapper:</div>
@@ -95,8 +95,8 @@ Collaboration diagram for convergence_criteria.convergence_criteria_wrapper.Conv
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a2969ca5a3c27233f07dc3ecc53985383"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/daf/classconvergence__criteria_1_1convergence__criteria__wrapper_1_1_convergence_criteria_wrapper.html#a2969ca5a3c27233f07dc3ecc53985383">__init__</a> (self, settings, solver_wrapper, parent_coupled_solver_data_communicator)</td></tr>
-<tr class="separator:a2969ca5a3c27233f07dc3ecc53985383"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac3d20b580976ce306c0dc63044beed8d"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/daf/classconvergence__criteria_1_1convergence__criteria__wrapper_1_1_convergence_criteria_wrapper.html#ac3d20b580976ce306c0dc63044beed8d">__init__</a> (self, KratosMultiphysics.Parameters settings, CouplingInterfaceData <a class="el" href="../../d5/daf/classconvergence__criteria_1_1convergence__criteria__wrapper_1_1_convergence_criteria_wrapper.html#ad198d3a7c54bd99fea2dafe07d7af793">interface_data</a>, KratosMultiphysics.DataCommunicator parent_coupled_solver_data_communicator)</td></tr>
+<tr class="separator:ac3d20b580976ce306c0dc63044beed8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a94a340869f958b4e9c18c912056bd57a"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/daf/classconvergence__criteria_1_1convergence__criteria__wrapper_1_1_convergence_criteria_wrapper.html#a94a340869f958b4e9c18c912056bd57a">Initialize</a> (self)</td></tr>
 <tr class="separator:a94a340869f958b4e9c18c912056bd57a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa05547618a824e41c934a7f0bf1807c7"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/daf/classconvergence__criteria_1_1convergence__criteria__wrapper_1_1_convergence_criteria_wrapper.html#aa05547618a824e41c934a7f0bf1807c7">Finalize</a> (self)</td></tr>
@@ -132,10 +132,11 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a61f39090d92e39124059254f02a26ff1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>This class wraps the convergence criteria such that they can be used "automized" =&gt; this class stores the residual and updates the solutions, such that the convergence criteria can be configured through json In case of distributed data, the data is gathered on one rank, the convergence checked and the result broadcasted to the other ranks. </p>
+<div class="textblock"><p>This class wraps the convergence criteria such that they can be used "automated". </p>
+<p>This class stores the residual and updates the solutions, such that the convergence criteria can be configured through JSON. In case of distributed data, the data is gathered on one rank, the convergence checked and the result broadcast to the other ranks. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a2969ca5a3c27233f07dc3ecc53985383"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2969ca5a3c27233f07dc3ecc53985383">&#9670;&nbsp;</a></span>__init__()</h2>
+<a id="ac3d20b580976ce306c0dc63044beed8d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac3d20b580976ce306c0dc63044beed8d">&#9670;&nbsp;</a></span>__init__()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -149,19 +150,19 @@ Public Attributes</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">&#160;</td>
+          <td class="paramtype">KratosMultiphysics.Parameters&#160;</td>
           <td class="paramname"><em>settings</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>solver_wrapper</em>, </td>
+          <td class="paramtype">CouplingInterfaceData&#160;</td>
+          <td class="paramname"><em>interface_data</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">&#160;</td>
+          <td class="paramtype">KratosMultiphysics.DataCommunicator&#160;</td>
           <td class="paramname"><em>parent_coupled_solver_data_communicator</em>&#160;</td>
         </tr>
         <tr>
@@ -428,7 +429,7 @@ Public Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Mar 22 2023 02:14:35 for KratosMultiphysics by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Thu Mar 23 2023 02:13:43 for KratosMultiphysics by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

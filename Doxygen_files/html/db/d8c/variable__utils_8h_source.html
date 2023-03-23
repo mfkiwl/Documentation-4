@@ -648,7 +648,7 @@ $(function() {
 <div class="line"><a name="l00653"></a><span class="lineno">  653</span>&#160;    {</div>
 <div class="line"><a name="l00654"></a><span class="lineno">  654</span>&#160;        <a class="code" href="../../df/d67/define_8h.html#ab9c29d6a0d19ff26bbc4e45e3181fb3f">KRATOS_TRY</a></div>
 <div class="line"><a name="l00655"></a><span class="lineno">  655</span>&#160; </div>
-<div class="line"><a name="l00656"></a><span class="lineno">  656</span>&#160;        <a class="code" href="../../db/d66/namespace_kratos.html#a07ef8a5b8886ded903a1e7ad4c0df960">block_for_each</a>(<a class="code" href="../../db/d91/namespace_kratos_1_1_rans_variable_utilities.html#a2f23795bfd18a5c0e153aad48feaa4d7">rNodes</a>, [&amp;](Node&lt;3&gt;&amp; rNode) {</div>
+<div class="line"><a name="l00656"></a><span class="lineno">  656</span>&#160;        <a class="code" href="../../db/d66/namespace_kratos.html#a382d1519b254c52c6699149b2192aa8c">block_for_each</a>(<a class="code" href="../../db/d91/namespace_kratos_1_1_rans_variable_utilities.html#a2f23795bfd18a5c0e153aad48feaa4d7">rNodes</a>, [&amp;](Node&lt;3&gt;&amp; rNode) {</div>
 <div class="line"><a name="l00657"></a><span class="lineno">  657</span>&#160;            rNode.FastGetSolutionStepValue(<a class="code" href="../../d7/dc7/namespace_kratos_1_1_move_mesh_utilities.html#aee4d4e75adb6cdde18e7be730037fb71">rVariable</a>, <a class="code" href="../../d4/d48/namespace_kratos_1_1_rans_application_test_utilities.html#af1b89bfe107d734fc948b620f42f1cf8">Step</a>) = rValue;</div>
 <div class="line"><a name="l00658"></a><span class="lineno">  658</span>&#160;        });</div>
 <div class="line"><a name="l00659"></a><span class="lineno">  659</span>&#160; </div>
@@ -665,7 +665,7 @@ $(function() {
 <div class="line"><a name="l00680"></a><span class="lineno">  680</span>&#160;    {</div>
 <div class="line"><a name="l00681"></a><span class="lineno">  681</span>&#160;        <a class="code" href="../../df/d67/define_8h.html#ab9c29d6a0d19ff26bbc4e45e3181fb3f">KRATOS_TRY</a></div>
 <div class="line"><a name="l00682"></a><span class="lineno">  682</span>&#160; </div>
-<div class="line"><a name="l00683"></a><span class="lineno">  683</span>&#160;        <a class="code" href="../../db/d66/namespace_kratos.html#a07ef8a5b8886ded903a1e7ad4c0df960">block_for_each</a>(<a class="code" href="../../db/d91/namespace_kratos_1_1_rans_variable_utilities.html#a2f23795bfd18a5c0e153aad48feaa4d7">rNodes</a>, [&amp;](Node&lt;3&gt;&amp; rNode){</div>
+<div class="line"><a name="l00683"></a><span class="lineno">  683</span>&#160;        <a class="code" href="../../db/d66/namespace_kratos.html#a382d1519b254c52c6699149b2192aa8c">block_for_each</a>(<a class="code" href="../../db/d91/namespace_kratos_1_1_rans_variable_utilities.html#a2f23795bfd18a5c0e153aad48feaa4d7">rNodes</a>, [&amp;](Node&lt;3&gt;&amp; rNode){</div>
 <div class="line"><a name="l00684"></a><span class="lineno">  684</span>&#160;            <span class="keywordflow">if</span>(rNode.Is(Flag) == CheckValue){</div>
 <div class="line"><a name="l00685"></a><span class="lineno">  685</span>&#160;                rNode.FastGetSolutionStepValue(rVariable) = rValue;}</div>
 <div class="line"><a name="l00686"></a><span class="lineno">  686</span>&#160;        });</div>
@@ -688,7 +688,7 @@ $(function() {
 <div class="line"><a name="l00716"></a><span class="lineno">  716</span>&#160;        TContainerType&amp; rContainer,</div>
 <div class="line"><a name="l00717"></a><span class="lineno">  717</span>&#160;        <span class="keyword">const</span> TVariableArgs&amp;... rVariableArgs)</div>
 <div class="line"><a name="l00718"></a><span class="lineno">  718</span>&#160;    {</div>
-<div class="line"><a name="l00719"></a><span class="lineno">  719</span>&#160;        <a class="code" href="../../db/d66/namespace_kratos.html#a07ef8a5b8886ded903a1e7ad4c0df960">block_for_each</a>(rContainer, [&amp;](<span class="keyword">auto</span>&amp; rEntity){</div>
+<div class="line"><a name="l00719"></a><span class="lineno">  719</span>&#160;        <a class="code" href="../../db/d66/namespace_kratos.html#a382d1519b254c52c6699149b2192aa8c">block_for_each</a>(rContainer, [&amp;](<span class="keyword">auto</span>&amp; rEntity){</div>
 <div class="line"><a name="l00720"></a><span class="lineno">  720</span>&#160;            (rEntity.SetValue(rVariableArgs, rVariableArgs.Zero()), ...);</div>
 <div class="line"><a name="l00721"></a><span class="lineno">  721</span>&#160;        });</div>
 <div class="line"><a name="l00722"></a><span class="lineno">  722</span>&#160;    }</div>
@@ -708,7 +708,7 @@ $(function() {
 <div class="line"><a name="l00748"></a><span class="lineno">  748</span>&#160;        <a class="code" href="../../db/d66/namespace_kratos.html#a14ab8160ba3f8291244835400249c09d">NodesContainerType</a>&amp; <a class="code" href="../../db/d91/namespace_kratos_1_1_rans_variable_utilities.html#a2f23795bfd18a5c0e153aad48feaa4d7">rNodes</a>,</div>
 <div class="line"><a name="l00749"></a><span class="lineno">  749</span>&#160;        <span class="keyword">const</span> TVariableArgs&amp;... rVariableArgs)</div>
 <div class="line"><a name="l00750"></a><span class="lineno">  750</span>&#160;    {</div>
-<div class="line"><a name="l00751"></a><span class="lineno">  751</span>&#160;        <a class="code" href="../../db/d66/namespace_kratos.html#a07ef8a5b8886ded903a1e7ad4c0df960">block_for_each</a>(<a class="code" href="../../db/d91/namespace_kratos_1_1_rans_variable_utilities.html#a2f23795bfd18a5c0e153aad48feaa4d7">rNodes</a>, [&amp;](<a class="code" href="../../d5/ddd/class_kratos_1_1_node.html">NodeType</a>&amp; rNode){(</div>
+<div class="line"><a name="l00751"></a><span class="lineno">  751</span>&#160;        <a class="code" href="../../db/d66/namespace_kratos.html#a382d1519b254c52c6699149b2192aa8c">block_for_each</a>(<a class="code" href="../../db/d91/namespace_kratos_1_1_rans_variable_utilities.html#a2f23795bfd18a5c0e153aad48feaa4d7">rNodes</a>, [&amp;](<a class="code" href="../../d5/ddd/class_kratos_1_1_node.html">NodeType</a>&amp; rNode){(</div>
 <div class="line"><a name="l00752"></a><span class="lineno">  752</span>&#160;            AuxiliaryHistoricalValueSetter&lt;typename TVariableArgs::Type&gt;(rVariableArgs, rVariableArgs.Zero(), rNode), ...);</div>
 <div class="line"><a name="l00753"></a><span class="lineno">  753</span>&#160;        });</div>
 <div class="line"><a name="l00754"></a><span class="lineno">  754</span>&#160;    }</div>
@@ -722,7 +722,7 @@ $(function() {
 <div class="line"><a name="l00768"></a><span class="lineno">  768</span>&#160;    {</div>
 <div class="line"><a name="l00769"></a><span class="lineno">  769</span>&#160;        <a class="code" href="../../df/d67/define_8h.html#ab9c29d6a0d19ff26bbc4e45e3181fb3f">KRATOS_TRY</a></div>
 <div class="line"><a name="l00770"></a><span class="lineno">  770</span>&#160; </div>
-<div class="line"><a name="l00771"></a><span class="lineno">  771</span>&#160;        <a class="code" href="../../db/d66/namespace_kratos.html#a07ef8a5b8886ded903a1e7ad4c0df960">block_for_each</a>(rContainer, [&amp;](<span class="keyword">typename</span> TContainerType::value_type&amp; rEntity){</div>
+<div class="line"><a name="l00771"></a><span class="lineno">  771</span>&#160;        <a class="code" href="../../db/d66/namespace_kratos.html#a382d1519b254c52c6699149b2192aa8c">block_for_each</a>(rContainer, [&amp;](<span class="keyword">typename</span> TContainerType::value_type&amp; rEntity){</div>
 <div class="line"><a name="l00772"></a><span class="lineno">  772</span>&#160;            rEntity.SetValue(<a class="code" href="../../d7/dc7/namespace_kratos_1_1_move_mesh_utilities.html#aee4d4e75adb6cdde18e7be730037fb71">rVariable</a>, Value);</div>
 <div class="line"><a name="l00773"></a><span class="lineno">  773</span>&#160;        });</div>
 <div class="line"><a name="l00774"></a><span class="lineno">  774</span>&#160; </div>
@@ -740,7 +740,7 @@ $(function() {
 <div class="line"><a name="l00794"></a><span class="lineno">  794</span>&#160;    {</div>
 <div class="line"><a name="l00795"></a><span class="lineno">  795</span>&#160;        <a class="code" href="../../df/d67/define_8h.html#ab9c29d6a0d19ff26bbc4e45e3181fb3f">KRATOS_TRY</a></div>
 <div class="line"><a name="l00796"></a><span class="lineno">  796</span>&#160; </div>
-<div class="line"><a name="l00797"></a><span class="lineno">  797</span>&#160;        <a class="code" href="../../db/d66/namespace_kratos.html#a07ef8a5b8886ded903a1e7ad4c0df960">block_for_each</a>(rContainer, [&amp;](<span class="keyword">typename</span> TContainerType::value_type&amp; rEntity){</div>
+<div class="line"><a name="l00797"></a><span class="lineno">  797</span>&#160;        <a class="code" href="../../db/d66/namespace_kratos.html#a382d1519b254c52c6699149b2192aa8c">block_for_each</a>(rContainer, [&amp;](<span class="keyword">typename</span> TContainerType::value_type&amp; rEntity){</div>
 <div class="line"><a name="l00798"></a><span class="lineno">  798</span>&#160;            <span class="keywordflow">if</span>(rEntity.Is(Flag) == Check){</div>
 <div class="line"><a name="l00799"></a><span class="lineno">  799</span>&#160;                rEntity.SetValue(rVariable, rValue);}</div>
 <div class="line"><a name="l00800"></a><span class="lineno">  800</span>&#160;        });</div>
@@ -756,7 +756,7 @@ $(function() {
 <div class="line"><a name="l00815"></a><span class="lineno">  815</span>&#160;    {</div>
 <div class="line"><a name="l00816"></a><span class="lineno">  816</span>&#160;        <a class="code" href="../../df/d67/define_8h.html#ab9c29d6a0d19ff26bbc4e45e3181fb3f">KRATOS_TRY</a></div>
 <div class="line"><a name="l00817"></a><span class="lineno">  817</span>&#160; </div>
-<div class="line"><a name="l00818"></a><span class="lineno">  818</span>&#160;        <a class="code" href="../../db/d66/namespace_kratos.html#a07ef8a5b8886ded903a1e7ad4c0df960">block_for_each</a>(rContainer, [&amp;<a class="code" href="../../d7/dc7/namespace_kratos_1_1_move_mesh_utilities.html#aee4d4e75adb6cdde18e7be730037fb71">rVariable</a>](<span class="keyword">auto</span>&amp; rEntity){</div>
+<div class="line"><a name="l00818"></a><span class="lineno">  818</span>&#160;        <a class="code" href="../../db/d66/namespace_kratos.html#a382d1519b254c52c6699149b2192aa8c">block_for_each</a>(rContainer, [&amp;<a class="code" href="../../d7/dc7/namespace_kratos_1_1_move_mesh_utilities.html#aee4d4e75adb6cdde18e7be730037fb71">rVariable</a>](<span class="keyword">auto</span>&amp; rEntity){</div>
 <div class="line"><a name="l00819"></a><span class="lineno">  819</span>&#160;                rEntity.GetData().Erase(<a class="code" href="../../d7/dc7/namespace_kratos_1_1_move_mesh_utilities.html#aee4d4e75adb6cdde18e7be730037fb71">rVariable</a>);</div>
 <div class="line"><a name="l00820"></a><span class="lineno">  820</span>&#160;        });</div>
 <div class="line"><a name="l00821"></a><span class="lineno">  821</span>&#160; </div>
@@ -768,7 +768,7 @@ $(function() {
 <div class="line"><a name="l00831"></a><span class="lineno">  831</span>&#160;    {</div>
 <div class="line"><a name="l00832"></a><span class="lineno">  832</span>&#160;        <a class="code" href="../../df/d67/define_8h.html#ab9c29d6a0d19ff26bbc4e45e3181fb3f">KRATOS_TRY</a></div>
 <div class="line"><a name="l00833"></a><span class="lineno">  833</span>&#160; </div>
-<div class="line"><a name="l00834"></a><span class="lineno">  834</span>&#160;        <a class="code" href="../../db/d66/namespace_kratos.html#a07ef8a5b8886ded903a1e7ad4c0df960">block_for_each</a>(rContainer, [&amp;](<span class="keyword">typename</span> TContainerType::value_type&amp; rEntity){</div>
+<div class="line"><a name="l00834"></a><span class="lineno">  834</span>&#160;        <a class="code" href="../../db/d66/namespace_kratos.html#a382d1519b254c52c6699149b2192aa8c">block_for_each</a>(rContainer, [&amp;](<span class="keyword">typename</span> TContainerType::value_type&amp; rEntity){</div>
 <div class="line"><a name="l00835"></a><span class="lineno">  835</span>&#160;                rEntity.GetData().Clear();</div>
 <div class="line"><a name="l00836"></a><span class="lineno">  836</span>&#160;        });</div>
 <div class="line"><a name="l00837"></a><span class="lineno">  837</span>&#160; </div>
@@ -791,7 +791,7 @@ $(function() {
 <div class="line"><a name="l00878"></a><span class="lineno">  878</span>&#160;    {</div>
 <div class="line"><a name="l00879"></a><span class="lineno">  879</span>&#160;        <a class="code" href="../../df/d67/define_8h.html#ab9c29d6a0d19ff26bbc4e45e3181fb3f">KRATOS_TRY</a></div>
 <div class="line"><a name="l00880"></a><span class="lineno">  880</span>&#160; </div>
-<div class="line"><a name="l00881"></a><span class="lineno">  881</span>&#160;        <a class="code" href="../../db/d66/namespace_kratos.html#a07ef8a5b8886ded903a1e7ad4c0df960">block_for_each</a>(rContainer, [&amp;](<span class="keyword">typename</span> TContainerType::value_type&amp; rEntity){</div>
+<div class="line"><a name="l00881"></a><span class="lineno">  881</span>&#160;        <a class="code" href="../../db/d66/namespace_kratos.html#a382d1519b254c52c6699149b2192aa8c">block_for_each</a>(rContainer, [&amp;](<span class="keyword">typename</span> TContainerType::value_type&amp; rEntity){</div>
 <div class="line"><a name="l00882"></a><span class="lineno">  882</span>&#160;                rEntity.Set(rFlag, FlagValue);</div>
 <div class="line"><a name="l00883"></a><span class="lineno">  883</span>&#160;        });</div>
 <div class="line"><a name="l00884"></a><span class="lineno">  884</span>&#160; </div>
@@ -807,7 +807,7 @@ $(function() {
 <div class="line"><a name="l00899"></a><span class="lineno">  899</span>&#160;    {</div>
 <div class="line"><a name="l00900"></a><span class="lineno">  900</span>&#160;        <a class="code" href="../../df/d67/define_8h.html#ab9c29d6a0d19ff26bbc4e45e3181fb3f">KRATOS_TRY</a></div>
 <div class="line"><a name="l00901"></a><span class="lineno">  901</span>&#160; </div>
-<div class="line"><a name="l00902"></a><span class="lineno">  902</span>&#160;        <a class="code" href="../../db/d66/namespace_kratos.html#a07ef8a5b8886ded903a1e7ad4c0df960">block_for_each</a>(rContainer, [&amp;](<span class="keyword">typename</span> TContainerType::value_type&amp; rEntity){</div>
+<div class="line"><a name="l00902"></a><span class="lineno">  902</span>&#160;        <a class="code" href="../../db/d66/namespace_kratos.html#a382d1519b254c52c6699149b2192aa8c">block_for_each</a>(rContainer, [&amp;](<span class="keyword">typename</span> TContainerType::value_type&amp; rEntity){</div>
 <div class="line"><a name="l00903"></a><span class="lineno">  903</span>&#160;                rEntity.Reset(rFlag);</div>
 <div class="line"><a name="l00904"></a><span class="lineno">  904</span>&#160;        });</div>
 <div class="line"><a name="l00905"></a><span class="lineno">  905</span>&#160; </div>
@@ -822,7 +822,7 @@ $(function() {
 <div class="line"><a name="l00919"></a><span class="lineno">  919</span>&#160;    {</div>
 <div class="line"><a name="l00920"></a><span class="lineno">  920</span>&#160;        <a class="code" href="../../df/d67/define_8h.html#ab9c29d6a0d19ff26bbc4e45e3181fb3f">KRATOS_TRY</a></div>
 <div class="line"><a name="l00921"></a><span class="lineno">  921</span>&#160; </div>
-<div class="line"><a name="l00922"></a><span class="lineno">  922</span>&#160;        <a class="code" href="../../db/d66/namespace_kratos.html#a07ef8a5b8886ded903a1e7ad4c0df960">block_for_each</a>(rContainer, [&amp;](<span class="keyword">typename</span> TContainerType::value_type&amp; rEntity){</div>
+<div class="line"><a name="l00922"></a><span class="lineno">  922</span>&#160;        <a class="code" href="../../db/d66/namespace_kratos.html#a382d1519b254c52c6699149b2192aa8c">block_for_each</a>(rContainer, [&amp;](<span class="keyword">typename</span> TContainerType::value_type&amp; rEntity){</div>
 <div class="line"><a name="l00923"></a><span class="lineno">  923</span>&#160;                rEntity.Flip(rFlag);</div>
 <div class="line"><a name="l00924"></a><span class="lineno">  924</span>&#160;        });</div>
 <div class="line"><a name="l00925"></a><span class="lineno">  925</span>&#160; </div>
@@ -837,7 +837,7 @@ $(function() {
 <div class="line"><a name="l00943"></a><span class="lineno">  943</span>&#160;    {</div>
 <div class="line"><a name="l00944"></a><span class="lineno">  944</span>&#160;        <a class="code" href="../../df/d67/define_8h.html#ab9c29d6a0d19ff26bbc4e45e3181fb3f">KRATOS_TRY</a></div>
 <div class="line"><a name="l00945"></a><span class="lineno">  945</span>&#160; </div>
-<div class="line"><a name="l00946"></a><span class="lineno">  946</span>&#160;        <a class="code" href="../../db/d66/namespace_kratos.html#a07ef8a5b8886ded903a1e7ad4c0df960">block_for_each</a>(rNodesContainer, [&amp;](Node&lt;3&gt;&amp; rNode){</div>
+<div class="line"><a name="l00946"></a><span class="lineno">  946</span>&#160;        <a class="code" href="../../db/d66/namespace_kratos.html#a382d1519b254c52c6699149b2192aa8c">block_for_each</a>(rNodesContainer, [&amp;](Node&lt;3&gt;&amp; rNode){</div>
 <div class="line"><a name="l00947"></a><span class="lineno">  947</span>&#160;            rNode.SetValue(rSavedVariable, rNode.FastGetSolutionStepValue(rOriginVariable));</div>
 <div class="line"><a name="l00948"></a><span class="lineno">  948</span>&#160;        });</div>
 <div class="line"><a name="l00949"></a><span class="lineno">  949</span>&#160; </div>
@@ -853,7 +853,7 @@ $(function() {
 <div class="line"><a name="l00969"></a><span class="lineno">  969</span>&#160;    {</div>
 <div class="line"><a name="l00970"></a><span class="lineno">  970</span>&#160;        <a class="code" href="../../df/d67/define_8h.html#ab9c29d6a0d19ff26bbc4e45e3181fb3f">KRATOS_TRY</a></div>
 <div class="line"><a name="l00971"></a><span class="lineno">  971</span>&#160; </div>
-<div class="line"><a name="l00972"></a><span class="lineno">  972</span>&#160;        <a class="code" href="../../db/d66/namespace_kratos.html#a07ef8a5b8886ded903a1e7ad4c0df960">block_for_each</a>(rContainer, [&amp;](<span class="keyword">typename</span> TContainerType::value_type&amp; rEntity){</div>
+<div class="line"><a name="l00972"></a><span class="lineno">  972</span>&#160;        <a class="code" href="../../db/d66/namespace_kratos.html#a382d1519b254c52c6699149b2192aa8c">block_for_each</a>(rContainer, [&amp;](<span class="keyword">typename</span> TContainerType::value_type&amp; rEntity){</div>
 <div class="line"><a name="l00973"></a><span class="lineno">  973</span>&#160;            rEntity.SetValue(rSavedVariable, rEntity.GetValue(rOriginVariable));</div>
 <div class="line"><a name="l00974"></a><span class="lineno">  974</span>&#160;        });</div>
 <div class="line"><a name="l00975"></a><span class="lineno">  975</span>&#160; </div>
@@ -868,7 +868,7 @@ $(function() {
 <div class="line"><a name="l00994"></a><span class="lineno">  994</span>&#160;    {</div>
 <div class="line"><a name="l00995"></a><span class="lineno">  995</span>&#160;        <a class="code" href="../../df/d67/define_8h.html#ab9c29d6a0d19ff26bbc4e45e3181fb3f">KRATOS_TRY</a></div>
 <div class="line"><a name="l00996"></a><span class="lineno">  996</span>&#160; </div>
-<div class="line"><a name="l00997"></a><span class="lineno">  997</span>&#160;        <a class="code" href="../../db/d66/namespace_kratos.html#a07ef8a5b8886ded903a1e7ad4c0df960">block_for_each</a>(rNodesContainer, [&amp;](Node&lt;3&gt;&amp; rNode){</div>
+<div class="line"><a name="l00997"></a><span class="lineno">  997</span>&#160;        <a class="code" href="../../db/d66/namespace_kratos.html#a382d1519b254c52c6699149b2192aa8c">block_for_each</a>(rNodesContainer, [&amp;](Node&lt;3&gt;&amp; rNode){</div>
 <div class="line"><a name="l00998"></a><span class="lineno">  998</span>&#160;            rNode.FastGetSolutionStepValue(rDestinationVariable) = rNode.FastGetSolutionStepValue(rOriginVariable);</div>
 <div class="line"><a name="l00999"></a><span class="lineno">  999</span>&#160;        });</div>
 <div class="line"><a name="l01000"></a><span class="lineno"> 1000</span>&#160; </div>
@@ -919,11 +919,11 @@ $(function() {
 <div class="line"><a name="l01064"></a><span class="lineno"> 1064</span>&#160;            CheckVariableExists(rVar, <a class="code" href="../../db/d91/namespace_kratos_1_1_rans_variable_utilities.html#a2f23795bfd18a5c0e153aad48feaa4d7">rNodes</a>);</div>
 <div class="line"><a name="l01065"></a><span class="lineno"> 1065</span>&#160; </div>
 <div class="line"><a name="l01066"></a><span class="lineno"> 1066</span>&#160;            <span class="keywordflow">if</span> (IsFixed) {</div>
-<div class="line"><a name="l01067"></a><span class="lineno"> 1067</span>&#160;                <a class="code" href="../../db/d66/namespace_kratos.html#a07ef8a5b8886ded903a1e7ad4c0df960">block_for_each</a>(<a class="code" href="../../db/d91/namespace_kratos_1_1_rans_variable_utilities.html#a2f23795bfd18a5c0e153aad48feaa4d7">rNodes</a>,[&amp;](Node&lt;3&gt;&amp; rNode){</div>
+<div class="line"><a name="l01067"></a><span class="lineno"> 1067</span>&#160;                <a class="code" href="../../db/d66/namespace_kratos.html#a382d1519b254c52c6699149b2192aa8c">block_for_each</a>(<a class="code" href="../../db/d91/namespace_kratos_1_1_rans_variable_utilities.html#a2f23795bfd18a5c0e153aad48feaa4d7">rNodes</a>,[&amp;](Node&lt;3&gt;&amp; rNode){</div>
 <div class="line"><a name="l01068"></a><span class="lineno"> 1068</span>&#160;                    rNode.pGetDof(rVar)-&gt;FixDof();</div>
 <div class="line"><a name="l01069"></a><span class="lineno"> 1069</span>&#160;                });</div>
 <div class="line"><a name="l01070"></a><span class="lineno"> 1070</span>&#160;            } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l01071"></a><span class="lineno"> 1071</span>&#160;                <a class="code" href="../../db/d66/namespace_kratos.html#a07ef8a5b8886ded903a1e7ad4c0df960">block_for_each</a>(<a class="code" href="../../db/d91/namespace_kratos_1_1_rans_variable_utilities.html#a2f23795bfd18a5c0e153aad48feaa4d7">rNodes</a>,[&amp;](Node&lt;3&gt;&amp; rNode){</div>
+<div class="line"><a name="l01071"></a><span class="lineno"> 1071</span>&#160;                <a class="code" href="../../db/d66/namespace_kratos.html#a382d1519b254c52c6699149b2192aa8c">block_for_each</a>(<a class="code" href="../../db/d91/namespace_kratos_1_1_rans_variable_utilities.html#a2f23795bfd18a5c0e153aad48feaa4d7">rNodes</a>,[&amp;](Node&lt;3&gt;&amp; rNode){</div>
 <div class="line"><a name="l01072"></a><span class="lineno"> 1072</span>&#160;                    rNode.pGetDof(rVar)-&gt;FreeDof();</div>
 <div class="line"><a name="l01073"></a><span class="lineno"> 1073</span>&#160;                });</div>
 <div class="line"><a name="l01074"></a><span class="lineno"> 1074</span>&#160;            }</div>
@@ -961,393 +961,391 @@ $(function() {
 <div class="line"><a name="l01119"></a><span class="lineno"> 1119</span>&#160;            CheckVariableExists(<a class="code" href="../../d7/dc7/namespace_kratos_1_1_move_mesh_utilities.html#aee4d4e75adb6cdde18e7be730037fb71">rVariable</a>, <a class="code" href="../../db/d91/namespace_kratos_1_1_rans_variable_utilities.html#a2f23795bfd18a5c0e153aad48feaa4d7">rNodes</a>);</div>
 <div class="line"><a name="l01120"></a><span class="lineno"> 1120</span>&#160; </div>
 <div class="line"><a name="l01121"></a><span class="lineno"> 1121</span>&#160;            <span class="keywordflow">if</span> (IsFixed) {</div>
-<div class="line"><a name="l01122"></a><span class="lineno"> 1122</span>&#160;                BlockPartition&lt;NodesContainerType&gt;(<a class="code" href="../../db/d91/namespace_kratos_1_1_rans_variable_utilities.html#a2f23795bfd18a5c0e153aad48feaa4d7">rNodes</a>).for_each(</div>
-<div class="line"><a name="l01123"></a><span class="lineno"> 1123</span>&#160;                    [&amp;<a class="code" href="../../d7/dc7/namespace_kratos_1_1_move_mesh_utilities.html#aee4d4e75adb6cdde18e7be730037fb71">rVariable</a>, &amp;rFlag, CheckValue](<a class="code" href="../../d5/ddd/class_kratos_1_1_node.html">NodeType</a>&amp; rNode) {</div>
-<div class="line"><a name="l01124"></a><span class="lineno"> 1124</span>&#160;                        <span class="keywordflow">if</span> (rNode.Is(rFlag) == CheckValue) {</div>
-<div class="line"><a name="l01125"></a><span class="lineno"> 1125</span>&#160;                            rNode.pGetDof(rVariable)-&gt;FixDof();</div>
-<div class="line"><a name="l01126"></a><span class="lineno"> 1126</span>&#160;                        }</div>
-<div class="line"><a name="l01127"></a><span class="lineno"> 1127</span>&#160;                    });</div>
-<div class="line"><a name="l01128"></a><span class="lineno"> 1128</span>&#160;            }</div>
-<div class="line"><a name="l01129"></a><span class="lineno"> 1129</span>&#160;            <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l01130"></a><span class="lineno"> 1130</span>&#160;                BlockPartition&lt;NodesContainerType&gt;(<a class="code" href="../../db/d91/namespace_kratos_1_1_rans_variable_utilities.html#a2f23795bfd18a5c0e153aad48feaa4d7">rNodes</a>).for_each(</div>
-<div class="line"><a name="l01131"></a><span class="lineno"> 1131</span>&#160;                    [&amp;<a class="code" href="../../d7/dc7/namespace_kratos_1_1_move_mesh_utilities.html#aee4d4e75adb6cdde18e7be730037fb71">rVariable</a>, &amp;rFlag, CheckValue](<a class="code" href="../../d5/ddd/class_kratos_1_1_node.html">NodeType</a>&amp; rNode) {</div>
-<div class="line"><a name="l01132"></a><span class="lineno"> 1132</span>&#160;                        <span class="keywordflow">if</span> (rNode.Is(rFlag) == CheckValue) {</div>
-<div class="line"><a name="l01133"></a><span class="lineno"> 1133</span>&#160;                            rNode.pGetDof(rVariable)-&gt;FreeDof();</div>
-<div class="line"><a name="l01134"></a><span class="lineno"> 1134</span>&#160;                        }</div>
-<div class="line"><a name="l01135"></a><span class="lineno"> 1135</span>&#160;                    });</div>
-<div class="line"><a name="l01136"></a><span class="lineno"> 1136</span>&#160;            }</div>
-<div class="line"><a name="l01137"></a><span class="lineno"> 1137</span>&#160;        }</div>
-<div class="line"><a name="l01138"></a><span class="lineno"> 1138</span>&#160; </div>
-<div class="line"><a name="l01139"></a><span class="lineno"> 1139</span>&#160;        <a class="code" href="../../df/d67/define_8h.html#a5eac541f5e39bf0360a12f51f0248513">KRATOS_CATCH</a>(<span class="stringliteral">&quot;&quot;</span>);</div>
-<div class="line"><a name="l01140"></a><span class="lineno"> 1140</span>&#160;    }</div>
-<div class="line"><a name="l01141"></a><span class="lineno"> 1141</span>&#160; </div>
-<div class="line"><a name="l01142"></a><span class="lineno"> 1142</span>&#160; </div>
-<div class="line"><a name="l01152"></a><span class="lineno"> 1152</span>&#160;    <span class="keyword">template</span>&lt; <span class="keyword">class</span> TVarType &gt;</div>
-<div class="line"><a name="l01153"></a><span class="lineno"> 1153</span>&#160;    <span class="keywordtype">void</span> ApplyVector(</div>
-<div class="line"><a name="l01154"></a><span class="lineno"> 1154</span>&#160;        <span class="keyword">const</span> TVarType&amp; rVar,</div>
-<div class="line"><a name="l01155"></a><span class="lineno"> 1155</span>&#160;        <span class="keyword">const</span> <a class="code" href="../../db/d66/namespace_kratos.html#a2382ac8a486c0d52da7ce94f4ccd6d70">Vector</a>&amp; <a class="code" href="../../dc/d9a/group___h_d_f5_application.html#ga0463ae8858dfb3317060416bb8812fff">rData</a>,</div>
-<div class="line"><a name="l01156"></a><span class="lineno"> 1156</span>&#160;        <a class="code" href="../../db/d66/namespace_kratos.html#a14ab8160ba3f8291244835400249c09d">NodesContainerType</a>&amp; <a class="code" href="../../db/d91/namespace_kratos_1_1_rans_variable_utilities.html#a2f23795bfd18a5c0e153aad48feaa4d7">rNodes</a></div>
-<div class="line"><a name="l01157"></a><span class="lineno"> 1157</span>&#160;        )</div>
-<div class="line"><a name="l01158"></a><span class="lineno"> 1158</span>&#160;    {</div>
-<div class="line"><a name="l01159"></a><span class="lineno"> 1159</span>&#160;        <a class="code" href="../../df/d67/define_8h.html#ab9c29d6a0d19ff26bbc4e45e3181fb3f">KRATOS_TRY</a></div>
-<div class="line"><a name="l01160"></a><span class="lineno"> 1160</span>&#160; </div>
-<div class="line"><a name="l01161"></a><span class="lineno"> 1161</span>&#160;        <span class="keywordflow">if</span>(<a class="code" href="../../db/d91/namespace_kratos_1_1_rans_variable_utilities.html#a2f23795bfd18a5c0e153aad48feaa4d7">rNodes</a>.size() != 0 &amp;&amp; <a class="code" href="../../db/d91/namespace_kratos_1_1_rans_variable_utilities.html#a2f23795bfd18a5c0e153aad48feaa4d7">rNodes</a>.size() == <a class="code" href="../../dc/d9a/group___h_d_f5_application.html#ga0463ae8858dfb3317060416bb8812fff">rData</a>.size()) {</div>
-<div class="line"><a name="l01162"></a><span class="lineno"> 1162</span>&#160;            <span class="comment">// First we do a check</span></div>
-<div class="line"><a name="l01163"></a><span class="lineno"> 1163</span>&#160;            CheckVariableExists(rVar, <a class="code" href="../../db/d91/namespace_kratos_1_1_rans_variable_utilities.html#a2f23795bfd18a5c0e153aad48feaa4d7">rNodes</a>);</div>
-<div class="line"><a name="l01164"></a><span class="lineno"> 1164</span>&#160; </div>
-<div class="line"><a name="l01165"></a><span class="lineno"> 1165</span>&#160;            IndexPartition&lt;std::size_t&gt;(<a class="code" href="../../db/d91/namespace_kratos_1_1_rans_variable_utilities.html#a2f23795bfd18a5c0e153aad48feaa4d7">rNodes</a>.size()).for_each([&amp;](std::size_t index){</div>
-<div class="line"><a name="l01166"></a><span class="lineno"> 1166</span>&#160;                NodesContainerType::iterator it_node = <a class="code" href="../../db/d91/namespace_kratos_1_1_rans_variable_utilities.html#a2f23795bfd18a5c0e153aad48feaa4d7">rNodes</a>.begin() + index;</div>
-<div class="line"><a name="l01167"></a><span class="lineno"> 1167</span>&#160;                it_node-&gt;FastGetSolutionStepValue(rVar) = <a class="code" href="../../dc/d9a/group___h_d_f5_application.html#ga0463ae8858dfb3317060416bb8812fff">rData</a>[index];</div>
-<div class="line"><a name="l01168"></a><span class="lineno"> 1168</span>&#160;            });</div>
-<div class="line"><a name="l01169"></a><span class="lineno"> 1169</span>&#160;        } <span class="keywordflow">else</span></div>
-<div class="line"><a name="l01170"></a><span class="lineno"> 1170</span>&#160;            <a class="code" href="../../d5/d4d/group___kratos_core.html#ga376e02451bc7cc3a5fd77b57f0549e6b">KRATOS_ERROR</a>  &lt;&lt; <span class="stringliteral">&quot;There is a mismatch between the size of data array and the number of nodes &quot;</span>;</div>
-<div class="line"><a name="l01171"></a><span class="lineno"> 1171</span>&#160; </div>
-<div class="line"><a name="l01172"></a><span class="lineno"> 1172</span>&#160;        <a class="code" href="../../df/d67/define_8h.html#a5eac541f5e39bf0360a12f51f0248513">KRATOS_CATCH</a>(<span class="stringliteral">&quot;&quot;</span>)</div>
-<div class="line"><a name="l01173"></a><span class="lineno"> 1173</span>&#160;    }</div>
-<div class="line"><a name="l01174"></a><span class="lineno"> 1174</span>&#160; </div>
-<div class="line"><a name="l01181"></a><span class="lineno"> 1181</span>&#160;    [[nodiscard]] array_1d&lt;double, 3&gt; SumNonHistoricalNodeVectorVariable(</div>
-<div class="line"><a name="l01182"></a><span class="lineno"> 1182</span>&#160;        <span class="keyword">const</span> ArrayVarType&amp; rVar,</div>
-<div class="line"><a name="l01183"></a><span class="lineno"> 1183</span>&#160;        <span class="keyword">const</span> <a class="code" href="../../d4/d5e/class_model_part.html">ModelPart</a>&amp; <a class="code" href="../../db/d91/namespace_kratos_1_1_rans_variable_utilities.html#af0d227aa5521a639dd5f46737c54e84c">rModelPart</a></div>
-<div class="line"><a name="l01184"></a><span class="lineno"> 1184</span>&#160;        );</div>
-<div class="line"><a name="l01185"></a><span class="lineno"> 1185</span>&#160; </div>
-<div class="line"><a name="l01192"></a><span class="lineno"> 1192</span>&#160;    <span class="keyword">template</span>&lt; <span class="keyword">class</span> TVarType &gt;</div>
-<div class="line"><a name="l01193"></a><span class="lineno"> 1193</span>&#160;    [[nodiscard]] <span class="keywordtype">double</span> SumNonHistoricalNodeScalarVariable(</div>
-<div class="line"><a name="l01194"></a><span class="lineno"> 1194</span>&#160;        <span class="keyword">const</span> TVarType&amp; rVar,</div>
-<div class="line"><a name="l01195"></a><span class="lineno"> 1195</span>&#160;        <span class="keyword">const</span> <a class="code" href="../../d4/d5e/class_model_part.html">ModelPart</a>&amp; <a class="code" href="../../db/d91/namespace_kratos_1_1_rans_variable_utilities.html#af0d227aa5521a639dd5f46737c54e84c">rModelPart</a></div>
-<div class="line"><a name="l01196"></a><span class="lineno"> 1196</span>&#160;        )</div>
-<div class="line"><a name="l01197"></a><span class="lineno"> 1197</span>&#160;    {</div>
-<div class="line"><a name="l01198"></a><span class="lineno"> 1198</span>&#160;        <a class="code" href="../../df/d67/define_8h.html#ab9c29d6a0d19ff26bbc4e45e3181fb3f">KRATOS_TRY</a></div>
+<div class="line"><a name="l01122"></a><span class="lineno"> 1122</span>&#160;                <a class="code" href="../../db/d66/namespace_kratos.html#a382d1519b254c52c6699149b2192aa8c">block_for_each</a>(<a class="code" href="../../db/d91/namespace_kratos_1_1_rans_variable_utilities.html#a2f23795bfd18a5c0e153aad48feaa4d7">rNodes</a>, [&amp;<a class="code" href="../../d7/dc7/namespace_kratos_1_1_move_mesh_utilities.html#aee4d4e75adb6cdde18e7be730037fb71">rVariable</a>, &amp;rFlag, CheckValue](<a class="code" href="../../d5/ddd/class_kratos_1_1_node.html">NodeType</a>&amp; rNode) {</div>
+<div class="line"><a name="l01123"></a><span class="lineno"> 1123</span>&#160;                    <span class="keywordflow">if</span> (rNode.Is(rFlag) == CheckValue) {</div>
+<div class="line"><a name="l01124"></a><span class="lineno"> 1124</span>&#160;                        rNode.pGetDof(rVariable)-&gt;FixDof();</div>
+<div class="line"><a name="l01125"></a><span class="lineno"> 1125</span>&#160;                    }</div>
+<div class="line"><a name="l01126"></a><span class="lineno"> 1126</span>&#160;                });</div>
+<div class="line"><a name="l01127"></a><span class="lineno"> 1127</span>&#160;            }</div>
+<div class="line"><a name="l01128"></a><span class="lineno"> 1128</span>&#160;            <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l01129"></a><span class="lineno"> 1129</span>&#160;                <a class="code" href="../../db/d66/namespace_kratos.html#a382d1519b254c52c6699149b2192aa8c">block_for_each</a>(<a class="code" href="../../db/d91/namespace_kratos_1_1_rans_variable_utilities.html#a2f23795bfd18a5c0e153aad48feaa4d7">rNodes</a>, [&amp;<a class="code" href="../../d7/dc7/namespace_kratos_1_1_move_mesh_utilities.html#aee4d4e75adb6cdde18e7be730037fb71">rVariable</a>, &amp;rFlag, CheckValue](<a class="code" href="../../d5/ddd/class_kratos_1_1_node.html">NodeType</a>&amp; rNode) {</div>
+<div class="line"><a name="l01130"></a><span class="lineno"> 1130</span>&#160;                    <span class="keywordflow">if</span> (rNode.Is(rFlag) == CheckValue) {</div>
+<div class="line"><a name="l01131"></a><span class="lineno"> 1131</span>&#160;                        rNode.pGetDof(rVariable)-&gt;FreeDof();</div>
+<div class="line"><a name="l01132"></a><span class="lineno"> 1132</span>&#160;                    }</div>
+<div class="line"><a name="l01133"></a><span class="lineno"> 1133</span>&#160;                });</div>
+<div class="line"><a name="l01134"></a><span class="lineno"> 1134</span>&#160;            }</div>
+<div class="line"><a name="l01135"></a><span class="lineno"> 1135</span>&#160;        }</div>
+<div class="line"><a name="l01136"></a><span class="lineno"> 1136</span>&#160; </div>
+<div class="line"><a name="l01137"></a><span class="lineno"> 1137</span>&#160;        <a class="code" href="../../df/d67/define_8h.html#a5eac541f5e39bf0360a12f51f0248513">KRATOS_CATCH</a>(<span class="stringliteral">&quot;&quot;</span>);</div>
+<div class="line"><a name="l01138"></a><span class="lineno"> 1138</span>&#160;    }</div>
+<div class="line"><a name="l01139"></a><span class="lineno"> 1139</span>&#160; </div>
+<div class="line"><a name="l01140"></a><span class="lineno"> 1140</span>&#160; </div>
+<div class="line"><a name="l01150"></a><span class="lineno"> 1150</span>&#160;    <span class="keyword">template</span>&lt; <span class="keyword">class</span> TVarType &gt;</div>
+<div class="line"><a name="l01151"></a><span class="lineno"> 1151</span>&#160;    <span class="keywordtype">void</span> ApplyVector(</div>
+<div class="line"><a name="l01152"></a><span class="lineno"> 1152</span>&#160;        <span class="keyword">const</span> TVarType&amp; rVar,</div>
+<div class="line"><a name="l01153"></a><span class="lineno"> 1153</span>&#160;        <span class="keyword">const</span> <a class="code" href="../../db/d66/namespace_kratos.html#a2382ac8a486c0d52da7ce94f4ccd6d70">Vector</a>&amp; <a class="code" href="../../dc/d9a/group___h_d_f5_application.html#ga0463ae8858dfb3317060416bb8812fff">rData</a>,</div>
+<div class="line"><a name="l01154"></a><span class="lineno"> 1154</span>&#160;        <a class="code" href="../../db/d66/namespace_kratos.html#a14ab8160ba3f8291244835400249c09d">NodesContainerType</a>&amp; <a class="code" href="../../db/d91/namespace_kratos_1_1_rans_variable_utilities.html#a2f23795bfd18a5c0e153aad48feaa4d7">rNodes</a></div>
+<div class="line"><a name="l01155"></a><span class="lineno"> 1155</span>&#160;        )</div>
+<div class="line"><a name="l01156"></a><span class="lineno"> 1156</span>&#160;    {</div>
+<div class="line"><a name="l01157"></a><span class="lineno"> 1157</span>&#160;        <a class="code" href="../../df/d67/define_8h.html#ab9c29d6a0d19ff26bbc4e45e3181fb3f">KRATOS_TRY</a></div>
+<div class="line"><a name="l01158"></a><span class="lineno"> 1158</span>&#160; </div>
+<div class="line"><a name="l01159"></a><span class="lineno"> 1159</span>&#160;        <span class="keywordflow">if</span>(<a class="code" href="../../db/d91/namespace_kratos_1_1_rans_variable_utilities.html#a2f23795bfd18a5c0e153aad48feaa4d7">rNodes</a>.size() != 0 &amp;&amp; <a class="code" href="../../db/d91/namespace_kratos_1_1_rans_variable_utilities.html#a2f23795bfd18a5c0e153aad48feaa4d7">rNodes</a>.size() == <a class="code" href="../../dc/d9a/group___h_d_f5_application.html#ga0463ae8858dfb3317060416bb8812fff">rData</a>.size()) {</div>
+<div class="line"><a name="l01160"></a><span class="lineno"> 1160</span>&#160;            <span class="comment">// First we do a check</span></div>
+<div class="line"><a name="l01161"></a><span class="lineno"> 1161</span>&#160;            CheckVariableExists(rVar, <a class="code" href="../../db/d91/namespace_kratos_1_1_rans_variable_utilities.html#a2f23795bfd18a5c0e153aad48feaa4d7">rNodes</a>);</div>
+<div class="line"><a name="l01162"></a><span class="lineno"> 1162</span>&#160; </div>
+<div class="line"><a name="l01163"></a><span class="lineno"> 1163</span>&#160;            IndexPartition&lt;std::size_t&gt;(<a class="code" href="../../db/d91/namespace_kratos_1_1_rans_variable_utilities.html#a2f23795bfd18a5c0e153aad48feaa4d7">rNodes</a>.size()).for_each([&amp;](std::size_t index){</div>
+<div class="line"><a name="l01164"></a><span class="lineno"> 1164</span>&#160;                NodesContainerType::iterator it_node = <a class="code" href="../../db/d91/namespace_kratos_1_1_rans_variable_utilities.html#a2f23795bfd18a5c0e153aad48feaa4d7">rNodes</a>.begin() + index;</div>
+<div class="line"><a name="l01165"></a><span class="lineno"> 1165</span>&#160;                it_node-&gt;FastGetSolutionStepValue(rVar) = <a class="code" href="../../dc/d9a/group___h_d_f5_application.html#ga0463ae8858dfb3317060416bb8812fff">rData</a>[index];</div>
+<div class="line"><a name="l01166"></a><span class="lineno"> 1166</span>&#160;            });</div>
+<div class="line"><a name="l01167"></a><span class="lineno"> 1167</span>&#160;        } <span class="keywordflow">else</span></div>
+<div class="line"><a name="l01168"></a><span class="lineno"> 1168</span>&#160;            <a class="code" href="../../d5/d4d/group___kratos_core.html#ga376e02451bc7cc3a5fd77b57f0549e6b">KRATOS_ERROR</a>  &lt;&lt; <span class="stringliteral">&quot;There is a mismatch between the size of data array and the number of nodes &quot;</span>;</div>
+<div class="line"><a name="l01169"></a><span class="lineno"> 1169</span>&#160; </div>
+<div class="line"><a name="l01170"></a><span class="lineno"> 1170</span>&#160;        <a class="code" href="../../df/d67/define_8h.html#a5eac541f5e39bf0360a12f51f0248513">KRATOS_CATCH</a>(<span class="stringliteral">&quot;&quot;</span>)</div>
+<div class="line"><a name="l01171"></a><span class="lineno"> 1171</span>&#160;    }</div>
+<div class="line"><a name="l01172"></a><span class="lineno"> 1172</span>&#160; </div>
+<div class="line"><a name="l01179"></a><span class="lineno"> 1179</span>&#160;    [[nodiscard]] array_1d&lt;double, 3&gt; SumNonHistoricalNodeVectorVariable(</div>
+<div class="line"><a name="l01180"></a><span class="lineno"> 1180</span>&#160;        <span class="keyword">const</span> ArrayVarType&amp; rVar,</div>
+<div class="line"><a name="l01181"></a><span class="lineno"> 1181</span>&#160;        <span class="keyword">const</span> <a class="code" href="../../d4/d5e/class_model_part.html">ModelPart</a>&amp; <a class="code" href="../../db/d91/namespace_kratos_1_1_rans_variable_utilities.html#af0d227aa5521a639dd5f46737c54e84c">rModelPart</a></div>
+<div class="line"><a name="l01182"></a><span class="lineno"> 1182</span>&#160;        );</div>
+<div class="line"><a name="l01183"></a><span class="lineno"> 1183</span>&#160; </div>
+<div class="line"><a name="l01190"></a><span class="lineno"> 1190</span>&#160;    <span class="keyword">template</span>&lt; <span class="keyword">class</span> TVarType &gt;</div>
+<div class="line"><a name="l01191"></a><span class="lineno"> 1191</span>&#160;    [[nodiscard]] <span class="keywordtype">double</span> SumNonHistoricalNodeScalarVariable(</div>
+<div class="line"><a name="l01192"></a><span class="lineno"> 1192</span>&#160;        <span class="keyword">const</span> TVarType&amp; rVar,</div>
+<div class="line"><a name="l01193"></a><span class="lineno"> 1193</span>&#160;        <span class="keyword">const</span> <a class="code" href="../../d4/d5e/class_model_part.html">ModelPart</a>&amp; <a class="code" href="../../db/d91/namespace_kratos_1_1_rans_variable_utilities.html#af0d227aa5521a639dd5f46737c54e84c">rModelPart</a></div>
+<div class="line"><a name="l01194"></a><span class="lineno"> 1194</span>&#160;        )</div>
+<div class="line"><a name="l01195"></a><span class="lineno"> 1195</span>&#160;    {</div>
+<div class="line"><a name="l01196"></a><span class="lineno"> 1196</span>&#160;        <a class="code" href="../../df/d67/define_8h.html#ab9c29d6a0d19ff26bbc4e45e3181fb3f">KRATOS_TRY</a></div>
+<div class="line"><a name="l01197"></a><span class="lineno"> 1197</span>&#160; </div>
+<div class="line"><a name="l01198"></a><span class="lineno"> 1198</span>&#160;        <span class="keywordtype">double</span> sum_value = 0.0;</div>
 <div class="line"><a name="l01199"></a><span class="lineno"> 1199</span>&#160; </div>
-<div class="line"><a name="l01200"></a><span class="lineno"> 1200</span>&#160;        <span class="keywordtype">double</span> sum_value = 0.0;</div>
-<div class="line"><a name="l01201"></a><span class="lineno"> 1201</span>&#160; </div>
-<div class="line"><a name="l01202"></a><span class="lineno"> 1202</span>&#160;        <span class="comment">// Getting info</span></div>
-<div class="line"><a name="l01203"></a><span class="lineno"> 1203</span>&#160;        <span class="keyword">const</span> <span class="keyword">auto</span>&amp; r_communicator = <a class="code" href="../../db/d91/namespace_kratos_1_1_rans_variable_utilities.html#af0d227aa5521a639dd5f46737c54e84c">rModelPart</a>.GetCommunicator();</div>
-<div class="line"><a name="l01204"></a><span class="lineno"> 1204</span>&#160;        <span class="keyword">const</span> <span class="keyword">auto</span>&amp; r_local_mesh = r_communicator.LocalMesh();</div>
-<div class="line"><a name="l01205"></a><span class="lineno"> 1205</span>&#160;        <span class="keyword">const</span> <span class="keyword">auto</span>&amp; r_nodes_array = r_local_mesh.Nodes();</div>
-<div class="line"><a name="l01206"></a><span class="lineno"> 1206</span>&#160; </div>
-<div class="line"><a name="l01207"></a><span class="lineno"> 1207</span>&#160;        sum_value = block_for_each&lt;SumReduction&lt;double&gt;&gt;(r_nodes_array, [&amp;](Node&lt;3&gt;&amp; rNode){</div>
-<div class="line"><a name="l01208"></a><span class="lineno"> 1208</span>&#160;            <span class="keywordflow">return</span> rNode.<a class="code" href="../../d5/ddd/class_kratos_1_1_node.html#a093fc2efe1af889fbfca7a4ed6d3197a">GetValue</a>(rVar);</div>
-<div class="line"><a name="l01209"></a><span class="lineno"> 1209</span>&#160;        });</div>
+<div class="line"><a name="l01200"></a><span class="lineno"> 1200</span>&#160;        <span class="comment">// Getting info</span></div>
+<div class="line"><a name="l01201"></a><span class="lineno"> 1201</span>&#160;        <span class="keyword">const</span> <span class="keyword">auto</span>&amp; r_communicator = <a class="code" href="../../db/d91/namespace_kratos_1_1_rans_variable_utilities.html#af0d227aa5521a639dd5f46737c54e84c">rModelPart</a>.GetCommunicator();</div>
+<div class="line"><a name="l01202"></a><span class="lineno"> 1202</span>&#160;        <span class="keyword">const</span> <span class="keyword">auto</span>&amp; r_local_mesh = r_communicator.LocalMesh();</div>
+<div class="line"><a name="l01203"></a><span class="lineno"> 1203</span>&#160;        <span class="keyword">const</span> <span class="keyword">auto</span>&amp; r_nodes_array = r_local_mesh.Nodes();</div>
+<div class="line"><a name="l01204"></a><span class="lineno"> 1204</span>&#160; </div>
+<div class="line"><a name="l01205"></a><span class="lineno"> 1205</span>&#160;        sum_value = block_for_each&lt;SumReduction&lt;double&gt;&gt;(r_nodes_array, [&amp;](Node&lt;3&gt;&amp; rNode){</div>
+<div class="line"><a name="l01206"></a><span class="lineno"> 1206</span>&#160;            <span class="keywordflow">return</span> rNode.<a class="code" href="../../d5/ddd/class_kratos_1_1_node.html#a093fc2efe1af889fbfca7a4ed6d3197a">GetValue</a>(rVar);</div>
+<div class="line"><a name="l01207"></a><span class="lineno"> 1207</span>&#160;        });</div>
+<div class="line"><a name="l01208"></a><span class="lineno"> 1208</span>&#160; </div>
+<div class="line"><a name="l01209"></a><span class="lineno"> 1209</span>&#160;        <span class="keywordflow">return</span> r_communicator.GetDataCommunicator().SumAll(sum_value);</div>
 <div class="line"><a name="l01210"></a><span class="lineno"> 1210</span>&#160; </div>
-<div class="line"><a name="l01211"></a><span class="lineno"> 1211</span>&#160;        <span class="keywordflow">return</span> r_communicator.GetDataCommunicator().SumAll(sum_value);</div>
-<div class="line"><a name="l01212"></a><span class="lineno"> 1212</span>&#160; </div>
-<div class="line"><a name="l01213"></a><span class="lineno"> 1213</span>&#160;        <a class="code" href="../../df/d67/define_8h.html#a5eac541f5e39bf0360a12f51f0248513">KRATOS_CATCH</a>(<span class="stringliteral">&quot;&quot;</span>)</div>
-<div class="line"><a name="l01214"></a><span class="lineno"> 1214</span>&#160;    }</div>
-<div class="line"><a name="l01215"></a><span class="lineno"> 1215</span>&#160; </div>
-<div class="line"><a name="l01227"></a><span class="lineno"> 1227</span>&#160;    <span class="keyword">template</span>&lt; <span class="keyword">class</span> TDataType, <span class="keyword">class</span> TVarType = Variable&lt;TDataType&gt; &gt;</div>
-<div class="line"><a name="l01228"></a><span class="lineno"> 1228</span>&#160;    [[nodiscard]] TDataType SumHistoricalVariable(</div>
-<div class="line"><a name="l01229"></a><span class="lineno"> 1229</span>&#160;        <span class="keyword">const</span> TVarType &amp;<a class="code" href="../../d7/dc7/namespace_kratos_1_1_move_mesh_utilities.html#aee4d4e75adb6cdde18e7be730037fb71">rVariable</a>,</div>
-<div class="line"><a name="l01230"></a><span class="lineno"> 1230</span>&#160;        <span class="keyword">const</span> <a class="code" href="../../d4/d5e/class_model_part.html">ModelPart</a> &amp;<a class="code" href="../../db/d91/namespace_kratos_1_1_rans_variable_utilities.html#af0d227aa5521a639dd5f46737c54e84c">rModelPart</a>,</div>
-<div class="line"><a name="l01231"></a><span class="lineno"> 1231</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> BuffStep = 0</div>
-<div class="line"><a name="l01232"></a><span class="lineno"> 1232</span>&#160;        )</div>
-<div class="line"><a name="l01233"></a><span class="lineno"> 1233</span>&#160;    {</div>
-<div class="line"><a name="l01234"></a><span class="lineno"> 1234</span>&#160;        <a class="code" href="../../df/d67/define_8h.html#ab9c29d6a0d19ff26bbc4e45e3181fb3f">KRATOS_TRY</a></div>
+<div class="line"><a name="l01211"></a><span class="lineno"> 1211</span>&#160;        <a class="code" href="../../df/d67/define_8h.html#a5eac541f5e39bf0360a12f51f0248513">KRATOS_CATCH</a>(<span class="stringliteral">&quot;&quot;</span>)</div>
+<div class="line"><a name="l01212"></a><span class="lineno"> 1212</span>&#160;    }</div>
+<div class="line"><a name="l01213"></a><span class="lineno"> 1213</span>&#160; </div>
+<div class="line"><a name="l01225"></a><span class="lineno"> 1225</span>&#160;    <span class="keyword">template</span>&lt; <span class="keyword">class</span> TDataType, <span class="keyword">class</span> TVarType = Variable&lt;TDataType&gt; &gt;</div>
+<div class="line"><a name="l01226"></a><span class="lineno"> 1226</span>&#160;    [[nodiscard]] TDataType SumHistoricalVariable(</div>
+<div class="line"><a name="l01227"></a><span class="lineno"> 1227</span>&#160;        <span class="keyword">const</span> TVarType &amp;<a class="code" href="../../d7/dc7/namespace_kratos_1_1_move_mesh_utilities.html#aee4d4e75adb6cdde18e7be730037fb71">rVariable</a>,</div>
+<div class="line"><a name="l01228"></a><span class="lineno"> 1228</span>&#160;        <span class="keyword">const</span> <a class="code" href="../../d4/d5e/class_model_part.html">ModelPart</a> &amp;<a class="code" href="../../db/d91/namespace_kratos_1_1_rans_variable_utilities.html#af0d227aa5521a639dd5f46737c54e84c">rModelPart</a>,</div>
+<div class="line"><a name="l01229"></a><span class="lineno"> 1229</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> BuffStep = 0</div>
+<div class="line"><a name="l01230"></a><span class="lineno"> 1230</span>&#160;        )</div>
+<div class="line"><a name="l01231"></a><span class="lineno"> 1231</span>&#160;    {</div>
+<div class="line"><a name="l01232"></a><span class="lineno"> 1232</span>&#160;        <a class="code" href="../../df/d67/define_8h.html#ab9c29d6a0d19ff26bbc4e45e3181fb3f">KRATOS_TRY</a></div>
+<div class="line"><a name="l01233"></a><span class="lineno"> 1233</span>&#160; </div>
+<div class="line"><a name="l01234"></a><span class="lineno"> 1234</span>&#160;        <span class="keyword">const</span> <span class="keyword">auto</span> &amp;r_communicator = <a class="code" href="../../db/d91/namespace_kratos_1_1_rans_variable_utilities.html#af0d227aa5521a639dd5f46737c54e84c">rModelPart</a>.GetCommunicator();</div>
 <div class="line"><a name="l01235"></a><span class="lineno"> 1235</span>&#160; </div>
-<div class="line"><a name="l01236"></a><span class="lineno"> 1236</span>&#160;        <span class="keyword">const</span> <span class="keyword">auto</span> &amp;r_communicator = <a class="code" href="../../db/d91/namespace_kratos_1_1_rans_variable_utilities.html#af0d227aa5521a639dd5f46737c54e84c">rModelPart</a>.GetCommunicator();</div>
-<div class="line"><a name="l01237"></a><span class="lineno"> 1237</span>&#160; </div>
-<div class="line"><a name="l01238"></a><span class="lineno"> 1238</span>&#160;        TDataType sum_value = block_for_each&lt;SumReduction&lt;TDataType&gt;&gt;(r_communicator.LocalMesh().Nodes(),[&amp;](Node&lt;3&gt;&amp; rNode){</div>
-<div class="line"><a name="l01239"></a><span class="lineno"> 1239</span>&#160;            <span class="keywordflow">return</span> rNode.<a class="code" href="../../d5/ddd/class_kratos_1_1_node.html#a0b519e922ad1c2f570c0551f17b4e6bb">GetSolutionStepValue</a>(<a class="code" href="../../d7/dc7/namespace_kratos_1_1_move_mesh_utilities.html#aee4d4e75adb6cdde18e7be730037fb71">rVariable</a>, BuffStep);</div>
-<div class="line"><a name="l01240"></a><span class="lineno"> 1240</span>&#160;        });</div>
+<div class="line"><a name="l01236"></a><span class="lineno"> 1236</span>&#160;        TDataType sum_value = block_for_each&lt;SumReduction&lt;TDataType&gt;&gt;(r_communicator.LocalMesh().Nodes(),[&amp;](Node&lt;3&gt;&amp; rNode){</div>
+<div class="line"><a name="l01237"></a><span class="lineno"> 1237</span>&#160;            <span class="keywordflow">return</span> rNode.<a class="code" href="../../d5/ddd/class_kratos_1_1_node.html#a0b519e922ad1c2f570c0551f17b4e6bb">GetSolutionStepValue</a>(<a class="code" href="../../d7/dc7/namespace_kratos_1_1_move_mesh_utilities.html#aee4d4e75adb6cdde18e7be730037fb71">rVariable</a>, BuffStep);</div>
+<div class="line"><a name="l01238"></a><span class="lineno"> 1238</span>&#160;        });</div>
+<div class="line"><a name="l01239"></a><span class="lineno"> 1239</span>&#160; </div>
+<div class="line"><a name="l01240"></a><span class="lineno"> 1240</span>&#160;        <span class="keywordflow">return</span> r_communicator.GetDataCommunicator().SumAll(sum_value);</div>
 <div class="line"><a name="l01241"></a><span class="lineno"> 1241</span>&#160; </div>
-<div class="line"><a name="l01242"></a><span class="lineno"> 1242</span>&#160;        <span class="keywordflow">return</span> r_communicator.GetDataCommunicator().SumAll(sum_value);</div>
+<div class="line"><a name="l01242"></a><span class="lineno"> 1242</span>&#160;        <a class="code" href="../../df/d67/define_8h.html#a5eac541f5e39bf0360a12f51f0248513">KRATOS_CATCH</a>(<span class="stringliteral">&quot;&quot;</span>)</div>
 <div class="line"><a name="l01243"></a><span class="lineno"> 1243</span>&#160; </div>
-<div class="line"><a name="l01244"></a><span class="lineno"> 1244</span>&#160;        <a class="code" href="../../df/d67/define_8h.html#a5eac541f5e39bf0360a12f51f0248513">KRATOS_CATCH</a>(<span class="stringliteral">&quot;&quot;</span>)</div>
+<div class="line"><a name="l01244"></a><span class="lineno"> 1244</span>&#160;    }</div>
 <div class="line"><a name="l01245"></a><span class="lineno"> 1245</span>&#160; </div>
-<div class="line"><a name="l01246"></a><span class="lineno"> 1246</span>&#160;    }</div>
-<div class="line"><a name="l01247"></a><span class="lineno"> 1247</span>&#160; </div>
-<div class="line"><a name="l01254"></a><span class="lineno"> 1254</span>&#160;    [[nodiscard]] array_1d&lt;double, 3&gt; SumConditionVectorVariable(</div>
-<div class="line"><a name="l01255"></a><span class="lineno"> 1255</span>&#160;        <span class="keyword">const</span> ArrayVarType&amp; rVar,</div>
-<div class="line"><a name="l01256"></a><span class="lineno"> 1256</span>&#160;        <span class="keyword">const</span> <a class="code" href="../../d4/d5e/class_model_part.html">ModelPart</a>&amp; <a class="code" href="../../db/d91/namespace_kratos_1_1_rans_variable_utilities.html#af0d227aa5521a639dd5f46737c54e84c">rModelPart</a></div>
-<div class="line"><a name="l01257"></a><span class="lineno"> 1257</span>&#160;        );</div>
-<div class="line"><a name="l01258"></a><span class="lineno"> 1258</span>&#160; </div>
-<div class="line"><a name="l01265"></a><span class="lineno"> 1265</span>&#160;    <span class="keyword">template</span>&lt; <span class="keyword">class</span> TVarType &gt;</div>
-<div class="line"><a name="l01266"></a><span class="lineno"> 1266</span>&#160;    [[nodiscard]] <span class="keywordtype">double</span> SumConditionScalarVariable(</div>
-<div class="line"><a name="l01267"></a><span class="lineno"> 1267</span>&#160;        <span class="keyword">const</span> TVarType&amp; rVar,</div>
-<div class="line"><a name="l01268"></a><span class="lineno"> 1268</span>&#160;        <span class="keyword">const</span> <a class="code" href="../../d4/d5e/class_model_part.html">ModelPart</a>&amp; <a class="code" href="../../db/d91/namespace_kratos_1_1_rans_variable_utilities.html#af0d227aa5521a639dd5f46737c54e84c">rModelPart</a></div>
-<div class="line"><a name="l01269"></a><span class="lineno"> 1269</span>&#160;        )</div>
-<div class="line"><a name="l01270"></a><span class="lineno"> 1270</span>&#160;    {</div>
-<div class="line"><a name="l01271"></a><span class="lineno"> 1271</span>&#160;        <a class="code" href="../../df/d67/define_8h.html#ab9c29d6a0d19ff26bbc4e45e3181fb3f">KRATOS_TRY</a></div>
+<div class="line"><a name="l01252"></a><span class="lineno"> 1252</span>&#160;    [[nodiscard]] array_1d&lt;double, 3&gt; SumConditionVectorVariable(</div>
+<div class="line"><a name="l01253"></a><span class="lineno"> 1253</span>&#160;        <span class="keyword">const</span> ArrayVarType&amp; rVar,</div>
+<div class="line"><a name="l01254"></a><span class="lineno"> 1254</span>&#160;        <span class="keyword">const</span> <a class="code" href="../../d4/d5e/class_model_part.html">ModelPart</a>&amp; <a class="code" href="../../db/d91/namespace_kratos_1_1_rans_variable_utilities.html#af0d227aa5521a639dd5f46737c54e84c">rModelPart</a></div>
+<div class="line"><a name="l01255"></a><span class="lineno"> 1255</span>&#160;        );</div>
+<div class="line"><a name="l01256"></a><span class="lineno"> 1256</span>&#160; </div>
+<div class="line"><a name="l01263"></a><span class="lineno"> 1263</span>&#160;    <span class="keyword">template</span>&lt; <span class="keyword">class</span> TVarType &gt;</div>
+<div class="line"><a name="l01264"></a><span class="lineno"> 1264</span>&#160;    [[nodiscard]] <span class="keywordtype">double</span> SumConditionScalarVariable(</div>
+<div class="line"><a name="l01265"></a><span class="lineno"> 1265</span>&#160;        <span class="keyword">const</span> TVarType&amp; rVar,</div>
+<div class="line"><a name="l01266"></a><span class="lineno"> 1266</span>&#160;        <span class="keyword">const</span> <a class="code" href="../../d4/d5e/class_model_part.html">ModelPart</a>&amp; <a class="code" href="../../db/d91/namespace_kratos_1_1_rans_variable_utilities.html#af0d227aa5521a639dd5f46737c54e84c">rModelPart</a></div>
+<div class="line"><a name="l01267"></a><span class="lineno"> 1267</span>&#160;        )</div>
+<div class="line"><a name="l01268"></a><span class="lineno"> 1268</span>&#160;    {</div>
+<div class="line"><a name="l01269"></a><span class="lineno"> 1269</span>&#160;        <a class="code" href="../../df/d67/define_8h.html#ab9c29d6a0d19ff26bbc4e45e3181fb3f">KRATOS_TRY</a></div>
+<div class="line"><a name="l01270"></a><span class="lineno"> 1270</span>&#160; </div>
+<div class="line"><a name="l01271"></a><span class="lineno"> 1271</span>&#160;        <span class="keywordtype">double</span> sum_value = 0.0;</div>
 <div class="line"><a name="l01272"></a><span class="lineno"> 1272</span>&#160; </div>
-<div class="line"><a name="l01273"></a><span class="lineno"> 1273</span>&#160;        <span class="keywordtype">double</span> sum_value = 0.0;</div>
-<div class="line"><a name="l01274"></a><span class="lineno"> 1274</span>&#160; </div>
-<div class="line"><a name="l01275"></a><span class="lineno"> 1275</span>&#160;        <span class="comment">// Getting info</span></div>
-<div class="line"><a name="l01276"></a><span class="lineno"> 1276</span>&#160;        <span class="keyword">const</span> <span class="keyword">auto</span>&amp; r_communicator = <a class="code" href="../../db/d91/namespace_kratos_1_1_rans_variable_utilities.html#af0d227aa5521a639dd5f46737c54e84c">rModelPart</a>.GetCommunicator();</div>
-<div class="line"><a name="l01277"></a><span class="lineno"> 1277</span>&#160;        <span class="keyword">const</span> <span class="keyword">auto</span>&amp; r_local_mesh = r_communicator.LocalMesh();</div>
-<div class="line"><a name="l01278"></a><span class="lineno"> 1278</span>&#160;        <span class="keyword">const</span> <span class="keyword">auto</span>&amp; r_conditions_array = r_local_mesh.Conditions();</div>
-<div class="line"><a name="l01279"></a><span class="lineno"> 1279</span>&#160; </div>
-<div class="line"><a name="l01280"></a><span class="lineno"> 1280</span>&#160;        sum_value = block_for_each&lt;SumReduction&lt;double&gt;&gt;(r_conditions_array, [&amp;](<a class="code" href="../../d1/d6e/class_kratos_1_1_condition.html">ConditionType</a>&amp; rCond){</div>
-<div class="line"><a name="l01281"></a><span class="lineno"> 1281</span>&#160;            <span class="keywordflow">return</span> rCond.GetValue(rVar);</div>
-<div class="line"><a name="l01282"></a><span class="lineno"> 1282</span>&#160;        });</div>
+<div class="line"><a name="l01273"></a><span class="lineno"> 1273</span>&#160;        <span class="comment">// Getting info</span></div>
+<div class="line"><a name="l01274"></a><span class="lineno"> 1274</span>&#160;        <span class="keyword">const</span> <span class="keyword">auto</span>&amp; r_communicator = <a class="code" href="../../db/d91/namespace_kratos_1_1_rans_variable_utilities.html#af0d227aa5521a639dd5f46737c54e84c">rModelPart</a>.GetCommunicator();</div>
+<div class="line"><a name="l01275"></a><span class="lineno"> 1275</span>&#160;        <span class="keyword">const</span> <span class="keyword">auto</span>&amp; r_local_mesh = r_communicator.LocalMesh();</div>
+<div class="line"><a name="l01276"></a><span class="lineno"> 1276</span>&#160;        <span class="keyword">const</span> <span class="keyword">auto</span>&amp; r_conditions_array = r_local_mesh.Conditions();</div>
+<div class="line"><a name="l01277"></a><span class="lineno"> 1277</span>&#160; </div>
+<div class="line"><a name="l01278"></a><span class="lineno"> 1278</span>&#160;        sum_value = block_for_each&lt;SumReduction&lt;double&gt;&gt;(r_conditions_array, [&amp;](<a class="code" href="../../d1/d6e/class_kratos_1_1_condition.html">ConditionType</a>&amp; rCond){</div>
+<div class="line"><a name="l01279"></a><span class="lineno"> 1279</span>&#160;            <span class="keywordflow">return</span> rCond.GetValue(rVar);</div>
+<div class="line"><a name="l01280"></a><span class="lineno"> 1280</span>&#160;        });</div>
+<div class="line"><a name="l01281"></a><span class="lineno"> 1281</span>&#160; </div>
+<div class="line"><a name="l01282"></a><span class="lineno"> 1282</span>&#160;        <span class="keywordflow">return</span> r_communicator.GetDataCommunicator().SumAll(sum_value);</div>
 <div class="line"><a name="l01283"></a><span class="lineno"> 1283</span>&#160; </div>
-<div class="line"><a name="l01284"></a><span class="lineno"> 1284</span>&#160;        <span class="keywordflow">return</span> r_communicator.GetDataCommunicator().SumAll(sum_value);</div>
-<div class="line"><a name="l01285"></a><span class="lineno"> 1285</span>&#160; </div>
-<div class="line"><a name="l01286"></a><span class="lineno"> 1286</span>&#160;        <a class="code" href="../../df/d67/define_8h.html#a5eac541f5e39bf0360a12f51f0248513">KRATOS_CATCH</a>(<span class="stringliteral">&quot;&quot;</span>)</div>
-<div class="line"><a name="l01287"></a><span class="lineno"> 1287</span>&#160;    }</div>
-<div class="line"><a name="l01288"></a><span class="lineno"> 1288</span>&#160; </div>
-<div class="line"><a name="l01295"></a><span class="lineno"> 1295</span>&#160;    array_1d&lt;double, 3&gt; SumElementVectorVariable(</div>
-<div class="line"><a name="l01296"></a><span class="lineno"> 1296</span>&#160;        <span class="keyword">const</span> ArrayVarType&amp; rVar,</div>
-<div class="line"><a name="l01297"></a><span class="lineno"> 1297</span>&#160;        <span class="keyword">const</span> <a class="code" href="../../d4/d5e/class_model_part.html">ModelPart</a>&amp; <a class="code" href="../../db/d91/namespace_kratos_1_1_rans_variable_utilities.html#af0d227aa5521a639dd5f46737c54e84c">rModelPart</a></div>
-<div class="line"><a name="l01298"></a><span class="lineno"> 1298</span>&#160;        );</div>
-<div class="line"><a name="l01299"></a><span class="lineno"> 1299</span>&#160; </div>
-<div class="line"><a name="l01306"></a><span class="lineno"> 1306</span>&#160;    <span class="keyword">template</span>&lt; <span class="keyword">class</span> TVarType &gt;</div>
-<div class="line"><a name="l01307"></a><span class="lineno"> 1307</span>&#160;    [[nodiscard]] <span class="keywordtype">double</span> SumElementScalarVariable(</div>
-<div class="line"><a name="l01308"></a><span class="lineno"> 1308</span>&#160;        <span class="keyword">const</span> TVarType&amp; rVar,</div>
-<div class="line"><a name="l01309"></a><span class="lineno"> 1309</span>&#160;        <span class="keyword">const</span> <a class="code" href="../../d4/d5e/class_model_part.html">ModelPart</a>&amp; <a class="code" href="../../db/d91/namespace_kratos_1_1_rans_variable_utilities.html#af0d227aa5521a639dd5f46737c54e84c">rModelPart</a></div>
-<div class="line"><a name="l01310"></a><span class="lineno"> 1310</span>&#160;        )</div>
-<div class="line"><a name="l01311"></a><span class="lineno"> 1311</span>&#160;    {</div>
-<div class="line"><a name="l01312"></a><span class="lineno"> 1312</span>&#160;        <a class="code" href="../../df/d67/define_8h.html#ab9c29d6a0d19ff26bbc4e45e3181fb3f">KRATOS_TRY</a></div>
+<div class="line"><a name="l01284"></a><span class="lineno"> 1284</span>&#160;        <a class="code" href="../../df/d67/define_8h.html#a5eac541f5e39bf0360a12f51f0248513">KRATOS_CATCH</a>(<span class="stringliteral">&quot;&quot;</span>)</div>
+<div class="line"><a name="l01285"></a><span class="lineno"> 1285</span>&#160;    }</div>
+<div class="line"><a name="l01286"></a><span class="lineno"> 1286</span>&#160; </div>
+<div class="line"><a name="l01293"></a><span class="lineno"> 1293</span>&#160;    array_1d&lt;double, 3&gt; SumElementVectorVariable(</div>
+<div class="line"><a name="l01294"></a><span class="lineno"> 1294</span>&#160;        <span class="keyword">const</span> ArrayVarType&amp; rVar,</div>
+<div class="line"><a name="l01295"></a><span class="lineno"> 1295</span>&#160;        <span class="keyword">const</span> <a class="code" href="../../d4/d5e/class_model_part.html">ModelPart</a>&amp; <a class="code" href="../../db/d91/namespace_kratos_1_1_rans_variable_utilities.html#af0d227aa5521a639dd5f46737c54e84c">rModelPart</a></div>
+<div class="line"><a name="l01296"></a><span class="lineno"> 1296</span>&#160;        );</div>
+<div class="line"><a name="l01297"></a><span class="lineno"> 1297</span>&#160; </div>
+<div class="line"><a name="l01304"></a><span class="lineno"> 1304</span>&#160;    <span class="keyword">template</span>&lt; <span class="keyword">class</span> TVarType &gt;</div>
+<div class="line"><a name="l01305"></a><span class="lineno"> 1305</span>&#160;    [[nodiscard]] <span class="keywordtype">double</span> SumElementScalarVariable(</div>
+<div class="line"><a name="l01306"></a><span class="lineno"> 1306</span>&#160;        <span class="keyword">const</span> TVarType&amp; rVar,</div>
+<div class="line"><a name="l01307"></a><span class="lineno"> 1307</span>&#160;        <span class="keyword">const</span> <a class="code" href="../../d4/d5e/class_model_part.html">ModelPart</a>&amp; <a class="code" href="../../db/d91/namespace_kratos_1_1_rans_variable_utilities.html#af0d227aa5521a639dd5f46737c54e84c">rModelPart</a></div>
+<div class="line"><a name="l01308"></a><span class="lineno"> 1308</span>&#160;        )</div>
+<div class="line"><a name="l01309"></a><span class="lineno"> 1309</span>&#160;    {</div>
+<div class="line"><a name="l01310"></a><span class="lineno"> 1310</span>&#160;        <a class="code" href="../../df/d67/define_8h.html#ab9c29d6a0d19ff26bbc4e45e3181fb3f">KRATOS_TRY</a></div>
+<div class="line"><a name="l01311"></a><span class="lineno"> 1311</span>&#160; </div>
+<div class="line"><a name="l01312"></a><span class="lineno"> 1312</span>&#160;        <span class="keywordtype">double</span> sum_value = 0.0;</div>
 <div class="line"><a name="l01313"></a><span class="lineno"> 1313</span>&#160; </div>
-<div class="line"><a name="l01314"></a><span class="lineno"> 1314</span>&#160;        <span class="keywordtype">double</span> sum_value = 0.0;</div>
-<div class="line"><a name="l01315"></a><span class="lineno"> 1315</span>&#160; </div>
-<div class="line"><a name="l01316"></a><span class="lineno"> 1316</span>&#160;        <span class="comment">// Getting info</span></div>
-<div class="line"><a name="l01317"></a><span class="lineno"> 1317</span>&#160;        <span class="keyword">const</span> <span class="keyword">auto</span>&amp; r_communicator = <a class="code" href="../../db/d91/namespace_kratos_1_1_rans_variable_utilities.html#af0d227aa5521a639dd5f46737c54e84c">rModelPart</a>.GetCommunicator();</div>
-<div class="line"><a name="l01318"></a><span class="lineno"> 1318</span>&#160;        <span class="keyword">const</span> <span class="keyword">auto</span>&amp; r_local_mesh = r_communicator.LocalMesh();</div>
-<div class="line"><a name="l01319"></a><span class="lineno"> 1319</span>&#160;        <span class="keyword">const</span> <span class="keyword">auto</span>&amp; r_elements_array = r_local_mesh.Elements();</div>
-<div class="line"><a name="l01320"></a><span class="lineno"> 1320</span>&#160; </div>
-<div class="line"><a name="l01321"></a><span class="lineno"> 1321</span>&#160;        sum_value = block_for_each&lt;SumReduction&lt;double&gt;&gt;(r_elements_array, [&amp;](<a class="code" href="../../d5/dd4/class_kratos_1_1_element.html">ElementType</a>&amp; rElem){</div>
-<div class="line"><a name="l01322"></a><span class="lineno"> 1322</span>&#160;            <span class="keywordflow">return</span> rElem.GetValue(rVar);</div>
-<div class="line"><a name="l01323"></a><span class="lineno"> 1323</span>&#160;        });</div>
+<div class="line"><a name="l01314"></a><span class="lineno"> 1314</span>&#160;        <span class="comment">// Getting info</span></div>
+<div class="line"><a name="l01315"></a><span class="lineno"> 1315</span>&#160;        <span class="keyword">const</span> <span class="keyword">auto</span>&amp; r_communicator = <a class="code" href="../../db/d91/namespace_kratos_1_1_rans_variable_utilities.html#af0d227aa5521a639dd5f46737c54e84c">rModelPart</a>.GetCommunicator();</div>
+<div class="line"><a name="l01316"></a><span class="lineno"> 1316</span>&#160;        <span class="keyword">const</span> <span class="keyword">auto</span>&amp; r_local_mesh = r_communicator.LocalMesh();</div>
+<div class="line"><a name="l01317"></a><span class="lineno"> 1317</span>&#160;        <span class="keyword">const</span> <span class="keyword">auto</span>&amp; r_elements_array = r_local_mesh.Elements();</div>
+<div class="line"><a name="l01318"></a><span class="lineno"> 1318</span>&#160; </div>
+<div class="line"><a name="l01319"></a><span class="lineno"> 1319</span>&#160;        sum_value = block_for_each&lt;SumReduction&lt;double&gt;&gt;(r_elements_array, [&amp;](<a class="code" href="../../d5/dd4/class_kratos_1_1_element.html">ElementType</a>&amp; rElem){</div>
+<div class="line"><a name="l01320"></a><span class="lineno"> 1320</span>&#160;            <span class="keywordflow">return</span> rElem.GetValue(rVar);</div>
+<div class="line"><a name="l01321"></a><span class="lineno"> 1321</span>&#160;        });</div>
+<div class="line"><a name="l01322"></a><span class="lineno"> 1322</span>&#160; </div>
+<div class="line"><a name="l01323"></a><span class="lineno"> 1323</span>&#160;        <span class="keywordflow">return</span> r_communicator.GetDataCommunicator().SumAll(sum_value);</div>
 <div class="line"><a name="l01324"></a><span class="lineno"> 1324</span>&#160; </div>
-<div class="line"><a name="l01325"></a><span class="lineno"> 1325</span>&#160;        <span class="keywordflow">return</span> r_communicator.GetDataCommunicator().SumAll(sum_value);</div>
-<div class="line"><a name="l01326"></a><span class="lineno"> 1326</span>&#160; </div>
-<div class="line"><a name="l01327"></a><span class="lineno"> 1327</span>&#160;        <a class="code" href="../../df/d67/define_8h.html#a5eac541f5e39bf0360a12f51f0248513">KRATOS_CATCH</a>(<span class="stringliteral">&quot;&quot;</span>)</div>
-<div class="line"><a name="l01328"></a><span class="lineno"> 1328</span>&#160;    }</div>
-<div class="line"><a name="l01329"></a><span class="lineno"> 1329</span>&#160; </div>
-<div class="line"><a name="l01335"></a><span class="lineno"> 1335</span>&#160;    <span class="keyword">template</span>&lt; <span class="keyword">class</span> TVarType &gt;</div>
-<div class="line"><a name="l01336"></a><span class="lineno"> 1336</span>&#160;    <span class="keywordtype">void</span> AddDof(</div>
-<div class="line"><a name="l01337"></a><span class="lineno"> 1337</span>&#160;        <span class="keyword">const</span> TVarType&amp; rVar,</div>
-<div class="line"><a name="l01338"></a><span class="lineno"> 1338</span>&#160;        <a class="code" href="../../d4/d5e/class_model_part.html">ModelPart</a>&amp; <a class="code" href="../../db/d91/namespace_kratos_1_1_rans_variable_utilities.html#af0d227aa5521a639dd5f46737c54e84c">rModelPart</a></div>
-<div class="line"><a name="l01339"></a><span class="lineno"> 1339</span>&#160;        )</div>
-<div class="line"><a name="l01340"></a><span class="lineno"> 1340</span>&#160;    {</div>
-<div class="line"><a name="l01341"></a><span class="lineno"> 1341</span>&#160;        <a class="code" href="../../df/d67/define_8h.html#ab9c29d6a0d19ff26bbc4e45e3181fb3f">KRATOS_TRY</a></div>
-<div class="line"><a name="l01342"></a><span class="lineno"> 1342</span>&#160; </div>
-<div class="line"><a name="l01343"></a><span class="lineno"> 1343</span>&#160;        <span class="comment">// First we do a chek</span></div>
-<div class="line"><a name="l01344"></a><span class="lineno"> 1344</span>&#160;        <span class="keywordflow">if</span>(<a class="code" href="../../db/d91/namespace_kratos_1_1_rans_variable_utilities.html#af0d227aa5521a639dd5f46737c54e84c">rModelPart</a>.NumberOfNodes() != 0)</div>
-<div class="line"><a name="l01345"></a><span class="lineno"> 1345</span>&#160;            <a class="code" href="../../d5/d4d/group___kratos_core.html#ga421c079910a05f8a88688b045190ac9b">KRATOS_ERROR_IF_NOT</a>(<a class="code" href="../../db/d91/namespace_kratos_1_1_rans_variable_utilities.html#af0d227aa5521a639dd5f46737c54e84c">rModelPart</a>.NodesBegin()-&gt;SolutionStepsDataHas(rVar)) &lt;&lt; <span class="stringliteral">&quot;ERROR:: Variable : &quot;</span> &lt;&lt; rVar &lt;&lt; <span class="stringliteral">&quot;not included in the Solution step data &quot;</span>;</div>
+<div class="line"><a name="l01325"></a><span class="lineno"> 1325</span>&#160;        <a class="code" href="../../df/d67/define_8h.html#a5eac541f5e39bf0360a12f51f0248513">KRATOS_CATCH</a>(<span class="stringliteral">&quot;&quot;</span>)</div>
+<div class="line"><a name="l01326"></a><span class="lineno"> 1326</span>&#160;    }</div>
+<div class="line"><a name="l01327"></a><span class="lineno"> 1327</span>&#160; </div>
+<div class="line"><a name="l01333"></a><span class="lineno"> 1333</span>&#160;    <span class="keyword">template</span>&lt; <span class="keyword">class</span> TVarType &gt;</div>
+<div class="line"><a name="l01334"></a><span class="lineno"> 1334</span>&#160;    <span class="keywordtype">void</span> AddDof(</div>
+<div class="line"><a name="l01335"></a><span class="lineno"> 1335</span>&#160;        <span class="keyword">const</span> TVarType&amp; rVar,</div>
+<div class="line"><a name="l01336"></a><span class="lineno"> 1336</span>&#160;        <a class="code" href="../../d4/d5e/class_model_part.html">ModelPart</a>&amp; <a class="code" href="../../db/d91/namespace_kratos_1_1_rans_variable_utilities.html#af0d227aa5521a639dd5f46737c54e84c">rModelPart</a></div>
+<div class="line"><a name="l01337"></a><span class="lineno"> 1337</span>&#160;        )</div>
+<div class="line"><a name="l01338"></a><span class="lineno"> 1338</span>&#160;    {</div>
+<div class="line"><a name="l01339"></a><span class="lineno"> 1339</span>&#160;        <a class="code" href="../../df/d67/define_8h.html#ab9c29d6a0d19ff26bbc4e45e3181fb3f">KRATOS_TRY</a></div>
+<div class="line"><a name="l01340"></a><span class="lineno"> 1340</span>&#160; </div>
+<div class="line"><a name="l01341"></a><span class="lineno"> 1341</span>&#160;        <span class="comment">// First we do a chek</span></div>
+<div class="line"><a name="l01342"></a><span class="lineno"> 1342</span>&#160;        <span class="keywordflow">if</span>(<a class="code" href="../../db/d91/namespace_kratos_1_1_rans_variable_utilities.html#af0d227aa5521a639dd5f46737c54e84c">rModelPart</a>.NumberOfNodes() != 0)</div>
+<div class="line"><a name="l01343"></a><span class="lineno"> 1343</span>&#160;            <a class="code" href="../../d5/d4d/group___kratos_core.html#ga421c079910a05f8a88688b045190ac9b">KRATOS_ERROR_IF_NOT</a>(<a class="code" href="../../db/d91/namespace_kratos_1_1_rans_variable_utilities.html#af0d227aa5521a639dd5f46737c54e84c">rModelPart</a>.NodesBegin()-&gt;SolutionStepsDataHas(rVar)) &lt;&lt; <span class="stringliteral">&quot;ERROR:: Variable : &quot;</span> &lt;&lt; rVar &lt;&lt; <span class="stringliteral">&quot;not included in the Solution step data &quot;</span>;</div>
+<div class="line"><a name="l01344"></a><span class="lineno"> 1344</span>&#160; </div>
+<div class="line"><a name="l01345"></a><span class="lineno"> 1345</span>&#160;        <a class="code" href="../../db/d91/namespace_kratos_1_1_rans_variable_utilities.html#af0d227aa5521a639dd5f46737c54e84c">rModelPart</a>.GetNodalSolutionStepVariablesList().AddDof(&amp;rVar);</div>
 <div class="line"><a name="l01346"></a><span class="lineno"> 1346</span>&#160; </div>
-<div class="line"><a name="l01347"></a><span class="lineno"> 1347</span>&#160;        <a class="code" href="../../db/d91/namespace_kratos_1_1_rans_variable_utilities.html#af0d227aa5521a639dd5f46737c54e84c">rModelPart</a>.GetNodalSolutionStepVariablesList().AddDof(&amp;rVar);</div>
-<div class="line"><a name="l01348"></a><span class="lineno"> 1348</span>&#160; </div>
-<div class="line"><a name="l01349"></a><span class="lineno"> 1349</span>&#160;        <a class="code" href="../../db/d66/namespace_kratos.html#a07ef8a5b8886ded903a1e7ad4c0df960">block_for_each</a>(<a class="code" href="../../db/d91/namespace_kratos_1_1_rans_variable_utilities.html#af0d227aa5521a639dd5f46737c54e84c">rModelPart</a>.Nodes(),[&amp;](Node&lt;3&gt;&amp; rNode){</div>
-<div class="line"><a name="l01350"></a><span class="lineno"> 1350</span>&#160;            rNode.AddDof(rVar);</div>
-<div class="line"><a name="l01351"></a><span class="lineno"> 1351</span>&#160;        });</div>
-<div class="line"><a name="l01352"></a><span class="lineno"> 1352</span>&#160; </div>
-<div class="line"><a name="l01353"></a><span class="lineno"> 1353</span>&#160;        <a class="code" href="../../df/d67/define_8h.html#a5eac541f5e39bf0360a12f51f0248513">KRATOS_CATCH</a>(<span class="stringliteral">&quot;&quot;</span>)</div>
-<div class="line"><a name="l01354"></a><span class="lineno"> 1354</span>&#160;    }</div>
-<div class="line"><a name="l01355"></a><span class="lineno"> 1355</span>&#160; </div>
-<div class="line"><a name="l01362"></a><span class="lineno"> 1362</span>&#160;    <span class="keyword">template</span>&lt; <span class="keyword">class</span> TVarType &gt;</div>
-<div class="line"><a name="l01363"></a><span class="lineno"> 1363</span>&#160;    <span class="keywordtype">void</span> AddDofWithReaction(</div>
-<div class="line"><a name="l01364"></a><span class="lineno"> 1364</span>&#160;        <span class="keyword">const</span> TVarType&amp; rVar,</div>
-<div class="line"><a name="l01365"></a><span class="lineno"> 1365</span>&#160;        <span class="keyword">const</span> TVarType&amp; rReactionVar,</div>
-<div class="line"><a name="l01366"></a><span class="lineno"> 1366</span>&#160;        <a class="code" href="../../d4/d5e/class_model_part.html">ModelPart</a>&amp; <a class="code" href="../../db/d91/namespace_kratos_1_1_rans_variable_utilities.html#af0d227aa5521a639dd5f46737c54e84c">rModelPart</a></div>
-<div class="line"><a name="l01367"></a><span class="lineno"> 1367</span>&#160;        )</div>
-<div class="line"><a name="l01368"></a><span class="lineno"> 1368</span>&#160;    {</div>
-<div class="line"><a name="l01369"></a><span class="lineno"> 1369</span>&#160;        <a class="code" href="../../df/d67/define_8h.html#ab9c29d6a0d19ff26bbc4e45e3181fb3f">KRATOS_TRY</a></div>
-<div class="line"><a name="l01370"></a><span class="lineno"> 1370</span>&#160; </div>
-<div class="line"><a name="l01371"></a><span class="lineno"> 1371</span>&#160;        <span class="keywordflow">if</span>(<a class="code" href="../../db/d91/namespace_kratos_1_1_rans_variable_utilities.html#af0d227aa5521a639dd5f46737c54e84c">rModelPart</a>.NumberOfNodes() != 0) {</div>
-<div class="line"><a name="l01372"></a><span class="lineno"> 1372</span>&#160;            <a class="code" href="../../d5/d4d/group___kratos_core.html#ga421c079910a05f8a88688b045190ac9b">KRATOS_ERROR_IF_NOT</a>(<a class="code" href="../../db/d91/namespace_kratos_1_1_rans_variable_utilities.html#af0d227aa5521a639dd5f46737c54e84c">rModelPart</a>.NodesBegin()-&gt;SolutionStepsDataHas(rVar)) &lt;&lt; <span class="stringliteral">&quot;ERROR:: DoF Variable : &quot;</span> &lt;&lt; rVar &lt;&lt; <span class="stringliteral">&quot;not included in the Soluttion step data &quot;</span>;</div>
-<div class="line"><a name="l01373"></a><span class="lineno"> 1373</span>&#160;            <a class="code" href="../../d5/d4d/group___kratos_core.html#ga421c079910a05f8a88688b045190ac9b">KRATOS_ERROR_IF_NOT</a>(<a class="code" href="../../db/d91/namespace_kratos_1_1_rans_variable_utilities.html#af0d227aa5521a639dd5f46737c54e84c">rModelPart</a>.NodesBegin()-&gt;SolutionStepsDataHas(rReactionVar)) &lt;&lt; <span class="stringliteral">&quot;ERROR:: Reaction Variable : &quot;</span> &lt;&lt; rReactionVar &lt;&lt; <span class="stringliteral">&quot;not included in the Soluttion step data &quot;</span>;</div>
-<div class="line"><a name="l01374"></a><span class="lineno"> 1374</span>&#160;        }</div>
-<div class="line"><a name="l01375"></a><span class="lineno"> 1375</span>&#160; </div>
-<div class="line"><a name="l01376"></a><span class="lineno"> 1376</span>&#160;        <span class="comment">// If in debug we do a check for all nodes</span></div>
-<div class="line"><a name="l01377"></a><span class="lineno"> 1377</span>&#160;<span class="preprocessor">    #ifdef KRATOS_DEBUG</span></div>
-<div class="line"><a name="l01378"></a><span class="lineno"> 1378</span>&#160;        CheckVariableExists(rVar, <a class="code" href="../../db/d91/namespace_kratos_1_1_rans_variable_utilities.html#af0d227aa5521a639dd5f46737c54e84c">rModelPart</a>.Nodes());</div>
-<div class="line"><a name="l01379"></a><span class="lineno"> 1379</span>&#160;        CheckVariableExists(rReactionVar, <a class="code" href="../../db/d91/namespace_kratos_1_1_rans_variable_utilities.html#af0d227aa5521a639dd5f46737c54e84c">rModelPart</a>.Nodes());</div>
-<div class="line"><a name="l01380"></a><span class="lineno"> 1380</span>&#160;<span class="preprocessor">    #endif</span></div>
+<div class="line"><a name="l01347"></a><span class="lineno"> 1347</span>&#160;        <a class="code" href="../../db/d66/namespace_kratos.html#a382d1519b254c52c6699149b2192aa8c">block_for_each</a>(<a class="code" href="../../db/d91/namespace_kratos_1_1_rans_variable_utilities.html#af0d227aa5521a639dd5f46737c54e84c">rModelPart</a>.Nodes(),[&amp;](Node&lt;3&gt;&amp; rNode){</div>
+<div class="line"><a name="l01348"></a><span class="lineno"> 1348</span>&#160;            rNode.AddDof(rVar);</div>
+<div class="line"><a name="l01349"></a><span class="lineno"> 1349</span>&#160;        });</div>
+<div class="line"><a name="l01350"></a><span class="lineno"> 1350</span>&#160; </div>
+<div class="line"><a name="l01351"></a><span class="lineno"> 1351</span>&#160;        <a class="code" href="../../df/d67/define_8h.html#a5eac541f5e39bf0360a12f51f0248513">KRATOS_CATCH</a>(<span class="stringliteral">&quot;&quot;</span>)</div>
+<div class="line"><a name="l01352"></a><span class="lineno"> 1352</span>&#160;    }</div>
+<div class="line"><a name="l01353"></a><span class="lineno"> 1353</span>&#160; </div>
+<div class="line"><a name="l01360"></a><span class="lineno"> 1360</span>&#160;    <span class="keyword">template</span>&lt; <span class="keyword">class</span> TVarType &gt;</div>
+<div class="line"><a name="l01361"></a><span class="lineno"> 1361</span>&#160;    <span class="keywordtype">void</span> AddDofWithReaction(</div>
+<div class="line"><a name="l01362"></a><span class="lineno"> 1362</span>&#160;        <span class="keyword">const</span> TVarType&amp; rVar,</div>
+<div class="line"><a name="l01363"></a><span class="lineno"> 1363</span>&#160;        <span class="keyword">const</span> TVarType&amp; rReactionVar,</div>
+<div class="line"><a name="l01364"></a><span class="lineno"> 1364</span>&#160;        <a class="code" href="../../d4/d5e/class_model_part.html">ModelPart</a>&amp; <a class="code" href="../../db/d91/namespace_kratos_1_1_rans_variable_utilities.html#af0d227aa5521a639dd5f46737c54e84c">rModelPart</a></div>
+<div class="line"><a name="l01365"></a><span class="lineno"> 1365</span>&#160;        )</div>
+<div class="line"><a name="l01366"></a><span class="lineno"> 1366</span>&#160;    {</div>
+<div class="line"><a name="l01367"></a><span class="lineno"> 1367</span>&#160;        <a class="code" href="../../df/d67/define_8h.html#ab9c29d6a0d19ff26bbc4e45e3181fb3f">KRATOS_TRY</a></div>
+<div class="line"><a name="l01368"></a><span class="lineno"> 1368</span>&#160; </div>
+<div class="line"><a name="l01369"></a><span class="lineno"> 1369</span>&#160;        <span class="keywordflow">if</span>(<a class="code" href="../../db/d91/namespace_kratos_1_1_rans_variable_utilities.html#af0d227aa5521a639dd5f46737c54e84c">rModelPart</a>.NumberOfNodes() != 0) {</div>
+<div class="line"><a name="l01370"></a><span class="lineno"> 1370</span>&#160;            <a class="code" href="../../d5/d4d/group___kratos_core.html#ga421c079910a05f8a88688b045190ac9b">KRATOS_ERROR_IF_NOT</a>(<a class="code" href="../../db/d91/namespace_kratos_1_1_rans_variable_utilities.html#af0d227aa5521a639dd5f46737c54e84c">rModelPart</a>.NodesBegin()-&gt;SolutionStepsDataHas(rVar)) &lt;&lt; <span class="stringliteral">&quot;ERROR:: DoF Variable : &quot;</span> &lt;&lt; rVar &lt;&lt; <span class="stringliteral">&quot;not included in the Soluttion step data &quot;</span>;</div>
+<div class="line"><a name="l01371"></a><span class="lineno"> 1371</span>&#160;            <a class="code" href="../../d5/d4d/group___kratos_core.html#ga421c079910a05f8a88688b045190ac9b">KRATOS_ERROR_IF_NOT</a>(<a class="code" href="../../db/d91/namespace_kratos_1_1_rans_variable_utilities.html#af0d227aa5521a639dd5f46737c54e84c">rModelPart</a>.NodesBegin()-&gt;SolutionStepsDataHas(rReactionVar)) &lt;&lt; <span class="stringliteral">&quot;ERROR:: Reaction Variable : &quot;</span> &lt;&lt; rReactionVar &lt;&lt; <span class="stringliteral">&quot;not included in the Soluttion step data &quot;</span>;</div>
+<div class="line"><a name="l01372"></a><span class="lineno"> 1372</span>&#160;        }</div>
+<div class="line"><a name="l01373"></a><span class="lineno"> 1373</span>&#160; </div>
+<div class="line"><a name="l01374"></a><span class="lineno"> 1374</span>&#160;        <span class="comment">// If in debug we do a check for all nodes</span></div>
+<div class="line"><a name="l01375"></a><span class="lineno"> 1375</span>&#160;<span class="preprocessor">    #ifdef KRATOS_DEBUG</span></div>
+<div class="line"><a name="l01376"></a><span class="lineno"> 1376</span>&#160;        CheckVariableExists(rVar, <a class="code" href="../../db/d91/namespace_kratos_1_1_rans_variable_utilities.html#af0d227aa5521a639dd5f46737c54e84c">rModelPart</a>.Nodes());</div>
+<div class="line"><a name="l01377"></a><span class="lineno"> 1377</span>&#160;        CheckVariableExists(rReactionVar, <a class="code" href="../../db/d91/namespace_kratos_1_1_rans_variable_utilities.html#af0d227aa5521a639dd5f46737c54e84c">rModelPart</a>.Nodes());</div>
+<div class="line"><a name="l01378"></a><span class="lineno"> 1378</span>&#160;<span class="preprocessor">    #endif</span></div>
+<div class="line"><a name="l01379"></a><span class="lineno"> 1379</span>&#160; </div>
+<div class="line"><a name="l01380"></a><span class="lineno"> 1380</span>&#160;        <a class="code" href="../../db/d91/namespace_kratos_1_1_rans_variable_utilities.html#af0d227aa5521a639dd5f46737c54e84c">rModelPart</a>.GetNodalSolutionStepVariablesList().AddDof(&amp;rVar, &amp;rReactionVar);</div>
 <div class="line"><a name="l01381"></a><span class="lineno"> 1381</span>&#160; </div>
-<div class="line"><a name="l01382"></a><span class="lineno"> 1382</span>&#160;        <a class="code" href="../../db/d91/namespace_kratos_1_1_rans_variable_utilities.html#af0d227aa5521a639dd5f46737c54e84c">rModelPart</a>.GetNodalSolutionStepVariablesList().AddDof(&amp;rVar, &amp;rReactionVar);</div>
-<div class="line"><a name="l01383"></a><span class="lineno"> 1383</span>&#160; </div>
-<div class="line"><a name="l01384"></a><span class="lineno"> 1384</span>&#160;        <a class="code" href="../../db/d66/namespace_kratos.html#a07ef8a5b8886ded903a1e7ad4c0df960">block_for_each</a>(<a class="code" href="../../db/d91/namespace_kratos_1_1_rans_variable_utilities.html#af0d227aa5521a639dd5f46737c54e84c">rModelPart</a>.Nodes(),[&amp;](Node&lt;3&gt;&amp; rNode){</div>
-<div class="line"><a name="l01385"></a><span class="lineno"> 1385</span>&#160;            rNode.AddDof(rVar,rReactionVar);</div>
-<div class="line"><a name="l01386"></a><span class="lineno"> 1386</span>&#160;        });</div>
-<div class="line"><a name="l01387"></a><span class="lineno"> 1387</span>&#160; </div>
-<div class="line"><a name="l01388"></a><span class="lineno"> 1388</span>&#160;        <a class="code" href="../../df/d67/define_8h.html#a5eac541f5e39bf0360a12f51f0248513">KRATOS_CATCH</a>(<span class="stringliteral">&quot;&quot;</span>)</div>
-<div class="line"><a name="l01389"></a><span class="lineno"> 1389</span>&#160;    }</div>
-<div class="line"><a name="l01390"></a><span class="lineno"> 1390</span>&#160; </div>
-<div class="line"><a name="l01398"></a><span class="lineno"> 1398</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> AddDofsList(</div>
-<div class="line"><a name="l01399"></a><span class="lineno"> 1399</span>&#160;        <span class="keyword">const</span> std::vector&lt;std::string&gt;&amp; rDofsVarNamesList,</div>
-<div class="line"><a name="l01400"></a><span class="lineno"> 1400</span>&#160;        <a class="code" href="../../d4/d5e/class_model_part.html">ModelPart</a>&amp; <a class="code" href="../../db/d91/namespace_kratos_1_1_rans_variable_utilities.html#af0d227aa5521a639dd5f46737c54e84c">rModelPart</a>);</div>
-<div class="line"><a name="l01401"></a><span class="lineno"> 1401</span>&#160; </div>
-<div class="line"><a name="l01409"></a><span class="lineno"> 1409</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> AddDofsWithReactionsList(</div>
-<div class="line"><a name="l01410"></a><span class="lineno"> 1410</span>&#160;        <span class="keyword">const</span> std::vector&lt;std::array&lt;std::string,2&gt;&gt;&amp; rDofsAndReactionsNamesList,</div>
-<div class="line"><a name="l01411"></a><span class="lineno"> 1411</span>&#160;        <a class="code" href="../../d4/d5e/class_model_part.html">ModelPart</a>&amp; <a class="code" href="../../db/d91/namespace_kratos_1_1_rans_variable_utilities.html#af0d227aa5521a639dd5f46737c54e84c">rModelPart</a>);</div>
-<div class="line"><a name="l01412"></a><span class="lineno"> 1412</span>&#160; </div>
-<div class="line"><a name="l01417"></a><span class="lineno"> 1417</span>&#160;    <span class="keywordtype">bool</span> CheckVariableKeys();</div>
-<div class="line"><a name="l01418"></a><span class="lineno"> 1418</span>&#160; </div>
-<div class="line"><a name="l01423"></a><span class="lineno"> 1423</span>&#160;    <span class="keywordtype">void</span> UpdateCurrentToInitialConfiguration(<span class="keyword">const</span> <a class="code" href="../../db/d66/namespace_kratos.html#a14ab8160ba3f8291244835400249c09d">ModelPart::NodesContainerType</a>&amp; <a class="code" href="../../db/d91/namespace_kratos_1_1_rans_variable_utilities.html#a2f23795bfd18a5c0e153aad48feaa4d7">rNodes</a>);</div>
-<div class="line"><a name="l01424"></a><span class="lineno"> 1424</span>&#160; </div>
-<div class="line"><a name="l01429"></a><span class="lineno"> 1429</span>&#160;    <span class="keywordtype">void</span> UpdateInitialToCurrentConfiguration(<span class="keyword">const</span> <a class="code" href="../../db/d66/namespace_kratos.html#a14ab8160ba3f8291244835400249c09d">ModelPart::NodesContainerType</a>&amp; <a class="code" href="../../db/d91/namespace_kratos_1_1_rans_variable_utilities.html#a2f23795bfd18a5c0e153aad48feaa4d7">rNodes</a>);</div>
-<div class="line"><a name="l01430"></a><span class="lineno"> 1430</span>&#160; </div>
-<div class="line"><a name="l01438"></a><span class="lineno"> 1438</span>&#160;    <span class="keywordtype">void</span> UpdateCurrentPosition(</div>
-<div class="line"><a name="l01439"></a><span class="lineno"> 1439</span>&#160;        <span class="keyword">const</span> <a class="code" href="../../db/d66/namespace_kratos.html#a14ab8160ba3f8291244835400249c09d">ModelPart::NodesContainerType</a>&amp; <a class="code" href="../../db/d91/namespace_kratos_1_1_rans_variable_utilities.html#a2f23795bfd18a5c0e153aad48feaa4d7">rNodes</a>,</div>
-<div class="line"><a name="l01440"></a><span class="lineno"> 1440</span>&#160;        <span class="keyword">const</span> ArrayVarType&amp; rUpdateVariable = DISPLACEMENT,</div>
-<div class="line"><a name="l01441"></a><span class="lineno"> 1441</span>&#160;        <span class="keyword">const</span> <a class="code" href="../../d5/d4d/group___kratos_core.html#ga1ba1e34f0af6a7cfcfa9b43e1f8e8c91">IndexType</a> BufferPosition = 0</div>
-<div class="line"><a name="l01442"></a><span class="lineno"> 1442</span>&#160;        );</div>
-<div class="line"><a name="l01443"></a><span class="lineno"> 1443</span>&#160; </div>
-<div class="line"><a name="l01455"></a><span class="lineno"> 1455</span>&#160;    <span class="keyword">template</span>&lt;<span class="keyword">class</span> TVectorType=Vector&gt;</div>
-<div class="line"><a name="l01456"></a><span class="lineno"> 1456</span>&#160;    [[nodiscard]] TVectorType GetCurrentPositionsVector(</div>
-<div class="line"><a name="l01457"></a><span class="lineno"> 1457</span>&#160;        <span class="keyword">const</span> <a class="code" href="../../db/d66/namespace_kratos.html#a14ab8160ba3f8291244835400249c09d">ModelPart::NodesContainerType</a>&amp; <a class="code" href="../../db/d91/namespace_kratos_1_1_rans_variable_utilities.html#a2f23795bfd18a5c0e153aad48feaa4d7">rNodes</a>,</div>
-<div class="line"><a name="l01458"></a><span class="lineno"> 1458</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="../../da/dec/namespace_kratos_1_1_mortar_utilities.html#a67e0ac17841be88205ea3ffb7748688c">Dimension</a></div>
-<div class="line"><a name="l01459"></a><span class="lineno"> 1459</span>&#160;        );</div>
-<div class="line"><a name="l01460"></a><span class="lineno"> 1460</span>&#160; </div>
-<div class="line"><a name="l01472"></a><span class="lineno"> 1472</span>&#160;    <span class="keyword">template</span>&lt;<span class="keyword">class</span> TVectorType=Vector&gt;</div>
-<div class="line"><a name="l01473"></a><span class="lineno"> 1473</span>&#160;    [[nodiscard]] TVectorType GetInitialPositionsVector(</div>
-<div class="line"><a name="l01474"></a><span class="lineno"> 1474</span>&#160;        <span class="keyword">const</span> <a class="code" href="../../db/d66/namespace_kratos.html#a14ab8160ba3f8291244835400249c09d">ModelPart::NodesContainerType</a>&amp; <a class="code" href="../../db/d91/namespace_kratos_1_1_rans_variable_utilities.html#a2f23795bfd18a5c0e153aad48feaa4d7">rNodes</a>,</div>
-<div class="line"><a name="l01475"></a><span class="lineno"> 1475</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="../../da/dec/namespace_kratos_1_1_mortar_utilities.html#a67e0ac17841be88205ea3ffb7748688c">Dimension</a></div>
-<div class="line"><a name="l01476"></a><span class="lineno"> 1476</span>&#160;        );</div>
-<div class="line"><a name="l01477"></a><span class="lineno"> 1477</span>&#160; </div>
-<div class="line"><a name="l01490"></a><span class="lineno"> 1490</span>&#160;     <span class="keywordtype">void</span> SetCurrentPositionsVector(</div>
-<div class="line"><a name="l01491"></a><span class="lineno"> 1491</span>&#160;        <a class="code" href="../../db/d66/namespace_kratos.html#a14ab8160ba3f8291244835400249c09d">ModelPart::NodesContainerType</a>&amp; <a class="code" href="../../db/d91/namespace_kratos_1_1_rans_variable_utilities.html#a2f23795bfd18a5c0e153aad48feaa4d7">rNodes</a>,</div>
-<div class="line"><a name="l01492"></a><span class="lineno"> 1492</span>&#160;        <span class="keyword">const</span> <a class="code" href="../../db/d66/namespace_kratos.html#a2382ac8a486c0d52da7ce94f4ccd6d70">Vector</a>&amp; rPositions</div>
-<div class="line"><a name="l01493"></a><span class="lineno"> 1493</span>&#160;        );</div>
-<div class="line"><a name="l01494"></a><span class="lineno"> 1494</span>&#160; </div>
-<div class="line"><a name="l01507"></a><span class="lineno"> 1507</span>&#160;    <span class="keywordtype">void</span> SetInitialPositionsVector(</div>
-<div class="line"><a name="l01508"></a><span class="lineno"> 1508</span>&#160;        <a class="code" href="../../db/d66/namespace_kratos.html#a14ab8160ba3f8291244835400249c09d">ModelPart::NodesContainerType</a>&amp; <a class="code" href="../../db/d91/namespace_kratos_1_1_rans_variable_utilities.html#a2f23795bfd18a5c0e153aad48feaa4d7">rNodes</a>,</div>
-<div class="line"><a name="l01509"></a><span class="lineno"> 1509</span>&#160;        <span class="keyword">const</span> <a class="code" href="../../db/d66/namespace_kratos.html#a2382ac8a486c0d52da7ce94f4ccd6d70">Vector</a>&amp; rPositions</div>
-<div class="line"><a name="l01510"></a><span class="lineno"> 1510</span>&#160;        );</div>
-<div class="line"><a name="l01511"></a><span class="lineno"> 1511</span>&#160; </div>
-<div class="line"><a name="l01523"></a><span class="lineno"> 1523</span>&#160;    [[nodiscard]] <a class="code" href="../../db/d66/namespace_kratos.html#a2382ac8a486c0d52da7ce94f4ccd6d70">Vector</a> GetSolutionStepValuesVector(</div>
-<div class="line"><a name="l01524"></a><span class="lineno"> 1524</span>&#160;                                <span class="keyword">const</span> <a class="code" href="../../db/d66/namespace_kratos.html#a14ab8160ba3f8291244835400249c09d">ModelPart::NodesContainerType</a>&amp; <a class="code" href="../../db/d91/namespace_kratos_1_1_rans_variable_utilities.html#a2f23795bfd18a5c0e153aad48feaa4d7">rNodes</a>,</div>
-<div class="line"><a name="l01525"></a><span class="lineno"> 1525</span>&#160;                                <span class="keyword">const</span> Variable&lt;array_1d&lt;double,3&gt;&gt;&amp; rVar,</div>
-<div class="line"><a name="l01526"></a><span class="lineno"> 1526</span>&#160;                                <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="../../d4/d48/namespace_kratos_1_1_rans_application_test_utilities.html#af1b89bfe107d734fc948b620f42f1cf8">Step</a>,</div>
-<div class="line"><a name="l01527"></a><span class="lineno"> 1527</span>&#160;                                <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="../../da/dec/namespace_kratos_1_1_mortar_utilities.html#a67e0ac17841be88205ea3ffb7748688c">Dimension</a>=3</div>
-<div class="line"><a name="l01528"></a><span class="lineno"> 1528</span>&#160;                                );</div>
-<div class="line"><a name="l01529"></a><span class="lineno"> 1529</span>&#160; </div>
-<div class="line"><a name="l01540"></a><span class="lineno"> 1540</span>&#160;    [[nodiscard]] <a class="code" href="../../db/d66/namespace_kratos.html#a2382ac8a486c0d52da7ce94f4ccd6d70">Vector</a> GetSolutionStepValuesVector(</div>
-<div class="line"><a name="l01541"></a><span class="lineno"> 1541</span>&#160;                                <span class="keyword">const</span> <a class="code" href="../../db/d66/namespace_kratos.html#a14ab8160ba3f8291244835400249c09d">ModelPart::NodesContainerType</a>&amp; <a class="code" href="../../db/d91/namespace_kratos_1_1_rans_variable_utilities.html#a2f23795bfd18a5c0e153aad48feaa4d7">rNodes</a>,</div>
-<div class="line"><a name="l01542"></a><span class="lineno"> 1542</span>&#160;                                <span class="keyword">const</span> Variable&lt;double&gt;&amp; rVar,</div>
-<div class="line"><a name="l01543"></a><span class="lineno"> 1543</span>&#160;                                <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="../../d4/d48/namespace_kratos_1_1_rans_application_test_utilities.html#af1b89bfe107d734fc948b620f42f1cf8">Step</a></div>
-<div class="line"><a name="l01544"></a><span class="lineno"> 1544</span>&#160;                                );</div>
-<div class="line"><a name="l01545"></a><span class="lineno"> 1545</span>&#160; </div>
-<div class="line"><a name="l01555"></a><span class="lineno"> 1555</span>&#160;    <span class="keywordtype">void</span> SetSolutionStepValuesVector(</div>
-<div class="line"><a name="l01556"></a><span class="lineno"> 1556</span>&#160;                                <a class="code" href="../../db/d66/namespace_kratos.html#a14ab8160ba3f8291244835400249c09d">ModelPart::NodesContainerType</a>&amp; <a class="code" href="../../db/d91/namespace_kratos_1_1_rans_variable_utilities.html#a2f23795bfd18a5c0e153aad48feaa4d7">rNodes</a>,</div>
-<div class="line"><a name="l01557"></a><span class="lineno"> 1557</span>&#160;                                <span class="keyword">const</span> Variable&lt;array_1d&lt;double,3&gt;&gt;&amp; rVar,</div>
-<div class="line"><a name="l01558"></a><span class="lineno"> 1558</span>&#160;                                <span class="keyword">const</span> <a class="code" href="../../db/d66/namespace_kratos.html#a2382ac8a486c0d52da7ce94f4ccd6d70">Vector</a>&amp; <a class="code" href="../../dc/d9a/group___h_d_f5_application.html#ga0463ae8858dfb3317060416bb8812fff">rData</a>,</div>
-<div class="line"><a name="l01559"></a><span class="lineno"> 1559</span>&#160;                                <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="../../d4/d48/namespace_kratos_1_1_rans_application_test_utilities.html#af1b89bfe107d734fc948b620f42f1cf8">Step</a></div>
-<div class="line"><a name="l01560"></a><span class="lineno"> 1560</span>&#160;                                );</div>
-<div class="line"><a name="l01561"></a><span class="lineno"> 1561</span>&#160; </div>
-<div class="line"><a name="l01571"></a><span class="lineno"> 1571</span>&#160;    <span class="keywordtype">void</span> SetSolutionStepValuesVector(</div>
-<div class="line"><a name="l01572"></a><span class="lineno"> 1572</span>&#160;                                <a class="code" href="../../db/d66/namespace_kratos.html#a14ab8160ba3f8291244835400249c09d">ModelPart::NodesContainerType</a>&amp; <a class="code" href="../../db/d91/namespace_kratos_1_1_rans_variable_utilities.html#a2f23795bfd18a5c0e153aad48feaa4d7">rNodes</a>,</div>
-<div class="line"><a name="l01573"></a><span class="lineno"> 1573</span>&#160;                                <span class="keyword">const</span> Variable&lt;double&gt;&amp; rVar,</div>
-<div class="line"><a name="l01574"></a><span class="lineno"> 1574</span>&#160;                                <span class="keyword">const</span> <a class="code" href="../../db/d66/namespace_kratos.html#a2382ac8a486c0d52da7ce94f4ccd6d70">Vector</a>&amp; <a class="code" href="../../dc/d9a/group___h_d_f5_application.html#ga0463ae8858dfb3317060416bb8812fff">rData</a>,</div>
-<div class="line"><a name="l01575"></a><span class="lineno"> 1575</span>&#160;                                <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="../../d4/d48/namespace_kratos_1_1_rans_application_test_utilities.html#af1b89bfe107d734fc948b620f42f1cf8">Step</a></div>
-<div class="line"><a name="l01576"></a><span class="lineno"> 1576</span>&#160;                                );</div>
-<div class="line"><a name="l01577"></a><span class="lineno"> 1577</span>&#160; </div>
-<div class="line"><a name="l01590"></a><span class="lineno"> 1590</span>&#160;    [[nodiscard]] <a class="code" href="../../db/d66/namespace_kratos.html#a2382ac8a486c0d52da7ce94f4ccd6d70">Vector</a> GetValuesVector(</div>
-<div class="line"><a name="l01591"></a><span class="lineno"> 1591</span>&#160;        <span class="keyword">const</span> <a class="code" href="../../db/d66/namespace_kratos.html#a14ab8160ba3f8291244835400249c09d">ModelPart::NodesContainerType</a>&amp; <a class="code" href="../../db/d91/namespace_kratos_1_1_rans_variable_utilities.html#a2f23795bfd18a5c0e153aad48feaa4d7">rNodes</a>,</div>
-<div class="line"><a name="l01592"></a><span class="lineno"> 1592</span>&#160;        <span class="keyword">const</span> Variable&lt;array_1d&lt;double,3&gt;&gt;&amp; rVar,</div>
-<div class="line"><a name="l01593"></a><span class="lineno"> 1593</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="../../da/dec/namespace_kratos_1_1_mortar_utilities.html#a67e0ac17841be88205ea3ffb7748688c">Dimension</a>=3</div>
-<div class="line"><a name="l01594"></a><span class="lineno"> 1594</span>&#160;        );</div>
-<div class="line"><a name="l01595"></a><span class="lineno"> 1595</span>&#160; </div>
-<div class="line"><a name="l01607"></a><span class="lineno"> 1607</span>&#160;    [[nodiscard]] <a class="code" href="../../db/d66/namespace_kratos.html#a2382ac8a486c0d52da7ce94f4ccd6d70">Vector</a> GetValuesVector(</div>
-<div class="line"><a name="l01608"></a><span class="lineno"> 1608</span>&#160;        <span class="keyword">const</span> <a class="code" href="../../db/d66/namespace_kratos.html#a14ab8160ba3f8291244835400249c09d">ModelPart::NodesContainerType</a>&amp; <a class="code" href="../../db/d91/namespace_kratos_1_1_rans_variable_utilities.html#a2f23795bfd18a5c0e153aad48feaa4d7">rNodes</a>,</div>
-<div class="line"><a name="l01609"></a><span class="lineno"> 1609</span>&#160;        <span class="keyword">const</span> Variable&lt;double&gt;&amp; rVar</div>
-<div class="line"><a name="l01610"></a><span class="lineno"> 1610</span>&#160;        );</div>
-<div class="line"><a name="l01611"></a><span class="lineno"> 1611</span>&#160; </div>
-<div class="line"><a name="l01622"></a><span class="lineno"> 1622</span>&#160;    <span class="keywordtype">void</span> SetValuesVector(</div>
-<div class="line"><a name="l01623"></a><span class="lineno"> 1623</span>&#160;        <a class="code" href="../../db/d66/namespace_kratos.html#a14ab8160ba3f8291244835400249c09d">ModelPart::NodesContainerType</a>&amp; <a class="code" href="../../db/d91/namespace_kratos_1_1_rans_variable_utilities.html#a2f23795bfd18a5c0e153aad48feaa4d7">rNodes</a>,</div>
-<div class="line"><a name="l01624"></a><span class="lineno"> 1624</span>&#160;        <span class="keyword">const</span> Variable&lt;array_1d&lt;double,3&gt;&gt;&amp; rVar,</div>
-<div class="line"><a name="l01625"></a><span class="lineno"> 1625</span>&#160;        <span class="keyword">const</span> <a class="code" href="../../db/d66/namespace_kratos.html#a2382ac8a486c0d52da7ce94f4ccd6d70">Vector</a>&amp; <a class="code" href="../../dc/d9a/group___h_d_f5_application.html#ga0463ae8858dfb3317060416bb8812fff">rData</a></div>
-<div class="line"><a name="l01626"></a><span class="lineno"> 1626</span>&#160;        );</div>
-<div class="line"><a name="l01627"></a><span class="lineno"> 1627</span>&#160; </div>
-<div class="line"><a name="l01638"></a><span class="lineno"> 1638</span>&#160;    <span class="keywordtype">void</span> SetValuesVector(</div>
-<div class="line"><a name="l01639"></a><span class="lineno"> 1639</span>&#160;        <a class="code" href="../../db/d66/namespace_kratos.html#a14ab8160ba3f8291244835400249c09d">ModelPart::NodesContainerType</a>&amp; <a class="code" href="../../db/d91/namespace_kratos_1_1_rans_variable_utilities.html#a2f23795bfd18a5c0e153aad48feaa4d7">rNodes</a>,</div>
-<div class="line"><a name="l01640"></a><span class="lineno"> 1640</span>&#160;        <span class="keyword">const</span> Variable&lt;double&gt;&amp; rVar,</div>
-<div class="line"><a name="l01641"></a><span class="lineno"> 1641</span>&#160;        <span class="keyword">const</span> <a class="code" href="../../db/d66/namespace_kratos.html#a2382ac8a486c0d52da7ce94f4ccd6d70">Vector</a>&amp; <a class="code" href="../../dc/d9a/group___h_d_f5_application.html#ga0463ae8858dfb3317060416bb8812fff">rData</a></div>
-<div class="line"><a name="l01642"></a><span class="lineno"> 1642</span>&#160;        );</div>
-<div class="line"><a name="l01643"></a><span class="lineno"> 1643</span>&#160; </div>
-<div class="line"><a name="l01644"></a><span class="lineno"> 1644</span>&#160; </div>
-<div class="line"><a name="l01648"></a><span class="lineno"> 1648</span>&#160; </div>
-<div class="line"><a name="l01649"></a><span class="lineno"> 1649</span>&#160; </div>
-<div class="line"><a name="l01653"></a><span class="lineno"> 1653</span>&#160; </div>
-<div class="line"><a name="l01654"></a><span class="lineno"> 1654</span>&#160; </div>
-<div class="line"><a name="l01658"></a><span class="lineno"> 1658</span>&#160; </div>
+<div class="line"><a name="l01382"></a><span class="lineno"> 1382</span>&#160;        <a class="code" href="../../db/d66/namespace_kratos.html#a382d1519b254c52c6699149b2192aa8c">block_for_each</a>(<a class="code" href="../../db/d91/namespace_kratos_1_1_rans_variable_utilities.html#af0d227aa5521a639dd5f46737c54e84c">rModelPart</a>.Nodes(),[&amp;](Node&lt;3&gt;&amp; rNode){</div>
+<div class="line"><a name="l01383"></a><span class="lineno"> 1383</span>&#160;            rNode.AddDof(rVar,rReactionVar);</div>
+<div class="line"><a name="l01384"></a><span class="lineno"> 1384</span>&#160;        });</div>
+<div class="line"><a name="l01385"></a><span class="lineno"> 1385</span>&#160; </div>
+<div class="line"><a name="l01386"></a><span class="lineno"> 1386</span>&#160;        <a class="code" href="../../df/d67/define_8h.html#a5eac541f5e39bf0360a12f51f0248513">KRATOS_CATCH</a>(<span class="stringliteral">&quot;&quot;</span>)</div>
+<div class="line"><a name="l01387"></a><span class="lineno"> 1387</span>&#160;    }</div>
+<div class="line"><a name="l01388"></a><span class="lineno"> 1388</span>&#160; </div>
+<div class="line"><a name="l01396"></a><span class="lineno"> 1396</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> AddDofsList(</div>
+<div class="line"><a name="l01397"></a><span class="lineno"> 1397</span>&#160;        <span class="keyword">const</span> std::vector&lt;std::string&gt;&amp; rDofsVarNamesList,</div>
+<div class="line"><a name="l01398"></a><span class="lineno"> 1398</span>&#160;        <a class="code" href="../../d4/d5e/class_model_part.html">ModelPart</a>&amp; <a class="code" href="../../db/d91/namespace_kratos_1_1_rans_variable_utilities.html#af0d227aa5521a639dd5f46737c54e84c">rModelPart</a>);</div>
+<div class="line"><a name="l01399"></a><span class="lineno"> 1399</span>&#160; </div>
+<div class="line"><a name="l01407"></a><span class="lineno"> 1407</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> AddDofsWithReactionsList(</div>
+<div class="line"><a name="l01408"></a><span class="lineno"> 1408</span>&#160;        <span class="keyword">const</span> std::vector&lt;std::array&lt;std::string,2&gt;&gt;&amp; rDofsAndReactionsNamesList,</div>
+<div class="line"><a name="l01409"></a><span class="lineno"> 1409</span>&#160;        <a class="code" href="../../d4/d5e/class_model_part.html">ModelPart</a>&amp; <a class="code" href="../../db/d91/namespace_kratos_1_1_rans_variable_utilities.html#af0d227aa5521a639dd5f46737c54e84c">rModelPart</a>);</div>
+<div class="line"><a name="l01410"></a><span class="lineno"> 1410</span>&#160; </div>
+<div class="line"><a name="l01415"></a><span class="lineno"> 1415</span>&#160;    <span class="keywordtype">bool</span> CheckVariableKeys();</div>
+<div class="line"><a name="l01416"></a><span class="lineno"> 1416</span>&#160; </div>
+<div class="line"><a name="l01421"></a><span class="lineno"> 1421</span>&#160;    <span class="keywordtype">void</span> UpdateCurrentToInitialConfiguration(<span class="keyword">const</span> <a class="code" href="../../db/d66/namespace_kratos.html#a14ab8160ba3f8291244835400249c09d">ModelPart::NodesContainerType</a>&amp; <a class="code" href="../../db/d91/namespace_kratos_1_1_rans_variable_utilities.html#a2f23795bfd18a5c0e153aad48feaa4d7">rNodes</a>);</div>
+<div class="line"><a name="l01422"></a><span class="lineno"> 1422</span>&#160; </div>
+<div class="line"><a name="l01427"></a><span class="lineno"> 1427</span>&#160;    <span class="keywordtype">void</span> UpdateInitialToCurrentConfiguration(<span class="keyword">const</span> <a class="code" href="../../db/d66/namespace_kratos.html#a14ab8160ba3f8291244835400249c09d">ModelPart::NodesContainerType</a>&amp; <a class="code" href="../../db/d91/namespace_kratos_1_1_rans_variable_utilities.html#a2f23795bfd18a5c0e153aad48feaa4d7">rNodes</a>);</div>
+<div class="line"><a name="l01428"></a><span class="lineno"> 1428</span>&#160; </div>
+<div class="line"><a name="l01436"></a><span class="lineno"> 1436</span>&#160;    <span class="keywordtype">void</span> UpdateCurrentPosition(</div>
+<div class="line"><a name="l01437"></a><span class="lineno"> 1437</span>&#160;        <span class="keyword">const</span> <a class="code" href="../../db/d66/namespace_kratos.html#a14ab8160ba3f8291244835400249c09d">ModelPart::NodesContainerType</a>&amp; <a class="code" href="../../db/d91/namespace_kratos_1_1_rans_variable_utilities.html#a2f23795bfd18a5c0e153aad48feaa4d7">rNodes</a>,</div>
+<div class="line"><a name="l01438"></a><span class="lineno"> 1438</span>&#160;        <span class="keyword">const</span> ArrayVarType&amp; rUpdateVariable = DISPLACEMENT,</div>
+<div class="line"><a name="l01439"></a><span class="lineno"> 1439</span>&#160;        <span class="keyword">const</span> <a class="code" href="../../d5/d4d/group___kratos_core.html#ga1ba1e34f0af6a7cfcfa9b43e1f8e8c91">IndexType</a> BufferPosition = 0</div>
+<div class="line"><a name="l01440"></a><span class="lineno"> 1440</span>&#160;        );</div>
+<div class="line"><a name="l01441"></a><span class="lineno"> 1441</span>&#160; </div>
+<div class="line"><a name="l01453"></a><span class="lineno"> 1453</span>&#160;    <span class="keyword">template</span>&lt;<span class="keyword">class</span> TVectorType=Vector&gt;</div>
+<div class="line"><a name="l01454"></a><span class="lineno"> 1454</span>&#160;    [[nodiscard]] TVectorType GetCurrentPositionsVector(</div>
+<div class="line"><a name="l01455"></a><span class="lineno"> 1455</span>&#160;        <span class="keyword">const</span> <a class="code" href="../../db/d66/namespace_kratos.html#a14ab8160ba3f8291244835400249c09d">ModelPart::NodesContainerType</a>&amp; <a class="code" href="../../db/d91/namespace_kratos_1_1_rans_variable_utilities.html#a2f23795bfd18a5c0e153aad48feaa4d7">rNodes</a>,</div>
+<div class="line"><a name="l01456"></a><span class="lineno"> 1456</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="../../da/dec/namespace_kratos_1_1_mortar_utilities.html#a67e0ac17841be88205ea3ffb7748688c">Dimension</a></div>
+<div class="line"><a name="l01457"></a><span class="lineno"> 1457</span>&#160;        );</div>
+<div class="line"><a name="l01458"></a><span class="lineno"> 1458</span>&#160; </div>
+<div class="line"><a name="l01470"></a><span class="lineno"> 1470</span>&#160;    <span class="keyword">template</span>&lt;<span class="keyword">class</span> TVectorType=Vector&gt;</div>
+<div class="line"><a name="l01471"></a><span class="lineno"> 1471</span>&#160;    [[nodiscard]] TVectorType GetInitialPositionsVector(</div>
+<div class="line"><a name="l01472"></a><span class="lineno"> 1472</span>&#160;        <span class="keyword">const</span> <a class="code" href="../../db/d66/namespace_kratos.html#a14ab8160ba3f8291244835400249c09d">ModelPart::NodesContainerType</a>&amp; <a class="code" href="../../db/d91/namespace_kratos_1_1_rans_variable_utilities.html#a2f23795bfd18a5c0e153aad48feaa4d7">rNodes</a>,</div>
+<div class="line"><a name="l01473"></a><span class="lineno"> 1473</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="../../da/dec/namespace_kratos_1_1_mortar_utilities.html#a67e0ac17841be88205ea3ffb7748688c">Dimension</a></div>
+<div class="line"><a name="l01474"></a><span class="lineno"> 1474</span>&#160;        );</div>
+<div class="line"><a name="l01475"></a><span class="lineno"> 1475</span>&#160; </div>
+<div class="line"><a name="l01488"></a><span class="lineno"> 1488</span>&#160;     <span class="keywordtype">void</span> SetCurrentPositionsVector(</div>
+<div class="line"><a name="l01489"></a><span class="lineno"> 1489</span>&#160;        <a class="code" href="../../db/d66/namespace_kratos.html#a14ab8160ba3f8291244835400249c09d">ModelPart::NodesContainerType</a>&amp; <a class="code" href="../../db/d91/namespace_kratos_1_1_rans_variable_utilities.html#a2f23795bfd18a5c0e153aad48feaa4d7">rNodes</a>,</div>
+<div class="line"><a name="l01490"></a><span class="lineno"> 1490</span>&#160;        <span class="keyword">const</span> <a class="code" href="../../db/d66/namespace_kratos.html#a2382ac8a486c0d52da7ce94f4ccd6d70">Vector</a>&amp; rPositions</div>
+<div class="line"><a name="l01491"></a><span class="lineno"> 1491</span>&#160;        );</div>
+<div class="line"><a name="l01492"></a><span class="lineno"> 1492</span>&#160; </div>
+<div class="line"><a name="l01505"></a><span class="lineno"> 1505</span>&#160;    <span class="keywordtype">void</span> SetInitialPositionsVector(</div>
+<div class="line"><a name="l01506"></a><span class="lineno"> 1506</span>&#160;        <a class="code" href="../../db/d66/namespace_kratos.html#a14ab8160ba3f8291244835400249c09d">ModelPart::NodesContainerType</a>&amp; <a class="code" href="../../db/d91/namespace_kratos_1_1_rans_variable_utilities.html#a2f23795bfd18a5c0e153aad48feaa4d7">rNodes</a>,</div>
+<div class="line"><a name="l01507"></a><span class="lineno"> 1507</span>&#160;        <span class="keyword">const</span> <a class="code" href="../../db/d66/namespace_kratos.html#a2382ac8a486c0d52da7ce94f4ccd6d70">Vector</a>&amp; rPositions</div>
+<div class="line"><a name="l01508"></a><span class="lineno"> 1508</span>&#160;        );</div>
+<div class="line"><a name="l01509"></a><span class="lineno"> 1509</span>&#160; </div>
+<div class="line"><a name="l01521"></a><span class="lineno"> 1521</span>&#160;    [[nodiscard]] <a class="code" href="../../db/d66/namespace_kratos.html#a2382ac8a486c0d52da7ce94f4ccd6d70">Vector</a> GetSolutionStepValuesVector(</div>
+<div class="line"><a name="l01522"></a><span class="lineno"> 1522</span>&#160;                                <span class="keyword">const</span> <a class="code" href="../../db/d66/namespace_kratos.html#a14ab8160ba3f8291244835400249c09d">ModelPart::NodesContainerType</a>&amp; <a class="code" href="../../db/d91/namespace_kratos_1_1_rans_variable_utilities.html#a2f23795bfd18a5c0e153aad48feaa4d7">rNodes</a>,</div>
+<div class="line"><a name="l01523"></a><span class="lineno"> 1523</span>&#160;                                <span class="keyword">const</span> Variable&lt;array_1d&lt;double,3&gt;&gt;&amp; rVar,</div>
+<div class="line"><a name="l01524"></a><span class="lineno"> 1524</span>&#160;                                <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="../../d4/d48/namespace_kratos_1_1_rans_application_test_utilities.html#af1b89bfe107d734fc948b620f42f1cf8">Step</a>,</div>
+<div class="line"><a name="l01525"></a><span class="lineno"> 1525</span>&#160;                                <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="../../da/dec/namespace_kratos_1_1_mortar_utilities.html#a67e0ac17841be88205ea3ffb7748688c">Dimension</a>=3</div>
+<div class="line"><a name="l01526"></a><span class="lineno"> 1526</span>&#160;                                );</div>
+<div class="line"><a name="l01527"></a><span class="lineno"> 1527</span>&#160; </div>
+<div class="line"><a name="l01538"></a><span class="lineno"> 1538</span>&#160;    [[nodiscard]] <a class="code" href="../../db/d66/namespace_kratos.html#a2382ac8a486c0d52da7ce94f4ccd6d70">Vector</a> GetSolutionStepValuesVector(</div>
+<div class="line"><a name="l01539"></a><span class="lineno"> 1539</span>&#160;                                <span class="keyword">const</span> <a class="code" href="../../db/d66/namespace_kratos.html#a14ab8160ba3f8291244835400249c09d">ModelPart::NodesContainerType</a>&amp; <a class="code" href="../../db/d91/namespace_kratos_1_1_rans_variable_utilities.html#a2f23795bfd18a5c0e153aad48feaa4d7">rNodes</a>,</div>
+<div class="line"><a name="l01540"></a><span class="lineno"> 1540</span>&#160;                                <span class="keyword">const</span> Variable&lt;double&gt;&amp; rVar,</div>
+<div class="line"><a name="l01541"></a><span class="lineno"> 1541</span>&#160;                                <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="../../d4/d48/namespace_kratos_1_1_rans_application_test_utilities.html#af1b89bfe107d734fc948b620f42f1cf8">Step</a></div>
+<div class="line"><a name="l01542"></a><span class="lineno"> 1542</span>&#160;                                );</div>
+<div class="line"><a name="l01543"></a><span class="lineno"> 1543</span>&#160; </div>
+<div class="line"><a name="l01553"></a><span class="lineno"> 1553</span>&#160;    <span class="keywordtype">void</span> SetSolutionStepValuesVector(</div>
+<div class="line"><a name="l01554"></a><span class="lineno"> 1554</span>&#160;                                <a class="code" href="../../db/d66/namespace_kratos.html#a14ab8160ba3f8291244835400249c09d">ModelPart::NodesContainerType</a>&amp; <a class="code" href="../../db/d91/namespace_kratos_1_1_rans_variable_utilities.html#a2f23795bfd18a5c0e153aad48feaa4d7">rNodes</a>,</div>
+<div class="line"><a name="l01555"></a><span class="lineno"> 1555</span>&#160;                                <span class="keyword">const</span> Variable&lt;array_1d&lt;double,3&gt;&gt;&amp; rVar,</div>
+<div class="line"><a name="l01556"></a><span class="lineno"> 1556</span>&#160;                                <span class="keyword">const</span> <a class="code" href="../../db/d66/namespace_kratos.html#a2382ac8a486c0d52da7ce94f4ccd6d70">Vector</a>&amp; <a class="code" href="../../dc/d9a/group___h_d_f5_application.html#ga0463ae8858dfb3317060416bb8812fff">rData</a>,</div>
+<div class="line"><a name="l01557"></a><span class="lineno"> 1557</span>&#160;                                <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="../../d4/d48/namespace_kratos_1_1_rans_application_test_utilities.html#af1b89bfe107d734fc948b620f42f1cf8">Step</a></div>
+<div class="line"><a name="l01558"></a><span class="lineno"> 1558</span>&#160;                                );</div>
+<div class="line"><a name="l01559"></a><span class="lineno"> 1559</span>&#160; </div>
+<div class="line"><a name="l01569"></a><span class="lineno"> 1569</span>&#160;    <span class="keywordtype">void</span> SetSolutionStepValuesVector(</div>
+<div class="line"><a name="l01570"></a><span class="lineno"> 1570</span>&#160;                                <a class="code" href="../../db/d66/namespace_kratos.html#a14ab8160ba3f8291244835400249c09d">ModelPart::NodesContainerType</a>&amp; <a class="code" href="../../db/d91/namespace_kratos_1_1_rans_variable_utilities.html#a2f23795bfd18a5c0e153aad48feaa4d7">rNodes</a>,</div>
+<div class="line"><a name="l01571"></a><span class="lineno"> 1571</span>&#160;                                <span class="keyword">const</span> Variable&lt;double&gt;&amp; rVar,</div>
+<div class="line"><a name="l01572"></a><span class="lineno"> 1572</span>&#160;                                <span class="keyword">const</span> <a class="code" href="../../db/d66/namespace_kratos.html#a2382ac8a486c0d52da7ce94f4ccd6d70">Vector</a>&amp; <a class="code" href="../../dc/d9a/group___h_d_f5_application.html#ga0463ae8858dfb3317060416bb8812fff">rData</a>,</div>
+<div class="line"><a name="l01573"></a><span class="lineno"> 1573</span>&#160;                                <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="../../d4/d48/namespace_kratos_1_1_rans_application_test_utilities.html#af1b89bfe107d734fc948b620f42f1cf8">Step</a></div>
+<div class="line"><a name="l01574"></a><span class="lineno"> 1574</span>&#160;                                );</div>
+<div class="line"><a name="l01575"></a><span class="lineno"> 1575</span>&#160; </div>
+<div class="line"><a name="l01588"></a><span class="lineno"> 1588</span>&#160;    [[nodiscard]] <a class="code" href="../../db/d66/namespace_kratos.html#a2382ac8a486c0d52da7ce94f4ccd6d70">Vector</a> GetValuesVector(</div>
+<div class="line"><a name="l01589"></a><span class="lineno"> 1589</span>&#160;        <span class="keyword">const</span> <a class="code" href="../../db/d66/namespace_kratos.html#a14ab8160ba3f8291244835400249c09d">ModelPart::NodesContainerType</a>&amp; <a class="code" href="../../db/d91/namespace_kratos_1_1_rans_variable_utilities.html#a2f23795bfd18a5c0e153aad48feaa4d7">rNodes</a>,</div>
+<div class="line"><a name="l01590"></a><span class="lineno"> 1590</span>&#160;        <span class="keyword">const</span> Variable&lt;array_1d&lt;double,3&gt;&gt;&amp; rVar,</div>
+<div class="line"><a name="l01591"></a><span class="lineno"> 1591</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="../../da/dec/namespace_kratos_1_1_mortar_utilities.html#a67e0ac17841be88205ea3ffb7748688c">Dimension</a>=3</div>
+<div class="line"><a name="l01592"></a><span class="lineno"> 1592</span>&#160;        );</div>
+<div class="line"><a name="l01593"></a><span class="lineno"> 1593</span>&#160; </div>
+<div class="line"><a name="l01605"></a><span class="lineno"> 1605</span>&#160;    [[nodiscard]] <a class="code" href="../../db/d66/namespace_kratos.html#a2382ac8a486c0d52da7ce94f4ccd6d70">Vector</a> GetValuesVector(</div>
+<div class="line"><a name="l01606"></a><span class="lineno"> 1606</span>&#160;        <span class="keyword">const</span> <a class="code" href="../../db/d66/namespace_kratos.html#a14ab8160ba3f8291244835400249c09d">ModelPart::NodesContainerType</a>&amp; <a class="code" href="../../db/d91/namespace_kratos_1_1_rans_variable_utilities.html#a2f23795bfd18a5c0e153aad48feaa4d7">rNodes</a>,</div>
+<div class="line"><a name="l01607"></a><span class="lineno"> 1607</span>&#160;        <span class="keyword">const</span> Variable&lt;double&gt;&amp; rVar</div>
+<div class="line"><a name="l01608"></a><span class="lineno"> 1608</span>&#160;        );</div>
+<div class="line"><a name="l01609"></a><span class="lineno"> 1609</span>&#160; </div>
+<div class="line"><a name="l01620"></a><span class="lineno"> 1620</span>&#160;    <span class="keywordtype">void</span> SetValuesVector(</div>
+<div class="line"><a name="l01621"></a><span class="lineno"> 1621</span>&#160;        <a class="code" href="../../db/d66/namespace_kratos.html#a14ab8160ba3f8291244835400249c09d">ModelPart::NodesContainerType</a>&amp; <a class="code" href="../../db/d91/namespace_kratos_1_1_rans_variable_utilities.html#a2f23795bfd18a5c0e153aad48feaa4d7">rNodes</a>,</div>
+<div class="line"><a name="l01622"></a><span class="lineno"> 1622</span>&#160;        <span class="keyword">const</span> Variable&lt;array_1d&lt;double,3&gt;&gt;&amp; rVar,</div>
+<div class="line"><a name="l01623"></a><span class="lineno"> 1623</span>&#160;        <span class="keyword">const</span> <a class="code" href="../../db/d66/namespace_kratos.html#a2382ac8a486c0d52da7ce94f4ccd6d70">Vector</a>&amp; <a class="code" href="../../dc/d9a/group___h_d_f5_application.html#ga0463ae8858dfb3317060416bb8812fff">rData</a></div>
+<div class="line"><a name="l01624"></a><span class="lineno"> 1624</span>&#160;        );</div>
+<div class="line"><a name="l01625"></a><span class="lineno"> 1625</span>&#160; </div>
+<div class="line"><a name="l01636"></a><span class="lineno"> 1636</span>&#160;    <span class="keywordtype">void</span> SetValuesVector(</div>
+<div class="line"><a name="l01637"></a><span class="lineno"> 1637</span>&#160;        <a class="code" href="../../db/d66/namespace_kratos.html#a14ab8160ba3f8291244835400249c09d">ModelPart::NodesContainerType</a>&amp; <a class="code" href="../../db/d91/namespace_kratos_1_1_rans_variable_utilities.html#a2f23795bfd18a5c0e153aad48feaa4d7">rNodes</a>,</div>
+<div class="line"><a name="l01638"></a><span class="lineno"> 1638</span>&#160;        <span class="keyword">const</span> Variable&lt;double&gt;&amp; rVar,</div>
+<div class="line"><a name="l01639"></a><span class="lineno"> 1639</span>&#160;        <span class="keyword">const</span> <a class="code" href="../../db/d66/namespace_kratos.html#a2382ac8a486c0d52da7ce94f4ccd6d70">Vector</a>&amp; <a class="code" href="../../dc/d9a/group___h_d_f5_application.html#ga0463ae8858dfb3317060416bb8812fff">rData</a></div>
+<div class="line"><a name="l01640"></a><span class="lineno"> 1640</span>&#160;        );</div>
+<div class="line"><a name="l01641"></a><span class="lineno"> 1641</span>&#160; </div>
+<div class="line"><a name="l01642"></a><span class="lineno"> 1642</span>&#160; </div>
+<div class="line"><a name="l01646"></a><span class="lineno"> 1646</span>&#160; </div>
+<div class="line"><a name="l01647"></a><span class="lineno"> 1647</span>&#160; </div>
+<div class="line"><a name="l01651"></a><span class="lineno"> 1651</span>&#160; </div>
+<div class="line"><a name="l01652"></a><span class="lineno"> 1652</span>&#160; </div>
+<div class="line"><a name="l01656"></a><span class="lineno"> 1656</span>&#160; </div>
+<div class="line"><a name="l01657"></a><span class="lineno"> 1657</span>&#160; </div>
 <div class="line"><a name="l01659"></a><span class="lineno"> 1659</span>&#160; </div>
-<div class="line"><a name="l01661"></a><span class="lineno"> 1661</span>&#160; </div>
-<div class="line"><a name="l01662"></a><span class="lineno"> 1662</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l01665"></a><span class="lineno"> 1665</span>&#160; </div>
-<div class="line"><a name="l01669"></a><span class="lineno"> 1669</span>&#160; </div>
-<div class="line"><a name="l01673"></a><span class="lineno"> 1673</span>&#160; </div>
-<div class="line"><a name="l01674"></a><span class="lineno"> 1674</span>&#160; </div>
-<div class="line"><a name="l01678"></a><span class="lineno"> 1678</span>&#160; </div>
-<div class="line"><a name="l01683"></a><span class="lineno"> 1683</span>&#160;    <span class="keyword">template</span>&lt; <span class="keyword">class</span> TVarType &gt;</div>
-<div class="line"><a name="l01684"></a><span class="lineno"> 1684</span>&#160;    <span class="keywordtype">bool</span> CheckVariableKeysHelper()</div>
-<div class="line"><a name="l01685"></a><span class="lineno"> 1685</span>&#160;    {</div>
-<div class="line"><a name="l01686"></a><span class="lineno"> 1686</span>&#160;        <a class="code" href="../../df/d67/define_8h.html#ab9c29d6a0d19ff26bbc4e45e3181fb3f">KRATOS_TRY</a></div>
-<div class="line"><a name="l01687"></a><span class="lineno"> 1687</span>&#160; </div>
-<div class="line"><a name="l01688"></a><span class="lineno"> 1688</span>&#160;        <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; var : KratosComponents&lt; TVarType &gt;::GetComponents()) {</div>
-<div class="line"><a name="l01689"></a><span class="lineno"> 1689</span>&#160;            <span class="keywordflow">if</span> (var.first == <span class="stringliteral">&quot;NONE&quot;</span> || var.first == <span class="stringliteral">&quot;&quot;</span>)</div>
-<div class="line"><a name="l01690"></a><span class="lineno"> 1690</span>&#160;                std::cout &lt;&lt; <span class="stringliteral">&quot; var first is NONE or empty &quot;</span> &lt;&lt; var.first &lt;&lt; var.second &lt;&lt; std::endl;</div>
-<div class="line"><a name="l01691"></a><span class="lineno"> 1691</span>&#160;            <span class="keywordflow">if</span> (var.second-&gt;Name() == <span class="stringliteral">&quot;NONE&quot;</span> || var.second-&gt;Name() == <span class="stringliteral">&quot;&quot;</span>)</div>
-<div class="line"><a name="l01692"></a><span class="lineno"> 1692</span>&#160;                std::cout &lt;&lt; var.first &lt;&lt; var.second &lt;&lt; std::endl;</div>
-<div class="line"><a name="l01693"></a><span class="lineno"> 1693</span>&#160;            <span class="keywordflow">if</span> (var.first != var.second-&gt;Name()) <span class="comment">//name of registration does not correspond to the var name</span></div>
-<div class="line"><a name="l01694"></a><span class="lineno"> 1694</span>&#160;                std::cout &lt;&lt; <span class="stringliteral">&quot;Registration Name = &quot;</span> &lt;&lt; var.first &lt;&lt; <span class="stringliteral">&quot; Variable Name = &quot;</span> &lt;&lt; std::endl;</div>
-<div class="line"><a name="l01695"></a><span class="lineno"> 1695</span>&#160;        }</div>
-<div class="line"><a name="l01696"></a><span class="lineno"> 1696</span>&#160; </div>
-<div class="line"><a name="l01697"></a><span class="lineno"> 1697</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l01698"></a><span class="lineno"> 1698</span>&#160;        <a class="code" href="../../df/d67/define_8h.html#a5eac541f5e39bf0360a12f51f0248513">KRATOS_CATCH</a>(<span class="stringliteral">&quot;&quot;</span>)</div>
-<div class="line"><a name="l01699"></a><span class="lineno"> 1699</span>&#160;    }</div>
-<div class="line"><a name="l01700"></a><span class="lineno"> 1700</span>&#160; </div>
-<div class="line"><a name="l01701"></a><span class="lineno"> 1701</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">class</span> TContainerType&gt;</div>
-<div class="line"><a name="l01702"></a><span class="lineno"> 1702</span>&#160;    [[nodiscard]] TContainerType&amp; <a class="code" href="../../d1/d7f/namespace_kratos_1_1_rans_calculation_utilities.html#a958a794547f69b407e3ff837834ca0bf">GetContainer</a>(<a class="code" href="../../d4/d5e/class_model_part.html">ModelPart</a>&amp; <a class="code" href="../../db/d91/namespace_kratos_1_1_rans_variable_utilities.html#af0d227aa5521a639dd5f46737c54e84c">rModelPart</a>);</div>
-<div class="line"><a name="l01703"></a><span class="lineno"> 1703</span>&#160; </div>
-<div class="line"><a name="l01704"></a><span class="lineno"> 1704</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">class</span> TContainerType&gt;</div>
-<div class="line"><a name="l01705"></a><span class="lineno"> 1705</span>&#160;    [[nodiscard]] <span class="keyword">const</span> TContainerType&amp; <a class="code" href="../../d1/d7f/namespace_kratos_1_1_rans_calculation_utilities.html#a958a794547f69b407e3ff837834ca0bf">GetContainer</a>(<span class="keyword">const</span> <a class="code" href="../../d4/d5e/class_model_part.html">ModelPart</a>&amp; <a class="code" href="../../db/d91/namespace_kratos_1_1_rans_variable_utilities.html#af0d227aa5521a639dd5f46737c54e84c">rModelPart</a>);</div>
-<div class="line"><a name="l01706"></a><span class="lineno"> 1706</span>&#160; </div>
-<div class="line"><a name="l01707"></a><span class="lineno"> 1707</span>&#160;    <span class="keyword">template</span>&lt;<span class="keyword">class</span> TDataType&gt;</div>
-<div class="line"><a name="l01708"></a><span class="lineno"> 1708</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> AuxiliaryHistoricalValueSetter(</div>
-<div class="line"><a name="l01709"></a><span class="lineno"> 1709</span>&#160;        <span class="keyword">const</span> Variable&lt;TDataType&gt;&amp; <a class="code" href="../../d7/dc7/namespace_kratos_1_1_move_mesh_utilities.html#aee4d4e75adb6cdde18e7be730037fb71">rVariable</a>,</div>
-<div class="line"><a name="l01710"></a><span class="lineno"> 1710</span>&#160;        <span class="keyword">const</span> TDataType&amp; rValue,</div>
-<div class="line"><a name="l01711"></a><span class="lineno"> 1711</span>&#160;        <a class="code" href="../../d5/ddd/class_kratos_1_1_node.html">NodeType</a>&amp; rNode);</div>
-<div class="line"><a name="l01712"></a><span class="lineno"> 1712</span>&#160; </div>
-<div class="line"><a name="l01713"></a><span class="lineno"> 1713</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">class</span> TContainerType, <span class="keyword">class</span> TSetterFunction, <span class="keyword">class</span> TGetterFunction&gt;</div>
-<div class="line"><a name="l01714"></a><span class="lineno"> 1714</span>&#160;    <span class="keywordtype">void</span> CopyModelPartFlaggedVariable(</div>
-<div class="line"><a name="l01715"></a><span class="lineno"> 1715</span>&#160;        <span class="keyword">const</span> <a class="code" href="../../d4/d5e/class_model_part.html">ModelPart</a>&amp; <a class="code" href="../../d7/dc7/namespace_kratos_1_1_move_mesh_utilities.html#a339be98e73c6a6019db115769ae02bce">rOriginModelPart</a>,</div>
-<div class="line"><a name="l01716"></a><span class="lineno"> 1716</span>&#160;        <a class="code" href="../../d4/d5e/class_model_part.html">ModelPart</a>&amp; <a class="code" href="../../db/d91/namespace_kratos_1_1_rans_variable_utilities.html#a96f1d69d2466481e7cb43099714a1641">rDestinationModelPart</a>,</div>
-<div class="line"><a name="l01717"></a><span class="lineno"> 1717</span>&#160;        <span class="keyword">const</span> Flags&amp; rFlag,</div>
-<div class="line"><a name="l01718"></a><span class="lineno"> 1718</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">bool</span> CheckValue,</div>
-<div class="line"><a name="l01719"></a><span class="lineno"> 1719</span>&#160;        TSetterFunction&amp;&amp; rSetterFunction,</div>
-<div class="line"><a name="l01720"></a><span class="lineno"> 1720</span>&#160;        TGetterFunction&amp;&amp; rGetterFunction)</div>
-<div class="line"><a name="l01721"></a><span class="lineno"> 1721</span>&#160;    {</div>
-<div class="line"><a name="l01722"></a><span class="lineno"> 1722</span>&#160;        <a class="code" href="../../df/d67/define_8h.html#ab9c29d6a0d19ff26bbc4e45e3181fb3f">KRATOS_TRY</a></div>
-<div class="line"><a name="l01723"></a><span class="lineno"> 1723</span>&#160; </div>
-<div class="line"><a name="l01724"></a><span class="lineno"> 1724</span>&#160;        <span class="keyword">const</span> <span class="keyword">auto</span>&amp; r_origin_container = GetContainer&lt;TContainerType&gt;(<a class="code" href="../../d7/dc7/namespace_kratos_1_1_move_mesh_utilities.html#a339be98e73c6a6019db115769ae02bce">rOriginModelPart</a>);</div>
-<div class="line"><a name="l01725"></a><span class="lineno"> 1725</span>&#160;        <span class="keyword">auto</span>&amp; r_destination_container = GetContainer&lt;TContainerType&gt;(<a class="code" href="../../db/d91/namespace_kratos_1_1_rans_variable_utilities.html#a96f1d69d2466481e7cb43099714a1641">rDestinationModelPart</a>);</div>
-<div class="line"><a name="l01726"></a><span class="lineno"> 1726</span>&#160; </div>
-<div class="line"><a name="l01727"></a><span class="lineno"> 1727</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">int</span> number_of_origin_items = r_origin_container.size();</div>
-<div class="line"><a name="l01728"></a><span class="lineno"> 1728</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">int</span> number_of_destination_items = r_destination_container.size();</div>
-<div class="line"><a name="l01729"></a><span class="lineno"> 1729</span>&#160; </div>
-<div class="line"><a name="l01730"></a><span class="lineno"> 1730</span>&#160;        <a class="code" href="../../d5/d4d/group___kratos_core.html#ga421c079910a05f8a88688b045190ac9b">KRATOS_ERROR_IF_NOT</a>(number_of_origin_items == number_of_destination_items)</div>
-<div class="line"><a name="l01731"></a><span class="lineno"> 1731</span>&#160;            &lt;&lt; <span class="stringliteral">&quot;Origin ( &quot;</span> &lt;&lt; <a class="code" href="../../d7/dc7/namespace_kratos_1_1_move_mesh_utilities.html#a339be98e73c6a6019db115769ae02bce">rOriginModelPart</a>.Name() &lt;&lt; <span class="stringliteral">&quot; ) and destination ( &quot;</span></div>
-<div class="line"><a name="l01732"></a><span class="lineno"> 1732</span>&#160;            &lt;&lt; <a class="code" href="../../db/d91/namespace_kratos_1_1_rans_variable_utilities.html#a96f1d69d2466481e7cb43099714a1641">rDestinationModelPart</a>.Name() &lt;&lt; <span class="stringliteral">&quot; ) model parts have different number of items.&quot;</span></div>
-<div class="line"><a name="l01733"></a><span class="lineno"> 1733</span>&#160;            &lt;&lt; <span class="stringliteral">&quot;\n\t- Number of origin items: &quot;</span> &lt;&lt; number_of_origin_items</div>
-<div class="line"><a name="l01734"></a><span class="lineno"> 1734</span>&#160;            &lt;&lt; <span class="stringliteral">&quot;\n\t- Number of destination items: &quot;</span> &lt;&lt; number_of_destination_items</div>
-<div class="line"><a name="l01735"></a><span class="lineno"> 1735</span>&#160;            &lt;&lt; std::endl;</div>
-<div class="line"><a name="l01736"></a><span class="lineno"> 1736</span>&#160; </div>
-<div class="line"><a name="l01737"></a><span class="lineno"> 1737</span>&#160;        IndexPartition&lt;int&gt;(number_of_origin_items).for_each([&amp;](<span class="keywordtype">int</span> i_node) {</div>
-<div class="line"><a name="l01738"></a><span class="lineno"> 1738</span>&#160;            <span class="keyword">const</span> <span class="keyword">auto</span>&amp; r_orig_item = *(r_origin_container.begin() + i_node);</div>
-<div class="line"><a name="l01739"></a><span class="lineno"> 1739</span>&#160;            <span class="keyword">auto</span>&amp; r_dest_item = *(r_destination_container.begin() + i_node);</div>
-<div class="line"><a name="l01740"></a><span class="lineno"> 1740</span>&#160;            <span class="keywordflow">if</span> (r_orig_item.Is(rFlag) == CheckValue) {</div>
-<div class="line"><a name="l01741"></a><span class="lineno"> 1741</span>&#160;                rSetterFunction(r_dest_item, rGetterFunction(r_orig_item));</div>
-<div class="line"><a name="l01742"></a><span class="lineno"> 1742</span>&#160;            }</div>
-<div class="line"><a name="l01743"></a><span class="lineno"> 1743</span>&#160;        });</div>
-<div class="line"><a name="l01744"></a><span class="lineno"> 1744</span>&#160; </div>
-<div class="line"><a name="l01745"></a><span class="lineno"> 1745</span>&#160;        <a class="code" href="../../df/d67/define_8h.html#a5eac541f5e39bf0360a12f51f0248513">KRATOS_CATCH</a>(<span class="stringliteral">&quot;&quot;</span>);</div>
-<div class="line"><a name="l01746"></a><span class="lineno"> 1746</span>&#160;    }</div>
-<div class="line"><a name="l01747"></a><span class="lineno"> 1747</span>&#160; </div>
-<div class="line"><a name="l01751"></a><span class="lineno"> 1751</span>&#160; </div>
-<div class="line"><a name="l01752"></a><span class="lineno"> 1752</span>&#160; </div>
-<div class="line"><a name="l01756"></a><span class="lineno"> 1756</span>&#160; </div>
-<div class="line"><a name="l01757"></a><span class="lineno"> 1757</span>&#160; </div>
-<div class="line"><a name="l01761"></a><span class="lineno"> 1761</span>&#160; </div>
+<div class="line"><a name="l01660"></a><span class="lineno"> 1660</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l01663"></a><span class="lineno"> 1663</span>&#160; </div>
+<div class="line"><a name="l01667"></a><span class="lineno"> 1667</span>&#160; </div>
+<div class="line"><a name="l01671"></a><span class="lineno"> 1671</span>&#160; </div>
+<div class="line"><a name="l01672"></a><span class="lineno"> 1672</span>&#160; </div>
+<div class="line"><a name="l01676"></a><span class="lineno"> 1676</span>&#160; </div>
+<div class="line"><a name="l01681"></a><span class="lineno"> 1681</span>&#160;    <span class="keyword">template</span>&lt; <span class="keyword">class</span> TVarType &gt;</div>
+<div class="line"><a name="l01682"></a><span class="lineno"> 1682</span>&#160;    <span class="keywordtype">bool</span> CheckVariableKeysHelper()</div>
+<div class="line"><a name="l01683"></a><span class="lineno"> 1683</span>&#160;    {</div>
+<div class="line"><a name="l01684"></a><span class="lineno"> 1684</span>&#160;        <a class="code" href="../../df/d67/define_8h.html#ab9c29d6a0d19ff26bbc4e45e3181fb3f">KRATOS_TRY</a></div>
+<div class="line"><a name="l01685"></a><span class="lineno"> 1685</span>&#160; </div>
+<div class="line"><a name="l01686"></a><span class="lineno"> 1686</span>&#160;        <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; var : KratosComponents&lt; TVarType &gt;::GetComponents()) {</div>
+<div class="line"><a name="l01687"></a><span class="lineno"> 1687</span>&#160;            <span class="keywordflow">if</span> (var.first == <span class="stringliteral">&quot;NONE&quot;</span> || var.first == <span class="stringliteral">&quot;&quot;</span>)</div>
+<div class="line"><a name="l01688"></a><span class="lineno"> 1688</span>&#160;                std::cout &lt;&lt; <span class="stringliteral">&quot; var first is NONE or empty &quot;</span> &lt;&lt; var.first &lt;&lt; var.second &lt;&lt; std::endl;</div>
+<div class="line"><a name="l01689"></a><span class="lineno"> 1689</span>&#160;            <span class="keywordflow">if</span> (var.second-&gt;Name() == <span class="stringliteral">&quot;NONE&quot;</span> || var.second-&gt;Name() == <span class="stringliteral">&quot;&quot;</span>)</div>
+<div class="line"><a name="l01690"></a><span class="lineno"> 1690</span>&#160;                std::cout &lt;&lt; var.first &lt;&lt; var.second &lt;&lt; std::endl;</div>
+<div class="line"><a name="l01691"></a><span class="lineno"> 1691</span>&#160;            <span class="keywordflow">if</span> (var.first != var.second-&gt;Name()) <span class="comment">//name of registration does not correspond to the var name</span></div>
+<div class="line"><a name="l01692"></a><span class="lineno"> 1692</span>&#160;                std::cout &lt;&lt; <span class="stringliteral">&quot;Registration Name = &quot;</span> &lt;&lt; var.first &lt;&lt; <span class="stringliteral">&quot; Variable Name = &quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><a name="l01693"></a><span class="lineno"> 1693</span>&#160;        }</div>
+<div class="line"><a name="l01694"></a><span class="lineno"> 1694</span>&#160; </div>
+<div class="line"><a name="l01695"></a><span class="lineno"> 1695</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l01696"></a><span class="lineno"> 1696</span>&#160;        <a class="code" href="../../df/d67/define_8h.html#a5eac541f5e39bf0360a12f51f0248513">KRATOS_CATCH</a>(<span class="stringliteral">&quot;&quot;</span>)</div>
+<div class="line"><a name="l01697"></a><span class="lineno"> 1697</span>&#160;    }</div>
+<div class="line"><a name="l01698"></a><span class="lineno"> 1698</span>&#160; </div>
+<div class="line"><a name="l01699"></a><span class="lineno"> 1699</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">class</span> TContainerType&gt;</div>
+<div class="line"><a name="l01700"></a><span class="lineno"> 1700</span>&#160;    [[nodiscard]] TContainerType&amp; <a class="code" href="../../d1/d7f/namespace_kratos_1_1_rans_calculation_utilities.html#a958a794547f69b407e3ff837834ca0bf">GetContainer</a>(<a class="code" href="../../d4/d5e/class_model_part.html">ModelPart</a>&amp; <a class="code" href="../../db/d91/namespace_kratos_1_1_rans_variable_utilities.html#af0d227aa5521a639dd5f46737c54e84c">rModelPart</a>);</div>
+<div class="line"><a name="l01701"></a><span class="lineno"> 1701</span>&#160; </div>
+<div class="line"><a name="l01702"></a><span class="lineno"> 1702</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">class</span> TContainerType&gt;</div>
+<div class="line"><a name="l01703"></a><span class="lineno"> 1703</span>&#160;    [[nodiscard]] <span class="keyword">const</span> TContainerType&amp; <a class="code" href="../../d1/d7f/namespace_kratos_1_1_rans_calculation_utilities.html#a958a794547f69b407e3ff837834ca0bf">GetContainer</a>(<span class="keyword">const</span> <a class="code" href="../../d4/d5e/class_model_part.html">ModelPart</a>&amp; <a class="code" href="../../db/d91/namespace_kratos_1_1_rans_variable_utilities.html#af0d227aa5521a639dd5f46737c54e84c">rModelPart</a>);</div>
+<div class="line"><a name="l01704"></a><span class="lineno"> 1704</span>&#160; </div>
+<div class="line"><a name="l01705"></a><span class="lineno"> 1705</span>&#160;    <span class="keyword">template</span>&lt;<span class="keyword">class</span> TDataType&gt;</div>
+<div class="line"><a name="l01706"></a><span class="lineno"> 1706</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> AuxiliaryHistoricalValueSetter(</div>
+<div class="line"><a name="l01707"></a><span class="lineno"> 1707</span>&#160;        <span class="keyword">const</span> Variable&lt;TDataType&gt;&amp; <a class="code" href="../../d7/dc7/namespace_kratos_1_1_move_mesh_utilities.html#aee4d4e75adb6cdde18e7be730037fb71">rVariable</a>,</div>
+<div class="line"><a name="l01708"></a><span class="lineno"> 1708</span>&#160;        <span class="keyword">const</span> TDataType&amp; rValue,</div>
+<div class="line"><a name="l01709"></a><span class="lineno"> 1709</span>&#160;        <a class="code" href="../../d5/ddd/class_kratos_1_1_node.html">NodeType</a>&amp; rNode);</div>
+<div class="line"><a name="l01710"></a><span class="lineno"> 1710</span>&#160; </div>
+<div class="line"><a name="l01711"></a><span class="lineno"> 1711</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">class</span> TContainerType, <span class="keyword">class</span> TSetterFunction, <span class="keyword">class</span> TGetterFunction&gt;</div>
+<div class="line"><a name="l01712"></a><span class="lineno"> 1712</span>&#160;    <span class="keywordtype">void</span> CopyModelPartFlaggedVariable(</div>
+<div class="line"><a name="l01713"></a><span class="lineno"> 1713</span>&#160;        <span class="keyword">const</span> <a class="code" href="../../d4/d5e/class_model_part.html">ModelPart</a>&amp; <a class="code" href="../../d7/dc7/namespace_kratos_1_1_move_mesh_utilities.html#a339be98e73c6a6019db115769ae02bce">rOriginModelPart</a>,</div>
+<div class="line"><a name="l01714"></a><span class="lineno"> 1714</span>&#160;        <a class="code" href="../../d4/d5e/class_model_part.html">ModelPart</a>&amp; <a class="code" href="../../db/d91/namespace_kratos_1_1_rans_variable_utilities.html#a96f1d69d2466481e7cb43099714a1641">rDestinationModelPart</a>,</div>
+<div class="line"><a name="l01715"></a><span class="lineno"> 1715</span>&#160;        <span class="keyword">const</span> Flags&amp; rFlag,</div>
+<div class="line"><a name="l01716"></a><span class="lineno"> 1716</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">bool</span> CheckValue,</div>
+<div class="line"><a name="l01717"></a><span class="lineno"> 1717</span>&#160;        TSetterFunction&amp;&amp; rSetterFunction,</div>
+<div class="line"><a name="l01718"></a><span class="lineno"> 1718</span>&#160;        TGetterFunction&amp;&amp; rGetterFunction)</div>
+<div class="line"><a name="l01719"></a><span class="lineno"> 1719</span>&#160;    {</div>
+<div class="line"><a name="l01720"></a><span class="lineno"> 1720</span>&#160;        <a class="code" href="../../df/d67/define_8h.html#ab9c29d6a0d19ff26bbc4e45e3181fb3f">KRATOS_TRY</a></div>
+<div class="line"><a name="l01721"></a><span class="lineno"> 1721</span>&#160; </div>
+<div class="line"><a name="l01722"></a><span class="lineno"> 1722</span>&#160;        <span class="keyword">const</span> <span class="keyword">auto</span>&amp; r_origin_container = GetContainer&lt;TContainerType&gt;(<a class="code" href="../../d7/dc7/namespace_kratos_1_1_move_mesh_utilities.html#a339be98e73c6a6019db115769ae02bce">rOriginModelPart</a>);</div>
+<div class="line"><a name="l01723"></a><span class="lineno"> 1723</span>&#160;        <span class="keyword">auto</span>&amp; r_destination_container = GetContainer&lt;TContainerType&gt;(<a class="code" href="../../db/d91/namespace_kratos_1_1_rans_variable_utilities.html#a96f1d69d2466481e7cb43099714a1641">rDestinationModelPart</a>);</div>
+<div class="line"><a name="l01724"></a><span class="lineno"> 1724</span>&#160; </div>
+<div class="line"><a name="l01725"></a><span class="lineno"> 1725</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">int</span> number_of_origin_items = r_origin_container.size();</div>
+<div class="line"><a name="l01726"></a><span class="lineno"> 1726</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">int</span> number_of_destination_items = r_destination_container.size();</div>
+<div class="line"><a name="l01727"></a><span class="lineno"> 1727</span>&#160; </div>
+<div class="line"><a name="l01728"></a><span class="lineno"> 1728</span>&#160;        <a class="code" href="../../d5/d4d/group___kratos_core.html#ga421c079910a05f8a88688b045190ac9b">KRATOS_ERROR_IF_NOT</a>(number_of_origin_items == number_of_destination_items)</div>
+<div class="line"><a name="l01729"></a><span class="lineno"> 1729</span>&#160;            &lt;&lt; <span class="stringliteral">&quot;Origin ( &quot;</span> &lt;&lt; <a class="code" href="../../d7/dc7/namespace_kratos_1_1_move_mesh_utilities.html#a339be98e73c6a6019db115769ae02bce">rOriginModelPart</a>.Name() &lt;&lt; <span class="stringliteral">&quot; ) and destination ( &quot;</span></div>
+<div class="line"><a name="l01730"></a><span class="lineno"> 1730</span>&#160;            &lt;&lt; <a class="code" href="../../db/d91/namespace_kratos_1_1_rans_variable_utilities.html#a96f1d69d2466481e7cb43099714a1641">rDestinationModelPart</a>.Name() &lt;&lt; <span class="stringliteral">&quot; ) model parts have different number of items.&quot;</span></div>
+<div class="line"><a name="l01731"></a><span class="lineno"> 1731</span>&#160;            &lt;&lt; <span class="stringliteral">&quot;\n\t- Number of origin items: &quot;</span> &lt;&lt; number_of_origin_items</div>
+<div class="line"><a name="l01732"></a><span class="lineno"> 1732</span>&#160;            &lt;&lt; <span class="stringliteral">&quot;\n\t- Number of destination items: &quot;</span> &lt;&lt; number_of_destination_items</div>
+<div class="line"><a name="l01733"></a><span class="lineno"> 1733</span>&#160;            &lt;&lt; std::endl;</div>
+<div class="line"><a name="l01734"></a><span class="lineno"> 1734</span>&#160; </div>
+<div class="line"><a name="l01735"></a><span class="lineno"> 1735</span>&#160;        IndexPartition&lt;int&gt;(number_of_origin_items).for_each([&amp;](<span class="keywordtype">int</span> i_node) {</div>
+<div class="line"><a name="l01736"></a><span class="lineno"> 1736</span>&#160;            <span class="keyword">const</span> <span class="keyword">auto</span>&amp; r_orig_item = *(r_origin_container.begin() + i_node);</div>
+<div class="line"><a name="l01737"></a><span class="lineno"> 1737</span>&#160;            <span class="keyword">auto</span>&amp; r_dest_item = *(r_destination_container.begin() + i_node);</div>
+<div class="line"><a name="l01738"></a><span class="lineno"> 1738</span>&#160;            <span class="keywordflow">if</span> (r_orig_item.Is(rFlag) == CheckValue) {</div>
+<div class="line"><a name="l01739"></a><span class="lineno"> 1739</span>&#160;                rSetterFunction(r_dest_item, rGetterFunction(r_orig_item));</div>
+<div class="line"><a name="l01740"></a><span class="lineno"> 1740</span>&#160;            }</div>
+<div class="line"><a name="l01741"></a><span class="lineno"> 1741</span>&#160;        });</div>
+<div class="line"><a name="l01742"></a><span class="lineno"> 1742</span>&#160; </div>
+<div class="line"><a name="l01743"></a><span class="lineno"> 1743</span>&#160;        <a class="code" href="../../df/d67/define_8h.html#a5eac541f5e39bf0360a12f51f0248513">KRATOS_CATCH</a>(<span class="stringliteral">&quot;&quot;</span>);</div>
+<div class="line"><a name="l01744"></a><span class="lineno"> 1744</span>&#160;    }</div>
+<div class="line"><a name="l01745"></a><span class="lineno"> 1745</span>&#160; </div>
+<div class="line"><a name="l01749"></a><span class="lineno"> 1749</span>&#160; </div>
+<div class="line"><a name="l01750"></a><span class="lineno"> 1750</span>&#160; </div>
+<div class="line"><a name="l01754"></a><span class="lineno"> 1754</span>&#160; </div>
+<div class="line"><a name="l01755"></a><span class="lineno"> 1755</span>&#160; </div>
+<div class="line"><a name="l01759"></a><span class="lineno"> 1759</span>&#160; </div>
+<div class="line"><a name="l01760"></a><span class="lineno"> 1760</span>&#160; </div>
 <div class="line"><a name="l01762"></a><span class="lineno"> 1762</span>&#160; </div>
+<div class="line"><a name="l01763"></a><span class="lineno"> 1763</span>&#160;}; <span class="comment">/* Class VariableUtils */</span></div>
 <div class="line"><a name="l01764"></a><span class="lineno"> 1764</span>&#160; </div>
-<div class="line"><a name="l01765"></a><span class="lineno"> 1765</span>&#160;}; <span class="comment">/* Class VariableUtils */</span></div>
 <div class="line"><a name="l01766"></a><span class="lineno"> 1766</span>&#160; </div>
-<div class="line"><a name="l01768"></a><span class="lineno"> 1768</span>&#160; </div>
-<div class="line"><a name="l01771"></a><span class="lineno"> 1771</span>&#160; </div>
+<div class="line"><a name="l01769"></a><span class="lineno"> 1769</span>&#160; </div>
+<div class="line"><a name="l01770"></a><span class="lineno"> 1770</span>&#160; </div>
 <div class="line"><a name="l01772"></a><span class="lineno"> 1772</span>&#160; </div>
-<div class="line"><a name="l01774"></a><span class="lineno"> 1774</span>&#160; </div>
-<div class="line"><a name="l01775"></a><span class="lineno"> 1775</span>&#160;} <span class="comment">/* namespace Kratos.*/</span></div>
+<div class="line"><a name="l01773"></a><span class="lineno"> 1773</span>&#160;} <span class="comment">/* namespace Kratos.*/</span></div>
 <div class="ttc" id="aatomic__utilities_8h_html"><div class="ttname"><a href="../../da/d3c/atomic__utilities_8h.html">atomic_utilities.h</a></div></div>
 <div class="ttc" id="achecks_8h_html"><div class="ttname"><a href="../../d5/d16/checks_8h.html">checks.h</a></div></div>
 <div class="ttc" id="aclass_kratos_1_1_condition_html"><div class="ttname"><a href="../../d1/d6e/class_kratos_1_1_condition.html">Kratos::Condition</a></div><div class="ttdoc">Base class for all Conditions.</div><div class="ttdef"><b>Definition:</b> condition.h:59</div></div>
@@ -1383,10 +1381,10 @@ $(function() {
 <div class="ttc" id="anamespace_kratos_1_1_rans_variable_utilities_html_a96f1d69d2466481e7cb43099714a1641"><div class="ttname"><a href="../../db/d91/namespace_kratos_1_1_rans_variable_utilities.html#a96f1d69d2466481e7cb43099714a1641">Kratos::RansVariableUtilities::rDestinationModelPart</a></div><div class="ttdeci">void KRATOS_API(RANS_APPLICATION) SetNodalVariables(ModelPart void ModelPart &amp; rDestinationModelPart</div><div class="ttdef"><b>Definition:</b> rans_variable_utilities.h:103</div></div>
 <div class="ttc" id="anamespace_kratos_1_1_rans_variable_utilities_html_af0d227aa5521a639dd5f46737c54e84c"><div class="ttname"><a href="../../db/d91/namespace_kratos_1_1_rans_variable_utilities.html#af0d227aa5521a639dd5f46737c54e84c">Kratos::RansVariableUtilities::rModelPart</a></div><div class="ttdeci">std::tuple&lt; unsigned int, unsigned int &gt; const double const Variable&lt; double &gt; ModelPart &amp; rModelPart</div><div class="ttdef"><b>Definition:</b> rans_variable_utilities.h:44</div></div>
 <div class="ttc" id="anamespace_kratos_html"><div class="ttname"><a href="../../db/d66/namespace_kratos.html">Kratos</a></div><div class="ttdoc">REF: G. R. Cowper, GAUSSIAN QUADRATURE FORMULAS FOR TRIANGLES.</div><div class="ttdef"><b>Definition:</b> mesh_condition.cpp:21</div></div>
-<div class="ttc" id="anamespace_kratos_html_a07ef8a5b8886ded903a1e7ad4c0df960"><div class="ttname"><a href="../../db/d66/namespace_kratos.html#a07ef8a5b8886ded903a1e7ad4c0df960">Kratos::block_for_each</a></div><div class="ttdeci">void block_for_each(TContainerType &amp;&amp;v, TFunctionType &amp;&amp;func)</div><div class="ttdoc">simplified version of the basic loop (without reduction) to enable template type deduction</div><div class="ttdef"><b>Definition:</b> parallel_utilities.h:304</div></div>
 <div class="ttc" id="anamespace_kratos_html_a14ab8160ba3f8291244835400249c09d"><div class="ttname"><a href="../../db/d66/namespace_kratos.html#a14ab8160ba3f8291244835400249c09d">Kratos::NodesContainerType</a></div><div class="ttdeci">ModelPart::NodesContainerType NodesContainerType</div><div class="ttdef"><b>Definition:</b> find_conditions_neighbours_process.h:44</div></div>
 <div class="ttc" id="anamespace_kratos_html_a2382ac8a486c0d52da7ce94f4ccd6d70"><div class="ttname"><a href="../../db/d66/namespace_kratos.html#a2382ac8a486c0d52da7ce94f4ccd6d70">Kratos::Vector</a></div><div class="ttdeci">Internals::Matrix&lt; double, AMatrix::dynamic, 1 &gt; Vector</div><div class="ttdef"><b>Definition:</b> amatrix_interface.h:472</div></div>
 <div class="ttc" id="anamespace_kratos_html_a2f1c312534be5538e6b1cbbfe4ea7930"><div class="ttname"><a href="../../db/d66/namespace_kratos.html#a2f1c312534be5538e6b1cbbfe4ea7930">Kratos::ElementType</a></div><div class="ttdeci">Element ElementType</div><div class="ttdef"><b>Definition:</b> assign_unique_model_part_collection_tag_utility.h:42</div></div>
+<div class="ttc" id="anamespace_kratos_html_a382d1519b254c52c6699149b2192aa8c"><div class="ttname"><a href="../../db/d66/namespace_kratos.html#a382d1519b254c52c6699149b2192aa8c">Kratos::block_for_each</a></div><div class="ttdeci">void block_for_each(TIterator itBegin, TIterator itEnd, TFunction &amp;&amp;rFunction)</div><div class="ttdoc">Execute a functor on all items of a range in parallel.</div><div class="ttdef"><b>Definition:</b> parallel_utilities.h:296</div></div>
 <div class="ttc" id="anamespace_kratos_html_a7dc336b27d63b48cb5a8be2c97b25dcc"><div class="ttname"><a href="../../db/d66/namespace_kratos.html#a7dc336b27d63b48cb5a8be2c97b25dcc">Kratos::ConditionsContainerType</a></div><div class="ttdeci">ModelPart::ConditionsContainerType ConditionsContainerType</div><div class="ttdef"><b>Definition:</b> find_conditions_neighbours_process.h:45</div></div>
 <div class="ttc" id="anamespace_kratos_html_aba5dbdf990a4567126376ad0aae1687e"><div class="ttname"><a href="../../db/d66/namespace_kratos.html#aba5dbdf990a4567126376ad0aae1687e">Kratos::ElementsContainerType</a></div><div class="ttdeci">ModelPart::ElementsContainerType ElementsContainerType</div><div class="ttdef"><b>Definition:</b> clear_contact_conditions_mesher_process.hpp:43</div></div>
 <div class="ttc" id="anamespace_kratos_html_abb4d93a6f1ee35395fd178b0e96cbcb8"><div class="ttname"><a href="../../db/d66/namespace_kratos.html#abb4d93a6f1ee35395fd178b0e96cbcb8">Kratos::NodeType</a></div><div class="ttdeci">Node&lt; 3 &gt; NodeType</div><div class="ttdoc">The definition of the node.</div><div class="ttdef"><b>Definition:</b> mortar_classes.h:38</div></div>
@@ -1397,7 +1395,7 @@ $(function() {
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Mar 22 2023 02:13:57 for KratosMultiphysics by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Thu Mar 23 2023 02:13:09 for KratosMultiphysics by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>
