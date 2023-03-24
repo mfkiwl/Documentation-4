@@ -91,43 +91,40 @@ $(function() {
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment">//  Main authors:    Philipp Bucher (https://github.com/philbucher)</span></div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">//</span></div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#if !defined(KRATOS_MAPPER_MPI_BACKEND_H_INCLUDED)</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#define KRATOS_MAPPER_MPI_BACKEND_H_INCLUDED</span></div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment">// System includes</span></div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment">// External includes</span></div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment">// Project includes</span></div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d7/d76/interface__communicator__mpi_8h.html">custom_searching/interface_communicator_mpi.h</a>&quot;</span></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../dd/de3/mapping__matrix__utilities_8h.html">custom_utilities/mapping_matrix_utilities.h</a>&quot;</span></div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d6/da0/interface__vector__container_8h.html">custom_utilities/interface_vector_container.h</a>&quot;</span></div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keyword">namespace </span><a class="code" href="../../db/d66/namespace_kratos.html">Kratos</a> {</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">class</span> TSparseSpace, <span class="keyword">class</span> TDenseSpace&gt;</div>
-<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="../../d8/dec/struct_kratos_1_1_mapper_m_p_i_backend.html">   28</a></span>&#160;<span class="keyword">struct </span><a class="code" href="../../d8/dec/struct_kratos_1_1_mapper_m_p_i_backend.html">MapperMPIBackend</a></div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;{</div>
-<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="../../d8/dec/struct_kratos_1_1_mapper_m_p_i_backend.html#a132a932cec2176c1bba05968e199a43d">   30</a></span>&#160;    <span class="keyword">using</span> <a class="code" href="../../d8/dec/struct_kratos_1_1_mapper_m_p_i_backend.html#a132a932cec2176c1bba05968e199a43d">InterfaceCommunicatorType</a> = InterfaceCommunicatorMPI;</div>
-<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="../../d8/dec/struct_kratos_1_1_mapper_m_p_i_backend.html#a36bb43d32a7fdf9c5494b77da373a3bf">   31</a></span>&#160;    <span class="keyword">using</span> <a class="code" href="../../d8/dec/struct_kratos_1_1_mapper_m_p_i_backend.html#a36bb43d32a7fdf9c5494b77da373a3bf">MappingMatrixUtilitiesType</a> = MappingMatrixUtilities&lt;TSparseSpace, TDenseSpace&gt;;</div>
-<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="../../d8/dec/struct_kratos_1_1_mapper_m_p_i_backend.html#afb5a9934dba18c072452890b9a49cdc3">   32</a></span>&#160;    <span class="keyword">using</span> <a class="code" href="../../d8/dec/struct_kratos_1_1_mapper_m_p_i_backend.html#afb5a9934dba18c072452890b9a49cdc3">InterfaceVectorContainerType</a> = InterfaceVectorContainer&lt;TSparseSpace, TDenseSpace&gt;;</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;};</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;}  <span class="comment">// namespace Kratos.</span></div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// KRATOS_MAPPER_MPI_BACKEND_H_INCLUDED defined</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment">// System includes</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment">// External includes</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment">// Project includes</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d7/d76/interface__communicator__mpi_8h.html">custom_searching/interface_communicator_mpi.h</a>&quot;</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../dd/de3/mapping__matrix__utilities_8h.html">custom_utilities/mapping_matrix_utilities.h</a>&quot;</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d6/da0/interface__vector__container_8h.html">custom_utilities/interface_vector_container.h</a>&quot;</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">namespace </span><a class="code" href="../../db/d66/namespace_kratos.html">Kratos</a> {</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">class</span> TSparseSpace, <span class="keyword">class</span> TDenseSpace&gt;</div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="../../d8/dec/struct_kratos_1_1_mapper_m_p_i_backend.html">   27</a></span>&#160;<span class="keyword">struct </span><a class="code" href="../../d8/dec/struct_kratos_1_1_mapper_m_p_i_backend.html">MapperMPIBackend</a></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;{</div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="../../d8/dec/struct_kratos_1_1_mapper_m_p_i_backend.html#a132a932cec2176c1bba05968e199a43d">   29</a></span>&#160;    <span class="keyword">using</span> <a class="code" href="../../d8/dec/struct_kratos_1_1_mapper_m_p_i_backend.html#a132a932cec2176c1bba05968e199a43d">InterfaceCommunicatorType</a> = InterfaceCommunicatorMPI;</div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="../../d8/dec/struct_kratos_1_1_mapper_m_p_i_backend.html#a36bb43d32a7fdf9c5494b77da373a3bf">   30</a></span>&#160;    <span class="keyword">using</span> <a class="code" href="../../d8/dec/struct_kratos_1_1_mapper_m_p_i_backend.html#a36bb43d32a7fdf9c5494b77da373a3bf">MappingMatrixUtilitiesType</a> = MappingMatrixUtilities&lt;TSparseSpace, TDenseSpace&gt;;</div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="../../d8/dec/struct_kratos_1_1_mapper_m_p_i_backend.html#afb5a9934dba18c072452890b9a49cdc3">   31</a></span>&#160;    <span class="keyword">using</span> <a class="code" href="../../d8/dec/struct_kratos_1_1_mapper_m_p_i_backend.html#afb5a9934dba18c072452890b9a49cdc3">InterfaceVectorContainerType</a> = InterfaceVectorContainer&lt;TSparseSpace, TDenseSpace&gt;;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;};</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;}  <span class="comment">// namespace Kratos.</span></div>
 <div class="ttc" id="ainterface__communicator__mpi_8h_html"><div class="ttname"><a href="../../d7/d76/interface__communicator__mpi_8h.html">interface_communicator_mpi.h</a></div></div>
 <div class="ttc" id="ainterface__vector__container_8h_html"><div class="ttname"><a href="../../d6/da0/interface__vector__container_8h.html">interface_vector_container.h</a></div></div>
 <div class="ttc" id="amapping__matrix__utilities_8h_html"><div class="ttname"><a href="../../dd/de3/mapping__matrix__utilities_8h.html">mapping_matrix_utilities.h</a></div></div>
 <div class="ttc" id="anamespace_kratos_html"><div class="ttname"><a href="../../db/d66/namespace_kratos.html">Kratos</a></div><div class="ttdoc">REF: G. R. Cowper, GAUSSIAN QUADRATURE FORMULAS FOR TRIANGLES.</div><div class="ttdef"><b>Definition:</b> mesh_condition.cpp:21</div></div>
-<div class="ttc" id="astruct_kratos_1_1_mapper_m_p_i_backend_html"><div class="ttname"><a href="../../d8/dec/struct_kratos_1_1_mapper_m_p_i_backend.html">Kratos::MapperMPIBackend</a></div><div class="ttdef"><b>Definition:</b> mapper_mpi_backend.h:29</div></div>
-<div class="ttc" id="astruct_kratos_1_1_mapper_m_p_i_backend_html_a132a932cec2176c1bba05968e199a43d"><div class="ttname"><a href="../../d8/dec/struct_kratos_1_1_mapper_m_p_i_backend.html#a132a932cec2176c1bba05968e199a43d">Kratos::MapperMPIBackend::InterfaceCommunicatorType</a></div><div class="ttdeci">InterfaceCommunicatorMPI InterfaceCommunicatorType</div><div class="ttdef"><b>Definition:</b> mapper_mpi_backend.h:30</div></div>
-<div class="ttc" id="astruct_kratos_1_1_mapper_m_p_i_backend_html_a36bb43d32a7fdf9c5494b77da373a3bf"><div class="ttname"><a href="../../d8/dec/struct_kratos_1_1_mapper_m_p_i_backend.html#a36bb43d32a7fdf9c5494b77da373a3bf">Kratos::MapperMPIBackend::MappingMatrixUtilitiesType</a></div><div class="ttdeci">MappingMatrixUtilities&lt; TSparseSpace, TDenseSpace &gt; MappingMatrixUtilitiesType</div><div class="ttdef"><b>Definition:</b> mapper_mpi_backend.h:31</div></div>
-<div class="ttc" id="astruct_kratos_1_1_mapper_m_p_i_backend_html_afb5a9934dba18c072452890b9a49cdc3"><div class="ttname"><a href="../../d8/dec/struct_kratos_1_1_mapper_m_p_i_backend.html#afb5a9934dba18c072452890b9a49cdc3">Kratos::MapperMPIBackend::InterfaceVectorContainerType</a></div><div class="ttdeci">InterfaceVectorContainer&lt; TSparseSpace, TDenseSpace &gt; InterfaceVectorContainerType</div><div class="ttdef"><b>Definition:</b> mapper_mpi_backend.h:32</div></div>
+<div class="ttc" id="astruct_kratos_1_1_mapper_m_p_i_backend_html"><div class="ttname"><a href="../../d8/dec/struct_kratos_1_1_mapper_m_p_i_backend.html">Kratos::MapperMPIBackend</a></div><div class="ttdef"><b>Definition:</b> mapper_mpi_backend.h:28</div></div>
+<div class="ttc" id="astruct_kratos_1_1_mapper_m_p_i_backend_html_a132a932cec2176c1bba05968e199a43d"><div class="ttname"><a href="../../d8/dec/struct_kratos_1_1_mapper_m_p_i_backend.html#a132a932cec2176c1bba05968e199a43d">Kratos::MapperMPIBackend::InterfaceCommunicatorType</a></div><div class="ttdeci">InterfaceCommunicatorMPI InterfaceCommunicatorType</div><div class="ttdef"><b>Definition:</b> mapper_mpi_backend.h:29</div></div>
+<div class="ttc" id="astruct_kratos_1_1_mapper_m_p_i_backend_html_a36bb43d32a7fdf9c5494b77da373a3bf"><div class="ttname"><a href="../../d8/dec/struct_kratos_1_1_mapper_m_p_i_backend.html#a36bb43d32a7fdf9c5494b77da373a3bf">Kratos::MapperMPIBackend::MappingMatrixUtilitiesType</a></div><div class="ttdeci">MappingMatrixUtilities&lt; TSparseSpace, TDenseSpace &gt; MappingMatrixUtilitiesType</div><div class="ttdef"><b>Definition:</b> mapper_mpi_backend.h:30</div></div>
+<div class="ttc" id="astruct_kratos_1_1_mapper_m_p_i_backend_html_afb5a9934dba18c072452890b9a49cdc3"><div class="ttname"><a href="../../d8/dec/struct_kratos_1_1_mapper_m_p_i_backend.html#afb5a9934dba18c072452890b9a49cdc3">Kratos::MapperMPIBackend::InterfaceVectorContainerType</a></div><div class="ttdeci">InterfaceVectorContainer&lt; TSparseSpace, TDenseSpace &gt; InterfaceVectorContainerType</div><div class="ttdef"><b>Definition:</b> mapper_mpi_backend.h:31</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Mar 23 2023 02:08:20 for KratosMultiphysics by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Fri Mar 24 2023 02:11:31 for KratosMultiphysics by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>
