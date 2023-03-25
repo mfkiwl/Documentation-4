@@ -316,12 +316,13 @@
 <g id="node9" class="node">
 <title>Node9</title>
 <g id="a_node9"><a xlink:href="../../d1/d66/class_kratos_1_1_variable.html" target="_top" xlink:title=" ">
-<polygon fill="none" stroke="black" points="501.5,-1233 501.5,-1873 657.5,-1873 657.5,-1233 501.5,-1233"/>
-<text text-anchor="start" x="509.5" y="-1861" font-family="Helvetica,sans-Serif" font-size="10.00">Kratos::Variable&lt; Kratos</text>
-<text text-anchor="middle" x="579.5" y="-1850" font-family="Helvetica,sans-Serif" font-size="10.00">::array_1d&lt; double, 3 &gt; &gt;</text>
-<polyline fill="none" stroke="black" points="501.5,-1843 657.5,-1843 "/>
-<text text-anchor="middle" x="579.5" y="-1831" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
-<polyline fill="none" stroke="black" points="501.5,-1824 657.5,-1824 "/>
+<polygon fill="none" stroke="black" points="501.5,-1222 501.5,-1884 657.5,-1884 657.5,-1222 501.5,-1222"/>
+<text text-anchor="start" x="509.5" y="-1872" font-family="Helvetica,sans-Serif" font-size="10.00">Kratos::Variable&lt; Kratos</text>
+<text text-anchor="middle" x="579.5" y="-1861" font-family="Helvetica,sans-Serif" font-size="10.00">::array_1d&lt; double, 3 &gt; &gt;</text>
+<polyline fill="none" stroke="black" points="501.5,-1854 657.5,-1854 "/>
+<text text-anchor="middle" x="579.5" y="-1842" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
+<polyline fill="none" stroke="black" points="501.5,-1835 657.5,-1835 "/>
+<text text-anchor="start" x="509.5" y="-1823" font-family="Helvetica,sans-Serif" font-size="10.00">+ Variable()</text>
 <text text-anchor="start" x="509.5" y="-1812" font-family="Helvetica,sans-Serif" font-size="10.00">+ Variable()</text>
 <text text-anchor="start" x="509.5" y="-1801" font-family="Helvetica,sans-Serif" font-size="10.00">+ Variable()</text>
 <text text-anchor="start" x="509.5" y="-1790" font-family="Helvetica,sans-Serif" font-size="10.00">+ Variable()</text>
@@ -349,40 +350,41 @@
 <text text-anchor="start" x="509.5" y="-1548" font-family="Helvetica,sans-Serif" font-size="10.00">* Variable()</text>
 <text text-anchor="start" x="509.5" y="-1537" font-family="Helvetica,sans-Serif" font-size="10.00">* Variable()</text>
 <text text-anchor="start" x="509.5" y="-1526" font-family="Helvetica,sans-Serif" font-size="10.00">* Variable()</text>
-<text text-anchor="start" x="509.5" y="-1515" font-family="Helvetica,sans-Serif" font-size="10.00">* ~Variable()</text>
-<text text-anchor="start" x="509.5" y="-1504" font-family="Helvetica,sans-Serif" font-size="10.00">* operator=()</text>
-<text text-anchor="start" x="509.5" y="-1493" font-family="Helvetica,sans-Serif" font-size="10.00">* Clone()</text>
-<text text-anchor="start" x="509.5" y="-1482" font-family="Helvetica,sans-Serif" font-size="10.00">* Copy()</text>
-<text text-anchor="start" x="509.5" y="-1471" font-family="Helvetica,sans-Serif" font-size="10.00">* Assign()</text>
-<text text-anchor="start" x="509.5" y="-1460" font-family="Helvetica,sans-Serif" font-size="10.00">* AssignZero()</text>
-<text text-anchor="start" x="509.5" y="-1449" font-family="Helvetica,sans-Serif" font-size="10.00">* Delete()</text>
-<text text-anchor="start" x="509.5" y="-1438" font-family="Helvetica,sans-Serif" font-size="10.00">* Destruct()</text>
-<text text-anchor="start" x="509.5" y="-1427" font-family="Helvetica,sans-Serif" font-size="10.00">* Print()</text>
-<text text-anchor="start" x="509.5" y="-1416" font-family="Helvetica,sans-Serif" font-size="10.00">* PrintData()</text>
-<text text-anchor="start" x="509.5" y="-1405" font-family="Helvetica,sans-Serif" font-size="10.00">* Save()</text>
-<text text-anchor="start" x="509.5" y="-1394" font-family="Helvetica,sans-Serif" font-size="10.00">* Allocate()</text>
-<text text-anchor="start" x="509.5" y="-1383" font-family="Helvetica,sans-Serif" font-size="10.00">* Load()</text>
-<text text-anchor="start" x="509.5" y="-1372" font-family="Helvetica,sans-Serif" font-size="10.00">* GetValue()</text>
+<text text-anchor="start" x="509.5" y="-1515" font-family="Helvetica,sans-Serif" font-size="10.00">* Variable()</text>
+<text text-anchor="start" x="509.5" y="-1504" font-family="Helvetica,sans-Serif" font-size="10.00">* ~Variable()</text>
+<text text-anchor="start" x="509.5" y="-1493" font-family="Helvetica,sans-Serif" font-size="10.00">* operator=()</text>
+<text text-anchor="start" x="509.5" y="-1482" font-family="Helvetica,sans-Serif" font-size="10.00">* Clone()</text>
+<text text-anchor="start" x="509.5" y="-1471" font-family="Helvetica,sans-Serif" font-size="10.00">* Copy()</text>
+<text text-anchor="start" x="509.5" y="-1460" font-family="Helvetica,sans-Serif" font-size="10.00">* Assign()</text>
+<text text-anchor="start" x="509.5" y="-1449" font-family="Helvetica,sans-Serif" font-size="10.00">* AssignZero()</text>
+<text text-anchor="start" x="509.5" y="-1438" font-family="Helvetica,sans-Serif" font-size="10.00">* Delete()</text>
+<text text-anchor="start" x="509.5" y="-1427" font-family="Helvetica,sans-Serif" font-size="10.00">* Destruct()</text>
+<text text-anchor="start" x="509.5" y="-1416" font-family="Helvetica,sans-Serif" font-size="10.00">* Print()</text>
+<text text-anchor="start" x="509.5" y="-1405" font-family="Helvetica,sans-Serif" font-size="10.00">* PrintData()</text>
+<text text-anchor="start" x="509.5" y="-1394" font-family="Helvetica,sans-Serif" font-size="10.00">* Save()</text>
+<text text-anchor="start" x="509.5" y="-1383" font-family="Helvetica,sans-Serif" font-size="10.00">* Allocate()</text>
+<text text-anchor="start" x="509.5" y="-1372" font-family="Helvetica,sans-Serif" font-size="10.00">* Load()</text>
 <text text-anchor="start" x="509.5" y="-1361" font-family="Helvetica,sans-Serif" font-size="10.00">* GetValue()</text>
-<text text-anchor="start" x="509.5" y="-1350" font-family="Helvetica,sans-Serif" font-size="10.00">* StaticObject()</text>
-<text text-anchor="start" x="509.5" y="-1339" font-family="Helvetica,sans-Serif" font-size="10.00">* PrintData()</text>
-<text text-anchor="start" x="509.5" y="-1328" font-family="Helvetica,sans-Serif" font-size="10.00">* Info()</text>
-<text text-anchor="start" x="509.5" y="-1317" font-family="Helvetica,sans-Serif" font-size="10.00">* PrintInfo()</text>
-<text text-anchor="start" x="509.5" y="-1306" font-family="Helvetica,sans-Serif" font-size="10.00">* GetTimeDerivative()</text>
-<text text-anchor="start" x="509.5" y="-1295" font-family="Helvetica,sans-Serif" font-size="10.00">* Zero()</text>
-<text text-anchor="start" x="509.5" y="-1284" font-family="Helvetica,sans-Serif" font-size="10.00">* pZero()</text>
-<text text-anchor="start" x="509.5" y="-1273" font-family="Helvetica,sans-Serif" font-size="10.00">* Variable()</text>
+<text text-anchor="start" x="509.5" y="-1350" font-family="Helvetica,sans-Serif" font-size="10.00">* GetValue()</text>
+<text text-anchor="start" x="509.5" y="-1339" font-family="Helvetica,sans-Serif" font-size="10.00">* StaticObject()</text>
+<text text-anchor="start" x="509.5" y="-1328" font-family="Helvetica,sans-Serif" font-size="10.00">* PrintData()</text>
+<text text-anchor="start" x="509.5" y="-1317" font-family="Helvetica,sans-Serif" font-size="10.00">* Info()</text>
+<text text-anchor="start" x="509.5" y="-1306" font-family="Helvetica,sans-Serif" font-size="10.00">* PrintInfo()</text>
+<text text-anchor="start" x="509.5" y="-1295" font-family="Helvetica,sans-Serif" font-size="10.00">* GetTimeDerivative()</text>
+<text text-anchor="start" x="509.5" y="-1284" font-family="Helvetica,sans-Serif" font-size="10.00">* Zero()</text>
+<text text-anchor="start" x="509.5" y="-1273" font-family="Helvetica,sans-Serif" font-size="10.00">* pZero()</text>
 <text text-anchor="start" x="509.5" y="-1262" font-family="Helvetica,sans-Serif" font-size="10.00">* Variable()</text>
 <text text-anchor="start" x="509.5" y="-1251" font-family="Helvetica,sans-Serif" font-size="10.00">* GetValueByIndex()</text>
 <text text-anchor="start" x="509.5" y="-1240" font-family="Helvetica,sans-Serif" font-size="10.00">* GetValueByIndex()</text>
+<text text-anchor="start" x="509.5" y="-1229" font-family="Helvetica,sans-Serif" font-size="10.00">* RegisterThisVariable()</text>
 </a>
 </g>
 </g>
 <!-- Node9&#45;&gt;Node1 -->
 <g id="edge8" class="edge">
 <title>Node9&#45;&gt;Node1</title>
-<path fill="none" stroke="#404040" d="M569.24,-1232.68C567.47,-1177.59 565.59,-1119.01 563.69,-1060.05"/>
-<polygon fill="none" stroke="#404040" points="563.69,-1059.85 559.5,-1053.98 563.3,-1047.85 567.49,-1053.72 563.69,-1059.85"/>
+<path fill="none" stroke="#404040" d="M568.89,-1221.75C567.22,-1169.85 565.46,-1115.07 563.69,-1059.96"/>
+<polygon fill="none" stroke="#404040" points="563.68,-1059.81 559.49,-1053.95 563.3,-1047.82 567.49,-1053.69 563.68,-1059.81"/>
 <text text-anchor="middle" x="627.5" y="-1096.5" font-family="Helvetica,sans-Serif" font-size="10.00"> #mpConvectVar</text>
 <text text-anchor="middle" x="627.5" y="-1085.5" font-family="Helvetica,sans-Serif" font-size="10.00">#mpLevelSetGradientVar</text>
 </g>
@@ -402,18 +404,19 @@
 <!-- Node10&#45;&gt;Node9 -->
 <g id="edge9" class="edge">
 <title>Node10&#45;&gt;Node9</title>
-<path fill="none" stroke="midnightblue" d="M642.28,-2010.57C637.83,-1978.2 630.96,-1928.22 623.37,-1873.02"/>
+<path fill="none" stroke="midnightblue" d="M642.32,-2010.85C638.18,-1980.69 631.91,-1935.13 624.92,-1884.27"/>
 <polygon fill="none" stroke="midnightblue" points="638.87,-2011.42 643.7,-2020.85 645.8,-2010.47 638.87,-2011.42"/>
 </g>
 <!-- Node11 -->
 <g id="node11" class="node">
 <title>Node11</title>
 <g id="a_node11"><a xlink:href="../../d1/d66/class_kratos_1_1_variable.html" target="_top" xlink:title=" ">
-<polygon fill="none" stroke="black" points="675.5,-1238.5 675.5,-1867.5 831.5,-1867.5 831.5,-1238.5 675.5,-1238.5"/>
-<text text-anchor="middle" x="753.5" y="-1855.5" font-family="Helvetica,sans-Serif" font-size="10.00">Kratos::Variable&lt; double &gt;</text>
-<polyline fill="none" stroke="black" points="675.5,-1848.5 831.5,-1848.5 "/>
-<text text-anchor="middle" x="753.5" y="-1836.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
-<polyline fill="none" stroke="black" points="675.5,-1829.5 831.5,-1829.5 "/>
+<polygon fill="none" stroke="black" points="675.5,-1227.5 675.5,-1878.5 831.5,-1878.5 831.5,-1227.5 675.5,-1227.5"/>
+<text text-anchor="middle" x="753.5" y="-1866.5" font-family="Helvetica,sans-Serif" font-size="10.00">Kratos::Variable&lt; double &gt;</text>
+<polyline fill="none" stroke="black" points="675.5,-1859.5 831.5,-1859.5 "/>
+<text text-anchor="middle" x="753.5" y="-1847.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
+<polyline fill="none" stroke="black" points="675.5,-1840.5 831.5,-1840.5 "/>
+<text text-anchor="start" x="683.5" y="-1828.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ Variable()</text>
 <text text-anchor="start" x="683.5" y="-1817.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ Variable()</text>
 <text text-anchor="start" x="683.5" y="-1806.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ Variable()</text>
 <text text-anchor="start" x="683.5" y="-1795.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ Variable()</text>
@@ -441,45 +444,46 @@
 <text text-anchor="start" x="683.5" y="-1553.5" font-family="Helvetica,sans-Serif" font-size="10.00">* Variable()</text>
 <text text-anchor="start" x="683.5" y="-1542.5" font-family="Helvetica,sans-Serif" font-size="10.00">* Variable()</text>
 <text text-anchor="start" x="683.5" y="-1531.5" font-family="Helvetica,sans-Serif" font-size="10.00">* Variable()</text>
-<text text-anchor="start" x="683.5" y="-1520.5" font-family="Helvetica,sans-Serif" font-size="10.00">* ~Variable()</text>
-<text text-anchor="start" x="683.5" y="-1509.5" font-family="Helvetica,sans-Serif" font-size="10.00">* operator=()</text>
-<text text-anchor="start" x="683.5" y="-1498.5" font-family="Helvetica,sans-Serif" font-size="10.00">* Clone()</text>
-<text text-anchor="start" x="683.5" y="-1487.5" font-family="Helvetica,sans-Serif" font-size="10.00">* Copy()</text>
-<text text-anchor="start" x="683.5" y="-1476.5" font-family="Helvetica,sans-Serif" font-size="10.00">* Assign()</text>
-<text text-anchor="start" x="683.5" y="-1465.5" font-family="Helvetica,sans-Serif" font-size="10.00">* AssignZero()</text>
-<text text-anchor="start" x="683.5" y="-1454.5" font-family="Helvetica,sans-Serif" font-size="10.00">* Delete()</text>
-<text text-anchor="start" x="683.5" y="-1443.5" font-family="Helvetica,sans-Serif" font-size="10.00">* Destruct()</text>
-<text text-anchor="start" x="683.5" y="-1432.5" font-family="Helvetica,sans-Serif" font-size="10.00">* Print()</text>
-<text text-anchor="start" x="683.5" y="-1421.5" font-family="Helvetica,sans-Serif" font-size="10.00">* PrintData()</text>
-<text text-anchor="start" x="683.5" y="-1410.5" font-family="Helvetica,sans-Serif" font-size="10.00">* Save()</text>
-<text text-anchor="start" x="683.5" y="-1399.5" font-family="Helvetica,sans-Serif" font-size="10.00">* Allocate()</text>
-<text text-anchor="start" x="683.5" y="-1388.5" font-family="Helvetica,sans-Serif" font-size="10.00">* Load()</text>
-<text text-anchor="start" x="683.5" y="-1377.5" font-family="Helvetica,sans-Serif" font-size="10.00">* GetValue()</text>
+<text text-anchor="start" x="683.5" y="-1520.5" font-family="Helvetica,sans-Serif" font-size="10.00">* Variable()</text>
+<text text-anchor="start" x="683.5" y="-1509.5" font-family="Helvetica,sans-Serif" font-size="10.00">* ~Variable()</text>
+<text text-anchor="start" x="683.5" y="-1498.5" font-family="Helvetica,sans-Serif" font-size="10.00">* operator=()</text>
+<text text-anchor="start" x="683.5" y="-1487.5" font-family="Helvetica,sans-Serif" font-size="10.00">* Clone()</text>
+<text text-anchor="start" x="683.5" y="-1476.5" font-family="Helvetica,sans-Serif" font-size="10.00">* Copy()</text>
+<text text-anchor="start" x="683.5" y="-1465.5" font-family="Helvetica,sans-Serif" font-size="10.00">* Assign()</text>
+<text text-anchor="start" x="683.5" y="-1454.5" font-family="Helvetica,sans-Serif" font-size="10.00">* AssignZero()</text>
+<text text-anchor="start" x="683.5" y="-1443.5" font-family="Helvetica,sans-Serif" font-size="10.00">* Delete()</text>
+<text text-anchor="start" x="683.5" y="-1432.5" font-family="Helvetica,sans-Serif" font-size="10.00">* Destruct()</text>
+<text text-anchor="start" x="683.5" y="-1421.5" font-family="Helvetica,sans-Serif" font-size="10.00">* Print()</text>
+<text text-anchor="start" x="683.5" y="-1410.5" font-family="Helvetica,sans-Serif" font-size="10.00">* PrintData()</text>
+<text text-anchor="start" x="683.5" y="-1399.5" font-family="Helvetica,sans-Serif" font-size="10.00">* Save()</text>
+<text text-anchor="start" x="683.5" y="-1388.5" font-family="Helvetica,sans-Serif" font-size="10.00">* Allocate()</text>
+<text text-anchor="start" x="683.5" y="-1377.5" font-family="Helvetica,sans-Serif" font-size="10.00">* Load()</text>
 <text text-anchor="start" x="683.5" y="-1366.5" font-family="Helvetica,sans-Serif" font-size="10.00">* GetValue()</text>
-<text text-anchor="start" x="683.5" y="-1355.5" font-family="Helvetica,sans-Serif" font-size="10.00">* StaticObject()</text>
-<text text-anchor="start" x="683.5" y="-1344.5" font-family="Helvetica,sans-Serif" font-size="10.00">* PrintData()</text>
-<text text-anchor="start" x="683.5" y="-1333.5" font-family="Helvetica,sans-Serif" font-size="10.00">* Info()</text>
-<text text-anchor="start" x="683.5" y="-1322.5" font-family="Helvetica,sans-Serif" font-size="10.00">* PrintInfo()</text>
-<text text-anchor="start" x="683.5" y="-1311.5" font-family="Helvetica,sans-Serif" font-size="10.00">* GetTimeDerivative()</text>
-<text text-anchor="start" x="683.5" y="-1300.5" font-family="Helvetica,sans-Serif" font-size="10.00">* Zero()</text>
-<text text-anchor="start" x="683.5" y="-1289.5" font-family="Helvetica,sans-Serif" font-size="10.00">* pZero()</text>
-<text text-anchor="start" x="683.5" y="-1278.5" font-family="Helvetica,sans-Serif" font-size="10.00">* Variable()</text>
+<text text-anchor="start" x="683.5" y="-1355.5" font-family="Helvetica,sans-Serif" font-size="10.00">* GetValue()</text>
+<text text-anchor="start" x="683.5" y="-1344.5" font-family="Helvetica,sans-Serif" font-size="10.00">* StaticObject()</text>
+<text text-anchor="start" x="683.5" y="-1333.5" font-family="Helvetica,sans-Serif" font-size="10.00">* PrintData()</text>
+<text text-anchor="start" x="683.5" y="-1322.5" font-family="Helvetica,sans-Serif" font-size="10.00">* Info()</text>
+<text text-anchor="start" x="683.5" y="-1311.5" font-family="Helvetica,sans-Serif" font-size="10.00">* PrintInfo()</text>
+<text text-anchor="start" x="683.5" y="-1300.5" font-family="Helvetica,sans-Serif" font-size="10.00">* GetTimeDerivative()</text>
+<text text-anchor="start" x="683.5" y="-1289.5" font-family="Helvetica,sans-Serif" font-size="10.00">* Zero()</text>
+<text text-anchor="start" x="683.5" y="-1278.5" font-family="Helvetica,sans-Serif" font-size="10.00">* pZero()</text>
 <text text-anchor="start" x="683.5" y="-1267.5" font-family="Helvetica,sans-Serif" font-size="10.00">* Variable()</text>
 <text text-anchor="start" x="683.5" y="-1256.5" font-family="Helvetica,sans-Serif" font-size="10.00">* GetValueByIndex()</text>
 <text text-anchor="start" x="683.5" y="-1245.5" font-family="Helvetica,sans-Serif" font-size="10.00">* GetValueByIndex()</text>
+<text text-anchor="start" x="683.5" y="-1234.5" font-family="Helvetica,sans-Serif" font-size="10.00">* RegisterThisVariable()</text>
 </a>
 </g>
 </g>
 <!-- Node10&#45;&gt;Node11 -->
 <g id="edge11" class="edge">
 <title>Node10&#45;&gt;Node11</title>
-<path fill="none" stroke="midnightblue" d="M656.45,-2010.89C659.68,-1997.1 663.32,-1981.35 666.5,-1967 673.64,-1934.81 680.96,-1901.17 688.18,-1867.6"/>
+<path fill="none" stroke="midnightblue" d="M656.45,-2010.89C659.68,-1997.1 663.32,-1981.35 666.5,-1967 672.87,-1938.3 679.38,-1908.44 685.83,-1878.51"/>
 <polygon fill="none" stroke="midnightblue" points="652.95,-2010.46 654.07,-2020.99 659.77,-2012.06 652.95,-2010.46"/>
 </g>
 <!-- Node11&#45;&gt;Node1 -->
 <g id="edge10" class="edge">
 <title>Node11&#45;&gt;Node1</title>
-<path fill="none" stroke="#404040" d="M721.42,-1238.21C713.66,-1180.7 704.38,-1121.37 693.5,-1066 682.06,-1007.8 667.74,-946.66 652.55,-887.27"/>
+<path fill="none" stroke="#404040" d="M719.96,-1227.47C712.5,-1173.34 703.71,-1117.93 693.5,-1066 682.06,-1007.8 667.74,-946.66 652.55,-887.27"/>
 <polygon fill="none" stroke="#404040" points="652.5,-887.04 647.13,-882.22 649.51,-875.41 654.87,-880.23 652.5,-887.04"/>
 <text text-anchor="middle" x="746" y="-1091" font-family="Helvetica,sans-Serif" font-size="10.00"> #mpLevelSetVar</text>
 </g>

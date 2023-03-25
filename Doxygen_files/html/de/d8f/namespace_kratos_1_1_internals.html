@@ -120,6 +120,10 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d1c/class_kratos_1_1_internals_1_1_distance_spatial_containers_configure.html">DistanceSpatialContainersConfigure</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This class contains the tools related with the distance spatial container cell data.  <a href="../../d0/d1c/class_kratos_1_1_internals_1_1_distance_spatial_containers_configure.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d7e/class_kratos_1_1_internals_1_1_profiler.html">Profiler</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/da1/class_kratos_1_1_internals_1_1_profiler_singleton.html">ProfilerSingleton</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d4f/struct_kratos_1_1_internals_1_1_null_initialized.html">NullInitialized</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper class for null-initializiation.  <a href="../../d7/d4f/struct_kratos_1_1_internals_1_1_null_initialized.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -160,6 +164,15 @@ Functions</h2></td></tr>
 <tr class="memitem:aba670142ecdc474883816e1eec703334"><td class="memTemplParams" colspan="2">template&lt;typename TDataType , std::size_t TSize1&gt; </td></tr>
 <tr class="memitem:aba670142ecdc474883816e1eec703334"><td class="memTemplItemLeft" align="right" valign="top">std::istream &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../de/d8f/namespace_kratos_1_1_internals.html#aba670142ecdc474883816e1eec703334">operator&gt;&gt;</a> (std::istream &amp;rIStream, <a class="el" href="../../d9/dbb/class_kratos_1_1_internals_1_1_matrix.html">Matrix</a>&lt; TDataType, TSize1, 1 &gt; &amp;TheMatrix)</td></tr>
 <tr class="separator:aba670142ecdc474883816e1eec703334"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab22c791a732a1cc36fe521755f9bab42"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
+<tr class="memitem:ab22c791a732a1cc36fe521755f9bab42"><td class="memTemplItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../de/d8f/namespace_kratos_1_1_internals.html#ab22c791a732a1cc36fe521755f9bab42">operator&lt;&lt;</a> (std::ostream &amp;rStream, const <a class="el" href="../../dd/d7e/class_kratos_1_1_internals_1_1_profiler.html">Profiler</a>&lt; T &gt; &amp;rProfiler)</td></tr>
+<tr class="separator:ab22c791a732a1cc36fe521755f9bab42"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c401caea9e52cc8253fad883421d8fe"><td class="memItemLeft" align="right" valign="top">template std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d8f/namespace_kratos_1_1_internals.html#a2c401caea9e52cc8253fad883421d8fe">operator&lt;&lt;</a> (std::ostream &amp;, const <a class="el" href="../../dd/d7e/class_kratos_1_1_internals_1_1_profiler.html">Profiler</a>&lt; std::chrono::milliseconds &gt; &amp;)</td></tr>
+<tr class="separator:a2c401caea9e52cc8253fad883421d8fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a04162d5666f5c0bd48164b9eba7066"><td class="memItemLeft" align="right" valign="top">template std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d8f/namespace_kratos_1_1_internals.html#a5a04162d5666f5c0bd48164b9eba7066">operator&lt;&lt;</a> (std::ostream &amp;, const <a class="el" href="../../dd/d7e/class_kratos_1_1_internals_1_1_profiler.html">Profiler</a>&lt; std::chrono::microseconds &gt; &amp;)</td></tr>
+<tr class="separator:a5a04162d5666f5c0bd48164b9eba7066"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2daf1501e9a0b6eeca8a8cebf4d76a0d"><td class="memItemLeft" align="right" valign="top">template std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d8f/namespace_kratos_1_1_internals.html#a2daf1501e9a0b6eeca8a8cebf4d76a0d">operator&lt;&lt;</a> (std::ostream &amp;, const <a class="el" href="../../dd/d7e/class_kratos_1_1_internals_1_1_profiler.html">Profiler</a>&lt; std::chrono::nanoseconds &gt; &amp;)</td></tr>
+<tr class="separator:a2daf1501e9a0b6eeca8a8cebf4d76a0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac5be62739fc897b3ac7c26578ed1d88f"><td class="memItemLeft" align="right" valign="top">template&lt;&gt; </td></tr>
 <tr class="memitem:ac5be62739fc897b3ac7c26578ed1d88f"><td class="memTemplItemLeft" align="right" valign="top">ModifiedShapeFunctions::Pointer&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../de/d8f/namespace_kratos_1_1_internals.html#ac5be62739fc897b3ac7c26578ed1d88f">GetShapeFunctionCalculator&lt; 2, 3 &gt;</a> (const <a class="el" href="../../d5/dd4/class_kratos_1_1_element.html">Element</a> &amp;rElement, const <a class="el" href="../../db/d66/namespace_kratos.html#a2382ac8a486c0d52da7ce94f4ccd6d70">Vector</a> &amp;rDistance)</td></tr>
 <tr class="separator:ac5be62739fc897b3ac7c26578ed1d88f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -291,8 +304,92 @@ template&lt;typename TDataType , std::size_t TSize1, std::size_t TSize2&gt; </di
 
 </div>
 </div>
+<a id="a5a04162d5666f5c0bd48164b9eba7066"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5a04162d5666f5c0bd48164b9eba7066">&#9670;&nbsp;</a></span>operator&lt;&lt;() <span class="overload">[1/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">template std::ostream&amp; Kratos::Internals::operator&lt;&lt; </td>
+          <td>(</td>
+          <td class="paramtype">std::ostream &amp;&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../dd/d7e/class_kratos_1_1_internals_1_1_profiler.html">Profiler</a>&lt; std::chrono::microseconds &gt; &amp;&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2c401caea9e52cc8253fad883421d8fe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2c401caea9e52cc8253fad883421d8fe">&#9670;&nbsp;</a></span>operator&lt;&lt;() <span class="overload">[2/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">template std::ostream&amp; Kratos::Internals::operator&lt;&lt; </td>
+          <td>(</td>
+          <td class="paramtype">std::ostream &amp;&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../dd/d7e/class_kratos_1_1_internals_1_1_profiler.html">Profiler</a>&lt; std::chrono::milliseconds &gt; &amp;&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2daf1501e9a0b6eeca8a8cebf4d76a0d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2daf1501e9a0b6eeca8a8cebf4d76a0d">&#9670;&nbsp;</a></span>operator&lt;&lt;() <span class="overload">[3/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">template std::ostream&amp; Kratos::Internals::operator&lt;&lt; </td>
+          <td>(</td>
+          <td class="paramtype">std::ostream &amp;&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../dd/d7e/class_kratos_1_1_internals_1_1_profiler.html">Profiler</a>&lt; std::chrono::nanoseconds &gt; &amp;&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a3e3f76d6d6f9079e96188cf0e92cb71f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3e3f76d6d6f9079e96188cf0e92cb71f">&#9670;&nbsp;</a></span>operator&lt;&lt;()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a3e3f76d6d6f9079e96188cf0e92cb71f">&#9670;&nbsp;</a></span>operator&lt;&lt;() <span class="overload">[4/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -327,6 +424,36 @@ template&lt;typename TExpressionType , std::size_t TCategory&gt; </div>
 </table>
 </div><div class="memdoc">
 <p>output stream function format for a vector : <a href="../../value1, value2, ...., valueN">size</a> format for a matrix : <a href="../../()()...()">size1, size2</a> </p>
+
+</div>
+</div>
+<a id="ab22c791a732a1cc36fe521755f9bab42"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab22c791a732a1cc36fe521755f9bab42">&#9670;&nbsp;</a></span>operator&lt;&lt;() <span class="overload">[5/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">std::ostream &amp; Kratos::Internals::operator&lt;&lt; </td>
+          <td>(</td>
+          <td class="paramtype">std::ostream &amp;&#160;</td>
+          <td class="paramname"><em>rStream</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../dd/d7e/class_kratos_1_1_internals_1_1_profiler.html">Profiler</a>&lt; T &gt; &amp;&#160;</td>
+          <td class="paramname"><em>rProfiler</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -411,7 +538,7 @@ template&lt;typename TDataType , std::size_t TSize1, std::size_t TSize2&gt; </di
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 24 2023 02:23:44 for KratosMultiphysics by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Sat Mar 25 2023 02:15:41 for KratosMultiphysics by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>
