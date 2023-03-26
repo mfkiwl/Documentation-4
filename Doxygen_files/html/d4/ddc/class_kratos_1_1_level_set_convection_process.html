@@ -226,6 +226,9 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:a0c732dbc1e7e5b69443771ac87143121"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/ddc/class_kratos_1_1_level_set_convection_process.html#a0c732dbc1e7e5b69443771ac87143121">ErrorCalculationAndCorrection</a> ()</td></tr>
 <tr class="memdesc:a0c732dbc1e7e5b69443771ac87143121"><td class="mdescLeft">&#160;</td><td class="mdescRight">Eulerian error calculation and correction This function implements the Backward Forward Error Compensation and Correction (BFECC) algorithm Note that this assumes that the first forward convection to n+1 has been completed. Then we go backwards to n* to calculate and apply the convection error.  <a href="../../d4/ddc/class_kratos_1_1_level_set_convection_process.html#a0c732dbc1e7e5b69443771ac87143121">More...</a><br /></td></tr>
 <tr class="separator:a0c732dbc1e7e5b69443771ac87143121"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac60ecf71a2691052f5995bd4eb3b26ca"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/ddc/class_kratos_1_1_level_set_convection_process.html#ac60ecf71a2691052f5995bd4eb3b26ca">ComputeNodalH</a> ()</td></tr>
+<tr class="memdesc:ac60ecf71a2691052f5995bd4eb3b26ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Nodal H calculation This function calculates the nodal h by executing a process where the nodal h calculaiton is implemented.  <a href="../../d4/ddc/class_kratos_1_1_level_set_convection_process.html#ac60ecf71a2691052f5995bd4eb3b26ca">More...</a><br /></td></tr>
+<tr class="separator:ac60ecf71a2691052f5995bd4eb3b26ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
@@ -250,6 +253,10 @@ Protected Attributes</h2></td></tr>
 <tr class="separator:adf04a682dcb7299dbee3557a3aa3fc0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4588c188b6e5a0c724188bb986e8835c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../db/d66/namespace_kratos.html#a14b9d687ed53c882489400b57cdf34cd">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/ddc/class_kratos_1_1_level_set_convection_process.html#a4588c188b6e5a0c724188bb986e8835c">mElementRequiresLimiter</a></td></tr>
 <tr class="separator:a4588c188b6e5a0c724188bb986e8835c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a729bafe897f50b4019734dcd68d17ee2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../db/d66/namespace_kratos.html#a14b9d687ed53c882489400b57cdf34cd">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/ddc/class_kratos_1_1_level_set_convection_process.html#a729bafe897f50b4019734dcd68d17ee2">mElementTauNodal</a></td></tr>
+<tr class="separator:a729bafe897f50b4019734dcd68d17ee2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a888bdfd92aa6ffcf8c13953674a72124"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../db/d66/namespace_kratos.html#a14b9d687ed53c882489400b57cdf34cd">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/ddc/class_kratos_1_1_level_set_convection_process.html#a888bdfd92aa6ffcf8c13953674a72124">mCalculateNodalH</a> = true</td></tr>
+<tr class="separator:a888bdfd92aa6ffcf8c13953674a72124"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a62bd67c946ad818e5cf81fdd7c5fe9ad"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../db/d66/namespace_kratos.html#a14b9d687ed53c882489400b57cdf34cd">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/ddc/class_kratos_1_1_level_set_convection_process.html#a62bd67c946ad818e5cf81fdd7c5fe9ad">mElementRequiresLevelSetGradient</a></td></tr>
 <tr class="separator:a62bd67c946ad818e5cf81fdd7c5fe9ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afa129c83a771289703cf0165416ce49f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../db/d66/namespace_kratos.html#a14b9d687ed53c882489400b57cdf34cd">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/ddc/class_kratos_1_1_level_set_convection_process.html#afa129c83a771289703cf0165416ce49f">mEvaluateLimiter</a></td></tr>
@@ -593,6 +600,35 @@ template&lt;unsigned int TDim, class TSparseSpace , class TDenseSpace , class TL
 <p>This method clears the assignation of the conditions. </p>
 
 <p>Reimplemented from <a class="el" href="../../d2/d8c/class_kratos_1_1_process.html#a1728d44d1cfa7ac57c7282710fbad0e7">Kratos::Process</a>.</p>
+
+</div>
+</div>
+<a id="ac60ecf71a2691052f5995bd4eb3b26ca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac60ecf71a2691052f5995bd4eb3b26ca">&#9670;&nbsp;</a></span>ComputeNodalH()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;unsigned int TDim, class TSparseSpace , class TDenseSpace , class TLinearSolver &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="../../d4/ddc/class_kratos_1_1_level_set_convection_process.html">Kratos::LevelSetConvectionProcess</a>&lt; TDim, TSparseSpace, TDenseSpace, TLinearSolver &gt;::ComputeNodalH </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Nodal H calculation This function calculates the nodal h by executing a process where the nodal h calculaiton is implemented. </p>
 
 </div>
 </div>
@@ -994,6 +1030,30 @@ template&lt;unsigned int TDim, class TSparseSpace , class TDenseSpace , class TL
 
 </div>
 </div>
+<a id="a888bdfd92aa6ffcf8c13953674a72124"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a888bdfd92aa6ffcf8c13953674a72124">&#9670;&nbsp;</a></span>mCalculateNodalH</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;unsigned int TDim, class TSparseSpace , class TDenseSpace , class TLinearSolver &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../db/d66/namespace_kratos.html#a14b9d687ed53c882489400b57cdf34cd">bool</a> <a class="el" href="../../d4/ddc/class_kratos_1_1_level_set_convection_process.html">Kratos::LevelSetConvectionProcess</a>&lt; TDim, TSparseSpace, TDenseSpace, TLinearSolver &gt;::mCalculateNodalH = true</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a5d007154a2c19273dd0025c8ff43bd66"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5d007154a2c19273dd0025c8ff43bd66">&#9670;&nbsp;</a></span>mConvectionElementType</h2>
 
@@ -1079,6 +1139,30 @@ template&lt;unsigned int TDim, class TSparseSpace , class TDenseSpace , class TL
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="../../db/d66/namespace_kratos.html#a14b9d687ed53c882489400b57cdf34cd">bool</a> <a class="el" href="../../d4/ddc/class_kratos_1_1_level_set_convection_process.html">Kratos::LevelSetConvectionProcess</a>&lt; TDim, TSparseSpace, TDenseSpace, TLinearSolver &gt;::mElementRequiresLimiter</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a729bafe897f50b4019734dcd68d17ee2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a729bafe897f50b4019734dcd68d17ee2">&#9670;&nbsp;</a></span>mElementTauNodal</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;unsigned int TDim, class TSparseSpace , class TDenseSpace , class TLinearSolver &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../db/d66/namespace_kratos.html#a14b9d687ed53c882489400b57cdf34cd">bool</a> <a class="el" href="../../d4/ddc/class_kratos_1_1_level_set_convection_process.html">Kratos::LevelSetConvectionProcess</a>&lt; TDim, TSparseSpace, TDenseSpace, TLinearSolver &gt;::mElementTauNodal</td>
         </tr>
       </table>
   </td>
@@ -1648,7 +1732,7 @@ template&lt;unsigned int TDim, class TSparseSpace , class TDenseSpace , class TL
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Mar 25 2023 02:12:51 for KratosMultiphysics by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Sun Mar 26 2023 02:20:39 for KratosMultiphysics by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>
