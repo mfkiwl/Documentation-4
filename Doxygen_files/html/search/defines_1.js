@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['black_53600',['BLACK',['../d1/dab/logging__settings_8hpp.html#a7b3b25cba33b07c303f3060fe41887f6',1,'logging_settings.hpp']]],
-  ['blue_53601',['BLUE',['../d1/dab/logging__settings_8hpp.html#a79d10e672abb49ad63eeaa8aaef57c38',1,'logging_settings.hpp']]],
-  ['bold_53602',['BOLD',['../d1/dab/logging__settings_8hpp.html#a26cdbb1a00213c810caccf21cd33a631',1,'logging_settings.hpp']]],
-  ['boldfont_53603',['BOLDFONT',['../d7/d28/color__utilities_8h.html#aee1be25a8a1e0622e1f894d981eb8217',1,'color_utilities.h']]]
+  ['black_53550',['BLACK',['../d1/dab/logging__settings_8hpp.html#a7b3b25cba33b07c303f3060fe41887f6',1,'logging_settings.hpp']]],
+  ['blue_53551',['BLUE',['../d1/dab/logging__settings_8hpp.html#a79d10e672abb49ad63eeaa8aaef57c38',1,'logging_settings.hpp']]],
+  ['bold_53552',['BOLD',['../d1/dab/logging__settings_8hpp.html#a26cdbb1a00213c810caccf21cd33a631',1,'logging_settings.hpp']]],
+  ['boldfont_53553',['BOLDFONT',['../d7/d28/color__utilities_8h.html#aee1be25a8a1e0622e1f894d981eb8217',1,'color_utilities.h']]]
 ];
