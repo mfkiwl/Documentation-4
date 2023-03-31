@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>KratosMultiphysics: Kratos::TreeNode&lt; TPointType, TIteratorType, TDistanceIteratorType &gt; Class Template Reference</title>
+<title>KratosMultiphysics: Kratos::TreeNode&lt; TDimension, TPointType, TPointerType, TIteratorType, TDistanceIteratorType, TIteratorIteratorType &gt; Class Template Reference</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -81,351 +81,237 @@ $(function() {
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="../../df/df5/class_kratos_1_1_tree_node-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">Kratos::TreeNode&lt; TPointType, TIteratorType, TDistanceIteratorType &gt; Class Template Reference</div>  </div>
+<div class="title">Kratos::TreeNode&lt; TDimension, TPointType, TPointerType, TIteratorType, TDistanceIteratorType, TIteratorIteratorType &gt; Class Template Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
 <p>Short class definition.  
  <a href="../../d5/da3/class_kratos_1_1_tree_node.html#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="../../d4/dd1/containers_2tree_8h_source.html">tree.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="../../d3/d09/tree_8h_source.html">tree.h</a>&gt;</code></p>
 <div class="dynheader">
-Inheritance diagram for Kratos::TreeNode&lt; TPointType, TIteratorType, TDistanceIteratorType &gt;:</div>
+Collaboration diagram for Kratos::TreeNode&lt; TDimension, TPointType, TPointerType, TIteratorType, TDistanceIteratorType, TIteratorIteratorType &gt;:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../d1/d5f/class_kratos_1_1_tree_node__inherit__graph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-</div>
-<div class="dynheader">
-Collaboration diagram for Kratos::TreeNode&lt; TPointType, TIteratorType, TDistanceIteratorType &gt;:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d0/d88/class_kratos_1_1_tree_node__coll__graph.svg" width="230" height="367"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d0/d88/class_kratos_1_1_tree_node__coll__graph.svg" width="278" height="352"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:aee10d04b1a09c62ad6e712f848dd0fc5"><td class="memItemLeft" align="right" valign="top">typedef std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#aee10d04b1a09c62ad6e712f848dd0fc5">SizeType</a></td></tr>
-<tr class="separator:aee10d04b1a09c62ad6e712f848dd0fc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a13413145e62f1e604ceb7a72a6cc2088"><td class="memItemLeft" align="right" valign="top">typedef TPointType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#a13413145e62f1e604ceb7a72a6cc2088">PointType</a></td></tr>
-<tr class="separator:a13413145e62f1e604ceb7a72a6cc2088"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adebd9b43147a3969d81a5bc71adbbe72"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="../../db/d66/namespace_kratos.html#ac77084a57869cbecf89d3ee2c819c5d3">double</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#adebd9b43147a3969d81a5bc71adbbe72">CoordinateType</a></td></tr>
-<tr class="separator:adebd9b43147a3969d81a5bc71adbbe72"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8a7ea5d85fda11d7750a65146d74ee1f"><td class="memItemLeft" align="right" valign="top">typedef TIteratorType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#a8a7ea5d85fda11d7750a65146d74ee1f">IteratorType</a></td></tr>
-<tr class="separator:a8a7ea5d85fda11d7750a65146d74ee1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a657833db99c3404ec097481099388410"><td class="memItemLeft" align="right" valign="top">typedef TDistanceIteratorType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#a657833db99c3404ec097481099388410">DistanceIteratorType</a></td></tr>
-<tr class="separator:a657833db99c3404ec097481099388410"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aee10d04b1a09c62ad6e712f848dd0fc5"><td class="memItemLeft" align="right" valign="top">typedef std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#aee10d04b1a09c62ad6e712f848dd0fc5">SizeType</a></td></tr>
-<tr class="separator:aee10d04b1a09c62ad6e712f848dd0fc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ace35ad701132d2eec7cf3917524d8b0e"><td class="memItemLeft" align="right" valign="top">typedef std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#ace35ad701132d2eec7cf3917524d8b0e">IndexType</a></td></tr>
-<tr class="separator:ace35ad701132d2eec7cf3917524d8b0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adebd9b43147a3969d81a5bc71adbbe72"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="../../db/d66/namespace_kratos.html#ac77084a57869cbecf89d3ee2c819c5d3">double</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#adebd9b43147a3969d81a5bc71adbbe72">CoordinateType</a></td></tr>
-<tr class="separator:adebd9b43147a3969d81a5bc71adbbe72"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a13413145e62f1e604ceb7a72a6cc2088"><td class="memItemLeft" align="right" valign="top">typedef TPointType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#a13413145e62f1e604ceb7a72a6cc2088">PointType</a></td></tr>
-<tr class="separator:a13413145e62f1e604ceb7a72a6cc2088"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa376b5d36b0f136ac354885e153aa788"><td class="memItemLeft" align="right" valign="top">typedef TPointerType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#aa376b5d36b0f136ac354885e153aa788">PointerType</a></td></tr>
-<tr class="separator:aa376b5d36b0f136ac354885e153aa788"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8a7ea5d85fda11d7750a65146d74ee1f"><td class="memItemLeft" align="right" valign="top">typedef TIteratorType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#a8a7ea5d85fda11d7750a65146d74ee1f">IteratorType</a></td></tr>
-<tr class="separator:a8a7ea5d85fda11d7750a65146d74ee1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a657833db99c3404ec097481099388410"><td class="memItemLeft" align="right" valign="top">typedef TDistanceIteratorType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#a657833db99c3404ec097481099388410">DistanceIteratorType</a></td></tr>
-<tr class="separator:a657833db99c3404ec097481099388410"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3ea2ab67d5afa4eaa55fae4b8e2ba5ee"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html">TreeNode</a>&lt; TDimension, TPointType, TPointerType, TIteratorType, TDistanceIteratorType &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#a3ea2ab67d5afa4eaa55fae4b8e2ba5ee">TreeNodeType</a></td></tr>
-<tr class="separator:a3ea2ab67d5afa4eaa55fae4b8e2ba5ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9ec6f7d4a6563656baed07bf70a14faa"><td class="memItemLeft" align="right" valign="top">typedef std::vector&lt; <a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#a8a7ea5d85fda11d7750a65146d74ee1f">IteratorType</a> &gt;::iterator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#a9ec6f7d4a6563656baed07bf70a14faa">IteratorIteratorType</a></td></tr>
-<tr class="separator:a9ec6f7d4a6563656baed07bf70a14faa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac2857b999fb8b25a44f82c8893472f2f"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="../../d9/d22/class_kratos_1_1_search_structure.html">SearchStructure</a>&lt; <a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#ace35ad701132d2eec7cf3917524d8b0e">IndexType</a>, <a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#aee10d04b1a09c62ad6e712f848dd0fc5">SizeType</a>, <a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#adebd9b43147a3969d81a5bc71adbbe72">CoordinateType</a>, TIteratorType, <a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#a9ec6f7d4a6563656baed07bf70a14faa">IteratorIteratorType</a>, TDimension &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#ac2857b999fb8b25a44f82c8893472f2f">SearchStructureType</a></td></tr>
-<tr class="separator:ac2857b999fb8b25a44f82c8893472f2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abdfdbaa6e03a16bab61979c8a6b94a42"><td class="memItemLeft" align="right" valign="top">typedef std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#abdfdbaa6e03a16bab61979c8a6b94a42">SizeType</a></td></tr>
+<tr class="separator:abdfdbaa6e03a16bab61979c8a6b94a42"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba6762357737daf7135456b7f3dad346"><td class="memItemLeft" align="right" valign="top">typedef std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#aba6762357737daf7135456b7f3dad346">IndexType</a></td></tr>
+<tr class="separator:aba6762357737daf7135456b7f3dad346"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab202914fad653f26a406fb9d2cfe7d2"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="../../db/d66/namespace_kratos.html#ac77084a57869cbecf89d3ee2c819c5d3">double</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#aab202914fad653f26a406fb9d2cfe7d2">CoordinateType</a></td></tr>
+<tr class="separator:aab202914fad653f26a406fb9d2cfe7d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a65b95faf8305cbed30aa75874fb59ec6"><td class="memItemLeft" align="right" valign="top">typedef TPointType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#a65b95faf8305cbed30aa75874fb59ec6">PointType</a></td></tr>
+<tr class="separator:a65b95faf8305cbed30aa75874fb59ec6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a542b408303f6c6700b0acfc15ace5d6b"><td class="memItemLeft" align="right" valign="top">typedef TPointerType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#a542b408303f6c6700b0acfc15ace5d6b">PointerType</a></td></tr>
+<tr class="separator:a542b408303f6c6700b0acfc15ace5d6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a677eaf554b99e070c4c6a11368df85d5"><td class="memItemLeft" align="right" valign="top">typedef TIteratorType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#a677eaf554b99e070c4c6a11368df85d5">IteratorType</a></td></tr>
+<tr class="separator:a677eaf554b99e070c4c6a11368df85d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aedbcfe97a8016cb15e2ca2a31569897b"><td class="memItemLeft" align="right" valign="top">typedef TDistanceIteratorType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#aedbcfe97a8016cb15e2ca2a31569897b">DistanceIteratorType</a></td></tr>
+<tr class="separator:aedbcfe97a8016cb15e2ca2a31569897b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa2a670d7ad1df58346b9632e24ee660"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html">TreeNode</a>&lt; TDimension, TPointType, TPointerType, TIteratorType, TDistanceIteratorType &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#afa2a670d7ad1df58346b9632e24ee660">TreeNodeType</a></td></tr>
+<tr class="separator:afa2a670d7ad1df58346b9632e24ee660"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a6882e4b767d12bb3b2b2e951ef44c6"><td class="memItemLeft" align="right" valign="top">typedef std::vector&lt; <a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#a677eaf554b99e070c4c6a11368df85d5">IteratorType</a> &gt;::iterator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#a2a6882e4b767d12bb3b2b2e951ef44c6">IteratorIteratorType</a></td></tr>
+<tr class="separator:a2a6882e4b767d12bb3b2b2e951ef44c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae6ed41f69a527b8ab14e82f30cf8251c"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="../../d9/d22/class_kratos_1_1_search_structure.html">SearchStructure</a>&lt; <a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#aba6762357737daf7135456b7f3dad346">IndexType</a>, <a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#abdfdbaa6e03a16bab61979c8a6b94a42">SizeType</a>, <a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#aab202914fad653f26a406fb9d2cfe7d2">CoordinateType</a>, TIteratorType, <a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#a2a6882e4b767d12bb3b2b2e951ef44c6">IteratorIteratorType</a>, TDimension &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#ae6ed41f69a527b8ab14e82f30cf8251c">SearchStructureType</a></td></tr>
+<tr class="separator:ae6ed41f69a527b8ab14e82f30cf8251c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ae1fbcb10c43f34635e0934559fb29ffa"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#ae1fbcb10c43f34635e0934559fb29ffa">PrintData</a> (std::ostream &amp;rOStream, std::string const &amp;Perfix=std::string()) const</td></tr>
-<tr class="separator:ae1fbcb10c43f34635e0934559fb29ffa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5fb425894d8aedd4f72f95fe0ab23681"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#a5fb425894d8aedd4f72f95fe0ab23681">TreeNode</a> ()</td></tr>
-<tr class="separator:a5fb425894d8aedd4f72f95fe0ab23681"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa1cd7024da2a15422a936d5d7b7267b6"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#aa1cd7024da2a15422a936d5d7b7267b6">~TreeNode</a> ()</td></tr>
-<tr class="separator:aa1cd7024da2a15422a936d5d7b7267b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abe6df4697f1a62073eb6546567a23ba6"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#a8a7ea5d85fda11d7750a65146d74ee1f">IteratorType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#abe6df4697f1a62073eb6546567a23ba6">SearchNearestPoint</a> (<a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#a13413145e62f1e604ceb7a72a6cc2088">PointType</a> const &amp;ThisPoint, <a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#adebd9b43147a3969d81a5bc71adbbe72">CoordinateType</a> &amp;rResultDistance)</td></tr>
-<tr class="separator:abe6df4697f1a62073eb6546567a23ba6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ada621f52b6e0168ce9b251c27f8833ca"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#aee10d04b1a09c62ad6e712f848dd0fc5">SizeType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#ada621f52b6e0168ce9b251c27f8833ca">SearchInRadius</a> (<a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#a13413145e62f1e604ceb7a72a6cc2088">PointType</a> const &amp;ThisPoint, <a class="el" href="../../db/d66/namespace_kratos.html#ac77084a57869cbecf89d3ee2c819c5d3">double</a> Radius, <a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#a8a7ea5d85fda11d7750a65146d74ee1f">IteratorType</a> Results, <a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#a657833db99c3404ec097481099388410">DistanceIteratorType</a> ResultsDistances, <a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#aee10d04b1a09c62ad6e712f848dd0fc5">SizeType</a> MaximumNumberOfResults)</td></tr>
-<tr class="separator:ada621f52b6e0168ce9b251c27f8833ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab54fd6db641cfd62d933d74a586b7b0f"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#aee10d04b1a09c62ad6e712f848dd0fc5">SizeType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#ab54fd6db641cfd62d933d74a586b7b0f">SearchInRadius</a> (<a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#a13413145e62f1e604ceb7a72a6cc2088">PointType</a> const &amp;ThisPoint, <a class="el" href="../../db/d66/namespace_kratos.html#ac77084a57869cbecf89d3ee2c819c5d3">double</a> Radius, <a class="el" href="../../db/d66/namespace_kratos.html#ac77084a57869cbecf89d3ee2c819c5d3">double</a> Radius2, <a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#a8a7ea5d85fda11d7750a65146d74ee1f">IteratorType</a> Results, <a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#a657833db99c3404ec097481099388410">DistanceIteratorType</a> ResultsDistances, <a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#aee10d04b1a09c62ad6e712f848dd0fc5">SizeType</a> MaximumNumberOfResults)</td></tr>
-<tr class="separator:ab54fd6db641cfd62d933d74a586b7b0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af7cbea7ed61613fcd9557f8bdc831509"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#aee10d04b1a09c62ad6e712f848dd0fc5">SizeType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#af7cbea7ed61613fcd9557f8bdc831509">SearchInRadius</a> (<a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#a13413145e62f1e604ceb7a72a6cc2088">PointType</a> const &amp;ThisPoint, <a class="el" href="../../db/d66/namespace_kratos.html#ac77084a57869cbecf89d3ee2c819c5d3">double</a> Radius, <a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#a8a7ea5d85fda11d7750a65146d74ee1f">IteratorType</a> Results, <a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#aee10d04b1a09c62ad6e712f848dd0fc5">SizeType</a> MaximumNumberOfResults)</td></tr>
-<tr class="separator:af7cbea7ed61613fcd9557f8bdc831509"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad02a8ab6b8d8d7fd6ad1fb691a0aefdb"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#aee10d04b1a09c62ad6e712f848dd0fc5">SizeType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#ad02a8ab6b8d8d7fd6ad1fb691a0aefdb">SearchInRadius</a> (<a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#a13413145e62f1e604ceb7a72a6cc2088">PointType</a> const &amp;ThisPoint, <a class="el" href="../../db/d66/namespace_kratos.html#ac77084a57869cbecf89d3ee2c819c5d3">double</a> Radius, <a class="el" href="../../db/d66/namespace_kratos.html#ac77084a57869cbecf89d3ee2c819c5d3">double</a> Radius2, <a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#a8a7ea5d85fda11d7750a65146d74ee1f">IteratorType</a> Results, <a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#aee10d04b1a09c62ad6e712f848dd0fc5">SizeType</a> MaximumNumberOfResults)</td></tr>
-<tr class="separator:ad02a8ab6b8d8d7fd6ad1fb691a0aefdb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae1fbcb10c43f34635e0934559fb29ffa"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#ae1fbcb10c43f34635e0934559fb29ffa">PrintData</a> (std::ostream &amp;rOStream, std::string const &amp;Perfix=std::string()) const</td></tr>
-<tr class="separator:ae1fbcb10c43f34635e0934559fb29ffa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5fb425894d8aedd4f72f95fe0ab23681"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#a5fb425894d8aedd4f72f95fe0ab23681">TreeNode</a> ()</td></tr>
-<tr class="separator:a5fb425894d8aedd4f72f95fe0ab23681"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa1cd7024da2a15422a936d5d7b7267b6"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#aa1cd7024da2a15422a936d5d7b7267b6">~TreeNode</a> ()</td></tr>
-<tr class="separator:aa1cd7024da2a15422a936d5d7b7267b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab99ecaf64efe4af85b23f72eb502336e"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#ab99ecaf64efe4af85b23f72eb502336e">SearchNearestPoint</a> (<a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#a13413145e62f1e604ceb7a72a6cc2088">PointType</a> const &amp;ThisPoint, <a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#aa376b5d36b0f136ac354885e153aa788">PointerType</a> &amp;rResult, <a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#adebd9b43147a3969d81a5bc71adbbe72">CoordinateType</a> &amp;rResultDistance)</td></tr>
-<tr class="separator:ab99ecaf64efe4af85b23f72eb502336e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac7b8e45e4e45fc067aa58416b5671398"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#ac7b8e45e4e45fc067aa58416b5671398">SearchNearestPoint</a> (<a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#a13413145e62f1e604ceb7a72a6cc2088">PointType</a> const &amp;ThisPoint, <a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#aa376b5d36b0f136ac354885e153aa788">PointerType</a> &amp;rResult, <a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#adebd9b43147a3969d81a5bc71adbbe72">CoordinateType</a> &amp;rResultDistance, <a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#ac2857b999fb8b25a44f82c8893472f2f">SearchStructureType</a> &amp;Auxiliar)</td></tr>
-<tr class="separator:ac7b8e45e4e45fc067aa58416b5671398"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae2107a59c97832a2a880a5c19b711629"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#ae2107a59c97832a2a880a5c19b711629">SearchInRadius</a> (<a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#a13413145e62f1e604ceb7a72a6cc2088">PointType</a> const &amp;ThisPoint, <a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#adebd9b43147a3969d81a5bc71adbbe72">CoordinateType</a> const &amp;Radius, <a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#adebd9b43147a3969d81a5bc71adbbe72">CoordinateType</a> const &amp;Radius2, <a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#a8a7ea5d85fda11d7750a65146d74ee1f">IteratorType</a> &amp;Results, <a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#a657833db99c3404ec097481099388410">DistanceIteratorType</a> &amp;ResultsDistances, <a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#aee10d04b1a09c62ad6e712f848dd0fc5">SizeType</a> &amp;NumberOfResults, <a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#aee10d04b1a09c62ad6e712f848dd0fc5">SizeType</a> const &amp;MaxNumberOfResults)</td></tr>
-<tr class="separator:ae2107a59c97832a2a880a5c19b711629"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afa0a69a383cb5b443bdcd7c5f1e91d96"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#afa0a69a383cb5b443bdcd7c5f1e91d96">SearchInRadius</a> (<a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#a13413145e62f1e604ceb7a72a6cc2088">PointType</a> const &amp;ThisPoint, <a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#adebd9b43147a3969d81a5bc71adbbe72">CoordinateType</a> const &amp;Radius, <a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#adebd9b43147a3969d81a5bc71adbbe72">CoordinateType</a> const &amp;Radius2, <a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#a8a7ea5d85fda11d7750a65146d74ee1f">IteratorType</a> &amp;Results, <a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#a657833db99c3404ec097481099388410">DistanceIteratorType</a> &amp;ResultsDistances, <a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#aee10d04b1a09c62ad6e712f848dd0fc5">SizeType</a> &amp;NumberOfResults, <a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#aee10d04b1a09c62ad6e712f848dd0fc5">SizeType</a> const &amp;MaxNumberOfResults, <a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#ac2857b999fb8b25a44f82c8893472f2f">SearchStructureType</a> &amp;Auxiliar)</td></tr>
-<tr class="separator:afa0a69a383cb5b443bdcd7c5f1e91d96"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a82c29462f40bd60356c58f72d23a26b1"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#a82c29462f40bd60356c58f72d23a26b1">SearchInRadius</a> (<a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#a13413145e62f1e604ceb7a72a6cc2088">PointType</a> const &amp;ThisPoint, <a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#adebd9b43147a3969d81a5bc71adbbe72">CoordinateType</a> const &amp;Radius, <a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#adebd9b43147a3969d81a5bc71adbbe72">CoordinateType</a> const &amp;Radius2, <a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#a8a7ea5d85fda11d7750a65146d74ee1f">IteratorType</a> &amp;Results, <a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#aee10d04b1a09c62ad6e712f848dd0fc5">SizeType</a> &amp;NumberOfResults, <a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#aee10d04b1a09c62ad6e712f848dd0fc5">SizeType</a> const &amp;MaxNumberOfResults)</td></tr>
-<tr class="separator:a82c29462f40bd60356c58f72d23a26b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab038c0c03be03419e734dd2456402b55"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#ab038c0c03be03419e734dd2456402b55">SearchInRadius</a> (<a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#a13413145e62f1e604ceb7a72a6cc2088">PointType</a> const &amp;ThisPoint, <a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#adebd9b43147a3969d81a5bc71adbbe72">CoordinateType</a> const &amp;Radius, <a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#adebd9b43147a3969d81a5bc71adbbe72">CoordinateType</a> const &amp;Radius2, <a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#a8a7ea5d85fda11d7750a65146d74ee1f">IteratorType</a> &amp;Results, <a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#aee10d04b1a09c62ad6e712f848dd0fc5">SizeType</a> &amp;NumberOfResults, <a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#aee10d04b1a09c62ad6e712f848dd0fc5">SizeType</a> const &amp;MaxNumberOfResults, <a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#ac2857b999fb8b25a44f82c8893472f2f">SearchStructureType</a> &amp;Auxiliar)</td></tr>
-<tr class="separator:ab038c0c03be03419e734dd2456402b55"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a405dc99fb1ba706e38e887b60fffd7c2"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#a405dc99fb1ba706e38e887b60fffd7c2">SearchInBox</a> (<a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#a13413145e62f1e604ceb7a72a6cc2088">PointType</a> const &amp;SearchMinPoint, <a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#a13413145e62f1e604ceb7a72a6cc2088">PointType</a> const &amp;SearchMaxPoint, <a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#a8a7ea5d85fda11d7750a65146d74ee1f">IteratorType</a> &amp;Results, <a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#aee10d04b1a09c62ad6e712f848dd0fc5">SizeType</a> &amp;NumberOfResults, <a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#aee10d04b1a09c62ad6e712f848dd0fc5">SizeType</a> const &amp;MaxNumberOfResults)</td></tr>
-<tr class="separator:a405dc99fb1ba706e38e887b60fffd7c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1a8bf08ef0977575c60b9a65a67904e"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#ae1a8bf08ef0977575c60b9a65a67904e">PrintData</a> (std::ostream &amp;rOStream, std::string const &amp;Perfix=std::string()) const</td></tr>
+<tr class="separator:ae1a8bf08ef0977575c60b9a65a67904e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f56a1b05c7493f2ccfd65a98eb60857"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#a7f56a1b05c7493f2ccfd65a98eb60857">TreeNode</a> ()</td></tr>
+<tr class="separator:a7f56a1b05c7493f2ccfd65a98eb60857"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb83358d23db9f81deb92e64b4ecae00"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#abb83358d23db9f81deb92e64b4ecae00">~TreeNode</a> ()</td></tr>
+<tr class="separator:abb83358d23db9f81deb92e64b4ecae00"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e7773a10fdb9db3ddc88b7f53968ddd"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#a7e7773a10fdb9db3ddc88b7f53968ddd">SearchNearestPoint</a> (<a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#a65b95faf8305cbed30aa75874fb59ec6">PointType</a> const &amp;ThisPoint, <a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#a542b408303f6c6700b0acfc15ace5d6b">PointerType</a> &amp;rResult, <a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#aab202914fad653f26a406fb9d2cfe7d2">CoordinateType</a> &amp;rResultDistance)</td></tr>
+<tr class="separator:a7e7773a10fdb9db3ddc88b7f53968ddd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d08ca5fd94f09d8597ba4b5da0f81ad"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#a4d08ca5fd94f09d8597ba4b5da0f81ad">SearchNearestPoint</a> (<a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#a65b95faf8305cbed30aa75874fb59ec6">PointType</a> const &amp;ThisPoint, <a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#a542b408303f6c6700b0acfc15ace5d6b">PointerType</a> &amp;rResult, <a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#aab202914fad653f26a406fb9d2cfe7d2">CoordinateType</a> &amp;rResultDistance, <a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#ae6ed41f69a527b8ab14e82f30cf8251c">SearchStructureType</a> &amp;Auxiliar)</td></tr>
+<tr class="separator:a4d08ca5fd94f09d8597ba4b5da0f81ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab47cad6994e25b1c8a3b22add142f100"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#ab47cad6994e25b1c8a3b22add142f100">SearchInRadius</a> (<a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#a65b95faf8305cbed30aa75874fb59ec6">PointType</a> const &amp;ThisPoint, <a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#aab202914fad653f26a406fb9d2cfe7d2">CoordinateType</a> const &amp;Radius, <a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#aab202914fad653f26a406fb9d2cfe7d2">CoordinateType</a> const &amp;Radius2, <a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#a677eaf554b99e070c4c6a11368df85d5">IteratorType</a> &amp;Results, <a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#aedbcfe97a8016cb15e2ca2a31569897b">DistanceIteratorType</a> &amp;ResultsDistances, <a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#abdfdbaa6e03a16bab61979c8a6b94a42">SizeType</a> &amp;NumberOfResults, <a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#abdfdbaa6e03a16bab61979c8a6b94a42">SizeType</a> const &amp;MaxNumberOfResults)</td></tr>
+<tr class="separator:ab47cad6994e25b1c8a3b22add142f100"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afad8790f344cdbf44f798cb36b26a35b"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#afad8790f344cdbf44f798cb36b26a35b">SearchInRadius</a> (<a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#a65b95faf8305cbed30aa75874fb59ec6">PointType</a> const &amp;ThisPoint, <a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#aab202914fad653f26a406fb9d2cfe7d2">CoordinateType</a> const &amp;Radius, <a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#aab202914fad653f26a406fb9d2cfe7d2">CoordinateType</a> const &amp;Radius2, <a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#a677eaf554b99e070c4c6a11368df85d5">IteratorType</a> &amp;Results, <a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#aedbcfe97a8016cb15e2ca2a31569897b">DistanceIteratorType</a> &amp;ResultsDistances, <a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#abdfdbaa6e03a16bab61979c8a6b94a42">SizeType</a> &amp;NumberOfResults, <a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#abdfdbaa6e03a16bab61979c8a6b94a42">SizeType</a> const &amp;MaxNumberOfResults, <a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#ae6ed41f69a527b8ab14e82f30cf8251c">SearchStructureType</a> &amp;Auxiliar)</td></tr>
+<tr class="separator:afad8790f344cdbf44f798cb36b26a35b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a40f37424cf8360b2b34fc1b013c65ccd"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#a40f37424cf8360b2b34fc1b013c65ccd">SearchInRadius</a> (<a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#a65b95faf8305cbed30aa75874fb59ec6">PointType</a> const &amp;ThisPoint, <a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#aab202914fad653f26a406fb9d2cfe7d2">CoordinateType</a> const &amp;Radius, <a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#aab202914fad653f26a406fb9d2cfe7d2">CoordinateType</a> const &amp;Radius2, <a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#a677eaf554b99e070c4c6a11368df85d5">IteratorType</a> &amp;Results, <a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#abdfdbaa6e03a16bab61979c8a6b94a42">SizeType</a> &amp;NumberOfResults, <a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#abdfdbaa6e03a16bab61979c8a6b94a42">SizeType</a> const &amp;MaxNumberOfResults)</td></tr>
+<tr class="separator:a40f37424cf8360b2b34fc1b013c65ccd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf641d0b59dc36d874bc09319c4ee48d"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#adf641d0b59dc36d874bc09319c4ee48d">SearchInRadius</a> (<a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#a65b95faf8305cbed30aa75874fb59ec6">PointType</a> const &amp;ThisPoint, <a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#aab202914fad653f26a406fb9d2cfe7d2">CoordinateType</a> const &amp;Radius, <a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#aab202914fad653f26a406fb9d2cfe7d2">CoordinateType</a> const &amp;Radius2, <a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#a677eaf554b99e070c4c6a11368df85d5">IteratorType</a> &amp;Results, <a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#abdfdbaa6e03a16bab61979c8a6b94a42">SizeType</a> &amp;NumberOfResults, <a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#abdfdbaa6e03a16bab61979c8a6b94a42">SizeType</a> const &amp;MaxNumberOfResults, <a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#ae6ed41f69a527b8ab14e82f30cf8251c">SearchStructureType</a> &amp;Auxiliar)</td></tr>
+<tr class="separator:adf641d0b59dc36d874bc09319c4ee48d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a152f8a642da31179b9ee8e93b9379b31"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#a152f8a642da31179b9ee8e93b9379b31">SearchInBox</a> (<a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#a65b95faf8305cbed30aa75874fb59ec6">PointType</a> const &amp;SearchMinPoint, <a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#a65b95faf8305cbed30aa75874fb59ec6">PointType</a> const &amp;SearchMaxPoint, <a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#a677eaf554b99e070c4c6a11368df85d5">IteratorType</a> &amp;Results, <a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#abdfdbaa6e03a16bab61979c8a6b94a42">SizeType</a> &amp;NumberOfResults, <a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#abdfdbaa6e03a16bab61979c8a6b94a42">SizeType</a> const &amp;MaxNumberOfResults)</td></tr>
+<tr class="separator:a152f8a642da31179b9ee8e93b9379b31"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:af4dbd1c287dc6f959b203b5188d9b713"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#a8a7ea5d85fda11d7750a65146d74ee1f">IteratorType</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#af4dbd1c287dc6f959b203b5188d9b713">NullIterator</a> ()</td></tr>
-<tr class="separator:af4dbd1c287dc6f959b203b5188d9b713"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af4dbd1c287dc6f959b203b5188d9b713"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#a8a7ea5d85fda11d7750a65146d74ee1f">IteratorType</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#af4dbd1c287dc6f959b203b5188d9b713">NullIterator</a> ()</td></tr>
-<tr class="separator:af4dbd1c287dc6f959b203b5188d9b713"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3d2ab177de5e6d18bf85b0d7d8770043"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#aa376b5d36b0f136ac354885e153aa788">PointerType</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#a3d2ab177de5e6d18bf85b0d7d8770043">NullPointer</a> ()</td></tr>
-<tr class="separator:a3d2ab177de5e6d18bf85b0d7d8770043"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a57d534c76e715e9ff82ac1c623c91158"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html">TreeNode</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#a57d534c76e715e9ff82ac1c623c91158">NullLeaf</a> ()</td></tr>
-<tr class="separator:a57d534c76e715e9ff82ac1c623c91158"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44e0d7f373f2dec8d70b25921bce826b"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#a677eaf554b99e070c4c6a11368df85d5">IteratorType</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#a44e0d7f373f2dec8d70b25921bce826b">NullIterator</a> ()</td></tr>
+<tr class="separator:a44e0d7f373f2dec8d70b25921bce826b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af6fb07626be08aab8f251f1b6963bcd4"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#a542b408303f6c6700b0acfc15ace5d6b">PointerType</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#af6fb07626be08aab8f251f1b6963bcd4">NullPointer</a> ()</td></tr>
+<tr class="separator:af6fb07626be08aab8f251f1b6963bcd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e4350d68b9662f53b1f78360c63ddfa"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html">TreeNode</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#a1e4350d68b9662f53b1f78360c63ddfa">NullLeaf</a> ()</td></tr>
+<tr class="separator:a1e4350d68b9662f53b1f78360c63ddfa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><h3>template&lt;class TPointType, class TIteratorType, class TDistanceIteratorType&gt;<br />
-class Kratos::TreeNode&lt; TPointType, TIteratorType, TDistanceIteratorType &gt;</h3>
+<div class="textblock"><h3>template&lt;std::size_t TDimension, class TPointType, class TPointerType, class TIteratorType, class TDistanceIteratorType, class TIteratorIteratorType = typename std::vector&lt;TIteratorType&gt;::iterator&gt;<br />
+class Kratos::TreeNode&lt; TDimension, TPointType, TPointerType, TIteratorType, TDistanceIteratorType, TIteratorIteratorType &gt;</h3>
 
 <p>Short class definition. </p>
 <p>Detail class definition. </p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
-<a id="adebd9b43147a3969d81a5bc71adbbe72"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adebd9b43147a3969d81a5bc71adbbe72">&#9670;&nbsp;</a></span>CoordinateType <span class="overload">[1/2]</span></h2>
+<a id="aab202914fad653f26a406fb9d2cfe7d2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aab202914fad653f26a406fb9d2cfe7d2">&#9670;&nbsp;</a></span>CoordinateType</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class TPointType , class TIteratorType , class TDistanceIteratorType &gt; </div>
+template&lt;std::size_t TDimension, class TPointType , class TPointerType , class TIteratorType , class TDistanceIteratorType , class TIteratorIteratorType  = typename std::vector&lt;TIteratorType&gt;::iterator&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">typedef <a class="el" href="../../db/d66/namespace_kratos.html#ac77084a57869cbecf89d3ee2c819c5d3">double</a> <a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html">Kratos::TreeNode</a>&lt; TPointType, TIteratorType, TDistanceIteratorType &gt;::<a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#adebd9b43147a3969d81a5bc71adbbe72">CoordinateType</a></td>
+          <td class="memname">typedef <a class="el" href="../../db/d66/namespace_kratos.html#ac77084a57869cbecf89d3ee2c819c5d3">double</a> <a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html">Kratos::TreeNode</a>&lt; TDimension, TPointType, TPointerType, TIteratorType, TDistanceIteratorType, TIteratorIteratorType &gt;::<a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#aab202914fad653f26a406fb9d2cfe7d2">CoordinateType</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="adebd9b43147a3969d81a5bc71adbbe72"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adebd9b43147a3969d81a5bc71adbbe72">&#9670;&nbsp;</a></span>CoordinateType <span class="overload">[2/2]</span></h2>
+<a id="aedbcfe97a8016cb15e2ca2a31569897b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aedbcfe97a8016cb15e2ca2a31569897b">&#9670;&nbsp;</a></span>DistanceIteratorType</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class TPointType , class TIteratorType , class TDistanceIteratorType &gt; </div>
+template&lt;std::size_t TDimension, class TPointType , class TPointerType , class TIteratorType , class TDistanceIteratorType , class TIteratorIteratorType  = typename std::vector&lt;TIteratorType&gt;::iterator&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">typedef <a class="el" href="../../db/d66/namespace_kratos.html#ac77084a57869cbecf89d3ee2c819c5d3">double</a> <a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html">Kratos::TreeNode</a>&lt; TPointType, TIteratorType, TDistanceIteratorType &gt;::<a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#adebd9b43147a3969d81a5bc71adbbe72">CoordinateType</a></td>
+          <td class="memname">typedef TDistanceIteratorType <a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html">Kratos::TreeNode</a>&lt; TDimension, TPointType, TPointerType, TIteratorType, TDistanceIteratorType, TIteratorIteratorType &gt;::<a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#aedbcfe97a8016cb15e2ca2a31569897b">DistanceIteratorType</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a657833db99c3404ec097481099388410"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a657833db99c3404ec097481099388410">&#9670;&nbsp;</a></span>DistanceIteratorType <span class="overload">[1/2]</span></h2>
+<a id="aba6762357737daf7135456b7f3dad346"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aba6762357737daf7135456b7f3dad346">&#9670;&nbsp;</a></span>IndexType</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class TPointType , class TIteratorType , class TDistanceIteratorType &gt; </div>
+template&lt;std::size_t TDimension, class TPointType , class TPointerType , class TIteratorType , class TDistanceIteratorType , class TIteratorIteratorType  = typename std::vector&lt;TIteratorType&gt;::iterator&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">typedef TDistanceIteratorType <a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html">Kratos::TreeNode</a>&lt; TPointType, TIteratorType, TDistanceIteratorType &gt;::<a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#a657833db99c3404ec097481099388410">DistanceIteratorType</a></td>
+          <td class="memname">typedef std::size_t <a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html">Kratos::TreeNode</a>&lt; TDimension, TPointType, TPointerType, TIteratorType, TDistanceIteratorType, TIteratorIteratorType &gt;::<a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#aba6762357737daf7135456b7f3dad346">IndexType</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a657833db99c3404ec097481099388410"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a657833db99c3404ec097481099388410">&#9670;&nbsp;</a></span>DistanceIteratorType <span class="overload">[2/2]</span></h2>
+<a id="a2a6882e4b767d12bb3b2b2e951ef44c6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2a6882e4b767d12bb3b2b2e951ef44c6">&#9670;&nbsp;</a></span>IteratorIteratorType</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class TPointType , class TIteratorType , class TDistanceIteratorType &gt; </div>
+template&lt;std::size_t TDimension, class TPointType , class TPointerType , class TIteratorType , class TDistanceIteratorType , class TIteratorIteratorType  = typename std::vector&lt;TIteratorType&gt;::iterator&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">typedef TDistanceIteratorType <a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html">Kratos::TreeNode</a>&lt; TPointType, TIteratorType, TDistanceIteratorType &gt;::<a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#a657833db99c3404ec097481099388410">DistanceIteratorType</a></td>
+          <td class="memname">typedef std::vector&lt;<a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#a677eaf554b99e070c4c6a11368df85d5">IteratorType</a>&gt;::iterator <a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html">Kratos::TreeNode</a>&lt; TDimension, TPointType, TPointerType, TIteratorType, TDistanceIteratorType, TIteratorIteratorType &gt;::<a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#a2a6882e4b767d12bb3b2b2e951ef44c6">IteratorIteratorType</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="ace35ad701132d2eec7cf3917524d8b0e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ace35ad701132d2eec7cf3917524d8b0e">&#9670;&nbsp;</a></span>IndexType</h2>
+<a id="a677eaf554b99e070c4c6a11368df85d5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a677eaf554b99e070c4c6a11368df85d5">&#9670;&nbsp;</a></span>IteratorType</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class TPointType , class TIteratorType , class TDistanceIteratorType &gt; </div>
+template&lt;std::size_t TDimension, class TPointType , class TPointerType , class TIteratorType , class TDistanceIteratorType , class TIteratorIteratorType  = typename std::vector&lt;TIteratorType&gt;::iterator&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">typedef std::size_t <a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html">Kratos::TreeNode</a>&lt; TPointType, TIteratorType, TDistanceIteratorType &gt;::<a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#ace35ad701132d2eec7cf3917524d8b0e">IndexType</a></td>
+          <td class="memname">typedef TIteratorType <a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html">Kratos::TreeNode</a>&lt; TDimension, TPointType, TPointerType, TIteratorType, TDistanceIteratorType, TIteratorIteratorType &gt;::<a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#a677eaf554b99e070c4c6a11368df85d5">IteratorType</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a9ec6f7d4a6563656baed07bf70a14faa"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9ec6f7d4a6563656baed07bf70a14faa">&#9670;&nbsp;</a></span>IteratorIteratorType</h2>
+<a id="a542b408303f6c6700b0acfc15ace5d6b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a542b408303f6c6700b0acfc15ace5d6b">&#9670;&nbsp;</a></span>PointerType</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class TPointType , class TIteratorType , class TDistanceIteratorType &gt; </div>
+template&lt;std::size_t TDimension, class TPointType , class TPointerType , class TIteratorType , class TDistanceIteratorType , class TIteratorIteratorType  = typename std::vector&lt;TIteratorType&gt;::iterator&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">typedef std::vector&lt;<a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#a8a7ea5d85fda11d7750a65146d74ee1f">IteratorType</a>&gt;::iterator <a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html">Kratos::TreeNode</a>&lt; TPointType, TIteratorType, TDistanceIteratorType &gt;::<a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#a9ec6f7d4a6563656baed07bf70a14faa">IteratorIteratorType</a></td>
+          <td class="memname">typedef TPointerType <a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html">Kratos::TreeNode</a>&lt; TDimension, TPointType, TPointerType, TIteratorType, TDistanceIteratorType, TIteratorIteratorType &gt;::<a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#a542b408303f6c6700b0acfc15ace5d6b">PointerType</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a8a7ea5d85fda11d7750a65146d74ee1f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8a7ea5d85fda11d7750a65146d74ee1f">&#9670;&nbsp;</a></span>IteratorType <span class="overload">[1/2]</span></h2>
+<a id="a65b95faf8305cbed30aa75874fb59ec6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a65b95faf8305cbed30aa75874fb59ec6">&#9670;&nbsp;</a></span>PointType</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class TPointType , class TIteratorType , class TDistanceIteratorType &gt; </div>
+template&lt;std::size_t TDimension, class TPointType , class TPointerType , class TIteratorType , class TDistanceIteratorType , class TIteratorIteratorType  = typename std::vector&lt;TIteratorType&gt;::iterator&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">typedef TIteratorType <a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html">Kratos::TreeNode</a>&lt; TPointType, TIteratorType, TDistanceIteratorType &gt;::<a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#a8a7ea5d85fda11d7750a65146d74ee1f">IteratorType</a></td>
+          <td class="memname">typedef TPointType <a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html">Kratos::TreeNode</a>&lt; TDimension, TPointType, TPointerType, TIteratorType, TDistanceIteratorType, TIteratorIteratorType &gt;::<a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#a65b95faf8305cbed30aa75874fb59ec6">PointType</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a8a7ea5d85fda11d7750a65146d74ee1f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8a7ea5d85fda11d7750a65146d74ee1f">&#9670;&nbsp;</a></span>IteratorType <span class="overload">[2/2]</span></h2>
+<a id="ae6ed41f69a527b8ab14e82f30cf8251c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae6ed41f69a527b8ab14e82f30cf8251c">&#9670;&nbsp;</a></span>SearchStructureType</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class TPointType , class TIteratorType , class TDistanceIteratorType &gt; </div>
+template&lt;std::size_t TDimension, class TPointType , class TPointerType , class TIteratorType , class TDistanceIteratorType , class TIteratorIteratorType  = typename std::vector&lt;TIteratorType&gt;::iterator&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">typedef TIteratorType <a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html">Kratos::TreeNode</a>&lt; TPointType, TIteratorType, TDistanceIteratorType &gt;::<a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#a8a7ea5d85fda11d7750a65146d74ee1f">IteratorType</a></td>
+          <td class="memname">typedef <a class="el" href="../../d9/d22/class_kratos_1_1_search_structure.html">SearchStructure</a>&lt;<a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#aba6762357737daf7135456b7f3dad346">IndexType</a>,<a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#abdfdbaa6e03a16bab61979c8a6b94a42">SizeType</a>,<a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#aab202914fad653f26a406fb9d2cfe7d2">CoordinateType</a>,TIteratorType,<a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#a2a6882e4b767d12bb3b2b2e951ef44c6">IteratorIteratorType</a>,TDimension&gt; <a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html">Kratos::TreeNode</a>&lt; TDimension, TPointType, TPointerType, TIteratorType, TDistanceIteratorType, TIteratorIteratorType &gt;::<a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#ae6ed41f69a527b8ab14e82f30cf8251c">SearchStructureType</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="aa376b5d36b0f136ac354885e153aa788"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa376b5d36b0f136ac354885e153aa788">&#9670;&nbsp;</a></span>PointerType</h2>
+<a id="abdfdbaa6e03a16bab61979c8a6b94a42"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abdfdbaa6e03a16bab61979c8a6b94a42">&#9670;&nbsp;</a></span>SizeType</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class TPointType , class TIteratorType , class TDistanceIteratorType &gt; </div>
+template&lt;std::size_t TDimension, class TPointType , class TPointerType , class TIteratorType , class TDistanceIteratorType , class TIteratorIteratorType  = typename std::vector&lt;TIteratorType&gt;::iterator&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">typedef TPointerType <a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html">Kratos::TreeNode</a>&lt; TPointType, TIteratorType, TDistanceIteratorType &gt;::<a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#aa376b5d36b0f136ac354885e153aa788">PointerType</a></td>
+          <td class="memname">typedef std::size_t <a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html">Kratos::TreeNode</a>&lt; TDimension, TPointType, TPointerType, TIteratorType, TDistanceIteratorType, TIteratorIteratorType &gt;::<a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#abdfdbaa6e03a16bab61979c8a6b94a42">SizeType</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a13413145e62f1e604ceb7a72a6cc2088"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a13413145e62f1e604ceb7a72a6cc2088">&#9670;&nbsp;</a></span>PointType <span class="overload">[1/2]</span></h2>
+<a id="afa2a670d7ad1df58346b9632e24ee660"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afa2a670d7ad1df58346b9632e24ee660">&#9670;&nbsp;</a></span>TreeNodeType</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class TPointType , class TIteratorType , class TDistanceIteratorType &gt; </div>
+template&lt;std::size_t TDimension, class TPointType , class TPointerType , class TIteratorType , class TDistanceIteratorType , class TIteratorIteratorType  = typename std::vector&lt;TIteratorType&gt;::iterator&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">typedef TPointType <a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html">Kratos::TreeNode</a>&lt; TPointType, TIteratorType, TDistanceIteratorType &gt;::<a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#a13413145e62f1e604ceb7a72a6cc2088">PointType</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a13413145e62f1e604ceb7a72a6cc2088"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a13413145e62f1e604ceb7a72a6cc2088">&#9670;&nbsp;</a></span>PointType <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class TPointType , class TIteratorType , class TDistanceIteratorType &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef TPointType <a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html">Kratos::TreeNode</a>&lt; TPointType, TIteratorType, TDistanceIteratorType &gt;::<a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#a13413145e62f1e604ceb7a72a6cc2088">PointType</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ac2857b999fb8b25a44f82c8893472f2f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac2857b999fb8b25a44f82c8893472f2f">&#9670;&nbsp;</a></span>SearchStructureType</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class TPointType , class TIteratorType , class TDistanceIteratorType &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef <a class="el" href="../../d9/d22/class_kratos_1_1_search_structure.html">SearchStructure</a>&lt;<a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#ace35ad701132d2eec7cf3917524d8b0e">IndexType</a>,<a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#aee10d04b1a09c62ad6e712f848dd0fc5">SizeType</a>,<a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#adebd9b43147a3969d81a5bc71adbbe72">CoordinateType</a>,TIteratorType,<a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#a9ec6f7d4a6563656baed07bf70a14faa">IteratorIteratorType</a>,TDimension&gt; <a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html">Kratos::TreeNode</a>&lt; TPointType, TIteratorType, TDistanceIteratorType &gt;::<a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#ac2857b999fb8b25a44f82c8893472f2f">SearchStructureType</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="aee10d04b1a09c62ad6e712f848dd0fc5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aee10d04b1a09c62ad6e712f848dd0fc5">&#9670;&nbsp;</a></span>SizeType <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class TPointType , class TIteratorType , class TDistanceIteratorType &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef std::size_t <a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html">Kratos::TreeNode</a>&lt; TPointType, TIteratorType, TDistanceIteratorType &gt;::<a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#aee10d04b1a09c62ad6e712f848dd0fc5">SizeType</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="aee10d04b1a09c62ad6e712f848dd0fc5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aee10d04b1a09c62ad6e712f848dd0fc5">&#9670;&nbsp;</a></span>SizeType <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class TPointType , class TIteratorType , class TDistanceIteratorType &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef std::size_t <a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html">Kratos::TreeNode</a>&lt; TPointType, TIteratorType, TDistanceIteratorType &gt;::<a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#aee10d04b1a09c62ad6e712f848dd0fc5">SizeType</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a3ea2ab67d5afa4eaa55fae4b8e2ba5ee"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3ea2ab67d5afa4eaa55fae4b8e2ba5ee">&#9670;&nbsp;</a></span>TreeNodeType</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class TPointType , class TIteratorType , class TDistanceIteratorType &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef <a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html">TreeNode</a>&lt;TDimension,TPointType,TPointerType,TIteratorType,TDistanceIteratorType&gt; <a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html">Kratos::TreeNode</a>&lt; TPointType, TIteratorType, TDistanceIteratorType &gt;::<a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#a3ea2ab67d5afa4eaa55fae4b8e2ba5ee">TreeNodeType</a></td>
+          <td class="memname">typedef <a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html">TreeNode</a>&lt;TDimension,TPointType,TPointerType,TIteratorType,TDistanceIteratorType&gt; <a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html">Kratos::TreeNode</a>&lt; TDimension, TPointType, TPointerType, TIteratorType, TDistanceIteratorType, TIteratorIteratorType &gt;::<a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#afa2a670d7ad1df58346b9632e24ee660">TreeNodeType</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -433,19 +319,19 @@ template&lt;class TPointType , class TIteratorType , class TDistanceIteratorType
 </div>
 </div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a5fb425894d8aedd4f72f95fe0ab23681"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5fb425894d8aedd4f72f95fe0ab23681">&#9670;&nbsp;</a></span>TreeNode() <span class="overload">[1/2]</span></h2>
+<a id="a7f56a1b05c7493f2ccfd65a98eb60857"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7f56a1b05c7493f2ccfd65a98eb60857">&#9670;&nbsp;</a></span>TreeNode()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class TPointType , class TIteratorType , class TDistanceIteratorType &gt; </div>
+template&lt;std::size_t TDimension, class TPointType , class TPointerType , class TIteratorType , class TDistanceIteratorType , class TIteratorIteratorType  = typename std::vector&lt;TIteratorType&gt;::iterator&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html">Kratos::TreeNode</a>&lt; TPointType, TIteratorType, TDistanceIteratorType &gt;::<a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html">TreeNode</a> </td>
+          <td class="memname"><a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html">Kratos::TreeNode</a>&lt; TDimension, TPointType, TPointerType, TIteratorType, TDistanceIteratorType, TIteratorIteratorType &gt;::<a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html">TreeNode</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -460,73 +346,19 @@ template&lt;class TPointType , class TIteratorType , class TDistanceIteratorType
 
 </div>
 </div>
-<a id="aa1cd7024da2a15422a936d5d7b7267b6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa1cd7024da2a15422a936d5d7b7267b6">&#9670;&nbsp;</a></span>~TreeNode() <span class="overload">[1/2]</span></h2>
+<a id="abb83358d23db9f81deb92e64b4ecae00"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abb83358d23db9f81deb92e64b4ecae00">&#9670;&nbsp;</a></span>~TreeNode()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class TPointType , class TIteratorType , class TDistanceIteratorType &gt; </div>
+template&lt;std::size_t TDimension, class TPointType , class TPointerType , class TIteratorType , class TDistanceIteratorType , class TIteratorIteratorType  = typename std::vector&lt;TIteratorType&gt;::iterator&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual <a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html">Kratos::TreeNode</a>&lt; TPointType, TIteratorType, TDistanceIteratorType &gt;::~<a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html">TreeNode</a> </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a5fb425894d8aedd4f72f95fe0ab23681"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5fb425894d8aedd4f72f95fe0ab23681">&#9670;&nbsp;</a></span>TreeNode() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class TPointType , class TIteratorType , class TDistanceIteratorType &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html">Kratos::TreeNode</a>&lt; TPointType, TIteratorType, TDistanceIteratorType &gt;::<a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html">TreeNode</a> </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="aa1cd7024da2a15422a936d5d7b7267b6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa1cd7024da2a15422a936d5d7b7267b6">&#9670;&nbsp;</a></span>~TreeNode() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class TPointType , class TIteratorType , class TDistanceIteratorType &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual <a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html">Kratos::TreeNode</a>&lt; TPointType, TIteratorType, TDistanceIteratorType &gt;::~<a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html">TreeNode</a> </td>
+          <td class="memname">virtual <a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html">Kratos::TreeNode</a>&lt; TDimension, TPointType, TPointerType, TIteratorType, TDistanceIteratorType, TIteratorIteratorType &gt;::~<a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html">TreeNode</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -542,19 +374,19 @@ template&lt;class TPointType , class TIteratorType , class TDistanceIteratorType
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="af4dbd1c287dc6f959b203b5188d9b713"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af4dbd1c287dc6f959b203b5188d9b713">&#9670;&nbsp;</a></span>NullIterator() <span class="overload">[1/2]</span></h2>
+<a id="a44e0d7f373f2dec8d70b25921bce826b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a44e0d7f373f2dec8d70b25921bce826b">&#9670;&nbsp;</a></span>NullIterator()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class TPointType , class TIteratorType , class TDistanceIteratorType &gt; </div>
+template&lt;std::size_t TDimension, class TPointType , class TPointerType , class TIteratorType , class TDistanceIteratorType , class TIteratorIteratorType  = typename std::vector&lt;TIteratorType&gt;::iterator&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static <a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#a8a7ea5d85fda11d7750a65146d74ee1f">IteratorType</a>&amp; <a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html">Kratos::TreeNode</a>&lt; TPointType, TIteratorType, TDistanceIteratorType &gt;::NullIterator </td>
+          <td class="memname">static <a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#a677eaf554b99e070c4c6a11368df85d5">IteratorType</a>&amp; <a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html">Kratos::TreeNode</a>&lt; TDimension, TPointType, TPointerType, TIteratorType, TDistanceIteratorType, TIteratorIteratorType &gt;::NullIterator </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -569,19 +401,19 @@ template&lt;class TPointType , class TIteratorType , class TDistanceIteratorType
 
 </div>
 </div>
-<a id="af4dbd1c287dc6f959b203b5188d9b713"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af4dbd1c287dc6f959b203b5188d9b713">&#9670;&nbsp;</a></span>NullIterator() <span class="overload">[2/2]</span></h2>
+<a id="a1e4350d68b9662f53b1f78360c63ddfa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1e4350d68b9662f53b1f78360c63ddfa">&#9670;&nbsp;</a></span>NullLeaf()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class TPointType , class TIteratorType , class TDistanceIteratorType &gt; </div>
+template&lt;std::size_t TDimension, class TPointType , class TPointerType , class TIteratorType , class TDistanceIteratorType , class TIteratorIteratorType  = typename std::vector&lt;TIteratorType&gt;::iterator&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static <a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#a8a7ea5d85fda11d7750a65146d74ee1f">IteratorType</a>&amp; <a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html">Kratos::TreeNode</a>&lt; TPointType, TIteratorType, TDistanceIteratorType &gt;::NullIterator </td>
+          <td class="memname">static <a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html">TreeNode</a>&amp; <a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html">Kratos::TreeNode</a>&lt; TDimension, TPointType, TPointerType, TIteratorType, TDistanceIteratorType, TIteratorIteratorType &gt;::NullLeaf </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -596,19 +428,19 @@ template&lt;class TPointType , class TIteratorType , class TDistanceIteratorType
 
 </div>
 </div>
-<a id="a57d534c76e715e9ff82ac1c623c91158"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a57d534c76e715e9ff82ac1c623c91158">&#9670;&nbsp;</a></span>NullLeaf()</h2>
+<a id="af6fb07626be08aab8f251f1b6963bcd4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af6fb07626be08aab8f251f1b6963bcd4">&#9670;&nbsp;</a></span>NullPointer()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class TPointType , class TIteratorType , class TDistanceIteratorType &gt; </div>
+template&lt;std::size_t TDimension, class TPointType , class TPointerType , class TIteratorType , class TDistanceIteratorType , class TIteratorIteratorType  = typename std::vector&lt;TIteratorType&gt;::iterator&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static <a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html">TreeNode</a>&amp; <a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html">Kratos::TreeNode</a>&lt; TPointType, TIteratorType, TDistanceIteratorType &gt;::NullLeaf </td>
+          <td class="memname">static <a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#a542b408303f6c6700b0acfc15ace5d6b">PointerType</a>&amp; <a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html">Kratos::TreeNode</a>&lt; TDimension, TPointType, TPointerType, TIteratorType, TDistanceIteratorType, TIteratorIteratorType &gt;::NullPointer </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -623,46 +455,19 @@ template&lt;class TPointType , class TIteratorType , class TDistanceIteratorType
 
 </div>
 </div>
-<a id="a3d2ab177de5e6d18bf85b0d7d8770043"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3d2ab177de5e6d18bf85b0d7d8770043">&#9670;&nbsp;</a></span>NullPointer()</h2>
+<a id="ae1a8bf08ef0977575c60b9a65a67904e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae1a8bf08ef0977575c60b9a65a67904e">&#9670;&nbsp;</a></span>PrintData()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class TPointType , class TIteratorType , class TDistanceIteratorType &gt; </div>
+template&lt;std::size_t TDimension, class TPointType , class TPointerType , class TIteratorType , class TDistanceIteratorType , class TIteratorIteratorType  = typename std::vector&lt;TIteratorType&gt;::iterator&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static <a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#aa376b5d36b0f136ac354885e153aa788">PointerType</a>&amp; <a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html">Kratos::TreeNode</a>&lt; TPointType, TIteratorType, TDistanceIteratorType &gt;::NullPointer </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ae1fbcb10c43f34635e0934559fb29ffa"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae1fbcb10c43f34635e0934559fb29ffa">&#9670;&nbsp;</a></span>PrintData() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class TPointType , class TIteratorType , class TDistanceIteratorType &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual void <a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html">Kratos::TreeNode</a>&lt; TPointType, TIteratorType, TDistanceIteratorType &gt;::PrintData </td>
+          <td class="memname">virtual void <a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html">Kratos::TreeNode</a>&lt; TDimension, TPointType, TPointerType, TIteratorType, TDistanceIteratorType, TIteratorIteratorType &gt;::PrintData </td>
           <td>(</td>
           <td class="paramtype">std::ostream &amp;&#160;</td>
           <td class="paramname"><em>rOStream</em>, </td>
@@ -686,89 +491,49 @@ template&lt;class TPointType , class TIteratorType , class TDistanceIteratorType
 </table>
 </div><div class="memdoc">
 
-<p>Reimplemented in <a class="el" href="../../df/d26/class_kratos_1_1_k_d_tree_partition_base.html#aaa385694002856c3a9048b9e1bac491b">Kratos::KDTreePartitionBase&lt; TLeafType &gt;</a>, <a class="el" href="../../dd/d8e/class_kratos_1_1_bucket.html#a388872907eceda6e2987fdb5d938fd60">Kratos::Bucket&lt; TDimension, TPointType, TIteratorType, TDistanceIteratorType, TDistanceFunction &gt;</a>, <a class="el" href="../../dc/d3a/class_kratos_1_1_bins.html#a4ac9d21a1eb85f82c0aab2149a950f34">Kratos::Bins&lt; TDimension, TPointType, TContainerType, TPointerType, TIteratorType, TDistanceIteratorType, TDistanceFunction &gt;</a>, <a class="el" href="../../df/d2a/class_kratos_1_1_bins_dynamic.html#a2214fac4d7adcc0c8836216b4dc2ab45">Kratos::BinsDynamic&lt; TDimension, TPointType, TContainerType, TPointerType, TIteratorType, TDistanceIteratorType, TDistanceFunction &gt;</a>, <a class="el" href="../../d9/d5c/class_kratos_1_1_o_c_tree_partition.html#ae637b8c9e3ac30fc5f1eb1dc88e43f1e">Kratos::OCTreePartition&lt; TLeafType &gt;</a>, and <a class="el" href="../../dd/d8e/class_kratos_1_1_bucket.html#ad7e4a06faf7efac946b50cb6c3528ef7">Kratos::Bucket&lt; TDimension, TPointType, TIteratorType, TDistanceIteratorType, TDistanceFunction &gt;</a>.</p>
+<p>Reimplemented in <a class="el" href="../../df/d26/class_kratos_1_1_k_d_tree_partition_base.html#aaa385694002856c3a9048b9e1bac491b">Kratos::KDTreePartitionBase&lt; TLeafType &gt;</a>, <a class="el" href="../../dd/d8e/class_kratos_1_1_bucket.html#afbd5f7563ba1d8d7d7eb1ca8f16570e7">Kratos::Bucket&lt; TDimension, TPointType, TContainerType, TPointerType, TIteratorType, TDistanceIteratorType, TDistanceFunction &gt;</a>, <a class="el" href="../../dc/d3a/class_kratos_1_1_bins.html#a4ac9d21a1eb85f82c0aab2149a950f34">Kratos::Bins&lt; TDimension, TPointType, TContainerType, TPointerType, TIteratorType, TDistanceIteratorType, TDistanceFunction &gt;</a>, <a class="el" href="../../df/d2a/class_kratos_1_1_bins_dynamic.html#a2214fac4d7adcc0c8836216b4dc2ab45">Kratos::BinsDynamic&lt; TDimension, TPointType, TContainerType, TPointerType, TIteratorType, TDistanceIteratorType, TDistanceFunction &gt;</a>, and <a class="el" href="../../d9/d5c/class_kratos_1_1_o_c_tree_partition.html#ae637b8c9e3ac30fc5f1eb1dc88e43f1e">Kratos::OCTreePartition&lt; TLeafType &gt;</a>.</p>
 
 </div>
 </div>
-<a id="ae1fbcb10c43f34635e0934559fb29ffa"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae1fbcb10c43f34635e0934559fb29ffa">&#9670;&nbsp;</a></span>PrintData() <span class="overload">[2/2]</span></h2>
+<a id="a152f8a642da31179b9ee8e93b9379b31"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a152f8a642da31179b9ee8e93b9379b31">&#9670;&nbsp;</a></span>SearchInBox()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class TPointType , class TIteratorType , class TDistanceIteratorType &gt; </div>
+template&lt;std::size_t TDimension, class TPointType , class TPointerType , class TIteratorType , class TDistanceIteratorType , class TIteratorIteratorType  = typename std::vector&lt;TIteratorType&gt;::iterator&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void <a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html">Kratos::TreeNode</a>&lt; TPointType, TIteratorType, TDistanceIteratorType &gt;::PrintData </td>
+          <td class="memname">virtual void <a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html">Kratos::TreeNode</a>&lt; TDimension, TPointType, TPointerType, TIteratorType, TDistanceIteratorType, TIteratorIteratorType &gt;::SearchInBox </td>
           <td>(</td>
-          <td class="paramtype">std::ostream &amp;&#160;</td>
-          <td class="paramname"><em>rOStream</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">std::string const &amp;&#160;</td>
-          <td class="paramname"><em>Perfix</em> = <code>std::string()</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Reimplemented in <a class="el" href="../../df/d26/class_kratos_1_1_k_d_tree_partition_base.html#aaa385694002856c3a9048b9e1bac491b">Kratos::KDTreePartitionBase&lt; TLeafType &gt;</a>, <a class="el" href="../../dd/d8e/class_kratos_1_1_bucket.html#a388872907eceda6e2987fdb5d938fd60">Kratos::Bucket&lt; TDimension, TPointType, TIteratorType, TDistanceIteratorType, TDistanceFunction &gt;</a>, <a class="el" href="../../dc/d3a/class_kratos_1_1_bins.html#a4ac9d21a1eb85f82c0aab2149a950f34">Kratos::Bins&lt; TDimension, TPointType, TContainerType, TPointerType, TIteratorType, TDistanceIteratorType, TDistanceFunction &gt;</a>, <a class="el" href="../../df/d2a/class_kratos_1_1_bins_dynamic.html#a2214fac4d7adcc0c8836216b4dc2ab45">Kratos::BinsDynamic&lt; TDimension, TPointType, TContainerType, TPointerType, TIteratorType, TDistanceIteratorType, TDistanceFunction &gt;</a>, <a class="el" href="../../d9/d5c/class_kratos_1_1_o_c_tree_partition.html#ae637b8c9e3ac30fc5f1eb1dc88e43f1e">Kratos::OCTreePartition&lt; TLeafType &gt;</a>, and <a class="el" href="../../dd/d8e/class_kratos_1_1_bucket.html#ad7e4a06faf7efac946b50cb6c3528ef7">Kratos::Bucket&lt; TDimension, TPointType, TIteratorType, TDistanceIteratorType, TDistanceFunction &gt;</a>.</p>
-
-</div>
-</div>
-<a id="a405dc99fb1ba706e38e887b60fffd7c2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a405dc99fb1ba706e38e887b60fffd7c2">&#9670;&nbsp;</a></span>SearchInBox()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class TPointType , class TIteratorType , class TDistanceIteratorType &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual void <a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html">Kratos::TreeNode</a>&lt; TPointType, TIteratorType, TDistanceIteratorType &gt;::SearchInBox </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#a13413145e62f1e604ceb7a72a6cc2088">PointType</a> const &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#a65b95faf8305cbed30aa75874fb59ec6">PointType</a> const &amp;&#160;</td>
           <td class="paramname"><em>SearchMinPoint</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#a13413145e62f1e604ceb7a72a6cc2088">PointType</a> const &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#a65b95faf8305cbed30aa75874fb59ec6">PointType</a> const &amp;&#160;</td>
           <td class="paramname"><em>SearchMaxPoint</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#a8a7ea5d85fda11d7750a65146d74ee1f">IteratorType</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#a677eaf554b99e070c4c6a11368df85d5">IteratorType</a> &amp;&#160;</td>
           <td class="paramname"><em>Results</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#aee10d04b1a09c62ad6e712f848dd0fc5">SizeType</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#abdfdbaa6e03a16bab61979c8a6b94a42">SizeType</a> &amp;&#160;</td>
           <td class="paramname"><em>NumberOfResults</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#aee10d04b1a09c62ad6e712f848dd0fc5">SizeType</a> const &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#abdfdbaa6e03a16bab61979c8a6b94a42">SizeType</a> const &amp;&#160;</td>
           <td class="paramname"><em>MaxNumberOfResults</em>&#160;</td>
         </tr>
         <tr>
@@ -784,61 +549,59 @@ template&lt;class TPointType , class TIteratorType , class TDistanceIteratorType
 </table>
 </div><div class="memdoc">
 
-<p>Reimplemented in <a class="el" href="../../dd/d8e/class_kratos_1_1_bucket.html#ad1f5d2145bf23e607cd73a930bb976af">Kratos::Bucket&lt; TDimension, TPointType, TIteratorType, TDistanceIteratorType, TDistanceFunction &gt;</a>.</p>
-
 </div>
 </div>
-<a id="ae2107a59c97832a2a880a5c19b711629"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae2107a59c97832a2a880a5c19b711629">&#9670;&nbsp;</a></span>SearchInRadius() <span class="overload">[1/8]</span></h2>
+<a id="ab47cad6994e25b1c8a3b22add142f100"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab47cad6994e25b1c8a3b22add142f100">&#9670;&nbsp;</a></span>SearchInRadius() <span class="overload">[1/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class TPointType , class TIteratorType , class TDistanceIteratorType &gt; </div>
+template&lt;std::size_t TDimension, class TPointType , class TPointerType , class TIteratorType , class TDistanceIteratorType , class TIteratorIteratorType  = typename std::vector&lt;TIteratorType&gt;::iterator&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void <a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html">Kratos::TreeNode</a>&lt; TPointType, TIteratorType, TDistanceIteratorType &gt;::SearchInRadius </td>
+          <td class="memname">virtual void <a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html">Kratos::TreeNode</a>&lt; TDimension, TPointType, TPointerType, TIteratorType, TDistanceIteratorType, TIteratorIteratorType &gt;::SearchInRadius </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#a13413145e62f1e604ceb7a72a6cc2088">PointType</a> const &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#a65b95faf8305cbed30aa75874fb59ec6">PointType</a> const &amp;&#160;</td>
           <td class="paramname"><em>ThisPoint</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#adebd9b43147a3969d81a5bc71adbbe72">CoordinateType</a> const &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#aab202914fad653f26a406fb9d2cfe7d2">CoordinateType</a> const &amp;&#160;</td>
           <td class="paramname"><em>Radius</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#adebd9b43147a3969d81a5bc71adbbe72">CoordinateType</a> const &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#aab202914fad653f26a406fb9d2cfe7d2">CoordinateType</a> const &amp;&#160;</td>
           <td class="paramname"><em>Radius2</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#a8a7ea5d85fda11d7750a65146d74ee1f">IteratorType</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#a677eaf554b99e070c4c6a11368df85d5">IteratorType</a> &amp;&#160;</td>
           <td class="paramname"><em>Results</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#a657833db99c3404ec097481099388410">DistanceIteratorType</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#aedbcfe97a8016cb15e2ca2a31569897b">DistanceIteratorType</a> &amp;&#160;</td>
           <td class="paramname"><em>ResultsDistances</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#aee10d04b1a09c62ad6e712f848dd0fc5">SizeType</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#abdfdbaa6e03a16bab61979c8a6b94a42">SizeType</a> &amp;&#160;</td>
           <td class="paramname"><em>NumberOfResults</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#aee10d04b1a09c62ad6e712f848dd0fc5">SizeType</a> const &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#abdfdbaa6e03a16bab61979c8a6b94a42">SizeType</a> const &amp;&#160;</td>
           <td class="paramname"><em>MaxNumberOfResults</em>&#160;</td>
         </tr>
         <tr>
@@ -854,67 +617,65 @@ template&lt;class TPointType , class TIteratorType , class TDistanceIteratorType
 </table>
 </div><div class="memdoc">
 
-<p>Reimplemented in <a class="el" href="../../dd/d8e/class_kratos_1_1_bucket.html#abc9ecb2e8f10bad5ef3cea7cecaa2ff5">Kratos::Bucket&lt; TDimension, TPointType, TIteratorType, TDistanceIteratorType, TDistanceFunction &gt;</a>.</p>
-
 </div>
 </div>
-<a id="afa0a69a383cb5b443bdcd7c5f1e91d96"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afa0a69a383cb5b443bdcd7c5f1e91d96">&#9670;&nbsp;</a></span>SearchInRadius() <span class="overload">[2/8]</span></h2>
+<a id="afad8790f344cdbf44f798cb36b26a35b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afad8790f344cdbf44f798cb36b26a35b">&#9670;&nbsp;</a></span>SearchInRadius() <span class="overload">[2/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class TPointType , class TIteratorType , class TDistanceIteratorType &gt; </div>
+template&lt;std::size_t TDimension, class TPointType , class TPointerType , class TIteratorType , class TDistanceIteratorType , class TIteratorIteratorType  = typename std::vector&lt;TIteratorType&gt;::iterator&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void <a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html">Kratos::TreeNode</a>&lt; TPointType, TIteratorType, TDistanceIteratorType &gt;::SearchInRadius </td>
+          <td class="memname">virtual void <a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html">Kratos::TreeNode</a>&lt; TDimension, TPointType, TPointerType, TIteratorType, TDistanceIteratorType, TIteratorIteratorType &gt;::SearchInRadius </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#a13413145e62f1e604ceb7a72a6cc2088">PointType</a> const &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#a65b95faf8305cbed30aa75874fb59ec6">PointType</a> const &amp;&#160;</td>
           <td class="paramname"><em>ThisPoint</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#adebd9b43147a3969d81a5bc71adbbe72">CoordinateType</a> const &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#aab202914fad653f26a406fb9d2cfe7d2">CoordinateType</a> const &amp;&#160;</td>
           <td class="paramname"><em>Radius</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#adebd9b43147a3969d81a5bc71adbbe72">CoordinateType</a> const &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#aab202914fad653f26a406fb9d2cfe7d2">CoordinateType</a> const &amp;&#160;</td>
           <td class="paramname"><em>Radius2</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#a8a7ea5d85fda11d7750a65146d74ee1f">IteratorType</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#a677eaf554b99e070c4c6a11368df85d5">IteratorType</a> &amp;&#160;</td>
           <td class="paramname"><em>Results</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#a657833db99c3404ec097481099388410">DistanceIteratorType</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#aedbcfe97a8016cb15e2ca2a31569897b">DistanceIteratorType</a> &amp;&#160;</td>
           <td class="paramname"><em>ResultsDistances</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#aee10d04b1a09c62ad6e712f848dd0fc5">SizeType</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#abdfdbaa6e03a16bab61979c8a6b94a42">SizeType</a> &amp;&#160;</td>
           <td class="paramname"><em>NumberOfResults</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#aee10d04b1a09c62ad6e712f848dd0fc5">SizeType</a> const &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#abdfdbaa6e03a16bab61979c8a6b94a42">SizeType</a> const &amp;&#160;</td>
           <td class="paramname"><em>MaxNumberOfResults</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#ac2857b999fb8b25a44f82c8893472f2f">SearchStructureType</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#ae6ed41f69a527b8ab14e82f30cf8251c">SearchStructureType</a> &amp;&#160;</td>
           <td class="paramname"><em>Auxiliar</em>&#160;</td>
         </tr>
         <tr>
@@ -932,51 +693,51 @@ template&lt;class TPointType , class TIteratorType , class TDistanceIteratorType
 
 </div>
 </div>
-<a id="a82c29462f40bd60356c58f72d23a26b1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a82c29462f40bd60356c58f72d23a26b1">&#9670;&nbsp;</a></span>SearchInRadius() <span class="overload">[3/8]</span></h2>
+<a id="a40f37424cf8360b2b34fc1b013c65ccd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a40f37424cf8360b2b34fc1b013c65ccd">&#9670;&nbsp;</a></span>SearchInRadius() <span class="overload">[3/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class TPointType , class TIteratorType , class TDistanceIteratorType &gt; </div>
+template&lt;std::size_t TDimension, class TPointType , class TPointerType , class TIteratorType , class TDistanceIteratorType , class TIteratorIteratorType  = typename std::vector&lt;TIteratorType&gt;::iterator&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void <a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html">Kratos::TreeNode</a>&lt; TPointType, TIteratorType, TDistanceIteratorType &gt;::SearchInRadius </td>
+          <td class="memname">virtual void <a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html">Kratos::TreeNode</a>&lt; TDimension, TPointType, TPointerType, TIteratorType, TDistanceIteratorType, TIteratorIteratorType &gt;::SearchInRadius </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#a13413145e62f1e604ceb7a72a6cc2088">PointType</a> const &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#a65b95faf8305cbed30aa75874fb59ec6">PointType</a> const &amp;&#160;</td>
           <td class="paramname"><em>ThisPoint</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#adebd9b43147a3969d81a5bc71adbbe72">CoordinateType</a> const &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#aab202914fad653f26a406fb9d2cfe7d2">CoordinateType</a> const &amp;&#160;</td>
           <td class="paramname"><em>Radius</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#adebd9b43147a3969d81a5bc71adbbe72">CoordinateType</a> const &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#aab202914fad653f26a406fb9d2cfe7d2">CoordinateType</a> const &amp;&#160;</td>
           <td class="paramname"><em>Radius2</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#a8a7ea5d85fda11d7750a65146d74ee1f">IteratorType</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#a677eaf554b99e070c4c6a11368df85d5">IteratorType</a> &amp;&#160;</td>
           <td class="paramname"><em>Results</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#aee10d04b1a09c62ad6e712f848dd0fc5">SizeType</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#abdfdbaa6e03a16bab61979c8a6b94a42">SizeType</a> &amp;&#160;</td>
           <td class="paramname"><em>NumberOfResults</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#aee10d04b1a09c62ad6e712f848dd0fc5">SizeType</a> const &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#abdfdbaa6e03a16bab61979c8a6b94a42">SizeType</a> const &amp;&#160;</td>
           <td class="paramname"><em>MaxNumberOfResults</em>&#160;</td>
         </tr>
         <tr>
@@ -992,61 +753,59 @@ template&lt;class TPointType , class TIteratorType , class TDistanceIteratorType
 </table>
 </div><div class="memdoc">
 
-<p>Reimplemented in <a class="el" href="../../dd/d8e/class_kratos_1_1_bucket.html#ae08fe68e8cfce5d29acbcfef0c35f63d">Kratos::Bucket&lt; TDimension, TPointType, TIteratorType, TDistanceIteratorType, TDistanceFunction &gt;</a>.</p>
-
 </div>
 </div>
-<a id="ab038c0c03be03419e734dd2456402b55"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab038c0c03be03419e734dd2456402b55">&#9670;&nbsp;</a></span>SearchInRadius() <span class="overload">[4/8]</span></h2>
+<a id="adf641d0b59dc36d874bc09319c4ee48d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adf641d0b59dc36d874bc09319c4ee48d">&#9670;&nbsp;</a></span>SearchInRadius() <span class="overload">[4/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class TPointType , class TIteratorType , class TDistanceIteratorType &gt; </div>
+template&lt;std::size_t TDimension, class TPointType , class TPointerType , class TIteratorType , class TDistanceIteratorType , class TIteratorIteratorType  = typename std::vector&lt;TIteratorType&gt;::iterator&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void <a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html">Kratos::TreeNode</a>&lt; TPointType, TIteratorType, TDistanceIteratorType &gt;::SearchInRadius </td>
+          <td class="memname">virtual void <a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html">Kratos::TreeNode</a>&lt; TDimension, TPointType, TPointerType, TIteratorType, TDistanceIteratorType, TIteratorIteratorType &gt;::SearchInRadius </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#a13413145e62f1e604ceb7a72a6cc2088">PointType</a> const &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#a65b95faf8305cbed30aa75874fb59ec6">PointType</a> const &amp;&#160;</td>
           <td class="paramname"><em>ThisPoint</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#adebd9b43147a3969d81a5bc71adbbe72">CoordinateType</a> const &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#aab202914fad653f26a406fb9d2cfe7d2">CoordinateType</a> const &amp;&#160;</td>
           <td class="paramname"><em>Radius</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#adebd9b43147a3969d81a5bc71adbbe72">CoordinateType</a> const &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#aab202914fad653f26a406fb9d2cfe7d2">CoordinateType</a> const &amp;&#160;</td>
           <td class="paramname"><em>Radius2</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#a8a7ea5d85fda11d7750a65146d74ee1f">IteratorType</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#a677eaf554b99e070c4c6a11368df85d5">IteratorType</a> &amp;&#160;</td>
           <td class="paramname"><em>Results</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#aee10d04b1a09c62ad6e712f848dd0fc5">SizeType</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#abdfdbaa6e03a16bab61979c8a6b94a42">SizeType</a> &amp;&#160;</td>
           <td class="paramname"><em>NumberOfResults</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#aee10d04b1a09c62ad6e712f848dd0fc5">SizeType</a> const &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#abdfdbaa6e03a16bab61979c8a6b94a42">SizeType</a> const &amp;&#160;</td>
           <td class="paramname"><em>MaxNumberOfResults</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#ac2857b999fb8b25a44f82c8893472f2f">SearchStructureType</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#ae6ed41f69a527b8ab14e82f30cf8251c">SearchStructureType</a> &amp;&#160;</td>
           <td class="paramname"><em>Auxiliar</em>&#160;</td>
         </tr>
         <tr>
@@ -1064,259 +823,33 @@ template&lt;class TPointType , class TIteratorType , class TDistanceIteratorType
 
 </div>
 </div>
-<a id="ab54fd6db641cfd62d933d74a586b7b0f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab54fd6db641cfd62d933d74a586b7b0f">&#9670;&nbsp;</a></span>SearchInRadius() <span class="overload">[5/8]</span></h2>
+<a id="a7e7773a10fdb9db3ddc88b7f53968ddd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7e7773a10fdb9db3ddc88b7f53968ddd">&#9670;&nbsp;</a></span>SearchNearestPoint() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class TPointType , class TIteratorType , class TDistanceIteratorType &gt; </div>
+template&lt;std::size_t TDimension, class TPointType , class TPointerType , class TIteratorType , class TDistanceIteratorType , class TIteratorIteratorType  = typename std::vector&lt;TIteratorType&gt;::iterator&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual <a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#aee10d04b1a09c62ad6e712f848dd0fc5">SizeType</a> <a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html">Kratos::TreeNode</a>&lt; TPointType, TIteratorType, TDistanceIteratorType &gt;::SearchInRadius </td>
+          <td class="memname">virtual void <a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html">Kratos::TreeNode</a>&lt; TDimension, TPointType, TPointerType, TIteratorType, TDistanceIteratorType, TIteratorIteratorType &gt;::SearchNearestPoint </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#a13413145e62f1e604ceb7a72a6cc2088">PointType</a> const &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#a65b95faf8305cbed30aa75874fb59ec6">PointType</a> const &amp;&#160;</td>
           <td class="paramname"><em>ThisPoint</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../db/d66/namespace_kratos.html#ac77084a57869cbecf89d3ee2c819c5d3">double</a>&#160;</td>
-          <td class="paramname"><em>Radius</em>, </td>
+          <td class="paramtype"><a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#a542b408303f6c6700b0acfc15ace5d6b">PointerType</a> &amp;&#160;</td>
+          <td class="paramname"><em>rResult</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../db/d66/namespace_kratos.html#ac77084a57869cbecf89d3ee2c819c5d3">double</a>&#160;</td>
-          <td class="paramname"><em>Radius2</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#a8a7ea5d85fda11d7750a65146d74ee1f">IteratorType</a>&#160;</td>
-          <td class="paramname"><em>Results</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#a657833db99c3404ec097481099388410">DistanceIteratorType</a>&#160;</td>
-          <td class="paramname"><em>ResultsDistances</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#aee10d04b1a09c62ad6e712f848dd0fc5">SizeType</a>&#160;</td>
-          <td class="paramname"><em>MaximumNumberOfResults</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Reimplemented in <a class="el" href="../../dd/d8e/class_kratos_1_1_bucket.html#a71aa653ea39a3dcb0e8b987b5b8f8c81">Kratos::Bucket&lt; TDimension, TPointType, TIteratorType, TDistanceIteratorType, TDistanceFunction &gt;</a>.</p>
-
-</div>
-</div>
-<a id="ad02a8ab6b8d8d7fd6ad1fb691a0aefdb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad02a8ab6b8d8d7fd6ad1fb691a0aefdb">&#9670;&nbsp;</a></span>SearchInRadius() <span class="overload">[6/8]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class TPointType , class TIteratorType , class TDistanceIteratorType &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual <a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#aee10d04b1a09c62ad6e712f848dd0fc5">SizeType</a> <a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html">Kratos::TreeNode</a>&lt; TPointType, TIteratorType, TDistanceIteratorType &gt;::SearchInRadius </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#a13413145e62f1e604ceb7a72a6cc2088">PointType</a> const &amp;&#160;</td>
-          <td class="paramname"><em>ThisPoint</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="../../db/d66/namespace_kratos.html#ac77084a57869cbecf89d3ee2c819c5d3">double</a>&#160;</td>
-          <td class="paramname"><em>Radius</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="../../db/d66/namespace_kratos.html#ac77084a57869cbecf89d3ee2c819c5d3">double</a>&#160;</td>
-          <td class="paramname"><em>Radius2</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#a8a7ea5d85fda11d7750a65146d74ee1f">IteratorType</a>&#160;</td>
-          <td class="paramname"><em>Results</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#aee10d04b1a09c62ad6e712f848dd0fc5">SizeType</a>&#160;</td>
-          <td class="paramname"><em>MaximumNumberOfResults</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Reimplemented in <a class="el" href="../../dd/d8e/class_kratos_1_1_bucket.html#a164106a66b206fe855d7fd1f83a82ed1">Kratos::Bucket&lt; TDimension, TPointType, TIteratorType, TDistanceIteratorType, TDistanceFunction &gt;</a>.</p>
-
-</div>
-</div>
-<a id="ada621f52b6e0168ce9b251c27f8833ca"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ada621f52b6e0168ce9b251c27f8833ca">&#9670;&nbsp;</a></span>SearchInRadius() <span class="overload">[7/8]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class TPointType , class TIteratorType , class TDistanceIteratorType &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual <a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#aee10d04b1a09c62ad6e712f848dd0fc5">SizeType</a> <a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html">Kratos::TreeNode</a>&lt; TPointType, TIteratorType, TDistanceIteratorType &gt;::SearchInRadius </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#a13413145e62f1e604ceb7a72a6cc2088">PointType</a> const &amp;&#160;</td>
-          <td class="paramname"><em>ThisPoint</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="../../db/d66/namespace_kratos.html#ac77084a57869cbecf89d3ee2c819c5d3">double</a>&#160;</td>
-          <td class="paramname"><em>Radius</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#a8a7ea5d85fda11d7750a65146d74ee1f">IteratorType</a>&#160;</td>
-          <td class="paramname"><em>Results</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#a657833db99c3404ec097481099388410">DistanceIteratorType</a>&#160;</td>
-          <td class="paramname"><em>ResultsDistances</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#aee10d04b1a09c62ad6e712f848dd0fc5">SizeType</a>&#160;</td>
-          <td class="paramname"><em>MaximumNumberOfResults</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Reimplemented in <a class="el" href="../../dd/d8e/class_kratos_1_1_bucket.html#a48f7639e0b36785af60ceb679ffcf0b7">Kratos::Bucket&lt; TDimension, TPointType, TIteratorType, TDistanceIteratorType, TDistanceFunction &gt;</a>.</p>
-
-</div>
-</div>
-<a id="af7cbea7ed61613fcd9557f8bdc831509"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af7cbea7ed61613fcd9557f8bdc831509">&#9670;&nbsp;</a></span>SearchInRadius() <span class="overload">[8/8]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class TPointType , class TIteratorType , class TDistanceIteratorType &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual <a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#aee10d04b1a09c62ad6e712f848dd0fc5">SizeType</a> <a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html">Kratos::TreeNode</a>&lt; TPointType, TIteratorType, TDistanceIteratorType &gt;::SearchInRadius </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#a13413145e62f1e604ceb7a72a6cc2088">PointType</a> const &amp;&#160;</td>
-          <td class="paramname"><em>ThisPoint</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="../../db/d66/namespace_kratos.html#ac77084a57869cbecf89d3ee2c819c5d3">double</a>&#160;</td>
-          <td class="paramname"><em>Radius</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#a8a7ea5d85fda11d7750a65146d74ee1f">IteratorType</a>&#160;</td>
-          <td class="paramname"><em>Results</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#aee10d04b1a09c62ad6e712f848dd0fc5">SizeType</a>&#160;</td>
-          <td class="paramname"><em>MaximumNumberOfResults</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Reimplemented in <a class="el" href="../../dd/d8e/class_kratos_1_1_bucket.html#a1046194b599735ccc9a2ce84aa6a63c5">Kratos::Bucket&lt; TDimension, TPointType, TIteratorType, TDistanceIteratorType, TDistanceFunction &gt;</a>.</p>
-
-</div>
-</div>
-<a id="abe6df4697f1a62073eb6546567a23ba6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abe6df4697f1a62073eb6546567a23ba6">&#9670;&nbsp;</a></span>SearchNearestPoint() <span class="overload">[1/3]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class TPointType , class TIteratorType , class TDistanceIteratorType &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual <a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#a8a7ea5d85fda11d7750a65146d74ee1f">IteratorType</a> <a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html">Kratos::TreeNode</a>&lt; TPointType, TIteratorType, TDistanceIteratorType &gt;::SearchNearestPoint </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#a13413145e62f1e604ceb7a72a6cc2088">PointType</a> const &amp;&#160;</td>
-          <td class="paramname"><em>ThisPoint</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#adebd9b43147a3969d81a5bc71adbbe72">CoordinateType</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#aab202914fad653f26a406fb9d2cfe7d2">CoordinateType</a> &amp;&#160;</td>
           <td class="paramname"><em>rResultDistance</em>&#160;</td>
         </tr>
         <tr>
@@ -1332,89 +865,41 @@ template&lt;class TPointType , class TIteratorType , class TDistanceIteratorType
 </table>
 </div><div class="memdoc">
 
-<p>Reimplemented in <a class="el" href="../../dd/d8e/class_kratos_1_1_bucket.html#addbf4dd62a4c9ab6ed3b17c311c8d648">Kratos::Bucket&lt; TDimension, TPointType, TIteratorType, TDistanceIteratorType, TDistanceFunction &gt;</a>.</p>
-
 </div>
 </div>
-<a id="ab99ecaf64efe4af85b23f72eb502336e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab99ecaf64efe4af85b23f72eb502336e">&#9670;&nbsp;</a></span>SearchNearestPoint() <span class="overload">[2/3]</span></h2>
+<a id="a4d08ca5fd94f09d8597ba4b5da0f81ad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4d08ca5fd94f09d8597ba4b5da0f81ad">&#9670;&nbsp;</a></span>SearchNearestPoint() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class TPointType , class TIteratorType , class TDistanceIteratorType &gt; </div>
+template&lt;std::size_t TDimension, class TPointType , class TPointerType , class TIteratorType , class TDistanceIteratorType , class TIteratorIteratorType  = typename std::vector&lt;TIteratorType&gt;::iterator&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void <a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html">Kratos::TreeNode</a>&lt; TPointType, TIteratorType, TDistanceIteratorType &gt;::SearchNearestPoint </td>
+          <td class="memname">virtual void <a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html">Kratos::TreeNode</a>&lt; TDimension, TPointType, TPointerType, TIteratorType, TDistanceIteratorType, TIteratorIteratorType &gt;::SearchNearestPoint </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#a13413145e62f1e604ceb7a72a6cc2088">PointType</a> const &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#a65b95faf8305cbed30aa75874fb59ec6">PointType</a> const &amp;&#160;</td>
           <td class="paramname"><em>ThisPoint</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#aa376b5d36b0f136ac354885e153aa788">PointerType</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#a542b408303f6c6700b0acfc15ace5d6b">PointerType</a> &amp;&#160;</td>
           <td class="paramname"><em>rResult</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#adebd9b43147a3969d81a5bc71adbbe72">CoordinateType</a> &amp;&#160;</td>
-          <td class="paramname"><em>rResultDistance</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Reimplemented in <a class="el" href="../../dd/d8e/class_kratos_1_1_bucket.html#ac0d5ef56ccc01d117b7fb82efe904201">Kratos::Bucket&lt; TDimension, TPointType, TIteratorType, TDistanceIteratorType, TDistanceFunction &gt;</a>.</p>
-
-</div>
-</div>
-<a id="ac7b8e45e4e45fc067aa58416b5671398"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac7b8e45e4e45fc067aa58416b5671398">&#9670;&nbsp;</a></span>SearchNearestPoint() <span class="overload">[3/3]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class TPointType , class TIteratorType , class TDistanceIteratorType &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual void <a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html">Kratos::TreeNode</a>&lt; TPointType, TIteratorType, TDistanceIteratorType &gt;::SearchNearestPoint </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#a13413145e62f1e604ceb7a72a6cc2088">PointType</a> const &amp;&#160;</td>
-          <td class="paramname"><em>ThisPoint</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#aa376b5d36b0f136ac354885e153aa788">PointerType</a> &amp;&#160;</td>
-          <td class="paramname"><em>rResult</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#adebd9b43147a3969d81a5bc71adbbe72">CoordinateType</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#aab202914fad653f26a406fb9d2cfe7d2">CoordinateType</a> &amp;&#160;</td>
           <td class="paramname"><em>rResultDistance</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#ac2857b999fb8b25a44f82c8893472f2f">SearchStructureType</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="../../d5/da3/class_kratos_1_1_tree_node.html#ae6ed41f69a527b8ab14e82f30cf8251c">SearchStructureType</a> &amp;&#160;</td>
           <td class="paramname"><em>Auxiliar</em>&#160;</td>
         </tr>
         <tr>
@@ -1433,12 +918,12 @@ template&lt;class TPointType , class TIteratorType , class TDistanceIteratorType
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>/home/runner/work/Documentation/Documentation/master/kratos/containers/<a class="el" href="../../d4/dd1/containers_2tree_8h_source.html">tree.h</a></li>
+<li>/home/runner/work/Documentation/Documentation/master/kratos/spatial_containers/<a class="el" href="../../d3/d09/tree_8h_source.html">tree.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Mar 30 2023 02:17:40 for KratosMultiphysics by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Fri Mar 31 2023 02:17:39 for KratosMultiphysics by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

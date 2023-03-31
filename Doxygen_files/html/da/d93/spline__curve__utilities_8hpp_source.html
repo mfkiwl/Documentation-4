@@ -665,7 +665,7 @@ $(function() {
 <div class="line"><a name="l00601"></a><span class="lineno">  601</span>&#160;      <a class="code" href="../../d5/ddd/class_kratos_1_1_node.html">NodeType</a> WorkPoint(0,rPoint[0],rPoint[1],rPoint[2]);</div>
 <div class="line"><a name="l00602"></a><span class="lineno">  602</span>&#160;      rPointDistance = 0;</div>
 <div class="line"><a name="l00603"></a><span class="lineno">  603</span>&#160; </div>
-<div class="line"><a name="l00604"></a><span class="lineno">  604</span>&#160;      <a class="code" href="../../de/d77/class_kratos_1_1_spline_curve_utilities.html#a52b4983a8c3ef6f21a6053edc5ee8c58">NodePointerType</a> NearestPoint = rKnotsKdtree.<a class="code" href="../../d8/d13/class_kratos_1_1_tree.html#ac7add2005ff0cd0c590fb6dd4f6fed5a">SearchNearestPoint</a>(WorkPoint, rPointDistance);</div>
+<div class="line"><a name="l00604"></a><span class="lineno">  604</span>&#160;      <a class="code" href="../../de/d77/class_kratos_1_1_spline_curve_utilities.html#a52b4983a8c3ef6f21a6053edc5ee8c58">NodePointerType</a> NearestPoint = rKnotsKdtree.<a class="code" href="../../d8/d13/class_kratos_1_1_tree.html#a740c77612816ba938304975d4753057c">SearchNearestPoint</a>(WorkPoint, rPointDistance);</div>
 <div class="line"><a name="l00605"></a><span class="lineno">  605</span>&#160; </div>
 <div class="line"><a name="l00606"></a><span class="lineno">  606</span>&#160;      <span class="comment">// get the id of the closest point i</span></div>
 <div class="line"><a name="l00607"></a><span class="lineno">  607</span>&#160;      <span class="keywordflow">return</span> NearestPoint-&gt;Id();</div>
@@ -1215,7 +1215,7 @@ $(function() {
 <div class="line"><a name="l01227"></a><span class="lineno"> 1227</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// KRATOS_SPLINE_CURVE_UTILITIES_H_INCLUDED defined</span></div>
 <div class="line"><a name="l01228"></a><span class="lineno"> 1228</span>&#160; </div>
 <div class="line"><a name="l01229"></a><span class="lineno"> 1229</span>&#160; </div>
-<div class="ttc" id="aclass_kratos_1_1_bucket_html"><div class="ttname"><a href="../../dd/d8e/class_kratos_1_1_bucket.html">Kratos::Bucket</a></div><div class="ttdoc">Short class definition.</div><div class="ttdef"><b>Definition:</b> bucket.h:64</div></div>
+<div class="ttc" id="aclass_kratos_1_1_bucket_html"><div class="ttname"><a href="../../dd/d8e/class_kratos_1_1_bucket.html">Kratos::Bucket</a></div><div class="ttdoc">Short class definition.</div><div class="ttdef"><b>Definition:</b> bucket.h:61</div></div>
 <div class="ttc" id="aclass_kratos_1_1_internals_1_1_matrix_html"><div class="ttname"><a href="../../d9/dbb/class_kratos_1_1_internals_1_1_matrix.html">Kratos::Internals::Matrix&lt; double, AMatrix::dynamic, 1 &gt;</a></div></div>
 <div class="ttc" id="aclass_kratos_1_1_internals_1_1_matrix_html_a3d36c583d63e7eeda493a7abdc97d874"><div class="ttname"><a href="../../d9/dbb/class_kratos_1_1_internals_1_1_matrix.html#a3d36c583d63e7eeda493a7abdc97d874">Kratos::Internals::Matrix::resize</a></div><div class="ttdeci">void resize(std::size_t NewSize1, std::size_t NewSize2, bool preserve=0)</div><div class="ttdef"><b>Definition:</b> amatrix_interface.h:224</div></div>
 <div class="ttc" id="aclass_kratos_1_1_node_html"><div class="ttname"><a href="../../d5/ddd/class_kratos_1_1_node.html">Kratos::Node</a></div><div class="ttdoc">This class defines the node.</div><div class="ttdef"><b>Definition:</b> node.h:68</div></div>
@@ -1263,8 +1263,8 @@ $(function() {
 <div class="ttc" id="aclass_kratos_1_1_spline_curve_utilities_html_afaedc22e1f459ddce5552f6aa6dcd996"><div class="ttname"><a href="../../de/d77/class_kratos_1_1_spline_curve_utilities.html#afaedc22e1f459ddce5552f6aa6dcd996">Kratos::SplineCurveUtilities::CalculateDistancePolynomialBasis</a></div><div class="ttdeci">Vector &amp; CalculateDistancePolynomialBasis(Vector &amp;rPolynomialBasis, const Vector &amp;rEstimates, double &amp;rValue)</div><div class="ttdef"><b>Definition:</b> spline_curve_utilities.hpp:908</div></div>
 <div class="ttc" id="aclass_kratos_1_1_spline_curve_utilities_html_afd672a1543e613e2f43f4aa72b6c7148"><div class="ttname"><a href="../../de/d77/class_kratos_1_1_spline_curve_utilities.html#afd672a1543e613e2f43f4aa72b6c7148">Kratos::SplineCurveUtilities::NodeTypeVector</a></div><div class="ttdeci">std::vector&lt; NodeType &gt; NodeTypeVector</div><div class="ttdef"><b>Definition:</b> spline_curve_utilities.hpp:57</div></div>
 <div class="ttc" id="aclass_kratos_1_1_spline_curve_utilities_html_afe164ea5a110125f0800790570ff5c5e"><div class="ttname"><a href="../../de/d77/class_kratos_1_1_spline_curve_utilities.html#afe164ea5a110125f0800790570ff5c5e">Kratos::SplineCurveUtilities::SplineGeometricLength</a></div><div class="ttdeci">double SplineGeometricLength(SplineType &amp;rSpline, double &amp;t)</div><div class="ttdef"><b>Definition:</b> spline_curve_utilities.hpp:496</div></div>
-<div class="ttc" id="aclass_kratos_1_1_tree_html"><div class="ttname"><a href="../../d8/d13/class_kratos_1_1_tree.html">Kratos::Tree</a></div><div class="ttdoc">Short class definition.</div><div class="ttdef"><b>Definition:</b> tree.h:140</div></div>
-<div class="ttc" id="aclass_kratos_1_1_tree_html_ac7add2005ff0cd0c590fb6dd4f6fed5a"><div class="ttname"><a href="../../d8/d13/class_kratos_1_1_tree.html#ac7add2005ff0cd0c590fb6dd4f6fed5a">Kratos::Tree::SearchNearestPoint</a></div><div class="ttdeci">IteratorType SearchNearestPoint(PointType const &amp;ThisPoint, CoordinateType &amp;rResultDistance)</div><div class="ttdef"><b>Definition:</b> tree.h:214</div></div>
+<div class="ttc" id="aclass_kratos_1_1_tree_html"><div class="ttname"><a href="../../d8/d13/class_kratos_1_1_tree.html">Kratos::Tree</a></div><div class="ttdoc">Short class definition.</div><div class="ttdef"><b>Definition:</b> tree.h:177</div></div>
+<div class="ttc" id="aclass_kratos_1_1_tree_html_a740c77612816ba938304975d4753057c"><div class="ttname"><a href="../../d8/d13/class_kratos_1_1_tree.html#a740c77612816ba938304975d4753057c">Kratos::Tree::SearchNearestPoint</a></div><div class="ttdeci">PointerType SearchNearestPoint(PointType const &amp;ThisPoint, CoordinateType &amp;rResultDistance)</div><div class="ttdef"><b>Definition:</b> tree.h:308</div></div>
 <div class="ttc" id="aclass_kratos_1_1array__1d_html"><div class="ttname"><a href="../../d4/ddc/class_kratos_1_1array__1d.html">Kratos::array_1d&lt; double, 3 &gt;</a></div></div>
 <div class="ttc" id="acontact__mechanics__application__variables_8h_html"><div class="ttname"><a href="../../db/def/contact__mechanics__application__variables_8h.html">contact_mechanics_application_variables.h</a></div></div>
 <div class="ttc" id="adefine_8h_html"><div class="ttname"><a href="../../df/d67/define_8h.html">define.h</a></div></div>
@@ -1304,7 +1304,7 @@ $(function() {
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Mar 30 2023 02:11:08 for KratosMultiphysics by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Fri Mar 31 2023 02:10:47 for KratosMultiphysics by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

@@ -138,7 +138,7 @@ $(function() {
 : <a class="el" href="d3/d74/class_kratos_1_1partitioned__vector.html#a06cf185a2c22d71818ff9d99fc32c36e">Kratos::partitioned_vector&lt; TVectorType &gt;</a>
 </li>
 <li>PartitionType
-: <a class="el" href="d8/d13/class_kratos_1_1_tree.html#ae5485197ccc7f0c6602f18f46d8c551f">Kratos::Tree&lt; TDimension, TPointType, TPartitionType, TLeafType, TIteratorType, TDistanceIteratorType &gt;</a>
+: <a class="el" href="d8/d13/class_kratos_1_1_tree.html#a19d744ea3588aca94d3bdada712dbab0">Kratos::Tree&lt; TPartitionType &gt;</a>
 </li>
 <li>PartitionVector
 : <a class="el" href="df/dd4/class_kratos_1_1_frac_step_strategy.html#ae6eda059eb9d9dd0358b24844740a7d7">Kratos::FracStepStrategy&lt; TSparseSpace, TDenseSpace, TLinearSolver &gt;</a>
@@ -248,7 +248,7 @@ $(function() {
 , <a class="el" href="d8/d3a/class_kratos_1_1_bins_object_dynamic.html#a2cac209a326de68659cf16346ff56694">Kratos::BinsObjectDynamic&lt; TConfigure &gt;</a>
 , <a class="el" href="d2/dec/class_kratos_1_1_bins_object_dynamic_periodic.html#a62d49b34d36b2298b34a3057b78a44fd">Kratos::BinsObjectDynamicPeriodic&lt; TConfigure &gt;</a>
 , <a class="el" href="d9/d44/class_kratos_1_1_bins_object_static.html#ad275195abde641f5cdb7a66e29812f64">Kratos::BinsObjectStatic&lt; TConfigure &gt;</a>
-, <a class="el" href="dd/d8e/class_kratos_1_1_bucket.html#ae8e8757ca2679c6e03ddf80f0971e9cf">Kratos::Bucket&lt; TDimension, TPointType, TIteratorType, TDistanceIteratorType, TDistanceFunction &gt;</a>
+, <a class="el" href="dd/d8e/class_kratos_1_1_bucket.html#a120a78bdd1adaec9c88ab87c05277dfd">Kratos::Bucket&lt; TDimension, TPointType, TContainerType, TPointerType, TIteratorType, TDistanceIteratorType, TDistanceFunction &gt;</a>
 , <a class="el" href="d8/da2/class_kratos_1_1_cell.html#aaa36864bce31684454615a09f6a2af21">Kratos::Cell&lt; TConfigure &gt;</a>
 , <a class="el" href="dc/dff/class_kratos_1_1_discrete_particle_configure.html#a4e32a964186a8996cc29a7525230c726">Kratos::DiscreteParticleConfigure&lt; TDimension &gt;</a>
 , <a class="el" href="da/d90/class_kratos_1_1_distance_spatial_containers_condition_configure.html#a227228054091836fb72991047d6e3ab5">Kratos::DistanceSpatialContainersConditionConfigure</a>
@@ -267,8 +267,8 @@ $(function() {
 , <a class="el" href="df/d78/class_kratos_1_1_point_configure.html#afe9e365508c65f9323d0bd84ae738930">Kratos::PointConfigure&lt; TDimension &gt;</a>
 , <a class="el" href="d8/d17/class_kratos_1_1_rigid_face_geometrical_object_configure.html#a8cf1313491d06bf61fd60707441edbf2">Kratos::RigidFaceGeometricalObjectConfigure&lt; TDimension &gt;</a>
 , <a class="el" href="de/dd7/class_kratos_1_1_spatial_containers_configure.html#a005f0337a7576790040816b008cdab28">Kratos::SpatialContainersConfigure&lt; TDimension, TEntity &gt;</a>
-, <a class="el" href="d8/d13/class_kratos_1_1_tree.html#a7841a71f24f0b05e5091170d78f20829">Kratos::Tree&lt; TDimension, TPointType, TPartitionType, TLeafType, TIteratorType, TDistanceIteratorType &gt;</a>
-, <a class="el" href="d5/da3/class_kratos_1_1_tree_node.html#aa376b5d36b0f136ac354885e153aa788">Kratos::TreeNode&lt; TPointType, TIteratorType, TDistanceIteratorType &gt;</a>
+, <a class="el" href="d8/d13/class_kratos_1_1_tree.html#ab83f5ff97f4a7b0bb7794d744900e216">Kratos::Tree&lt; TPartitionType &gt;</a>
+, <a class="el" href="d5/da3/class_kratos_1_1_tree_node.html#a542b408303f6c6700b0acfc15ace5d6b">Kratos::TreeNode&lt; TDimension, TPointType, TPointerType, TIteratorType, TDistanceIteratorType, TIteratorIteratorType &gt;</a>
 </li>
 <li>PointerTypeIterator
 : <a class="el" href="dc/dff/class_kratos_1_1_discrete_particle_configure.html#ac48c7c812792ff8a512b26b21b3351b6">Kratos::DiscreteParticleConfigure&lt; TDimension &gt;</a>
@@ -408,7 +408,7 @@ $(function() {
 , <a class="el" href="d3/d10/class_kratos_1_1_brep_curve.html#a83f91decf99636b85bd22d8ce26448d9">Kratos::BrepCurve&lt; TContainerPointType, TContainerPointEmbeddedType &gt;</a>
 , <a class="el" href="d4/d01/class_kratos_1_1_brep_curve_on_surface.html#ad52254d7c919e409fe5e5e0341baa402">Kratos::BrepCurveOnSurface&lt; TContainerPointType, TContainerPointEmbeddedType &gt;</a>
 , <a class="el" href="dc/de3/class_kratos_1_1_brep_surface.html#a9aa7b7f73ada1e8fda6be17e60e1791f">Kratos::BrepSurface&lt; TContainerPointType, TContainerPointEmbeddedType &gt;</a>
-, <a class="el" href="dd/d8e/class_kratos_1_1_bucket.html#aef50859d0fef58674edeab1b3586983f">Kratos::Bucket&lt; TDimension, TPointType, TIteratorType, TDistanceIteratorType, TDistanceFunction &gt;</a>
+, <a class="el" href="dd/d8e/class_kratos_1_1_bucket.html#af2cc343c5f929f3ba0f206c8cf0cd4f5">Kratos::Bucket&lt; TDimension, TPointType, TContainerType, TPointerType, TIteratorType, TDistanceIteratorType, TDistanceFunction &gt;</a>
 , <a class="el" href="d3/da3/class_kratos_1_1_build_string_skin_process.html#a056e39e301a495d515e3de91b98cb324">Kratos::BuildStringSkinProcess</a>
 , <a class="el" href="d0/d65/class_kratos_1_1_calculate_signed_distance_to3_d_condition_skin_process.html#a8d47bf8fdf08d26468b221bd935588bc">Kratos::CalculateSignedDistanceTo3DConditionSkinProcess</a>
 , <a class="el" href="d9/d2a/class_kratos_1_1_calculate_signed_distance_to3_d_skin_process.html#a2acff9c1e7e65837b0965567bdae6003">Kratos::CalculateSignedDistanceTo3DSkinProcess</a>
@@ -421,7 +421,7 @@ $(function() {
 , <a class="el" href="d0/de1/class_kratos_1_1_cutting_utility.html#ab904e86206c7af278c110d75e9558e79">Kratos::CuttingUtility</a>
 , <a class="el" href="df/d60/class_kratos_1_1_cylinder_bounding_box.html#a96aa509c9595172a02fc95f19eff5225">Kratos::CylinderBoundingBox</a>
 , <a class="el" href="db/da5/class_kratos_1_1_d_e_m_search.html#a2c2c3cfb017723575bb5acf3158fc73d">Kratos::DEMSearch&lt; TDerived &gt;</a>
-, <a class="el" href="dc/dff/class_kratos_1_1_discrete_particle_configure.html#ac31d9c5849e68b40997bb5a8c5fe9e69">Kratos::DiscreteParticleConfigure&lt; TDimension &gt;</a>
+, <a class="el" href="dc/dff/class_kratos_1_1_discrete_particle_configure.html#a04e3387f9cc566d3893d8222bd492720">Kratos::DiscreteParticleConfigure&lt; TDimension &gt;</a>
 , <a class="el" href="da/d90/class_kratos_1_1_distance_spatial_containers_condition_configure.html#aba466e477646e2db1b220c7e254b8644">Kratos::DistanceSpatialContainersConditionConfigure</a>
 , <a class="el" href="d1/d71/class_kratos_1_1_distance_spatial_containers_configure.html#a90640c0d56a4fa67e470bc17d32d8a58">Kratos::DistanceSpatialContainersConfigure</a>
 , <a class="el" href="d0/d7d/class_kratos_1_1_edge_swapping2_d_modeler.html#a2a158231364e15f8ef2a1384419a8291">Kratos::EdgeSwapping2DModeler</a>
@@ -491,13 +491,13 @@ $(function() {
 , <a class="el" href="d4/ddc/class_kratos_1_1_mpi_discrete_particle_configure.html#aacaf620f0e93adbf8795692930872d50">Kratos::MpiDiscreteParticleConfigure&lt; TDimension &gt;</a>
 , <a class="el" href="db/d89/class_kratos_1_1_m_suite_p_f_e_m_modeler.html#a58814e6985495209dd1af44e0b6c7cae">Kratos::MSuitePFEMModeler</a>
 , <a class="el" href="d5/ddd/class_kratos_1_1_node.html#a3d33c0efcba19b133635c74458d0014f">Kratos::Node&lt; TDimension, TDofType &gt;</a>
-, <a class="el" href="d3/d6d/class_kratos_1_1_node_configure.html#a21373ba5a5e9082b0a26bf3895e3ad02">Kratos::NodeConfigure&lt; TDimension &gt;</a>
+, <a class="el" href="d3/d6d/class_kratos_1_1_node_configure.html#aa06a262a6ceb9c6dc1225bd7a9472505">Kratos::NodeConfigure&lt; TDimension &gt;</a>
 , <a class="el" href="d9/d5c/class_kratos_1_1_o_c_tree_partition.html#a5a4082f1f1ef05644f5fb08afd4a20aa">Kratos::OCTreePartition&lt; TLeafType &gt;</a>
 , <a class="el" href="d9/d01/class_kratos_1_1_periodic_condition_utilities.html#a0fc038ff3e6a5f08b55b8629c3337941">Kratos::PeriodicConditionUtilities</a>
 , <a class="el" href="d2/d3a/class_kratos_1_1_plane_bounding_box.html#aff6fb0e11f09b548b1a1a6b592d50d3c">Kratos::PlaneBoundingBox</a>
 , <a class="el" href="de/d79/class_kratos_1_1_point2_d.html#af24df65ba016529e5b40ef2494c3c794">Kratos::Point2D&lt; TPointType &gt;</a>
 , <a class="el" href="d0/d28/class_kratos_1_1_point3_d.html#ae2a9f3507dc452c7ea9e80e54769acce">Kratos::Point3D&lt; TPointType &gt;</a>
-, <a class="el" href="df/d78/class_kratos_1_1_point_configure.html#aa24e3bf031ad6b488e6a8baebacda7fc">Kratos::PointConfigure&lt; TDimension &gt;</a>
+, <a class="el" href="df/d78/class_kratos_1_1_point_configure.html#a72bd702b5e1b83a284b26744f93f0914">Kratos::PointConfigure&lt; TDimension &gt;</a>
 , <a class="el" href="d6/d07/class_kratos_1_1_point_on_geometry.html#a086d23d100b24c5241e5c2de056a9ebc">Kratos::PointOnGeometry&lt; TContainerPointType, TWorkingSpaceDimension, TLocalSpaceDimensionOfBackground &gt;</a>
 , <a class="el" href="d7/d15/class_kratos_1_1_prism3_d15.html#a20d1d9fe86a248be22f986f0f38e1085">Kratos::Prism3D15&lt; TPointType &gt;</a>
 , <a class="el" href="da/d74/class_kratos_1_1_prism3_d6.html#aa740f4e6e4afd4d0f34005e96cddd052">Kratos::Prism3D6&lt; TPointType &gt;</a>
@@ -558,8 +558,8 @@ $(function() {
 , <a class="el" href="d4/dfa/class_kratos_1_1_tetrahedron_gauss_legendre_integration_points4.html#afbeb68f9e25f0c819e24e7ef9edf5899">Kratos::TetrahedronGaussLegendreIntegrationPoints4</a>
 , <a class="el" href="d8/db1/class_kratos_1_1_tetrahedron_gauss_legendre_integration_points5.html#a9adc797542032aacb8f8db329c94fbfc">Kratos::TetrahedronGaussLegendreIntegrationPoints5</a>
 , <a class="el" href="d1/d0f/class_kratos_1_1_topology_filtering_utilities.html#ad084cfc96c476a0dd464b177cdb8d57c">Kratos::TopologyFilteringUtilities</a>
-, <a class="el" href="d8/d13/class_kratos_1_1_tree.html#a513fdadf19be6b64ab55343e8a46a01f">Kratos::Tree&lt; TDimension, TPointType, TPartitionType, TLeafType, TIteratorType, TDistanceIteratorType &gt;</a>
-, <a class="el" href="d5/da3/class_kratos_1_1_tree_node.html#a13413145e62f1e604ceb7a72a6cc2088">Kratos::TreeNode&lt; TPointType, TIteratorType, TDistanceIteratorType &gt;</a>
+, <a class="el" href="d8/d13/class_kratos_1_1_tree.html#a4b9434d615e312c40aedfd980913c7a0">Kratos::Tree&lt; TPartitionType &gt;</a>
+, <a class="el" href="d5/da3/class_kratos_1_1_tree_node.html#a65b95faf8305cbed30aa75874fb59ec6">Kratos::TreeNode&lt; TDimension, TPointType, TPointerType, TIteratorType, TDistanceIteratorType, TIteratorIteratorType &gt;</a>
 , <a class="el" href="dd/d50/class_kratos_1_1_triangle2_d10.html#a5008d49f0ec09ec685123119ff31a07b">Kratos::Triangle2D10&lt; TPointType &gt;</a>
 , <a class="el" href="dd/db3/class_kratos_1_1_triangle2_d15.html#a3a9326119c07b9a2a3c2a11dbf19e659">Kratos::Triangle2D15&lt; TPointType &gt;</a>
 , <a class="el" href="d4/d5d/class_kratos_1_1_triangle2_d3.html#a2e81ab33384d254213f708eae2a5733a">Kratos::Triangle2D3&lt; TPointType &gt;</a>
@@ -850,7 +850,7 @@ $(function() {
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Mar 30 2023 02:20:45 for KratosMultiphysics by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Fri Mar 31 2023 02:20:46 for KratosMultiphysics by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

@@ -83,21 +83,15 @@ $(function() {
 <div class="contents">
 <div class="textblock"><code>#include &lt;string&gt;</code><br />
 <code>#include &lt;iostream&gt;</code><br />
-<code>#include &quot;<a class="el" href="../../df/d67/define_8h_source.html">includes/define.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../dc/d8e/kratos__components_8h_source.html">includes/kratos_components.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="../../d4/dfe/element_8h_source.html">includes/element.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../d6/da8/mesh__element_8h_source.html">elements/mesh_element.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../dd/d75/distance__calculation__element__simplex_8h_source.html">elements/distance_calculation_element_simplex.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../d9/db9/edge__based__gradient__recovery__element_8h_source.html">elements/edge_based_gradient_recovery_element.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../dc/dc1/levelset__convection__element__simplex_8h_source.html">elements/levelset_convection_element_simplex.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../da/dc7/levelset__convection__element__simplex__algebraic__stabilization_8h_source.html">elements/levelset_convection_element_simplex_algebraic_stabilization.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="../../d7/d6c/condition_8h_source.html">includes/condition.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../d6/d8d/mesh__condition_8h_source.html">conditions/mesh_condition.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../de/d71/periodic__condition_8h_source.html">includes/periodic_condition.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../da/d07/quaternion_8h_source.html">utilities/quaternion.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../da/da4/master__slave__constraint_8h_source.html">includes/master_slave_constraint.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../d0/dfe/linear__master__slave__constraint_8h_source.html">constraints/linear_master_slave_constraint.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../dc/d8e/kratos__components_8h_source.html">includes/kratos_components.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="../../d5/d6d/geometrical__object_8h_source.html">includes/geometrical_object.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../de/d71/periodic__condition_8h_source.html">includes/periodic_condition.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../da/da4/master__slave__constraint_8h_source.html">includes/master_slave_constraint.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d1/d8c/logger_8h_source.html">input_output/logger.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../da/d07/quaternion_8h_source.html">utilities/quaternion.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d0/dfe/linear__master__slave__constraint_8h_source.html">constraints/linear_master_slave_constraint.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="../../d4/d3d/register__kratos__components__for__geometry_8h_source.html">geometries/register_kratos_components_for_geometry.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="../../de/dda/line__2d__2_8h_source.html">geometries/line_2d_2.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="../../de/d47/line__2d__3_8h_source.html">geometries/line_2d_3.h</a>&quot;</code><br />
@@ -127,6 +121,12 @@ $(function() {
 <code>#include &quot;<a class="el" href="../../d7/db8/hexahedra__3d__20_8h_source.html">geometries/hexahedra_3d_20.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="../../df/da9/hexahedra__3d__27_8h_source.html">geometries/hexahedra_3d_27.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="../../df/d7b/quadrature__point__geometry_8h_source.html">geometries/quadrature_point_geometry.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d6/da8/mesh__element_8h_source.html">elements/mesh_element.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../dd/d75/distance__calculation__element__simplex_8h_source.html">elements/distance_calculation_element_simplex.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d9/db9/edge__based__gradient__recovery__element_8h_source.html">elements/edge_based_gradient_recovery_element.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../dc/dc1/levelset__convection__element__simplex_8h_source.html">elements/levelset_convection_element_simplex.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../da/dc7/levelset__convection__element__simplex__algebraic__stabilization_8h_source.html">elements/levelset_convection_element_simplex_algebraic_stabilization.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d6/d8d/mesh__condition_8h_source.html">conditions/mesh_condition.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="../../d5/da9/modeler_8h_source.html">modeler/modeler.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="../../d8/de1/cad__io__modeler_8h_source.html">modeler/cad_io_modeler.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="../../d9/dbb/cad__tessellation__modeler_8h_source.html">modeler/cad_tessellation_modeler.h</a>&quot;</code><br />
@@ -144,17 +144,17 @@ Namespaces</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr><td colspan="2"><div class="groupHeader">Input and output</div></td></tr>
-<tr class="memitem:afa337fec5959d316b6dba7066c1dc5ca"><td class="memItemLeft" align="right" valign="top">std::istream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d66/namespace_kratos.html#afa337fec5959d316b6dba7066c1dc5ca">Kratos::operator&gt;&gt;</a> (std::istream &amp;rIStream, <a class="el" href="../../d1/d3e/class_kratos_application.html">KratosApplication</a> &amp;rThis)</td></tr>
-<tr class="memdesc:afa337fec5959d316b6dba7066c1dc5ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">input stream function  <a href="../../db/d66/namespace_kratos.html#afa337fec5959d316b6dba7066c1dc5ca">More...</a><br /></td></tr>
-<tr class="separator:afa337fec5959d316b6dba7066c1dc5ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9d7812008b9f216fea5c3e789e798ff2"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d66/namespace_kratos.html#a9d7812008b9f216fea5c3e789e798ff2">Kratos::operator&lt;&lt;</a> (std::ostream &amp;rOStream, const <a class="el" href="../../d1/d3e/class_kratos_application.html">KratosApplication</a> &amp;rThis)</td></tr>
-<tr class="memdesc:a9d7812008b9f216fea5c3e789e798ff2"><td class="mdescLeft">&#160;</td><td class="mdescRight">output stream function  <a href="../../db/d66/namespace_kratos.html#a9d7812008b9f216fea5c3e789e798ff2">More...</a><br /></td></tr>
-<tr class="separator:a9d7812008b9f216fea5c3e789e798ff2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafa337fec5959d316b6dba7066c1dc5ca"><td class="memItemLeft" align="right" valign="top">std::istream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dbe/group___application_name_application.html#gafa337fec5959d316b6dba7066c1dc5ca">Kratos::operator&gt;&gt;</a> (std::istream &amp;rIStream, <a class="el" href="../../d1/d3e/class_kratos_application.html">KratosApplication</a> &amp;rThis)</td></tr>
+<tr class="memdesc:gafa337fec5959d316b6dba7066c1dc5ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">input stream function  <a href="../../d4/dbe/group___application_name_application.html#gafa337fec5959d316b6dba7066c1dc5ca">More...</a><br /></td></tr>
+<tr class="separator:gafa337fec5959d316b6dba7066c1dc5ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9d7812008b9f216fea5c3e789e798ff2"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dbe/group___application_name_application.html#ga9d7812008b9f216fea5c3e789e798ff2">Kratos::operator&lt;&lt;</a> (std::ostream &amp;rOStream, const <a class="el" href="../../d1/d3e/class_kratos_application.html">KratosApplication</a> &amp;rThis)</td></tr>
+<tr class="memdesc:ga9d7812008b9f216fea5c3e789e798ff2"><td class="mdescLeft">&#160;</td><td class="mdescRight">output stream function  <a href="../../d4/dbe/group___application_name_application.html#ga9d7812008b9f216fea5c3e789e798ff2">More...</a><br /></td></tr>
+<tr class="separator:ga9d7812008b9f216fea5c3e789e798ff2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Mar 30 2023 02:17:22 for KratosMultiphysics by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Fri Mar 31 2023 02:17:15 for KratosMultiphysics by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

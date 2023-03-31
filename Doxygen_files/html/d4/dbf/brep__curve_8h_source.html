@@ -89,15 +89,15 @@ $(function() {
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment">//                   Kratos default license: kratos/license.txt</span></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment">//</span></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#if !defined(KRATOS_BREP_CURVE_3D_H_INCLUDED )</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#define  KRATOS_BREP_CURVE_3D_H_INCLUDED</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">// System includes</span></div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment">// External includes</span></div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment">// Project includes</span></div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d4/d67/geometry_8h.html">geometries/geometry.h</a>&quot;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">// System includes</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment">// External includes</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment">// Project includes</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d4/d67/geometry_8h.html">geometries/geometry.h</a>&quot;</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../de/d23/nurbs__curve__geometry_8h.html">geometries/nurbs_curve_geometry.h</a>&quot;</span></div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../df/d4a/nurbs__interval_8h.html">geometries/nurbs_shape_function_utilities/nurbs_interval.h</a>&quot;</span></div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
@@ -407,11 +407,11 @@ $(function() {
 <div class="line"><a name="l00457"></a><span class="lineno">  457</span>&#160;}; <span class="comment">// Class BrepCurve</span></div>
 <div class="line"><a name="l00458"></a><span class="lineno">  458</span>&#160; </div>
 <div class="line"><a name="l00461"></a><span class="lineno">  461</span>&#160; </div>
-<div class="line"><a name="l00463"></a><span class="lineno"><a class="line" href="../../db/d66/namespace_kratos.html#adb5c77853f11f7ad4ee6917917291f78">  463</a></span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">class</span> TContainerPo<span class="keywordtype">int</span>Type, <span class="keyword">class</span> TContainerPo<span class="keywordtype">int</span>EmbeddedType = TContainerPo<span class="keywordtype">int</span>Type&gt; <span class="keyword">inline</span> std::istream&amp; <a class="code" href="../../db/d66/namespace_kratos.html#a9c6097d0b0a27d1cea94992b1087f56a">operator &gt;&gt; </a>(</div>
+<div class="line"><a name="l00463"></a><span class="lineno"><a class="line" href="../../d4/dbe/group___application_name_application.html#gadb5c77853f11f7ad4ee6917917291f78">  463</a></span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">class</span> TContainerPo<span class="keywordtype">int</span>Type, <span class="keyword">class</span> TContainerPo<span class="keywordtype">int</span>EmbeddedType = TContainerPo<span class="keywordtype">int</span>Type&gt; <span class="keyword">inline</span> std::istream&amp; <a class="code" href="../../db/d66/namespace_kratos.html#a9c6097d0b0a27d1cea94992b1087f56a">operator &gt;&gt; </a>(</div>
 <div class="line"><a name="l00464"></a><span class="lineno">  464</span>&#160;    std::istream&amp; rIStream,</div>
 <div class="line"><a name="l00465"></a><span class="lineno">  465</span>&#160;    <a class="code" href="../../d3/d10/class_kratos_1_1_brep_curve.html">BrepCurve&lt;TContainerPointType, TContainerPointEmbeddedType&gt;</a>&amp; rThis );</div>
 <div class="line"><a name="l00466"></a><span class="lineno">  466</span>&#160; </div>
-<div class="line"><a name="l00468"></a><span class="lineno"><a class="line" href="../../db/d66/namespace_kratos.html#a845968c747938d7d5d2b424f66d9f9cc">  468</a></span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">class</span> TContainerPo<span class="keywordtype">int</span>Type, <span class="keyword">class</span> TContainerPo<span class="keywordtype">int</span>EmbeddedType = TContainerPo<span class="keywordtype">int</span>Type&gt; <span class="keyword">inline</span> std::ostream&amp; <a class="code" href="../../db/d66/namespace_kratos.html#acfc842a43d19dffc2d8105e5cbea17a9">operator &lt;&lt; </a>(</div>
+<div class="line"><a name="l00468"></a><span class="lineno"><a class="line" href="../../d4/dbe/group___application_name_application.html#ga845968c747938d7d5d2b424f66d9f9cc">  468</a></span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">class</span> TContainerPo<span class="keywordtype">int</span>Type, <span class="keyword">class</span> TContainerPo<span class="keywordtype">int</span>EmbeddedType = TContainerPo<span class="keywordtype">int</span>Type&gt; <span class="keyword">inline</span> std::ostream&amp; <a class="code" href="../../db/d66/namespace_kratos.html#acfc842a43d19dffc2d8105e5cbea17a9">operator &lt;&lt; </a>(</div>
 <div class="line"><a name="l00469"></a><span class="lineno">  469</span>&#160;    std::ostream&amp; rOStream,</div>
 <div class="line"><a name="l00470"></a><span class="lineno">  470</span>&#160;    <span class="keyword">const</span> <a class="code" href="../../d3/d10/class_kratos_1_1_brep_curve.html">BrepCurve&lt;TContainerPointType, TContainerPointEmbeddedType&gt;</a>&amp; rThis )</div>
 <div class="line"><a name="l00471"></a><span class="lineno">  471</span>&#160;{</div>
@@ -433,8 +433,6 @@ $(function() {
 <div class="line"><a name="l00490"></a><span class="lineno">  490</span>&#160;    1, 3, 1);</div>
 <div class="line"><a name="l00491"></a><span class="lineno">  491</span>&#160; </div>
 <div class="line"><a name="l00493"></a><span class="lineno">  493</span>&#160;}<span class="comment">// namespace Kratos.</span></div>
-<div class="line"><a name="l00494"></a><span class="lineno">  494</span>&#160; </div>
-<div class="line"><a name="l00495"></a><span class="lineno">  495</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// KRATOS_BREP_CURVE_3D_H_INCLUDED  defined</span></div>
 <div class="ttc" id="aclass_kratos_1_1_brep_curve_html"><div class="ttname"><a href="../../d3/d10/class_kratos_1_1_brep_curve.html">Kratos::BrepCurve</a></div><div class="ttdoc">The BrepCurve acts as topology for curves. Those can be enclosed by a certain set of points.</div><div class="ttdef"><b>Definition:</b> brep_curve.h:37</div></div>
 <div class="ttc" id="aclass_kratos_1_1_brep_curve_html_a03ebd3c39d8d3d00639507dbee2396b5"><div class="ttname"><a href="../../d3/d10/class_kratos_1_1_brep_curve.html#a03ebd3c39d8d3d00639507dbee2396b5">Kratos::BrepCurve::PolynomialDegree</a></div><div class="ttdeci">SizeType PolynomialDegree(IndexType LocalDirectionIndex) const override</div><div class="ttdoc">Return polynomial degree of the nurbs surface.</div><div class="ttdef"><b>Definition:</b> brep_curve.h:205</div></div>
 <div class="ttc" id="aclass_kratos_1_1_brep_curve_html_a08824646289de8b786d23b47844dd3a8"><div class="ttname"><a href="../../d3/d10/class_kratos_1_1_brep_curve.html#a08824646289de8b786d23b47844dd3a8">Kratos::BrepCurve::ShapeFunctionsValues</a></div><div class="ttdeci">Vector &amp; ShapeFunctionsValues(Vector &amp;rResult, const CoordinatesArrayType &amp;rCoordinates) const override</div><div class="ttdef"><b>Definition:</b> brep_curve.h:354</div></div>
@@ -514,11 +512,12 @@ $(function() {
 <div class="ttc" id="anamespace_kratos_html_acfc842a43d19dffc2d8105e5cbea17a9"><div class="ttname"><a href="../../db/d66/namespace_kratos.html#acfc842a43d19dffc2d8105e5cbea17a9">Kratos::operator&lt;&lt;</a></div><div class="ttdeci">std::ostream &amp; operator&lt;&lt;(std::ostream &amp;rOStream, const LinearMasterSlaveConstraint &amp;rThis)</div><div class="ttdoc">output stream function</div><div class="ttdef"><b>Definition:</b> linear_master_slave_constraint.h:432</div></div>
 <div class="ttc" id="anamespaceode__solve_html_a0b266774af0a13d56a57cf1ada122768"><div class="ttname"><a href="../../d2/df2/namespaceode__solve.html#a0b266774af0a13d56a57cf1ada122768">ode_solve.load</a></div><div class="ttdeci">def load(f)</div><div class="ttdef"><b>Definition:</b> ode_solve.py:307</div></div>
 <div class="ttc" id="anamespacetensors_html_a15a1da80aa773e2015eba781cababe05"><div class="ttname"><a href="../../d2/db8/namespacetensors.html#a15a1da80aa773e2015eba781cababe05">tensors::i</a></div><div class="ttdeci">integer i</div><div class="ttdef"><b>Definition:</b> TensorModule.f:17</div></div>
+<div class="ttc" id="anurbs__curve__geometry_8h_html"><div class="ttname"><a href="../../de/d23/nurbs__curve__geometry_8h.html">nurbs_curve_geometry.h</a></div></div>
 <div class="ttc" id="anurbs__interval_8h_html"><div class="ttname"><a href="../../df/d4a/nurbs__interval_8h.html">nurbs_interval.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Mar 30 2023 02:14:45 for KratosMultiphysics by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Fri Mar 31 2023 02:14:31 for KratosMultiphysics by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>
