@@ -163,7 +163,7 @@ $(function() {
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;            mSumObjectivesImprovements +=  std::abs(objective_improvement);</div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;            objetive.AddEmptyArray(<span class="stringliteral">&quot;controlled_objects_start_index&quot;</span>);</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;            objetive.AddEmptyArray(<span class="stringliteral">&quot;controlled_objects_size&quot;</span>);</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;            <span class="keywordflow">for</span>(<span class="keywordtype">int</span> objective_control_i = 0; objective_control_i&lt;objetive[<span class="stringliteral">&quot;controls&quot;</span>].size(); objective_control_i++){</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;            <span class="keywordflow">for</span>(<span class="keywordtype">long</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> objective_control_i = 0; objective_control_i&lt;objetive[<span class="stringliteral">&quot;controls&quot;</span>].size(); objective_control_i++){</div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;                <span class="keyword">auto</span> objective_control_name = objetive[<span class="stringliteral">&quot;controls&quot;</span>][objective_control_i].GetString();</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;                <span class="keyword">auto</span> objective_controlled_object_name = objetive[<span class="stringliteral">&quot;controlled_objects&quot;</span>][objective_control_i].GetString();</div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;                <span class="keywordtype">int</span> objective_control_object_start_index = 0;</div>
@@ -193,7 +193,7 @@ $(function() {
 <div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;        <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; constraint : mrSettings[<span class="stringliteral">&quot;constraints&quot;</span>]){</div>
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;            constraint.AddEmptyArray(<span class="stringliteral">&quot;controlled_objects_start_index&quot;</span>);</div>
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;            constraint.AddEmptyArray(<span class="stringliteral">&quot;controlled_objects_size&quot;</span>);</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;            <span class="keywordflow">for</span>(<span class="keywordtype">int</span> constraint_control_i = 0; constraint_control_i&lt;constraint[<span class="stringliteral">&quot;controls&quot;</span>].size(); constraint_control_i++){</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;            <span class="keywordflow">for</span>(<span class="keywordtype">long</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> constraint_control_i = 0; constraint_control_i&lt;constraint[<span class="stringliteral">&quot;controls&quot;</span>].size(); constraint_control_i++){</div>
 <div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;                <span class="keyword">auto</span> constraint_control_name = constraint[<span class="stringliteral">&quot;controls&quot;</span>][constraint_control_i].GetString();</div>
 <div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;                <span class="keyword">auto</span> constraint_controlled_object_name = constraint[<span class="stringliteral">&quot;controlled_objects&quot;</span>][constraint_control_i].GetString();</div>
 <div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;                <span class="keywordtype">int</span> constraint_control_object_start_index = 0;</div>
@@ -257,7 +257,7 @@ $(function() {
 <div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;            }</div>
 <div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160; </div>
 <div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;        </div>
-<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;            <span class="keywordflow">for</span>(<span class="keywordtype">int</span> objective_control_i = 0; objective_control_i&lt;objetive[<span class="stringliteral">&quot;controls&quot;</span>].size(); objective_control_i++){</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;            <span class="keywordflow">for</span>(<span class="keywordtype">long</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> objective_control_i = 0; objective_control_i&lt;objetive[<span class="stringliteral">&quot;controls&quot;</span>].size(); objective_control_i++){</div>
 <div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;                <span class="keyword">auto</span> objective_control_i_name = objetive[<span class="stringliteral">&quot;controls&quot;</span>][objective_control_i].GetString();</div>
 <div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;                <span class="keywordtype">double</span> objective_control_weight = 1.0;</div>
 <div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160; </div>
@@ -324,183 +324,179 @@ $(function() {
 <div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;                    </div>
 <div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;                    <span class="keywordflow">if</span>((const_type==<span class="stringliteral">&quot;equality&quot;</span>) || (const_type==<span class="stringliteral">&quot;initial_value_equality&quot;</span>)){</div>
 <div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;                        <span class="comment">//first check the oscill</span></div>
-<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;                        <span class="keywordflow">if</span>((100 * std::abs(previous_violation)&gt;1) &amp;&amp; (100 * std::abs(current_violation)&gt;1) &amp;&amp; (((current_violation&gt;0.0) &amp;&amp; (previous_violation&lt;0)) || ((current_violation&lt;0.0) &amp;&amp; (previous_violation&gt;0)))){</div>
-<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;                            <span class="keywordtype">double</span> <a class="code" href="../../d2/df2/namespaceode__solve.html#ad1537d840550734af395ea9e44a37321">mult</a> = std::abs(constraint[<span class="stringliteral">&quot;prev_itr_value&quot;</span>].GetDouble()-constraint[<span class="stringliteral">&quot;ref_value&quot;</span>].GetDouble());</div>
-<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;                            <a class="code" href="../../d2/df2/namespaceode__solve.html#ad1537d840550734af395ea9e44a37321">mult</a> /= std::abs(constraint[<span class="stringliteral">&quot;prev_itr_value&quot;</span>].GetDouble()-constraint[<span class="stringliteral">&quot;value&quot;</span>].GetDouble());</div>
-<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;                            weight *= 0.95; </div>
-<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;                        }</div>
-<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;                        <span class="keywordflow">else</span> <span class="keywordflow">if</span>((std::abs(current_violation)&gt;std::abs(previous_violation)) &amp;&amp; (100 * std::abs(previous_violation)&gt;0.5))</div>
-<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;                            weight *= 1.25;</div>
-<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;                        <span class="keywordflow">else</span> <span class="keywordflow">if</span>((std::abs(current_violation)&lt;std::abs(previous_violation)) &amp;&amp; (100 * std::abs(current_violation)&gt;0.5) &amp;&amp; (100 * std::abs(relative_change)&lt;1.0))</div>
-<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;                            weight *= 1.25;</div>
-<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;                        <span class="keywordflow">else</span> <span class="keywordflow">if</span>((100 * std::abs(previous_violation)&lt;0.1) &amp;&amp; (100 * std::abs(current_violation)&lt;0.1))</div>
-<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;                            weight *= 0.95;                                                                                </div>
-<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;                    }</div>
-<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;                    <span class="keywordflow">else</span>{</div>
-<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;                        <span class="keywordtype">bool</span> prev_itr_is_active = constraint[<span class="stringliteral">&quot;prev_itr_is_active&quot;</span>].GetBool();</div>
-<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;                        <span class="keywordflow">if</span>(prev_itr_is_active){</div>
-<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;                            <span class="keywordflow">if</span>((std::abs(current_violation)&gt;std::abs(previous_violation)) &amp;&amp; (100 * std::abs(previous_violation)&gt;1))</div>
-<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;                                weight *= 1.25;                        </div>
-<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;                            <span class="keywordflow">else</span> <span class="keywordflow">if</span>((std::abs(current_violation)&lt;std::abs(previous_violation)) &amp;&amp; (100 * std::abs(relative_change)&lt;1.0))</div>
-<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;                                weight *= 1.25;</div>
-<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;                        }</div>
-<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;                    }</div>
-<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160; </div>
-<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;                    <span class="keywordflow">if</span>(weight&lt;1.0)</div>
-<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;                        weight = 1.0;                        </div>
-<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;                } </div>
-<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;                constraint[<span class="stringliteral">&quot;weight&quot;</span>].SetDouble(weight);</div>
-<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160; </div>
-<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;                active_constraints_violations[constraint_index] = weight * (constraint[<span class="stringliteral">&quot;value&quot;</span>].GetDouble()-constraint[<span class="stringliteral">&quot;ref_value&quot;</span>].GetDouble()) / constraint[<span class="stringliteral">&quot;ref_value&quot;</span>].GetDouble();                </div>
-<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;                <span class="keywordflow">for</span>(<span class="keywordtype">int</span> constraint_control_i = 0; constraint_control_i&lt;constraint[<span class="stringliteral">&quot;controls&quot;</span>].size(); constraint_control_i++){</div>
-<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;                    <span class="keyword">auto</span> constraint_control_i_name = constraint[<span class="stringliteral">&quot;controls&quot;</span>][constraint_control_i].GetString();</div>
-<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;                    <span class="keywordtype">double</span> constraint_control_weight = 1.0;</div>
-<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160; </div>
-<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;                    <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; control : mrSettings[<span class="stringliteral">&quot;controls&quot;</span>]){</div>
-<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;                        <span class="keyword">auto</span> control_name = control[<span class="stringliteral">&quot;name&quot;</span>].GetString();</div>
-<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;                        <span class="keywordflow">if</span>(control_name==constraint_control_i_name)</div>
-<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;                            constraint_control_weight = control[<span class="stringliteral">&quot;constraints_weight&quot;</span>].GetDouble();</div>
-<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;                    }</div>
-<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160; </div>
-<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;                    <span class="keywordtype">int</span> constraint_controlled_object_start_index = constraint[<span class="stringliteral">&quot;controlled_objects_start_index&quot;</span>][constraint_control_i].GetInt();</div>
-<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;                    <span class="keywordtype">int</span> constraint_controlled_object_size = constraint[<span class="stringliteral">&quot;controlled_objects_size&quot;</span>][constraint_control_i].GetInt();</div>
-<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;                    <span class="keyword">auto</span> constraint_control_gradient_name = constraint[<span class="stringliteral">&quot;control_gradient_names&quot;</span>][constraint_control_i].GetString();</div>
-<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;                    <span class="keyword">auto</span> constraint_controlled_object_name = constraint[<span class="stringliteral">&quot;controlled_objects&quot;</span>][constraint_control_i].GetString();</div>
-<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;                    <a class="code" href="../../d4/d5e/class_model_part.html">ModelPart</a>&amp; constraint_controlled_obj_model_part = mrModel.GetModelPart(constraint_controlled_object_name);</div>
-<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;                    <span class="keywordtype">int</span> node_index=0;</div>
-<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;                    <span class="keywordtype">double</span> L2_norm =0;</div>
-<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;                    <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; <a class="code" href="../../d5/da1/structnode.html">node</a> : constraint_controlled_obj_model_part.Nodes()){</div>
-<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;                        <span class="keywordflow">if</span> (constraint_controlled_object_size==3){</div>
-<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;                            <span class="keyword">const</span> <span class="keyword">auto</span> &amp; nodal_gradient = <a class="code" href="../../d5/da1/structnode.html">node</a>.FastGetSolutionStepValue(KratosComponents&lt;Variable&lt;array_1d&lt;double,3&gt;&gt;&gt;::Get(constraint_control_gradient_name));</div>
-<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;                            <span class="keywordflow">for</span>(<span class="keywordtype">int</span> <a class="code" href="../../d2/db8/namespacetensors.html#a15a1da80aa773e2015eba781cababe05">i</a>=0; <a class="code" href="../../d2/db8/namespacetensors.html#a15a1da80aa773e2015eba781cababe05">i</a>&lt;constraint_controlled_object_size; <a class="code" href="../../d2/db8/namespacetensors.html#a15a1da80aa773e2015eba781cababe05">i</a>++){</div>
-<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;                                active_constraints_gradients(constraint_index,constraint_controlled_object_start_index+constraint_controlled_object_size*node_index+<a class="code" href="../../d2/db8/namespacetensors.html#a15a1da80aa773e2015eba781cababe05">i</a>) = nodal_gradient(<a class="code" href="../../d2/db8/namespacetensors.html#a15a1da80aa773e2015eba781cababe05">i</a>); </div>
-<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;                                L2_norm += nodal_gradient(<a class="code" href="../../d2/db8/namespacetensors.html#a15a1da80aa773e2015eba781cababe05">i</a>) * nodal_gradient(<a class="code" href="../../d2/db8/namespacetensors.html#a15a1da80aa773e2015eba781cababe05">i</a>);     </div>
-<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;                            }</div>
-<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;                        }</div>
-<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;                        <span class="keywordflow">else</span> <span class="keywordflow">if</span> (constraint_controlled_object_size==1) {</div>
-<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;                            <span class="keyword">const</span> <span class="keyword">auto</span> &amp; nodal_gradient = <a class="code" href="../../d5/da1/structnode.html">node</a>.FastGetSolutionStepValue(KratosComponents&lt;Variable&lt;double&gt;&gt;::Get(constraint_control_gradient_name));</div>
-<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;                            active_constraints_gradients(constraint_index,constraint_controlled_object_start_index+node_index) = nodal_gradient;</div>
-<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;                            L2_norm += nodal_gradient * nodal_gradient;</div>
-<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;                        } </div>
-<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;                        node_index++;</div>
-<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;                    }</div>
-<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;                    <span class="comment">// L2_norm = 1.0;</span></div>
-<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;                    L2_norm = std::sqrt(L2_norm);</div>
-<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;                    <span class="comment">// now do the l2_norm scaling</span></div>
-<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;                    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> <a class="code" href="../../d2/db8/namespacetensors.html#a15a1da80aa773e2015eba781cababe05">i</a>=0;<a class="code" href="../../d2/db8/namespacetensors.html#a15a1da80aa773e2015eba781cababe05">i</a>&lt;constraint_controlled_object_size*constraint_controlled_obj_model_part.Nodes().size();<a class="code" href="../../d2/db8/namespacetensors.html#a15a1da80aa773e2015eba781cababe05">i</a>++)</div>
-<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;                        active_constraints_gradients(constraint_index,constraint_controlled_object_start_index+<a class="code" href="../../d2/db8/namespacetensors.html#a15a1da80aa773e2015eba781cababe05">i</a>) *= (constraint_control_weight/L2_norm);</div>
-<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;                }</div>
-<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;                constraint_index++;                </div>
-<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;            }</div>
-<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;        }</div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;                        <span class="keywordflow">if</span>((100 * std::abs(previous_violation)&gt;1) &amp;&amp; (100 * std::abs(current_violation)&gt;1) &amp;&amp; (((current_violation&gt;0.0) &amp;&amp; (previous_violation&lt;0)) || ((current_violation&lt;0.0) &amp;&amp; (previous_violation&gt;0))))</div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;                            weight *= 0.95; </div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;                        <span class="keywordflow">else</span> <span class="keywordflow">if</span>((std::abs(current_violation)&gt;std::abs(previous_violation)) &amp;&amp; (100 * std::abs(previous_violation)&gt;0.5))</div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;                            weight *= 1.25;</div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;                        <span class="keywordflow">else</span> <span class="keywordflow">if</span>((std::abs(current_violation)&lt;std::abs(previous_violation)) &amp;&amp; (100 * std::abs(current_violation)&gt;0.5) &amp;&amp; (100 * std::abs(relative_change)&lt;1.0))</div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;                            weight *= 1.25;</div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;                        <span class="keywordflow">else</span> <span class="keywordflow">if</span>((100 * std::abs(previous_violation)&lt;0.1) &amp;&amp; (100 * std::abs(current_violation)&lt;0.1))</div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;                            weight *= 0.95;                                                                                </div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;                    }</div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;                    <span class="keywordflow">else</span>{</div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;                        <span class="keywordtype">bool</span> prev_itr_is_active = constraint[<span class="stringliteral">&quot;prev_itr_is_active&quot;</span>].GetBool();</div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;                        <span class="keywordflow">if</span>(prev_itr_is_active){</div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;                            <span class="keywordflow">if</span>((std::abs(current_violation)&gt;std::abs(previous_violation)) &amp;&amp; (100 * std::abs(previous_violation)&gt;1))</div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;                                weight *= 1.25;                        </div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;                            <span class="keywordflow">else</span> <span class="keywordflow">if</span>((std::abs(current_violation)&lt;std::abs(previous_violation)) &amp;&amp; (100 * std::abs(relative_change)&lt;1.0))</div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;                                weight *= 1.25;</div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;                        }</div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;                    }</div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160; </div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;                    <span class="keywordflow">if</span>(weight&lt;1.0)</div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;                        weight = 1.0;                        </div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;                } </div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;                constraint[<span class="stringliteral">&quot;weight&quot;</span>].SetDouble(weight);</div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160; </div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;                active_constraints_violations[constraint_index] = weight * (constraint[<span class="stringliteral">&quot;value&quot;</span>].GetDouble()-constraint[<span class="stringliteral">&quot;ref_value&quot;</span>].GetDouble()) / constraint[<span class="stringliteral">&quot;ref_value&quot;</span>].GetDouble();                </div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;                <span class="keywordflow">for</span>(<span class="keywordtype">long</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> constraint_control_i = 0; constraint_control_i&lt;constraint[<span class="stringliteral">&quot;controls&quot;</span>].size(); constraint_control_i++){</div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;                    <span class="keyword">auto</span> constraint_control_i_name = constraint[<span class="stringliteral">&quot;controls&quot;</span>][constraint_control_i].GetString();</div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;                    <span class="keywordtype">double</span> constraint_control_weight = 1.0;</div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160; </div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;                    <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; control : mrSettings[<span class="stringliteral">&quot;controls&quot;</span>]){</div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;                        <span class="keyword">auto</span> control_name = control[<span class="stringliteral">&quot;name&quot;</span>].GetString();</div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;                        <span class="keywordflow">if</span>(control_name==constraint_control_i_name)</div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;                            constraint_control_weight = control[<span class="stringliteral">&quot;constraints_weight&quot;</span>].GetDouble();</div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;                    }</div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160; </div>
+<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;                    <span class="keywordtype">int</span> constraint_controlled_object_start_index = constraint[<span class="stringliteral">&quot;controlled_objects_start_index&quot;</span>][constraint_control_i].GetInt();</div>
+<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;                    <span class="keywordtype">int</span> constraint_controlled_object_size = constraint[<span class="stringliteral">&quot;controlled_objects_size&quot;</span>][constraint_control_i].GetInt();</div>
+<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;                    <span class="keyword">auto</span> constraint_control_gradient_name = constraint[<span class="stringliteral">&quot;control_gradient_names&quot;</span>][constraint_control_i].GetString();</div>
+<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;                    <span class="keyword">auto</span> constraint_controlled_object_name = constraint[<span class="stringliteral">&quot;controlled_objects&quot;</span>][constraint_control_i].GetString();</div>
+<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;                    <a class="code" href="../../d4/d5e/class_model_part.html">ModelPart</a>&amp; constraint_controlled_obj_model_part = mrModel.GetModelPart(constraint_controlled_object_name);</div>
+<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;                    <span class="keywordtype">int</span> node_index=0;</div>
+<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;                    <span class="keywordtype">double</span> L2_norm =0;</div>
+<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;                    <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; <a class="code" href="../../d5/da1/structnode.html">node</a> : constraint_controlled_obj_model_part.Nodes()){</div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;                        <span class="keywordflow">if</span> (constraint_controlled_object_size==3){</div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;                            <span class="keyword">const</span> <span class="keyword">auto</span> &amp; nodal_gradient = <a class="code" href="../../d5/da1/structnode.html">node</a>.FastGetSolutionStepValue(KratosComponents&lt;Variable&lt;array_1d&lt;double,3&gt;&gt;&gt;::Get(constraint_control_gradient_name));</div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;                            <span class="keywordflow">for</span>(<span class="keywordtype">int</span> <a class="code" href="../../d2/db8/namespacetensors.html#a15a1da80aa773e2015eba781cababe05">i</a>=0; <a class="code" href="../../d2/db8/namespacetensors.html#a15a1da80aa773e2015eba781cababe05">i</a>&lt;constraint_controlled_object_size; <a class="code" href="../../d2/db8/namespacetensors.html#a15a1da80aa773e2015eba781cababe05">i</a>++){</div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;                                active_constraints_gradients(constraint_index,constraint_controlled_object_start_index+constraint_controlled_object_size*node_index+<a class="code" href="../../d2/db8/namespacetensors.html#a15a1da80aa773e2015eba781cababe05">i</a>) = nodal_gradient(<a class="code" href="../../d2/db8/namespacetensors.html#a15a1da80aa773e2015eba781cababe05">i</a>); </div>
+<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;                                L2_norm += nodal_gradient(<a class="code" href="../../d2/db8/namespacetensors.html#a15a1da80aa773e2015eba781cababe05">i</a>) * nodal_gradient(<a class="code" href="../../d2/db8/namespacetensors.html#a15a1da80aa773e2015eba781cababe05">i</a>);     </div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;                            }</div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;                        }</div>
+<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;                        <span class="keywordflow">else</span> <span class="keywordflow">if</span> (constraint_controlled_object_size==1) {</div>
+<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;                            <span class="keyword">const</span> <span class="keyword">auto</span> &amp; nodal_gradient = <a class="code" href="../../d5/da1/structnode.html">node</a>.FastGetSolutionStepValue(KratosComponents&lt;Variable&lt;double&gt;&gt;::Get(constraint_control_gradient_name));</div>
+<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;                            active_constraints_gradients(constraint_index,constraint_controlled_object_start_index+node_index) = nodal_gradient;</div>
+<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;                            L2_norm += nodal_gradient * nodal_gradient;</div>
+<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;                        } </div>
+<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;                        node_index++;</div>
+<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;                    }</div>
+<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;                    <span class="comment">// L2_norm = 1.0;</span></div>
+<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;                    L2_norm = std::sqrt(L2_norm);</div>
+<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;                    <span class="comment">// now do the l2_norm scaling</span></div>
+<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;                    <span class="keywordflow">for</span> (<span class="keywordtype">long</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="../../d2/db8/namespacetensors.html#a15a1da80aa773e2015eba781cababe05">i</a>=0;<a class="code" href="../../d2/db8/namespacetensors.html#a15a1da80aa773e2015eba781cababe05">i</a>&lt;constraint_controlled_object_size*constraint_controlled_obj_model_part.Nodes().size();<a class="code" href="../../d2/db8/namespacetensors.html#a15a1da80aa773e2015eba781cababe05">i</a>++)</div>
+<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;                        active_constraints_gradients(constraint_index,constraint_controlled_object_start_index+<a class="code" href="../../d2/db8/namespacetensors.html#a15a1da80aa773e2015eba781cababe05">i</a>) *= (constraint_control_weight/L2_norm);</div>
+<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;                }</div>
+<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;                constraint_index++;                </div>
+<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;            }</div>
+<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;        }</div>
+<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160; </div>
+<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;        <span class="keywordflow">for</span>(<span class="keywordtype">int</span> cons_i=0;cons_i&lt;num_active_constraints;cons_i++)</div>
+<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;            <a class="code" href="../../db/d66/namespace_kratos.html#aaff3672cc52b90ee3d84713de272e1b5">noalias</a>(<a class="code" href="../../db/d66/namespace_kratos.html#ab15e733333d61f7c78e9c1ba2d5a8626">row</a>(active_constraints_gradients,cons_i)) = <a class="code" href="../../db/d66/namespace_kratos.html#ab15e733333d61f7c78e9c1ba2d5a8626">row</a>(active_constraints_gradients,cons_i)/<a class="code" href="../../db/d66/namespace_kratos.html#a0c30d2b162b4757f7012f7006a8f1628">norm_2</a>(<a class="code" href="../../db/d66/namespace_kratos.html#ab15e733333d61f7c78e9c1ba2d5a8626">row</a>(active_constraints_gradients,cons_i));        </div>
 <div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160; </div>
-<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;        <span class="keywordflow">for</span>(<span class="keywordtype">int</span> cons_i=0;cons_i&lt;num_active_constraints;cons_i++)</div>
-<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;            <a class="code" href="../../db/d66/namespace_kratos.html#aaff3672cc52b90ee3d84713de272e1b5">noalias</a>(<a class="code" href="../../db/d66/namespace_kratos.html#ab15e733333d61f7c78e9c1ba2d5a8626">row</a>(active_constraints_gradients,cons_i)) = <a class="code" href="../../db/d66/namespace_kratos.html#ab15e733333d61f7c78e9c1ba2d5a8626">row</a>(active_constraints_gradients,cons_i)/<a class="code" href="../../db/d66/namespace_kratos.html#a0c30d2b162b4757f7012f7006a8f1628">norm_2</a>(<a class="code" href="../../db/d66/namespace_kratos.html#ab15e733333d61f7c78e9c1ba2d5a8626">row</a>(active_constraints_gradients,cons_i));        </div>
-<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160; </div>
+<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160; </div>
+<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;        <span class="keyword">auto</span> projection_step_size = mrSettings[<span class="stringliteral">&quot;projection_step_size&quot;</span>].GetDouble();</div>
+<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;        <span class="keyword">auto</span> correction_step_size = mrSettings[<span class="stringliteral">&quot;correction_step_size&quot;</span>].GetDouble();        </div>
 <div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160; </div>
-<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;        <span class="keyword">auto</span> projection_step_size = mrSettings[<span class="stringliteral">&quot;projection_step_size&quot;</span>].GetDouble();</div>
-<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;        <span class="keyword">auto</span> correction_step_size = mrSettings[<span class="stringliteral">&quot;correction_step_size&quot;</span>].GetDouble();        </div>
-<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160; </div>
-<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;        <span class="comment">// apply contraction if necessary</span></div>
-<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;        <span class="keywordflow">if</span> (opt_itr&gt;2 &amp;&amp; current_is_feasible &amp;&amp; prev_is_feasible &amp;&amp; (sum_objective_value&gt;last_feasible_obj_val))</div>
-<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;            mSumObjectivesImprovements *= 0.9;</div>
+<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;        <span class="comment">// apply contraction if necessary</span></div>
+<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;        <span class="keywordflow">if</span> (opt_itr&gt;2 &amp;&amp; current_is_feasible &amp;&amp; prev_is_feasible &amp;&amp; (sum_objective_value&gt;last_feasible_obj_val))</div>
+<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;            mSumObjectivesImprovements *= 0.9;</div>
+<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160; </div>
+<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;        <span class="keywordflow">if</span> (opt_itr&gt;2 &amp;&amp; current_is_feasible &amp;&amp; prev_is_feasible &amp;&amp; (sum_objective_value&lt;last_feasible_obj_val))</div>
+<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;            mSumObjectivesImprovements *= 1.01;            </div>
 <div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160; </div>
-<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;        <span class="keywordflow">if</span> (opt_itr&gt;2 &amp;&amp; current_is_feasible &amp;&amp; prev_is_feasible &amp;&amp; (sum_objective_value&lt;last_feasible_obj_val))</div>
-<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;            mSumObjectivesImprovements *= 1.01;            </div>
-<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160; </div>
-<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;        <a class="code" href="../../d1/d8c/logger_8h.html#a1aa4c61e78fd7fa7e4972ed28500bd6d">KRATOS_INFO</a>(<span class="stringliteral">&quot;mSumObjectivesImprovements: &quot;</span>)&lt;&lt;mSumObjectivesImprovements&lt;&lt;std::endl;</div>
-<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160; </div>
-<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;        <span class="keywordflow">if</span>(opt_itr&gt;1){</div>
-<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;        </div>
-<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;            <span class="keywordtype">double</span> scale = 1.0;</div>
-<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;            <span class="keywordtype">double</span> ratio = mSumObjectivesImprovements/abs(sum_obj_improvement);</div>
-<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;            <span class="keywordflow">if</span>(ratio&gt;1.0 &amp;&amp; sum_obj_improvement&lt;0.0 &amp;&amp; sum_obj_improvement_prev&lt;0.0 &amp;&amp; current_is_feasible &amp;&amp; prev_is_feasible)</div>
-<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;                scale = ratio; </div>
+<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;        <a class="code" href="../../d1/d8c/logger_8h.html#a1aa4c61e78fd7fa7e4972ed28500bd6d">KRATOS_INFO</a>(<span class="stringliteral">&quot;mSumObjectivesImprovements: &quot;</span>)&lt;&lt;mSumObjectivesImprovements&lt;&lt;std::endl;</div>
+<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160; </div>
+<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;        <span class="keywordflow">if</span>(opt_itr&gt;1){</div>
+<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;        </div>
+<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;            <span class="keywordtype">double</span> scale = 1.0;</div>
+<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;            <span class="keywordtype">double</span> ratio = mSumObjectivesImprovements/abs(sum_obj_improvement);</div>
+<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;            <span class="keywordflow">if</span>(ratio&gt;1.0 &amp;&amp; sum_obj_improvement&lt;0.0 &amp;&amp; sum_obj_improvement_prev&lt;0.0 &amp;&amp; current_is_feasible &amp;&amp; prev_is_feasible)</div>
+<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;                scale = ratio; </div>
+<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160; </div>
+<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;            <span class="keywordflow">if</span>(ratio&lt;1.0 &amp;&amp; sum_obj_improvement&lt;0.0 &amp;&amp; sum_obj_improvement_prev&lt;0.0 &amp;&amp; current_is_feasible &amp;&amp; prev_is_feasible)</div>
+<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;                scale = ratio;</div>
 <div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160; </div>
-<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;            <span class="keywordflow">if</span>(ratio&lt;1.0 &amp;&amp; sum_obj_improvement&lt;0.0 &amp;&amp; sum_obj_improvement_prev&lt;0.0 &amp;&amp; current_is_feasible &amp;&amp; prev_is_feasible)</div>
-<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;                scale = ratio;</div>
-<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160; </div>
-<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;            <span class="keywordflow">if</span>(scale&gt;1.2)</div>
-<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;                scale = 1.2; </div>
-<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;            <span class="keywordflow">if</span>(scale&lt;0.8) </div>
-<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;                scale = 0.8;                  </div>
+<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;            <span class="keywordflow">if</span>(scale&gt;1.2)</div>
+<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;                scale = 1.2; </div>
+<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;            <span class="keywordflow">if</span>(scale&lt;0.8) </div>
+<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;                scale = 0.8;                  </div>
+<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160; </div>
+<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;            <span class="keywordflow">if</span>(sum_obj_improvement&gt;0.0 &amp;&amp; current_is_feasible &amp;&amp; prev_is_feasible)</div>
+<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;                scale = 0.8;</div>
 <div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160; </div>
-<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;            <span class="keywordflow">if</span>(sum_obj_improvement&gt;0.0 &amp;&amp; current_is_feasible &amp;&amp; prev_is_feasible)</div>
-<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;                scale = 0.8;</div>
+<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;            projection_step_size *= scale;</div>
+<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;            mrSettings[<span class="stringliteral">&quot;projection_step_size&quot;</span>].SetDouble(projection_step_size);</div>
 <div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160; </div>
-<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;            projection_step_size *= scale;</div>
-<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;            mrSettings[<span class="stringliteral">&quot;projection_step_size&quot;</span>].SetDouble(projection_step_size);</div>
-<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160; </div>
-<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;            <span class="keywordflow">if</span>(current_is_feasible)</div>
-<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;                last_feasible_obj_val = sum_objective_value;</div>
-<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;        }</div>
+<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;            <span class="keywordflow">if</span>(current_is_feasible)</div>
+<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;                last_feasible_obj_val = sum_objective_value;</div>
+<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;        }</div>
+<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160; </div>
+<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;        sum_obj_improvement_prev = sum_obj_improvement;</div>
+<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;        prev_is_feasible = current_is_feasible;         </div>
 <div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160; </div>
-<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;        sum_obj_improvement_prev = sum_obj_improvement;</div>
-<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;        prev_is_feasible = current_is_feasible;         </div>
-<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160; </div>
-<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;         </div>
-<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;        <span class="keywordflow">if</span>(num_active_constraints&gt;0)</div>
-<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;        {</div>
-<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;            <span class="comment">// compute feasible self.lin_solversearch direction</span></div>
-<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;            <a class="code" href="../../db/d66/namespace_kratos.html#a546e4f1c8e62734795679d3b59448410">Matrix</a> NTN = <a class="code" href="../../db/d66/namespace_kratos.html#a63ea2d1c3abad6c974480d8ca9eb7bba">prod</a>(active_constraints_gradients,<a class="code" href="../../db/d66/namespace_kratos.html#abe689ad156630b755bfd4a6b92ded2c0">trans</a>(active_constraints_gradients));</div>
-<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;            <a class="code" href="../../db/d66/namespace_kratos.html#a546e4f1c8e62734795679d3b59448410">Matrix</a> I = <a class="code" href="../../db/d66/namespace_kratos.html#a0dd2d083f48d867f5e0271bdf91b036e">IdentityMatrix</a>(active_constraints_gradients.size1());</div>
-<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;            <a class="code" href="../../db/d66/namespace_kratos.html#a546e4f1c8e62734795679d3b59448410">Matrix</a> NTN_inv(NTN.size1(), NTN.size2());</div>
-<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160; </div>
-<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;            mrSolver.Solve(NTN, NTN_inv, I); <span class="comment">// solve with identity to get the inverse</span></div>
-<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160; </div>
-<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;            <a class="code" href="../../db/d66/namespace_kratos.html#a2382ac8a486c0d52da7ce94f4ccd6d70">Vector</a> projection = - (mObjectiveGradients - <a class="code" href="../../db/d66/namespace_kratos.html#a63ea2d1c3abad6c974480d8ca9eb7bba">prod</a>(<a class="code" href="../../db/d66/namespace_kratos.html#abe689ad156630b755bfd4a6b92ded2c0">trans</a>(active_constraints_gradients), <a class="code" href="../../db/d66/namespace_kratos.html#a2382ac8a486c0d52da7ce94f4ccd6d70">Vector</a>(<a class="code" href="../../db/d66/namespace_kratos.html#a63ea2d1c3abad6c974480d8ca9eb7bba">prod</a>(NTN_inv, <a class="code" href="../../db/d66/namespace_kratos.html#a2382ac8a486c0d52da7ce94f4ccd6d70">Vector</a>(<a class="code" href="../../db/d66/namespace_kratos.html#a63ea2d1c3abad6c974480d8ca9eb7bba">prod</a>(active_constraints_gradients, mObjectiveGradients))))));</div>
-<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;            <a class="code" href="../../db/d66/namespace_kratos.html#a2382ac8a486c0d52da7ce94f4ccd6d70">Vector</a> correction = - <a class="code" href="../../db/d66/namespace_kratos.html#a63ea2d1c3abad6c974480d8ca9eb7bba">prod</a>(<a class="code" href="../../db/d66/namespace_kratos.html#abe689ad156630b755bfd4a6b92ded2c0">trans</a>(active_constraints_gradients), <a class="code" href="../../db/d66/namespace_kratos.html#a2382ac8a486c0d52da7ce94f4ccd6d70">Vector</a>(<a class="code" href="../../db/d66/namespace_kratos.html#a63ea2d1c3abad6c974480d8ca9eb7bba">prod</a>(NTN_inv,active_constraints_violations)));</div>
-<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;            <span class="keywordtype">double</span> current_sin_alpha = <a class="code" href="../../db/d66/namespace_kratos.html#a0c30d2b162b4757f7012f7006a8f1628">norm_2</a>(projection);</div>
-<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;            <span class="keywordtype">double</span> prev_sin_alpha = mrSettings[<span class="stringliteral">&quot;sin_alpha&quot;</span>].GetDouble();</div>
-<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;            mrSettings[<span class="stringliteral">&quot;sin_alpha&quot;</span>].SetDouble(current_sin_alpha);</div>
-<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;    </div>
-<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;            mSearchDirection = (projection_step_size * projection / <a class="code" href="../../db/d66/namespace_kratos.html#a0c30d2b162b4757f7012f7006a8f1628">norm_2</a>(projection)) + (correction_step_size * correction);</div>
-<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;        }</div>
-<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;        <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;            mSearchDirection = - projection_step_size * mObjectiveGradients / <a class="code" href="../../db/d66/namespace_kratos.html#a0c30d2b162b4757f7012f7006a8f1628">norm_2</a>(mObjectiveGradients);</div>
-<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;            </div>
-<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;        <span class="comment">// set the updates</span></div>
-<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;        <span class="keywordtype">int</span> index = 0;</div>
-<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;        <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; control : mrSettings[<span class="stringliteral">&quot;controls&quot;</span>]){</div>
-<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;            <span class="keywordtype">int</span> control_size = control[<span class="stringliteral">&quot;size&quot;</span>].GetInt();</div>
-<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;            <span class="keyword">auto</span> control_update_name = control[<span class="stringliteral">&quot;update_name&quot;</span>].GetString();</div>
-<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160; </div>
-<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;            <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; control_obj : control[<span class="stringliteral">&quot;controlling_objects&quot;</span>]){</div>
-<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;                <a class="code" href="../../d4/d5e/class_model_part.html">ModelPart</a>&amp; r_controlling_object = mrModel.GetModelPart(control_obj.GetString());</div>
-<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;                <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; <a class="code" href="../../d5/da1/structnode.html">node</a> : r_controlling_object.Nodes()){</div>
-<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;                    <span class="keywordflow">if</span> (control_size==3){</div>
-<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;                        <span class="keyword">auto</span> &amp; nodal_update = <a class="code" href="../../d5/da1/structnode.html">node</a>.FastGetSolutionStepValue(KratosComponents&lt;Variable&lt;array_1d&lt;double,3&gt;&gt;&gt;::Get(control_update_name));</div>
-<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;                        nodal_update(0) = mSearchDirection[index];</div>
-<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;                        nodal_update(1) = mSearchDirection[index+1];</div>
-<div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;                        nodal_update(2) = mSearchDirection[index+2];</div>
-<div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;                        index += 3;</div>
-<div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;                    }</div>
-<div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;                    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (control_size==1){</div>
-<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;                        <span class="keyword">auto</span> &amp; nodal_update = <a class="code" href="../../d5/da1/structnode.html">node</a>.FastGetSolutionStepValue(KratosComponents&lt;Variable&lt;double&gt;&gt;::Get(control_update_name));</div>
-<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;                        nodal_update = mSearchDirection[index];</div>
-<div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;                        index += 1;</div>
-<div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;                    }</div>
-<div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;                }</div>
-<div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;            }</div>
-<div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;        }</div>
-<div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;    };</div>
-<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160; </div>
-<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;    <a class="code" href="../../db/d66/namespace_kratos.html#a2382ac8a486c0d52da7ce94f4ccd6d70">Vector</a> mSearchDirection;</div>
-<div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;    LinearSolver&lt;DenseSpace, DenseSpace&gt;&amp; mrSolver;</div>
-<div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;    <span class="keywordtype">int</span> mTotalNumControlVars;</div>
-<div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;    <span class="keywordtype">double</span> mSumObjectivesImprovements;</div>
-<div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;    <span class="keywordtype">double</span> sum_obj_improvement;  </div>
-<div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;    <span class="keywordtype">double</span> sum_obj_improvement_prev;</div>
-<div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;    <span class="keywordtype">double</span> last_feasible_obj_val;</div>
-<div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160;    <span class="keywordtype">bool</span> current_is_feasible;</div>
-<div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;    <span class="keywordtype">bool</span> prev_is_feasible;</div>
-<div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160; </div>
+<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;         </div>
+<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;        <span class="keywordflow">if</span>(num_active_constraints&gt;0)</div>
+<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;        {</div>
+<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;            <span class="comment">// compute feasible self.lin_solversearch direction</span></div>
+<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;            <a class="code" href="../../db/d66/namespace_kratos.html#a546e4f1c8e62734795679d3b59448410">Matrix</a> NTN = <a class="code" href="../../db/d66/namespace_kratos.html#a63ea2d1c3abad6c974480d8ca9eb7bba">prod</a>(active_constraints_gradients,<a class="code" href="../../db/d66/namespace_kratos.html#abe689ad156630b755bfd4a6b92ded2c0">trans</a>(active_constraints_gradients));</div>
+<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;            <a class="code" href="../../db/d66/namespace_kratos.html#a546e4f1c8e62734795679d3b59448410">Matrix</a> I = <a class="code" href="../../db/d66/namespace_kratos.html#a0dd2d083f48d867f5e0271bdf91b036e">IdentityMatrix</a>(active_constraints_gradients.size1());</div>
+<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;            <a class="code" href="../../db/d66/namespace_kratos.html#a546e4f1c8e62734795679d3b59448410">Matrix</a> NTN_inv(NTN.size1(), NTN.size2());</div>
+<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160; </div>
+<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;            mrSolver.Solve(NTN, NTN_inv, I); <span class="comment">// solve with identity to get the inverse</span></div>
+<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160; </div>
+<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;            <a class="code" href="../../db/d66/namespace_kratos.html#a2382ac8a486c0d52da7ce94f4ccd6d70">Vector</a> projection = - (mObjectiveGradients - <a class="code" href="../../db/d66/namespace_kratos.html#a63ea2d1c3abad6c974480d8ca9eb7bba">prod</a>(<a class="code" href="../../db/d66/namespace_kratos.html#abe689ad156630b755bfd4a6b92ded2c0">trans</a>(active_constraints_gradients), <a class="code" href="../../db/d66/namespace_kratos.html#a2382ac8a486c0d52da7ce94f4ccd6d70">Vector</a>(<a class="code" href="../../db/d66/namespace_kratos.html#a63ea2d1c3abad6c974480d8ca9eb7bba">prod</a>(NTN_inv, <a class="code" href="../../db/d66/namespace_kratos.html#a2382ac8a486c0d52da7ce94f4ccd6d70">Vector</a>(<a class="code" href="../../db/d66/namespace_kratos.html#a63ea2d1c3abad6c974480d8ca9eb7bba">prod</a>(active_constraints_gradients, mObjectiveGradients))))));</div>
+<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;            <a class="code" href="../../db/d66/namespace_kratos.html#a2382ac8a486c0d52da7ce94f4ccd6d70">Vector</a> correction = - <a class="code" href="../../db/d66/namespace_kratos.html#a63ea2d1c3abad6c974480d8ca9eb7bba">prod</a>(<a class="code" href="../../db/d66/namespace_kratos.html#abe689ad156630b755bfd4a6b92ded2c0">trans</a>(active_constraints_gradients), <a class="code" href="../../db/d66/namespace_kratos.html#a2382ac8a486c0d52da7ce94f4ccd6d70">Vector</a>(<a class="code" href="../../db/d66/namespace_kratos.html#a63ea2d1c3abad6c974480d8ca9eb7bba">prod</a>(NTN_inv,active_constraints_violations)));</div>
+<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;            <span class="keywordtype">double</span> current_sin_alpha = <a class="code" href="../../db/d66/namespace_kratos.html#a0c30d2b162b4757f7012f7006a8f1628">norm_2</a>(projection);</div>
+<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;            mrSettings[<span class="stringliteral">&quot;sin_alpha&quot;</span>].SetDouble(current_sin_alpha);</div>
+<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;    </div>
+<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;            mSearchDirection = (projection_step_size * projection / <a class="code" href="../../db/d66/namespace_kratos.html#a0c30d2b162b4757f7012f7006a8f1628">norm_2</a>(projection)) + (correction_step_size * correction);</div>
+<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;        }</div>
+<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;        <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;            mSearchDirection = - projection_step_size * mObjectiveGradients / <a class="code" href="../../db/d66/namespace_kratos.html#a0c30d2b162b4757f7012f7006a8f1628">norm_2</a>(mObjectiveGradients);</div>
+<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;            </div>
+<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;        <span class="comment">// set the updates</span></div>
+<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;        <span class="keywordtype">int</span> index = 0;</div>
+<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;        <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; control : mrSettings[<span class="stringliteral">&quot;controls&quot;</span>]){</div>
+<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;            <span class="keywordtype">int</span> control_size = control[<span class="stringliteral">&quot;size&quot;</span>].GetInt();</div>
+<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;            <span class="keyword">auto</span> control_update_name = control[<span class="stringliteral">&quot;update_name&quot;</span>].GetString();</div>
+<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160; </div>
+<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;            <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; control_obj : control[<span class="stringliteral">&quot;controlling_objects&quot;</span>]){</div>
+<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;                <a class="code" href="../../d4/d5e/class_model_part.html">ModelPart</a>&amp; r_controlling_object = mrModel.GetModelPart(control_obj.GetString());</div>
+<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;                <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; <a class="code" href="../../d5/da1/structnode.html">node</a> : r_controlling_object.Nodes()){</div>
+<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;                    <span class="keywordflow">if</span> (control_size==3){</div>
+<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;                        <span class="keyword">auto</span> &amp; nodal_update = <a class="code" href="../../d5/da1/structnode.html">node</a>.FastGetSolutionStepValue(KratosComponents&lt;Variable&lt;array_1d&lt;double,3&gt;&gt;&gt;::Get(control_update_name));</div>
+<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;                        nodal_update(0) = mSearchDirection[index];</div>
+<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;                        nodal_update(1) = mSearchDirection[index+1];</div>
+<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;                        nodal_update(2) = mSearchDirection[index+2];</div>
+<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;                        index += 3;</div>
+<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;                    }</div>
+<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;                    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (control_size==1){</div>
+<div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;                        <span class="keyword">auto</span> &amp; nodal_update = <a class="code" href="../../d5/da1/structnode.html">node</a>.FastGetSolutionStepValue(KratosComponents&lt;Variable&lt;double&gt;&gt;::Get(control_update_name));</div>
+<div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;                        nodal_update = mSearchDirection[index];</div>
+<div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;                        index += 1;</div>
+<div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;                    }</div>
+<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;                }</div>
+<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;            }</div>
+<div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;        }</div>
+<div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;    };</div>
+<div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160; </div>
+<div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;    <a class="code" href="../../db/d66/namespace_kratos.html#a2382ac8a486c0d52da7ce94f4ccd6d70">Vector</a> mSearchDirection;</div>
+<div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;    LinearSolver&lt;DenseSpace, DenseSpace&gt;&amp; mrSolver;</div>
+<div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;    <span class="keywordtype">int</span> mTotalNumControlVars;</div>
+<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;    <span class="keywordtype">double</span> mSumObjectivesImprovements;</div>
+<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;    <span class="keywordtype">double</span> sum_obj_improvement;  </div>
+<div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;    <span class="keywordtype">double</span> sum_obj_improvement_prev;</div>
+<div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;    <span class="keywordtype">double</span> last_feasible_obj_val;</div>
+<div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;    <span class="keywordtype">bool</span> current_is_feasible;</div>
+<div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;    <span class="keywordtype">bool</span> prev_is_feasible;</div>
+<div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160; </div>
+<div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160; </div>
+<div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160;}; <span class="comment">// Class OptimizationAlgorithm</span></div>
+<div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160; </div>
+<div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;}  <span class="comment">// namespace Kratos.</span></div>
 <div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160; </div>
-<div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160;}; <span class="comment">// Class OptimizationAlgorithm</span></div>
-<div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160; </div>
-<div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;}  <span class="comment">// namespace Kratos.</span></div>
-<div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160; </div>
-<div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// GRADIENT_PROJECTION_H</span></div>
+<div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// GRADIENT_PROJECTION_H</span></div>
 <div class="ttc" id="aalgorithm__base_8h_html"><div class="ttname"><a href="../../dd/d42/algorithm__base_8h.html">algorithm_base.h</a></div></div>
 <div class="ttc" id="aclass_model_html"><div class="ttname"><a href="../../d0/de3/class_model.html">Model</a></div><div class="ttdoc">This class aims to manage different model parts across multi-physics simulations.</div></div>
 <div class="ttc" id="aclass_model_part_html"><div class="ttname"><a href="../../d4/d5e/class_model_part.html">ModelPart</a></div><div class="ttdoc">This class aims to manage meshes for multi-physics simulations.</div><div class="ttdef"><b>Definition:</b> model_part.h:66</div></div>
@@ -522,7 +518,6 @@ $(function() {
 <div class="ttc" id="anamespace_kratos_html_aaff3672cc52b90ee3d84713de272e1b5"><div class="ttname"><a href="../../db/d66/namespace_kratos.html#aaff3672cc52b90ee3d84713de272e1b5">Kratos::noalias</a></div><div class="ttdeci">T &amp; noalias(T &amp;TheMatrix)</div><div class="ttdef"><b>Definition:</b> amatrix_interface.h:484</div></div>
 <div class="ttc" id="anamespace_kratos_html_ab15e733333d61f7c78e9c1ba2d5a8626"><div class="ttname"><a href="../../db/d66/namespace_kratos.html#ab15e733333d61f7c78e9c1ba2d5a8626">Kratos::row</a></div><div class="ttdeci">AMatrix::MatrixRow&lt; const TExpressionType &gt; row(AMatrix::MatrixExpression&lt; TExpressionType, TCategory &gt; const &amp;TheExpression, std::size_t RowIndex)</div><div class="ttdef"><b>Definition:</b> amatrix_interface.h:649</div></div>
 <div class="ttc" id="anamespace_kratos_html_abe689ad156630b755bfd4a6b92ded2c0"><div class="ttname"><a href="../../db/d66/namespace_kratos.html#abe689ad156630b755bfd4a6b92ded2c0">Kratos::trans</a></div><div class="ttdeci">AMatrix::TransposeMatrix&lt; const T &gt; trans(const T &amp;TheMatrix)</div><div class="ttdef"><b>Definition:</b> amatrix_interface.h:486</div></div>
-<div class="ttc" id="anamespaceode__solve_html_ad1537d840550734af395ea9e44a37321"><div class="ttname"><a href="../../d2/df2/namespaceode__solve.html#ad1537d840550734af395ea9e44a37321">ode_solve.mult</a></div><div class="ttdeci">def mult(A, x)</div><div class="ttdef"><b>Definition:</b> ode_solve.py:320</div></div>
 <div class="ttc" id="anamespacetensors_html_a15a1da80aa773e2015eba781cababe05"><div class="ttname"><a href="../../d2/db8/namespacetensors.html#a15a1da80aa773e2015eba781cababe05">tensors::i</a></div><div class="ttdeci">integer i</div><div class="ttdef"><b>Definition:</b> TensorModule.f:17</div></div>
 <div class="ttc" id="astructnode_html"><div class="ttname"><a href="../../d5/da1/structnode.html">node</a></div><div class="ttdef"><b>Definition:</b> mesh_converter.cpp:38</div></div>
 <div class="ttc" id="atransfer__utility_8h_html_a95ed76edc983cae239b65f370953d216"><div class="ttname"><a href="../../d6/d3f/transfer__utility_8h.html#a95ed76edc983cae239b65f370953d216">KRATOS_CLASS_POINTER_DEFINITION</a></div><div class="ttdeci">KRATOS_CLASS_POINTER_DEFINITION(TransferUtility)</div></div>
@@ -530,7 +525,7 @@ $(function() {
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 31 2023 02:11:52 for KratosMultiphysics by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Sat Apr 1 2023 02:07:58 for KratosMultiphysics by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

@@ -119,57 +119,56 @@ var sectionId = 'dynsection-0';
 <g id="node2" class="node">
 <title>Node2</title>
 <g id="a_node2"><a xlink:href="../../d3/d58/class_kratos_1_1_explicit_solving_strategy.html" target="_top" xlink:title="Explicit solving strategy base class.">
-<polygon fill="none" stroke="black" points="266,-2278.5 266,-2830.5 447,-2830.5 447,-2278.5 266,-2278.5"/>
-<text text-anchor="start" x="274" y="-2818.5" font-family="Helvetica,sans-Serif" font-size="10.00">Kratos::ExplicitSolvingStrategy</text>
-<text text-anchor="middle" x="356.5" y="-2807.5" font-family="Helvetica,sans-Serif" font-size="10.00">&lt; TSparseSpace, TDenseSpace &gt;</text>
-<polyline fill="none" stroke="black" points="266,-2800.5 447,-2800.5 "/>
-<text text-anchor="start" x="274" y="-2788.5" font-family="Helvetica,sans-Serif" font-size="10.00"># mRebuildLevel</text>
-<polyline fill="none" stroke="black" points="266,-2781.5 447,-2781.5 "/>
-<text text-anchor="start" x="274" y="-2769.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ ExplicitSolvingStrategy()</text>
-<text text-anchor="start" x="274" y="-2758.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ ExplicitSolvingStrategy()</text>
-<text text-anchor="start" x="274" y="-2747.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ ExplicitSolvingStrategy()</text>
-<text text-anchor="start" x="274" y="-2736.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ ExplicitSolvingStrategy()</text>
-<text text-anchor="start" x="274" y="-2725.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ ExplicitSolvingStrategy()</text>
-<text text-anchor="start" x="274" y="-2714.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ ~ExplicitSolvingStrategy()</text>
-<text text-anchor="start" x="274" y="-2703.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ Create()</text>
-<text text-anchor="start" x="274" y="-2692.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ Info()</text>
-<text text-anchor="start" x="274" y="-2681.5" font-family="Helvetica,sans-Serif" font-size="10.00"># SolveWithLumpedMassMatrix()</text>
-<text text-anchor="start" x="274" y="-2670.5" font-family="Helvetica,sans-Serif" font-size="10.00"># GetDeltaTime()</text>
-<text text-anchor="start" x="274" y="-2659.5" font-family="Helvetica,sans-Serif" font-size="10.00"># AssignSettings()</text>
-<text text-anchor="start" x="274" y="-2648.5" font-family="Helvetica,sans-Serif" font-size="10.00">* ExplicitBuilderType</text>
-<text text-anchor="start" x="274" y="-2637.5" font-family="Helvetica,sans-Serif" font-size="10.00">* ExplicitBuilderPointerType</text>
-<text text-anchor="start" x="274" y="-2626.5" font-family="Helvetica,sans-Serif" font-size="10.00">* DofType</text>
-<text text-anchor="start" x="274" y="-2615.5" font-family="Helvetica,sans-Serif" font-size="10.00">* BaseType</text>
-<text text-anchor="start" x="274" y="-2604.5" font-family="Helvetica,sans-Serif" font-size="10.00">* ClassType</text>
-<text text-anchor="start" x="274" y="-2593.5" font-family="Helvetica,sans-Serif" font-size="10.00">* KRATOS_CLASS_POINTER</text>
-<text text-anchor="start" x="274" y="-2582.5" font-family="Helvetica,sans-Serif" font-size="10.00">_DEFINITION()</text>
-<text text-anchor="start" x="274" y="-2571.5" font-family="Helvetica,sans-Serif" font-size="10.00">* mRebuildLevel</text>
-<text text-anchor="start" x="274" y="-2560.5" font-family="Helvetica,sans-Serif" font-size="10.00">* mpExplicitBuilder</text>
-<text text-anchor="start" x="274" y="-2549.5" font-family="Helvetica,sans-Serif" font-size="10.00">* ExplicitSolvingStrategy()</text>
-<text text-anchor="start" x="274" y="-2538.5" font-family="Helvetica,sans-Serif" font-size="10.00">* ExplicitSolvingStrategy()</text>
-<text text-anchor="start" x="274" y="-2527.5" font-family="Helvetica,sans-Serif" font-size="10.00">* ExplicitSolvingStrategy()</text>
-<text text-anchor="start" x="274" y="-2516.5" font-family="Helvetica,sans-Serif" font-size="10.00">* ExplicitSolvingStrategy()</text>
-<text text-anchor="start" x="274" y="-2505.5" font-family="Helvetica,sans-Serif" font-size="10.00">* ExplicitSolvingStrategy()</text>
-<text text-anchor="start" x="274" y="-2494.5" font-family="Helvetica,sans-Serif" font-size="10.00">* ~ExplicitSolvingStrategy()</text>
-<text text-anchor="start" x="274" y="-2483.5" font-family="Helvetica,sans-Serif" font-size="10.00">* Create()</text>
-<text text-anchor="start" x="274" y="-2472.5" font-family="Helvetica,sans-Serif" font-size="10.00">* Initialize()</text>
-<text text-anchor="start" x="274" y="-2461.5" font-family="Helvetica,sans-Serif" font-size="10.00">* Clear()</text>
-<text text-anchor="start" x="274" y="-2450.5" font-family="Helvetica,sans-Serif" font-size="10.00">* InitializeSolutionStep()</text>
-<text text-anchor="start" x="274" y="-2439.5" font-family="Helvetica,sans-Serif" font-size="10.00">* FinalizeSolutionStep()</text>
-<text text-anchor="start" x="274" y="-2428.5" font-family="Helvetica,sans-Serif" font-size="10.00">* SolveSolutionStep()</text>
-<text text-anchor="start" x="274" y="-2417.5" font-family="Helvetica,sans-Serif" font-size="10.00">* SetRebuildLevel()</text>
-<text text-anchor="start" x="274" y="-2406.5" font-family="Helvetica,sans-Serif" font-size="10.00">* GetRebuildLevel()</text>
-<text text-anchor="start" x="274" y="-2395.5" font-family="Helvetica,sans-Serif" font-size="10.00">* pGetExplicitBuilder()</text>
-<text text-anchor="start" x="274" y="-2384.5" font-family="Helvetica,sans-Serif" font-size="10.00">* GetExplicitBuilder()</text>
-<text text-anchor="start" x="274" y="-2373.5" font-family="Helvetica,sans-Serif" font-size="10.00">* GetExplicitBuilder()</text>
-<text text-anchor="start" x="274" y="-2362.5" font-family="Helvetica,sans-Serif" font-size="10.00">* GetResidualNorm()</text>
-<text text-anchor="start" x="274" y="-2351.5" font-family="Helvetica,sans-Serif" font-size="10.00">* GetDefaultParameters()</text>
-<text text-anchor="start" x="274" y="-2340.5" font-family="Helvetica,sans-Serif" font-size="10.00">* Name()</text>
-<text text-anchor="start" x="274" y="-2329.5" font-family="Helvetica,sans-Serif" font-size="10.00">* Info()</text>
-<text text-anchor="start" x="274" y="-2318.5" font-family="Helvetica,sans-Serif" font-size="10.00">* SolveWithLumpedMassMatrix()</text>
-<text text-anchor="start" x="274" y="-2307.5" font-family="Helvetica,sans-Serif" font-size="10.00">* GetDeltaTime()</text>
-<text text-anchor="start" x="274" y="-2296.5" font-family="Helvetica,sans-Serif" font-size="10.00">* AssignSettings()</text>
-<text text-anchor="start" x="274" y="-2285.5" font-family="Helvetica,sans-Serif" font-size="10.00">* InitializeDofSetValues()</text>
+<polygon fill="none" stroke="black" points="266,-2284 266,-2825 447,-2825 447,-2284 266,-2284"/>
+<text text-anchor="start" x="274" y="-2813" font-family="Helvetica,sans-Serif" font-size="10.00">Kratos::ExplicitSolvingStrategy</text>
+<text text-anchor="middle" x="356.5" y="-2802" font-family="Helvetica,sans-Serif" font-size="10.00">&lt; TSparseSpace, TDenseSpace &gt;</text>
+<polyline fill="none" stroke="black" points="266,-2795 447,-2795 "/>
+<text text-anchor="start" x="274" y="-2783" font-family="Helvetica,sans-Serif" font-size="10.00"># mRebuildLevel</text>
+<polyline fill="none" stroke="black" points="266,-2776 447,-2776 "/>
+<text text-anchor="start" x="274" y="-2764" font-family="Helvetica,sans-Serif" font-size="10.00">+ ExplicitSolvingStrategy()</text>
+<text text-anchor="start" x="274" y="-2753" font-family="Helvetica,sans-Serif" font-size="10.00">+ ExplicitSolvingStrategy()</text>
+<text text-anchor="start" x="274" y="-2742" font-family="Helvetica,sans-Serif" font-size="10.00">+ ExplicitSolvingStrategy()</text>
+<text text-anchor="start" x="274" y="-2731" font-family="Helvetica,sans-Serif" font-size="10.00">+ ExplicitSolvingStrategy()</text>
+<text text-anchor="start" x="274" y="-2720" font-family="Helvetica,sans-Serif" font-size="10.00">+ ExplicitSolvingStrategy()</text>
+<text text-anchor="start" x="274" y="-2709" font-family="Helvetica,sans-Serif" font-size="10.00">+ ~ExplicitSolvingStrategy()</text>
+<text text-anchor="start" x="274" y="-2698" font-family="Helvetica,sans-Serif" font-size="10.00">+ Create()</text>
+<text text-anchor="start" x="274" y="-2687" font-family="Helvetica,sans-Serif" font-size="10.00">+ Info()</text>
+<text text-anchor="start" x="274" y="-2676" font-family="Helvetica,sans-Serif" font-size="10.00"># SolveWithLumpedMassMatrix()</text>
+<text text-anchor="start" x="274" y="-2665" font-family="Helvetica,sans-Serif" font-size="10.00"># GetDeltaTime()</text>
+<text text-anchor="start" x="274" y="-2654" font-family="Helvetica,sans-Serif" font-size="10.00"># AssignSettings()</text>
+<text text-anchor="start" x="274" y="-2643" font-family="Helvetica,sans-Serif" font-size="10.00">* ExplicitBuilderType</text>
+<text text-anchor="start" x="274" y="-2632" font-family="Helvetica,sans-Serif" font-size="10.00">* ExplicitBuilderPointerType</text>
+<text text-anchor="start" x="274" y="-2621" font-family="Helvetica,sans-Serif" font-size="10.00">* DofType</text>
+<text text-anchor="start" x="274" y="-2610" font-family="Helvetica,sans-Serif" font-size="10.00">* BaseType</text>
+<text text-anchor="start" x="274" y="-2599" font-family="Helvetica,sans-Serif" font-size="10.00">* ClassType</text>
+<text text-anchor="start" x="274" y="-2588" font-family="Helvetica,sans-Serif" font-size="10.00">* KRATOS_CLASS_POINTER</text>
+<text text-anchor="start" x="274" y="-2577" font-family="Helvetica,sans-Serif" font-size="10.00">_DEFINITION()</text>
+<text text-anchor="start" x="274" y="-2566" font-family="Helvetica,sans-Serif" font-size="10.00">* mRebuildLevel</text>
+<text text-anchor="start" x="274" y="-2555" font-family="Helvetica,sans-Serif" font-size="10.00">* mpExplicitBuilder</text>
+<text text-anchor="start" x="274" y="-2544" font-family="Helvetica,sans-Serif" font-size="10.00">* ExplicitSolvingStrategy()</text>
+<text text-anchor="start" x="274" y="-2533" font-family="Helvetica,sans-Serif" font-size="10.00">* ExplicitSolvingStrategy()</text>
+<text text-anchor="start" x="274" y="-2522" font-family="Helvetica,sans-Serif" font-size="10.00">* ExplicitSolvingStrategy()</text>
+<text text-anchor="start" x="274" y="-2511" font-family="Helvetica,sans-Serif" font-size="10.00">* ExplicitSolvingStrategy()</text>
+<text text-anchor="start" x="274" y="-2500" font-family="Helvetica,sans-Serif" font-size="10.00">* ExplicitSolvingStrategy()</text>
+<text text-anchor="start" x="274" y="-2489" font-family="Helvetica,sans-Serif" font-size="10.00">* ~ExplicitSolvingStrategy()</text>
+<text text-anchor="start" x="274" y="-2478" font-family="Helvetica,sans-Serif" font-size="10.00">* Create()</text>
+<text text-anchor="start" x="274" y="-2467" font-family="Helvetica,sans-Serif" font-size="10.00">* Initialize()</text>
+<text text-anchor="start" x="274" y="-2456" font-family="Helvetica,sans-Serif" font-size="10.00">* Clear()</text>
+<text text-anchor="start" x="274" y="-2445" font-family="Helvetica,sans-Serif" font-size="10.00">* InitializeSolutionStep()</text>
+<text text-anchor="start" x="274" y="-2434" font-family="Helvetica,sans-Serif" font-size="10.00">* FinalizeSolutionStep()</text>
+<text text-anchor="start" x="274" y="-2423" font-family="Helvetica,sans-Serif" font-size="10.00">* SolveSolutionStep()</text>
+<text text-anchor="start" x="274" y="-2412" font-family="Helvetica,sans-Serif" font-size="10.00">* SetRebuildLevel()</text>
+<text text-anchor="start" x="274" y="-2401" font-family="Helvetica,sans-Serif" font-size="10.00">* GetRebuildLevel()</text>
+<text text-anchor="start" x="274" y="-2390" font-family="Helvetica,sans-Serif" font-size="10.00">* pGetExplicitBuilder()</text>
+<text text-anchor="start" x="274" y="-2379" font-family="Helvetica,sans-Serif" font-size="10.00">* GetExplicitBuilder()</text>
+<text text-anchor="start" x="274" y="-2368" font-family="Helvetica,sans-Serif" font-size="10.00">* GetExplicitBuilder()</text>
+<text text-anchor="start" x="274" y="-2357" font-family="Helvetica,sans-Serif" font-size="10.00">* GetResidualNorm()</text>
+<text text-anchor="start" x="274" y="-2346" font-family="Helvetica,sans-Serif" font-size="10.00">* GetDefaultParameters()</text>
+<text text-anchor="start" x="274" y="-2335" font-family="Helvetica,sans-Serif" font-size="10.00">* Name()</text>
+<text text-anchor="start" x="274" y="-2324" font-family="Helvetica,sans-Serif" font-size="10.00">* Info()</text>
+<text text-anchor="start" x="274" y="-2313" font-family="Helvetica,sans-Serif" font-size="10.00">* SolveWithLumpedMassMatrix()</text>
+<text text-anchor="start" x="274" y="-2302" font-family="Helvetica,sans-Serif" font-size="10.00">* GetDeltaTime()</text>
+<text text-anchor="start" x="274" y="-2291" font-family="Helvetica,sans-Serif" font-size="10.00">* AssignSettings()</text>
 </a>
 </g>
 </g>
@@ -435,8 +434,8 @@ var sectionId = 'dynsection-0';
 <!-- Node2&#45;&gt;Node3 -->
 <g id="edge2" class="edge">
 <title>Node2&#45;&gt;Node3</title>
-<path fill="none" stroke="midnightblue" d="M285.27,-2268.52C274.14,-2222.9 262.88,-2176.18 252.5,-2132 232.42,-2046.54 211.41,-1954.06 192.14,-1867.89"/>
-<polygon fill="none" stroke="midnightblue" points="281.88,-2269.35 287.65,-2278.23 288.67,-2267.69 281.88,-2269.35"/>
+<path fill="none" stroke="midnightblue" d="M286.64,-2274.11C275.06,-2226.73 263.31,-2177.99 252.5,-2132 232.42,-2046.54 211.41,-1954.06 192.14,-1867.89"/>
+<polygon fill="none" stroke="midnightblue" points="283.26,-2275.01 289.03,-2283.89 290.06,-2273.34 283.26,-2275.01"/>
 </g>
 <!-- Node6 -->
 <g id="node5" class="node">
@@ -525,8 +524,8 @@ var sectionId = 'dynsection-0';
 <!-- Node2&#45;&gt;Node6 -->
 <g id="edge4" class="edge">
 <title>Node2&#45;&gt;Node6</title>
-<path fill="none" stroke="midnightblue" d="M356.5,-2268.31C356.5,-2169.78 356.5,-2057.22 356.5,-1950.27"/>
-<polygon fill="none" stroke="midnightblue" points="353,-2268.41 356.5,-2278.41 360,-2268.41 353,-2268.41"/>
+<path fill="none" stroke="midnightblue" d="M356.5,-2273.55C356.5,-2173.78 356.5,-2059.14 356.5,-1950.29"/>
+<polygon fill="none" stroke="midnightblue" points="353,-2273.78 356.5,-2283.78 360,-2273.78 353,-2273.78"/>
 </g>
 <!-- Node4 -->
 <g id="node4" class="node">

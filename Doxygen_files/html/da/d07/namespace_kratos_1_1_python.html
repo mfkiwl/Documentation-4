@@ -127,6 +127,9 @@ Typedefs</h2></td></tr>
 <tr class="separator:a3250b9e8c7cddbcae876e02ef00197d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aee61dd1ccd85da1cb271ede79d60c063"><td class="memItemLeft" align="right" valign="top">typedef ConstitutiveLaw&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d07/namespace_kratos_1_1_python.html#aee61dd1ccd85da1cb271ede79d60c063">ConstitutiveLawBaseType</a></td></tr>
 <tr class="separator:aee61dd1ccd85da1cb271ede79d60c063"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a1deca7b9c7bc831925b8fd498a63d4"><td class="memTemplParams" colspan="2">template&lt;class TDataType &gt; </td></tr>
+<tr class="memitem:a5a1deca7b9c7bc831925b8fd498a63d4"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../da/d07/namespace_kratos_1_1_python.html#a5a1deca7b9c7bc831925b8fd498a63d4">ContiguousNumpyArray</a> = pybind11::array_t&lt; TDataType, pybind11::array::c_style &gt;</td></tr>
+<tr class="separator:a5a1deca7b9c7bc831925b8fd498a63d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aee48b8151098891c119e34dd8f8f8510"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="../../d4/d69/class_kratos_1_1_ublas_space.html">UblasSpace</a>&lt; <a class="el" href="../../db/d66/namespace_kratos.html#ac77084a57869cbecf89d3ee2c819c5d3">double</a>, <a class="el" href="../../db/d66/namespace_kratos.html#a329be912c57ade65e8f97efc8bf059e7">CompressedMatrix</a>, boost::numeric::ublas::vector&lt; <a class="el" href="../../db/d66/namespace_kratos.html#ac77084a57869cbecf89d3ee2c819c5d3">double</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d07/namespace_kratos_1_1_python.html#aee48b8151098891c119e34dd8f8f8510">SpaceType</a></td></tr>
 <tr class="separator:aee48b8151098891c119e34dd8f8f8510"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae0fe9c67659b8c83a923ae576805acac"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="../../d4/d69/class_kratos_1_1_ublas_space.html">UblasSpace</a>&lt; <a class="el" href="../../db/d66/namespace_kratos.html#ac77084a57869cbecf89d3ee2c819c5d3">double</a>, <a class="el" href="../../db/d66/namespace_kratos.html#a546e4f1c8e62734795679d3b59448410">Matrix</a>, <a class="el" href="../../db/d66/namespace_kratos.html#a2382ac8a486c0d52da7ce94f4ccd6d70">Vector</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d07/namespace_kratos_1_1_python.html#ae0fe9c67659b8c83a923ae576805acac">LocalSpaceType</a></td></tr>
@@ -408,6 +411,20 @@ Functions</h2></td></tr>
 <tr class="separator:ad4de7d1dc46ed60846ab6e9011f7e536"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3a4bf5e3a480974e5399be40ff0331fc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d07/namespace_kratos_1_1_python.html#a3a4bf5e3a480974e5399be40ff0331fc">AddConstraintToPython</a> (pybind11::module &amp;m)</td></tr>
 <tr class="separator:a3a4bf5e3a480974e5399be40ff0331fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a84eced7aeb5109787a6977937f874a5f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d07/namespace_kratos_1_1_python.html#a84eced7aeb5109787a6977937f874a5f">AddContainerExpressionToPython</a> (pybind11::module &amp;m)</td></tr>
+<tr class="separator:a84eced7aeb5109787a6977937f874a5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a007cd634696381f5346e021fcd6a4a0d"><td class="memTemplParams" colspan="2">template&lt;class TDataType &gt; </td></tr>
+<tr class="memitem:a007cd634696381f5346e021fcd6a4a0d"><td class="memTemplItemLeft" align="right" valign="top">pybind11::array_t&lt; TDataType &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../da/d07/namespace_kratos_1_1_python.html#a007cd634696381f5346e021fcd6a4a0d">AllocateNumpyArray</a> (const <a class="el" href="../../da/d07/namespace_kratos_1_1_python.html#a1c86b94dba699f32c9c60c6444b11411">IndexType</a> NumberOfEntities, const std::vector&lt; <a class="el" href="../../da/d07/namespace_kratos_1_1_python.html#a1c86b94dba699f32c9c60c6444b11411">IndexType</a> &gt; &amp;rShape)</td></tr>
+<tr class="separator:a007cd634696381f5346e021fcd6a4a0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d803ed6be14c9ab03849d82c2902c69"><td class="memTemplParams" colspan="2">template&lt;class TDataType &gt; </td></tr>
+<tr class="memitem:a6d803ed6be14c9ab03849d82c2902c69"><td class="memTemplItemLeft" align="right" valign="top">pybind11::array_t&lt; TDataType &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../da/d07/namespace_kratos_1_1_python.html#a6d803ed6be14c9ab03849d82c2902c69">MakeNumpyArray</a> (TDataType const *pBegin, TDataType const *pEnd, const std::vector&lt; <a class="el" href="../../da/d07/namespace_kratos_1_1_python.html#a1c86b94dba699f32c9c60c6444b11411">IndexType</a> &gt; &amp;rShape)</td></tr>
+<tr class="separator:a6d803ed6be14c9ab03849d82c2902c69"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a4bbe7c0bc4da7a2e56f71aae4e2035"><td class="memTemplParams" colspan="2">template&lt;class TContainerType &gt; </td></tr>
+<tr class="memitem:a4a4bbe7c0bc4da7a2e56f71aae4e2035"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../da/d07/namespace_kratos_1_1_python.html#a4a4bbe7c0bc4da7a2e56f71aae4e2035">AddContainerExpressionToPython</a> (pybind11::module &amp;m, const std::string &amp;rName)</td></tr>
+<tr class="separator:a4a4bbe7c0bc4da7a2e56f71aae4e2035"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa0dba74a54100ef5373d6f85b7e0dbdd"><td class="memTemplParams" colspan="2">template&lt;class TContainerType , class TContainerDataIOTag &gt; </td></tr>
+<tr class="memitem:aa0dba74a54100ef5373d6f85b7e0dbdd"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../da/d07/namespace_kratos_1_1_python.html#aa0dba74a54100ef5373d6f85b7e0dbdd">AddSpecializedContainerExpressionToPython</a> (pybind11::module &amp;m, const std::string &amp;rName)</td></tr>
+<tr class="separator:aa0dba74a54100ef5373d6f85b7e0dbdd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4d378375b773e5b01652011b04361982"><td class="memItemLeft" align="right" valign="top">Flags&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d07/namespace_kratos_1_1_python.html#a4d378375b773e5b01652011b04361982">FlagsOr</a> (const Flags &amp;Left, const Flags &amp;<a class="el" href="../../db/d66/namespace_kratos.html#a249f5334f3276fa48bc0116c28722d4c">Right</a>)</td></tr>
 <tr class="separator:a4d378375b773e5b01652011b04361982"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a80ea6cb8462968abeb76e5ab16633406"><td class="memItemLeft" align="right" valign="top">Flags&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d07/namespace_kratos_1_1_python.html#a80ea6cb8462968abeb76e5ab16633406">FlagsAnd</a> (const Flags &amp;Left, const Flags &amp;<a class="el" href="../../db/d66/namespace_kratos.html#a249f5334f3276fa48bc0116c28722d4c">Right</a>)</td></tr>
@@ -1807,6 +1824,22 @@ Variables</h2></td></tr>
 
 </div>
 </div>
+<a id="a5a1deca7b9c7bc831925b8fd498a63d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5a1deca7b9c7bc831925b8fd498a63d4">&#9670;&nbsp;</a></span>ContiguousNumpyArray</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class TDataType &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="../../da/d07/namespace_kratos_1_1_python.html#a5a1deca7b9c7bc831925b8fd498a63d4">Kratos::Python::ContiguousNumpyArray</a> = typedef pybind11::array_t&lt; TDataType, pybind11::array::c_style &gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="af8371a72863a92949939b63d9ced577d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af8371a72863a92949939b63d9ced577d">&#9670;&nbsp;</a></span>ConvergenceCriteriaContainer</h2>
 
@@ -2798,6 +2831,54 @@ template&lt;class TDataType &gt; </div>
           <td class="paramtype">pybind11::module &amp;&#160;</td>
           <td class="paramname"><em>m</em></td><td>)</td>
           <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a84eced7aeb5109787a6977937f874a5f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a84eced7aeb5109787a6977937f874a5f">&#9670;&nbsp;</a></span>AddContainerExpressionToPython() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Kratos::Python::AddContainerExpressionToPython </td>
+          <td>(</td>
+          <td class="paramtype">pybind11::module &amp;&#160;</td>
+          <td class="paramname"><em>m</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4a4bbe7c0bc4da7a2e56f71aae4e2035"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4a4bbe7c0bc4da7a2e56f71aae4e2035">&#9670;&nbsp;</a></span>AddContainerExpressionToPython() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class TContainerType &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void Kratos::Python::AddContainerExpressionToPython </td>
+          <td>(</td>
+          <td class="paramtype">pybind11::module &amp;&#160;</td>
+          <td class="paramname"><em>m</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>rName</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -4775,6 +4856,36 @@ template&lt;class TContainerType , typename... args&gt; </div>
 
 </div>
 </div>
+<a id="aa0dba74a54100ef5373d6f85b7e0dbdd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa0dba74a54100ef5373d6f85b7e0dbdd">&#9670;&nbsp;</a></span>AddSpecializedContainerExpressionToPython()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class TContainerType , class TContainerDataIOTag &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void Kratos::Python::AddSpecializedContainerExpressionToPython </td>
+          <td>(</td>
+          <td class="paramtype">pybind11::module &amp;&#160;</td>
+          <td class="paramname"><em>m</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>rName</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a146defeb9a9ee4924b139d1b995b45d3"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a146defeb9a9ee4924b139d1b995b45d3">&#9670;&nbsp;</a></span>AddStrategies()</h2>
 
@@ -4997,6 +5108,36 @@ template&lt;class TEntityType , class TContainerType &gt; </div>
           <td class="paramtype">pybind11::module &amp;&#160;</td>
           <td class="paramname"><em>m</em></td><td>)</td>
           <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a007cd634696381f5346e021fcd6a4a0d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a007cd634696381f5346e021fcd6a4a0d">&#9670;&nbsp;</a></span>AllocateNumpyArray()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class TDataType &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">pybind11::array_t&lt;TDataType&gt; Kratos::Python::AllocateNumpyArray </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../da/d07/namespace_kratos_1_1_python.html#a1c86b94dba699f32c9c60c6444b11411">IndexType</a>&#160;</td>
+          <td class="paramname"><em>NumberOfEntities</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="../../da/d07/namespace_kratos_1_1_python.html#a1c86b94dba699f32c9c60c6444b11411">IndexType</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>rShape</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -10404,6 +10545,42 @@ template&lt;typename TMapper &gt; </div>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6d803ed6be14c9ab03849d82c2902c69"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6d803ed6be14c9ab03849d82c2902c69">&#9670;&nbsp;</a></span>MakeNumpyArray()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class TDataType &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">pybind11::array_t&lt;TDataType&gt; Kratos::Python::MakeNumpyArray </td>
+          <td>(</td>
+          <td class="paramtype">TDataType const *&#160;</td>
+          <td class="paramname"><em>pBegin</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">TDataType const *&#160;</td>
+          <td class="paramname"><em>pEnd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="../../da/d07/namespace_kratos_1_1_python.html#a1c86b94dba699f32c9c60c6444b11411">IndexType</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>rShape</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -17628,7 +17805,7 @@ template&lt;class TValue &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 31 2023 02:20:42 for KratosMultiphysics by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Sat Apr 1 2023 02:19:38 for KratosMultiphysics by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>
