@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['green_53750',['GREEN',['../d1/dab/logging__settings_8hpp.html#acfbc006ea433ad708fdee3e82996e721',1,'logging_settings.hpp']]]
+  ['green_53736',['GREEN',['../d1/dab/logging__settings_8hpp.html#acfbc006ea433ad708fdee3e82996e721',1,'logging_settings.hpp']]]
 ];

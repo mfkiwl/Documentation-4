@@ -269,6 +269,9 @@ $(function() {
 , <a class="el" href="dc/d3d/class_kratos_1_1_m_p_m_particle_base_dirichlet_condition.html#aadc60a73ea17a50b4fa1238b86477331">Kratos::MPMParticleBaseDirichletCondition</a>
 , <a class="el" href="d7/db4/class_kratos_1_1_m_p_m_particle_base_load_condition.html#ae8eebed495ed58aaa08a894879535962">Kratos::MPMParticleBaseLoadCondition</a>
 , <a class="el" href="da/db4/class_kratos_1_1_m_p_m_particle_penalty_dirichlet_condition.html#a63f6d101111a8bb4c8d86e014739e6a3">Kratos::MPMParticlePenaltyDirichletCondition</a>
+, <a class="el" href="d8/d6e/class_kratos_1_1_m_p_m_updated_lagrangian.html#a47683ef07088e92fb58cd90f9c2f9992">Kratos::MPMUpdatedLagrangian</a>
+, <a class="el" href="d9/dc5/class_kratos_1_1_m_p_m_updated_lagrangian_p_q.html#a738c1f2dd056d9e247ea6df5d1c8b994">Kratos::MPMUpdatedLagrangianPQ</a>
+, <a class="el" href="d8/d53/class_kratos_1_1_m_p_m_updated_lagrangian_u_p.html#afd4979d6019e2a93293870f9612afcff">Kratos::MPMUpdatedLagrangianUP</a>
 , <a class="el" href="d6/d90/class_kratos_1_1_navier_stokes.html#a114ba6a44ee0e8cceb8f4d1ddc6b51bf">Kratos::NavierStokes&lt; TDim, TNumNodes &gt;</a>
 , <a class="el" href="d5/ddd/class_kratos_1_1_node.html#abd5939752fa00ba852d9eabfef33b0b1">Kratos::Node&lt; TDimension, TDofType &gt;</a>
 , <a class="el" href="d9/d4e/class_kratos_1_1_no_newtonian_monolithic_p_f_e_m22_d.html#afc8cab706d324998004a262b512c658f">Kratos::NoNewtonianMonolithicPFEM22D</a>
@@ -318,14 +321,11 @@ $(function() {
 , <a class="el" href="d0/dda/class_kratos_1_1_ulf_axisym.html#a70257b0a19a31e99b9802e22d79b6990">Kratos::UlfAxisym</a>
 , <a class="el" href="d5/d97/class_kratos_1_1_ulf_frac2_d.html#a011a133b2b091bd047f85e95fff0119d">Kratos::UlfFrac2D</a>
 , <a class="el" href="d8/d67/class_kratos_1_1_ulf_frac3_d.html#a53eb469c689f4fcb154e117dc96d6671">Kratos::UlfFrac3D</a>
-, <a class="el" href="d9/dab/class_kratos_1_1_updated_lagrangian.html#a49aa716fb1c67cd219fa8522ed9eaad1">Kratos::UpdatedLagrangian</a>
 , <a class="el" href="d2/d72/group___fluid_dynamics_application.html#ga4847c5f7f93ca451d01ed4c5758c9705">Kratos::UpdatedLagrangianElement&lt; TDim &gt;</a>
 , <a class="el" href="d4/db2/class_kratos_1_1_updated_lagrangian_fluid3_d.html#acd0e8eaac59f3e81dbe7cc5724ba575d">Kratos::UpdatedLagrangianFluid3D</a>
 , <a class="el" href="d9/d1a/class_kratos_1_1_updated_lagrangian_fluid3_dinc.html#afaceb4698a7920af982f75606a331889">Kratos::UpdatedLagrangianFluid3Dinc</a>
 , <a class="el" href="d3/dd0/class_kratos_1_1_updated_lagrangian_fluid.html#a4cf337d007051de88ed00a94aa5ccc97">Kratos::UpdatedLagrangianFluid</a>
 , <a class="el" href="df/dd4/class_kratos_1_1_updated_lagrangian_fluid_inc.html#a7ab3f9849372a25f4526b6979dea664b">Kratos::UpdatedLagrangianFluidInc</a>
-, <a class="el" href="d9/d4d/class_kratos_1_1_updated_lagrangian_p_q.html#a2998ae49a9cbce708b4dda8a4a7b1ca0">Kratos::UpdatedLagrangianPQ</a>
-, <a class="el" href="df/d6b/class_kratos_1_1_updated_lagrangian_u_p.html#a2519cfc06fb25e2ae03d9a8a9f330f2e">Kratos::UpdatedLagrangianUP</a>
 , <a class="el" href="d2/d72/group___fluid_dynamics_application.html#ga6c1399a98593fb939b542f51a424d1ee">Kratos::UpdatedLagrangianVImplicitSolidElement&lt; TDim &gt;</a>
 , <a class="el" href="d5/d04/class_kratos_1_1_velocity_enriched_p_f_e_m22_d.html#a98f5df15a1c008208541e496a85e86ed">Kratos::VelocityEnrichedPFEM22D</a>
 , <a class="el" href="d4/de8/class_kratos_1_1_v_m_s.html#a9c176d4d1ff53d59d15cf13ddf881b27">Kratos::VMS&lt; TDim, TNumNodes &gt;</a>
@@ -1312,9 +1312,6 @@ $(function() {
 , <a class="el" href="db/d91/class_kratos_1_1_trilinos_mixed_generic_criteria.html#a82724baa152a297a484b21fb39f30065">Kratos::TrilinosMixedGenericCriteria&lt; TSparseSpace, TDenseSpace &gt;</a>
 , <a class="el" href="dc/df5/class_kratos_1_1_trilinos_monotonicity_preserving_solver.html#a736a4ca4ca1f8097e9d25bc3418cffef">Kratos::TrilinosMonotonicityPreservingSolver&lt; TSparseSpaceType, TDenseSpaceType, TReordererType &gt;</a>
 , <a class="el" href="dc/d35/class_kratos_1_1_trilinos_m_v_q_n_recursive_jacobian_convergence_accelerator.html#a212702bd8f4d0bd18ffb2952af6bc5f0">Kratos::TrilinosMVQNRecursiveJacobianConvergenceAccelerator&lt; TSparseSpace, TDenseSpace &gt;</a>
-, <a class="el" href="d5/dca/class_kratos_1_1_trilinos_newmark_dynamic_u_pw_scheme.html#aa862d5089059003b1a5a01d658a1a988">Kratos::TrilinosNewmarkDynamicUPwScheme&lt; TSparseSpace, TDenseSpace &gt;</a>
-, <a class="el" href="d6/dc0/class_kratos_1_1_trilinos_newmark_quasistatic_damped_u_pw_scheme.html#ab328bf32267ec87848f36240ff583d7a">Kratos::TrilinosNewmarkQuasistaticDampedUPwScheme&lt; TSparseSpace, TDenseSpace &gt;</a>
-, <a class="el" href="d6/d09/class_kratos_1_1_trilinos_newmark_quasistatic_u_pw_scheme.html#a85aed468fd8e656c2f1b5c4e8d70e67f">Kratos::TrilinosNewmarkQuasistaticUPwScheme&lt; TSparseSpace, TDenseSpace &gt;</a>
 , <a class="el" href="d2/dca/group___trilinos_application.html#ga182dd820267172387314e09846113425">Kratos::TrilinosPartitionedFSIUtilities&lt; TSpace, TValueType, TDim &gt;</a>
 , <a class="el" href="da/d0f/class_kratos_1_1_trilinos_residual_based_elimination_builder_and_solver.html#a5a51857dbf00d96d2477b6dd8c945209">Kratos::TrilinosResidualBasedEliminationBuilderAndSolver&lt; TSparseSpace, TDenseSpace, TLinearSolver &gt;</a>
 , <a class="el" href="d6/dca/class_kratos_1_1_trilinos_residual_based_incremental_aitken_static_scheme.html#abc6182ae15fb726acb445c98b2e86acd">Kratos::TrilinosResidualBasedIncrementalAitkenStaticScheme&lt; TSparseSpace, TDenseSpace &gt;</a>
@@ -1358,43 +1355,43 @@ $(function() {
 , <a class="el" href="da/d1e/class_kratos_1_1_yield_surface.html#a9125c5f35aa9f17e3097d85c637ec698">Kratos::YieldSurface&lt; THardeningRule &gt;</a>
 </li>
 <li>KRATOS_DECLARE_VIRTUAL_VARIABLE_GETTER()
-: <a class="el" href="da/df0/struct_kratos_1_1_h_d_f5_1_1_nodal_variable_getter.html#ad5a05dd655b3f63a8083f42df7efec26">Kratos::HDF5::NodalVariableGetter</a>
+: <a class="el" href="da/df0/struct_kratos_1_1_h_d_f5_1_1_nodal_variable_getter.html#ae450474dc6cb5b8c6a8d36541d5c4ebb">Kratos::HDF5::NodalVariableGetter</a>
 </li>
 <li>KRATOS_DEFINE_HISTORICAL_VARIABLE_GETTER()
-: <a class="el" href="d9/ddc/struct_kratos_1_1_h_d_f5_1_1_historical_variable_getter.html#a5b2159b9be21a6c86cf975529fea2ab5">Kratos::HDF5::HistoricalVariableGetter</a>
+: <a class="el" href="d9/ddc/struct_kratos_1_1_h_d_f5_1_1_historical_variable_getter.html#ae2151bfa8f4d87b86f341afcb858e8d3">Kratos::HDF5::HistoricalVariableGetter</a>
 </li>
 <li>KRATOS_DEFINE_LOCAL_APPLICATION_FLAG()
-: <a class="el" href="d0/d83/class_kratos_1_1_d_e_m_flags.html#a2f2da2f9804ef2ba939a065d6a699355">Kratos::DEMFlags</a>
-, <a class="el" href="d3/d9f/class_kratos_1_1_d_e_m_thermal_flags.html#ad7eed69872334a17eac3e075202889d1">Kratos::DEMThermalFlags</a>
-, <a class="el" href="d8/d15/class_kratos_1_1_p_f_e_m_flags.html#a0949061878668d4607d3d0c9d8946e65">Kratos::PFEMFlags</a>
+: <a class="el" href="d0/d83/class_kratos_1_1_d_e_m_flags.html#a002b4f8600f1ae92d92ff313bad44e66">Kratos::DEMFlags</a>
+, <a class="el" href="d3/d9f/class_kratos_1_1_d_e_m_thermal_flags.html#af203b3613c3b01d37b79645951dc345b">Kratos::DEMThermalFlags</a>
+, <a class="el" href="d8/d15/class_kratos_1_1_p_f_e_m_flags.html#a247795033cebcf75827ba31ef921d202">Kratos::PFEMFlags</a>
 </li>
 <li>KRATOS_DEFINE_LOCAL_FLAG()
 : <a class="el" href="d5/dff/group___contact_structural_mechanics_application.html#ga6d4e060a6721d7db98f9a481e6bb9b3f">Kratos::ALMFrictionalMortarConvergenceCriteria&lt; TSparseSpace, TDenseSpace &gt;</a>
 , <a class="el" href="d5/dff/group___contact_structural_mechanics_application.html#gafc04a176aa28fb98f9cad43245860501">Kratos::ALMFrictionlessComponentsMortarConvergenceCriteria&lt; TSparseSpace, TDenseSpace &gt;</a>
 , <a class="el" href="d5/dff/group___contact_structural_mechanics_application.html#ga05662aa610c04420bf61749f84a1b380">Kratos::ALMFrictionlessMortarConvergenceCriteria&lt; TSparseSpace, TDenseSpace &gt;</a>
 , <a class="el" href="d6/d31/class_kratos_1_1_apply_constant_scalar_value_process.html#a84bd8073750ed8b095e26258c601abbc">Kratos::ApplyConstantScalarValueProcess</a>
-, <a class="el" href="dc/d28/class_kratos_1_1_apply_constant_vector_value_process.html#aa51027789efb3abfc02841d848bb2e8e">Kratos::ApplyConstantVectorValueProcess</a>
-, <a class="el" href="d5/dff/group___contact_structural_mechanics_application.html#gac3c5eaa9a20fc80c3bebac91ddf59bdf">Kratos::BaseMortarConvergenceCriteria&lt; TSparseSpace, TDenseSpace &gt;</a>
+, <a class="el" href="dc/d28/class_kratos_1_1_apply_constant_vector_value_process.html#a5c285cb6912a9085aeca4927f8ce8617">Kratos::ApplyConstantVectorValueProcess</a>
+, <a class="el" href="d5/dff/group___contact_structural_mechanics_application.html#gaf7ed5cdc385e9d229dfecfe69edb0a2b">Kratos::BaseMortarConvergenceCriteria&lt; TSparseSpace, TDenseSpace &gt;</a>
 , <a class="el" href="d3/dd2/class_kratos_1_1_compressible_navier_stokes_explicit_solving_strategy_runge_kutta.html#a5e344ed55244d3bdf061b7f4154bf894">Kratos::CompressibleNavierStokesExplicitSolvingStrategyRungeKutta&lt; TSparseSpace, TDenseSpace, TButcherTableau &gt;</a>
 , <a class="el" href="d5/dff/group___contact_structural_mechanics_application.html#ga63df3bec93790b852cd9cde73f4b9f16">Kratos::DisplacementContactCriteria&lt; TSparseSpace, TDenseSpace &gt;</a>
 , <a class="el" href="d5/dff/group___contact_structural_mechanics_application.html#ga09ab9b48cf909985addc9611b94993e8">Kratos::DisplacementLagrangeMultiplierContactCriteria&lt; TSparseSpace, TDenseSpace &gt;</a>
 , <a class="el" href="d5/dff/group___contact_structural_mechanics_application.html#ga3cb06d3e83f4aa666be913e9211b3722">Kratos::DisplacementLagrangeMultiplierFrictionalContactCriteria&lt; TSparseSpace, TDenseSpace &gt;</a>
-, <a class="el" href="d5/dff/group___contact_structural_mechanics_application.html#ga1f0f524b9320e341af338ead7a4f348e">Kratos::DisplacementLagrangeMultiplierMixedContactCriteria&lt; TSparseSpace, TDenseSpace &gt;</a>
-, <a class="el" href="d5/dff/group___contact_structural_mechanics_application.html#ga684b187e729ec1069be707e84c0affd9">Kratos::DisplacementLagrangeMultiplierMixedFrictionalContactCriteria&lt; TSparseSpace, TDenseSpace &gt;</a>
-, <a class="el" href="d5/dff/group___contact_structural_mechanics_application.html#gaf0c3ea598c3cb10d012c3f06a2b90843">Kratos::DisplacementLagrangeMultiplierResidualContactCriteria&lt; TSparseSpace, TDenseSpace &gt;</a>
+, <a class="el" href="d5/dff/group___contact_structural_mechanics_application.html#ga6cb8a26e70d942b2f6950587be125813">Kratos::DisplacementLagrangeMultiplierMixedContactCriteria&lt; TSparseSpace, TDenseSpace &gt;</a>
+, <a class="el" href="d5/dff/group___contact_structural_mechanics_application.html#gaa9ca8be7c58c5ad19d85f086e85d778f">Kratos::DisplacementLagrangeMultiplierMixedFrictionalContactCriteria&lt; TSparseSpace, TDenseSpace &gt;</a>
+, <a class="el" href="d5/dff/group___contact_structural_mechanics_application.html#gabc91312f00d92094308e952b2eaa211b">Kratos::DisplacementLagrangeMultiplierResidualContactCriteria&lt; TSparseSpace, TDenseSpace &gt;</a>
 , <a class="el" href="d5/dff/group___contact_structural_mechanics_application.html#gad62254b184bb53d3fdc45c8c32fc59bb">Kratos::DisplacementLagrangeMultiplierResidualFrictionalContactCriteria&lt; TSparseSpace, TDenseSpace &gt;</a>
 , <a class="el" href="d5/dff/group___contact_structural_mechanics_application.html#ga31d440f6792df3f11ecf61d373a376a6">Kratos::DisplacementResidualContactCriteria&lt; TSparseSpace, TDenseSpace &gt;</a>
 , <a class="el" href="d6/dcd/class_kratos_1_1_meshing_flags.html#a0ea394294c9d0fb6422f3bc5111e24e9">Kratos::MeshingFlags</a>
 , <a class="el" href="d5/d7f/class_kratos_1_1_mesh_node_collapsing_process.html#a6bfd983402349c37352f931a165fb6c1">Kratos::MeshNodeCollapsingProcess</a>
 , <a class="el" href="da/d69/class_kratos_1_1_mixed_u_l_m_linear_solver.html#a0ca9a8780eedb60aed7521dab0afebe0">Kratos::MixedULMLinearSolver&lt; TSparseSpaceType, TDenseSpaceType, TPreconditionerType, TReordererType &gt;</a>
 , <a class="el" href="db/da3/class_kratos_1_1_mortar_and_convergence_criteria.html#a3cf1290ec4e4d138204151410e2b726e">Kratos::MortarAndConvergenceCriteria&lt; TSparseSpace, TDenseSpace &gt;</a>
+, <a class="el" href="d8/d6e/class_kratos_1_1_m_p_m_updated_lagrangian.html#a5a7e54f60a532382ea3b918ccc09f6fb">Kratos::MPMUpdatedLagrangian</a>
 , <a class="el" href="d5/dff/group___contact_structural_mechanics_application.html#ga6cf4452a20fa7f2108644c65972579c1">Kratos::PenaltyFrictionalMortarConvergenceCriteria&lt; TSparseSpace, TDenseSpace &gt;</a>
 , <a class="el" href="d5/dff/group___contact_structural_mechanics_application.html#ga2e2516f2ebfdfbbba52f327767df431b">Kratos::PenaltyFrictionlessMortarConvergenceCriteria&lt; TSparseSpace, TDenseSpace &gt;</a>
 , <a class="el" href="d9/d26/class_kratos_1_1_residual_based_block_builder_and_solver.html#a0e462d44786050d0f21005d45df665ab">Kratos::ResidualBasedBlockBuilderAndSolver&lt; TSparseSpace, TDenseSpace, TLinearSolver &gt;</a>
 , <a class="el" href="d7/d91/class_kratos_1_1_residual_based_block_builder_and_solver_with_lagrange_multiplier.html#a5ce1a309fff63fc22927343c1d5a01bb">Kratos::ResidualBasedBlockBuilderAndSolverWithLagrangeMultiplier&lt; TSparseSpace, TDenseSpace, TLinearSolver &gt;</a>
 , <a class="el" href="d6/d37/class_kratos_1_1_trilinos_level_set_convection_process.html#ab203c95cb85b896bcb12e4f83f2e3873">Kratos::TrilinosLevelSetConvectionProcess&lt; TDim, TSparseSpace, TDenseSpace, TLinearSolver &gt;</a>
-, <a class="el" href="d9/dab/class_kratos_1_1_updated_lagrangian.html#a3b44a36c76390e19cade9c39c05c120f">Kratos::UpdatedLagrangian</a>
-, <a class="el" href="d7/deb/class_kratos_1_1_variational_distance_calculation_process.html#ac216927a61725f3e50808464778786e7">Kratos::VariationalDistanceCalculationProcess&lt; TDim, TSparseSpace, TDenseSpace, TLinearSolver &gt;</a>
+, <a class="el" href="d7/deb/class_kratos_1_1_variational_distance_calculation_process.html#a0eb49e931718e86be3f4bfb0859bd45b">Kratos::VariationalDistanceCalculationProcess&lt; TDim, TSparseSpace, TDenseSpace, TLinearSolver &gt;</a>
 </li>
 <li>KRATOS_DEFINE_NON_HISTORICAL_VARIABLE_GETTER()
 : <a class="el" href="db/d2b/struct_kratos_1_1_h_d_f5_1_1_non_historical_variable_getter.html#adbf54a1abdb9ec80857b5acee7842f0b">Kratos::HDF5::NonHistoricalVariableGetter</a>
@@ -1407,14 +1404,14 @@ $(function() {
 , <a class="el" href="de/d15/class_kratos_1_1_model_part_communicator_utilities.html#add5ec36f1ca06c26239544ac0798d1a1">Kratos::ModelPartCommunicatorUtilities</a>
 , <a class="el" href="df/d90/class_kratos_1_1_m_p_i_communicator.html#a38ba2102e08bbb3949958567c82c005d">Kratos::MPICommunicator</a>
 , <a class="el" href="d6/d4e/class_kratos_1_1_open_m_p_utils.html#a292f669ac64e8b4e639689210aabf9f3">Kratos::OpenMPUtils</a>
-, <a class="el" href="da/de5/class_kratos_1_1_quaternion.html#a32710254aa5a11b7653daa28995e3c6f">Kratos::Quaternion&lt; T &gt;</a>
-, <a class="el" href="d1/da3/class_kratos_1_1_scheme.html#ae623affa00e0000b71e96a87ecf1f447">Kratos::Scheme&lt; TSparseSpace, TDenseSpace &gt;</a>
+, <a class="el" href="da/de5/class_kratos_1_1_quaternion.html#a0148a620c38fcb29833a65806c1657a9">Kratos::Quaternion&lt; T &gt;</a>
+, <a class="el" href="d1/da3/class_kratos_1_1_scheme.html#af2c67058a90f85d9233a113ce1e713a3">Kratos::Scheme&lt; TSparseSpace, TDenseSpace &gt;</a>
 </li>
 <li>KratosExaquteSandboxApplication()
 : <a class="el" href="d0/dcb/class_kratos_1_1_kratos_exaqute_sandbox_application.html#a7d7cf5d1032687f9a031b2584a7358f0">Kratos::KratosExaquteSandboxApplication</a>
 </li>
 <li>KratosJsonIO()
-: <a class="el" href="df/d0d/class_kratos_1_1_kratos_json_i_o.html#a421aa35ca3429452292bf77cbf76762a">Kratos::KratosJsonIO</a>
+: <a class="el" href="df/d0d/class_kratos_1_1_kratos_json_i_o.html#a85fa53692f2a1c3eb93a308ac031a2ec">Kratos::KratosJsonIO</a>
 </li>
 <li>KratosMetisApplication()
 : <a class="el" href="d5/dc1/class_kratos_1_1_kratos_metis_application.html#a6b0b1ab4ca663397d02195631fdc7930">Kratos::KratosMetisApplication</a>
@@ -1457,7 +1454,7 @@ $(function() {
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Apr 3 2023 02:12:00 for KratosMultiphysics by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Tue Apr 4 2023 02:16:25 for KratosMultiphysics by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>
