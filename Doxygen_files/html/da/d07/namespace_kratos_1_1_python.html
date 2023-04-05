@@ -1015,6 +1015,13 @@ Functions</h2></td></tr>
 <tr class="separator:a67b54c39ea26a6316a623d75420029fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a57a3c9403169a22d7a13a5edcb67cfa8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d07/namespace_kratos_1_1_python.html#a57a3c9403169a22d7a13a5edcb67cfa8">AddResponseFunctionsToPython</a> (pybind11::module &amp;m)</td></tr>
 <tr class="separator:a57a3c9403169a22d7a13a5edcb67cfa8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc9bde4161f8362624b6e66d74edbf12"><td class="memTemplParams" colspan="2">template&lt;class TClass &gt; </td></tr>
+<tr class="memitem:adc9bde4161f8362624b6e66d74edbf12"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../da/d07/namespace_kratos_1_1_python.html#adc9bde4161f8362624b6e66d74edbf12">GenerateListFromVectorOfVector</a> (pybind11::list &amp;rList, const TClass &amp;rVector)</td></tr>
+<tr class="memdesc:adc9bde4161f8362624b6e66d74edbf12"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generates a list of lists from a vector of vectors.  <a href="../../da/d07/namespace_kratos_1_1_python.html#adc9bde4161f8362624b6e66d74edbf12">More...</a><br /></td></tr>
+<tr class="separator:adc9bde4161f8362624b6e66d74edbf12"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a31139132445f360f4ea17f6d0174af93"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d07/namespace_kratos_1_1_python.html#a31139132445f360f4ea17f6d0174af93">CopyRadiusArrayToPython</a> (const pybind11::list &amp;rListOfRadius, SpatialSearch::RadiusArrayType &amp;rRadiusArray)</td></tr>
+<tr class="memdesc:a31139132445f360f4ea17f6d0174af93"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copies a list of doubles to a radius array.  <a href="../../da/d07/namespace_kratos_1_1_python.html#a31139132445f360f4ea17f6d0174af93">More...</a><br /></td></tr>
+<tr class="separator:a31139132445f360f4ea17f6d0174af93"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a16d16f485f12bb6cb7288c918ba9ac02"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d07/namespace_kratos_1_1_python.html#a16d16f485f12bb6cb7288c918ba9ac02">AddSearchStrategiesToPython</a> (pybind11::module &amp;m)</td></tr>
 <tr class="separator:a16d16f485f12bb6cb7288c918ba9ac02"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7d4a1c39f45b87383817bfd5c4108285"><td class="memTemplParams" colspan="2">template&lt;class TObjectType &gt; </td></tr>
@@ -4817,6 +4824,7 @@ template&lt;class TContainerType , typename... args&gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>The variables of the spatial search</p>
 
 </div>
 </div>
@@ -6844,6 +6852,43 @@ template&lt;class TVarType &gt; </div>
 
 </div>
 </div>
+<a id="a31139132445f360f4ea17f6d0174af93"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a31139132445f360f4ea17f6d0174af93">&#9670;&nbsp;</a></span>CopyRadiusArrayToPython()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Kratos::Python::CopyRadiusArrayToPython </td>
+          <td>(</td>
+          <td class="paramtype">const pybind11::list &amp;&#160;</td>
+          <td class="paramname"><em>rListOfRadius</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">SpatialSearch::RadiusArrayType &amp;&#160;</td>
+          <td class="paramname"><em>rRadiusArray</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Copies a list of doubles to a radius array. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">rListOfRadius</td><td>The list of doubles to be copied </td></tr>
+    <tr><td class="paramname">rRadiusArray</td><td>The radius array to be filled </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a8bdf4a62598dbe2d7d6e528b31ef6f09"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8bdf4a62598dbe2d7d6e528b31ef6f09">&#9670;&nbsp;</a></span>CreateArray1DInterface()</h2>
 
@@ -8429,6 +8474,51 @@ template&lt;class TContainerType , class TVariableType &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+</div>
+</div>
+<a id="adc9bde4161f8362624b6e66d74edbf12"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adc9bde4161f8362624b6e66d74edbf12">&#9670;&nbsp;</a></span>GenerateListFromVectorOfVector()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class TClass &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void Kratos::Python::GenerateListFromVectorOfVector </td>
+          <td>(</td>
+          <td class="paramtype">pybind11::list &amp;&#160;</td>
+          <td class="paramname"><em>rList</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const TClass &amp;&#160;</td>
+          <td class="paramname"><em>rVector</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Generates a list of lists from a vector of vectors. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">rList</td><td>The list to be filled </td></tr>
+    <tr><td class="paramname">rVector</td><td>The vector of vectors to be copied </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">TClass</td><td>The type of the vector of vectors </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -17805,7 +17895,7 @@ template&lt;class TValue &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Apr 4 2023 02:16:22 for KratosMultiphysics by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Wed Apr 5 2023 02:03:06 for KratosMultiphysics by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

@@ -130,7 +130,7 @@ $(function() {
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <a class="code" href="../../d6/d3f/transfer__utility_8h.html#a95ed76edc983cae239b65f370953d216">KRATOS_CLASS_POINTER_DEFINITION</a>(HelmholtzPartition);</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    HelmholtzPartition( std::string ControlName, <a class="code" href="../../df/d58/namespacescript.html#ac15ac2b5f26090aaf005f81bbad3671a">Model</a>&amp; rModel, std::vector&lt;LinearSolverType::Pointer&gt;&amp; rLinearSolvers, Parameters ControlSettings )</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    HelmholtzPartition( std::string ControlName, <a class="code" href="../../d0/de3/class_model.html">Model</a>&amp; rModel, std::vector&lt;LinearSolverType::Pointer&gt;&amp; rLinearSolvers, <a class="code" href="../../da/d39/class_parameters.html">Parameters</a> ControlSettings )</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        :  MaterialControl(ControlName,rModel,ControlSettings){</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;            <span class="keywordflow">for</span>(<span class="keywordtype">long</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> lin_i=0;lin_i&lt;rLinearSolvers.size();lin_i++)</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;                rLinearSystemSolvers.push_back(rLinearSolvers[lin_i]);</div>
@@ -176,7 +176,7 @@ $(function() {
 <div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160; </div>
 <div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;        <span class="keywordflow">for</span>(<span class="keywordtype">long</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> model_i =0;model_i&lt;mpVMModelParts.size();model_i++)</div>
 <div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;        {</div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;            <a class="code" href="../../d1/d64/namespace_c_sharp_kratos_wrapper.html#a2e2643eb858b6ec11ecf3d3872800ef9">ModelPart</a>* mpVMModePart = mpVMModelParts[model_i];</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;            <a class="code" href="../../d4/d5e/class_model_part.html">ModelPart</a>* mpVMModePart = mpVMModelParts[model_i];</div>
 <div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;            <a class="code" href="../../d6/de1/namespaceedgebased___pure_convection.html#a4b2ba243d5072905771aa99f3fb6dc75">ProcessInfo</a> &amp;<a class="code" href="../../d2/d95/namespace_kratos_1_1_structural_mechanics_element_utilities.html#a13023981cd139d7bf702c24892a7ff10">rCurrentProcessInfo</a> = (mpVMModePart)-&gt;<a class="code" href="../../da/d07/namespace_kratos_1_1_python.html#a96cf6450b7453a2fb2e1e9e1f98f61b9">GetProcessInfo</a>();</div>
 <div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;            <a class="code" href="../../d2/d95/namespace_kratos_1_1_structural_mechanics_element_utilities.html#a13023981cd139d7bf702c24892a7ff10">rCurrentProcessInfo</a>[COMPUTE_CONTROL_DENSITIES] = <span class="keyword">false</span>;</div>
 <div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;        }        </div>
@@ -212,7 +212,7 @@ $(function() {
 <div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160; </div>
 <div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;        <span class="keywordflow">for</span>(<span class="keywordtype">long</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> model_i =0;model_i&lt;mpVMModelParts.size();model_i++)</div>
 <div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;        {</div>
-<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;            <a class="code" href="../../d1/d64/namespace_c_sharp_kratos_wrapper.html#a2e2643eb858b6ec11ecf3d3872800ef9">ModelPart</a>* mpVMModePart = mpVMModelParts[model_i];</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;            <a class="code" href="../../d4/d5e/class_model_part.html">ModelPart</a>* mpVMModePart = mpVMModelParts[model_i];</div>
 <div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;            SetVariable1ToVarible2(mpVMModePart,rDerivativeVariable,HELMHOLTZ_SOURCE_DENSITY);</div>
 <div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;            SetVariable(mpVMModePart,HELMHOLTZ_VAR_DENSITY,0.0);</div>
 <div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160; </div>
@@ -255,7 +255,7 @@ $(function() {
 <div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;    std::vector&lt;StrategyType*&gt;mpStrategies;</div>
 <div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;    std::vector&lt;ModelPart*&gt; mpVMModelParts;</div>
 <div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;    std::vector&lt;Properties::Pointer&gt; mpVMModelPartsProperties;</div>
-<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;    Parameters mTechniqueSettings;</div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;    <a class="code" href="../../da/d39/class_parameters.html">Parameters</a> mTechniqueSettings;</div>
 <div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;    <span class="keywordtype">double</span> beta;</div>
 <div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;    <span class="keywordtype">int</span> opt_itr = 0;</div>
 <div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;    <span class="keywordtype">double</span> initial_density;</div>
@@ -287,11 +287,11 @@ $(function() {
 <div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;    {</div>
 <div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;        <span class="keywordflow">for</span>(<span class="keywordtype">long</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> model_i =0;model_i&lt;mpVMModelParts.size();model_i++)</div>
 <div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;        {</div>
-<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;            <a class="code" href="../../d1/d64/namespace_c_sharp_kratos_wrapper.html#a2e2643eb858b6ec11ecf3d3872800ef9">ModelPart</a>* mpVMModePart = mpVMModelParts[model_i];</div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;            <a class="code" href="../../d4/d5e/class_model_part.html">ModelPart</a>* mpVMModePart = mpVMModelParts[model_i];</div>
 <div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;            <span class="keyword">auto</span>&amp; r_nodes = mpVMModePart-&gt;Nodes();</div>
 <div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;            <span class="keywordtype">int</span> mNumNodes = r_nodes.size();</div>
 <div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160; </div>
-<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;            VariableUtils variable_utils;</div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;            <a class="code" href="../../d3/dc4/class_variable_utils.html">VariableUtils</a> variable_utils;</div>
 <div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;            variable_utils.SetFlag(STRUCTURE,<span class="keyword">true</span>,r_nodes);</div>
 <div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160; </div>
 <div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;            <span class="comment">// Note: this should not be parallel, the operation is not threadsafe if the variable is uninitialized</span></div>
@@ -331,10 +331,10 @@ $(function() {
 <div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;    {</div>
 <div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;        <span class="comment">// creating vm model nodes and variables</span></div>
 <div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;        <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; control_obj : mControlSettings[<span class="stringliteral">&quot;controlling_objects&quot;</span>]){</div>
-<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;            <a class="code" href="../../d1/d64/namespace_c_sharp_kratos_wrapper.html#a2e2643eb858b6ec11ecf3d3872800ef9">ModelPart</a>&amp; r_controlling_object = mrModel.GetModelPart(control_obj.GetString());</div>
-<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;            <a class="code" href="../../d1/d64/namespace_c_sharp_kratos_wrapper.html#a2e2643eb858b6ec11ecf3d3872800ef9">ModelPart</a>&amp; root_model_part = r_controlling_object.GetRootModelPart();</div>
+<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;            <a class="code" href="../../d4/d5e/class_model_part.html">ModelPart</a>&amp; r_controlling_object = mrModel.GetModelPart(control_obj.GetString());</div>
+<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;            <a class="code" href="../../d4/d5e/class_model_part.html">ModelPart</a>&amp; root_model_part = r_controlling_object.GetRootModelPart();</div>
 <div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;            std::string vm_model_part_name =  root_model_part.Name()+<span class="stringliteral">&quot;_HELMHOLTZ_PARTITION_Part&quot;</span>;</div>
-<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;            <a class="code" href="../../d1/d64/namespace_c_sharp_kratos_wrapper.html#a2e2643eb858b6ec11ecf3d3872800ef9">ModelPart</a>* p_vm_model_part;</div>
+<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;            <a class="code" href="../../d4/d5e/class_model_part.html">ModelPart</a>* p_vm_model_part;</div>
 <div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;            Properties::Pointer p_vm_model_part_property;</div>
 <div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160; </div>
 <div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;            <span class="keywordflow">if</span> (root_model_part.HasSubModelPart(vm_model_part_name)){</div>
@@ -376,7 +376,7 @@ $(function() {
 <div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;        <span class="comment">// now add dofs</span></div>
 <div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;        <span class="keywordflow">for</span>(<span class="keywordtype">long</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> model_i =0;model_i&lt;mpVMModelParts.size();model_i++)</div>
 <div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;        {</div>
-<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;            <a class="code" href="../../d1/d64/namespace_c_sharp_kratos_wrapper.html#a2e2643eb858b6ec11ecf3d3872800ef9">ModelPart</a>* mpVMModePart = mpVMModelParts[model_i];</div>
+<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;            <a class="code" href="../../d4/d5e/class_model_part.html">ModelPart</a>* mpVMModePart = mpVMModelParts[model_i];</div>
 <div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;            <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; node_i : mpVMModePart-&gt;Nodes())</div>
 <div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;            {</div>
 <div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;                node_i.AddDof(HELMHOLTZ_VAR_DENSITY);</div>
@@ -427,7 +427,7 @@ $(function() {
 <div class="line"><a name="l00428"></a><span class="lineno">  428</span>&#160; </div>
 <div class="line"><a name="l00429"></a><span class="lineno">  429</span>&#160;        <span class="comment">// update elements&#39; density</span></div>
 <div class="line"><a name="l00430"></a><span class="lineno">  430</span>&#160;        <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; control_obj : mControlSettings[<span class="stringliteral">&quot;controlling_objects&quot;</span>]){</div>
-<div class="line"><a name="l00431"></a><span class="lineno">  431</span>&#160;            <a class="code" href="../../d1/d64/namespace_c_sharp_kratos_wrapper.html#a2e2643eb858b6ec11ecf3d3872800ef9">ModelPart</a>&amp; r_controlling_object = mrModel.GetModelPart(control_obj.GetString());</div>
+<div class="line"><a name="l00431"></a><span class="lineno">  431</span>&#160;            <a class="code" href="../../d4/d5e/class_model_part.html">ModelPart</a>&amp; r_controlling_object = mrModel.GetModelPart(control_obj.GetString());</div>
 <div class="line"><a name="l00432"></a><span class="lineno">  432</span>&#160;            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> <a class="code" href="../../d2/db8/namespacetensors.html#a15a1da80aa773e2015eba781cababe05">i</a> = 0; <a class="code" href="../../d2/db8/namespacetensors.html#a15a1da80aa773e2015eba781cababe05">i</a> &lt; (<a class="code" href="../../db/d66/namespace_kratos.html#ac398e9982e45de7167981e05b7f5ff57">int</a>)r_controlling_object.Elements().size(); <a class="code" href="../../d2/db8/namespacetensors.html#a15a1da80aa773e2015eba781cababe05">i</a>++) {</div>
 <div class="line"><a name="l00433"></a><span class="lineno">  433</span>&#160;                ModelPart::ElementsContainerType::iterator it = r_controlling_object.ElementsBegin() + <a class="code" href="../../d2/db8/namespacetensors.html#a15a1da80aa773e2015eba781cababe05">i</a>;</div>
 <div class="line"><a name="l00434"></a><span class="lineno">  434</span>&#160;                <span class="keywordtype">double</span> elem_i_density = 0.0;</div>
@@ -546,7 +546,7 @@ $(function() {
 <div class="line"><a name="l00547"></a><span class="lineno">  547</span>&#160;        }</div>
 <div class="line"><a name="l00548"></a><span class="lineno">  548</span>&#160;    }    </div>
 <div class="line"><a name="l00549"></a><span class="lineno">  549</span>&#160;    </div>
-<div class="line"><a name="l00550"></a><span class="lineno">  550</span>&#160;    <span class="keywordtype">void</span> SetVariable(ModelPart* mpVMModePart, <span class="keyword">const</span> Variable&lt;double&gt; &amp;<a class="code" href="../../d7/dc7/namespace_kratos_1_1_move_mesh_utilities.html#aee4d4e75adb6cdde18e7be730037fb71">rVariable</a>, <span class="keyword">const</span> <span class="keywordtype">double</span> value) </div>
+<div class="line"><a name="l00550"></a><span class="lineno">  550</span>&#160;    <span class="keywordtype">void</span> SetVariable(<a class="code" href="../../d4/d5e/class_model_part.html">ModelPart</a>* mpVMModePart, <span class="keyword">const</span> Variable&lt;double&gt; &amp;<a class="code" href="../../d7/dc7/namespace_kratos_1_1_move_mesh_utilities.html#aee4d4e75adb6cdde18e7be730037fb71">rVariable</a>, <span class="keyword">const</span> <span class="keywordtype">double</span> value) </div>
 <div class="line"><a name="l00551"></a><span class="lineno">  551</span>&#160;    {</div>
 <div class="line"><a name="l00552"></a><span class="lineno">  552</span>&#160;        <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; node_i : mpVMModePart-&gt;Nodes())</div>
 <div class="line"><a name="l00553"></a><span class="lineno">  553</span>&#160;        {</div>
@@ -555,7 +555,7 @@ $(function() {
 <div class="line"><a name="l00556"></a><span class="lineno">  556</span>&#160;        }</div>
 <div class="line"><a name="l00557"></a><span class="lineno">  557</span>&#160;    }</div>
 <div class="line"><a name="l00558"></a><span class="lineno">  558</span>&#160; </div>
-<div class="line"><a name="l00559"></a><span class="lineno">  559</span>&#160;    <span class="keywordtype">void</span> SetVariable1ToVarible2(ModelPart* mpVMModePart,<span class="keyword">const</span> Variable&lt;double&gt; &amp;rVariable1,<span class="keyword">const</span> Variable&lt;double&gt; &amp;rVariable2) </div>
+<div class="line"><a name="l00559"></a><span class="lineno">  559</span>&#160;    <span class="keywordtype">void</span> SetVariable1ToVarible2(<a class="code" href="../../d4/d5e/class_model_part.html">ModelPart</a>* mpVMModePart,<span class="keyword">const</span> Variable&lt;double&gt; &amp;rVariable1,<span class="keyword">const</span> Variable&lt;double&gt; &amp;rVariable2) </div>
 <div class="line"><a name="l00560"></a><span class="lineno">  560</span>&#160;    {</div>
 <div class="line"><a name="l00561"></a><span class="lineno">  561</span>&#160;        <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; node_i : mpVMModePart-&gt;Nodes())</div>
 <div class="line"><a name="l00562"></a><span class="lineno">  562</span>&#160;        {</div>
@@ -565,7 +565,7 @@ $(function() {
 <div class="line"><a name="l00566"></a><span class="lineno">  566</span>&#160;        }</div>
 <div class="line"><a name="l00567"></a><span class="lineno">  567</span>&#160;    }    </div>
 <div class="line"><a name="l00568"></a><span class="lineno">  568</span>&#160; </div>
-<div class="line"><a name="l00569"></a><span class="lineno">  569</span>&#160;    <span class="keywordtype">void</span> AddVariable1ToVarible2(ModelPart* mpVMModePart,<span class="keyword">const</span> Variable&lt;double&gt; &amp;rVariable1,<span class="keyword">const</span> Variable&lt;double&gt; &amp;rVariable2) </div>
+<div class="line"><a name="l00569"></a><span class="lineno">  569</span>&#160;    <span class="keywordtype">void</span> AddVariable1ToVarible2(<a class="code" href="../../d4/d5e/class_model_part.html">ModelPart</a>* mpVMModePart,<span class="keyword">const</span> Variable&lt;double&gt; &amp;rVariable1,<span class="keyword">const</span> Variable&lt;double&gt; &amp;rVariable2) </div>
 <div class="line"><a name="l00570"></a><span class="lineno">  570</span>&#160;    {</div>
 <div class="line"><a name="l00571"></a><span class="lineno">  571</span>&#160;        <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; node_i : mpVMModePart-&gt;Nodes())</div>
 <div class="line"><a name="l00572"></a><span class="lineno">  572</span>&#160;        {</div>
@@ -595,12 +595,15 @@ $(function() {
 <div class="line"><a name="l00612"></a><span class="lineno">  612</span>&#160;}  <span class="comment">// namespace Kratos.</span></div>
 <div class="line"><a name="l00613"></a><span class="lineno">  613</span>&#160; </div>
 <div class="line"><a name="l00614"></a><span class="lineno">  614</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// HELMHOLTZ_PARTITION_H</span></div>
+<div class="ttc" id="aclass_model_html"><div class="ttname"><a href="../../d0/de3/class_model.html">Model</a></div><div class="ttdoc">This class aims to manage different model parts across multi-physics simulations.</div></div>
+<div class="ttc" id="aclass_model_part_html"><div class="ttname"><a href="../../d4/d5e/class_model_part.html">ModelPart</a></div><div class="ttdoc">This class aims to manage meshes for multi-physics simulations.</div><div class="ttdef"><b>Definition:</b> model_part.h:66</div></div>
+<div class="ttc" id="aclass_parameters_html"><div class="ttname"><a href="../../da/d39/class_parameters.html">Parameters</a></div><div class="ttdoc">This class provides to Kratos a data structure for I/O based on the standard of JSON.</div></div>
+<div class="ttc" id="aclass_variable_utils_html"><div class="ttname"><a href="../../d3/dc4/class_variable_utils.html">VariableUtils</a></div><div class="ttdoc">This class implements a set of auxiliar, already parallelized, methods to perform some common tasks r...</div></div>
 <div class="ttc" id="agroup___kratos_core_html_ga376e02451bc7cc3a5fd77b57f0549e6b"><div class="ttname"><a href="../../d5/d4d/group___kratos_core.html#ga376e02451bc7cc3a5fd77b57f0549e6b">KRATOS_ERROR</a></div><div class="ttdeci">#define KRATOS_ERROR</div><div class="ttdef"><b>Definition:</b> exception.h:161</div></div>
 <div class="ttc" id="ahelmholtz__bulk__element_8h_html"><div class="ttname"><a href="../../de/d85/helmholtz__bulk__element_8h.html">helmholtz_bulk_element.h</a></div></div>
 <div class="ttc" id="ahelmholtz__strategy_8h_html"><div class="ttname"><a href="../../d3/d19/helmholtz__strategy_8h.html">helmholtz_strategy.h</a></div></div>
 <div class="ttc" id="alogger_8h_html_a1aa4c61e78fd7fa7e4972ed28500bd6d"><div class="ttname"><a href="../../d1/d8c/logger_8h.html#a1aa4c61e78fd7fa7e4972ed28500bd6d">KRATOS_INFO</a></div><div class="ttdeci">#define KRATOS_INFO(label)</div><div class="ttdef"><b>Definition:</b> logger.h:250</div></div>
 <div class="ttc" id="amaterial__control_8h_html"><div class="ttname"><a href="../../d6/d8f/material__control_8h.html">material_control.h</a></div></div>
-<div class="ttc" id="anamespace_c_sharp_kratos_wrapper_html_a2e2643eb858b6ec11ecf3d3872800ef9"><div class="ttname"><a href="../../d1/d64/namespace_c_sharp_kratos_wrapper.html#a2e2643eb858b6ec11ecf3d3872800ef9">CSharpKratosWrapper::ModelPart</a></div><div class="ttdeci">Kratos::ModelPart ModelPart</div><div class="ttdef"><b>Definition:</b> kratos_wrapper.h:31</div></div>
 <div class="ttc" id="anamespace_kratos_1_1_cpp_tests_utilities_html_a9ede6dd3e9c2800a383b30d8c97601f7"><div class="ttname"><a href="../../de/da1/namespace_kratos_1_1_cpp_tests_utilities.html#a9ede6dd3e9c2800a383b30d8c97601f7">Kratos::CppTestsUtilities::Initialize</a></div><div class="ttdeci">void const std::string const bool Initialize</div><div class="ttdef"><b>Definition:</b> cpp_tests_utilities.h:65</div></div>
 <div class="ttc" id="anamespace_kratos_1_1_cpp_tests_utilities_html_ab9f7f0144943cf4067744d6b5b84d7a4"><div class="ttname"><a href="../../de/da1/namespace_kratos_1_1_cpp_tests_utilities.html#ab9f7f0144943cf4067744d6b5b84d7a4">Kratos::CppTestsUtilities::Elements</a></div><div class="ttdeci">void const std::string const bool const bool Elements</div><div class="ttdef"><b>Definition:</b> cpp_tests_utilities.h:66</div></div>
 <div class="ttc" id="anamespace_kratos_1_1_geometrical_transformation_utilities_html_a7c3b9a52c7004d968fe5d185778f03f7"><div class="ttname"><a href="../../de/da9/namespace_kratos_1_1_geometrical_transformation_utilities.html#a7c3b9a52c7004d968fe5d185778f03f7">Kratos::GeometricalTransformationUtilities::MatrixType</a></div><div class="ttdeci">Matrix MatrixType</div><div class="ttdef"><b>Definition:</b> geometrical_transformation_utilities.h:55</div></div>
@@ -617,7 +620,6 @@ $(function() {
 <div class="ttc" id="anamespace_kratos_html_ac398e9982e45de7167981e05b7f5ff57"><div class="ttname"><a href="../../db/d66/namespace_kratos.html#ac398e9982e45de7167981e05b7f5ff57">Kratos::int</a></div><div class="ttdeci">REACTION_CHECK_STIFFNESS_FACTOR int</div><div class="ttdef"><b>Definition:</b> contact_structural_mechanics_application_variables.h:64</div></div>
 <div class="ttc" id="anamespaceedgebased___pure_convection_html_a4b2ba243d5072905771aa99f3fb6dc75"><div class="ttname"><a href="../../d6/de1/namespaceedgebased___pure_convection.html#a4b2ba243d5072905771aa99f3fb6dc75">edgebased_PureConvection.ProcessInfo</a></div><div class="ttdeci">ProcessInfo</div><div class="ttdef"><b>Definition:</b> edgebased_PureConvection.py:116</div></div>
 <div class="ttc" id="anamespacegenerate__total__lagrangian__mixed__volumetric__strain__element_html_a1c3ce957bb604e9e317faf3f7fbfc834"><div class="ttname"><a href="../../d7/d33/namespacegenerate__total__lagrangian__mixed__volumetric__strain__element.html#a1c3ce957bb604e9e317faf3f7fbfc834">generate_total_lagrangian_mixed_volumetric_strain_element.local_size</a></div><div class="ttdeci">int local_size</div><div class="ttdef"><b>Definition:</b> generate_total_lagrangian_mixed_volumetric_strain_element.py:17</div></div>
-<div class="ttc" id="anamespacescript_html_ac15ac2b5f26090aaf005f81bbad3671a"><div class="ttname"><a href="../../df/d58/namespacescript.html#ac15ac2b5f26090aaf005f81bbad3671a">script.Model</a></div><div class="ttdeci">dictionary Model</div><div class="ttdoc">TODO replace this &quot;model&quot; for real one once available in kratos core.</div><div class="ttdef"><b>Definition:</b> script.py:94</div></div>
 <div class="ttc" id="anamespacesensitivity_matrix_html_a676f7f559f80bd5ebc1bd73cadbef39b"><div class="ttname"><a href="../../d0/d79/namespacesensitivity_matrix.html#a676f7f559f80bd5ebc1bd73cadbef39b">sensitivityMatrix.x</a></div><div class="ttdeci">x</div><div class="ttdef"><b>Definition:</b> sensitivityMatrix.py:49</div></div>
 <div class="ttc" id="anamespacetensors_html_a15a1da80aa773e2015eba781cababe05"><div class="ttname"><a href="../../d2/db8/namespacetensors.html#a15a1da80aa773e2015eba781cababe05">tensors::i</a></div><div class="ttdeci">integer i</div><div class="ttdef"><b>Definition:</b> TensorModule.f:17</div></div>
 <div class="ttc" id="anamespacetimer_html"><div class="ttname"><a href="../../d5/d83/namespacetimer.html">timer</a></div><div class="ttdef"><b>Definition:</b> timer.py:1</div></div>
@@ -626,7 +628,7 @@ $(function() {
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Apr 4 2023 02:08:20 for KratosMultiphysics by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Wed Apr 5 2023 01:53:44 for KratosMultiphysics by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

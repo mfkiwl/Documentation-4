@@ -281,7 +281,6 @@ var menudata={children:[
 {text:"Enumerations",url:"functions_enum.html"},
 {text:"Enumerator",url:"functions_eval.html",children:[
 {text:"b",url:"functions_eval.html#index_b"},
-{text:"c",url:"functions_eval.html#index_c"},
 {text:"d",url:"functions_eval.html#index_d"},
 {text:"f",url:"functions_eval.html#index_f"},
 {text:"l",url:"functions_eval.html#index_l"},

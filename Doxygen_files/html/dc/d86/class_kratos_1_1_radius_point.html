@@ -98,9 +98,9 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aecc5486b3965ca61623bb2812fdae8be"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acdf268c9204b65d0da157eb018254bb2"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d86/class_kratos_1_1_radius_point.html#acdf268c9204b65d0da157eb018254bb2">~RadiusPoint</a> ()</td></tr>
 <tr class="separator:acdf268c9204b65d0da157eb018254bb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2fdf2207c5e68c7fe060a4a3e81f3f9d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d86/class_kratos_1_1_radius_point.html#a2fdf2207c5e68c7fe060a4a3e81f3f9d">Initialize</a> (<a class="el" href="../../db/d85/class_kratos_1_1_spatial_search.html#aa17cb16812b072b671d9c843ace6567c">SpatialSearch::ElementPointerType</a> baseElem)</td></tr>
+<tr class="memitem:a2fdf2207c5e68c7fe060a4a3e81f3f9d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d86/class_kratos_1_1_radius_point.html#a2fdf2207c5e68c7fe060a4a3e81f3f9d">Initialize</a> (SpatialSearch::ElementPointerType baseElem)</td></tr>
 <tr class="separator:a2fdf2207c5e68c7fe060a4a3e81f3f9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a67b1b5bb26321f8cb9a7058d96e3aaca"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d86/class_kratos_1_1_radius_point.html#a67b1b5bb26321f8cb9a7058d96e3aaca">Initialize</a> (<a class="el" href="../../db/d85/class_kratos_1_1_spatial_search.html#aa17cb16812b072b671d9c843ace6567c">SpatialSearch::ElementPointerType</a> baseElem, <a class="el" href="../../db/d66/namespace_kratos.html#ac77084a57869cbecf89d3ee2c819c5d3">double</a> Radius)</td></tr>
+<tr class="memitem:a67b1b5bb26321f8cb9a7058d96e3aaca"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d86/class_kratos_1_1_radius_point.html#a67b1b5bb26321f8cb9a7058d96e3aaca">Initialize</a> (SpatialSearch::ElementPointerType baseElem, <a class="el" href="../../db/d66/namespace_kratos.html#ac77084a57869cbecf89d3ee2c819c5d3">double</a> Radius)</td></tr>
 <tr class="separator:a67b1b5bb26321f8cb9a7058d96e3aaca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad61fbfc45a82f6a01922f9b449b9be17"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../db/d66/namespace_kratos.html#ac77084a57869cbecf89d3ee2c819c5d3">double</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d86/class_kratos_1_1_radius_point.html#ad61fbfc45a82f6a01922f9b449b9be17">operator[]</a> (std::size_t i)</td></tr>
 <tr class="separator:ad61fbfc45a82f6a01922f9b449b9be17"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -115,7 +115,7 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a1e636d7a785ca8e193cb910fdf489d56"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7b1ca21e93f7a0709cb9a761dc1b4f5d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../db/d66/namespace_kratos.html#ac77084a57869cbecf89d3ee2c819c5d3">double</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d86/class_kratos_1_1_radius_point.html#a7b1ca21e93f7a0709cb9a761dc1b4f5d">coord</a> [Dimension]</td></tr>
 <tr class="separator:a7b1ca21e93f7a0709cb9a761dc1b4f5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a22abd6f06f80422db090b92ff3aeae16"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../db/d85/class_kratos_1_1_spatial_search.html#aa17cb16812b072b671d9c843ace6567c">SpatialSearch::ElementPointerType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d86/class_kratos_1_1_radius_point.html#a22abd6f06f80422db090b92ff3aeae16">pNaseElem</a></td></tr>
+<tr class="memitem:a22abd6f06f80422db090b92ff3aeae16"><td class="memItemLeft" align="right" valign="top">SpatialSearch::ElementPointerType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d86/class_kratos_1_1_radius_point.html#a22abd6f06f80422db090b92ff3aeae16">pNaseElem</a></td></tr>
 <tr class="separator:a22abd6f06f80422db090b92ff3aeae16"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
@@ -188,7 +188,7 @@ template&lt;std::size_t Dimension&gt; </div>
         <tr>
           <td class="memname">void <a class="el" href="../../dc/d86/class_kratos_1_1_radius_point.html">Kratos::RadiusPoint</a>&lt; Dimension &gt;::Initialize </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../db/d85/class_kratos_1_1_spatial_search.html#aa17cb16812b072b671d9c843ace6567c">SpatialSearch::ElementPointerType</a>&#160;</td>
+          <td class="paramtype">SpatialSearch::ElementPointerType&#160;</td>
           <td class="paramname"><em>baseElem</em></td><td>)</td>
           <td></td>
         </tr>
@@ -216,7 +216,7 @@ template&lt;std::size_t Dimension&gt; </div>
         <tr>
           <td class="memname">void <a class="el" href="../../dc/d86/class_kratos_1_1_radius_point.html">Kratos::RadiusPoint</a>&lt; Dimension &gt;::Initialize </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../db/d85/class_kratos_1_1_spatial_search.html#aa17cb16812b072b671d9c843ace6567c">SpatialSearch::ElementPointerType</a>&#160;</td>
+          <td class="paramtype">SpatialSearch::ElementPointerType&#160;</td>
           <td class="paramname"><em>baseElem</em>, </td>
         </tr>
         <tr>
@@ -366,7 +366,7 @@ template&lt;std::size_t Dimension&gt; </div>
 template&lt;std::size_t Dimension&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../db/d85/class_kratos_1_1_spatial_search.html#aa17cb16812b072b671d9c843ace6567c">SpatialSearch::ElementPointerType</a> <a class="el" href="../../dc/d86/class_kratos_1_1_radius_point.html">Kratos::RadiusPoint</a>&lt; Dimension &gt;::pNaseElem</td>
+          <td class="memname">SpatialSearch::ElementPointerType <a class="el" href="../../dc/d86/class_kratos_1_1_radius_point.html">Kratos::RadiusPoint</a>&lt; Dimension &gt;::pNaseElem</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -379,7 +379,7 @@ template&lt;std::size_t Dimension&gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Apr 4 2023 02:13:36 for KratosMultiphysics by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Wed Apr 5 2023 01:59:47 for KratosMultiphysics by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

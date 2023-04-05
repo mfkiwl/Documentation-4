@@ -148,7 +148,7 @@ $(function() {
 <div class="line"><a name="l00088"></a><span class="lineno"><a class="line" href="../../d5/d00/class_kratos_1_1_control.html#a701b1e43057ef595211742f294f93443">   88</a></span>&#160;  <a class="code" href="../../d5/d00/class_kratos_1_1_control.html#a701b1e43057ef595211742f294f93443">KRATOS_CLASS_POINTER_DEFINITION</a>(<a class="code" href="../../d5/d00/class_kratos_1_1_control.html">Control</a>);</div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160; </div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160; </div>
-<div class="line"><a name="l00095"></a><span class="lineno"><a class="line" href="../../d5/d00/class_kratos_1_1_control.html#a239f19354f81b32d86644b8e5248ce30">   95</a></span>&#160;  <a class="code" href="../../d5/d00/class_kratos_1_1_control.html#a239f19354f81b32d86644b8e5248ce30">Control</a>(std::string ControlName, std::string ControlType, Parameters ControlSettings): <a class="code" href="../../d5/d00/class_kratos_1_1_control.html#ad7ff2205ba6b247d73f6607eb3010f18">mControlName</a>(ControlName), <a class="code" href="../../d5/d00/class_kratos_1_1_control.html#aaa0308aafcdddee124fcba98e28b365f">mControlType</a>(ControlType), <a class="code" href="../../d5/d00/class_kratos_1_1_control.html#a06e3c028ba391ea8950b685fce78e670">mControlSettings</a>(ControlSettings){}</div>
+<div class="line"><a name="l00095"></a><span class="lineno"><a class="line" href="../../d5/d00/class_kratos_1_1_control.html#a239f19354f81b32d86644b8e5248ce30">   95</a></span>&#160;  <a class="code" href="../../d5/d00/class_kratos_1_1_control.html#a239f19354f81b32d86644b8e5248ce30">Control</a>(std::string ControlName, std::string ControlType, <a class="code" href="../../da/d39/class_parameters.html">Parameters</a> ControlSettings): <a class="code" href="../../d5/d00/class_kratos_1_1_control.html#ad7ff2205ba6b247d73f6607eb3010f18">mControlName</a>(ControlName), <a class="code" href="../../d5/d00/class_kratos_1_1_control.html#aaa0308aafcdddee124fcba98e28b365f">mControlType</a>(ControlType), <a class="code" href="../../d5/d00/class_kratos_1_1_control.html#a06e3c028ba391ea8950b685fce78e670">mControlSettings</a>(ControlSettings){}</div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160; </div>
 <div class="line"><a name="l00098"></a><span class="lineno"><a class="line" href="../../d5/d00/class_kratos_1_1_control.html#afe2e8a2db0c4978869b392af60ae5f63">   98</a></span>&#160;  <span class="keyword">virtual</span> <a class="code" href="../../d5/d00/class_kratos_1_1_control.html#afe2e8a2db0c4978869b392af60ae5f63">~Control</a>(){}</div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160; </div>
@@ -200,7 +200,7 @@ $(function() {
 <div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160; </div>
 <div class="line"><a name="l00173"></a><span class="lineno"><a class="line" href="../../d5/d00/class_kratos_1_1_control.html#ad7ff2205ba6b247d73f6607eb3010f18">  173</a></span>&#160;    std::string <a class="code" href="../../d5/d00/class_kratos_1_1_control.html#ad7ff2205ba6b247d73f6607eb3010f18">mControlName</a>;</div>
 <div class="line"><a name="l00174"></a><span class="lineno"><a class="line" href="../../d5/d00/class_kratos_1_1_control.html#aaa0308aafcdddee124fcba98e28b365f">  174</a></span>&#160;    std::string <a class="code" href="../../d5/d00/class_kratos_1_1_control.html#aaa0308aafcdddee124fcba98e28b365f">mControlType</a>;</div>
-<div class="line"><a name="l00175"></a><span class="lineno"><a class="line" href="../../d5/d00/class_kratos_1_1_control.html#a06e3c028ba391ea8950b685fce78e670">  175</a></span>&#160;    Parameters <a class="code" href="../../d5/d00/class_kratos_1_1_control.html#a06e3c028ba391ea8950b685fce78e670">mControlSettings</a>;</div>
+<div class="line"><a name="l00175"></a><span class="lineno"><a class="line" href="../../d5/d00/class_kratos_1_1_control.html#a06e3c028ba391ea8950b685fce78e670">  175</a></span>&#160;    <a class="code" href="../../da/d39/class_parameters.html">Parameters</a> <a class="code" href="../../d5/d00/class_kratos_1_1_control.html#a06e3c028ba391ea8950b685fce78e670">mControlSettings</a>;</div>
 <div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160; </div>
 <div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160; </div>
 <div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160; </div>
@@ -273,6 +273,7 @@ $(function() {
 <div class="ttc" id="aclass_kratos_1_1_ublas_space_html"><div class="ttname"><a href="../../d4/d69/class_kratos_1_1_ublas_space.html">Kratos::UblasSpace</a></div><div class="ttdoc">Short class definition.</div><div class="ttdef"><b>Definition:</b> ublas_space.h:115</div></div>
 <div class="ttc" id="aclass_kratos_1_1_variable_html"><div class="ttname"><a href="../../d1/d66/class_kratos_1_1_variable.html">Kratos::Variable</a></div><div class="ttdoc">Variable class contains all information needed to store and retrive data from a data container.</div><div class="ttdef"><b>Definition:</b> variable.h:63</div></div>
 <div class="ttc" id="aclass_kratos_1_1array__1d_html"><div class="ttname"><a href="../../d4/ddc/class_kratos_1_1array__1d.html">Kratos::array_1d&lt; double, 3 &gt;</a></div></div>
+<div class="ttc" id="aclass_parameters_html"><div class="ttname"><a href="../../da/d39/class_parameters.html">Parameters</a></div><div class="ttdoc">This class provides to Kratos a data structure for I/O based on the standard of JSON.</div></div>
 <div class="ttc" id="adefine_8h_html"><div class="ttname"><a href="../../df/d67/define_8h.html">define.h</a></div></div>
 <div class="ttc" id="alinear__solver_8h_html"><div class="ttname"><a href="../../d2/d9f/linear__solver_8h.html">linear_solver.h</a></div></div>
 <div class="ttc" id="amodel_8h_html"><div class="ttname"><a href="../../dc/d51/model_8h.html">model.h</a></div></div>
@@ -286,7 +287,7 @@ $(function() {
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Apr 4 2023 02:08:20 for KratosMultiphysics by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Wed Apr 5 2023 01:53:44 for KratosMultiphysics by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>
