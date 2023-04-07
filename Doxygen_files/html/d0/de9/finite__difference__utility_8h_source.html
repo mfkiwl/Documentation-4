@@ -79,122 +79,120 @@ $(function() {
 <div class="title">finite_difference_utility.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="../../d0/de9/finite__difference__utility_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno"><a class="line" href="../../db/d66/namespace_kratos.html#a979f4e616f887a6ddaec92bd56b42463">    1</a></span>&#160;<span class="comment">//    |  /           |</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">//    &#39; /   __| _` | __|  _ \   __|</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">//    . \  |   (   | |   (   |\__ `</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">//   _|\_\_|  \__,_|\__|\___/ ____/</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">//                   Multi-Physics</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">//</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">//  License:         BSD License</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment">//                   Kratos default license: kratos/license.txt</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment">//</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment">//  Main authors:    Martin Fusseder, https://github.com/MFusseder</span></div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">//</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#pragma once</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
+<a href="../../d0/de9/finite__difference__utility_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno"><a class="line" href="../../db/d66/namespace_kratos.html#a979f4e616f887a6ddaec92bd56b42463">    1</a></span>&#160;<span class="comment">// KRATOS  ___|  |                   |                   |</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">//       \___ \  __|  __| |   |  __| __| |   |  __| _` | |</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">//             | |   |    |   | (    |   |   | |   (   | |</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">//       _____/ \__|_|   \__,_|\___|\__|\__,_|_|  \__,_|_| MECHANICS</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">//  License:         BSD License</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">//                   license: StructuralMechanicsApplication/license.txt</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment">//  Main authors:    Martin Fusseder, https://github.com/MFusseder</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">// System includes</span></div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment">// System includes</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment">// External includes</span></div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment">// External includes</span></div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment">// Project includes</span></div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../df/d67/define_8h.html">includes/define.h</a>&quot;</span></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d4/dfe/element_8h.html">includes/element.h</a>&quot;</span></div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d7/d6c/condition_8h.html">includes/condition.h</a>&quot;</span></div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../db/d0c/structural__mechanics__application__variables_8h.html">structural_mechanics_application_variables.h</a>&quot;</span></div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">namespace </span><a class="code" href="../../db/d66/namespace_kratos.html">Kratos</a></div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;{</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keyword">class </span>KRATOS_API(STRUCTURAL_MECHANICS_APPLICATION) FiniteDifferenceUtility</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;{</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keyword">typedef</span> <a class="code" href="../../d1/d66/class_kratos_1_1_variable.html">Variable&lt;double&gt;</a> array_1d_component_type;</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keyword">typedef</span> std::size_t <a class="code" href="../../d5/d4d/group___kratos_core.html#ga1ba1e34f0af6a7cfcfa9b43e1f8e8c91">IndexType</a>;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keyword">typedef</span> std::size_t <a class="code" href="../../db/d66/namespace_kratos.html#a8b2d617fdb94b53f5f2bb88e1a7ebc18">SizeType</a>;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> CalculateRightHandSideDerivative(<a class="code" href="../../d5/dd4/class_kratos_1_1_element.html">Element</a>&amp; <a class="code" href="../../d7/d17/namespace_kratos_1_1_m_p_m_explicit_utilities.html#a196e53fcb7e0d12ead12723c8799e34b">rElement</a>,</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;                                                <span class="keyword">const</span> <a class="code" href="../../d9/dbb/class_kratos_1_1_internals_1_1_matrix.html">Vector</a>&amp; rRHS,</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;                                                <span class="keyword">const</span> <a class="code" href="../../d1/d66/class_kratos_1_1_variable.html">Variable&lt;double&gt;</a>&amp; rDesignVariable,</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;                                                <span class="keyword">const</span> <span class="keywordtype">double</span>&amp; rPertubationSize,</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;                                                <a class="code" href="../../d9/dbb/class_kratos_1_1_internals_1_1_matrix.html">Matrix</a>&amp; rOutput,</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;                                                <span class="keyword">const</span> ProcessInfo&amp; <a class="code" href="../../d2/d95/namespace_kratos_1_1_structural_mechanics_element_utilities.html#a13023981cd139d7bf702c24892a7ff10">rCurrentProcessInfo</a>);</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> TElementType&gt;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> CalculateRightHandSideDerivative(TElementType&amp; <a class="code" href="../../d7/d17/namespace_kratos_1_1_m_p_m_explicit_utilities.html#a196e53fcb7e0d12ead12723c8799e34b">rElement</a>,</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;                                                <span class="keyword">const</span> <a class="code" href="../../d9/dbb/class_kratos_1_1_internals_1_1_matrix.html">Vector</a>&amp; rRHS,</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;                                                <span class="keyword">const</span> array_1d_component_type&amp; rDesignVariable,</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;                                                <a class="code" href="../../d5/ddd/class_kratos_1_1_node.html">Node&lt;3&gt;</a>&amp; rNode,</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;                                                <span class="keyword">const</span> <span class="keywordtype">double</span>&amp; rPertubationSize,</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;                                                <a class="code" href="../../d9/dbb/class_kratos_1_1_internals_1_1_matrix.html">Vector</a>&amp; rOutput,</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;                                                <span class="keyword">const</span> ProcessInfo&amp; <a class="code" href="../../d2/d95/namespace_kratos_1_1_structural_mechanics_element_utilities.html#a13023981cd139d7bf702c24892a7ff10">rCurrentProcessInfo</a>)</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    {</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        <a class="code" href="../../df/d67/define_8h.html#ab9c29d6a0d19ff26bbc4e45e3181fb3f">KRATOS_TRY</a>;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        <span class="keywordflow">if</span>( rDesignVariable == SHAPE_SENSITIVITY_X || rDesignVariable == SHAPE_SENSITIVITY_Y || rDesignVariable == SHAPE_SENSITIVITY_Z )</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        {</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;            <span class="keyword">const</span> <a class="code" href="../../d5/d4d/group___kratos_core.html#ga1ba1e34f0af6a7cfcfa9b43e1f8e8c91">IndexType</a> coord_dir =</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;                FiniteDifferenceUtility::GetCoordinateDirection(rDesignVariable);</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;            <span class="comment">// define working variables</span></div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;            <a class="code" href="../../d9/dbb/class_kratos_1_1_internals_1_1_matrix.html">Vector</a> RHS_perturbed;</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;            <span class="keywordflow">if</span> (rOutput.size() != rRHS.size())</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;                rOutput.<a class="code" href="../../d9/dbb/class_kratos_1_1_internals_1_1_matrix.html#a3d36c583d63e7eeda493a7abdc97d874">resize</a>(rRHS.size(), <span class="keyword">false</span>);</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;            <span class="comment">// perturb the design variable</span></div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;            rNode.<a class="code" href="../../d5/ddd/class_kratos_1_1_node.html#ae8f11328833cdf7e8a6e0aa576d25ff0">GetInitialPosition</a>()[coord_dir] += rPertubationSize;</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;            rNode.<a class="code" href="../../d3/d3f/class_kratos_1_1_point.html#a12b7c8b8adacb59d7ff5fbd19df090fa">Coordinates</a>()[coord_dir] += rPertubationSize;</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;            <span class="comment">// compute LHS after perturbation</span></div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;            <a class="code" href="../../d7/d17/namespace_kratos_1_1_m_p_m_explicit_utilities.html#a196e53fcb7e0d12ead12723c8799e34b">rElement</a>.<a class="code" href="../../d5/dd4/class_kratos_1_1_element.html#a7c4f1ea4eff4e0a74e3b4b79ace68e35">CalculateRightHandSide</a>(RHS_perturbed, <a class="code" href="../../d2/d95/namespace_kratos_1_1_structural_mechanics_element_utilities.html#a13023981cd139d7bf702c24892a7ff10">rCurrentProcessInfo</a>);</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; </div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;            <span class="comment">// compute derivative of RHS w.r.t. design variable with finite differences</span></div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;            <a class="code" href="../../db/d66/namespace_kratos.html#aaff3672cc52b90ee3d84713de272e1b5">noalias</a>(rOutput) = (RHS_perturbed - rRHS) / rPertubationSize;</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160; </div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;            <span class="comment">// unperturb the design variable</span></div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;            rNode.<a class="code" href="../../d5/ddd/class_kratos_1_1_node.html#ae8f11328833cdf7e8a6e0aa576d25ff0">GetInitialPosition</a>()[coord_dir] -= rPertubationSize;</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;            rNode.<a class="code" href="../../d3/d3f/class_kratos_1_1_point.html#a12b7c8b8adacb59d7ff5fbd19df090fa">Coordinates</a>()[coord_dir] -= rPertubationSize;</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        }</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        {</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;            <a class="code" href="../../d1/d8c/logger_8h.html#af2d3eee3fed19a5f703dac58f332862e">KRATOS_WARNING</a>(<span class="stringliteral">&quot;FiniteDifferenceUtility&quot;</span>) &lt;&lt; <span class="stringliteral">&quot;Unsupported nodal design variable: &quot;</span> &lt;&lt; rDesignVariable &lt;&lt; std::endl;</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;            <span class="keywordflow">if</span> ( (rOutput.size() != 0) )</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;                rOutput.<a class="code" href="../../d9/dbb/class_kratos_1_1_internals_1_1_matrix.html#a3d36c583d63e7eeda493a7abdc97d874">resize</a>(0,<span class="keyword">false</span>);</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        }</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160; </div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        <a class="code" href="../../df/d67/define_8h.html#a5eac541f5e39bf0360a12f51f0248513">KRATOS_CATCH</a>(<span class="stringliteral">&quot;&quot;</span>);</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    }</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160; </div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> CalculateLeftHandSideDerivative(<a class="code" href="../../d5/dd4/class_kratos_1_1_element.html">Element</a>&amp; <a class="code" href="../../d7/d17/namespace_kratos_1_1_m_p_m_explicit_utilities.html#a196e53fcb7e0d12ead12723c8799e34b">rElement</a>,</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;                                                <span class="keyword">const</span> <a class="code" href="../../d9/dbb/class_kratos_1_1_internals_1_1_matrix.html">Matrix</a>&amp; rLHS,</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;                                                <span class="keyword">const</span> array_1d_component_type&amp; rDesignVariable,</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;                                                <a class="code" href="../../d5/ddd/class_kratos_1_1_node.html">Node&lt;3&gt;</a>&amp; rNode,</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;                                                <span class="keyword">const</span> <span class="keywordtype">double</span>&amp; rPertubationSize,</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;                                                <a class="code" href="../../d9/dbb/class_kratos_1_1_internals_1_1_matrix.html">Matrix</a>&amp; rOutput,</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;                                                <span class="keyword">const</span> ProcessInfo&amp; <a class="code" href="../../d2/d95/namespace_kratos_1_1_structural_mechanics_element_utilities.html#a13023981cd139d7bf702c24892a7ff10">rCurrentProcessInfo</a>);</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160; </div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> CalculateMassMatrixDerivative(<a class="code" href="../../d5/dd4/class_kratos_1_1_element.html">Element</a>&amp; <a class="code" href="../../d7/d17/namespace_kratos_1_1_m_p_m_explicit_utilities.html#a196e53fcb7e0d12ead12723c8799e34b">rElement</a>,</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;                                                <span class="keyword">const</span> <a class="code" href="../../d9/dbb/class_kratos_1_1_internals_1_1_matrix.html">Matrix</a>&amp; rMassMatrix,</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;                                                <span class="keyword">const</span> array_1d_component_type&amp; rDesignVariable,</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;                                                <a class="code" href="../../d5/ddd/class_kratos_1_1_node.html">Node&lt;3&gt;</a>&amp; rNode,</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;                                                <span class="keyword">const</span> <span class="keywordtype">double</span>&amp; rPertubationSize,</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;                                                <a class="code" href="../../d9/dbb/class_kratos_1_1_internals_1_1_matrix.html">Matrix</a>&amp; rOutput,</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;                                                <span class="keyword">const</span> ProcessInfo&amp; <a class="code" href="../../d2/d95/namespace_kratos_1_1_structural_mechanics_element_utilities.html#a13023981cd139d7bf702c24892a7ff10">rCurrentProcessInfo</a>);</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment">// Project includes</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../df/d67/define_8h.html">includes/define.h</a>&quot;</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d4/dfe/element_8h.html">includes/element.h</a>&quot;</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d7/d6c/condition_8h.html">includes/condition.h</a>&quot;</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../db/d0c/structural__mechanics__application__variables_8h.html">structural_mechanics_application_variables.h</a>&quot;</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">namespace </span><a class="code" href="../../db/d66/namespace_kratos.html">Kratos</a></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;{</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keyword">class </span>KRATOS_API(STRUCTURAL_MECHANICS_APPLICATION) FiniteDifferenceUtility</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;{</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keyword">typedef</span> <a class="code" href="../../d1/d66/class_kratos_1_1_variable.html">Variable&lt;double&gt;</a> array_1d_component_type;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keyword">typedef</span> std::size_t <a class="code" href="../../d5/d4d/group___kratos_core.html#ga1ba1e34f0af6a7cfcfa9b43e1f8e8c91">IndexType</a>;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keyword">typedef</span> std::size_t <a class="code" href="../../db/d66/namespace_kratos.html#a8b2d617fdb94b53f5f2bb88e1a7ebc18">SizeType</a>;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> CalculateRightHandSideDerivative(<a class="code" href="../../d5/dd4/class_kratos_1_1_element.html">Element</a>&amp; <a class="code" href="../../d7/d17/namespace_kratos_1_1_m_p_m_explicit_utilities.html#a196e53fcb7e0d12ead12723c8799e34b">rElement</a>,</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;                                                <span class="keyword">const</span> <a class="code" href="../../d9/dbb/class_kratos_1_1_internals_1_1_matrix.html">Vector</a>&amp; rRHS,</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;                                                <span class="keyword">const</span> <a class="code" href="../../d1/d66/class_kratos_1_1_variable.html">Variable&lt;double&gt;</a>&amp; rDesignVariable,</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;                                                <span class="keyword">const</span> <span class="keywordtype">double</span>&amp; rPertubationSize,</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;                                                <a class="code" href="../../d9/dbb/class_kratos_1_1_internals_1_1_matrix.html">Matrix</a>&amp; rOutput,</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;                                                <span class="keyword">const</span> ProcessInfo&amp; <a class="code" href="../../d2/d95/namespace_kratos_1_1_structural_mechanics_element_utilities.html#a13023981cd139d7bf702c24892a7ff10">rCurrentProcessInfo</a>);</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> TElementType&gt;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> CalculateRightHandSideDerivative(TElementType&amp; <a class="code" href="../../d7/d17/namespace_kratos_1_1_m_p_m_explicit_utilities.html#a196e53fcb7e0d12ead12723c8799e34b">rElement</a>,</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;                                                <span class="keyword">const</span> <a class="code" href="../../d9/dbb/class_kratos_1_1_internals_1_1_matrix.html">Vector</a>&amp; rRHS,</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;                                                <span class="keyword">const</span> array_1d_component_type&amp; rDesignVariable,</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;                                                <a class="code" href="../../d5/ddd/class_kratos_1_1_node.html">Node&lt;3&gt;</a>&amp; rNode,</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;                                                <span class="keyword">const</span> <span class="keywordtype">double</span>&amp; rPertubationSize,</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;                                                <a class="code" href="../../d9/dbb/class_kratos_1_1_internals_1_1_matrix.html">Vector</a>&amp; rOutput,</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;                                                <span class="keyword">const</span> ProcessInfo&amp; <a class="code" href="../../d2/d95/namespace_kratos_1_1_structural_mechanics_element_utilities.html#a13023981cd139d7bf702c24892a7ff10">rCurrentProcessInfo</a>)</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    {</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        <a class="code" href="../../df/d67/define_8h.html#ab9c29d6a0d19ff26bbc4e45e3181fb3f">KRATOS_TRY</a>;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        <span class="keywordflow">if</span>( rDesignVariable == SHAPE_SENSITIVITY_X || rDesignVariable == SHAPE_SENSITIVITY_Y || rDesignVariable == SHAPE_SENSITIVITY_Z )</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        {</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;            <span class="keyword">const</span> <a class="code" href="../../d5/d4d/group___kratos_core.html#ga1ba1e34f0af6a7cfcfa9b43e1f8e8c91">IndexType</a> coord_dir =</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;                FiniteDifferenceUtility::GetCoordinateDirection(rDesignVariable);</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;            <span class="comment">// define working variables</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;            <a class="code" href="../../d9/dbb/class_kratos_1_1_internals_1_1_matrix.html">Vector</a> RHS_perturbed;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;            <span class="keywordflow">if</span> (rOutput.size() != rRHS.size())</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;                rOutput.<a class="code" href="../../d9/dbb/class_kratos_1_1_internals_1_1_matrix.html#a3d36c583d63e7eeda493a7abdc97d874">resize</a>(rRHS.size(), <span class="keyword">false</span>);</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;            <span class="comment">// perturb the design variable</span></div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;            rNode.<a class="code" href="../../d5/ddd/class_kratos_1_1_node.html#ae8f11328833cdf7e8a6e0aa576d25ff0">GetInitialPosition</a>()[coord_dir] += rPertubationSize;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;            rNode.<a class="code" href="../../d3/d3f/class_kratos_1_1_point.html#a12b7c8b8adacb59d7ff5fbd19df090fa">Coordinates</a>()[coord_dir] += rPertubationSize;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;            <span class="comment">// compute LHS after perturbation</span></div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;            <a class="code" href="../../d7/d17/namespace_kratos_1_1_m_p_m_explicit_utilities.html#a196e53fcb7e0d12ead12723c8799e34b">rElement</a>.<a class="code" href="../../d5/dd4/class_kratos_1_1_element.html#a7c4f1ea4eff4e0a74e3b4b79ace68e35">CalculateRightHandSide</a>(RHS_perturbed, <a class="code" href="../../d2/d95/namespace_kratos_1_1_structural_mechanics_element_utilities.html#a13023981cd139d7bf702c24892a7ff10">rCurrentProcessInfo</a>);</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160; </div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;            <span class="comment">// compute derivative of RHS w.r.t. design variable with finite differences</span></div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;            <a class="code" href="../../db/d66/namespace_kratos.html#aaff3672cc52b90ee3d84713de272e1b5">noalias</a>(rOutput) = (RHS_perturbed - rRHS) / rPertubationSize;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;            <span class="comment">// unperturb the design variable</span></div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;            rNode.<a class="code" href="../../d5/ddd/class_kratos_1_1_node.html#ae8f11328833cdf7e8a6e0aa576d25ff0">GetInitialPosition</a>()[coord_dir] -= rPertubationSize;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;            rNode.<a class="code" href="../../d3/d3f/class_kratos_1_1_point.html#a12b7c8b8adacb59d7ff5fbd19df090fa">Coordinates</a>()[coord_dir] -= rPertubationSize;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        }</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        {</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;            <a class="code" href="../../d1/d8c/logger_8h.html#af2d3eee3fed19a5f703dac58f332862e">KRATOS_WARNING</a>(<span class="stringliteral">&quot;FiniteDifferenceUtility&quot;</span>) &lt;&lt; <span class="stringliteral">&quot;Unsupported nodal design variable: &quot;</span> &lt;&lt; rDesignVariable &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;            <span class="keywordflow">if</span> ( (rOutput.size() != 0) )</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;                rOutput.<a class="code" href="../../d9/dbb/class_kratos_1_1_internals_1_1_matrix.html#a3d36c583d63e7eeda493a7abdc97d874">resize</a>(0,<span class="keyword">false</span>);</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;        }</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160; </div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        <a class="code" href="../../df/d67/define_8h.html#a5eac541f5e39bf0360a12f51f0248513">KRATOS_CATCH</a>(<span class="stringliteral">&quot;&quot;</span>);</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    }</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160; </div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> CalculateLeftHandSideDerivative(<a class="code" href="../../d5/dd4/class_kratos_1_1_element.html">Element</a>&amp; <a class="code" href="../../d7/d17/namespace_kratos_1_1_m_p_m_explicit_utilities.html#a196e53fcb7e0d12ead12723c8799e34b">rElement</a>,</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;                                                <span class="keyword">const</span> <a class="code" href="../../d9/dbb/class_kratos_1_1_internals_1_1_matrix.html">Matrix</a>&amp; rLHS,</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;                                                <span class="keyword">const</span> array_1d_component_type&amp; rDesignVariable,</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;                                                <a class="code" href="../../d5/ddd/class_kratos_1_1_node.html">Node&lt;3&gt;</a>&amp; rNode,</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;                                                <span class="keyword">const</span> <span class="keywordtype">double</span>&amp; rPertubationSize,</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;                                                <a class="code" href="../../d9/dbb/class_kratos_1_1_internals_1_1_matrix.html">Matrix</a>&amp; rOutput,</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;                                                <span class="keyword">const</span> ProcessInfo&amp; <a class="code" href="../../d2/d95/namespace_kratos_1_1_structural_mechanics_element_utilities.html#a13023981cd139d7bf702c24892a7ff10">rCurrentProcessInfo</a>);</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160; </div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> CalculateMassMatrixDerivative(<a class="code" href="../../d5/dd4/class_kratos_1_1_element.html">Element</a>&amp; <a class="code" href="../../d7/d17/namespace_kratos_1_1_m_p_m_explicit_utilities.html#a196e53fcb7e0d12ead12723c8799e34b">rElement</a>,</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;                                                <span class="keyword">const</span> <a class="code" href="../../d9/dbb/class_kratos_1_1_internals_1_1_matrix.html">Matrix</a>&amp; rMassMatrix,</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;                                                <span class="keyword">const</span> array_1d_component_type&amp; rDesignVariable,</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;                                                <a class="code" href="../../d5/ddd/class_kratos_1_1_node.html">Node&lt;3&gt;</a>&amp; rNode,</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;                                                <span class="keyword">const</span> <span class="keywordtype">double</span>&amp; rPertubationSize,</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;                                                <a class="code" href="../../d9/dbb/class_kratos_1_1_internals_1_1_matrix.html">Matrix</a>&amp; rOutput,</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;                                                <span class="keyword">const</span> ProcessInfo&amp; <a class="code" href="../../d2/d95/namespace_kratos_1_1_structural_mechanics_element_utilities.html#a13023981cd139d7bf702c24892a7ff10">rCurrentProcessInfo</a>);</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160; </div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;<span class="keyword">private</span>:</div>
 <div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160; </div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    <span class="keyword">static</span> std::size_t GetCoordinateDirection(<span class="keyword">const</span> array_1d_component_type&amp; rDesignVariable);</div>
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160; </div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    <span class="keyword">static</span> std::size_t GetCoordinateDirection(<span class="keyword">const</span> array_1d_component_type&amp; rDesignVariable);</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;}; <span class="comment">// class FiniteDifferenceUtility.</span></div>
 <div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160; </div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;}; <span class="comment">// class FiniteDifferenceUtility.</span></div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160; </div>
 <div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160; </div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160; </div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;}  <span class="comment">// namespace Kratos.</span></div>
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160; </div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;}  <span class="comment">// namespace Kratos.</span></div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160; </div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160; </div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160; </div>
 <div class="ttc" id="aclass_kratos_1_1_element_html"><div class="ttname"><a href="../../d5/dd4/class_kratos_1_1_element.html">Kratos::Element</a></div><div class="ttdoc">Base class for all Elements.</div><div class="ttdef"><b>Definition:</b> element.h:60</div></div>
 <div class="ttc" id="aclass_kratos_1_1_element_html_a7c4f1ea4eff4e0a74e3b4b79ace68e35"><div class="ttname"><a href="../../d5/dd4/class_kratos_1_1_element.html#a7c4f1ea4eff4e0a74e3b4b79ace68e35">Kratos::Element::CalculateRightHandSide</a></div><div class="ttdeci">virtual void CalculateRightHandSide(VectorType &amp;rRightHandSideVector, const ProcessInfo &amp;rCurrentProcessInfo)</div><div class="ttdef"><b>Definition:</b> element.h:437</div></div>
 <div class="ttc" id="aclass_kratos_1_1_internals_1_1_matrix_html"><div class="ttname"><a href="../../d9/dbb/class_kratos_1_1_internals_1_1_matrix.html">Kratos::Internals::Matrix&lt; double, AMatrix::dynamic, 1 &gt;</a></div></div>
@@ -211,7 +209,7 @@ $(function() {
 <div class="ttc" id="agroup___kratos_core_html_ga1ba1e34f0af6a7cfcfa9b43e1f8e8c91"><div class="ttname"><a href="../../d5/d4d/group___kratos_core.html#ga1ba1e34f0af6a7cfcfa9b43e1f8e8c91">Kratos::IndexType</a></div><div class="ttdeci">std::size_t IndexType</div><div class="ttdoc">The definition of the index type.</div><div class="ttdef"><b>Definition:</b> key_hash.h:37</div></div>
 <div class="ttc" id="alogger_8h_html_af2d3eee3fed19a5f703dac58f332862e"><div class="ttname"><a href="../../d1/d8c/logger_8h.html#af2d3eee3fed19a5f703dac58f332862e">KRATOS_WARNING</a></div><div class="ttdeci">#define KRATOS_WARNING(label)</div><div class="ttdef"><b>Definition:</b> logger.h:265</div></div>
 <div class="ttc" id="anamespace_kratos_1_1_m_p_m_explicit_utilities_html_a196e53fcb7e0d12ead12723c8799e34b"><div class="ttname"><a href="../../d7/d17/namespace_kratos_1_1_m_p_m_explicit_utilities.html#a196e53fcb7e0d12ead12723c8799e34b">Kratos::MPMExplicitUtilities::rElement</a></div><div class="ttdeci">void Element &amp; rElement</div><div class="ttdef"><b>Definition:</b> mpm_explicit_utilities.h:48</div></div>
-<div class="ttc" id="anamespace_kratos_1_1_structural_mechanics_element_utilities_html_a13023981cd139d7bf702c24892a7ff10"><div class="ttname"><a href="../../d2/d95/namespace_kratos_1_1_structural_mechanics_element_utilities.html#a13023981cd139d7bf702c24892a7ff10">Kratos::StructuralMechanicsElementUtilities::rCurrentProcessInfo</a></div><div class="ttdeci">void Element::MatrixType const ProcessInfo &amp; rCurrentProcessInfo</div><div class="ttdef"><b>Definition:</b> structural_mechanics_element_utilities.h:211</div></div>
+<div class="ttc" id="anamespace_kratos_1_1_structural_mechanics_element_utilities_html_a13023981cd139d7bf702c24892a7ff10"><div class="ttname"><a href="../../d2/d95/namespace_kratos_1_1_structural_mechanics_element_utilities.html#a13023981cd139d7bf702c24892a7ff10">Kratos::StructuralMechanicsElementUtilities::rCurrentProcessInfo</a></div><div class="ttdeci">void Element::MatrixType const ProcessInfo &amp; rCurrentProcessInfo</div><div class="ttdef"><b>Definition:</b> structural_mechanics_element_utilities.h:210</div></div>
 <div class="ttc" id="anamespace_kratos_html"><div class="ttname"><a href="../../db/d66/namespace_kratos.html">Kratos</a></div><div class="ttdoc">REF: G. R. Cowper, GAUSSIAN QUADRATURE FORMULAS FOR TRIANGLES.</div><div class="ttdef"><b>Definition:</b> mesh_condition.cpp:21</div></div>
 <div class="ttc" id="anamespace_kratos_html_a8b2d617fdb94b53f5f2bb88e1a7ebc18"><div class="ttname"><a href="../../db/d66/namespace_kratos.html#a8b2d617fdb94b53f5f2bb88e1a7ebc18">Kratos::SizeType</a></div><div class="ttdeci">std::size_t SizeType</div><div class="ttdoc">The definition of the size type.</div><div class="ttdef"><b>Definition:</b> mortar_classes.h:44</div></div>
 <div class="ttc" id="anamespace_kratos_html_aaff3672cc52b90ee3d84713de272e1b5"><div class="ttname"><a href="../../db/d66/namespace_kratos.html#aaff3672cc52b90ee3d84713de272e1b5">Kratos::noalias</a></div><div class="ttdeci">T &amp; noalias(T &amp;TheMatrix)</div><div class="ttdef"><b>Definition:</b> amatrix_interface.h:484</div></div>
@@ -219,7 +217,7 @@ $(function() {
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Apr 6 2023 02:07:16 for KratosMultiphysics by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Fri Apr 7 2023 02:04:35 for KratosMultiphysics by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>
