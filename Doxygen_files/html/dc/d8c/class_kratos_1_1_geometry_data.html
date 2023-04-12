@@ -219,8 +219,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a8ed37ca0e3d3f06be882228d0a54d1b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the <a class="el" href="../../dd/d9b/class_kratos_1_1_geometry_shape_function_container.html">GeometryShapeFunctionContainer</a>.  <a href="../../dc/d8c/class_kratos_1_1_geometry_data.html#a8ed37ca0e3d3f06be882228d0a54d1b1">More...</a><br /></td></tr>
 <tr class="separator:a8ed37ca0e3d3f06be882228d0a54d1b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Informations</div></td></tr>
-<tr class="memitem:a7c6b6ced4168c07977b516703eb340c9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dc/d8c/class_kratos_1_1_geometry_data.html#a9b83345c98311ca4db4b07f6e7bb13fd">SizeType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d8c/class_kratos_1_1_geometry_data.html#a7c6b6ced4168c07977b516703eb340c9">Dimension</a> () const</td></tr>
-<tr class="separator:a7c6b6ced4168c07977b516703eb340c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8aeaf8b808e7b36b3f0dc87771225bbb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dc/d8c/class_kratos_1_1_geometry_data.html#a9b83345c98311ca4db4b07f6e7bb13fd">SizeType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d8c/class_kratos_1_1_geometry_data.html#a8aeaf8b808e7b36b3f0dc87771225bbb">WorkingSpaceDimension</a> () const</td></tr>
 <tr class="separator:a8aeaf8b808e7b36b3f0dc87771225bbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6f7b87b79c685e3d865558a78da48a59"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dc/d8c/class_kratos_1_1_geometry_data.html#a9b83345c98311ca4db4b07f6e7bb13fd">SizeType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d8c/class_kratos_1_1_geometry_data.html#a6f7b87b79c685e3d865558a78da48a59">LocalSpaceDimension</a> () const</td></tr>
@@ -793,36 +791,6 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a7c6b6ced4168c07977b516703eb340c9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7c6b6ced4168c07977b516703eb340c9">&#9670;&nbsp;</a></span>Dimension()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="../../dc/d8c/class_kratos_1_1_geometry_data.html#a9b83345c98311ca4db4b07f6e7bb13fd">SizeType</a> Kratos::GeometryData::Dimension </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Dimension of the geometry for example a triangle2d is a 2 dimensional shape</p>
-<dl class="section return"><dt>Returns</dt><dd>SizeType, dimension of this geometry. </dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="../../dc/d8c/class_kratos_1_1_geometry_data.html#a8aeaf8b808e7b36b3f0dc87771225bbb">WorkingSpaceDimension()</a> </dd>
-<dd>
-<a class="el" href="../../dc/d8c/class_kratos_1_1_geometry_data.html#a6f7b87b79c685e3d865558a78da48a59">LocalSpaceDimension()</a> </dd></dl>
-
-</div>
-</div>
 <a id="a8ed37ca0e3d3f06be882228d0a54d1b1"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8ed37ca0e3d3f06be882228d0a54d1b1">&#9670;&nbsp;</a></span>GetGeometryShapeFunctionContainer()</h2>
 
@@ -1057,7 +1025,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Local space dimension. for example a triangle is a 2 dimensional shape but can have 3 dimensional area coordinates l1, l2, l3.</p>
 <dl class="section return"><dt>Returns</dt><dd>SizeType, local space dimension of this geometry. </dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="../../dc/d8c/class_kratos_1_1_geometry_data.html#a7c6b6ced4168c07977b516703eb340c9">Dimension()</a> </dd>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="../../da/dec/namespace_kratos_1_1_mortar_utilities.html#a67e0ac17841be88205ea3ffb7748688c">Dimension()</a> </dd>
 <dd>
 <a class="el" href="../../dc/d8c/class_kratos_1_1_geometry_data.html#a8aeaf8b808e7b36b3f0dc87771225bbb">WorkingSpaceDimension()</a> </dd></dl>
 
@@ -1653,7 +1621,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Working space dimension. for example a triangle is a 2 dimensional shape but can be used in 3 dimensional space.</p>
 <dl class="section return"><dt>Returns</dt><dd>SizeType, working space dimension of this geometry. </dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="../../dc/d8c/class_kratos_1_1_geometry_data.html#a7c6b6ced4168c07977b516703eb340c9">Dimension()</a> </dd>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="../../da/dec/namespace_kratos_1_1_mortar_utilities.html#a67e0ac17841be88205ea3ffb7748688c">Dimension()</a> </dd>
 <dd>
 <a class="el" href="../../dc/d8c/class_kratos_1_1_geometry_data.html#a6f7b87b79c685e3d865558a78da48a59">LocalSpaceDimension()</a> </dd></dl>
 
@@ -1688,7 +1656,7 @@ Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Apr 11 2023 02:14:27 for KratosMultiphysics by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Wed Apr 12 2023 02:11:18 for KratosMultiphysics by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>
