@@ -145,24 +145,30 @@ $(function() {
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160; </div>
 <div class="line"><a name="l00096"></a><span class="lineno"><a class="line" href="../../df/da2/class_kratos_1_1_output_process.html#acf3a20359f32c45d405b3d190c8778fd">   96</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../df/da2/class_kratos_1_1_output_process.html#acf3a20359f32c45d405b3d190c8778fd">PrintData</a>(std::ostream&amp; rOStream)<span class="keyword"> const override </span>{}</div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160; </div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160; </div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;}; <span class="comment">// Class OutputProcess</span></div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160; </div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160; </div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    <a class="code" href="../../db/d40/define__registry_8h.html#a7c4935eddf8c37f2fed54b7fa9a2ad17">KRATOS_REGISTRY_ADD_PROTOTYPE</a>(<span class="stringliteral">&quot;Processes.KratosMultiphysics&quot;</span>, <a class="code" href="../../df/da2/class_kratos_1_1_output_process.html">OutputProcess</a>)</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    <a class="code" href="../../db/d40/define__registry_8h.html#a7c4935eddf8c37f2fed54b7fa9a2ad17">KRATOS_REGISTRY_ADD_PROTOTYPE</a>(<span class="stringliteral">&quot;Processes.All&quot;</span>, <a class="code" href="../../df/da2/class_kratos_1_1_output_process.html">OutputProcess</a>)</div>
 <div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160; </div>
-<div class="line"><a name="l00107"></a><span class="lineno"><a class="line" href="../../d5/d4d/group___kratos_core.html#gad7fe8a728486c34a74ddb37fcbcd6844">  107</a></span>&#160;<span class="keyword">inline</span> std::ostream&amp; <a class="code" href="../../db/d66/namespace_kratos.html#acfc842a43d19dffc2d8105e5cbea17a9">operator &lt;&lt; </a>(std::ostream&amp; rOStream,</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;                <span class="keyword">const</span> <a class="code" href="../../df/da2/class_kratos_1_1_output_process.html">OutputProcess</a>&amp; rThis)</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;{</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    rThis.<a class="code" href="../../df/da2/class_kratos_1_1_output_process.html#ac2308c64e00150de82616f6c88c30039">PrintInfo</a>(rOStream);</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    rOStream &lt;&lt; std::endl;</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    rThis.<a class="code" href="../../df/da2/class_kratos_1_1_output_process.html#acf3a20359f32c45d405b3d190c8778fd">PrintData</a>(rOStream);</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    </div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160; </div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;}; <span class="comment">// Class OutputProcess</span></div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160; </div>
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160; </div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    <span class="keywordflow">return</span> rOStream;</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;}</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160; </div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160; </div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;}  <span class="comment">// namespace Kratos.</span></div>
+<div class="line"><a name="l00115"></a><span class="lineno"><a class="line" href="../../d5/d4d/group___kratos_core.html#gad7fe8a728486c34a74ddb37fcbcd6844">  115</a></span>&#160;<span class="keyword">inline</span> std::ostream&amp; <a class="code" href="../../db/d66/namespace_kratos.html#acfc842a43d19dffc2d8105e5cbea17a9">operator &lt;&lt; </a>(std::ostream&amp; rOStream,</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;                <span class="keyword">const</span> <a class="code" href="../../df/da2/class_kratos_1_1_output_process.html">OutputProcess</a>&amp; rThis)</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;{</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    rThis.<a class="code" href="../../df/da2/class_kratos_1_1_output_process.html#ac2308c64e00150de82616f6c88c30039">PrintInfo</a>(rOStream);</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    rOStream &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    rThis.<a class="code" href="../../df/da2/class_kratos_1_1_output_process.html#acf3a20359f32c45d405b3d190c8778fd">PrintData</a>(rOStream);</div>
 <div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160; </div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// KRATOS_OUTPUT_PROCESS_H_INCLUDED defined</span></div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    <span class="keywordflow">return</span> rOStream;</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;}</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160; </div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160; </div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;}  <span class="comment">// namespace Kratos.</span></div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160; </div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// KRATOS_OUTPUT_PROCESS_H_INCLUDED defined</span></div>
 <div class="ttc" id="aclass_kratos_1_1_output_process_html"><div class="ttname"><a href="../../df/da2/class_kratos_1_1_output_process.html">Kratos::OutputProcess</a></div><div class="ttdoc">The base class for output processes.</div><div class="ttdef"><b>Definition:</b> output_process.h:41</div></div>
 <div class="ttc" id="aclass_kratos_1_1_output_process_html_a06e4fc4fcc43efb51569d5ec2c833f9a"><div class="ttname"><a href="../../df/da2/class_kratos_1_1_output_process.html#a06e4fc4fcc43efb51569d5ec2c833f9a">Kratos::OutputProcess::OutputProcess</a></div><div class="ttdeci">OutputProcess()</div><div class="ttdoc">Default constructor.</div><div class="ttdef"><b>Definition:</b> output_process.h:54</div></div>
 <div class="ttc" id="aclass_kratos_1_1_output_process_html_a2c84a3161858f32a7efc9758199098a9"><div class="ttname"><a href="../../df/da2/class_kratos_1_1_output_process.html#a2c84a3161858f32a7efc9758199098a9">Kratos::OutputProcess::operator=</a></div><div class="ttdeci">OutputProcess &amp; operator=(OutputProcess const &amp;rOther)=delete</div><div class="ttdoc">Assignment operator.</div></div>
@@ -172,7 +178,8 @@ $(function() {
 <div class="ttc" id="aclass_kratos_1_1_output_process_html_ab66c8b57e7174e4fff476f390cea80c0"><div class="ttname"><a href="../../df/da2/class_kratos_1_1_output_process.html#ab66c8b57e7174e4fff476f390cea80c0">Kratos::OutputProcess::Info</a></div><div class="ttdeci">std::string Info() const override</div><div class="ttdoc">Turn back information as a string.</div><div class="ttdef"><b>Definition:</b> output_process.h:82</div></div>
 <div class="ttc" id="aclass_kratos_1_1_output_process_html_ac2308c64e00150de82616f6c88c30039"><div class="ttname"><a href="../../df/da2/class_kratos_1_1_output_process.html#ac2308c64e00150de82616f6c88c30039">Kratos::OutputProcess::PrintInfo</a></div><div class="ttdeci">void PrintInfo(std::ostream &amp;rOStream) const override</div><div class="ttdoc">Print information about this object.</div><div class="ttdef"><b>Definition:</b> output_process.h:90</div></div>
 <div class="ttc" id="aclass_kratos_1_1_output_process_html_acf3a20359f32c45d405b3d190c8778fd"><div class="ttname"><a href="../../df/da2/class_kratos_1_1_output_process.html#acf3a20359f32c45d405b3d190c8778fd">Kratos::OutputProcess::PrintData</a></div><div class="ttdeci">void PrintData(std::ostream &amp;rOStream) const override</div><div class="ttdoc">Print object's data.</div><div class="ttdef"><b>Definition:</b> output_process.h:96</div></div>
-<div class="ttc" id="aclass_kratos_1_1_process_html"><div class="ttname"><a href="../../d2/d8c/class_kratos_1_1_process.html">Kratos::Process</a></div><div class="ttdoc">The base class for all processes in Kratos.</div><div class="ttdef"><b>Definition:</b> process.h:48</div></div>
+<div class="ttc" id="aclass_kratos_1_1_process_html"><div class="ttname"><a href="../../d2/d8c/class_kratos_1_1_process.html">Kratos::Process</a></div><div class="ttdoc">The base class for all processes in Kratos.</div><div class="ttdef"><b>Definition:</b> process.h:49</div></div>
+<div class="ttc" id="adefine__registry_8h_html_a7c4935eddf8c37f2fed54b7fa9a2ad17"><div class="ttname"><a href="../../db/d40/define__registry_8h.html#a7c4935eddf8c37f2fed54b7fa9a2ad17">KRATOS_REGISTRY_ADD_PROTOTYPE</a></div><div class="ttdeci">#define KRATOS_REGISTRY_ADD_PROTOTYPE(NAME, X)</div><div class="ttdoc">Macro to register class prototypes This macro creates a static bool in the class (which value is not ...</div><div class="ttdef"><b>Definition:</b> define_registry.h:43</div></div>
 <div class="ttc" id="agroup___kratos_core_html_ga376e02451bc7cc3a5fd77b57f0549e6b"><div class="ttname"><a href="../../d5/d4d/group___kratos_core.html#ga376e02451bc7cc3a5fd77b57f0549e6b">KRATOS_ERROR</a></div><div class="ttdeci">#define KRATOS_ERROR</div><div class="ttdef"><b>Definition:</b> exception.h:161</div></div>
 <div class="ttc" id="anamespace_kratos_html"><div class="ttname"><a href="../../db/d66/namespace_kratos.html">Kratos</a></div><div class="ttdoc">REF: G. R. Cowper, GAUSSIAN QUADRATURE FORMULAS FOR TRIANGLES.</div><div class="ttdef"><b>Definition:</b> mesh_condition.cpp:21</div></div>
 <div class="ttc" id="anamespace_kratos_html_acfc842a43d19dffc2d8105e5cbea17a9"><div class="ttname"><a href="../../db/d66/namespace_kratos.html#acfc842a43d19dffc2d8105e5cbea17a9">Kratos::operator&lt;&lt;</a></div><div class="ttdeci">std::ostream &amp; operator&lt;&lt;(std::ostream &amp;rOStream, const LinearMasterSlaveConstraint &amp;rThis)</div><div class="ttdoc">output stream function</div><div class="ttdef"><b>Definition:</b> linear_master_slave_constraint.h:432</div></div>
@@ -180,7 +187,7 @@ $(function() {
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Apr 14 2023 02:08:08 for KratosMultiphysics by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Sat Apr 15 2023 02:10:32 for KratosMultiphysics by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>
