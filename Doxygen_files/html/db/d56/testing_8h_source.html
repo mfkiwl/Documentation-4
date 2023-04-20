@@ -92,33 +92,34 @@ $(function() {
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">//</span></div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">//</span></div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#if !defined(KRATOS_TESTING_H_INCLUDED )</span></div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#define  KRATOS_TESTING_H_INCLUDED</span></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d6/d7a/test__suite_8h.html">testing/test_suite.h</a>&quot;</span> <span class="comment">// This includes the test_case.h which includes tester.h</span></div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d5/d16/checks_8h.html">includes/checks.h</a>&quot;</span>  <span class="comment">// It is almost always necessary. includes the exception</span></div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d9/dd1/data__communicator_8h.html">includes/data_communicator.h</a>&quot;</span></div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d9/d5f/test__skipped__exception_8h.html">testing/test_skipped_exception.h</a>&quot;</span> <span class="comment">// Macros and exception class used to skip tests.</span></div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">namespace </span><a class="code" href="../../db/d66/namespace_kratos.html">Kratos</a> {</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">namespace </span>Testing {</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;DataCommunicator&amp; <a class="code" href="../../db/d60/namespace_kratos_1_1_testing.html#a352a1156d8981d76f3cf565c0945370b">GetDefaultDataCommunicator</a>();</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;}</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;}</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// KRATOS_TEST_SUITE_H_INCLUDED  defined</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment">// System includes</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment">// External includes</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment">// Project includes</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d6/d7a/test__suite_8h.html">testing/test_suite.h</a>&quot;</span> <span class="comment">// This includes the test_case.h which includes tester.h</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d5/d16/checks_8h.html">includes/checks.h</a>&quot;</span>  <span class="comment">// It is almost always necessary. includes the exception</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d9/dd1/data__communicator_8h.html">includes/data_communicator.h</a>&quot;</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d9/d5f/test__skipped__exception_8h.html">testing/test_skipped_exception.h</a>&quot;</span> <span class="comment">// Macros and exception class used to skip tests.</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">namespace </span><a class="code" href="../../db/d60/namespace_kratos_1_1_testing.html">Kratos::Testing</a> </div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;{</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;DataCommunicator&amp; <a class="code" href="../../db/d60/namespace_kratos_1_1_testing.html#a352a1156d8981d76f3cf565c0945370b">GetDefaultDataCommunicator</a>();</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;}</div>
 <div class="ttc" id="achecks_8h_html"><div class="ttname"><a href="../../d5/d16/checks_8h.html">checks.h</a></div></div>
 <div class="ttc" id="adata__communicator_8h_html"><div class="ttname"><a href="../../d9/dd1/data__communicator_8h.html">data_communicator.h</a></div></div>
-<div class="ttc" id="anamespace_kratos_1_1_testing_html_a352a1156d8981d76f3cf565c0945370b"><div class="ttname"><a href="../../db/d60/namespace_kratos_1_1_testing.html#a352a1156d8981d76f3cf565c0945370b">Kratos::Testing::GetDefaultDataCommunicator</a></div><div class="ttdeci">DataCommunicator &amp; GetDefaultDataCommunicator()</div><div class="ttdef"><b>Definition:</b> testing.cpp:20</div></div>
-<div class="ttc" id="anamespace_kratos_html"><div class="ttname"><a href="../../db/d66/namespace_kratos.html">Kratos</a></div><div class="ttdoc">REF: G. R. Cowper, GAUSSIAN QUADRATURE FORMULAS FOR TRIANGLES.</div><div class="ttdef"><b>Definition:</b> mesh_condition.cpp:21</div></div>
+<div class="ttc" id="anamespace_kratos_1_1_testing_html"><div class="ttname"><a href="../../db/d60/namespace_kratos_1_1_testing.html">Kratos::Testing</a></div><div class="ttdef"><b>Definition:</b> distributed_test_case.cpp:25</div></div>
+<div class="ttc" id="anamespace_kratos_1_1_testing_html_a352a1156d8981d76f3cf565c0945370b"><div class="ttname"><a href="../../db/d60/namespace_kratos_1_1_testing.html#a352a1156d8981d76f3cf565c0945370b">Kratos::Testing::GetDefaultDataCommunicator</a></div><div class="ttdeci">DataCommunicator &amp; GetDefaultDataCommunicator()</div><div class="ttdef"><b>Definition:</b> testing.cpp:24</div></div>
 <div class="ttc" id="atest__skipped__exception_8h_html"><div class="ttname"><a href="../../d9/d5f/test__skipped__exception_8h.html">test_skipped_exception.h</a></div></div>
 <div class="ttc" id="atest__suite_8h_html"><div class="ttname"><a href="../../d6/d7a/test__suite_8h.html">test_suite.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Apr 19 2023 02:16:17 for KratosMultiphysics by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Thu Apr 20 2023 02:09:42 for KratosMultiphysics by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>
