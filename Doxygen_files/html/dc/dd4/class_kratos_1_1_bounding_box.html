@@ -101,7 +101,7 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a16fd66af701a4c1badf0e95ed7680562"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Life Cycle</div></td></tr>
 <tr class="memitem:a456996690f0d6cf3fd389e4d7bfac7b9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/dd4/class_kratos_1_1_bounding_box.html#a456996690f0d6cf3fd389e4d7bfac7b9">BoundingBox</a> ()</td></tr>
-<tr class="memdesc:a456996690f0d6cf3fd389e4d7bfac7b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor deleted.  <a href="../../dc/dd4/class_kratos_1_1_bounding_box.html#a456996690f0d6cf3fd389e4d7bfac7b9">More...</a><br /></td></tr>
+<tr class="memdesc:a456996690f0d6cf3fd389e4d7bfac7b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor.  <a href="../../dc/dd4/class_kratos_1_1_bounding_box.html#a456996690f0d6cf3fd389e4d7bfac7b9">More...</a><br /></td></tr>
 <tr class="separator:a456996690f0d6cf3fd389e4d7bfac7b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeb794839ca69b2ebe94b39bb0337a892"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/dd4/class_kratos_1_1_bounding_box.html#aeb794839ca69b2ebe94b39bb0337a892">BoundingBox</a> (TPointType const &amp;MinPoint, TPointType const &amp;MaxPoint)</td></tr>
 <tr class="separator:aeb794839ca69b2ebe94b39bb0337a892"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -126,8 +126,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ab54ea36fd7c83ae2cb41f9f601f81aab"><td class="memTemplParams" colspan="2">template&lt;typename TIteratorType &gt; </td></tr>
 <tr class="memitem:ab54ea36fd7c83ae2cb41f9f601f81aab"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../dc/dd4/class_kratos_1_1_bounding_box.html#ab54ea36fd7c83ae2cb41f9f601f81aab">Extend</a> (TIteratorType const &amp;PointsBegin, TIteratorType const &amp;PointsEnd)</td></tr>
 <tr class="separator:ab54ea36fd7c83ae2cb41f9f601f81aab"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8b4d938ecaf0b28b494891fa45c6f5fc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/dd4/class_kratos_1_1_bounding_box.html#a8b4d938ecaf0b28b494891fa45c6f5fc">Extend</a> (<a class="el" href="../../db/d66/namespace_kratos.html#ac77084a57869cbecf89d3ee2c819c5d3">double</a> Margin)</td></tr>
-<tr class="separator:a8b4d938ecaf0b28b494891fa45c6f5fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a486e1e13dd002e58f6760c37e0f6b8f5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/dd4/class_kratos_1_1_bounding_box.html#a486e1e13dd002e58f6760c37e0f6b8f5">Extend</a> (const <a class="el" href="../../db/d66/namespace_kratos.html#ac77084a57869cbecf89d3ee2c819c5d3">double</a> Margin)</td></tr>
+<tr class="separator:a486e1e13dd002e58f6760c37e0f6b8f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Access</div></td></tr>
 <tr class="memitem:a8e1a3dc94d466b218fce20591c70514f"><td class="memItemLeft" align="right" valign="top">TPointType &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/dd4/class_kratos_1_1_bounding_box.html#a8e1a3dc94d466b218fce20591c70514f">GetMinPoint</a> ()</td></tr>
 <tr class="separator:a8e1a3dc94d466b218fce20591c70514f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -153,7 +153,13 @@ Public Member Functions</h2></td></tr>
 class Kratos::BoundingBox&lt; TPointType &gt;</h3>
 
 <p>Representing a bounding box by storing the min and max points. </p>
-<p>It stores the min and max points and have constructor for it construction with any container of points. TPointType should provide access operator [] to its coordinate and deep copy operator= </p>
+<p>It stores the min and max points and have constructor for it construction with any container of points. TPointType should provide access operator [] to its coordinate and deep copy operator= </p><dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">TPointType</td><td>The type of point considered </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section author"><dt>Author</dt><dd>Pooyan Dadvand </dd></dl>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a456996690f0d6cf3fd389e4d7bfac7b9"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a456996690f0d6cf3fd389e4d7bfac7b9">&#9670;&nbsp;</a></span>BoundingBox() <span class="overload">[1/4]</span></h2>
@@ -180,7 +186,7 @@ template&lt;typename TPointType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Default constructor deleted. </p>
+<p>Default constructor. </p>
 
 </div>
 </div>
@@ -324,8 +330,8 @@ template&lt;typename TPointType &gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a8b4d938ecaf0b28b494891fa45c6f5fc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8b4d938ecaf0b28b494891fa45c6f5fc">&#9670;&nbsp;</a></span>Extend() <span class="overload">[1/2]</span></h2>
+<a id="a486e1e13dd002e58f6760c37e0f6b8f5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a486e1e13dd002e58f6760c37e0f6b8f5">&#9670;&nbsp;</a></span>Extend() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -338,7 +344,7 @@ template&lt;typename TPointType &gt; </div>
         <tr>
           <td class="memname">void <a class="el" href="../../dc/dd4/class_kratos_1_1_bounding_box.html">Kratos::BoundingBox</a>&lt; TPointType &gt;::Extend </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../db/d66/namespace_kratos.html#ac77084a57869cbecf89d3ee2c819c5d3">double</a>&#160;</td>
+          <td class="paramtype">const <a class="el" href="../../db/d66/namespace_kratos.html#ac77084a57869cbecf89d3ee2c819c5d3">double</a>&#160;</td>
           <td class="paramname"><em>Margin</em></td><td>)</td>
           <td></td>
         </tr>
@@ -687,7 +693,7 @@ template&lt;typename TIteratorType &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Apr 20 2023 02:10:22 for KratosMultiphysics by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Fri Apr 21 2023 02:13:54 for KratosMultiphysics by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

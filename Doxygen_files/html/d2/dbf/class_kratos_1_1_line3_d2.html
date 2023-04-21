@@ -151,6 +151,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a0d8d645b692fd27f91a61807f9a21434"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../db/d66/namespace_kratos.html#a14b9d687ed53c882489400b57cdf34cd">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dbf/class_kratos_1_1_line3_d2.html#a0d8d645b692fd27f91a61807f9a21434">HasIntersection</a> (const <a class="el" href="../../d2/dbf/class_kratos_1_1_line3_d2.html#ae1440e65835aa41eaaac3a7094e40ea1">BaseType</a> &amp;rThisGeometry) const override</td></tr>
 <tr class="memdesc:a0d8d645b692fd27f91a61807f9a21434"><td class="mdescLeft">&#160;</td><td class="mdescRight">Test if this geometry intersects with other geometry.  <a href="../../d2/dbf/class_kratos_1_1_line3_d2.html#a0d8d645b692fd27f91a61807f9a21434">More...</a><br /></td></tr>
 <tr class="separator:a0d8d645b692fd27f91a61807f9a21434"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader">Spatial Operations</div></td></tr>
+<tr class="memitem:a81c5f9087b0e92670718492a185e586c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../db/d66/namespace_kratos.html#ac77084a57869cbecf89d3ee2c819c5d3">double</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dbf/class_kratos_1_1_line3_d2.html#a81c5f9087b0e92670718492a185e586c">CalculateDistance</a> (const <a class="el" href="../../dc/dea/class_kratos_1_1_geometry.html#ae4544314c77990c2b8f31d157ce6c758">CoordinatesArrayType</a> &amp;rPointGlobalCoordinates, const <a class="el" href="../../db/d66/namespace_kratos.html#ac77084a57869cbecf89d3ee2c819c5d3">double</a> Tolerance=std::numeric_limits&lt; <a class="el" href="../../db/d66/namespace_kratos.html#ac77084a57869cbecf89d3ee2c819c5d3">double</a> &gt;::epsilon()) const override</td></tr>
+<tr class="memdesc:a81c5f9087b0e92670718492a185e586c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the distance between an point in global coordinates and the closest point of this geometry. If projection fails, double::max will be returned.  <a href="../../d2/dbf/class_kratos_1_1_line3_d2.html#a81c5f9087b0e92670718492a185e586c">More...</a><br /></td></tr>
+<tr class="separator:a81c5f9087b0e92670718492a185e586c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Jacobian</div></td></tr>
 <tr class="memitem:a6f708768e8306beea7eb6acca025db36"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dc/dea/class_kratos_1_1_geometry.html#aa700b1af2232b22fd8af4626034c312f">JacobiansType</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dbf/class_kratos_1_1_line3_d2.html#a6f708768e8306beea7eb6acca025db36">Jacobian</a> (<a class="el" href="../../dc/dea/class_kratos_1_1_geometry.html#aa700b1af2232b22fd8af4626034c312f">JacobiansType</a> &amp;rResult, <a class="el" href="../../dc/d8c/class_kratos_1_1_geometry_data.html#a86f17c328cce116053a8786b7a0f404f">IntegrationMethod</a> ThisMethod) const override</td></tr>
 <tr class="separator:a6f708768e8306beea7eb6acca025db36"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -560,9 +564,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a077131d70dc70d4f29ff9d500c1be601 inherit pub_methods_class_kratos_1_1_geometry"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../db/d66/namespace_kratos.html#ac398e9982e45de7167981e05b7f5ff57">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/dea/class_kratos_1_1_geometry.html#a077131d70dc70d4f29ff9d500c1be601">ClosestPointGlobalToLocalSpace</a> (const <a class="el" href="../../dc/dea/class_kratos_1_1_geometry.html#ae4544314c77990c2b8f31d157ce6c758">CoordinatesArrayType</a> &amp;rPointGlobalCoordinates, <a class="el" href="../../dc/dea/class_kratos_1_1_geometry.html#ae4544314c77990c2b8f31d157ce6c758">CoordinatesArrayType</a> &amp;rClosestPointLocalCoordinates, const <a class="el" href="../../db/d66/namespace_kratos.html#ac77084a57869cbecf89d3ee2c819c5d3">double</a> Tolerance=std::numeric_limits&lt; <a class="el" href="../../db/d66/namespace_kratos.html#ac77084a57869cbecf89d3ee2c819c5d3">double</a> &gt;::epsilon()) const</td></tr>
 <tr class="memdesc:a077131d70dc70d4f29ff9d500c1be601 inherit pub_methods_class_kratos_1_1_geometry"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the closes point projection This method calculates the closest point projection of a point in global space coordinates.  <a href="../../dc/dea/class_kratos_1_1_geometry.html#a077131d70dc70d4f29ff9d500c1be601">More...</a><br /></td></tr>
 <tr class="separator:a077131d70dc70d4f29ff9d500c1be601 inherit pub_methods_class_kratos_1_1_geometry"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4daf303c05fc5fdf00c5add76c8bd18d inherit pub_methods_class_kratos_1_1_geometry"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../db/d66/namespace_kratos.html#ac77084a57869cbecf89d3ee2c819c5d3">double</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/dea/class_kratos_1_1_geometry.html#a4daf303c05fc5fdf00c5add76c8bd18d">CalculateDistance</a> (const <a class="el" href="../../dc/dea/class_kratos_1_1_geometry.html#ae4544314c77990c2b8f31d157ce6c758">CoordinatesArrayType</a> &amp;rPointGlobalCoordinates, const <a class="el" href="../../db/d66/namespace_kratos.html#ac77084a57869cbecf89d3ee2c819c5d3">double</a> Tolerance=std::numeric_limits&lt; <a class="el" href="../../db/d66/namespace_kratos.html#ac77084a57869cbecf89d3ee2c819c5d3">double</a> &gt;::epsilon()) const</td></tr>
-<tr class="memdesc:a4daf303c05fc5fdf00c5add76c8bd18d inherit pub_methods_class_kratos_1_1_geometry"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the distance between an point in global coordinates and the closest point of this geometry. If projection fails, double::max will be returned.  <a href="../../dc/dea/class_kratos_1_1_geometry.html#a4daf303c05fc5fdf00c5add76c8bd18d">More...</a><br /></td></tr>
-<tr class="separator:a4daf303c05fc5fdf00c5add76c8bd18d inherit pub_methods_class_kratos_1_1_geometry"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae44e97ffdd927578546170dfed724b35 inherit pub_methods_class_kratos_1_1_geometry"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dc/dea/class_kratos_1_1_geometry.html#aa700b1af2232b22fd8af4626034c312f">JacobiansType</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/dea/class_kratos_1_1_geometry.html#ae44e97ffdd927578546170dfed724b35">Jacobian</a> (<a class="el" href="../../dc/dea/class_kratos_1_1_geometry.html#aa700b1af2232b22fd8af4626034c312f">JacobiansType</a> &amp;rResult) const</td></tr>
 <tr class="separator:ae44e97ffdd927578546170dfed724b35 inherit pub_methods_class_kratos_1_1_geometry"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af8dd9eb86de097106ea3cc44c7369ed8 inherit pub_methods_class_kratos_1_1_geometry"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../db/d66/namespace_kratos.html#a546e4f1c8e62734795679d3b59448410">Matrix</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/dea/class_kratos_1_1_geometry.html#af8dd9eb86de097106ea3cc44c7369ed8">Jacobian</a> (<a class="el" href="../../db/d66/namespace_kratos.html#a546e4f1c8e62734795679d3b59448410">Matrix</a> &amp;rResult, <a class="el" href="../../dc/dea/class_kratos_1_1_geometry.html#a62faca8288b90e7d21fdb090cf38bc87">IndexType</a> IntegrationPointIndex) const</td></tr>
@@ -1423,6 +1424,56 @@ template&lt;class TPointType &gt; </div>
 <a class="el" href="../../d2/dbf/class_kratos_1_1_line3_d2.html#a9272f8ad33ac92fe67335e0dbe040fc0">DomainSize()</a> </dd></dl>
 
 <p>Reimplemented from <a class="el" href="../../dc/dea/class_kratos_1_1_geometry.html#afd51475099147b19ee8d4569115149ec">Kratos::Geometry&lt; TPointType &gt;</a>.</p>
+
+</div>
+</div>
+<a id="a81c5f9087b0e92670718492a185e586c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a81c5f9087b0e92670718492a185e586c">&#9670;&nbsp;</a></span>CalculateDistance()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class TPointType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../db/d66/namespace_kratos.html#ac77084a57869cbecf89d3ee2c819c5d3">double</a> <a class="el" href="../../d2/dbf/class_kratos_1_1_line3_d2.html">Kratos::Line3D2</a>&lt; TPointType &gt;::CalculateDistance </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../dc/dea/class_kratos_1_1_geometry.html#ae4544314c77990c2b8f31d157ce6c758">CoordinatesArrayType</a> &amp;&#160;</td>
+          <td class="paramname"><em>rPointGlobalCoordinates</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../db/d66/namespace_kratos.html#ac77084a57869cbecf89d3ee2c819c5d3">double</a>&#160;</td>
+          <td class="paramname"><em>Tolerance</em> = <code>std::numeric_limits&lt;<a class="el" href="../../db/d66/namespace_kratos.html#ac77084a57869cbecf89d3ee2c819c5d3">double</a>&gt;::epsilon()</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Computes the distance between an point in global coordinates and the closest point of this geometry. If projection fails, double::max will be returned. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">rPointGlobalCoordinates</td><td>the point to which the closest point has to be found. </td></tr>
+    <tr><td class="paramname">Tolerance</td><td>accepted orthogonal error. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Distance to geometry. positive -&gt; outside of to the geometry (for 2D and solids) 0 -&gt; on/ in the geometry. </dd></dl>
+
+<p>Reimplemented from <a class="el" href="../../dc/dea/class_kratos_1_1_geometry.html#a4daf303c05fc5fdf00c5add76c8bd18d">Kratos::Geometry&lt; TPointType &gt;</a>.</p>
 
 </div>
 </div>
@@ -2982,7 +3033,7 @@ template&lt;class TPointType &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Apr 20 2023 02:10:22 for KratosMultiphysics by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Fri Apr 21 2023 02:13:55 for KratosMultiphysics by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

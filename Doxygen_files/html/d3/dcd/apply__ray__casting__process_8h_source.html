@@ -122,170 +122,179 @@ $(function() {
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <a class="code" href="../../d6/d3f/transfer__utility_8h.html#a95ed76edc983cae239b65f370953d216">KRATOS_CLASS_POINTER_DEFINITION</a>(ApplyRayCastingProcess);</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="comment">//TODO: These using statements have been included to make the old functions able to compile. It is still pending to update them.</span></div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keyword">using</span> ConfigurationType = Internals::DistanceSpatialContainersConfigure;</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keyword">using</span> CellType = OctreeBinaryCell&lt;ConfigurationType&gt;;</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keyword">using</span> OctreeType = OctreeBinary&lt;CellType&gt;;</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keyword">using</span> CellNodeDataType = ConfigurationType::cell_node_data_type;</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keyword">typedef</span> <a class="code" href="../../d5/dd4/class_kratos_1_1_element.html#ae05e937d824d7ea3a0f7ce693deee92d">Element::GeometryType</a> IntersectionGeometryType;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keyword">typedef</span> std::vector&lt;std::pair&lt;double, IntersectionGeometryType*&gt; &gt; IntersectionsContainerType;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <a class="code" href="../../db/d40/define__registry_8h.html#a7c4935eddf8c37f2fed54b7fa9a2ad17">KRATOS_REGISTRY_ADD_PROTOTYPE</a>(<span class="stringliteral">&quot;Processes.KratosMultiphysics&quot;</span>, ApplyRayCastingProcess&lt;TDim&gt;)</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <a class="code" href="../../db/d40/define__registry_8h.html#a7c4935eddf8c37f2fed54b7fa9a2ad17">KRATOS_REGISTRY_ADD_PROTOTYPE</a>(<span class="stringliteral">&quot;Processes.All&quot;</span>, ApplyRayCastingProcess&lt;TDim&gt;)</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="comment">//TODO: These using statements have been included to make the old functions able to compile. It is still pending to update them.</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keyword">using</span> ConfigurationType = Internals::DistanceSpatialContainersConfigure;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keyword">using</span> CellType = OctreeBinaryCell&lt;ConfigurationType&gt;;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keyword">using</span> OctreeType = OctreeBinary&lt;CellType&gt;;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keyword">using</span> CellNodeDataType = ConfigurationType::cell_node_data_type;</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keyword">using</span> <a class="code" href="../../d5/ddd/class_kratos_1_1_node.html">NodeType</a> = <a class="code" href="../../db/d66/namespace_kratos.html#abb4d93a6f1ee35395fd178b0e96cbcb8">ModelPart::NodeType</a>;</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keyword">using</span> NodeScalarGetFunctionType = std::function&lt;<span class="keywordtype">double</span>&amp;(<a class="code" href="../../d5/ddd/class_kratos_1_1_node.html">NodeType</a>&amp; rNode, <span class="keyword">const</span> Variable&lt;double&gt;&amp; rDistanceVariable)&gt;;</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keyword">using</span> ApplyNodalFunctorType = std::function&lt;void(<a class="code" href="../../d5/ddd/class_kratos_1_1_node.html">NodeType</a>&amp;, <span class="keyword">const</span> <span class="keywordtype">double</span>)&gt;;</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    ApplyRayCastingProcess(</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        <a class="code" href="../../d4/d5e/class_model_part.html">ModelPart</a>&amp; rVolumePart,</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        <a class="code" href="../../d4/d5e/class_model_part.html">ModelPart</a>&amp; rSkinPart,</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        <a class="code" href="../../da/d39/class_parameters.html">Parameters</a> <a class="code" href="../../d5/d03/namespace_kratos_1_1_meshing_utilities.html#aa4d5beaebb72024f7d3d9a79600e4891">ThisParameters</a> = <a class="code" href="../../da/d39/class_parameters.html">Parameters</a>());</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <a class="code" href="../../db/d66/namespace_kratos.html#aa7d839e3242e246219b49b98a09219c7">KRATOS_DEPRECATED_MESSAGE</a>(<span class="stringliteral">&quot;Deprecated constructor, please use the one with Parameters.&quot;</span>)</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    ApplyRayCastingProcess(</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        <a class="code" href="../../d4/d5e/class_model_part.html">ModelPart</a>&amp; rVolumePart,</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        <a class="code" href="../../d4/d5e/class_model_part.html">ModelPart</a>&amp; rSkinPart,</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        <a class="code" href="../../d2/df2/namespaceode__solve.html#aae8a035c92cd801f6cf64409406c371b">const</a> <span class="keywordtype">double</span> RelativeTolerance);</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160; </div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    ApplyRayCastingProcess(</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;        <a class="code" href="../../d4/ded/class_find_intersected_geometrical_objects_process.html">FindIntersectedGeometricalObjectsProcess</a>&amp; TheFindIntersectedObjectsProcess,</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;        <a class="code" href="../../da/d39/class_parameters.html">Parameters</a> <a class="code" href="../../d5/d03/namespace_kratos_1_1_meshing_utilities.html#aa4d5beaebb72024f7d3d9a79600e4891">ThisParameters</a> = <a class="code" href="../../da/d39/class_parameters.html">Parameters</a>());</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160; </div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    <a class="code" href="../../db/d66/namespace_kratos.html#aa7d839e3242e246219b49b98a09219c7">KRATOS_DEPRECATED_MESSAGE</a>(&quot;Deprecated constructor, please use the one with <a class="code" href="../../da/d39/class_parameters.html">Parameters</a>.&quot;)</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    ApplyRayCastingProcess(</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;        <a class="code" href="../../d4/ded/class_find_intersected_geometrical_objects_process.html">FindIntersectedGeometricalObjectsProcess</a>&amp; TheFindIntersectedObjectsProcess,</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;        <a class="code" href="../../d2/df2/namespaceode__solve.html#aae8a035c92cd801f6cf64409406c371b">const</a> <span class="keywordtype">double</span> RelativeTolerance,</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;        <a class="code" href="../../d2/df2/namespaceode__solve.html#aae8a035c92cd801f6cf64409406c371b">const</a> Variable&lt;<span class="keywordtype">double</span>&gt;* pDistanceVariable,</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;        <a class="code" href="../../d2/df2/namespaceode__solve.html#aae8a035c92cd801f6cf64409406c371b">const</a> DistanceDatabase&amp; rDistanceDatabase);</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160; </div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    ~ApplyRayCastingProcess() override;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keyword">typedef</span> <a class="code" href="../../d5/dd4/class_kratos_1_1_element.html#ae05e937d824d7ea3a0f7ce693deee92d">Element::GeometryType</a> IntersectionGeometryType;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keyword">typedef</span> std::vector&lt;std::pair&lt;double, IntersectionGeometryType*&gt; &gt; IntersectionsContainerType;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keyword">using</span> <a class="code" href="../../d5/ddd/class_kratos_1_1_node.html">NodeType</a> = <a class="code" href="../../db/d66/namespace_kratos.html#abb4d93a6f1ee35395fd178b0e96cbcb8">ModelPart::NodeType</a>;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keyword">using</span> NodeScalarGetFunctionType = std::function&lt;<span class="keywordtype">double</span>&amp;(<a class="code" href="../../d5/ddd/class_kratos_1_1_node.html">NodeType</a>&amp; rNode, <span class="keyword">const</span> Variable&lt;double&gt;&amp; rDistanceVariable)&gt;;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keyword">using</span> ApplyNodalFunctorType = std::function&lt;void(<a class="code" href="../../d5/ddd/class_kratos_1_1_node.html">NodeType</a>&amp;, <span class="keyword">const</span> <span class="keywordtype">double</span>)&gt;;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    ApplyRayCastingProcess(</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        <a class="code" href="../../d4/d5e/class_model_part.html">ModelPart</a>&amp; rVolumePart,</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        <a class="code" href="../../d4/d5e/class_model_part.html">ModelPart</a>&amp; rSkinPart,</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        <a class="code" href="../../da/d39/class_parameters.html">Parameters</a> <a class="code" href="../../d5/d03/namespace_kratos_1_1_meshing_utilities.html#aa4d5beaebb72024f7d3d9a79600e4891">ThisParameters</a> = <a class="code" href="../../da/d39/class_parameters.html">Parameters</a>());</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160; </div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <a class="code" href="../../db/d66/namespace_kratos.html#aa7d839e3242e246219b49b98a09219c7">KRATOS_DEPRECATED_MESSAGE</a>(<span class="stringliteral">&quot;Deprecated constructor, please use the one with Parameters.&quot;</span>)</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    ApplyRayCastingProcess(</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        <a class="code" href="../../d4/d5e/class_model_part.html">ModelPart</a>&amp; rVolumePart,</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;        <a class="code" href="../../d4/d5e/class_model_part.html">ModelPart</a>&amp; rSkinPart,</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;        <a class="code" href="../../d2/df2/namespaceode__solve.html#aae8a035c92cd801f6cf64409406c371b">const</a> <span class="keywordtype">double</span> RelativeTolerance);</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160; </div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    ApplyRayCastingProcess(</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;        <a class="code" href="../../d4/ded/class_find_intersected_geometrical_objects_process.html">FindIntersectedGeometricalObjectsProcess</a>&amp; TheFindIntersectedObjectsProcess,</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;        <a class="code" href="../../da/d39/class_parameters.html">Parameters</a> <a class="code" href="../../d5/d03/namespace_kratos_1_1_meshing_utilities.html#aa4d5beaebb72024f7d3d9a79600e4891">ThisParameters</a> = <a class="code" href="../../da/d39/class_parameters.html">Parameters</a>());</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160; </div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    <a class="code" href="../../db/d66/namespace_kratos.html#aa7d839e3242e246219b49b98a09219c7">KRATOS_DEPRECATED_MESSAGE</a>(&quot;Deprecated constructor, please use the one with <a class="code" href="../../da/d39/class_parameters.html">Parameters</a>.&quot;)</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    ApplyRayCastingProcess(</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;        <a class="code" href="../../d4/ded/class_find_intersected_geometrical_objects_process.html">FindIntersectedGeometricalObjectsProcess</a>&amp; TheFindIntersectedObjectsProcess,</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;        <a class="code" href="../../d2/df2/namespaceode__solve.html#aae8a035c92cd801f6cf64409406c371b">const</a> <span class="keywordtype">double</span> RelativeTolerance,</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;        <a class="code" href="../../d2/df2/namespaceode__solve.html#aae8a035c92cd801f6cf64409406c371b">const</a> Variable&lt;<span class="keywordtype">double</span>&gt;* pDistanceVariable,</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;        <a class="code" href="../../d2/df2/namespaceode__solve.html#aae8a035c92cd801f6cf64409406c371b">const</a> DistanceDatabase&amp; rDistanceDatabase);</div>
 <div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160; </div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160; </div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    ApplyRayCastingProcess() = delete;</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    ~ApplyRayCastingProcess() override;</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160; </div>
 <div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160; </div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;    ApplyRayCastingProcess(ApplyRayCastingProcess <a class="code" href="../../d2/df2/namespaceode__solve.html#aae8a035c92cd801f6cf64409406c371b">const</a>&amp; rOther) = delete;</div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160; </div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;    ApplyRayCastingProcess&amp; operator=(ApplyRayCastingProcess <a class="code" href="../../d2/df2/namespaceode__solve.html#aae8a035c92cd801f6cf64409406c371b">const</a>&amp; rOther) = delete;</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;    ApplyRayCastingProcess()</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;    {</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;        mIsSearchStructureAllocated = <span class="keyword">false</span>; <span class="comment">//used in dtor</span></div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;    }</div>
 <div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160; </div>
-<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160; </div>
-<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;    <a class="code" href="../../d2/df2/namespaceode__solve.html#aae8a035c92cd801f6cf64409406c371b">const</a> <a class="code" href="../../da/d39/class_parameters.html">Parameters</a> GetDefaultParameters() <a class="code" href="../../d2/df2/namespaceode__solve.html#aae8a035c92cd801f6cf64409406c371b">const</a> override;</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;    ApplyRayCastingProcess(ApplyRayCastingProcess <span class="keyword">const</span>&amp; rOther) = <span class="keyword">delete</span>;</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160; </div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;    ApplyRayCastingProcess&amp; operator=(ApplyRayCastingProcess <span class="keyword">const</span>&amp; rOther) = <span class="keyword">delete</span>;</div>
 <div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160; </div>
-<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;    virtual <span class="keywordtype">double</span> DistancePositionInSpace(<a class="code" href="../../d2/df2/namespaceode__solve.html#aae8a035c92cd801f6cf64409406c371b">const</a> Node&lt;3&gt; &amp;rNode);</div>
-<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160; </div>
-<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;    virtual <span class="keywordtype">void</span> GetRayIntersections(</div>
-<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;        <a class="code" href="../../d2/df2/namespaceode__solve.html#aae8a035c92cd801f6cf64409406c371b">const</a> <span class="keywordtype">double</span>* ray,</div>
-<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;        <a class="code" href="../../d2/df2/namespaceode__solve.html#aae8a035c92cd801f6cf64409406c371b">const</a> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> direction,</div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;        std::vector&lt;std::pair&lt;<span class="keywordtype">double</span>,Element::<a class="code" href="../../db/d66/namespace_kratos.html#a884ade0675a6a17a14d1bce5e3ae2fe3">GeometryType</a>*&gt; &gt; &amp;rIntersections);</div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160; </div>
-<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;    virtual <span class="keywordtype">int</span> GetCellIntersections(</div>
-<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;        OctreeType::cell_type* cell,</div>
-<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;        <a class="code" href="../../d2/df2/namespaceode__solve.html#aae8a035c92cd801f6cf64409406c371b">const</a> <span class="keywordtype">double</span>* ray,</div>
-<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;        OctreeType::key_type* ray_key,</div>
-<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;        <a class="code" href="../../d2/df2/namespaceode__solve.html#aae8a035c92cd801f6cf64409406c371b">const</a> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> direction,</div>
-<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;        std::vector&lt;std::pair&lt;<span class="keywordtype">double</span>, Element::<a class="code" href="../../db/d66/namespace_kratos.html#a884ade0675a6a17a14d1bce5e3ae2fe3">GeometryType</a>*&gt; &gt; &amp;rIntersections);</div>
-<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160; </div>
-<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;    <span class="keywordtype">void</span> Execute() override;</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160; </div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;    <span class="keyword">const</span> <a class="code" href="../../da/d39/class_parameters.html">Parameters</a> GetDefaultParameters() <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160; </div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">double</span> DistancePositionInSpace(<span class="keyword">const</span> Node&lt;3&gt; &amp;rNode);</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160; </div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> GetRayIntersections(</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">double</span>* ray,</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> direction,</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;        std::vector&lt;std::pair&lt;double,Element::GeometryType*&gt; &gt; &amp;rIntersections);</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160; </div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">int</span> GetCellIntersections(</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;        OctreeType::cell_type* cell,</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">double</span>* ray,</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;        OctreeType::key_type* ray_key,</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> direction,</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;        std::vector&lt;std::pair&lt;double, Element::GeometryType*&gt; &gt; &amp;rIntersections);</div>
 <div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160; </div>
-<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160; </div>
-<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;    std::<span class="keywordtype">string</span> Info() <a class="code" href="../../d2/df2/namespaceode__solve.html#aae8a035c92cd801f6cf64409406c371b">const</a> override;</div>
-<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160; </div>
-<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;    <span class="keywordtype">void</span> PrintInfo(std::ostream&amp; rOStream) <a class="code" href="../../d2/df2/namespaceode__solve.html#aae8a035c92cd801f6cf64409406c371b">const</a> override;</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;    <span class="keywordtype">void</span> Execute() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160; </div>
 <div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160; </div>
-<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;    <span class="keywordtype">void</span> PrintData(std::ostream&amp; rOStream) <a class="code" href="../../d2/df2/namespaceode__solve.html#aae8a035c92cd801f6cf64409406c371b">const</a> override;</div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;    std::string Info() <span class="keyword">const override</span>;</div>
 <div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160; </div>
-<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;protected:</div>
-<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160; </div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;    <span class="keywordtype">void</span> PrintInfo(std::ostream&amp; rOStream) <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160; </div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;    <span class="keywordtype">void</span> PrintData(std::ostream&amp; rOStream) <span class="keyword">const override</span>;</div>
 <div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160; </div>
-<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160; </div>
-<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;    <a class="code" href="../../da/d39/class_parameters.html">Parameters</a> mSettings;</div>
-<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;    <span class="keywordtype">double</span> mEpsilon;</div>
-<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;    <span class="keywordtype">double</span> mExtraRayOffset;</div>
-<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;    <span class="keywordtype">double</span> mRelativeTolerance;</div>
-<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;    <a class="code" href="../../d4/ded/class_find_intersected_geometrical_objects_process.html">FindIntersectedGeometricalObjectsProcess</a>* mpFindIntersectedObjectsProcess;</div>
-<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;    <span class="keywordtype">bool</span> mIsSearchStructureAllocated;</div>
-<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;    <span class="keywordtype">double</span> mCharacteristicLength;</div>
-<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;    <a class="code" href="../../d2/df2/namespaceode__solve.html#aae8a035c92cd801f6cf64409406c371b">const</a> Variable&lt;<span class="keywordtype">double</span>&gt;* mpDistanceVariable = <span class="keywordtype">nullptr</span>;</div>
-<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;    NodeScalarGetFunctionType mDistanceGetterFunctor;</div>
-<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160; </div>
-<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160; </div>
-<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160; </div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160; </div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160; </div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160; </div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;    <a class="code" href="../../da/d39/class_parameters.html">Parameters</a> mSettings;</div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;    <span class="keywordtype">double</span> mEpsilon;</div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;    <span class="keywordtype">double</span> mExtraRayOffset;</div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;    <span class="keywordtype">double</span> mRelativeTolerance;</div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;    <a class="code" href="../../d4/ded/class_find_intersected_geometrical_objects_process.html">FindIntersectedGeometricalObjectsProcess</a>* mpFindIntersectedObjectsProcess;</div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;    <span class="keywordtype">bool</span> mIsSearchStructureAllocated;</div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;    <span class="keywordtype">double</span> mCharacteristicLength;</div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;    <span class="keyword">const</span> Variable&lt;double&gt;* mpDistanceVariable = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;    NodeScalarGetFunctionType mDistanceGetterFunctor;</div>
 <div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160; </div>
-<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160; </div>
-<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;    <span class="keywordtype">int</span> ComputeRayIntersection(</div>
-<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;        Element::<a class="code" href="../../db/d66/namespace_kratos.html#a884ade0675a6a17a14d1bce5e3ae2fe3">GeometryType</a>&amp; <a class="code" href="../../da/dec/namespace_kratos_1_1_mortar_utilities.html#a407333aa7d9b470dab6a9652f72a6ebd">rGeometry</a>,</div>
-<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;        <a class="code" href="../../d2/df2/namespaceode__solve.html#aae8a035c92cd801f6cf64409406c371b">const</a> <span class="keywordtype">double</span>* pRayPoint1,</div>
-<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;        <a class="code" href="../../d2/df2/namespaceode__solve.html#aae8a035c92cd801f6cf64409406c371b">const</a> <span class="keywordtype">double</span>* pRayPoint2,</div>
-<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;        <span class="keywordtype">double</span>* pIntersectionPoint);</div>
-<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160; </div>
-<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;    <span class="keywordtype">void</span> GetExtraRayOrigins(</div>
-<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;        <a class="code" href="../../d2/df2/namespaceode__solve.html#aae8a035c92cd801f6cf64409406c371b">const</a> array_1d&lt;<span class="keywordtype">double</span>,3&gt; &amp;rCoords,</div>
-<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;        array_1d&lt;array_1d&lt;<span class="keywordtype">double</span>,3&gt;, (TDim == 3) ? 9 : 5&gt; &amp;rExtraRayOrigs);</div>
-<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160; </div>
-<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160; </div>
-<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;    <span class="keywordtype">void</span> CorrectExtraRayOrigin(<span class="keywordtype">double</span>* ExtraRayCoords);</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160; </div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160; </div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160; </div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160; </div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;    <span class="keywordtype">int</span> ComputeRayIntersection(</div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;        <a class="code" href="../../d5/dd4/class_kratos_1_1_element.html#ae05e937d824d7ea3a0f7ce693deee92d">Element::GeometryType</a>&amp; <a class="code" href="../../da/dec/namespace_kratos_1_1_mortar_utilities.html#a407333aa7d9b470dab6a9652f72a6ebd">rGeometry</a>,</div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">double</span>* pRayPoint1,</div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">double</span>* pRayPoint2,</div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;        <span class="keywordtype">double</span>* pIntersectionPoint);</div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160; </div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;    <span class="keywordtype">void</span> GetExtraRayOrigins(</div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;        <span class="keyword">const</span> array_1d&lt;double,3&gt; &amp;rCoords,</div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;        array_1d&lt;array_1d&lt;double,3&gt;, (TDim == 3) ? 9 : 5&gt; &amp;rExtraRayOrigs);</div>
 <div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160; </div>
-<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;    <span class="keywordtype">void</span> ComputeExtraRayColors(</div>
-<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;        <a class="code" href="../../d2/df2/namespaceode__solve.html#aae8a035c92cd801f6cf64409406c371b">const</a> array_1d&lt;<span class="keywordtype">double</span>,3&gt; &amp;rCoords,</div>
-<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;        array_1d&lt;<span class="keywordtype">double</span>,TDim&gt; &amp;rDistances);</div>
-<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160; </div>
-<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160; </div>
-<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;    <span class="keywordtype">void</span> CalculateCharacteristicLength();</div>
-<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160; </div>
-<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;    <span class="keywordtype">void</span> SetRayCastingTolerances();</div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160; </div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;    <span class="keywordtype">void</span> CorrectExtraRayOrigin(<span class="keywordtype">double</span>* ExtraRayCoords);</div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160; </div>
+<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;    <span class="keywordtype">void</span> ComputeExtraRayColors(</div>
+<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;        <span class="keyword">const</span> array_1d&lt;double,3&gt; &amp;rCoords,</div>
+<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;        array_1d&lt;double,TDim&gt; &amp;rDistances);</div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160; </div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160; </div>
+<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;    <span class="keywordtype">void</span> CalculateCharacteristicLength();</div>
 <div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160; </div>
-<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;    NodeScalarGetFunctionType CreateDistanceGetterFunctor() <a class="code" href="../../d2/df2/namespaceode__solve.html#aae8a035c92cd801f6cf64409406c371b">const</a>;</div>
-<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160; </div>
-<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;    virtual ApplyNodalFunctorType CreateApplyNodalFunction() <a class="code" href="../../d2/df2/namespaceode__solve.html#aae8a035c92cd801f6cf64409406c371b">const</a>;</div>
+<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;    <span class="keywordtype">void</span> SetRayCastingTolerances();</div>
+<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160; </div>
+<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;    NodeScalarGetFunctionType CreateDistanceGetterFunctor() <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160; </div>
-<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160; </div>
-<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160; </div>
-<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160; </div>
+<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;    <span class="keyword">virtual</span> ApplyNodalFunctorType CreateApplyNodalFunction() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160; </div>
 <div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160; </div>
-<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160; </div>
+<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160; </div>
 <div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160; </div>
-<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;}; <span class="comment">// Class ApplyRayCastingProcess</span></div>
-<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160; </div>
+<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160; </div>
+<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160; </div>
+<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160; </div>
 <div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160; </div>
-<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160; </div>
-<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160; </div>
-<div class="line"><a name="l00337"></a><span class="lineno"><a class="line" href="../../df/da3/group___kratos.html#ga72044bdb2566830dc22206d27d9993cd">  337</a></span>&#160;inline std::istream&amp; operator &gt;&gt; (</div>
-<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;    std::istream&amp; rIStream,</div>
-<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;    ApplyRayCastingProcess&lt;&gt;&amp; rThis);</div>
-<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160; </div>
-<div class="line"><a name="l00342"></a><span class="lineno"><a class="line" href="../../df/da3/group___kratos.html#ga483ffae8516ecc561dc4b038e2463522">  342</a></span>&#160;inline std::ostream&amp; operator &lt;&lt; (</div>
-<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;    std::ostream&amp; rOStream,</div>
-<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;    <a class="code" href="../../d2/df2/namespaceode__solve.html#aae8a035c92cd801f6cf64409406c371b">const</a> ApplyRayCastingProcess&lt;&gt;&amp; rThis)</div>
-<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;{</div>
-<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;    rThis.PrintInfo(rOStream);</div>
-<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;    rOStream &lt;&lt; std::endl;</div>
-<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;    rThis.PrintData(rOStream);</div>
-<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160; </div>
-<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;    <span class="keywordflow">return</span> rOStream;</div>
-<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;}</div>
-<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160; </div>
-<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;} <span class="comment">// namespace Kratos.</span></div>
+<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;}; <span class="comment">// Class ApplyRayCastingProcess</span></div>
+<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160; </div>
+<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160; </div>
+<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160; </div>
+<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160; </div>
+<div class="line"><a name="l00344"></a><span class="lineno"><a class="line" href="../../df/da3/group___kratos.html#ga72044bdb2566830dc22206d27d9993cd">  344</a></span>&#160;<span class="keyword">inline</span> std::istream&amp; <a class="code" href="../../db/d66/namespace_kratos.html#a9c6097d0b0a27d1cea94992b1087f56a">operator &gt;&gt; </a>(</div>
+<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;    std::istream&amp; rIStream,</div>
+<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;    ApplyRayCastingProcess&lt;&gt;&amp; rThis);</div>
+<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160; </div>
+<div class="line"><a name="l00349"></a><span class="lineno"><a class="line" href="../../df/da3/group___kratos.html#ga483ffae8516ecc561dc4b038e2463522">  349</a></span>&#160;<span class="keyword">inline</span> std::ostream&amp; <a class="code" href="../../db/d66/namespace_kratos.html#acfc842a43d19dffc2d8105e5cbea17a9">operator &lt;&lt; </a>(</div>
+<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;    std::ostream&amp; rOStream,</div>
+<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;    <span class="keyword">const</span> ApplyRayCastingProcess&lt;&gt;&amp; rThis)</div>
+<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;{</div>
+<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;    rThis.PrintInfo(rOStream);</div>
+<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;    rOStream &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;    rThis.PrintData(rOStream);</div>
 <div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160; </div>
-<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// KRATOS_APPLY_RAY_CASTING_PROCESS_H_INCLUDED  defined</span></div>
+<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;    <span class="keywordflow">return</span> rOStream;</div>
+<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;}</div>
+<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160; </div>
+<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;} <span class="comment">// namespace Kratos.</span></div>
+<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160; </div>
+<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// KRATOS_APPLY_RAY_CASTING_PROCESS_H_INCLUDED  defined</span></div>
 <div class="ttc" id="aclass_find_intersected_geometrical_objects_process_html"><div class="ttname"><a href="../../d4/ded/class_find_intersected_geometrical_objects_process.html">FindIntersectedGeometricalObjectsProcess</a></div><div class="ttdoc">This class takes two modelparts and marks the intersected ones with SELECTED flag.</div></div>
 <div class="ttc" id="aclass_kratos_1_1_element_html_ae05e937d824d7ea3a0f7ce693deee92d"><div class="ttname"><a href="../../d5/dd4/class_kratos_1_1_element.html#ae05e937d824d7ea3a0f7ce693deee92d">Kratos::Element::GeometryType</a></div><div class="ttdeci">Geometry&lt; NodeType &gt; GeometryType</div><div class="ttdoc">definition of the geometry type with given NodeType</div><div class="ttdef"><b>Definition:</b> element.h:83</div></div>
 <div class="ttc" id="aclass_kratos_1_1_node_html"><div class="ttname"><a href="../../d5/ddd/class_kratos_1_1_node.html">Kratos::Node</a></div><div class="ttdoc">This class defines the node.</div><div class="ttdef"><b>Definition:</b> node.h:68</div></div>
 <div class="ttc" id="aclass_model_part_html"><div class="ttname"><a href="../../d4/d5e/class_model_part.html">ModelPart</a></div><div class="ttdoc">This class aims to manage meshes for multi-physics simulations.</div><div class="ttdef"><b>Definition:</b> model_part.h:66</div></div>
 <div class="ttc" id="aclass_parameters_html"><div class="ttname"><a href="../../da/d39/class_parameters.html">Parameters</a></div><div class="ttdoc">This class provides to Kratos a data structure for I/O based on the standard of JSON.</div></div>
+<div class="ttc" id="adefine__registry_8h_html_a7c4935eddf8c37f2fed54b7fa9a2ad17"><div class="ttname"><a href="../../db/d40/define__registry_8h.html#a7c4935eddf8c37f2fed54b7fa9a2ad17">KRATOS_REGISTRY_ADD_PROTOTYPE</a></div><div class="ttdeci">#define KRATOS_REGISTRY_ADD_PROTOTYPE(NAME, X)</div><div class="ttdoc">Macro to register class prototypes This macro creates a static bool in the class (which value is not ...</div><div class="ttdef"><b>Definition:</b> define_registry.h:43</div></div>
 <div class="ttc" id="afind__intersected__geometrical__objects__process_8h_html"><div class="ttname"><a href="../../dd/d0b/find__intersected__geometrical__objects__process_8h.html">find_intersected_geometrical_objects_process.h</a></div></div>
 <div class="ttc" id="anamespace_kratos_1_1_meshing_utilities_html_aa4d5beaebb72024f7d3d9a79600e4891"><div class="ttname"><a href="../../d5/d03/namespace_kratos_1_1_meshing_utilities.html#aa4d5beaebb72024f7d3d9a79600e4891">Kratos::MeshingUtilities::ThisParameters</a></div><div class="ttdeci">void Parameters ThisParameters</div><div class="ttdef"><b>Definition:</b> meshing_utilities.h:64</div></div>
 <div class="ttc" id="anamespace_kratos_1_1_mortar_utilities_html_a407333aa7d9b470dab6a9652f72a6ebd"><div class="ttname"><a href="../../da/dec/namespace_kratos_1_1_mortar_utilities.html#a407333aa7d9b470dab6a9652f72a6ebd">Kratos::MortarUtilities::rGeometry</a></div><div class="ttdeci">array_1d&lt; double, 3 &gt; const GeometryType &amp; rGeometry</div><div class="ttdef"><b>Definition:</b> mortar_utilities.h:153</div></div>
 <div class="ttc" id="anamespace_kratos_html"><div class="ttname"><a href="../../db/d66/namespace_kratos.html">Kratos</a></div><div class="ttdoc">REF: G. R. Cowper, GAUSSIAN QUADRATURE FORMULAS FOR TRIANGLES.</div><div class="ttdef"><b>Definition:</b> mesh_condition.cpp:21</div></div>
 <div class="ttc" id="anamespace_kratos_html_a1514eea722d243fa5561f7050c071b9fa17af9c0d63a5bf16c4c5724b43273ffe"><div class="ttname"><a href="../../db/d66/namespace_kratos.html#a1514eea722d243fa5561f7050c071b9fa17af9c0d63a5bf16c4c5724b43273ffe">Kratos::DataLocation::NodeHistorical</a></div><div class="ttdeci">@ NodeHistorical</div></div>
 <div class="ttc" id="anamespace_kratos_html_a1514eea722d243fa5561f7050c071b9fa90c8c5d285491827e6e306367f1b210d"><div class="ttname"><a href="../../db/d66/namespace_kratos.html#a1514eea722d243fa5561f7050c071b9fa90c8c5d285491827e6e306367f1b210d">Kratos::DataLocation::NodeNonHistorical</a></div><div class="ttdeci">@ NodeNonHistorical</div></div>
-<div class="ttc" id="anamespace_kratos_html_a884ade0675a6a17a14d1bce5e3ae2fe3"><div class="ttname"><a href="../../db/d66/namespace_kratos.html#a884ade0675a6a17a14d1bce5e3ae2fe3">Kratos::GeometryType</a></div><div class="ttdeci">Geometry&lt; NodeType &gt; GeometryType</div><div class="ttdoc">The definition of the geometry.</div><div class="ttdef"><b>Definition:</b> mortar_classes.h:38</div></div>
+<div class="ttc" id="anamespace_kratos_html_a9c6097d0b0a27d1cea94992b1087f56a"><div class="ttname"><a href="../../db/d66/namespace_kratos.html#a9c6097d0b0a27d1cea94992b1087f56a">Kratos::operator&gt;&gt;</a></div><div class="ttdeci">std::istream &amp; operator&gt;&gt;(std::istream &amp;rIStream, LinearMasterSlaveConstraint &amp;rThis)</div><div class="ttdoc">input stream function</div></div>
 <div class="ttc" id="anamespace_kratos_html_aa7d839e3242e246219b49b98a09219c7"><div class="ttname"><a href="../../db/d66/namespace_kratos.html#aa7d839e3242e246219b49b98a09219c7">Kratos::KRATOS_DEPRECATED_MESSAGE</a></div><div class="ttdeci">namespace KRATOS_DEPRECATED_MESSAGE(&quot;Please use std::filesystem directly&quot;) filesystem</div><div class="ttdef"><b>Definition:</b> kratos_filesystem.h:43</div></div>
 <div class="ttc" id="anamespace_kratos_html_abb4d93a6f1ee35395fd178b0e96cbcb8"><div class="ttname"><a href="../../db/d66/namespace_kratos.html#abb4d93a6f1ee35395fd178b0e96cbcb8">Kratos::NodeType</a></div><div class="ttdeci">Node&lt; 3 &gt; NodeType</div><div class="ttdoc">The definition of the node.</div><div class="ttdef"><b>Definition:</b> mortar_classes.h:37</div></div>
+<div class="ttc" id="anamespace_kratos_html_acfc842a43d19dffc2d8105e5cbea17a9"><div class="ttname"><a href="../../db/d66/namespace_kratos.html#acfc842a43d19dffc2d8105e5cbea17a9">Kratos::operator&lt;&lt;</a></div><div class="ttdeci">std::ostream &amp; operator&lt;&lt;(std::ostream &amp;rOStream, const LinearMasterSlaveConstraint &amp;rThis)</div><div class="ttdoc">output stream function</div><div class="ttdef"><b>Definition:</b> linear_master_slave_constraint.h:432</div></div>
 <div class="ttc" id="anamespaceode__solve_html_aae8a035c92cd801f6cf64409406c371b"><div class="ttname"><a href="../../d2/df2/namespaceode__solve.html#aae8a035c92cd801f6cf64409406c371b">ode_solve.const</a></div><div class="ttdeci">tuple const</div><div class="ttdef"><b>Definition:</b> ode_solve.py:403</div></div>
 <div class="ttc" id="atransfer__utility_8h_html_a95ed76edc983cae239b65f370953d216"><div class="ttname"><a href="../../d6/d3f/transfer__utility_8h.html#a95ed76edc983cae239b65f370953d216">KRATOS_CLASS_POINTER_DEFINITION</a></div><div class="ttdeci">KRATOS_CLASS_POINTER_DEFINITION(TransferUtility)</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Apr 20 2023 02:09:07 for KratosMultiphysics by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Fri Apr 21 2023 02:12:18 for KratosMultiphysics by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

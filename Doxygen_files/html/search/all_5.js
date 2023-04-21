@@ -837,7 +837,7 @@ var searchData=
   ['expression_2eh_8000',['expression.h',['../d3/d1b/expression_8h.html',1,'']]],
   ['ext_5fgrid_5fshape_8001',['ext_grid_shape',['../db/d33/class_gaussian_random_field_1_1_gaussian_random_field.html#a0c5e1a25f680f1a08ee61d68df1f78c0',1,'GaussianRandomField::GaussianRandomField']]],
   ['ext_5fpress_8002',['ext_press',['../d7/dd6/namespacetest__pureconvectionsolver__benchmarking.html#af0714f949291d6857b2d10159187a5d4',1,'test_pureconvectionsolver_benchmarking']]],
-  ['extend_8003',['Extend',['../dc/dd4/class_kratos_1_1_bounding_box.html#a8b4d938ecaf0b28b494891fa45c6f5fc',1,'Kratos::BoundingBox::Extend(double Margin)'],['../dc/dd4/class_kratos_1_1_bounding_box.html#ab54ea36fd7c83ae2cb41f9f601f81aab',1,'Kratos::BoundingBox::Extend(TIteratorType const &amp;PointsBegin, TIteratorType const &amp;PointsEnd)']]],
+  ['extend_8003',['Extend',['../dc/dd4/class_kratos_1_1_bounding_box.html#a486e1e13dd002e58f6760c37e0f6b8f5',1,'Kratos::BoundingBox::Extend(const double Margin)'],['../dc/dd4/class_kratos_1_1_bounding_box.html#ab54ea36fd7c83ae2cb41f9f601f81aab',1,'Kratos::BoundingBox::Extend(TIteratorType const &amp;PointsBegin, TIteratorType const &amp;PointsEnd)']]],
   ['extend_5fdatafile_5flist_8004',['extend_datafile_list',['../d6/dc4/namespace_d_e_m__benchmarks__class.html#aac119be433babe1db11eebdb36704e06',1,'DEM_benchmarks_class']]],
   ['extend_5fpressure_5fcondition_5fprocess_2ecpp_8005',['extend_pressure_condition_process.cpp',['../dc/d6b/extend__pressure__condition__process_8cpp.html',1,'']]],
   ['extend_5fpressure_5fcondition_5fprocess_2eh_8006',['extend_pressure_condition_process.h',['../d7/d7d/extend__pressure__condition__process_8h.html',1,'']]],
