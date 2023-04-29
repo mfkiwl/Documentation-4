@@ -314,7 +314,7 @@ $(function() {
 <div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;            <span class="comment">// Get dynamic viscosity from parent element properties</span></div>
 <div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;            <span class="comment">// Note that this assumes constant viscosity within the element</span></div>
 <div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;            <span class="keyword">const</span> <span class="keyword">auto</span>&amp; r_parent_element = rCondition.GetValue(NEIGHBOUR_ELEMENTS)[0];</div>
-<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;            DynamicViscosity = r_parent_element.<a class="code" href="../../d1/d6e/class_kratos_1_1_condition.html#a74888d5a6ed12d810c735d6e147c5e4d">GetProperties</a>().<a class="code" href="../../d7/d7a/class_kratos_1_1_properties.html#ae34f93c8cb56a7652bfe58ada1f78f73">GetValue</a>(DYNAMIC_VISCOSITY);</div>
+<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;            DynamicViscosity = r_parent_element.<a class="code" href="../../d1/d6e/class_kratos_1_1_condition.html#a74888d5a6ed12d810c735d6e147c5e4d">GetProperties</a>().<a class="code" href="../../d7/d7a/class_kratos_1_1_properties.html#a044400c7587201e27af3cc8c9c48429e">GetValue</a>(DYNAMIC_VISCOSITY);</div>
 <div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160; </div>
 <div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;            <span class="comment">// Compute condition unit normal vector</span></div>
 <div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;            <span class="comment">// Note that in here we are assuming a constant normal over the entire condition</span></div>
@@ -388,7 +388,7 @@ $(function() {
 <div class="ttc" id="aclass_kratos_1_1_navier_slip_wall_law_html_a8950651b5bed801085abb958fd9ad007"><div class="ttname"><a href="../../dc/d45/class_kratos_1_1_navier_slip_wall_law.html#a8950651b5bed801085abb958fd9ad007">Kratos::NavierSlipWallLaw::NavierSlipWallLaw</a></div><div class="ttdeci">NavierSlipWallLaw(NavierSlipWallLaw const &amp;rOther)=delete</div><div class="ttdoc">Copy constructor.</div></div>
 <div class="ttc" id="aclass_kratos_1_1_navier_slip_wall_law_html_a9ef9379f87757ca7c8c128abd0b85359"><div class="ttname"><a href="../../dc/d45/class_kratos_1_1_navier_slip_wall_law.html#a9ef9379f87757ca7c8c128abd0b85359">Kratos::NavierSlipWallLaw::Check</a></div><div class="ttdeci">static int Check(const Condition *pCondition, const ProcessInfo &amp;rCurrentProcessInfo)</div><div class="ttdoc">Check function This function checks the current wall law input parameters.</div><div class="ttdef"><b>Definition:</b> navier_slip_wall_law.h:261</div></div>
 <div class="ttc" id="aclass_kratos_1_1_navier_slip_wall_law_html_ac0b2a7302d85c7c9e08579c742a915b7"><div class="ttname"><a href="../../dc/d45/class_kratos_1_1_navier_slip_wall_law.html#ac0b2a7302d85c7c9e08579c742a915b7">Kratos::NavierSlipWallLaw::LocalSize</a></div><div class="ttdeci">static constexpr std::size_t LocalSize</div><div class="ttdef"><b>Definition:</b> navier_slip_wall_law.h:76</div></div>
-<div class="ttc" id="aclass_kratos_1_1_properties_html_ae34f93c8cb56a7652bfe58ada1f78f73"><div class="ttname"><a href="../../d7/d7a/class_kratos_1_1_properties.html#ae34f93c8cb56a7652bfe58ada1f78f73">Kratos::Properties::GetValue</a></div><div class="ttdeci">TVariableType::Type &amp; GetValue(const TVariableType &amp;rV)</div><div class="ttdef"><b>Definition:</b> properties.h:209</div></div>
+<div class="ttc" id="aclass_kratos_1_1_properties_html_a044400c7587201e27af3cc8c9c48429e"><div class="ttname"><a href="../../d7/d7a/class_kratos_1_1_properties.html#a044400c7587201e27af3cc8c9c48429e">Kratos::Properties::GetValue</a></div><div class="ttdeci">TVariableType::Type &amp; GetValue(const TVariableType &amp;rVariable)</div><div class="ttdef"><b>Definition:</b> properties.h:242</div></div>
 <div class="ttc" id="aclass_kratos_1_1array__1d_html"><div class="ttname"><a href="../../d4/ddc/class_kratos_1_1array__1d.html">Kratos::array_1d&lt; double, 3 &gt;</a></div></div>
 <div class="ttc" id="aclass_kratos_1_1array__1d_html_a90c970d470ef873d2d7b4fcd0e9a3621"><div class="ttname"><a href="../../d4/ddc/class_kratos_1_1array__1d.html#a90c970d470ef873d2d7b4fcd0e9a3621">Kratos::array_1d::size</a></div><div class="ttdeci">BOOST_UBLAS_INLINE size_type size() const</div><div class="ttdef"><b>Definition:</b> array_1d.h:368</div></div>
 <div class="ttc" id="acondition_8h_html"><div class="ttname"><a href="../../d7/d6c/condition_8h.html">condition.h</a></div></div>
@@ -410,7 +410,7 @@ $(function() {
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Apr 28 2023 02:07:45 for KratosMultiphysics by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Sat Apr 29 2023 02:06:27 for KratosMultiphysics by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>
