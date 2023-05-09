@@ -46,7 +46,7 @@ if (edges && edges.length) {
         </defs>
 
 <script type="text/javascript">
-var viewWidth = 810;
+var viewWidth = 922;
 var viewHeight = 328;
 var sectionId = 'dynsection-1';
 </script>
@@ -58,11 +58,11 @@ var sectionId = 'dynsection-1';
 <g id="node1" class="node">
 <title>Node1</title>
 <g id="a_node1"><a xlink:title=" ">
-<polygon fill="#bfbfbf" stroke="black" points="295,-267.5 295,-319.5 489,-319.5 489,-267.5 295,-267.5"/>
-<text text-anchor="start" x="303" y="-307.5" font-family="Helvetica,sans-Serif" font-size="10.00">/home/runner/work/Documentation</text>
-<text text-anchor="start" x="303" y="-296.5" font-family="Helvetica,sans-Serif" font-size="10.00">/Documentation/master/applications</text>
-<text text-anchor="start" x="303" y="-285.5" font-family="Helvetica,sans-Serif" font-size="10.00">/RomApplication/custom_utilities</text>
-<text text-anchor="middle" x="392" y="-274.5" font-family="Helvetica,sans-Serif" font-size="10.00">/rom_auxiliary_utilities.h</text>
+<polygon fill="#bfbfbf" stroke="black" points="366,-267.5 366,-319.5 560,-319.5 560,-267.5 366,-267.5"/>
+<text text-anchor="start" x="374" y="-307.5" font-family="Helvetica,sans-Serif" font-size="10.00">/home/runner/work/Documentation</text>
+<text text-anchor="start" x="374" y="-296.5" font-family="Helvetica,sans-Serif" font-size="10.00">/Documentation/master/applications</text>
+<text text-anchor="start" x="374" y="-285.5" font-family="Helvetica,sans-Serif" font-size="10.00">/RomApplication/custom_utilities</text>
+<text text-anchor="middle" x="463" y="-274.5" font-family="Helvetica,sans-Serif" font-size="10.00">/rom_auxiliary_utilities.h</text>
 </a>
 </g>
 </g>
@@ -81,13 +81,31 @@ var sectionId = 'dynsection-1';
 <!-- Node1&#45;&gt;Node2 -->
 <g id="edge1" class="edge">
 <title>Node1&#45;&gt;Node2</title>
-<path fill="none" stroke="midnightblue" d="M284.57,-283.9C210.95,-275.52 122.51,-259.71 99,-231 78.72,-206.24 83.55,-167.34 89.93,-141.87"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="284.52,-287.41 294.85,-285.03 285.29,-280.46 284.52,-287.41"/>
+<path fill="none" stroke="midnightblue" d="M355.67,-288.1C263.25,-281.88 139.73,-266.91 107,-231 85.24,-207.13 87.42,-167.62 91.95,-141.82"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="355.72,-291.61 365.93,-288.77 356.17,-284.63 355.72,-291.61"/>
 </g>
 <!-- Node3 -->
 <g id="node3" class="node">
 <title>Node3</title>
-<g id="a_node3"><a xlink:href="../../d8/dbc/lspg__rom__builder__and__solver_8h.html" target="_top" xlink:title=" ">
+<g id="a_node3"><a xlink:href="../../d2/dd4/global__rom__builder__and__solver_8h.html" target="_top" xlink:title=" ">
+<polygon fill="none" stroke="black" points="720,-89.5 720,-141.5 914,-141.5 914,-89.5 720,-89.5"/>
+<text text-anchor="start" x="728" y="-129.5" font-family="Helvetica,sans-Serif" font-size="10.00">/home/runner/work/Documentation</text>
+<text text-anchor="start" x="728" y="-118.5" font-family="Helvetica,sans-Serif" font-size="10.00">/Documentation/master/applications</text>
+<text text-anchor="start" x="728" y="-107.5" font-family="Helvetica,sans-Serif" font-size="10.00">/RomApplication/custom_strategies</text>
+<text text-anchor="middle" x="817" y="-96.5" font-family="Helvetica,sans-Serif" font-size="10.00">/global_rom_builder_and_solver.h</text>
+</a>
+</g>
+</g>
+<!-- Node1&#45;&gt;Node3 -->
+<g id="edge2" class="edge">
+<title>Node1&#45;&gt;Node3</title>
+<path fill="none" stroke="midnightblue" d="M535.67,-263.15C554.73,-254.06 574.76,-243.18 592,-231 619.21,-211.78 616.85,-195.82 645,-178 668.85,-162.9 696.9,-150.87 723.36,-141.59"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="533.99,-260.07 526.41,-267.47 536.95,-266.42 533.99,-260.07"/>
+</g>
+<!-- Node5 -->
+<g id="node5" class="node">
+<title>Node5</title>
+<g id="a_node5"><a xlink:href="../../d8/dbc/lspg__rom__builder__and__solver_8h.html" target="_top" xlink:title=" ">
 <polygon fill="none" stroke="black" points="224,-89.5 224,-141.5 418,-141.5 418,-89.5 224,-89.5"/>
 <text text-anchor="start" x="232" y="-129.5" font-family="Helvetica,sans-Serif" font-size="10.00">/home/runner/work/Documentation</text>
 <text text-anchor="start" x="232" y="-118.5" font-family="Helvetica,sans-Serif" font-size="10.00">/Documentation/master/applications</text>
@@ -96,16 +114,16 @@ var sectionId = 'dynsection-1';
 </a>
 </g>
 </g>
-<!-- Node1&#45;&gt;Node3 -->
-<g id="edge2" class="edge">
-<title>Node1&#45;&gt;Node3</title>
-<path fill="none" stroke="midnightblue" d="M365.48,-259.33C359.38,-250.5 353.4,-240.71 349,-231 335.84,-201.92 328.32,-165.76 324.45,-141.95"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="362.64,-261.38 371.32,-267.45 368.33,-257.29 362.64,-261.38"/>
+<!-- Node1&#45;&gt;Node5 -->
+<g id="edge4" class="edge">
+<title>Node1&#45;&gt;Node5</title>
+<path fill="none" stroke="midnightblue" d="M393.5,-262.17C379.93,-253.68 366.87,-243.33 357,-231 336.17,-204.97 327.31,-166.75 323.6,-141.75"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="392.07,-265.39 402.46,-267.47 395.64,-259.37 392.07,-265.39"/>
 </g>
-<!-- Node5 -->
-<g id="node5" class="node">
-<title>Node5</title>
-<g id="a_node5"><a xlink:href="../../d2/db4/petrov__galerkin__rom__builder__and__solver_8h.html" target="_top" xlink:title=" ">
+<!-- Node6 -->
+<g id="node6" class="node">
+<title>Node6</title>
+<g id="a_node6"><a xlink:href="../../d2/db4/petrov__galerkin__rom__builder__and__solver_8h.html" target="_top" xlink:title=" ">
 <polygon fill="none" stroke="black" points="474.5,-89.5 474.5,-141.5 701.5,-141.5 701.5,-89.5 474.5,-89.5"/>
 <text text-anchor="start" x="482.5" y="-129.5" font-family="Helvetica,sans-Serif" font-size="10.00">/home/runner/work/Documentation</text>
 <text text-anchor="start" x="482.5" y="-118.5" font-family="Helvetica,sans-Serif" font-size="10.00">/Documentation/master/applications</text>
@@ -114,119 +132,125 @@ var sectionId = 'dynsection-1';
 </a>
 </g>
 </g>
-<!-- Node1&#45;&gt;Node5 -->
-<g id="edge4" class="edge">
-<title>Node1&#45;&gt;Node5</title>
-<path fill="none" stroke="midnightblue" d="M498.67,-271.58C521.94,-262.53 544.5,-249.56 561,-231 582.85,-206.42 587.89,-167.47 588.63,-141.95"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="497.22,-268.38 489.03,-275.1 499.63,-274.96 497.22,-268.38"/>
-</g>
-<!-- Node6 -->
-<g id="node6" class="node">
-<title>Node6</title>
-<g id="a_node6"><a xlink:href="../../d4/d71/rom__builder__and__solver_8h.html" target="_top" xlink:title=" ">
-<polygon fill="none" stroke="black" points="358,-178.5 358,-230.5 552,-230.5 552,-178.5 358,-178.5"/>
-<text text-anchor="start" x="366" y="-218.5" font-family="Helvetica,sans-Serif" font-size="10.00">/home/runner/work/Documentation</text>
-<text text-anchor="start" x="366" y="-207.5" font-family="Helvetica,sans-Serif" font-size="10.00">/Documentation/master/applications</text>
-<text text-anchor="start" x="366" y="-196.5" font-family="Helvetica,sans-Serif" font-size="10.00">/RomApplication/custom_strategies</text>
-<text text-anchor="middle" x="455" y="-185.5" font-family="Helvetica,sans-Serif" font-size="10.00">/rom_builder_and_solver.h</text>
-</a>
-</g>
-</g>
 <!-- Node1&#45;&gt;Node6 -->
 <g id="edge6" class="edge">
 <title>Node1&#45;&gt;Node6</title>
-<path fill="none" stroke="midnightblue" d="M416.1,-259.22C422.98,-249.72 430.36,-239.53 436.82,-230.61"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="413.25,-257.18 410.22,-267.34 418.92,-261.29 413.25,-257.18"/>
+<path fill="none" stroke="midnightblue" d="M535.41,-262.17C548.31,-253.8 560.37,-243.49 569,-231 587.33,-204.48 590.17,-166.38 589.72,-141.54"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="533.55,-259.2 526.83,-267.39 537.2,-265.17 533.55,-259.2"/>
 </g>
 <!-- Node7 -->
 <g id="node7" class="node">
 <title>Node7</title>
-<g id="a_node7"><a xlink:href="../../d4/d40/rom__auxiliary__utilities_8cpp.html" target="_top" xlink:title=" ">
-<polygon fill="none" stroke="black" points="608,-178.5 608,-230.5 802,-230.5 802,-178.5 608,-178.5"/>
-<text text-anchor="start" x="616" y="-218.5" font-family="Helvetica,sans-Serif" font-size="10.00">/home/runner/work/Documentation</text>
-<text text-anchor="start" x="616" y="-207.5" font-family="Helvetica,sans-Serif" font-size="10.00">/Documentation/master/applications</text>
-<text text-anchor="start" x="616" y="-196.5" font-family="Helvetica,sans-Serif" font-size="10.00">/RomApplication/custom_utilities</text>
-<text text-anchor="middle" x="705" y="-185.5" font-family="Helvetica,sans-Serif" font-size="10.00">/rom_auxiliary_utilities.cpp</text>
+<g id="a_node7"><a xlink:href="../../d4/d71/rom__builder__and__solver_8h.html" target="_top" xlink:title=" ">
+<polygon fill="none" stroke="black" points="366,-178.5 366,-230.5 560,-230.5 560,-178.5 366,-178.5"/>
+<text text-anchor="start" x="374" y="-218.5" font-family="Helvetica,sans-Serif" font-size="10.00">/home/runner/work/Documentation</text>
+<text text-anchor="start" x="374" y="-207.5" font-family="Helvetica,sans-Serif" font-size="10.00">/Documentation/master/applications</text>
+<text text-anchor="start" x="374" y="-196.5" font-family="Helvetica,sans-Serif" font-size="10.00">/RomApplication/custom_strategies</text>
+<text text-anchor="middle" x="463" y="-185.5" font-family="Helvetica,sans-Serif" font-size="10.00">/rom_builder_and_solver.h</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node7 -->
-<g id="edge10" class="edge">
+<g id="edge8" class="edge">
 <title>Node1&#45;&gt;Node7</title>
-<path fill="none" stroke="midnightblue" d="M491.77,-264.77C531.32,-253.78 576.45,-241.23 614.98,-230.52"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="490.81,-261.4 482.11,-267.45 492.68,-268.15 490.81,-261.4"/>
+<path fill="none" stroke="midnightblue" d="M463,-257.19C463,-248.28 463,-238.9 463,-230.61"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="459.5,-257.34 463,-267.34 466.5,-257.34 459.5,-257.34"/>
 </g>
 <!-- Node8 -->
 <g id="node8" class="node">
 <title>Node8</title>
-<g id="a_node8"><a xlink:href="../../d2/d4f/rom__residuals__utility_8h.html" target="_top" xlink:title=" ">
-<polygon fill="none" stroke="black" points="108,-178.5 108,-230.5 302,-230.5 302,-178.5 108,-178.5"/>
-<text text-anchor="start" x="116" y="-218.5" font-family="Helvetica,sans-Serif" font-size="10.00">/home/runner/work/Documentation</text>
-<text text-anchor="start" x="116" y="-207.5" font-family="Helvetica,sans-Serif" font-size="10.00">/Documentation/master/applications</text>
-<text text-anchor="start" x="116" y="-196.5" font-family="Helvetica,sans-Serif" font-size="10.00">/RomApplication/custom_utilities</text>
-<text text-anchor="middle" x="205" y="-185.5" font-family="Helvetica,sans-Serif" font-size="10.00">/rom_residuals_utility.h</text>
+<g id="a_node8"><a xlink:href="../../d4/d40/rom__auxiliary__utilities_8cpp.html" target="_top" xlink:title=" ">
+<polygon fill="none" stroke="black" points="654,-178.5 654,-230.5 848,-230.5 848,-178.5 654,-178.5"/>
+<text text-anchor="start" x="662" y="-218.5" font-family="Helvetica,sans-Serif" font-size="10.00">/home/runner/work/Documentation</text>
+<text text-anchor="start" x="662" y="-207.5" font-family="Helvetica,sans-Serif" font-size="10.00">/Documentation/master/applications</text>
+<text text-anchor="start" x="662" y="-196.5" font-family="Helvetica,sans-Serif" font-size="10.00">/RomApplication/custom_utilities</text>
+<text text-anchor="middle" x="751" y="-185.5" font-family="Helvetica,sans-Serif" font-size="10.00">/rom_auxiliary_utilities.cpp</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node8 -->
-<g id="edge11" class="edge">
+<g id="edge12" class="edge">
 <title>Node1&#45;&gt;Node8</title>
-<path fill="none" stroke="midnightblue" d="M328.92,-263.15C306.15,-252.56 280.68,-240.71 258.78,-230.52"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="327.62,-266.41 338.16,-267.45 330.57,-260.06 327.62,-266.41"/>
+<path fill="none" stroke="midnightblue" d="M555.5,-264.56C591.72,-253.62 632.94,-241.16 668.17,-230.52"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="554.48,-261.21 545.92,-267.45 556.5,-267.91 554.48,-261.21"/>
+</g>
+<!-- Node9 -->
+<g id="node9" class="node">
+<title>Node9</title>
+<g id="a_node9"><a xlink:href="../../d2/d4f/rom__residuals__utility_8h.html" target="_top" xlink:title=" ">
+<polygon fill="none" stroke="black" points="116,-178.5 116,-230.5 310,-230.5 310,-178.5 116,-178.5"/>
+<text text-anchor="start" x="124" y="-218.5" font-family="Helvetica,sans-Serif" font-size="10.00">/home/runner/work/Documentation</text>
+<text text-anchor="start" x="124" y="-207.5" font-family="Helvetica,sans-Serif" font-size="10.00">/Documentation/master/applications</text>
+<text text-anchor="start" x="124" y="-196.5" font-family="Helvetica,sans-Serif" font-size="10.00">/RomApplication/custom_utilities</text>
+<text text-anchor="middle" x="213" y="-185.5" font-family="Helvetica,sans-Serif" font-size="10.00">/rom_residuals_utility.h</text>
+</a>
+</g>
+</g>
+<!-- Node1&#45;&gt;Node9 -->
+<g id="edge13" class="edge">
+<title>Node1&#45;&gt;Node9</title>
+<path fill="none" stroke="midnightblue" d="M381.5,-264.14C350.35,-253.3 315.09,-241.03 284.9,-230.52"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="380.43,-267.47 391.03,-267.45 382.73,-260.86 380.43,-267.47"/>
 </g>
 <!-- Node4 -->
 <g id="node4" class="node">
 <title>Node4</title>
 <g id="a_node4"><a xlink:href="../../dd/df8/_rom_application_2custom__python_2add__custom__strategies__to__python_8cpp.html" target="_top" xlink:title=" ">
-<polygon fill="none" stroke="black" points="348,-0.5 348,-52.5 544,-52.5 544,-0.5 348,-0.5"/>
-<text text-anchor="start" x="356" y="-40.5" font-family="Helvetica,sans-Serif" font-size="10.00">/home/runner/work/Documentation</text>
-<text text-anchor="start" x="356" y="-29.5" font-family="Helvetica,sans-Serif" font-size="10.00">/Documentation/master/applications</text>
-<text text-anchor="start" x="356" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">/RomApplication/custom_python/add</text>
-<text text-anchor="middle" x="446" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">_custom_strategies_to_python.cpp</text>
+<polygon fill="none" stroke="black" points="419,-0.5 419,-52.5 615,-52.5 615,-0.5 419,-0.5"/>
+<text text-anchor="start" x="427" y="-40.5" font-family="Helvetica,sans-Serif" font-size="10.00">/home/runner/work/Documentation</text>
+<text text-anchor="start" x="427" y="-29.5" font-family="Helvetica,sans-Serif" font-size="10.00">/Documentation/master/applications</text>
+<text text-anchor="start" x="427" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">/RomApplication/custom_python/add</text>
+<text text-anchor="middle" x="517" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">_custom_strategies_to_python.cpp</text>
 </a>
 </g>
 </g>
 <!-- Node3&#45;&gt;Node4 -->
 <g id="edge3" class="edge">
 <title>Node3&#45;&gt;Node4</title>
-<path fill="none" stroke="midnightblue" d="M365.54,-83.5C380.09,-73.37 396.07,-62.25 409.93,-52.61"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="363.36,-80.75 357.16,-89.34 367.36,-86.5 363.36,-80.75"/>
+<path fill="none" stroke="midnightblue" d="M720.65,-86.56C682.92,-75.62 639.97,-63.16 603.28,-52.52"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="720.05,-90.03 730.63,-89.45 722,-83.31 720.05,-90.03"/>
 </g>
 <!-- Node5&#45;&gt;Node4 -->
 <g id="edge5" class="edge">
 <title>Node5&#45;&gt;Node4</title>
-<path fill="none" stroke="midnightblue" d="M538.33,-84.07C521.55,-73.79 503.01,-62.43 486.98,-52.61"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="536.57,-87.1 546.93,-89.34 540.23,-81.13 536.57,-87.1"/>
-</g>
-<!-- Node6&#45;&gt;Node3 -->
-<g id="edge8" class="edge">
-<title>Node6&#45;&gt;Node3</title>
-<path fill="none" stroke="midnightblue" d="M407.7,-172.79C391.97,-162.58 374.66,-151.34 359.67,-141.61"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="405.95,-175.83 416.24,-178.34 409.76,-169.95 405.95,-175.83"/>
+<path fill="none" stroke="midnightblue" d="M386.8,-85.29C410.74,-74.67 437.57,-62.76 460.63,-52.52"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="385.15,-82.2 377.43,-89.45 387.99,-88.59 385.15,-82.2"/>
 </g>
 <!-- Node6&#45;&gt;Node4 -->
 <g id="edge7" class="edge">
 <title>Node6&#45;&gt;Node4</title>
-<path fill="none" stroke="midnightblue" d="M453.2,-168.25C451.45,-134.04 448.84,-82.97 447.29,-52.67"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="449.7,-168.48 453.71,-178.28 456.7,-168.12 449.7,-168.48"/>
+<path fill="none" stroke="midnightblue" d="M561.07,-81.5C553.25,-71.92 544.84,-61.62 537.49,-52.61"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="558.43,-83.8 567.46,-89.34 563.85,-79.38 558.43,-83.8"/>
 </g>
-<!-- Node6&#45;&gt;Node5 -->
+<!-- Node7&#45;&gt;Node4 -->
 <g id="edge9" class="edge">
-<title>Node6&#45;&gt;Node5</title>
-<path fill="none" stroke="midnightblue" d="M501.95,-172.79C517.56,-162.58 534.74,-151.34 549.62,-141.61"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="499.92,-169.93 493.47,-178.34 503.75,-175.79 499.92,-169.93"/>
+<title>Node7&#45;&gt;Node4</title>
+<path fill="none" stroke="midnightblue" d="M458.1,-168.38C456.24,-145.12 456.48,-114.35 466,-89 471.07,-75.5 480.44,-62.81 489.78,-52.51"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="454.63,-168.87 459.07,-178.49 461.6,-168.2 454.63,-168.87"/>
 </g>
-<!-- Node8&#45;&gt;Node2 -->
-<g id="edge12" class="edge">
-<title>Node8&#45;&gt;Node2</title>
-<path fill="none" stroke="midnightblue" d="M166.18,-171.93C153.91,-161.96 140.52,-151.07 128.88,-141.61"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="164.08,-174.74 174.05,-178.34 168.5,-169.31 164.08,-174.74"/>
+<!-- Node7&#45;&gt;Node5 -->
+<g id="edge10" class="edge">
+<title>Node7&#45;&gt;Node5</title>
+<path fill="none" stroke="midnightblue" d="M413.33,-173.07C396.55,-162.79 378.01,-151.43 361.98,-141.61"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="411.57,-176.1 421.93,-178.34 415.23,-170.13 411.57,-176.1"/>
 </g>
-<!-- Node8&#45;&gt;Node3 -->
-<g id="edge13" class="edge">
-<title>Node8&#45;&gt;Node3</title>
-<path fill="none" stroke="midnightblue" d="M246.71,-172.22C260.12,-162.16 274.79,-151.16 287.52,-141.61"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="244.45,-169.54 238.55,-178.34 248.65,-175.14 244.45,-169.54"/>
+<!-- Node7&#45;&gt;Node6 -->
+<g id="edge11" class="edge">
+<title>Node7&#45;&gt;Node6</title>
+<path fill="none" stroke="midnightblue" d="M507.54,-172.5C522.09,-162.37 538.07,-151.25 551.93,-141.61"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="505.36,-169.75 499.16,-178.34 509.36,-175.5 505.36,-169.75"/>
+</g>
+<!-- Node9&#45;&gt;Node2 -->
+<g id="edge14" class="edge">
+<title>Node9&#45;&gt;Node2</title>
+<path fill="none" stroke="midnightblue" d="M171.65,-172.22C158.36,-162.16 143.82,-151.16 131.19,-141.61"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="169.65,-175.09 179.74,-178.34 173.87,-169.51 169.65,-175.09"/>
+</g>
+<!-- Node9&#45;&gt;Node5 -->
+<g id="edge15" class="edge">
+<title>Node9&#45;&gt;Node5</title>
+<path fill="none" stroke="midnightblue" d="M252.19,-171.93C264.57,-161.96 278.09,-151.07 289.83,-141.61"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="249.83,-169.34 244.24,-178.34 254.22,-174.79 249.83,-169.34"/>
 </g>
 </g>
 </svg>
