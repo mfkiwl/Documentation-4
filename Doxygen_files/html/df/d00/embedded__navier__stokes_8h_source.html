@@ -1190,88 +1190,84 @@ $(function() {
 <div class="line"><a name="l01292"></a><span class="lineno"> 1292</span>&#160; </div>
 <div class="line"><a name="l01293"></a><span class="lineno"> 1293</span>&#160;        <span class="comment">// Fill the tangential projection matrix (I - nxn)</span></div>
 <div class="line"><a name="l01294"></a><span class="lineno"> 1294</span>&#160;        <span class="keywordflow">if</span> constexpr (TDim == 3) {</div>
-<div class="line"><a name="l01295"></a><span class="lineno"> 1295</span>&#160;<span class="preprocessor">            #ifdef KRATOS_USE_AMATRIX</span></div>
-<div class="line"><a name="l01296"></a><span class="lineno"> 1296</span>&#160;            <a class="code" href="../../d9/dbb/class_kratos_1_1_internals_1_1_matrix.html">BoundedMatrix&lt;double,3,3&gt;</a> id_matrix = <a class="code" href="../../db/d66/namespace_kratos.html#a0dd2d083f48d867f5e0271bdf91b036e">IdentityMatrix</a>(TDim);</div>
-<div class="line"><a name="l01297"></a><span class="lineno"> 1297</span>&#160;<span class="preprocessor">            #else</span></div>
-<div class="line"><a name="l01298"></a><span class="lineno"> 1298</span>&#160;            <a class="code" href="../../d9/dbb/class_kratos_1_1_internals_1_1_matrix.html">BoundedMatrix&lt;double,3,3&gt;</a> id_matrix = <a class="code" href="../../db/d66/namespace_kratos.html#a0dd2d083f48d867f5e0271bdf91b036e">IdentityMatrix</a>(TDim,TDim);</div>
-<div class="line"><a name="l01299"></a><span class="lineno"> 1299</span>&#160;<span class="preprocessor">            #endif</span></div>
-<div class="line"><a name="l01300"></a><span class="lineno"> 1300</span>&#160;            <a class="code" href="../../db/d66/namespace_kratos.html#aaff3672cc52b90ee3d84713de272e1b5">noalias</a>(rTangProjMatrix) = id_matrix - <a class="code" href="../../db/d66/namespace_kratos.html#a89823cae8c60a522d1b54a8beaba33d9">outer_prod</a>(rUnitNormal, rUnitNormal);</div>
-<div class="line"><a name="l01301"></a><span class="lineno"> 1301</span>&#160;        } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l01302"></a><span class="lineno"> 1302</span>&#160;            rTangProjMatrix(0,0) = 1.0 - rUnitNormal(0)*rUnitNormal(0);</div>
-<div class="line"><a name="l01303"></a><span class="lineno"> 1303</span>&#160;            rTangProjMatrix(0,1) = - rUnitNormal(0)*rUnitNormal(1);</div>
-<div class="line"><a name="l01304"></a><span class="lineno"> 1304</span>&#160;            rTangProjMatrix(1,0) = - rUnitNormal(1)*rUnitNormal(0);</div>
-<div class="line"><a name="l01305"></a><span class="lineno"> 1305</span>&#160;            rTangProjMatrix(1,1) = 1.0 - rUnitNormal(1)*rUnitNormal(1);</div>
-<div class="line"><a name="l01306"></a><span class="lineno"> 1306</span>&#160;        }</div>
-<div class="line"><a name="l01307"></a><span class="lineno"> 1307</span>&#160;    }</div>
-<div class="line"><a name="l01308"></a><span class="lineno"> 1308</span>&#160; </div>
-<div class="line"><a name="l01314"></a><span class="lineno"><a class="line" href="../../d7/d89/class_kratos_1_1_embedded_navier_stokes.html#acca6e362e714acde281c9698daf29e8e"> 1314</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../d7/d89/class_kratos_1_1_embedded_navier_stokes.html#acca6e362e714acde281c9698daf29e8e">SetVoigtNormalProjectionMatrix</a>(</div>
-<div class="line"><a name="l01315"></a><span class="lineno"> 1315</span>&#160;        <span class="keyword">const</span> <a class="code" href="../../d4/ddc/class_kratos_1_1array__1d.html">array_1d&lt;double, 3&gt;</a>&amp; rUnitNormal,</div>
-<div class="line"><a name="l01316"></a><span class="lineno"> 1316</span>&#160;        <a class="code" href="../../d9/dbb/class_kratos_1_1_internals_1_1_matrix.html">BoundedMatrix</a>&lt;<span class="keywordtype">double</span>, TDim, (TDim-1)*3&gt;&amp; rVoigtNormProjMatrix) {</div>
-<div class="line"><a name="l01317"></a><span class="lineno"> 1317</span>&#160; </div>
-<div class="line"><a name="l01318"></a><span class="lineno"> 1318</span>&#160;        rVoigtNormProjMatrix.clear();</div>
-<div class="line"><a name="l01319"></a><span class="lineno"> 1319</span>&#160; </div>
-<div class="line"><a name="l01320"></a><span class="lineno"> 1320</span>&#160;        <span class="keywordflow">if</span> constexpr (TDim == 3) {</div>
-<div class="line"><a name="l01321"></a><span class="lineno"> 1321</span>&#160;            rVoigtNormProjMatrix(0,0) = rUnitNormal(0);</div>
-<div class="line"><a name="l01322"></a><span class="lineno"> 1322</span>&#160;            rVoigtNormProjMatrix(0,3) = rUnitNormal(1);</div>
-<div class="line"><a name="l01323"></a><span class="lineno"> 1323</span>&#160;            rVoigtNormProjMatrix(0,5) = rUnitNormal(2);</div>
-<div class="line"><a name="l01324"></a><span class="lineno"> 1324</span>&#160;            rVoigtNormProjMatrix(1,1) = rUnitNormal(1);</div>
-<div class="line"><a name="l01325"></a><span class="lineno"> 1325</span>&#160;            rVoigtNormProjMatrix(1,3) = rUnitNormal(0);</div>
-<div class="line"><a name="l01326"></a><span class="lineno"> 1326</span>&#160;            rVoigtNormProjMatrix(1,4) = rUnitNormal(2);</div>
-<div class="line"><a name="l01327"></a><span class="lineno"> 1327</span>&#160;            rVoigtNormProjMatrix(2,2) = rUnitNormal(2);</div>
-<div class="line"><a name="l01328"></a><span class="lineno"> 1328</span>&#160;            rVoigtNormProjMatrix(2,4) = rUnitNormal(1);</div>
-<div class="line"><a name="l01329"></a><span class="lineno"> 1329</span>&#160;            rVoigtNormProjMatrix(2,5) = rUnitNormal(0);</div>
-<div class="line"><a name="l01330"></a><span class="lineno"> 1330</span>&#160;        } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l01331"></a><span class="lineno"> 1331</span>&#160;            rVoigtNormProjMatrix(0,0) = rUnitNormal(0);</div>
-<div class="line"><a name="l01332"></a><span class="lineno"> 1332</span>&#160;            rVoigtNormProjMatrix(0,2) = rUnitNormal(1);</div>
-<div class="line"><a name="l01333"></a><span class="lineno"> 1333</span>&#160;            rVoigtNormProjMatrix(1,1) = rUnitNormal(1);</div>
-<div class="line"><a name="l01334"></a><span class="lineno"> 1334</span>&#160;            rVoigtNormProjMatrix(1,2) = rUnitNormal(0);</div>
-<div class="line"><a name="l01335"></a><span class="lineno"> 1335</span>&#160;        }</div>
-<div class="line"><a name="l01336"></a><span class="lineno"> 1336</span>&#160;    }</div>
-<div class="line"><a name="l01337"></a><span class="lineno"> 1337</span>&#160; </div>
-<div class="line"><a name="l01343"></a><span class="lineno"><a class="line" href="../../d7/d89/class_kratos_1_1_embedded_navier_stokes.html#aa55ed98f40e5b6a41c74ef65ce29471e"> 1343</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../d7/d89/class_kratos_1_1_embedded_navier_stokes.html#aa55ed98f40e5b6a41c74ef65ce29471e">GetPreviousSolutionVector</a>(</div>
-<div class="line"><a name="l01344"></a><span class="lineno"> 1344</span>&#160;        <span class="keyword">const</span> <a class="code" href="../../d9/d2a/struct_kratos_1_1_navier_stokes_1_1_element_data_struct.html">ElementDataType</a>&amp; <a class="code" href="../../dc/d9a/group___h_d_f5_application.html#ga0463ae8858dfb3317060416bb8812fff">rData</a>,</div>
-<div class="line"><a name="l01345"></a><span class="lineno"> 1345</span>&#160;        <a class="code" href="../../d4/ddc/class_kratos_1_1array__1d.html">array_1d</a>&lt;<span class="keywordtype">double</span>, TNumNodes*(TDim+1)&gt;&amp; rPrevSolVector) {</div>
-<div class="line"><a name="l01346"></a><span class="lineno"> 1346</span>&#160; </div>
-<div class="line"><a name="l01347"></a><span class="lineno"> 1347</span>&#160;        rPrevSolVector.clear();</div>
-<div class="line"><a name="l01348"></a><span class="lineno"> 1348</span>&#160; </div>
-<div class="line"><a name="l01349"></a><span class="lineno"> 1349</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="../../d2/db8/namespacetensors.html#a15a1da80aa773e2015eba781cababe05">i</a>=0; <a class="code" href="../../d2/db8/namespacetensors.html#a15a1da80aa773e2015eba781cababe05">i</a>&lt;TNumNodes; <a class="code" href="../../d2/db8/namespacetensors.html#a15a1da80aa773e2015eba781cababe05">i</a>++) {</div>
-<div class="line"><a name="l01350"></a><span class="lineno"> 1350</span>&#160;            <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> comp=0; comp&lt;TDim; comp++) {</div>
-<div class="line"><a name="l01351"></a><span class="lineno"> 1351</span>&#160;                rPrevSolVector(<a class="code" href="../../d2/db8/namespacetensors.html#a15a1da80aa773e2015eba781cababe05">i</a>*(TDim+1)+comp) = <a class="code" href="../../dc/d9a/group___h_d_f5_application.html#ga0463ae8858dfb3317060416bb8812fff">rData</a>.v(<a class="code" href="../../d2/db8/namespacetensors.html#a15a1da80aa773e2015eba781cababe05">i</a>,comp);</div>
-<div class="line"><a name="l01352"></a><span class="lineno"> 1352</span>&#160;            }</div>
-<div class="line"><a name="l01353"></a><span class="lineno"> 1353</span>&#160;            rPrevSolVector(<a class="code" href="../../d2/db8/namespacetensors.html#a15a1da80aa773e2015eba781cababe05">i</a>*(TDim+1)+TDim) = <a class="code" href="../../dc/d9a/group___h_d_f5_application.html#ga0463ae8858dfb3317060416bb8812fff">rData</a>.p(<a class="code" href="../../d2/db8/namespacetensors.html#a15a1da80aa773e2015eba781cababe05">i</a>);</div>
-<div class="line"><a name="l01354"></a><span class="lineno"> 1354</span>&#160;        }</div>
-<div class="line"><a name="l01355"></a><span class="lineno"> 1355</span>&#160;    }</div>
+<div class="line"><a name="l01295"></a><span class="lineno"> 1295</span>&#160;            <a class="code" href="../../d9/dbb/class_kratos_1_1_internals_1_1_matrix.html">BoundedMatrix&lt;double,3,3&gt;</a> id_matrix = <a class="code" href="../../db/d66/namespace_kratos.html#a0dd2d083f48d867f5e0271bdf91b036e">IdentityMatrix</a>(TDim,TDim);</div>
+<div class="line"><a name="l01296"></a><span class="lineno"> 1296</span>&#160;            <a class="code" href="../../db/d66/namespace_kratos.html#aaff3672cc52b90ee3d84713de272e1b5">noalias</a>(rTangProjMatrix) = id_matrix - <a class="code" href="../../db/d66/namespace_kratos.html#a89823cae8c60a522d1b54a8beaba33d9">outer_prod</a>(rUnitNormal, rUnitNormal);</div>
+<div class="line"><a name="l01297"></a><span class="lineno"> 1297</span>&#160;        } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l01298"></a><span class="lineno"> 1298</span>&#160;            rTangProjMatrix(0,0) = 1.0 - rUnitNormal(0)*rUnitNormal(0);</div>
+<div class="line"><a name="l01299"></a><span class="lineno"> 1299</span>&#160;            rTangProjMatrix(0,1) = - rUnitNormal(0)*rUnitNormal(1);</div>
+<div class="line"><a name="l01300"></a><span class="lineno"> 1300</span>&#160;            rTangProjMatrix(1,0) = - rUnitNormal(1)*rUnitNormal(0);</div>
+<div class="line"><a name="l01301"></a><span class="lineno"> 1301</span>&#160;            rTangProjMatrix(1,1) = 1.0 - rUnitNormal(1)*rUnitNormal(1);</div>
+<div class="line"><a name="l01302"></a><span class="lineno"> 1302</span>&#160;        }</div>
+<div class="line"><a name="l01303"></a><span class="lineno"> 1303</span>&#160;    }</div>
+<div class="line"><a name="l01304"></a><span class="lineno"> 1304</span>&#160; </div>
+<div class="line"><a name="l01310"></a><span class="lineno"><a class="line" href="../../d7/d89/class_kratos_1_1_embedded_navier_stokes.html#acca6e362e714acde281c9698daf29e8e"> 1310</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../d7/d89/class_kratos_1_1_embedded_navier_stokes.html#acca6e362e714acde281c9698daf29e8e">SetVoigtNormalProjectionMatrix</a>(</div>
+<div class="line"><a name="l01311"></a><span class="lineno"> 1311</span>&#160;        <span class="keyword">const</span> <a class="code" href="../../d4/ddc/class_kratos_1_1array__1d.html">array_1d&lt;double, 3&gt;</a>&amp; rUnitNormal,</div>
+<div class="line"><a name="l01312"></a><span class="lineno"> 1312</span>&#160;        <a class="code" href="../../d9/dbb/class_kratos_1_1_internals_1_1_matrix.html">BoundedMatrix</a>&lt;<span class="keywordtype">double</span>, TDim, (TDim-1)*3&gt;&amp; rVoigtNormProjMatrix) {</div>
+<div class="line"><a name="l01313"></a><span class="lineno"> 1313</span>&#160; </div>
+<div class="line"><a name="l01314"></a><span class="lineno"> 1314</span>&#160;        rVoigtNormProjMatrix.clear();</div>
+<div class="line"><a name="l01315"></a><span class="lineno"> 1315</span>&#160; </div>
+<div class="line"><a name="l01316"></a><span class="lineno"> 1316</span>&#160;        <span class="keywordflow">if</span> constexpr (TDim == 3) {</div>
+<div class="line"><a name="l01317"></a><span class="lineno"> 1317</span>&#160;            rVoigtNormProjMatrix(0,0) = rUnitNormal(0);</div>
+<div class="line"><a name="l01318"></a><span class="lineno"> 1318</span>&#160;            rVoigtNormProjMatrix(0,3) = rUnitNormal(1);</div>
+<div class="line"><a name="l01319"></a><span class="lineno"> 1319</span>&#160;            rVoigtNormProjMatrix(0,5) = rUnitNormal(2);</div>
+<div class="line"><a name="l01320"></a><span class="lineno"> 1320</span>&#160;            rVoigtNormProjMatrix(1,1) = rUnitNormal(1);</div>
+<div class="line"><a name="l01321"></a><span class="lineno"> 1321</span>&#160;            rVoigtNormProjMatrix(1,3) = rUnitNormal(0);</div>
+<div class="line"><a name="l01322"></a><span class="lineno"> 1322</span>&#160;            rVoigtNormProjMatrix(1,4) = rUnitNormal(2);</div>
+<div class="line"><a name="l01323"></a><span class="lineno"> 1323</span>&#160;            rVoigtNormProjMatrix(2,2) = rUnitNormal(2);</div>
+<div class="line"><a name="l01324"></a><span class="lineno"> 1324</span>&#160;            rVoigtNormProjMatrix(2,4) = rUnitNormal(1);</div>
+<div class="line"><a name="l01325"></a><span class="lineno"> 1325</span>&#160;            rVoigtNormProjMatrix(2,5) = rUnitNormal(0);</div>
+<div class="line"><a name="l01326"></a><span class="lineno"> 1326</span>&#160;        } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l01327"></a><span class="lineno"> 1327</span>&#160;            rVoigtNormProjMatrix(0,0) = rUnitNormal(0);</div>
+<div class="line"><a name="l01328"></a><span class="lineno"> 1328</span>&#160;            rVoigtNormProjMatrix(0,2) = rUnitNormal(1);</div>
+<div class="line"><a name="l01329"></a><span class="lineno"> 1329</span>&#160;            rVoigtNormProjMatrix(1,1) = rUnitNormal(1);</div>
+<div class="line"><a name="l01330"></a><span class="lineno"> 1330</span>&#160;            rVoigtNormProjMatrix(1,2) = rUnitNormal(0);</div>
+<div class="line"><a name="l01331"></a><span class="lineno"> 1331</span>&#160;        }</div>
+<div class="line"><a name="l01332"></a><span class="lineno"> 1332</span>&#160;    }</div>
+<div class="line"><a name="l01333"></a><span class="lineno"> 1333</span>&#160; </div>
+<div class="line"><a name="l01339"></a><span class="lineno"><a class="line" href="../../d7/d89/class_kratos_1_1_embedded_navier_stokes.html#aa55ed98f40e5b6a41c74ef65ce29471e"> 1339</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../d7/d89/class_kratos_1_1_embedded_navier_stokes.html#aa55ed98f40e5b6a41c74ef65ce29471e">GetPreviousSolutionVector</a>(</div>
+<div class="line"><a name="l01340"></a><span class="lineno"> 1340</span>&#160;        <span class="keyword">const</span> <a class="code" href="../../d9/d2a/struct_kratos_1_1_navier_stokes_1_1_element_data_struct.html">ElementDataType</a>&amp; <a class="code" href="../../dc/d9a/group___h_d_f5_application.html#ga0463ae8858dfb3317060416bb8812fff">rData</a>,</div>
+<div class="line"><a name="l01341"></a><span class="lineno"> 1341</span>&#160;        <a class="code" href="../../d4/ddc/class_kratos_1_1array__1d.html">array_1d</a>&lt;<span class="keywordtype">double</span>, TNumNodes*(TDim+1)&gt;&amp; rPrevSolVector) {</div>
+<div class="line"><a name="l01342"></a><span class="lineno"> 1342</span>&#160; </div>
+<div class="line"><a name="l01343"></a><span class="lineno"> 1343</span>&#160;        rPrevSolVector.clear();</div>
+<div class="line"><a name="l01344"></a><span class="lineno"> 1344</span>&#160; </div>
+<div class="line"><a name="l01345"></a><span class="lineno"> 1345</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="../../d2/db8/namespacetensors.html#a15a1da80aa773e2015eba781cababe05">i</a>=0; <a class="code" href="../../d2/db8/namespacetensors.html#a15a1da80aa773e2015eba781cababe05">i</a>&lt;TNumNodes; <a class="code" href="../../d2/db8/namespacetensors.html#a15a1da80aa773e2015eba781cababe05">i</a>++) {</div>
+<div class="line"><a name="l01346"></a><span class="lineno"> 1346</span>&#160;            <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> comp=0; comp&lt;TDim; comp++) {</div>
+<div class="line"><a name="l01347"></a><span class="lineno"> 1347</span>&#160;                rPrevSolVector(<a class="code" href="../../d2/db8/namespacetensors.html#a15a1da80aa773e2015eba781cababe05">i</a>*(TDim+1)+comp) = <a class="code" href="../../dc/d9a/group___h_d_f5_application.html#ga0463ae8858dfb3317060416bb8812fff">rData</a>.v(<a class="code" href="../../d2/db8/namespacetensors.html#a15a1da80aa773e2015eba781cababe05">i</a>,comp);</div>
+<div class="line"><a name="l01348"></a><span class="lineno"> 1348</span>&#160;            }</div>
+<div class="line"><a name="l01349"></a><span class="lineno"> 1349</span>&#160;            rPrevSolVector(<a class="code" href="../../d2/db8/namespacetensors.html#a15a1da80aa773e2015eba781cababe05">i</a>*(TDim+1)+TDim) = <a class="code" href="../../dc/d9a/group___h_d_f5_application.html#ga0463ae8858dfb3317060416bb8812fff">rData</a>.p(<a class="code" href="../../d2/db8/namespacetensors.html#a15a1da80aa773e2015eba781cababe05">i</a>);</div>
+<div class="line"><a name="l01350"></a><span class="lineno"> 1350</span>&#160;        }</div>
+<div class="line"><a name="l01351"></a><span class="lineno"> 1351</span>&#160;    }</div>
+<div class="line"><a name="l01352"></a><span class="lineno"> 1352</span>&#160; </div>
 <div class="line"><a name="l01356"></a><span class="lineno"> 1356</span>&#160; </div>
 <div class="line"><a name="l01360"></a><span class="lineno"> 1360</span>&#160; </div>
 <div class="line"><a name="l01364"></a><span class="lineno"> 1364</span>&#160; </div>
-<div class="line"><a name="l01368"></a><span class="lineno"> 1368</span>&#160; </div>
-<div class="line"><a name="l01370"></a><span class="lineno"> 1370</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l01366"></a><span class="lineno"> 1366</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l01369"></a><span class="lineno"> 1369</span>&#160; </div>
 <div class="line"><a name="l01373"></a><span class="lineno"> 1373</span>&#160; </div>
-<div class="line"><a name="l01377"></a><span class="lineno"> 1377</span>&#160; </div>
-<div class="line"><a name="l01381"></a><span class="lineno"><a class="line" href="../../d7/d89/class_kratos_1_1_embedded_navier_stokes.html#ad3f5346f31d572dd2ab4fcd658de5bc4"> 1381</a></span>&#160;    <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="../../d0/dc2/class_serializer.html">Serializer</a>;</div>
+<div class="line"><a name="l01377"></a><span class="lineno"><a class="line" href="../../d7/d89/class_kratos_1_1_embedded_navier_stokes.html#ad3f5346f31d572dd2ab4fcd658de5bc4"> 1377</a></span>&#160;    <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="../../d0/dc2/class_serializer.html">Serializer</a>;</div>
+<div class="line"><a name="l01378"></a><span class="lineno"> 1378</span>&#160; </div>
+<div class="line"><a name="l01379"></a><span class="lineno"> 1379</span>&#160;    <span class="keywordtype">void</span> save(<a class="code" href="../../d0/dc2/class_serializer.html">Serializer</a>&amp; rSerializer)<span class="keyword"> const override </span>{</div>
+<div class="line"><a name="l01380"></a><span class="lineno"> 1380</span>&#160;        <a class="code" href="../../df/d67/define_8h.html#a534cb8a7eac3e4cf5d2c482b87b505a4">KRATOS_SERIALIZE_SAVE_BASE_CLASS</a>(rSerializer, <a class="code" href="../../d6/d90/class_kratos_1_1_navier_stokes.html">NavierStokes&lt;TDim&gt;</a>);</div>
+<div class="line"><a name="l01381"></a><span class="lineno"> 1381</span>&#160;    }</div>
 <div class="line"><a name="l01382"></a><span class="lineno"> 1382</span>&#160; </div>
-<div class="line"><a name="l01383"></a><span class="lineno"> 1383</span>&#160;    <span class="keywordtype">void</span> save(<a class="code" href="../../d0/dc2/class_serializer.html">Serializer</a>&amp; rSerializer)<span class="keyword"> const override </span>{</div>
-<div class="line"><a name="l01384"></a><span class="lineno"> 1384</span>&#160;        <a class="code" href="../../df/d67/define_8h.html#a534cb8a7eac3e4cf5d2c482b87b505a4">KRATOS_SERIALIZE_SAVE_BASE_CLASS</a>(rSerializer, <a class="code" href="../../d6/d90/class_kratos_1_1_navier_stokes.html">NavierStokes&lt;TDim&gt;</a>);</div>
+<div class="line"><a name="l01383"></a><span class="lineno"> 1383</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../d2/df2/namespaceode__solve.html#a0b266774af0a13d56a57cf1ada122768">load</a>(<a class="code" href="../../d0/dc2/class_serializer.html">Serializer</a>&amp; rSerializer)<span class="keyword"> override </span>{</div>
+<div class="line"><a name="l01384"></a><span class="lineno"> 1384</span>&#160;        <a class="code" href="../../df/d67/define_8h.html#ac41b129afec253cba3e0fc8efa241fd1">KRATOS_SERIALIZE_LOAD_BASE_CLASS</a>(rSerializer, <a class="code" href="../../d6/d90/class_kratos_1_1_navier_stokes.html">NavierStokes&lt;TDim&gt;</a>);</div>
 <div class="line"><a name="l01385"></a><span class="lineno"> 1385</span>&#160;    }</div>
 <div class="line"><a name="l01386"></a><span class="lineno"> 1386</span>&#160; </div>
-<div class="line"><a name="l01387"></a><span class="lineno"> 1387</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../d2/df2/namespaceode__solve.html#a0b266774af0a13d56a57cf1ada122768">load</a>(<a class="code" href="../../d0/dc2/class_serializer.html">Serializer</a>&amp; rSerializer)<span class="keyword"> override </span>{</div>
-<div class="line"><a name="l01388"></a><span class="lineno"> 1388</span>&#160;        <a class="code" href="../../df/d67/define_8h.html#ac41b129afec253cba3e0fc8efa241fd1">KRATOS_SERIALIZE_LOAD_BASE_CLASS</a>(rSerializer, <a class="code" href="../../d6/d90/class_kratos_1_1_navier_stokes.html">NavierStokes&lt;TDim&gt;</a>);</div>
-<div class="line"><a name="l01389"></a><span class="lineno"> 1389</span>&#160;    }</div>
 <div class="line"><a name="l01390"></a><span class="lineno"> 1390</span>&#160; </div>
 <div class="line"><a name="l01394"></a><span class="lineno"> 1394</span>&#160; </div>
 <div class="line"><a name="l01398"></a><span class="lineno"> 1398</span>&#160; </div>
 <div class="line"><a name="l01402"></a><span class="lineno"> 1402</span>&#160; </div>
+<div class="line"><a name="l01404"></a><span class="lineno"> 1404</span>&#160; </div>
+<div class="line"><a name="l01405"></a><span class="lineno"> 1405</span>&#160;};</div>
 <div class="line"><a name="l01406"></a><span class="lineno"> 1406</span>&#160; </div>
 <div class="line"><a name="l01408"></a><span class="lineno"> 1408</span>&#160; </div>
-<div class="line"><a name="l01409"></a><span class="lineno"> 1409</span>&#160;};</div>
-<div class="line"><a name="l01410"></a><span class="lineno"> 1410</span>&#160; </div>
-<div class="line"><a name="l01412"></a><span class="lineno"> 1412</span>&#160; </div>
+<div class="line"><a name="l01411"></a><span class="lineno"> 1411</span>&#160; </div>
 <div class="line"><a name="l01415"></a><span class="lineno"> 1415</span>&#160; </div>
+<div class="line"><a name="l01417"></a><span class="lineno"> 1417</span>&#160; </div>
+<div class="line"><a name="l01418"></a><span class="lineno"> 1418</span>&#160;} <span class="comment">// namespace Kratos.</span></div>
 <div class="line"><a name="l01419"></a><span class="lineno"> 1419</span>&#160; </div>
-<div class="line"><a name="l01421"></a><span class="lineno"> 1421</span>&#160; </div>
-<div class="line"><a name="l01422"></a><span class="lineno"> 1422</span>&#160;} <span class="comment">// namespace Kratos.</span></div>
-<div class="line"><a name="l01423"></a><span class="lineno"> 1423</span>&#160; </div>
-<div class="line"><a name="l01424"></a><span class="lineno"> 1424</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// KRATOS_EMBEDDED_NAVIER_STOKES  defined</span></div>
+<div class="line"><a name="l01420"></a><span class="lineno"> 1420</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// KRATOS_EMBEDDED_NAVIER_STOKES  defined</span></div>
 <div class="ttc" id="aclass_kratos_1_1_element_html_a386f8c6624d548fe6f1e04f7d1ee9ddc"><div class="ttname"><a href="../../d5/dd4/class_kratos_1_1_element.html#a386f8c6624d548fe6f1e04f7d1ee9ddc">Kratos::Element::VectorType</a></div><div class="ttdeci">Vector VectorType</div><div class="ttdef"><b>Definition:</b> element.h:88</div></div>
 <div class="ttc" id="aclass_kratos_1_1_element_html_a8426feb246d38685520b978a4a83bf43"><div class="ttname"><a href="../../d5/dd4/class_kratos_1_1_element.html#a8426feb246d38685520b978a4a83bf43">Kratos::Element::NodesArrayType</a></div><div class="ttdeci">Geometry&lt; NodeType &gt;::PointsArrayType NodesArrayType</div><div class="ttdoc">definition of nodes container type, redefined from GeometryType</div><div class="ttdef"><b>Definition:</b> element.h:86</div></div>
 <div class="ttc" id="aclass_kratos_1_1_element_html_ab7dd9e43da6c61bd44ff4f76b28544ca"><div class="ttname"><a href="../../d5/dd4/class_kratos_1_1_element.html#ab7dd9e43da6c61bd44ff4f76b28544ca">Kratos::Element::MatrixType</a></div><div class="ttdeci">Matrix MatrixType</div><div class="ttdef"><b>Definition:</b> element.h:90</div></div>
@@ -1305,13 +1301,13 @@ $(function() {
 <div class="ttc" id="aclass_kratos_1_1_embedded_navier_stokes_html_a961948f853d34676a31d7e0feae02017"><div class="ttname"><a href="../../d7/d89/class_kratos_1_1_embedded_navier_stokes.html#a961948f853d34676a31d7e0feae02017">Kratos::EmbeddedNavierStokes::AddSlipWinterNormalSymmetricCounterpartContribution</a></div><div class="ttdeci">void AddSlipWinterNormalSymmetricCounterpartContribution(MatrixType &amp;rLeftHandSideMatrix, VectorType &amp;rRightHandSideVector, const EmbeddedElementDataStruct &amp;rData)</div><div class="ttdef"><b>Definition:</b> embedded_navier_stokes.h:915</div></div>
 <div class="ttc" id="aclass_kratos_1_1_embedded_navier_stokes_html_aa1badbd9ca39ca08ae8aa3ffec2c5205"><div class="ttname"><a href="../../d7/d89/class_kratos_1_1_embedded_navier_stokes.html#aa1badbd9ca39ca08ae8aa3ffec2c5205">Kratos::EmbeddedNavierStokes::ComputeElementAsMixed</a></div><div class="ttdeci">void ComputeElementAsMixed(MatrixType &amp;rLeftHandSideMatrix, VectorType &amp;rRightHandSideVector, EmbeddedElementDataStruct &amp;rData, const ProcessInfo &amp;rCurrentProcessInfo)</div><div class="ttdef"><b>Definition:</b> embedded_navier_stokes.h:324</div></div>
 <div class="ttc" id="aclass_kratos_1_1_embedded_navier_stokes_html_aa4a8cab57ffbea825faae7adfd6e38c4"><div class="ttname"><a href="../../d7/d89/class_kratos_1_1_embedded_navier_stokes.html#aa4a8cab57ffbea825faae7adfd6e38c4">Kratos::EmbeddedNavierStokes::AddBoundaryConditionPenaltyContribution</a></div><div class="ttdeci">void AddBoundaryConditionPenaltyContribution(MatrixType &amp;rLeftHandSideMatrix, VectorType &amp;rRightHandSideVector, const EmbeddedElementDataStruct &amp;rData, const ProcessInfo &amp;rCurrentProcessInfo)</div><div class="ttdef"><b>Definition:</b> embedded_navier_stokes.h:624</div></div>
-<div class="ttc" id="aclass_kratos_1_1_embedded_navier_stokes_html_aa55ed98f40e5b6a41c74ef65ce29471e"><div class="ttname"><a href="../../d7/d89/class_kratos_1_1_embedded_navier_stokes.html#aa55ed98f40e5b6a41c74ef65ce29471e">Kratos::EmbeddedNavierStokes::GetPreviousSolutionVector</a></div><div class="ttdeci">void GetPreviousSolutionVector(const ElementDataType &amp;rData, array_1d&lt; double, TNumNodes *(TDim+1)&gt; &amp;rPrevSolVector)</div><div class="ttdef"><b>Definition:</b> embedded_navier_stokes.h:1343</div></div>
+<div class="ttc" id="aclass_kratos_1_1_embedded_navier_stokes_html_aa55ed98f40e5b6a41c74ef65ce29471e"><div class="ttname"><a href="../../d7/d89/class_kratos_1_1_embedded_navier_stokes.html#aa55ed98f40e5b6a41c74ef65ce29471e">Kratos::EmbeddedNavierStokes::GetPreviousSolutionVector</a></div><div class="ttdeci">void GetPreviousSolutionVector(const ElementDataType &amp;rData, array_1d&lt; double, TNumNodes *(TDim+1)&gt; &amp;rPrevSolVector)</div><div class="ttdef"><b>Definition:</b> embedded_navier_stokes.h:1339</div></div>
 <div class="ttc" id="aclass_kratos_1_1_embedded_navier_stokes_html_aacd59289dbab3543fc464d675a1ce950"><div class="ttname"><a href="../../d7/d89/class_kratos_1_1_embedded_navier_stokes.html#aacd59289dbab3543fc464d675a1ce950">Kratos::EmbeddedNavierStokes::ComputePenaltyCoefficient</a></div><div class="ttdeci">double ComputePenaltyCoefficient(const EmbeddedElementDataStruct &amp;rData, const ProcessInfo &amp;rCurrentProcessInfo)</div><div class="ttdef"><b>Definition:</b> embedded_navier_stokes.h:586</div></div>
 <div class="ttc" id="aclass_kratos_1_1_embedded_navier_stokes_html_aafbb4b3b53f25c0ff48a34f2321faffe"><div class="ttname"><a href="../../d7/d89/class_kratos_1_1_embedded_navier_stokes.html#aafbb4b3b53f25c0ff48a34f2321faffe">Kratos::EmbeddedNavierStokes::Info</a></div><div class="ttdeci">std::string Info() const override</div><div class="ttdoc">Turn back information as a string.</div><div class="ttdef"><b>Definition:</b> embedded_navier_stokes.h:476</div></div>
 <div class="ttc" id="aclass_kratos_1_1_embedded_navier_stokes_html_ab5b96b9843eae52ce638362b5b7cf239"><div class="ttname"><a href="../../d7/d89/class_kratos_1_1_embedded_navier_stokes.html#ab5b96b9843eae52ce638362b5b7cf239">Kratos::EmbeddedNavierStokes::FillEmbeddedElementData</a></div><div class="ttdeci">void FillEmbeddedElementData(EmbeddedElementDataStruct &amp;rData, const ProcessInfo &amp;rCurrentProcessInfo)</div><div class="ttdef"><b>Definition:</b> embedded_navier_stokes.h:159</div></div>
 <div class="ttc" id="aclass_kratos_1_1_embedded_navier_stokes_html_ac1fa86fe16c77b38c679b896989a472e"><div class="ttname"><a href="../../d7/d89/class_kratos_1_1_embedded_navier_stokes.html#ac1fa86fe16c77b38c679b896989a472e">Kratos::EmbeddedNavierStokes::EmbeddedNavierStokes</a></div><div class="ttdeci">EmbeddedNavierStokes(IndexType NewId, GeometryPointerType pGeometry, PropertiesPointerType pProperties)</div><div class="ttdef"><b>Definition:</b> embedded_navier_stokes.h:110</div></div>
 <div class="ttc" id="aclass_kratos_1_1_embedded_navier_stokes_html_ac4abf42fd924777790b356499dcfdbca"><div class="ttname"><a href="../../d7/d89/class_kratos_1_1_embedded_navier_stokes.html#ac4abf42fd924777790b356499dcfdbca">Kratos::EmbeddedNavierStokes::NodesArrayType</a></div><div class="ttdeci">BaseType::NodesArrayType NodesArrayType</div><div class="ttdef"><b>Definition:</b> embedded_navier_stokes.h:74</div></div>
-<div class="ttc" id="aclass_kratos_1_1_embedded_navier_stokes_html_acca6e362e714acde281c9698daf29e8e"><div class="ttname"><a href="../../d7/d89/class_kratos_1_1_embedded_navier_stokes.html#acca6e362e714acde281c9698daf29e8e">Kratos::EmbeddedNavierStokes::SetVoigtNormalProjectionMatrix</a></div><div class="ttdeci">void SetVoigtNormalProjectionMatrix(const array_1d&lt; double, 3 &gt; &amp;rUnitNormal, BoundedMatrix&lt; double, TDim,(TDim-1) *3 &gt; &amp;rVoigtNormProjMatrix)</div><div class="ttdef"><b>Definition:</b> embedded_navier_stokes.h:1314</div></div>
+<div class="ttc" id="aclass_kratos_1_1_embedded_navier_stokes_html_acca6e362e714acde281c9698daf29e8e"><div class="ttname"><a href="../../d7/d89/class_kratos_1_1_embedded_navier_stokes.html#acca6e362e714acde281c9698daf29e8e">Kratos::EmbeddedNavierStokes::SetVoigtNormalProjectionMatrix</a></div><div class="ttdeci">void SetVoigtNormalProjectionMatrix(const array_1d&lt; double, 3 &gt; &amp;rUnitNormal, BoundedMatrix&lt; double, TDim,(TDim-1) *3 &gt; &amp;rVoigtNormProjMatrix)</div><div class="ttdef"><b>Definition:</b> embedded_navier_stokes.h:1310</div></div>
 <div class="ttc" id="aclass_kratos_1_1_embedded_navier_stokes_html_acfad6db7c36ba7fe30f1c0674c72f642"><div class="ttname"><a href="../../d7/d89/class_kratos_1_1_embedded_navier_stokes.html#acfad6db7c36ba7fe30f1c0674c72f642">Kratos::EmbeddedNavierStokes::SetNormalProjectionMatrix</a></div><div class="ttdeci">void SetNormalProjectionMatrix(const array_1d&lt; double, 3 &gt; &amp;rUnitNormal, BoundedMatrix&lt; double, TDim, TDim &gt; &amp;rNormProjMatrix)</div><div class="ttdef"><b>Definition:</b> embedded_navier_stokes.h:1265</div></div>
 <div class="ttc" id="aclass_kratos_1_1_embedded_navier_stokes_html_ad16331cf0f9aa0d3285b7079ca41235d"><div class="ttname"><a href="../../d7/d89/class_kratos_1_1_embedded_navier_stokes.html#ad16331cf0f9aa0d3285b7079ca41235d">Kratos::EmbeddedNavierStokes::BaseType</a></div><div class="ttdeci">NavierStokes&lt; TDim, TNumNodes &gt; BaseType</div><div class="ttdef"><b>Definition:</b> embedded_navier_stokes.h:62</div></div>
 <div class="ttc" id="aclass_kratos_1_1_embedded_navier_stokes_html_ada3a133bb933ba92ba4ac5d339b7f712"><div class="ttname"><a href="../../d7/d89/class_kratos_1_1_embedded_navier_stokes.html#ada3a133bb933ba92ba4ac5d339b7f712">Kratos::EmbeddedNavierStokes::Create</a></div><div class="ttdeci">Element::Pointer Create(IndexType NewId, NodesArrayType const &amp;rThisNodes, Element::PropertiesType::Pointer pProperties) const override</div><div class="ttdef"><b>Definition:</b> embedded_navier_stokes.h:126</div></div>
@@ -1389,7 +1385,7 @@ $(function() {
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue May 9 2023 02:07:10 for KratosMultiphysics by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Wed May 10 2023 02:04:35 for KratosMultiphysics by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

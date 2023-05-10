@@ -171,8 +171,13 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a68bcde9ef8447acf24f6ab9e35b3421f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a22898619d3659dc10a6fcae22c77525c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d83/class_kratos_1_1_pointer_vector.html#a22898619d3659dc10a6fcae22c77525c">swap</a> (<a class="el" href="../../de/d83/class_kratos_1_1_pointer_vector.html">PointerVector</a> &amp;rOther)</td></tr>
 <tr class="separator:a22898619d3659dc10a6fcae22c77525c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7789adc9fbce9d1a098752883ee7d274"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d83/class_kratos_1_1_pointer_vector.html#a7789adc9fbce9d1a098752883ee7d274">push_back</a> (TPointerType x)</td></tr>
-<tr class="separator:a7789adc9fbce9d1a098752883ee7d274"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae71008ae66038221829a4d6ba9d40b02"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d83/class_kratos_1_1_pointer_vector.html#ae71008ae66038221829a4d6ba9d40b02">push_back</a> (const TPointerType &amp;x)</td></tr>
+<tr class="separator:ae71008ae66038221829a4d6ba9d40b02"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9efb1f90bb20d7006612f29b8b909ebb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d83/class_kratos_1_1_pointer_vector.html#a9efb1f90bb20d7006612f29b8b909ebb">push_back</a> (TPointerType &amp;&amp;<a class="el" href="../../db/d66/namespace_kratos.html#a856ace1e80077a2a06672934f574b704">rX</a>)</td></tr>
+<tr class="separator:a9efb1f90bb20d7006612f29b8b909ebb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca0949ce92cac6aab126186bce2e7768"><td class="memTemplParams" colspan="2">template&lt;class... Args&gt; </td></tr>
+<tr class="memitem:aca0949ce92cac6aab126186bce2e7768"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../de/d83/class_kratos_1_1_pointer_vector.html#aca0949ce92cac6aab126186bce2e7768">emplace_back</a> (Args &amp;&amp;... args)</td></tr>
+<tr class="separator:aca0949ce92cac6aab126186bce2e7768"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aef1380517233e76ec8d8dcb27a32656d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../de/d83/class_kratos_1_1_pointer_vector.html#a838d2e0ff727f7ad43af5dadfbb496b2">iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d83/class_kratos_1_1_pointer_vector.html#aef1380517233e76ec8d8dcb27a32656d">insert</a> (<a class="el" href="../../de/d83/class_kratos_1_1_pointer_vector.html#a838d2e0ff727f7ad43af5dadfbb496b2">iterator</a> Position, const TPointerType pData)</td></tr>
 <tr class="separator:aef1380517233e76ec8d8dcb27a32656d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac681588b58dda02ef19297df12aeb356"><td class="memTemplParams" colspan="2">template&lt;class InputIterator &gt; </td></tr>
@@ -869,6 +874,36 @@ template&lt;class TDataType , class TPointerType  = typename TDataType::Pointer,
           <td class="memname">void <a class="el" href="../../de/d83/class_kratos_1_1_pointer_vector.html">Kratos::PointerVector</a>&lt; TDataType, TPointerType, TContainerType &gt;::clear </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aca0949ce92cac6aab126186bce2e7768"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aca0949ce92cac6aab126186bce2e7768">&#9670;&nbsp;</a></span>emplace_back()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class TDataType , class TPointerType  = typename TDataType::Pointer, class TContainerType  = std::vector&lt;TPointerType&gt;&gt; </div>
+<div class="memtemplate">
+template&lt;class... Args&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="../../de/d83/class_kratos_1_1_pointer_vector.html">Kratos::PointerVector</a>&lt; TDataType, TPointerType, TContainerType &gt;::emplace_back </td>
+          <td>(</td>
+          <td class="paramtype">Args &amp;&amp;...&#160;</td>
+          <td class="paramname"><em>args</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -1738,8 +1773,8 @@ template&lt;class TDataType , class TPointerType  = typename TDataType::Pointer,
 
 </div>
 </div>
-<a id="a7789adc9fbce9d1a098752883ee7d274"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7789adc9fbce9d1a098752883ee7d274">&#9670;&nbsp;</a></span>push_back()</h2>
+<a id="ae71008ae66038221829a4d6ba9d40b02"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae71008ae66038221829a4d6ba9d40b02">&#9670;&nbsp;</a></span>push_back() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1752,8 +1787,36 @@ template&lt;class TDataType , class TPointerType  = typename TDataType::Pointer,
         <tr>
           <td class="memname">void <a class="el" href="../../de/d83/class_kratos_1_1_pointer_vector.html">Kratos::PointerVector</a>&lt; TDataType, TPointerType, TContainerType &gt;::push_back </td>
           <td>(</td>
-          <td class="paramtype">TPointerType&#160;</td>
+          <td class="paramtype">const TPointerType &amp;&#160;</td>
           <td class="paramname"><em>x</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9efb1f90bb20d7006612f29b8b909ebb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9efb1f90bb20d7006612f29b8b909ebb">&#9670;&nbsp;</a></span>push_back() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class TDataType , class TPointerType  = typename TDataType::Pointer, class TContainerType  = std::vector&lt;TPointerType&gt;&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="../../de/d83/class_kratos_1_1_pointer_vector.html">Kratos::PointerVector</a>&lt; TDataType, TPointerType, TContainerType &gt;::push_back </td>
+          <td>(</td>
+          <td class="paramtype">TPointerType &amp;&amp;&#160;</td>
+          <td class="paramname"><em>rX</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -2016,7 +2079,7 @@ template&lt;class TDataType , class TPointerType  = typename TDataType::Pointer,
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue May 9 2023 02:13:15 for KratosMultiphysics by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Wed May 10 2023 02:10:57 for KratosMultiphysics by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

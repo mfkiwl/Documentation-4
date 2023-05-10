@@ -77,7 +77,6 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#namespaces">Namespaces</a> &#124;
-<a href="#define-members">Macros</a> &#124;
 <a href="#typedef-members">Typedefs</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
@@ -85,7 +84,6 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;numeric&gt;</code><br />
-<code>#include &lt;cstdint&gt;</code><br />
 <code>#include &lt;pybind11/stl.h&gt;</code><br />
 <code>#include &lt;pybind11/numpy.h&gt;</code><br />
 <code>#include &quot;<a class="el" href="../../d0/d97/container__expression_8h_source.html">containers/container_expression/container_expression.h</a>&quot;</code><br />
@@ -113,12 +111,6 @@ Namespaces</h2></td></tr>
 <tr class="memitem:da/d07/namespace_kratos_1_1_python"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d07/namespace_kratos_1_1_python.html">Kratos::Python</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
-Macros</h2></td></tr>
-<tr class="memitem:a99c4052d5c7547a7451c625958479138"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d1d/add__container__expression__to__python__utils_8h.html#a99c4052d5c7547a7451c625958479138">KRATOS_FORBIDDEN_CAST</a>(METHOD_NAME,  SELF_TYPE,  CONST,  DATA_TYPE)</td></tr>
-<tr class="memdesc:a99c4052d5c7547a7451c625958479138"><td class="mdescLeft">&#160;</td><td class="mdescRight">Forbids the casting by defining the forbidden type methods.  <a href="../../db/d1d/add__container__expression__to__python__utils_8h.html#a99c4052d5c7547a7451c625958479138">More...</a><br /></td></tr>
-<tr class="separator:a99c4052d5c7547a7451c625958479138"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
 <tr class="memitem:a5a1deca7b9c7bc831925b8fd498a63d4"><td class="memTemplParams" colspan="2">template&lt;class TDataType &gt; </td></tr>
@@ -140,58 +132,10 @@ Functions</h2></td></tr>
 <tr class="memitem:aa0dba74a54100ef5373d6f85b7e0dbdd"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../da/d07/namespace_kratos_1_1_python.html#aa0dba74a54100ef5373d6f85b7e0dbdd">Kratos::Python::AddSpecializedContainerExpressionToPython</a> (pybind11::module &amp;m, const std::string &amp;rName)</td></tr>
 <tr class="separator:aa0dba74a54100ef5373d6f85b7e0dbdd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Macro Definition Documentation</h2>
-<a id="a99c4052d5c7547a7451c625958479138"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a99c4052d5c7547a7451c625958479138">&#9670;&nbsp;</a></span>KRATOS_FORBIDDEN_CAST</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define KRATOS_FORBIDDEN_CAST</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">METHOD_NAME, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">SELF_TYPE, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">CONST, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">DATA_TYPE&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">    .def(METHOD_NAME, [](SELF_TYPE&amp; rSelf, CONST py::array_t&lt;DATA_TYPE&gt;&amp; <a class="code" href="../../dc/d9a/group___h_d_f5_application.html#ga0463ae8858dfb3317060416bb8812fff">rData</a>) {                 \</div>
-<div class="line">        KRATOS_ERROR &lt;&lt; <span class="stringliteral">&quot;Unsupported numpy array is passed. Please change &quot;</span>                       \</div>
-<div class="line">                     &lt;&lt; <span class="stringliteral">&quot;it to dtype = numpy.float64. [ data_type = &quot;</span> &lt;&lt; #DATA_TYPE &lt;&lt; <span class="stringliteral">&quot; ].\n&quot;</span>; })</div>
-<div class="ttc" id="agroup___h_d_f5_application_html_ga0463ae8858dfb3317060416bb8812fff"><div class="ttname"><a href="../../dc/d9a/group___h_d_f5_application.html#ga0463ae8858dfb3317060416bb8812fff">Kratos::HDF5::Internals::rData</a></div><div class="ttdeci">void std::string const DataValueContainer &amp; rData</div><div class="ttdef"><b>Definition:</b> hdf5_data_value_container_io.h:40</div></div>
-</div><!-- fragment -->
-<p>Forbids the casting by defining the forbidden type methods. </p>
-<p>pybind11 casts to the method arguments types which ever is passed from python side. If the types are not matching, then a new object is made from copying and then casting. For large vectors this is an expensive operation. Therefore, this macro is used to forbid the casting and throw an error if an unsupported numpy array is passed to the function. </p>
-
-</div>
-</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue May 9 2023 02:13:00 for KratosMultiphysics by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Wed May 10 2023 02:10:41 for KratosMultiphysics by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

@@ -200,7 +200,7 @@ $(function() {
 <div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;                        <span class="comment">//const unsigned int&amp; level = it-&gt;GetValue(REFINEMENT_LEVEL);</span></div>
 <div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;                        p_object-&gt;GetValue(SPLIT_ELEMENT) = <span class="keyword">false</span>;</div>
 <div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;                        <span class="comment">//p_element-&gt;SetValue(REFINEMENT_LEVEL, 1);</span></div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;                        rNewObjects.<a class="code" href="../../de/d83/class_kratos_1_1_pointer_vector.html#a7789adc9fbce9d1a098752883ee7d274">push_back</a>(p_object);</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;                        rNewObjects.<a class="code" href="../../de/d83/class_kratos_1_1_pointer_vector.html#ae71008ae66038221829a4d6ba9d40b02">push_back</a>(p_object);</div>
 <div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;                        r_child_objects.push_back(<span class="keyword">typename</span> TGeometricalObjectType::WeakPointer(p_object) );</div>
 <div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;                    } <span class="keywordflow">else</span> {</div>
 <div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;                        <a class="code" href="../../de/d3e/class_kratos_1_1_triangle3_d3.html">Triangle3D3&lt;Node &lt; 3 &gt;</a> &gt; rGeom(</div>
@@ -222,7 +222,7 @@ $(function() {
 <div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;                        <span class="comment">// Transfer elemental variables</span></div>
 <div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;                        p_object-&gt;GetData() = it-&gt;GetData();</div>
 <div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;                        p_object-&gt;GetValue(SPLIT_ELEMENT) = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;                        rNewObjects.<a class="code" href="../../de/d83/class_kratos_1_1_pointer_vector.html#a7789adc9fbce9d1a098752883ee7d274">push_back</a>(p_object);</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;                        rNewObjects.<a class="code" href="../../de/d83/class_kratos_1_1_pointer_vector.html#ae71008ae66038221829a4d6ba9d40b02">push_back</a>(p_object);</div>
 <div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;                        r_child_objects.push_back(<span class="keyword">typename</span> TGeometricalObjectType::WeakPointer(p_object) );</div>
 <div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;                    }</div>
 <div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160; </div>
@@ -342,8 +342,8 @@ $(function() {
 <div class="ttc" id="aclass_kratos_1_1_node_html"><div class="ttname"><a href="../../d5/ddd/class_kratos_1_1_node.html">Kratos::Node</a></div><div class="ttdoc">This class defines the node.</div><div class="ttdef"><b>Definition:</b> node.h:68</div></div>
 <div class="ttc" id="aclass_kratos_1_1_pointer_vector_html"><div class="ttname"><a href="../../de/d83/class_kratos_1_1_pointer_vector.html">Kratos::PointerVector</a></div><div class="ttdoc">PointerVector is a container like stl vector but using a vector to store pointers to its data.</div><div class="ttdef"><b>Definition:</b> pointer_vector.h:72</div></div>
 <div class="ttc" id="aclass_kratos_1_1_pointer_vector_html_a67aac002f7b56f8be5c459bec161f7d1"><div class="ttname"><a href="../../de/d83/class_kratos_1_1_pointer_vector.html#a67aac002f7b56f8be5c459bec161f7d1">Kratos::PointerVector::end</a></div><div class="ttdeci">iterator end()</div><div class="ttdef"><b>Definition:</b> pointer_vector.h:177</div></div>
-<div class="ttc" id="aclass_kratos_1_1_pointer_vector_html_a7789adc9fbce9d1a098752883ee7d274"><div class="ttname"><a href="../../de/d83/class_kratos_1_1_pointer_vector.html#a7789adc9fbce9d1a098752883ee7d274">Kratos::PointerVector::push_back</a></div><div class="ttdeci">void push_back(TPointerType x)</div><div class="ttdef"><b>Definition:</b> pointer_vector.h:270</div></div>
 <div class="ttc" id="aclass_kratos_1_1_pointer_vector_html_ae1f6f2135a6f233d4a64a2b2e8644836"><div class="ttname"><a href="../../de/d83/class_kratos_1_1_pointer_vector.html#ae1f6f2135a6f233d4a64a2b2e8644836">Kratos::PointerVector::begin</a></div><div class="ttdeci">iterator begin()</div><div class="ttdef"><b>Definition:</b> pointer_vector.h:169</div></div>
+<div class="ttc" id="aclass_kratos_1_1_pointer_vector_html_ae71008ae66038221829a4d6ba9d40b02"><div class="ttname"><a href="../../de/d83/class_kratos_1_1_pointer_vector.html#ae71008ae66038221829a4d6ba9d40b02">Kratos::PointerVector::push_back</a></div><div class="ttdeci">void push_back(const TPointerType &amp;x)</div><div class="ttdef"><b>Definition:</b> pointer_vector.h:270</div></div>
 <div class="ttc" id="aclass_kratos_1_1_triangle2_d3_html"><div class="ttname"><a href="../../d4/d5d/class_kratos_1_1_triangle2_d3.html">Kratos::Triangle2D3</a></div><div class="ttdoc">A three node 2D triangle geometry with linear shape functions.</div><div class="ttdef"><b>Definition:</b> triangle_2d_3.h:74</div></div>
 <div class="ttc" id="aclass_kratos_1_1_triangle3_d3_html"><div class="ttname"><a href="../../de/d3e/class_kratos_1_1_triangle3_d3.html">Kratos::Triangle3D3</a></div><div class="ttdoc">A three node 3D triangle geometry with linear shape functions.</div><div class="ttdef"><b>Definition:</b> triangle_3d_3.h:77</div></div>
 <div class="ttc" id="aclass_kratos_1_1_triangle_split_html_a7feaa6a51b1da95db201613c9735a6ea"><div class="ttname"><a href="../../df/d89/class_kratos_1_1_triangle_split.html#a7feaa6a51b1da95db201613c9735a6ea">Kratos::TriangleSplit::Split_Triangle</a></div><div class="ttdeci">static int Split_Triangle(const int edges[3], int t[12], int *nel, int *splitted_edges, int *nint)</div><div class="ttdoc">Utility to split triangles.</div><div class="ttdef"><b>Definition:</b> split_triangle.h:117</div></div>
@@ -364,7 +364,7 @@ $(function() {
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue May 9 2023 02:07:34 for KratosMultiphysics by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Wed May 10 2023 02:05:01 for KratosMultiphysics by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>
