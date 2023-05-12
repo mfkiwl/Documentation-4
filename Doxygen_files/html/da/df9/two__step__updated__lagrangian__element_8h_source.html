@@ -320,67 +320,73 @@ $(function() {
 <div class="line"><a name="l00354"></a><span class="lineno"><a class="line" href="../../d2/d72/group___fluid_dynamics_application.html#ga22517c5ca51b243fa6958984aa687712">  354</a></span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="../../d2/d72/group___fluid_dynamics_application.html#ga22517c5ca51b243fa6958984aa687712">ComputeBulkMatrixRHS</a>(<a class="code" href="../../d9/dbb/class_kratos_1_1_internals_1_1_matrix.html">MatrixType</a> &amp;BulkMatrix,</div>
 <div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;                                      <span class="keyword">const</span> <span class="keywordtype">double</span> Weight)<span class="keyword"> override</span>{};</div>
 <div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160; </div>
-<div class="line"><a name="l00357"></a><span class="lineno"><a class="line" href="../../d2/d72/group___fluid_dynamics_application.html#gae79584e5ba85645fdb4ec3b4dac76a38">  357</a></span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="../../d2/d72/group___fluid_dynamics_application.html#gae79584e5ba85645fdb4ec3b4dac76a38">CalcElasticPlasticCauchySplitted</a>(<a class="code" href="../../de/d64/struct_kratos_1_1_updated_lagrangian_element_1_1_elemental_variables.html">ElementalVariables</a> &amp;rElementalVariables, <span class="keywordtype">double</span> TimeStep,</div>
-<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;                                                  <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> g, <span class="keyword">const</span> ProcessInfo &amp;<a class="code" href="../../d2/d95/namespace_kratos_1_1_structural_mechanics_element_utilities.html#a13023981cd139d7bf702c24892a7ff10">rCurrentProcessInfo</a>, <span class="keywordtype">double</span> &amp;Density,</div>
-<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;                                                  <span class="keywordtype">double</span> &amp;DeviatoricCoeff, <span class="keywordtype">double</span> &amp;VolumetricCoeff)<span class="keyword"> override</span>{};</div>
-<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160; </div>
-<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160; </div>
-<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160; </div>
-<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160; </div>
+<div class="line"><a name="l00357"></a><span class="lineno"><a class="line" href="../../d2/d72/group___fluid_dynamics_application.html#ga5ea7b8db35bc91a76a35dde9c671e119">  357</a></span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="../../d2/d72/group___fluid_dynamics_application.html#ga5ea7b8db35bc91a76a35dde9c671e119">CalcElasticPlasticCauchySplitted</a>(</div>
+<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;        <a class="code" href="../../de/d64/struct_kratos_1_1_updated_lagrangian_element_1_1_elemental_variables.html">ElementalVariables</a> &amp;rElementalVariables,</div>
+<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> g,</div>
+<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;        <span class="keyword">const</span> <a class="code" href="../../d9/dbb/class_kratos_1_1_internals_1_1_matrix.html">Vector</a>&amp; rN,</div>
+<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;        <span class="keyword">const</span> ProcessInfo &amp;<a class="code" href="../../d2/d95/namespace_kratos_1_1_structural_mechanics_element_utilities.html#a13023981cd139d7bf702c24892a7ff10">rCurrentProcessInfo</a>,</div>
+<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;        <span class="keywordtype">double</span> &amp;Density,</div>
+<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;        <span class="keywordtype">double</span> &amp;DeviatoricCoeff,</div>
+<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;        <span class="keywordtype">double</span> &amp;VolumetricCoeff)<span class="keyword"> override</span></div>
+<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;<span class="keyword">    </span>{};</div>
+<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160; </div>
+<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160; </div>
 <div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160; </div>
-<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;  <span class="keyword">private</span>:</div>
 <div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160; </div>
-<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160; </div>
-<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160; </div>
-<div class="line"><a name="l00387"></a><span class="lineno"><a class="line" href="../../d2/d72/group___fluid_dynamics_application.html#gad3f5346f31d572dd2ab4fcd658de5bc4">  387</a></span>&#160;    <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="../../d0/dc2/class_serializer.html">Serializer</a>;</div>
+<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160; </div>
+<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;  <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160; </div>
 <div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160; </div>
-<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;    <span class="keywordtype">void</span> save(<a class="code" href="../../d0/dc2/class_serializer.html">Serializer</a> &amp;rSerializer)<span class="keyword"> const override</span></div>
-<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;<span class="keyword">    </span>{</div>
-<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;      <a class="code" href="../../df/d67/define_8h.html#a534cb8a7eac3e4cf5d2c482b87b505a4">KRATOS_SERIALIZE_SAVE_BASE_CLASS</a>(rSerializer, <a class="code" href="../../d5/dd4/class_kratos_1_1_element.html">Element</a>);</div>
-<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;    }</div>
-<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160; </div>
-<div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../d2/df2/namespaceode__solve.html#a0b266774af0a13d56a57cf1ada122768">load</a>(<a class="code" href="../../d0/dc2/class_serializer.html">Serializer</a> &amp;rSerializer)<span class="keyword"> override</span></div>
-<div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;<span class="keyword">    </span>{</div>
-<div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;      <a class="code" href="../../df/d67/define_8h.html#ac41b129afec253cba3e0fc8efa241fd1">KRATOS_SERIALIZE_LOAD_BASE_CLASS</a>(rSerializer, <a class="code" href="../../d5/dd4/class_kratos_1_1_element.html">Element</a>);</div>
-<div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;    }</div>
-<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160; </div>
-<div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160; </div>
-<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160; </div>
-<div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160; </div>
-<div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160; </div>
-<div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160; </div>
-<div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;    <a class="code" href="../../d2/d72/group___fluid_dynamics_application.html#ga0a778358f781051ba02d5ffdafb8e0a2">TwoStepUpdatedLagrangianElement</a> &amp;operator=(<a class="code" href="../../d2/d72/group___fluid_dynamics_application.html#ga0a778358f781051ba02d5ffdafb8e0a2">TwoStepUpdatedLagrangianElement</a> <span class="keyword">const</span> &amp;rOther);</div>
-<div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160; </div>
-<div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;    <span class="comment">/* /// Copy constructor. */</span></div>
-<div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160;    <span class="comment">/* TwoStepUpdatedLagrangianElement(TwoStepUpdatedLagrangianElement const&amp; rOther); */</span></div>
+<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160; </div>
+<div class="line"><a name="l00393"></a><span class="lineno"><a class="line" href="../../d2/d72/group___fluid_dynamics_application.html#gad3f5346f31d572dd2ab4fcd658de5bc4">  393</a></span>&#160;    <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="../../d0/dc2/class_serializer.html">Serializer</a>;</div>
+<div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160; </div>
+<div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;    <span class="keywordtype">void</span> save(<a class="code" href="../../d0/dc2/class_serializer.html">Serializer</a> &amp;rSerializer)<span class="keyword"> const override</span></div>
+<div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;<span class="keyword">    </span>{</div>
+<div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;      <a class="code" href="../../df/d67/define_8h.html#a534cb8a7eac3e4cf5d2c482b87b505a4">KRATOS_SERIALIZE_SAVE_BASE_CLASS</a>(rSerializer, <a class="code" href="../../d5/dd4/class_kratos_1_1_element.html">Element</a>);</div>
+<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;    }</div>
+<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160; </div>
+<div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../d2/df2/namespaceode__solve.html#a0b266774af0a13d56a57cf1ada122768">load</a>(<a class="code" href="../../d0/dc2/class_serializer.html">Serializer</a> &amp;rSerializer)<span class="keyword"> override</span></div>
+<div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;<span class="keyword">    </span>{</div>
+<div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;      <a class="code" href="../../df/d67/define_8h.html#ac41b129afec253cba3e0fc8efa241fd1">KRATOS_SERIALIZE_LOAD_BASE_CLASS</a>(rSerializer, <a class="code" href="../../d5/dd4/class_kratos_1_1_element.html">Element</a>);</div>
+<div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;    }</div>
+<div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160; </div>
+<div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160; </div>
+<div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160; </div>
+<div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160; </div>
+<div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160; </div>
 <div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160; </div>
-<div class="line"><a name="l00426"></a><span class="lineno">  426</span>&#160; </div>
-<div class="line"><a name="l00427"></a><span class="lineno">  427</span>&#160;  }; <span class="comment">// Class TwoStepUpdatedLagrangianElement</span></div>
-<div class="line"><a name="l00428"></a><span class="lineno">  428</span>&#160; </div>
+<div class="line"><a name="l00426"></a><span class="lineno">  426</span>&#160;    <a class="code" href="../../d2/d72/group___fluid_dynamics_application.html#ga0a778358f781051ba02d5ffdafb8e0a2">TwoStepUpdatedLagrangianElement</a> &amp;operator=(<a class="code" href="../../d2/d72/group___fluid_dynamics_application.html#ga0a778358f781051ba02d5ffdafb8e0a2">TwoStepUpdatedLagrangianElement</a> <span class="keyword">const</span> &amp;rOther);</div>
+<div class="line"><a name="l00427"></a><span class="lineno">  427</span>&#160; </div>
+<div class="line"><a name="l00428"></a><span class="lineno">  428</span>&#160;    <span class="comment">/* /// Copy constructor. */</span></div>
+<div class="line"><a name="l00429"></a><span class="lineno">  429</span>&#160;    <span class="comment">/* TwoStepUpdatedLagrangianElement(TwoStepUpdatedLagrangianElement const&amp; rOther); */</span></div>
 <div class="line"><a name="l00430"></a><span class="lineno">  430</span>&#160; </div>
-<div class="line"><a name="l00433"></a><span class="lineno">  433</span>&#160; </div>
-<div class="line"><a name="l00437"></a><span class="lineno">  437</span>&#160; </div>
-<div class="line"><a name="l00439"></a><span class="lineno">  439</span>&#160;  <span class="keyword">template</span> &lt;<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> TDim&gt;</div>
-<div class="line"><a name="l00440"></a><span class="lineno"><a class="line" href="../../d2/d72/group___fluid_dynamics_application.html#ga603e3dac7279ec95bb54bef6a60aa3e3">  440</a></span>&#160;  <span class="keyword">inline</span> std::istream &amp;<a class="code" href="../../db/d66/namespace_kratos.html#a9c6097d0b0a27d1cea94992b1087f56a">operator&gt;&gt;</a>(std::istream &amp;rIStream,</div>
-<div class="line"><a name="l00441"></a><span class="lineno">  441</span>&#160;                                  <a class="code" href="../../de/d45/class_kratos_1_1_two_step_updated_lagrangian_element.html">TwoStepUpdatedLagrangianElement&lt;TDim&gt;</a> &amp;rThis)</div>
-<div class="line"><a name="l00442"></a><span class="lineno">  442</span>&#160;  {</div>
-<div class="line"><a name="l00443"></a><span class="lineno">  443</span>&#160;    <span class="keywordflow">return</span> rIStream;</div>
-<div class="line"><a name="l00444"></a><span class="lineno">  444</span>&#160;  }</div>
-<div class="line"><a name="l00445"></a><span class="lineno">  445</span>&#160; </div>
-<div class="line"><a name="l00447"></a><span class="lineno">  447</span>&#160;  <span class="keyword">template</span> &lt;<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> TDim&gt;</div>
-<div class="line"><a name="l00448"></a><span class="lineno"><a class="line" href="../../d2/d72/group___fluid_dynamics_application.html#gae6db8a36405fd6eab17662b1a77c8e8f">  448</a></span>&#160;  <span class="keyword">inline</span> std::ostream &amp;<a class="code" href="../../db/d66/namespace_kratos.html#acfc842a43d19dffc2d8105e5cbea17a9">operator&lt;&lt;</a>(std::ostream &amp;rOStream,</div>
-<div class="line"><a name="l00449"></a><span class="lineno">  449</span>&#160;                                  <span class="keyword">const</span> <a class="code" href="../../de/d45/class_kratos_1_1_two_step_updated_lagrangian_element.html">TwoStepUpdatedLagrangianElement&lt;TDim&gt;</a> &amp;rThis)</div>
-<div class="line"><a name="l00450"></a><span class="lineno">  450</span>&#160;  {</div>
-<div class="line"><a name="l00451"></a><span class="lineno">  451</span>&#160;    rThis.<a class="code" href="../../d2/d72/group___fluid_dynamics_application.html#gada1951fc2773aa57a26ad61b4171db28">PrintInfo</a>(rOStream);</div>
-<div class="line"><a name="l00452"></a><span class="lineno">  452</span>&#160;    rOStream &lt;&lt; std::endl;</div>
-<div class="line"><a name="l00453"></a><span class="lineno">  453</span>&#160;    rThis.<a class="code" href="../../d5/dd4/class_kratos_1_1_element.html#abb4bc2919fc17612f0441d8545d4c6f6">PrintData</a>(rOStream);</div>
-<div class="line"><a name="l00454"></a><span class="lineno">  454</span>&#160; </div>
-<div class="line"><a name="l00455"></a><span class="lineno">  455</span>&#160;    <span class="keywordflow">return</span> rOStream;</div>
-<div class="line"><a name="l00456"></a><span class="lineno">  456</span>&#160;  }</div>
-<div class="line"><a name="l00457"></a><span class="lineno">  457</span>&#160; </div>
-<div class="line"><a name="l00458"></a><span class="lineno">  458</span>&#160;} <span class="comment">// namespace Kratos.</span></div>
-<div class="line"><a name="l00459"></a><span class="lineno">  459</span>&#160; </div>
-<div class="line"><a name="l00460"></a><span class="lineno">  460</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// KRATOS_TWO_STEP_UPDATED_LAGRANGIAN_ELEMENT  defined</span></div>
+<div class="line"><a name="l00432"></a><span class="lineno">  432</span>&#160; </div>
+<div class="line"><a name="l00433"></a><span class="lineno">  433</span>&#160;  }; <span class="comment">// Class TwoStepUpdatedLagrangianElement</span></div>
+<div class="line"><a name="l00434"></a><span class="lineno">  434</span>&#160; </div>
+<div class="line"><a name="l00436"></a><span class="lineno">  436</span>&#160; </div>
+<div class="line"><a name="l00439"></a><span class="lineno">  439</span>&#160; </div>
+<div class="line"><a name="l00443"></a><span class="lineno">  443</span>&#160; </div>
+<div class="line"><a name="l00445"></a><span class="lineno">  445</span>&#160;  <span class="keyword">template</span> &lt;<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> TDim&gt;</div>
+<div class="line"><a name="l00446"></a><span class="lineno"><a class="line" href="../../d2/d72/group___fluid_dynamics_application.html#ga603e3dac7279ec95bb54bef6a60aa3e3">  446</a></span>&#160;  <span class="keyword">inline</span> std::istream &amp;<a class="code" href="../../db/d66/namespace_kratos.html#a9c6097d0b0a27d1cea94992b1087f56a">operator&gt;&gt;</a>(std::istream &amp;rIStream,</div>
+<div class="line"><a name="l00447"></a><span class="lineno">  447</span>&#160;                                  <a class="code" href="../../de/d45/class_kratos_1_1_two_step_updated_lagrangian_element.html">TwoStepUpdatedLagrangianElement&lt;TDim&gt;</a> &amp;rThis)</div>
+<div class="line"><a name="l00448"></a><span class="lineno">  448</span>&#160;  {</div>
+<div class="line"><a name="l00449"></a><span class="lineno">  449</span>&#160;    <span class="keywordflow">return</span> rIStream;</div>
+<div class="line"><a name="l00450"></a><span class="lineno">  450</span>&#160;  }</div>
+<div class="line"><a name="l00451"></a><span class="lineno">  451</span>&#160; </div>
+<div class="line"><a name="l00453"></a><span class="lineno">  453</span>&#160;  <span class="keyword">template</span> &lt;<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> TDim&gt;</div>
+<div class="line"><a name="l00454"></a><span class="lineno"><a class="line" href="../../d2/d72/group___fluid_dynamics_application.html#gae6db8a36405fd6eab17662b1a77c8e8f">  454</a></span>&#160;  <span class="keyword">inline</span> std::ostream &amp;<a class="code" href="../../db/d66/namespace_kratos.html#acfc842a43d19dffc2d8105e5cbea17a9">operator&lt;&lt;</a>(std::ostream &amp;rOStream,</div>
+<div class="line"><a name="l00455"></a><span class="lineno">  455</span>&#160;                                  <span class="keyword">const</span> <a class="code" href="../../de/d45/class_kratos_1_1_two_step_updated_lagrangian_element.html">TwoStepUpdatedLagrangianElement&lt;TDim&gt;</a> &amp;rThis)</div>
+<div class="line"><a name="l00456"></a><span class="lineno">  456</span>&#160;  {</div>
+<div class="line"><a name="l00457"></a><span class="lineno">  457</span>&#160;    rThis.<a class="code" href="../../d2/d72/group___fluid_dynamics_application.html#gada1951fc2773aa57a26ad61b4171db28">PrintInfo</a>(rOStream);</div>
+<div class="line"><a name="l00458"></a><span class="lineno">  458</span>&#160;    rOStream &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00459"></a><span class="lineno">  459</span>&#160;    rThis.<a class="code" href="../../d5/dd4/class_kratos_1_1_element.html#abb4bc2919fc17612f0441d8545d4c6f6">PrintData</a>(rOStream);</div>
+<div class="line"><a name="l00460"></a><span class="lineno">  460</span>&#160; </div>
+<div class="line"><a name="l00461"></a><span class="lineno">  461</span>&#160;    <span class="keywordflow">return</span> rOStream;</div>
+<div class="line"><a name="l00462"></a><span class="lineno">  462</span>&#160;  }</div>
+<div class="line"><a name="l00463"></a><span class="lineno">  463</span>&#160; </div>
+<div class="line"><a name="l00464"></a><span class="lineno">  464</span>&#160;} <span class="comment">// namespace Kratos.</span></div>
+<div class="line"><a name="l00465"></a><span class="lineno">  465</span>&#160; </div>
+<div class="line"><a name="l00466"></a><span class="lineno">  466</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// KRATOS_TWO_STEP_UPDATED_LAGRANGIAN_ELEMENT  defined</span></div>
 <div class="ttc" id="aarray__1d_8h_html"><div class="ttname"><a href="../../d9/d36/array__1d_8h.html">array_1d.h</a></div></div>
 <div class="ttc" id="aclass_geometrical_object_html"><div class="ttname"><a href="../../d0/d48/class_geometrical_object.html">GeometricalObject</a></div><div class="ttdoc">This defines the geometrical object, base definition of the element and condition entities.</div></div>
 <div class="ttc" id="aclass_kratos_1_1_element_html"><div class="ttname"><a href="../../d5/dd4/class_kratos_1_1_element.html">Kratos::Element</a></div><div class="ttdoc">Base class for all Elements.</div><div class="ttdef"><b>Definition:</b> element.h:60</div></div>
@@ -424,6 +430,7 @@ $(function() {
 <div class="ttc" id="agroup___fluid_dynamics_application_html_ga4f589f37fb1a47722b5fb692a67c1f71"><div class="ttname"><a href="../../d2/d72/group___fluid_dynamics_application.html#ga4f589f37fb1a47722b5fb692a67c1f71">Kratos::TwoStepUpdatedLagrangianElement::PropertiesType</a></div><div class="ttdeci">BaseType::PropertiesType PropertiesType</div><div class="ttdef"><b>Definition:</b> two_step_updated_lagrangian_element.h:114</div></div>
 <div class="ttc" id="agroup___fluid_dynamics_application_html_ga589a65769603de6c42c67bee569dd427"><div class="ttname"><a href="../../d2/d72/group___fluid_dynamics_application.html#ga589a65769603de6c42c67bee569dd427">Kratos::TwoStepUpdatedLagrangianElement::CalculateLocalContinuityEqForPressure</a></div><div class="ttdeci">virtual void CalculateLocalContinuityEqForPressure(MatrixType &amp;rLeftHandSideMatrix, VectorType &amp;rRightHandSideVector, const ProcessInfo &amp;rCurrentProcessInfo) override</div><div class="ttdef"><b>Definition:</b> two_step_updated_lagrangian_element.h:309</div></div>
 <div class="ttc" id="agroup___fluid_dynamics_application_html_ga5db05da740e6aa4323e07cbdd5a682be"><div class="ttname"><a href="../../d2/d72/group___fluid_dynamics_application.html#ga5db05da740e6aa4323e07cbdd5a682be">Kratos::TwoStepUpdatedLagrangianElement::ComputeMassMatrix</a></div><div class="ttdeci">void ComputeMassMatrix(Matrix &amp;rMassMatrix, const ShapeFunctionsType &amp;rN, const double Weight, double &amp;MeanValue) override</div><div class="ttdef"><b>Definition:</b> two_step_updated_lagrangian_element.cpp:139</div></div>
+<div class="ttc" id="agroup___fluid_dynamics_application_html_ga5ea7b8db35bc91a76a35dde9c671e119"><div class="ttname"><a href="../../d2/d72/group___fluid_dynamics_application.html#ga5ea7b8db35bc91a76a35dde9c671e119">Kratos::TwoStepUpdatedLagrangianElement::CalcElasticPlasticCauchySplitted</a></div><div class="ttdeci">virtual void CalcElasticPlasticCauchySplitted(ElementalVariables &amp;rElementalVariables, const unsigned int g, const Vector &amp;rN, const ProcessInfo &amp;rCurrentProcessInfo, double &amp;Density, double &amp;DeviatoricCoeff, double &amp;VolumetricCoeff) override</div><div class="ttdef"><b>Definition:</b> two_step_updated_lagrangian_element.h:357</div></div>
 <div class="ttc" id="agroup___fluid_dynamics_application_html_ga625335f0297e2b75eb09a3639d8226cb"><div class="ttname"><a href="../../d2/d72/group___fluid_dynamics_application.html#ga625335f0297e2b75eb09a3639d8226cb">Kratos::TwoStepUpdatedLagrangianElement::EquationIdVector</a></div><div class="ttdeci">void EquationIdVector(EquationIdVectorType &amp;rResult, const ProcessInfo &amp;rCurrentProcessInfo) const override</div><div class="ttdoc">Provides the global indices for each one of this element's local rows.</div><div class="ttdef"><b>Definition:</b> two_step_updated_lagrangian_element.cpp:32</div></div>
 <div class="ttc" id="agroup___fluid_dynamics_application_html_ga6b39d82c673bf1db4f07444c69999847"><div class="ttname"><a href="../../d2/d72/group___fluid_dynamics_application.html#ga6b39d82c673bf1db4f07444c69999847">Kratos::TwoStepUpdatedLagrangianElement::ElementalVariables</a></div><div class="ttdeci">BaseType::ElementalVariables ElementalVariables</div><div class="ttdef"><b>Definition:</b> two_step_updated_lagrangian_element.h:118</div></div>
 <div class="ttc" id="agroup___fluid_dynamics_application_html_ga6fb4d1a85abf5bef718dc09d9fe3999d"><div class="ttname"><a href="../../d2/d72/group___fluid_dynamics_application.html#ga6fb4d1a85abf5bef718dc09d9fe3999d">Kratos::TwoStepUpdatedLagrangianElement::VectorType</a></div><div class="ttdeci">Vector VectorType</div><div class="ttdoc">Vector type for local contributions to the linear system.</div><div class="ttdef"><b>Definition:</b> two_step_updated_lagrangian_element.h:84</div></div>
@@ -451,7 +458,6 @@ $(function() {
 <div class="ttc" id="agroup___fluid_dynamics_application_html_gad4ad07102e9abe3df2e9f89444f7f6d6"><div class="ttname"><a href="../../d2/d72/group___fluid_dynamics_application.html#gad4ad07102e9abe3df2e9f89444f7f6d6">Kratos::TwoStepUpdatedLagrangianElement::AddInternalForces</a></div><div class="ttdeci">void AddInternalForces(Vector &amp;rRHSVector, const ShapeFunctionDerivativesType &amp;rDN_DX, ElementalVariables &amp;rElementalVariables, const double Weight) override</div></div>
 <div class="ttc" id="agroup___fluid_dynamics_application_html_gada1951fc2773aa57a26ad61b4171db28"><div class="ttname"><a href="../../d2/d72/group___fluid_dynamics_application.html#gada1951fc2773aa57a26ad61b4171db28">Kratos::TwoStepUpdatedLagrangianElement::PrintInfo</a></div><div class="ttdeci">void PrintInfo(std::ostream &amp;rOStream) const override</div><div class="ttdoc">Print information about this object.</div><div class="ttdef"><b>Definition:</b> two_step_updated_lagrangian_element.h:277</div></div>
 <div class="ttc" id="agroup___fluid_dynamics_application_html_gae0f237868b11c669e9107a29354b24e2"><div class="ttname"><a href="../../d2/d72/group___fluid_dynamics_application.html#gae0f237868b11c669e9107a29354b24e2">Kratos::TwoStepUpdatedLagrangianElement::TwoStepUpdatedLagrangianElement</a></div><div class="ttdeci">TwoStepUpdatedLagrangianElement(IndexType NewId, const NodesArrayType &amp;ThisNodes)</div><div class="ttdoc">Constructor using an array of nodes.</div><div class="ttdef"><b>Definition:</b> two_step_updated_lagrangian_element.h:139</div></div>
-<div class="ttc" id="agroup___fluid_dynamics_application_html_gae79584e5ba85645fdb4ec3b4dac76a38"><div class="ttname"><a href="../../d2/d72/group___fluid_dynamics_application.html#gae79584e5ba85645fdb4ec3b4dac76a38">Kratos::TwoStepUpdatedLagrangianElement::CalcElasticPlasticCauchySplitted</a></div><div class="ttdeci">virtual void CalcElasticPlasticCauchySplitted(ElementalVariables &amp;rElementalVariables, double TimeStep, unsigned int g, const ProcessInfo &amp;rCurrentProcessInfo, double &amp;Density, double &amp;DeviatoricCoeff, double &amp;VolumetricCoeff) override</div><div class="ttdef"><b>Definition:</b> two_step_updated_lagrangian_element.h:357</div></div>
 <div class="ttc" id="agroup___fluid_dynamics_application_html_gaed74f43553ae84bf52c6951a7d603004"><div class="ttname"><a href="../../d2/d72/group___fluid_dynamics_application.html#gaed74f43553ae84bf52c6951a7d603004">Kratos::TwoStepUpdatedLagrangianElement::ShapeFunctionDerivativesType</a></div><div class="ttdeci">Kratos::Matrix ShapeFunctionDerivativesType</div><div class="ttdoc">Type for a matrix containing the shape function gradients.</div><div class="ttdef"><b>Definition:</b> two_step_updated_lagrangian_element.h:103</div></div>
 <div class="ttc" id="agroup___fluid_dynamics_application_html_gaf12e4c1a18092d864d98c00e1494e31e"><div class="ttname"><a href="../../d2/d72/group___fluid_dynamics_application.html#gaf12e4c1a18092d864d98c00e1494e31e">Kratos::TwoStepUpdatedLagrangianElement::Check</a></div><div class="ttdeci">int Check(const ProcessInfo &amp;rCurrentProcessInfo) const override</div><div class="ttdoc">Checks the input and that all required Kratos variables have been registered.</div><div class="ttdef"><b>Definition:</b> two_step_updated_lagrangian_element.h:258</div></div>
 <div class="ttc" id="agroup___fluid_dynamics_application_html_gaf2ff74513e382ac78bfb736e0104b2af"><div class="ttname"><a href="../../d2/d72/group___fluid_dynamics_application.html#gaf2ff74513e382ac78bfb736e0104b2af">Kratos::TwoStepUpdatedLagrangianElement::IndexType</a></div><div class="ttdeci">std::size_t IndexType</div><div class="ttdef"><b>Definition:</b> two_step_updated_lagrangian_element.h:89</div></div>
@@ -475,7 +481,7 @@ $(function() {
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu May 11 2023 02:05:59 for KratosMultiphysics by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Fri May 12 2023 02:03:53 for KratosMultiphysics by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>
