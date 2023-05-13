@@ -153,7 +153,7 @@ $(function() {
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        <a class="code" href="../../df/d67/define_8h.html#ab9c29d6a0d19ff26bbc4e45e3181fb3f">KRATOS_TRY</a></div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        <span class="comment">// Predict Displacements on free nodes and update Acceleration, Velocity and DtPressure</span></div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        <a class="code" href="../../db/d66/namespace_kratos.html#a382d1519b254c52c6699149b2192aa8c">block_for_each</a>(<a class="code" href="../../db/d91/namespace_kratos_1_1_rans_variable_utilities.html#af0d227aa5521a639dd5f46737c54e84c">rModelPart</a>.Nodes(), [&amp;](<a class="code" href="../../d5/ddd/class_kratos_1_1_node.html">Node&lt;3&gt;</a>&amp; rNode){</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        <a class="code" href="../../db/d66/namespace_kratos.html#a382d1519b254c52c6699149b2192aa8c">block_for_each</a>(<a class="code" href="../../db/d91/namespace_kratos_1_1_rans_variable_utilities.html#af0d227aa5521a639dd5f46737c54e84c">rModelPart</a>.Nodes(), [&amp;](<a class="code" href="../../d5/ddd/class_kratos_1_1_node.html">Node</a>&amp; rNode){</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;            if (rNode.IsFixed(ACCELERATION_X))</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;            {</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;                const double &amp;PreviousDisplacement = rNode.FastGetSolutionStepValue(DISPLACEMENT_X, 1);</div>
@@ -166,7 +166,7 @@ $(function() {
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;                                                                + mDeltaTime * mDeltaTime</div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;                                                                * ( ( 0.5 - mBeta) * PreviousAcceleration + mBeta * CurrentAcceleration );</div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;            }</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;            <span class="keywordflow">else</span> if (rNode.<a class="code" href="../../d5/ddd/class_kratos_1_1_node.html#ae1403c3c709d7877df1974b547857745">IsFixed</a>(VELOCITY_X))</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;            <span class="keywordflow">else</span> if (rNode.<a class="code" href="../../d5/ddd/class_kratos_1_1_node.html#a915b07be22852f6efa7c9a6ac6d39636">IsFixed</a>(VELOCITY_X))</div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;            {</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;                const double &amp;PreviousDisplacement = rNode.FastGetSolutionStepValue(DISPLACEMENT_X, 1);</div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;                const double &amp;PreviousVelocity     = rNode.FastGetSolutionStepValue(VELOCITY_X, 1);</div>
@@ -175,7 +175,7 @@ $(function() {
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;                                                                 + mDeltaTime*(mBeta/mGamma*(CurrentVelocity - PreviousVelocity)</div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;                                                                 + PreviousVelocity);</div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;            }</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;            <span class="keywordflow">else</span> if (!rNode.<a class="code" href="../../d5/ddd/class_kratos_1_1_node.html#ae1403c3c709d7877df1974b547857745">IsFixed</a>(DISPLACEMENT_X))</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;            <span class="keywordflow">else</span> if (!rNode.<a class="code" href="../../d5/ddd/class_kratos_1_1_node.html#a915b07be22852f6efa7c9a6ac6d39636">IsFixed</a>(DISPLACEMENT_X))</div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;            {</div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;                const double &amp;PreviousDisplacement = rNode.FastGetSolutionStepValue(DISPLACEMENT_X, 1);</div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;                const double &amp;PreviousVelocity     = rNode.FastGetSolutionStepValue(VELOCITY_X, 1);</div>
@@ -187,7 +187,7 @@ $(function() {
 <div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;                                                                 * PreviousAcceleration;</div>
 <div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;            }</div>
 <div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160; </div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;            if (rNode.<a class="code" href="../../d5/ddd/class_kratos_1_1_node.html#ae1403c3c709d7877df1974b547857745">IsFixed</a>(ACCELERATION_Y))</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;            if (rNode.<a class="code" href="../../d5/ddd/class_kratos_1_1_node.html#a915b07be22852f6efa7c9a6ac6d39636">IsFixed</a>(ACCELERATION_Y))</div>
 <div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;            {</div>
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;                const double &amp;PreviousDisplacement = rNode.FastGetSolutionStepValue(DISPLACEMENT_Y, 1);</div>
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;                const double &amp;PreviousVelocity     = rNode.FastGetSolutionStepValue(VELOCITY_Y, 1);</div>
@@ -199,7 +199,7 @@ $(function() {
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;                                                                + mDeltaTime * mDeltaTime</div>
 <div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;                                                                * ( ( 0.5 - mBeta) * PreviousAcceleration + mBeta * CurrentAcceleration );</div>
 <div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;            }</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;            <span class="keywordflow">else</span> if (rNode.<a class="code" href="../../d5/ddd/class_kratos_1_1_node.html#ae1403c3c709d7877df1974b547857745">IsFixed</a>(VELOCITY_Y))</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;            <span class="keywordflow">else</span> if (rNode.<a class="code" href="../../d5/ddd/class_kratos_1_1_node.html#a915b07be22852f6efa7c9a6ac6d39636">IsFixed</a>(VELOCITY_Y))</div>
 <div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;            {</div>
 <div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;                const double &amp;PreviousDisplacement = rNode.FastGetSolutionStepValue(DISPLACEMENT_Y, 1);</div>
 <div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;                const double &amp;PreviousVelocity     = rNode.FastGetSolutionStepValue(VELOCITY_Y, 1);</div>
@@ -208,7 +208,7 @@ $(function() {
 <div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;                                                                 + mDeltaTime*(mBeta/mGamma*(CurrentVelocity - PreviousVelocity)</div>
 <div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;                                                                 + PreviousVelocity);</div>
 <div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;            }</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;            <span class="keywordflow">else</span> if (!rNode.<a class="code" href="../../d5/ddd/class_kratos_1_1_node.html#ae1403c3c709d7877df1974b547857745">IsFixed</a>(DISPLACEMENT_Y))</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;            <span class="keywordflow">else</span> if (!rNode.<a class="code" href="../../d5/ddd/class_kratos_1_1_node.html#a915b07be22852f6efa7c9a6ac6d39636">IsFixed</a>(DISPLACEMENT_Y))</div>
 <div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;            {</div>
 <div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;                const double &amp;PreviousDisplacement = rNode.FastGetSolutionStepValue(DISPLACEMENT_Y, 1);</div>
 <div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;                const double &amp;PreviousVelocity     = rNode.FastGetSolutionStepValue(VELOCITY_Y, 1);</div>
@@ -221,7 +221,7 @@ $(function() {
 <div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;            }</div>
 <div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160; </div>
 <div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;            <span class="comment">// For 3D cases</span></div>
-<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;            if (rNode.<a class="code" href="../../d5/ddd/class_kratos_1_1_node.html#a097d352b8d7e6647c8ffabc1db8f6d4a">HasDofFor</a>(DISPLACEMENT_Z))</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;            if (rNode.<a class="code" href="../../d5/ddd/class_kratos_1_1_node.html#a4ad22d1908e859a26051d5223e15ac8f">HasDofFor</a>(DISPLACEMENT_Z))</div>
 <div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;            {</div>
 <div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;                if (rNode.IsFixed(ACCELERATION_Z))</div>
 <div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;                {</div>
@@ -235,7 +235,7 @@ $(function() {
 <div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;                                                                    + mDeltaTime * mDeltaTime</div>
 <div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;                                                                    * ( ( 0.5 - mBeta) * PreviousAcceleration + mBeta * CurrentAcceleration );</div>
 <div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;                }</div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;                <span class="keywordflow">else</span> if (rNode.<a class="code" href="../../d5/ddd/class_kratos_1_1_node.html#ae1403c3c709d7877df1974b547857745">IsFixed</a>(VELOCITY_Z))</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;                <span class="keywordflow">else</span> if (rNode.<a class="code" href="../../d5/ddd/class_kratos_1_1_node.html#a915b07be22852f6efa7c9a6ac6d39636">IsFixed</a>(VELOCITY_Z))</div>
 <div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;                {</div>
 <div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;                    const double &amp;PreviousDisplacement = rNode.FastGetSolutionStepValue(DISPLACEMENT_Z, 1);</div>
 <div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;                    const double &amp;PreviousVelocity     = rNode.FastGetSolutionStepValue(VELOCITY_Z, 1);</div>
@@ -244,7 +244,7 @@ $(function() {
 <div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;                                                                    + mDeltaTime*(mBeta/mGamma*(CurrentVelocity - PreviousVelocity)</div>
 <div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;                                                                    + PreviousVelocity);</div>
 <div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;                }</div>
-<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;                <span class="keywordflow">else</span> if (!rNode.<a class="code" href="../../d5/ddd/class_kratos_1_1_node.html#ae1403c3c709d7877df1974b547857745">IsFixed</a>(DISPLACEMENT_Z))</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;                <span class="keywordflow">else</span> if (!rNode.<a class="code" href="../../d5/ddd/class_kratos_1_1_node.html#a915b07be22852f6efa7c9a6ac6d39636">IsFixed</a>(DISPLACEMENT_Z))</div>
 <div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;                {</div>
 <div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;                    const double &amp;PreviousDisplacement = rNode.FastGetSolutionStepValue(DISPLACEMENT_Z, 1);</div>
 <div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;                    const double &amp;PreviousVelocity     = rNode.FastGetSolutionStepValue(VELOCITY_Z, 1);</div>
@@ -573,9 +573,9 @@ $(function() {
 <div class="ttc" id="aclass_kratos_1_1_newmark_quasistatic_u_pw_scheme_html_a463016ae24a2d4f9ae33a2c66f0dab3a"><div class="ttname"><a href="../../d7/db5/class_kratos_1_1_newmark_quasistatic_u_pw_scheme.html#a463016ae24a2d4f9ae33a2c66f0dab3a">Kratos::NewmarkQuasistaticUPwScheme::mGamma</a></div><div class="ttdeci">double mGamma</div><div class="ttdef"><b>Definition:</b> newmark_quasistatic_U_Pw_scheme.hpp:516</div></div>
 <div class="ttc" id="aclass_kratos_1_1_newmark_quasistatic_u_pw_scheme_html_a806b9fa5337521f3c8a8ec83f7bebcad"><div class="ttname"><a href="../../d7/db5/class_kratos_1_1_newmark_quasistatic_u_pw_scheme.html#a806b9fa5337521f3c8a8ec83f7bebcad">Kratos::NewmarkQuasistaticUPwScheme::mTheta</a></div><div class="ttdeci">double mTheta</div><div class="ttdef"><b>Definition:</b> newmark_quasistatic_U_Pw_scheme.hpp:517</div></div>
 <div class="ttc" id="aclass_kratos_1_1_newmark_quasistatic_u_pw_scheme_html_ab7c36dfafe94963a7c4233c513276536"><div class="ttname"><a href="../../d7/db5/class_kratos_1_1_newmark_quasistatic_u_pw_scheme.html#ab7c36dfafe94963a7c4233c513276536">Kratos::NewmarkQuasistaticUPwScheme::mDeltaTime</a></div><div class="ttdeci">double mDeltaTime</div><div class="ttdef"><b>Definition:</b> newmark_quasistatic_U_Pw_scheme.hpp:518</div></div>
-<div class="ttc" id="aclass_kratos_1_1_node_html"><div class="ttname"><a href="../../d5/ddd/class_kratos_1_1_node.html">Kratos::Node</a></div><div class="ttdoc">This class defines the node.</div><div class="ttdef"><b>Definition:</b> node.h:68</div></div>
-<div class="ttc" id="aclass_kratos_1_1_node_html_a097d352b8d7e6647c8ffabc1db8f6d4a"><div class="ttname"><a href="../../d5/ddd/class_kratos_1_1_node.html#a097d352b8d7e6647c8ffabc1db8f6d4a">Kratos::Node::HasDofFor</a></div><div class="ttdeci">bool HasDofFor(const VariableData &amp;rDofVariable) const</div><div class="ttdef"><b>Definition:</b> node.h:914</div></div>
-<div class="ttc" id="aclass_kratos_1_1_node_html_ae1403c3c709d7877df1974b547857745"><div class="ttname"><a href="../../d5/ddd/class_kratos_1_1_node.html#ae1403c3c709d7877df1974b547857745">Kratos::Node::IsFixed</a></div><div class="ttdeci">bool IsFixed(const VariableData &amp;rDofVariable) const</div><div class="ttdef"><b>Definition:</b> node.h:924</div></div>
+<div class="ttc" id="aclass_kratos_1_1_node_html"><div class="ttname"><a href="../../d5/ddd/class_kratos_1_1_node.html">Kratos::Node</a></div><div class="ttdoc">This class defines the node.</div><div class="ttdef"><b>Definition:</b> node.h:67</div></div>
+<div class="ttc" id="aclass_kratos_1_1_node_html_a4ad22d1908e859a26051d5223e15ac8f"><div class="ttname"><a href="../../d5/ddd/class_kratos_1_1_node.html#a4ad22d1908e859a26051d5223e15ac8f">Kratos::Node::HasDofFor</a></div><div class="ttdeci">bool HasDofFor(const VariableData &amp;rDofVariable) const</div><div class="ttdef"><b>Definition:</b> node.h:889</div></div>
+<div class="ttc" id="aclass_kratos_1_1_node_html_a915b07be22852f6efa7c9a6ac6d39636"><div class="ttname"><a href="../../d5/ddd/class_kratos_1_1_node.html#a915b07be22852f6efa7c9a6ac6d39636">Kratos::Node::IsFixed</a></div><div class="ttdeci">bool IsFixed(const VariableData &amp;rDofVariable) const</div><div class="ttdef"><b>Definition:</b> node.h:899</div></div>
 <div class="ttc" id="aclass_kratos_1_1_scheme_html"><div class="ttname"><a href="../../d1/da3/class_kratos_1_1_scheme.html">Kratos::Scheme</a></div><div class="ttdoc">This class provides the implementation of the basic tasks that are needed by the solution strategy.</div><div class="ttdef"><b>Definition:</b> scheme.h:58</div></div>
 <div class="ttc" id="aclass_kratos_1_1_scheme_html_a047ea5ef754b00a80f653e523e3e96d0"><div class="ttname"><a href="../../d1/da3/class_kratos_1_1_scheme.html#a047ea5ef754b00a80f653e523e3e96d0">Kratos::Scheme::DofsArrayType</a></div><div class="ttdeci">ModelPart::DofsArrayType DofsArrayType</div><div class="ttdoc">DoF array type definition.</div><div class="ttdef"><b>Definition:</b> scheme.h:83</div></div>
 <div class="ttc" id="aclass_kratos_1_1_scheme_html_a1dde90d871c0b1e5c14387fd3e0086df"><div class="ttname"><a href="../../d1/da3/class_kratos_1_1_scheme.html#a1dde90d871c0b1e5c14387fd3e0086df">Kratos::Scheme::LocalSystemMatrixType</a></div><div class="ttdeci">TDenseSpace::MatrixType LocalSystemMatrixType</div><div class="ttdoc">Local system matrix type definition.</div><div class="ttdef"><b>Definition:</b> scheme.h:76</div></div>
@@ -605,7 +605,7 @@ $(function() {
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri May 12 2023 02:03:18 for KratosMultiphysics by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Sat May 13 2023 02:03:39 for KratosMultiphysics by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

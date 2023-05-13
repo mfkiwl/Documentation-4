@@ -282,10 +282,10 @@ $(function() {
 <div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;            <span class="keyword">const</span> <span class="keyword">auto</span> it_node_begin = <a class="code" href="../../db/d91/namespace_kratos_1_1_rans_variable_utilities.html#af0d227aa5521a639dd5f46737c54e84c">rModelPart</a>.NodesBegin();</div>
 <div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160; </div>
 <div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;            <span class="comment">// Construct the node initializer lambda based on whether rot_z exists</span></div>
-<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;            std::function&lt;void(<a class="code" href="../../d5/ddd/class_kratos_1_1_node.html">Node&lt;3&gt;</a>&amp;)&gt; initializer_base, initializer;</div>
+<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;            std::function&lt;void(<a class="code" href="../../d5/ddd/class_kratos_1_1_node.html">Node</a>&amp;)&gt; initializer_base, initializer;</div>
 <div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;            <span class="keyword">const</span> <a class="code" href="../../d4/ddc/class_kratos_1_1array__1d.html">array_1d&lt;double, 3&gt;</a> zero_array = <a class="code" href="../../db/d66/namespace_kratos.html#a0060702fbd6c7d45c773436101c9ded3">ZeroVector</a>(3);</div>
 <div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160; </div>
-<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;            initializer_base = [&amp;zero_array, DomainSize](<a class="code" href="../../d5/ddd/class_kratos_1_1_node.html">Node&lt;3&gt;</a>&amp; rNode){</div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;            initializer_base = [&amp;zero_array, DomainSize](<a class="code" href="../../d5/ddd/class_kratos_1_1_node.html">Node</a>&amp; rNode){</div>
 <div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;                rNode.SetValue(NODAL_MASS, 0.0);</div>
 <div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;                rNode.FastGetSolutionStepValue(MIDDLE_VELOCITY) = zero_array;</div>
 <div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160; </div>
@@ -303,7 +303,7 @@ $(function() {
 <div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160; </div>
 <div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;            <span class="keyword">const</span> <span class="keywordtype">bool</span> has_dof_for_rot_z = it_node_begin-&gt;HasDofFor(ROTATION_Z);</div>
 <div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;            <span class="keywordflow">if</span> (has_dof_for_rot_z) {</div>
-<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;                initializer = [&amp;zero_array, DomainSize, &amp;initializer_base](<a class="code" href="../../d5/ddd/class_kratos_1_1_node.html">Node&lt;3&gt;</a>&amp; rNode){</div>
+<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;                initializer = [&amp;zero_array, DomainSize, &amp;initializer_base](<a class="code" href="../../d5/ddd/class_kratos_1_1_node.html">Node</a>&amp; rNode){</div>
 <div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;                    initializer_base(rNode);</div>
 <div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;                    rNode.SetValue(NODAL_INERTIA, zero_array);</div>
 <div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;                    rNode.FastGetSolutionStepValue(MIDDLE_ANGULAR_VELOCITY) = zero_array;</div>
@@ -503,9 +503,9 @@ $(function() {
 <div class="line"><a name="l00534"></a><span class="lineno">  534</span>&#160;            <span class="keyword">const</span> <a class="code" href="../../dd/df2/class_kratos_1_1_explicit_central_differences_scheme.html#ab2c99d375b92b24f121d2bc53ee1ba19">IndexType</a> rotppos = has_dof_for_rot_z ? it_node_begin-&gt;GetDofPosition(ROTATION_X) : 0;</div>
 <div class="line"><a name="l00535"></a><span class="lineno">  535</span>&#160; </div>
 <div class="line"><a name="l00536"></a><span class="lineno">  536</span>&#160;            <span class="comment">// Construct initializer lambda</span></div>
-<div class="line"><a name="l00537"></a><span class="lineno">  537</span>&#160;            std::function&lt;void(<a class="code" href="../../d5/ddd/class_kratos_1_1_node.html">Node&lt;3&gt;</a>&amp;)&gt; initializer_base, initializer;</div>
+<div class="line"><a name="l00537"></a><span class="lineno">  537</span>&#160;            std::function&lt;void(<a class="code" href="../../d5/ddd/class_kratos_1_1_node.html">Node</a>&amp;)&gt; initializer_base, initializer;</div>
 <div class="line"><a name="l00538"></a><span class="lineno">  538</span>&#160; </div>
-<div class="line"><a name="l00539"></a><span class="lineno">  539</span>&#160;            initializer_base = [&amp;zero_array, &amp;disppos, DomainSize, <span class="keyword">this</span>](<a class="code" href="../../d5/ddd/class_kratos_1_1_node.html">Node&lt;3&gt;</a>&amp; rNode) {</div>
+<div class="line"><a name="l00539"></a><span class="lineno">  539</span>&#160;            initializer_base = [&amp;zero_array, &amp;disppos, DomainSize, <span class="keyword">this</span>](<a class="code" href="../../d5/ddd/class_kratos_1_1_node.html">Node</a>&amp; rNode) {</div>
 <div class="line"><a name="l00540"></a><span class="lineno">  540</span>&#160;                <span class="keyword">const</span> <span class="keywordtype">double</span> nodal_mass = rNode.GetValue(NODAL_MASS);</div>
 <div class="line"><a name="l00541"></a><span class="lineno">  541</span>&#160;                <span class="keyword">const</span> <a class="code" href="../../d4/ddc/class_kratos_1_1array__1d.html">array_1d&lt;double, 3&gt;</a>&amp; r_current_residual = rNode.FastGetSolutionStepValue(FORCE_RESIDUAL);</div>
 <div class="line"><a name="l00542"></a><span class="lineno">  542</span>&#160; </div>
@@ -543,7 +543,7 @@ $(function() {
 <div class="line"><a name="l00574"></a><span class="lineno">  574</span>&#160;            };</div>
 <div class="line"><a name="l00575"></a><span class="lineno">  575</span>&#160; </div>
 <div class="line"><a name="l00576"></a><span class="lineno">  576</span>&#160;            <span class="keywordflow">if</span> (has_dof_for_rot_z) {</div>
-<div class="line"><a name="l00577"></a><span class="lineno">  577</span>&#160;                initializer = [&amp;rotppos, &amp;initializer_base, DomainSize, <span class="keyword">this</span>](<a class="code" href="../../d5/ddd/class_kratos_1_1_node.html">Node&lt;3&gt;</a>&amp; rNode) {</div>
+<div class="line"><a name="l00577"></a><span class="lineno">  577</span>&#160;                initializer = [&amp;rotppos, &amp;initializer_base, DomainSize, <span class="keyword">this</span>](<a class="code" href="../../d5/ddd/class_kratos_1_1_node.html">Node</a>&amp; rNode) {</div>
 <div class="line"><a name="l00578"></a><span class="lineno">  578</span>&#160;                    initializer_base(rNode);</div>
 <div class="line"><a name="l00579"></a><span class="lineno">  579</span>&#160;                    <span class="keyword">const</span> <a class="code" href="../../d4/ddc/class_kratos_1_1array__1d.html">array_1d&lt;double, 3&gt;</a>&amp; nodal_inertia = rNode.GetValue(NODAL_INERTIA);</div>
 <div class="line"><a name="l00580"></a><span class="lineno">  580</span>&#160;                    <span class="keyword">const</span> <a class="code" href="../../d4/ddc/class_kratos_1_1array__1d.html">array_1d&lt;double, 3&gt;</a>&amp; r_current_residual_moment = rNode.FastGetSolutionStepValue(MOMENT_RESIDUAL);</div>
@@ -764,7 +764,7 @@ $(function() {
 <div class="ttc" id="aclass_kratos_1_1_explicit_central_differences_scheme_html_affa91e8426af3f7d7facbd8dded51a86"><div class="ttname"><a href="../../dd/df2/class_kratos_1_1_explicit_central_differences_scheme.html#affa91e8426af3f7d7facbd8dded51a86">Kratos::ExplicitCentralDifferencesScheme::SizeType</a></div><div class="ttdeci">std::size_t SizeType</div><div class="ttdoc">Definition of the size type.</div><div class="ttdef"><b>Definition:</b> explicit_central_differences_scheme.hpp:78</div></div>
 <div class="ttc" id="aclass_kratos_1_1_index_partition_html"><div class="ttname"><a href="../../d9/d9b/class_kratos_1_1_index_partition.html">Kratos::IndexPartition</a></div><div class="ttdoc">This class is useful for index iteration over containers.</div><div class="ttdef"><b>Definition:</b> parallel_utilities.h:408</div></div>
 <div class="ttc" id="aclass_kratos_1_1_index_partition_html_af1ce67064923939c2a8a0172cdb5e344"><div class="ttname"><a href="../../d9/d9b/class_kratos_1_1_index_partition.html#af1ce67064923939c2a8a0172cdb5e344">Kratos::IndexPartition::for_each</a></div><div class="ttdeci">void for_each(TUnaryFunction &amp;&amp;f)</div><div class="ttdef"><b>Definition:</b> parallel_utilities.h:471</div></div>
-<div class="ttc" id="aclass_kratos_1_1_node_html"><div class="ttname"><a href="../../d5/ddd/class_kratos_1_1_node.html">Kratos::Node</a></div><div class="ttdoc">This class defines the node.</div><div class="ttdef"><b>Definition:</b> node.h:68</div></div>
+<div class="ttc" id="aclass_kratos_1_1_node_html"><div class="ttname"><a href="../../d5/ddd/class_kratos_1_1_node.html">Kratos::Node</a></div><div class="ttdoc">This class defines the node.</div><div class="ttdef"><b>Definition:</b> node.h:67</div></div>
 <div class="ttc" id="aclass_kratos_1_1_scheme_html"><div class="ttname"><a href="../../d1/da3/class_kratos_1_1_scheme.html">Kratos::Scheme</a></div><div class="ttdoc">This class provides the implementation of the basic tasks that are needed by the solution strategy.</div><div class="ttdef"><b>Definition:</b> scheme.h:58</div></div>
 <div class="ttc" id="aclass_kratos_1_1_scheme_html_a047ea5ef754b00a80f653e523e3e96d0"><div class="ttname"><a href="../../d1/da3/class_kratos_1_1_scheme.html#a047ea5ef754b00a80f653e523e3e96d0">Kratos::Scheme::DofsArrayType</a></div><div class="ttdeci">ModelPart::DofsArrayType DofsArrayType</div><div class="ttdoc">DoF array type definition.</div><div class="ttdef"><b>Definition:</b> scheme.h:83</div></div>
 <div class="ttc" id="aclass_kratos_1_1_scheme_html_a1d630fc6b95a4f685f2b283e4190aace"><div class="ttname"><a href="../../d1/da3/class_kratos_1_1_scheme.html#a1d630fc6b95a4f685f2b283e4190aace">Kratos::Scheme::ConditionsArrayType</a></div><div class="ttdeci">ModelPart::ConditionsContainerType ConditionsArrayType</div><div class="ttdoc">Conditions containers definition.</div><div class="ttdef"><b>Definition:</b> scheme.h:88</div></div>
@@ -816,7 +816,7 @@ $(function() {
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri May 12 2023 02:04:51 for KratosMultiphysics by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Sat May 13 2023 02:05:12 for KratosMultiphysics by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

@@ -286,7 +286,7 @@ $(function() {
 <div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;        <span class="keyword">auto</span>&amp; r_settings = *p_settings;</div>
 <div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160; </div>
 <div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;        <span class="comment">// Initialize the projection value</span></div>
-<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;        <a class="code" href="../../db/d66/namespace_kratos.html#a382d1519b254c52c6699149b2192aa8c">block_for_each</a>(r_model_part.Nodes(), [&amp;](<a class="code" href="../../d5/ddd/class_kratos_1_1_node.html">Node&lt;3&gt;</a>&amp; rNode){</div>
+<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;        <a class="code" href="../../db/d66/namespace_kratos.html#a382d1519b254c52c6699149b2192aa8c">block_for_each</a>(r_model_part.Nodes(), [&amp;](<a class="code" href="../../d5/ddd/class_kratos_1_1_node.html">Node</a>&amp; rNode){</div>
 <div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;            rNode.GetValue(r_settings.GetProjectionVariable()) = 0.0;</div>
 <div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;        });</div>
 <div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160; </div>
@@ -346,7 +346,7 @@ $(function() {
 <div class="ttc" id="aclass_kratos_1_1_explicit_solving_strategy_runge_kutta_html_ad83e8079bcb30f81e71973d3b67d411c"><div class="ttname"><a href="../../de/d18/class_kratos_1_1_explicit_solving_strategy_runge_kutta.html#ad83e8079bcb30f81e71973d3b67d411c">Kratos::ExplicitSolvingStrategyRungeKutta::InitializeRungeKuttaIntermediateSubStep</a></div><div class="ttdeci">virtual void InitializeRungeKuttaIntermediateSubStep()</div><div class="ttdoc">Initialize the Runge-Kutta intermediate substep This method is intended to implement all the operatio...</div><div class="ttdef"><b>Definition:</b> explicit_solving_strategy_runge_kutta.h:321</div></div>
 <div class="ttc" id="aclass_kratos_1_1_index_partition_html"><div class="ttname"><a href="../../d9/d9b/class_kratos_1_1_index_partition.html">Kratos::IndexPartition</a></div><div class="ttdoc">This class is useful for index iteration over containers.</div><div class="ttdef"><b>Definition:</b> parallel_utilities.h:408</div></div>
 <div class="ttc" id="aclass_kratos_1_1_index_partition_html_af1ce67064923939c2a8a0172cdb5e344"><div class="ttname"><a href="../../d9/d9b/class_kratos_1_1_index_partition.html#af1ce67064923939c2a8a0172cdb5e344">Kratos::IndexPartition::for_each</a></div><div class="ttdeci">void for_each(TUnaryFunction &amp;&amp;f)</div><div class="ttdef"><b>Definition:</b> parallel_utilities.h:471</div></div>
-<div class="ttc" id="aclass_kratos_1_1_node_html"><div class="ttname"><a href="../../d5/ddd/class_kratos_1_1_node.html">Kratos::Node</a></div><div class="ttdoc">This class defines the node.</div><div class="ttdef"><b>Definition:</b> node.h:68</div></div>
+<div class="ttc" id="aclass_kratos_1_1_node_html"><div class="ttname"><a href="../../d5/ddd/class_kratos_1_1_node.html">Kratos::Node</a></div><div class="ttdoc">This class defines the node.</div><div class="ttdef"><b>Definition:</b> node.h:67</div></div>
 <div class="ttc" id="aclass_kratos_1_1_solving_strategy_html"><div class="ttname"><a href="../../de/d0a/class_kratos_1_1_solving_strategy.html">Kratos::SolvingStrategy</a></div><div class="ttdoc">Solving strategy base class This is the base class from which we will derive all the strategies (impl...</div><div class="ttdef"><b>Definition:</b> solving_strategy.h:64</div></div>
 <div class="ttc" id="aclass_kratos_1_1_solving_strategy_html_a6147a51a63c79eada32120eafc23b517"><div class="ttname"><a href="../../de/d0a/class_kratos_1_1_solving_strategy.html#a6147a51a63c79eada32120eafc23b517">Kratos::SolvingStrategy::GetModelPart</a></div><div class="ttdeci">ModelPart &amp; GetModelPart()</div><div class="ttdoc">Operations to get the pointer to the model.</div><div class="ttdef"><b>Definition:</b> solving_strategy.h:350</div></div>
 <div class="ttc" id="aclass_kratos_1_1_solving_strategy_html_ad2dda17b2c24e571bfdd05e9db418986"><div class="ttname"><a href="../../de/d0a/class_kratos_1_1_solving_strategy.html#ad2dda17b2c24e571bfdd05e9db418986">Kratos::SolvingStrategy::MoveMeshFlag</a></div><div class="ttdeci">bool MoveMeshFlag()</div><div class="ttdoc">This function returns the flag that says if the mesh is moved.</div><div class="ttdef"><b>Definition:</b> solving_strategy.h:290</div></div>
@@ -366,7 +366,7 @@ $(function() {
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri May 12 2023 02:02:43 for KratosMultiphysics by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Sat May 13 2023 02:03:05 for KratosMultiphysics by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

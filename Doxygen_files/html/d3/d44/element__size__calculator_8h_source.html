@@ -132,25 +132,25 @@ $(function() {
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160; </div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160; </div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">double</span> MinimumElementSize(<span class="keyword">const</span> Geometry&lt;Node&lt;3&gt; &gt;&amp; <a class="code" href="../../da/dec/namespace_kratos_1_1_mortar_utilities.html#a407333aa7d9b470dab6a9652f72a6ebd">rGeometry</a>);</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">double</span> MinimumElementSize(<span class="keyword">const</span> Geometry&lt;Node &gt;&amp; <a class="code" href="../../da/dec/namespace_kratos_1_1_mortar_utilities.html#a407333aa7d9b470dab6a9652f72a6ebd">rGeometry</a>);</div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160; </div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160; </div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">double</span> MinimumElementSizeDerivative(</div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> DerivativeNodeIndex,</div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> DerivativeDirectionIndex,</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;        <span class="keyword">const</span> Geometry&lt;Node&lt;3&gt; &gt;&amp; <a class="code" href="../../da/dec/namespace_kratos_1_1_mortar_utilities.html#a407333aa7d9b470dab6a9652f72a6ebd">rGeometry</a>);</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;        <span class="keyword">const</span> Geometry&lt;Node &gt;&amp; <a class="code" href="../../da/dec/namespace_kratos_1_1_mortar_utilities.html#a407333aa7d9b470dab6a9652f72a6ebd">rGeometry</a>);</div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160; </div>
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160; </div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">double</span> AverageElementSize(<span class="keyword">const</span> Geometry&lt;Node&lt;3&gt; &gt;&amp; <a class="code" href="../../da/dec/namespace_kratos_1_1_mortar_utilities.html#a407333aa7d9b470dab6a9652f72a6ebd">rGeometry</a>);</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">double</span> AverageElementSize(<span class="keyword">const</span> Geometry&lt;Node &gt;&amp; <a class="code" href="../../da/dec/namespace_kratos_1_1_mortar_utilities.html#a407333aa7d9b470dab6a9652f72a6ebd">rGeometry</a>);</div>
 <div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160; </div>
 <div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160; </div>
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">double</span> AverageElementSizeDerivative(</div>
 <div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> DerivativeNodeIndex,</div>
 <div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> DerivativeDirectionIndex,</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;        <span class="keyword">const</span> Geometry&lt;Node&lt;3&gt; &gt;&amp; <a class="code" href="../../da/dec/namespace_kratos_1_1_mortar_utilities.html#a407333aa7d9b470dab6a9652f72a6ebd">rGeometry</a>);</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;        <span class="keyword">const</span> Geometry&lt;Node &gt;&amp; <a class="code" href="../../da/dec/namespace_kratos_1_1_mortar_utilities.html#a407333aa7d9b470dab6a9652f72a6ebd">rGeometry</a>);</div>
 <div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160; </div>
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160; </div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">double</span> ProjectedElementSize(<span class="keyword">const</span> Geometry&lt;Node&lt;3&gt; &gt;&amp; <a class="code" href="../../da/dec/namespace_kratos_1_1_mortar_utilities.html#a407333aa7d9b470dab6a9652f72a6ebd">rGeometry</a>, <span class="keyword">const</span> array_1d&lt;double,3&gt;&amp; rVelocity);</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">double</span> ProjectedElementSize(<span class="keyword">const</span> Geometry&lt;Node &gt;&amp; <a class="code" href="../../da/dec/namespace_kratos_1_1_mortar_utilities.html#a407333aa7d9b470dab6a9652f72a6ebd">rGeometry</a>, <span class="keyword">const</span> array_1d&lt;double,3&gt;&amp; rVelocity);</div>
 <div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160; </div>
 <div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160; </div>
 <div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">double</span> GradientsElementSize(<span class="keyword">const</span> BoundedMatrix&lt;double, 3, 2&gt;&amp; rDN_DX);</div>
@@ -236,7 +236,7 @@ $(function() {
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri May 12 2023 02:08:13 for KratosMultiphysics by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Sat May 13 2023 02:08:34 for KratosMultiphysics by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

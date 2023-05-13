@@ -233,14 +233,14 @@ $(function() {
 <div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;        <a class="code" href="../../de/da1/namespace_kratos_1_1_cpp_tests_utilities.html#a9ede6dd3e9c2800a383b30d8c97601f7">BaseType::Initialize</a>();</div>
 <div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160; </div>
 <div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;        <span class="comment">// Initialize the postprocess non-historical variables</span></div>
-<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;        <a class="code" href="../../db/d66/namespace_kratos.html#a382d1519b254c52c6699149b2192aa8c">block_for_each</a>(r_model_part.Nodes(), [](<a class="code" href="../../d5/ddd/class_kratos_1_1_node.html">Node&lt;3&gt;</a>&amp; rNode){</div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;        <a class="code" href="../../db/d66/namespace_kratos.html#a382d1519b254c52c6699149b2192aa8c">block_for_each</a>(r_model_part.Nodes(), [](<a class="code" href="../../d5/ddd/class_kratos_1_1_node.html">Node</a>&amp; rNode){</div>
 <div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;            rNode.SetValue(MACH, 0.0);</div>
 <div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;            rNode.SetValue(SOUND_VELOCITY, 0.0);</div>
 <div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;        });</div>
 <div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160; </div>
 <div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;        <span class="comment">// If required, initialize the OSS projection variables</span></div>
 <div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;        <span class="keywordflow">if</span> (r_process_info[OSS_SWITCH]) {</div>
-<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;            <a class="code" href="../../db/d66/namespace_kratos.html#a382d1519b254c52c6699149b2192aa8c">block_for_each</a>(r_model_part.Nodes(), [](<a class="code" href="../../d5/ddd/class_kratos_1_1_node.html">Node&lt;3&gt;</a>&amp; rNode){</div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;            <a class="code" href="../../db/d66/namespace_kratos.html#a382d1519b254c52c6699149b2192aa8c">block_for_each</a>(r_model_part.Nodes(), [](<a class="code" href="../../d5/ddd/class_kratos_1_1_node.html">Node</a>&amp; rNode){</div>
 <div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;                rNode.SetValue(DENSITY_PROJECTION, 0.0);</div>
 <div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;                rNode.SetValue(TOTAL_ENERGY_PROJECTION, 0.0);</div>
 <div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;                rNode.SetValue(MOMENTUM_PROJECTION, ZeroVector(3));</div>
@@ -377,7 +377,7 @@ $(function() {
 <div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;        <span class="keyword">const</span> <span class="keyword">auto</span>&amp; r_lumped_mass_vector = p_explicit_bs-&gt;GetLumpedMassMatrixVector();</div>
 <div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160; </div>
 <div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;        <span class="comment">// Initialize the projection values</span></div>
-<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;        <a class="code" href="../../db/d66/namespace_kratos.html#a382d1519b254c52c6699149b2192aa8c">block_for_each</a>(r_model_part.Nodes(), [](<a class="code" href="../../d5/ddd/class_kratos_1_1_node.html">Node&lt;3&gt;</a>&amp; rNode){</div>
+<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;        <a class="code" href="../../db/d66/namespace_kratos.html#a382d1519b254c52c6699149b2192aa8c">block_for_each</a>(r_model_part.Nodes(), [](<a class="code" href="../../d5/ddd/class_kratos_1_1_node.html">Node</a>&amp; rNode){</div>
 <div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;            rNode.GetValue(DENSITY_PROJECTION) = 0.0;</div>
 <div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;            rNode.GetValue(MOMENTUM_PROJECTION) = ZeroVector(3);</div>
 <div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;            rNode.GetValue(TOTAL_ENERGY_PROJECTION) = 0.0;</div>
@@ -418,7 +418,7 @@ $(function() {
 <div class="line"><a name="l00430"></a><span class="lineno">  430</span>&#160; </div>
 <div class="line"><a name="l00431"></a><span class="lineno">  431</span>&#160;        <span class="comment">// Loop the nodes to calculate the non-conservative magnitudes</span></div>
 <div class="line"><a name="l00432"></a><span class="lineno">  432</span>&#160;        <a class="code" href="../../d4/ddc/class_kratos_1_1array__1d.html">array_1d&lt;double,3&gt;</a> aux_vel;</div>
-<div class="line"><a name="l00433"></a><span class="lineno">  433</span>&#160;        <a class="code" href="../../db/d66/namespace_kratos.html#a382d1519b254c52c6699149b2192aa8c">block_for_each</a>(r_model_part.Nodes(), aux_vel,[&amp;] (<a class="code" href="../../d5/ddd/class_kratos_1_1_node.html">Node&lt;3&gt;</a> &amp;rNode, <a class="code" href="../../d4/ddc/class_kratos_1_1array__1d.html">array_1d&lt;double,3&gt;</a>&amp;rVelocity) {</div>
+<div class="line"><a name="l00433"></a><span class="lineno">  433</span>&#160;        <a class="code" href="../../db/d66/namespace_kratos.html#a382d1519b254c52c6699149b2192aa8c">block_for_each</a>(r_model_part.Nodes(), aux_vel,[&amp;] (<a class="code" href="../../d5/ddd/class_kratos_1_1_node.html">Node</a> &amp;rNode, <a class="code" href="../../d4/ddc/class_kratos_1_1array__1d.html">array_1d&lt;double,3&gt;</a>&amp;rVelocity) {</div>
 <div class="line"><a name="l00434"></a><span class="lineno">  434</span>&#160;            const auto&amp; r_mom = rNode.FastGetSolutionStepValue(MOMENTUM);</div>
 <div class="line"><a name="l00435"></a><span class="lineno">  435</span>&#160;            const double&amp; r_rho = rNode.FastGetSolutionStepValue(DENSITY);</div>
 <div class="line"><a name="l00436"></a><span class="lineno">  436</span>&#160;            const double&amp; r_tot_ener = rNode.FastGetSolutionStepValue(TOTAL_ENERGY);</div>
@@ -437,7 +437,7 @@ $(function() {
 <div class="line"><a name="l00454"></a><span class="lineno">  454</span>&#160;    {</div>
 <div class="line"><a name="l00455"></a><span class="lineno">  455</span>&#160;        <span class="keyword">auto</span> &amp;r_model_part = BaseType::GetModelPart();</div>
 <div class="line"><a name="l00456"></a><span class="lineno">  456</span>&#160; </div>
-<div class="line"><a name="l00457"></a><span class="lineno">  457</span>&#160;        <a class="code" href="../../db/d66/namespace_kratos.html#a382d1519b254c52c6699149b2192aa8c">block_for_each</a>(r_model_part.Nodes(), [](<a class="code" href="../../d5/ddd/class_kratos_1_1_node.html">Node&lt;3&gt;</a>&amp; rNode){</div>
+<div class="line"><a name="l00457"></a><span class="lineno">  457</span>&#160;        <a class="code" href="../../db/d66/namespace_kratos.html#a382d1519b254c52c6699149b2192aa8c">block_for_each</a>(r_model_part.Nodes(), [](<a class="code" href="../../d5/ddd/class_kratos_1_1_node.html">Node</a>&amp; rNode){</div>
 <div class="line"><a name="l00458"></a><span class="lineno">  458</span>&#160;            if (rNode.Is(SLIP)) {</div>
 <div class="line"><a name="l00459"></a><span class="lineno">  459</span>&#160;                auto unit_normal = rNode.FastGetSolutionStepValue(NORMAL);</div>
 <div class="line"><a name="l00460"></a><span class="lineno">  460</span>&#160;                unit_normal /= norm_2(unit_normal);</div>
@@ -555,7 +555,7 @@ $(function() {
 <div class="ttc" id="aclass_kratos_1_1_element_html"><div class="ttname"><a href="../../d5/dd4/class_kratos_1_1_element.html">Kratos::Element</a></div><div class="ttdoc">Base class for all Elements.</div><div class="ttdef"><b>Definition:</b> element.h:60</div></div>
 <div class="ttc" id="aclass_kratos_1_1_index_partition_html"><div class="ttname"><a href="../../d9/d9b/class_kratos_1_1_index_partition.html">Kratos::IndexPartition</a></div><div class="ttdoc">This class is useful for index iteration over containers.</div><div class="ttdef"><b>Definition:</b> parallel_utilities.h:408</div></div>
 <div class="ttc" id="aclass_kratos_1_1_index_partition_html_af1ce67064923939c2a8a0172cdb5e344"><div class="ttname"><a href="../../d9/d9b/class_kratos_1_1_index_partition.html#af1ce67064923939c2a8a0172cdb5e344">Kratos::IndexPartition::for_each</a></div><div class="ttdeci">void for_each(TUnaryFunction &amp;&amp;f)</div><div class="ttdef"><b>Definition:</b> parallel_utilities.h:471</div></div>
-<div class="ttc" id="aclass_kratos_1_1_node_html"><div class="ttname"><a href="../../d5/ddd/class_kratos_1_1_node.html">Kratos::Node</a></div><div class="ttdoc">This class defines the node.</div><div class="ttdef"><b>Definition:</b> node.h:68</div></div>
+<div class="ttc" id="aclass_kratos_1_1_node_html"><div class="ttname"><a href="../../d5/ddd/class_kratos_1_1_node.html">Kratos::Node</a></div><div class="ttdoc">This class defines the node.</div><div class="ttdef"><b>Definition:</b> node.h:67</div></div>
 <div class="ttc" id="aclass_kratos_1_1array__1d_html"><div class="ttname"><a href="../../d4/ddc/class_kratos_1_1array__1d.html">Kratos::array_1d&lt; double, 3 &gt;</a></div></div>
 <div class="ttc" id="aclass_model_part_html"><div class="ttname"><a href="../../d4/d5e/class_model_part.html">ModelPart</a></div><div class="ttdoc">This class aims to manage meshes for multi-physics simulations.</div><div class="ttdef"><b>Definition:</b> model_part.h:66</div></div>
 <div class="ttc" id="aclass_parameters_html"><div class="ttname"><a href="../../da/d39/class_parameters.html">Parameters</a></div><div class="ttdoc">This class provides to Kratos a data structure for I/O based on the standard of JSON.</div></div>
@@ -591,7 +591,7 @@ $(function() {
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri May 12 2023 02:03:07 for KratosMultiphysics by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Sat May 13 2023 02:03:28 for KratosMultiphysics by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

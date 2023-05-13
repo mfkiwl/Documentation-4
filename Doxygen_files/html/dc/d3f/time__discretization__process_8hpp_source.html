@@ -112,7 +112,7 @@ $(function() {
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keyword">typedef</span> <a class="code" href="../../db/d66/namespace_kratos.html#aba5dbdf990a4567126376ad0aae1687e">ModelPart::ElementsContainerType</a>                <a class="code" href="../../db/d66/namespace_kratos.html#aba5dbdf990a4567126376ad0aae1687e">ElementsContainerType</a>;</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keyword">typedef</span> <a class="code" href="../../da/d07/namespace_kratos_1_1_python.html#a9cd87c2c72b46a2ae84f89a5d673dc9e">ModelPart::MeshType::GeometryType::PointsArrayType</a>    <a class="code" href="../../db/d66/namespace_kratos.html#aeebe5416d846dedd3696f07e4aa44cb6">PointsArrayType</a>;</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keyword">typedef</span> GlobalPointersVector&lt;Node&lt;3&gt; &gt;       <a class="code" href="../../db/d66/namespace_kratos.html#ae56ef975aa658e426e2f5201cca2c917">NodeWeakPtrVectorType</a>;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keyword">typedef</span> GlobalPointersVector&lt;Node &gt;       <a class="code" href="../../db/d66/namespace_kratos.html#a97c2433cd384840d71dc50ea0951a0d0">NodeWeakPtrVectorType</a>;</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keyword">typedef</span> GlobalPointersVector&lt;Element&gt;     <a class="code" href="../../d2/d72/group___fluid_dynamics_application.html#gaf38c9395df826a94c2481329cbd48e2d">ElementWeakPtrVectorType</a>;</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="keyword">typedef</span> GlobalPointersVector&lt;Condition&gt; <a class="code" href="../../db/d66/namespace_kratos.html#aa7bd3f2730e238bf31b104fc941e85da">ConditionWeakPtrVectorType</a>;</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
@@ -387,7 +387,7 @@ $(function() {
 <div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;<span class="comment">//         const unsigned int dimension = (itElem)-&gt;GetGeometry().WorkingSpaceDimension();</span></div>
 <div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;<span class="comment">//         if(dimension==2){</span></div>
 <div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;<span class="comment">//           currentElementalArea =  (itElem)-&gt;GetGeometry().Area();</span></div>
-<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;<span class="comment">//           Geometry&lt;Node&lt;3&gt; &gt;  updatedElementCoordinates;</span></div>
+<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;<span class="comment">//           Geometry&lt;Node &gt;  updatedElementCoordinates;</span></div>
 <div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;<span class="comment">//           bool solidElement=false;</span></div>
 <div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;<span class="comment">//           for(unsigned int i=0; i&lt;itElem-&gt;GetGeometry().size(); ++i)</span></div>
 <div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;<span class="comment">//           {</span></div>
@@ -397,15 +397,15 @@ $(function() {
 <div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160; </div>
 <div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;<span class="comment">//             const array_1d&lt;double,3&gt; &amp;Vel = itElem-&gt;GetGeometry()[i].FastGetSolutionStepValue(VELOCITY);</span></div>
 <div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;<span class="comment">//             Point updatedNodalCoordinates=itElem-&gt;GetGeometry()[i].Coordinates()+Vel*temporaryTimeInterval;</span></div>
-<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;<span class="comment">//             updatedElementCoordinates.push_back(Kratos::make_shared&lt;Node&lt;3&gt; &gt;(i,updatedNodalCoordinates.X(),updatedNodalCoordinates.Y(),updatedNodalCoordinates.Z()));</span></div>
+<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;<span class="comment">//             updatedElementCoordinates.push_back(Kratos::make_shared&lt;Node &gt;(i,updatedNodalCoordinates.X(),updatedNodalCoordinates.Y(),updatedNodalCoordinates.Z()));</span></div>
 <div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;<span class="comment">//           }</span></div>
 <div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160; </div>
 <div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;<span class="comment">//           double newArea=0;</span></div>
 <div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;<span class="comment">//           if(itElem-&gt;GetGeometry().size()==3){</span></div>
-<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;<span class="comment">//             Triangle2D3&lt;Node&lt;3&gt; &gt; myGeometry(updatedElementCoordinates);</span></div>
+<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;<span class="comment">//             Triangle2D3&lt;Node &gt; myGeometry(updatedElementCoordinates);</span></div>
 <div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;<span class="comment">//             newArea=myGeometry.Area();</span></div>
 <div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;<span class="comment">//           }else if(itElem-&gt;GetGeometry().size()==6){</span></div>
-<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;<span class="comment">//             Triangle2D6&lt;Node&lt;3&gt; &gt; myGeometry(updatedElementCoordinates);</span></div>
+<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;<span class="comment">//             Triangle2D6&lt;Node &gt; myGeometry(updatedElementCoordinates);</span></div>
 <div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;<span class="comment">//             newArea=myGeometry.Area();</span></div>
 <div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;<span class="comment">//           }else{</span></div>
 <div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;<span class="comment">//             std::cout&lt;&lt;&quot;GEOMETRY NOT DEFINED&quot;&lt;&lt;std::endl;</span></div>
@@ -426,21 +426,21 @@ $(function() {
 <div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;<span class="comment">//               break;</span></div>
 <div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;<span class="comment">//             }</span></div>
 <div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;<span class="comment">//           }else{</span></div>
-<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;<span class="comment">//             Geometry&lt;Node&lt;3&gt; &gt;  updatedEnlargedElementCoordinates;</span></div>
+<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;<span class="comment">//             Geometry&lt;Node &gt;  updatedEnlargedElementCoordinates;</span></div>
 <div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160; </div>
 <div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;<span class="comment">//             for(unsigned int i=0; i&lt;itElem-&gt;GetGeometry().size(); ++i)</span></div>
 <div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;<span class="comment">//             {</span></div>
 <div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;<span class="comment">//               const array_1d&lt;double,3&gt; &amp;Vel = itElem-&gt;GetGeometry()[i].FastGetSolutionStepValue(VELOCITY);</span></div>
 <div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;<span class="comment">//               Point updatedNodalCoordinates=itElem-&gt;GetGeometry()[i].Coordinates()+Vel*temporaryTimeInterval*2.5;</span></div>
-<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;<span class="comment">//               updatedEnlargedElementCoordinates.push_back(Kratos::make_shared&lt;Node&lt;3&gt; &gt;(i,updatedNodalCoordinates.X(),updatedNodalCoordinates.Y(),updatedNodalCoordinates.Z()));</span></div>
+<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;<span class="comment">//               updatedEnlargedElementCoordinates.push_back(Kratos::make_shared&lt;Node &gt;(i,updatedNodalCoordinates.X(),updatedNodalCoordinates.Y(),updatedNodalCoordinates.Z()));</span></div>
 <div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160; </div>
 <div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;<span class="comment">//             }</span></div>
 <div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160; </div>
 <div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;<span class="comment">//             if(itElem-&gt;GetGeometry().size()==3){</span></div>
-<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;<span class="comment">//               Triangle2D3&lt;Node&lt;3&gt; &gt; myGeometry(updatedEnlargedElementCoordinates);</span></div>
+<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;<span class="comment">//               Triangle2D3&lt;Node &gt; myGeometry(updatedEnlargedElementCoordinates);</span></div>
 <div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;<span class="comment">//               newArea=myGeometry.Area();</span></div>
 <div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;<span class="comment">//             }else if(itElem-&gt;GetGeometry().size()==6){</span></div>
-<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;<span class="comment">//               Triangle2D6&lt;Node&lt;3&gt; &gt; myGeometry(updatedEnlargedElementCoordinates);</span></div>
+<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;<span class="comment">//               Triangle2D6&lt;Node &gt; myGeometry(updatedEnlargedElementCoordinates);</span></div>
 <div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;<span class="comment">//               newArea=myGeometry.Area();</span></div>
 <div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;<span class="comment">//             }else{</span></div>
 <div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;<span class="comment">//               std::cout&lt;&lt;&quot;GEOMETRY NOT DEFINED&quot;&lt;&lt;std::endl;</span></div>
@@ -455,7 +455,7 @@ $(function() {
 <div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;<span class="comment">//         }</span></div>
 <div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;<span class="comment">//         else if(dimension==3){</span></div>
 <div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;<span class="comment">//           double currentElementalVolume =  (itElem)-&gt;GetGeometry().Volume();</span></div>
-<div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;<span class="comment">//           Geometry&lt;Node&lt;3&gt; &gt;  updatedElementCoordinates;</span></div>
+<div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;<span class="comment">//           Geometry&lt;Node &gt;  updatedElementCoordinates;</span></div>
 <div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;<span class="comment">//           bool solidElement=false;</span></div>
 <div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;<span class="comment">//           for(unsigned int i=0; i&lt;itElem-&gt;GetGeometry().size(); ++i)</span></div>
 <div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;<span class="comment">//           {</span></div>
@@ -464,15 +464,15 @@ $(function() {
 <div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;<span class="comment">//             }</span></div>
 <div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;<span class="comment">//             const array_1d&lt;double,3&gt; &amp;Vel = itElem-&gt;GetGeometry()[i].FastGetSolutionStepValue(VELOCITY);</span></div>
 <div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;<span class="comment">//             Point updatedNodalCoordinates=itElem-&gt;GetGeometry()[i].Coordinates()+Vel*temporaryTimeInterval;</span></div>
-<div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160;<span class="comment">//             updatedElementCoordinates.push_back(Kratos::make_shared&lt;Node&lt;3&gt; &gt;(i,updatedNodalCoordinates.X(),updatedNodalCoordinates.Y(),updatedNodalCoordinates.Z()));</span></div>
+<div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160;<span class="comment">//             updatedElementCoordinates.push_back(Kratos::make_shared&lt;Node &gt;(i,updatedNodalCoordinates.X(),updatedNodalCoordinates.Y(),updatedNodalCoordinates.Z()));</span></div>
 <div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;<span class="comment">//           }</span></div>
 <div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160; </div>
 <div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160;<span class="comment">//           double newVolume=0;</span></div>
 <div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160;<span class="comment">//           if(itElem-&gt;GetGeometry().size()==4){</span></div>
-<div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160;<span class="comment">//             Tetrahedra3D4&lt;Node&lt;3&gt; &gt; myGeometry(updatedElementCoordinates);</span></div>
+<div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160;<span class="comment">//             Tetrahedra3D4&lt;Node &gt; myGeometry(updatedElementCoordinates);</span></div>
 <div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;<span class="comment">//             newVolume=myGeometry.Volume();</span></div>
 <div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160;<span class="comment">//           }else if(itElem-&gt;GetGeometry().size()==10){</span></div>
-<div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;<span class="comment">//             Tetrahedra3D10&lt;Node&lt;3&gt; &gt; myGeometry(updatedElementCoordinates);</span></div>
+<div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;<span class="comment">//             Tetrahedra3D10&lt;Node &gt; myGeometry(updatedElementCoordinates);</span></div>
 <div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160;<span class="comment">//             newVolume=myGeometry.Volume();</span></div>
 <div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160;<span class="comment">//           }else{</span></div>
 <div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160;<span class="comment">//             std::cout&lt;&lt;&quot;GEOMETRY NOT DEFINED&quot;&lt;&lt;std::endl;</span></div>
@@ -493,20 +493,20 @@ $(function() {
 <div class="line"><a name="l00440"></a><span class="lineno">  440</span>&#160;<span class="comment">//               break;</span></div>
 <div class="line"><a name="l00441"></a><span class="lineno">  441</span>&#160;<span class="comment">//             }</span></div>
 <div class="line"><a name="l00442"></a><span class="lineno">  442</span>&#160;<span class="comment">//           }else{</span></div>
-<div class="line"><a name="l00443"></a><span class="lineno">  443</span>&#160;<span class="comment">//             Geometry&lt;Node&lt;3&gt; &gt;  updatedEnlargedElementCoordinates;</span></div>
+<div class="line"><a name="l00443"></a><span class="lineno">  443</span>&#160;<span class="comment">//             Geometry&lt;Node &gt;  updatedEnlargedElementCoordinates;</span></div>
 <div class="line"><a name="l00444"></a><span class="lineno">  444</span>&#160; </div>
 <div class="line"><a name="l00445"></a><span class="lineno">  445</span>&#160;<span class="comment">//             for(unsigned int i=0; i&lt;itElem-&gt;GetGeometry().size(); ++i)</span></div>
 <div class="line"><a name="l00446"></a><span class="lineno">  446</span>&#160;<span class="comment">//             {</span></div>
 <div class="line"><a name="l00447"></a><span class="lineno">  447</span>&#160;<span class="comment">//               const array_1d&lt;double,3&gt; &amp;Vel = itElem-&gt;GetGeometry()[i].FastGetSolutionStepValue(VELOCITY);</span></div>
 <div class="line"><a name="l00448"></a><span class="lineno">  448</span>&#160;<span class="comment">//               Point updatedNodalCoordinates=itElem-&gt;GetGeometry()[i].Coordinates()+Vel*temporaryTimeInterval*2.5;</span></div>
-<div class="line"><a name="l00449"></a><span class="lineno">  449</span>&#160;<span class="comment">//               updatedEnlargedElementCoordinates.push_back(Kratos::make_shared&lt;Node&lt;3&gt; &gt;(i,updatedNodalCoordinates.X(),updatedNodalCoordinates.Y(),updatedNodalCoordinates.Z()));</span></div>
+<div class="line"><a name="l00449"></a><span class="lineno">  449</span>&#160;<span class="comment">//               updatedEnlargedElementCoordinates.push_back(Kratos::make_shared&lt;Node &gt;(i,updatedNodalCoordinates.X(),updatedNodalCoordinates.Y(),updatedNodalCoordinates.Z()));</span></div>
 <div class="line"><a name="l00450"></a><span class="lineno">  450</span>&#160;<span class="comment">//             }</span></div>
 <div class="line"><a name="l00451"></a><span class="lineno">  451</span>&#160; </div>
 <div class="line"><a name="l00452"></a><span class="lineno">  452</span>&#160;<span class="comment">//             if(itElem-&gt;GetGeometry().size()==4){</span></div>
-<div class="line"><a name="l00453"></a><span class="lineno">  453</span>&#160;<span class="comment">//               Tetrahedra3D4&lt;Node&lt;3&gt; &gt; myGeometry(updatedEnlargedElementCoordinates);</span></div>
+<div class="line"><a name="l00453"></a><span class="lineno">  453</span>&#160;<span class="comment">//               Tetrahedra3D4&lt;Node &gt; myGeometry(updatedEnlargedElementCoordinates);</span></div>
 <div class="line"><a name="l00454"></a><span class="lineno">  454</span>&#160;<span class="comment">//               newVolume=myGeometry.Volume();</span></div>
 <div class="line"><a name="l00455"></a><span class="lineno">  455</span>&#160;<span class="comment">//             }else if(itElem-&gt;GetGeometry().size()==10){</span></div>
-<div class="line"><a name="l00456"></a><span class="lineno">  456</span>&#160;<span class="comment">//               Tetrahedra3D10&lt;Node&lt;3&gt; &gt; myGeometry(updatedEnlargedElementCoordinates);</span></div>
+<div class="line"><a name="l00456"></a><span class="lineno">  456</span>&#160;<span class="comment">//               Tetrahedra3D10&lt;Node &gt; myGeometry(updatedEnlargedElementCoordinates);</span></div>
 <div class="line"><a name="l00457"></a><span class="lineno">  457</span>&#160;<span class="comment">//               newVolume=myGeometry.Volume();</span></div>
 <div class="line"><a name="l00458"></a><span class="lineno">  458</span>&#160;<span class="comment">//             }else{</span></div>
 <div class="line"><a name="l00459"></a><span class="lineno">  459</span>&#160;<span class="comment">//               std::cout&lt;&lt;&quot;GEOMETRY NOT DEFINED&quot;&lt;&lt;std::endl;</span></div>
@@ -790,11 +790,11 @@ $(function() {
 <div class="ttc" id="anamespace_kratos_html"><div class="ttname"><a href="../../db/d66/namespace_kratos.html">Kratos</a></div><div class="ttdoc">REF: G. R. Cowper, GAUSSIAN QUADRATURE FORMULAS FOR TRIANGLES.</div><div class="ttdef"><b>Definition:</b> mesh_condition.cpp:21</div></div>
 <div class="ttc" id="anamespace_kratos_html_a07da2fc4b6e3efc78ddda0ebc9ca7ba9ae2234ef749a77e4e1d33f66f4c60e956"><div class="ttname"><a href="../../db/d66/namespace_kratos.html#a07da2fc4b6e3efc78ddda0ebc9ca7ba9ae2234ef749a77e4e1d33f66f4c60e956">Kratos::Initial</a></div><div class="ttdeci">@ Initial</div><div class="ttdef"><b>Definition:</b> structural_mechanics_math_utilities.hpp:30</div></div>
 <div class="ttc" id="anamespace_kratos_html_a14ab8160ba3f8291244835400249c09d"><div class="ttname"><a href="../../db/d66/namespace_kratos.html#a14ab8160ba3f8291244835400249c09d">Kratos::NodesContainerType</a></div><div class="ttdeci">ModelPart::NodesContainerType NodesContainerType</div><div class="ttdef"><b>Definition:</b> find_conditions_neighbours_process.h:44</div></div>
+<div class="ttc" id="anamespace_kratos_html_a97c2433cd384840d71dc50ea0951a0d0"><div class="ttname"><a href="../../db/d66/namespace_kratos.html#a97c2433cd384840d71dc50ea0951a0d0">Kratos::NodeWeakPtrVectorType</a></div><div class="ttdeci">GlobalPointersVector&lt; Node &gt; NodeWeakPtrVectorType</div><div class="ttdef"><b>Definition:</b> build_model_part_boundary_process.hpp:59</div></div>
 <div class="ttc" id="anamespace_kratos_html_a9c6097d0b0a27d1cea94992b1087f56a"><div class="ttname"><a href="../../db/d66/namespace_kratos.html#a9c6097d0b0a27d1cea94992b1087f56a">Kratos::operator&gt;&gt;</a></div><div class="ttdeci">std::istream &amp; operator&gt;&gt;(std::istream &amp;rIStream, LinearMasterSlaveConstraint &amp;rThis)</div><div class="ttdoc">input stream function</div></div>
 <div class="ttc" id="anamespace_kratos_html_aa7bd3f2730e238bf31b104fc941e85da"><div class="ttname"><a href="../../db/d66/namespace_kratos.html#aa7bd3f2730e238bf31b104fc941e85da">Kratos::ConditionWeakPtrVectorType</a></div><div class="ttdeci">GlobalPointersVector&lt; Condition &gt; ConditionWeakPtrVectorType</div><div class="ttdef"><b>Definition:</b> build_model_part_boundary_process.hpp:61</div></div>
 <div class="ttc" id="anamespace_kratos_html_aba5dbdf990a4567126376ad0aae1687e"><div class="ttname"><a href="../../db/d66/namespace_kratos.html#aba5dbdf990a4567126376ad0aae1687e">Kratos::ElementsContainerType</a></div><div class="ttdeci">ModelPart::ElementsContainerType ElementsContainerType</div><div class="ttdef"><b>Definition:</b> clear_contact_conditions_mesher_process.hpp:43</div></div>
 <div class="ttc" id="anamespace_kratos_html_acfc842a43d19dffc2d8105e5cbea17a9"><div class="ttname"><a href="../../db/d66/namespace_kratos.html#acfc842a43d19dffc2d8105e5cbea17a9">Kratos::operator&lt;&lt;</a></div><div class="ttdeci">std::ostream &amp; operator&lt;&lt;(std::ostream &amp;rOStream, const LinearMasterSlaveConstraint &amp;rThis)</div><div class="ttdoc">output stream function</div><div class="ttdef"><b>Definition:</b> linear_master_slave_constraint.h:432</div></div>
-<div class="ttc" id="anamespace_kratos_html_ae56ef975aa658e426e2f5201cca2c917"><div class="ttname"><a href="../../db/d66/namespace_kratos.html#ae56ef975aa658e426e2f5201cca2c917">Kratos::NodeWeakPtrVectorType</a></div><div class="ttdeci">GlobalPointersVector&lt; Node&lt; 3 &gt; &gt; NodeWeakPtrVectorType</div><div class="ttdef"><b>Definition:</b> build_model_part_boundary_process.hpp:59</div></div>
 <div class="ttc" id="anamespace_kratos_html_aeebe5416d846dedd3696f07e4aa44cb6"><div class="ttname"><a href="../../db/d66/namespace_kratos.html#aeebe5416d846dedd3696f07e4aa44cb6">Kratos::PointsArrayType</a></div><div class="ttdeci">GeometryType::PointsArrayType PointsArrayType</div><div class="ttdef"><b>Definition:</b> settle_model_structure_process.hpp:48</div></div>
 <div class="ttc" id="aopenmp__utils_8h_html"><div class="ttname"><a href="../../d1/db8/openmp__utils_8h.html">openmp_utils.h</a></div></div>
 <div class="ttc" id="aprocess_8h_html"><div class="ttname"><a href="../../da/d42/process_8h.html">process.h</a></div></div>
@@ -827,7 +827,7 @@ $(function() {
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri May 12 2023 02:04:43 for KratosMultiphysics by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Sat May 13 2023 02:05:04 for KratosMultiphysics by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

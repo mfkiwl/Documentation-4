@@ -123,7 +123,7 @@ $(function() {
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
 <div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="../../d8/d71/class_kratos_1_1_refine_conditions_in_contact_mesher_process.html#a12d74ad84015ccb2bb7880e3da3d07fe">   59</a></span>&#160;    <a class="code" href="../../d8/d71/class_kratos_1_1_refine_conditions_in_contact_mesher_process.html#a12d74ad84015ccb2bb7880e3da3d07fe">KRATOS_CLASS_POINTER_DEFINITION</a>( <a class="code" href="../../d8/d71/class_kratos_1_1_refine_conditions_in_contact_mesher_process.html">RefineConditionsInContactMesherProcess</a> );</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
-<div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="../../d8/d71/class_kratos_1_1_refine_conditions_in_contact_mesher_process.html#ae31b9ddcebf58035ad06d02426727ed2">   61</a></span>&#160;    <span class="keyword">typedef</span> <a class="code" href="../../db/d66/namespace_kratos.html#abb4d93a6f1ee35395fd178b0e96cbcb8">ModelPart::NodeType</a>                   <a class="code" href="../../d8/d71/class_kratos_1_1_refine_conditions_in_contact_mesher_process.html#ae31b9ddcebf58035ad06d02426727ed2">NodeType</a>;</div>
+<div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="../../d8/d71/class_kratos_1_1_refine_conditions_in_contact_mesher_process.html#ae31b9ddcebf58035ad06d02426727ed2">   61</a></span>&#160;    <span class="keyword">typedef</span> <a class="code" href="../../db/d66/namespace_kratos.html#a4e2ab605ef101fe7856e7f373e418478">ModelPart::NodeType</a>                   <a class="code" href="../../d8/d71/class_kratos_1_1_refine_conditions_in_contact_mesher_process.html#ae31b9ddcebf58035ad06d02426727ed2">NodeType</a>;</div>
 <div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="../../d8/d71/class_kratos_1_1_refine_conditions_in_contact_mesher_process.html#a16ea9bd2987d9920cecf12a164765841">   62</a></span>&#160;    <span class="keyword">typedef</span> <a class="code" href="../../df/d41/condition__external__bindings_8cpp.html#abc7582340e5e737e541268b21755ac44">ModelPart::ConditionType</a>         <a class="code" href="../../d8/d71/class_kratos_1_1_refine_conditions_in_contact_mesher_process.html#a16ea9bd2987d9920cecf12a164765841">ConditionType</a>;</div>
 <div class="line"><a name="l00063"></a><span class="lineno"><a class="line" href="../../d8/d71/class_kratos_1_1_refine_conditions_in_contact_mesher_process.html#ad81afeed1d84d51eabfab1349b5c3757">   63</a></span>&#160;    <span class="keyword">typedef</span> <a class="code" href="../../db/d66/namespace_kratos.html#a17f89de778d8d600451f92d65eaed478">ModelPart::PropertiesType</a>       <a class="code" href="../../d8/d71/class_kratos_1_1_refine_conditions_in_contact_mesher_process.html#ad81afeed1d84d51eabfab1349b5c3757">PropertiesType</a>;</div>
 <div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="../../d8/d71/class_kratos_1_1_refine_conditions_in_contact_mesher_process.html#a31f1aac09b9cfaff9d076f4964925264">   64</a></span>&#160;    <span class="keyword">typedef</span> <a class="code" href="../../dc/dea/class_kratos_1_1_geometry.html">ConditionType::GeometryType</a>       <a class="code" href="../../d8/d71/class_kratos_1_1_refine_conditions_in_contact_mesher_process.html#a31f1aac09b9cfaff9d076f4964925264">GeometryType</a>;</div>
@@ -316,7 +316,7 @@ $(function() {
 <div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160; </div>
 <div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;      <span class="keywordflow">for</span>(ModelPart::ConditionsContainerType::iterator ic = TemporaryConditions.begin(); ic!= TemporaryConditions.end(); ic++)</div>
 <div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;    {</div>
-<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;      <a class="code" href="../../dc/dea/class_kratos_1_1_geometry.html">Geometry&lt; Node&lt;3&gt;</a> &gt; <a class="code" href="../../da/dec/namespace_kratos_1_1_mortar_utilities.html#a407333aa7d9b470dab6a9652f72a6ebd">rGeometry</a> =ic-&gt;GetGeometry();</div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;      <a class="code" href="../../dc/dea/class_kratos_1_1_geometry.html">Geometry&lt; Node &gt;</a> <a class="code" href="../../da/dec/namespace_kratos_1_1_mortar_utilities.html#a407333aa7d9b470dab6a9652f72a6ebd">rGeometry</a> =ic-&gt;GetGeometry();</div>
 <div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;      <span class="keywordflow">for</span>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="../../d2/db8/namespacetensors.html#a15a1da80aa773e2015eba781cababe05">i</a>=0; <a class="code" href="../../d2/db8/namespacetensors.html#a15a1da80aa773e2015eba781cababe05">i</a>&lt;<a class="code" href="../../da/dec/namespace_kratos_1_1_mortar_utilities.html#a407333aa7d9b470dab6a9652f72a6ebd">rGeometry</a>.<a class="code" href="../../d4/ddc/class_kratos_1_1array__1d.html#a90c970d470ef873d2d7b4fcd0e9a3621">size</a>(); ++<a class="code" href="../../d2/db8/namespacetensors.html#a15a1da80aa773e2015eba781cababe05">i</a>)</div>
 <div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;        {</div>
 <div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;              <a class="code" href="../../da/dec/namespace_kratos_1_1_mortar_utilities.html#a407333aa7d9b470dab6a9652f72a6ebd">rGeometry</a>[<a class="code" href="../../d2/db8/namespacetensors.html#a15a1da80aa773e2015eba781cababe05">i</a>].Reset(TO_SPLIT);</div>
@@ -345,14 +345,14 @@ $(function() {
 <div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;      <a class="code" href="../../df/d67/define_8h.html#ab9c29d6a0d19ff26bbc4e45e3181fb3f">KRATOS_TRY</a></div>
 <div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160; </div>
 <div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;      <span class="comment">//node to get the DOFs from</span></div>
-<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;      <a class="code" href="../../d5/ddd/class_kratos_1_1_node.html#a39ae1d5c6583cc44cdd5749979e58ed7">Node&lt;3&gt;::DofsContainerType</a>&amp; reference_dofs = (<a class="code" href="../../db/d91/namespace_kratos_1_1_rans_variable_utilities.html#af0d227aa5521a639dd5f46737c54e84c">rModelPart</a>.NodesBegin())-&gt;GetDofs();</div>
+<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;      <a class="code" href="../../d5/ddd/class_kratos_1_1_node.html#ad3f09644217dd785fa39566c72ce3083">Node::DofsContainerType</a>&amp; reference_dofs = (<a class="code" href="../../db/d91/namespace_kratos_1_1_rans_variable_utilities.html#af0d227aa5521a639dd5f46737c54e84c">rModelPart</a>.NodesBegin())-&gt;GetDofs();</div>
 <div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;      <span class="comment">//unsigned int step_data_size = rModelPart.GetNodalSolutionStepDataSize();</span></div>
 <div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;      <span class="keywordtype">double</span> <a class="code" href="../../d9/db1/namespace_generate_wind.html#aa0bcf7fb7009dc3ebb885f96b7124197">z</a> = 0.0;</div>
 <div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160; </div>
 <div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;      <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> initial_node_size = <a class="code" href="../../d4/dd2/class_kratos_1_1_refine_conditions_mesher_process.html#ae744a9156a7c677bae0c2eae84cba2b9">mrModelPart</a>.Nodes().size()+1; <span class="comment">//total model part node size</span></div>
 <div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;      <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> initial_cond_size = <a class="code" href="../../d4/dd2/class_kratos_1_1_refine_conditions_mesher_process.html#ae744a9156a7c677bae0c2eae84cba2b9">mrModelPart</a>.Conditions().size()+1; <span class="comment">//total model part node size</span></div>
 <div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160; </div>
-<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;      Node&lt;3&gt; new_point(0,0.0,0.0,0.0);</div>
+<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;      <a class="code" href="../../db/d66/namespace_kratos.html#a8ad9f38d847ff7742fb13b5098910b03a6c3a6944a808a7c0bbb6788dbec54a9f">Node</a> new_point(0,0.0,0.0,0.0);</div>
 <div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160; </div>
 <div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;      <span class="keywordtype">int</span> <span class="keywordtype">id</span>=0;</div>
 <div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;      <span class="comment">//if points were added, new nodes must be added to ModelPart</span></div>
@@ -363,7 +363,7 @@ $(function() {
 <div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;      <span class="keywordtype">double</span>&amp; <a class="code" href="../../d0/d79/namespacesensitivity_matrix.html#a676f7f559f80bd5ebc1bd73cadbef39b">x</a>= list_of_points[<a class="code" href="../../d2/db8/namespacetensors.html#a15a1da80aa773e2015eba781cababe05">i</a>].X();</div>
 <div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;      <span class="keywordtype">double</span>&amp; y= list_of_points[<a class="code" href="../../d2/db8/namespacetensors.html#a15a1da80aa773e2015eba781cababe05">i</a>].Y();</div>
 <div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160; </div>
-<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;      Node&lt;3&gt;::Pointer pnode = <a class="code" href="../../db/d91/namespace_kratos_1_1_rans_variable_utilities.html#af0d227aa5521a639dd5f46737c54e84c">rModelPart</a>.CreateNewNode(<span class="keywordtype">id</span>,<a class="code" href="../../d0/d79/namespacesensitivity_matrix.html#a676f7f559f80bd5ebc1bd73cadbef39b">x</a>,y,<a class="code" href="../../d9/db1/namespace_generate_wind.html#aa0bcf7fb7009dc3ebb885f96b7124197">z</a>);</div>
+<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;      Node::Pointer pnode = <a class="code" href="../../db/d91/namespace_kratos_1_1_rans_variable_utilities.html#af0d227aa5521a639dd5f46737c54e84c">rModelPart</a>.CreateNewNode(<span class="keywordtype">id</span>,<a class="code" href="../../d0/d79/namespacesensitivity_matrix.html#a676f7f559f80bd5ebc1bd73cadbef39b">x</a>,y,<a class="code" href="../../d9/db1/namespace_generate_wind.html#aa0bcf7fb7009dc3ebb885f96b7124197">z</a>);</div>
 <div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160; </div>
 <div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;      pnode-&gt;SetBufferSize(<a class="code" href="../../db/d91/namespace_kratos_1_1_rans_variable_utilities.html#af0d227aa5521a639dd5f46737c54e84c">rModelPart</a>.NodesBegin()-&gt;GetBufferSize() );</div>
 <div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160; </div>
@@ -371,14 +371,14 @@ $(function() {
 <div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;      <span class="comment">//assign data to dofs</span></div>
 <div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160; </div>
 <div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;      <span class="comment">//2D edges:</span></div>
-<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;      Geometry&lt; Node&lt;3&gt; &gt;&amp; rConditionGeometry  = list_of_conditions[<a class="code" href="../../d2/db8/namespacetensors.html#a15a1da80aa773e2015eba781cababe05">i</a>]-&gt;GetGeometry();</div>
+<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;      Geometry&lt; Node &gt;&amp; rConditionGeometry  = list_of_conditions[<a class="code" href="../../d2/db8/namespacetensors.html#a15a1da80aa773e2015eba781cababe05">i</a>]-&gt;GetGeometry();</div>
 <div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160; </div>
 <div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160; </div>
 <div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;      <span class="comment">//generating the dofs</span></div>
-<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;      <span class="keywordflow">for</span>(Node&lt;3&gt;::DofsContainerType::iterator iii = reference_dofs.begin(); iii != reference_dofs.end(); ++iii)</div>
+<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;      <span class="keywordflow">for</span>(Node::DofsContainerType::iterator iii = reference_dofs.begin(); iii != reference_dofs.end(); ++iii)</div>
 <div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;        {</div>
-<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;              <a class="code" href="../../d5/ddd/class_kratos_1_1_node.html#a87dc5751e14cb9ca76cff901ad5d17cd">Node&lt;3&gt;::DofType</a>&amp; rDof = **iii;</div>
-<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;              <a class="code" href="../../dc/d58/class_kratos_1_1_dof.html#a53950a084e353e0bd4b8692a9f5eae0b">Node&lt;3&gt;::DofType::Pointer</a> p_new_dof = pnode-&gt;pAddDof( rDof );</div>
+<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;              <a class="code" href="../../d5/ddd/class_kratos_1_1_node.html#a2b48615d91234a2685c3b5dd925b713a">Node::DofType</a>&amp; rDof = **iii;</div>
+<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;              <a class="code" href="../../dc/d58/class_kratos_1_1_dof.html#a53950a084e353e0bd4b8692a9f5eae0b">Node::DofType::Pointer</a> p_new_dof = pnode-&gt;pAddDof( rDof );</div>
 <div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160; </div>
 <div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;              <span class="keywordflow">if</span>( rConditionGeometry[0].IsFixed(rDof.GetVariable()) &amp;&amp; rConditionGeometry[1].IsFixed(rDof.GetVariable()) )</div>
 <div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;        (p_new_dof)-&gt;FixDof();</div>
@@ -393,7 +393,7 @@ $(function() {
 <div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;      PointsArray.push_back( rConditionGeometry(0) );</div>
 <div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;      PointsArray.push_back( rConditionGeometry(1) );</div>
 <div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160; </div>
-<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;      Geometry&lt;Node&lt;3&gt; &gt; geom( PointsArray );</div>
+<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;      Geometry&lt;Node &gt; geom( PointsArray );</div>
 <div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160; </div>
 <div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;      std::vector&lt;double&gt; <a class="code" href="../../df/d42/mmio_8h.html#a3f620e88ba511ca5d32c93b84802ff6e">N</a>(2);</div>
 <div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;      <a class="code" href="../../df/d42/mmio_8h.html#a3f620e88ba511ca5d32c93b84802ff6e">N</a>[0] = 0.5;</div>
@@ -403,7 +403,7 @@ $(function() {
 <div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;      DataTransferUtilities.Interpolate( geom, <a class="code" href="../../df/d42/mmio_8h.html#a3f620e88ba511ca5d32c93b84802ff6e">N</a>, variables_list, pnode);</div>
 <div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160; </div>
 <div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;      <span class="comment">// //int cond_id = list_of_points[i].Id();</span></div>
-<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;      <span class="comment">// //Geometry&lt; Node&lt;3&gt; &gt;&amp; rConditionGeometry = (*(rModelPart.Conditions().find(cond_id).base()))-&gt;GetGeometry();</span></div>
+<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;      <span class="comment">// //Geometry&lt; Node &gt;&amp; rConditionGeometry = (*(rModelPart.Conditions().find(cond_id).base()))-&gt;GetGeometry();</span></div>
 <div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160; </div>
 <div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;      <span class="comment">//set specific control values and flags:</span></div>
 <div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;      pnode-&gt;Set(BOUNDARY);</div>
@@ -548,7 +548,7 @@ $(function() {
 <div class="line"><a name="l00520"></a><span class="lineno">  520</span>&#160;      <span class="keywordtype">bool</span> tool_project        = <span class="keyword">false</span>;</div>
 <div class="line"><a name="l00521"></a><span class="lineno">  521</span>&#160; </div>
 <div class="line"><a name="l00522"></a><span class="lineno">  522</span>&#160;      std::vector&lt;bool&gt; semi_active_nodes;</div>
-<div class="line"><a name="l00523"></a><span class="lineno">  523</span>&#160;      Node&lt;3&gt; new_point(0,0.0,0.0,0.0);</div>
+<div class="line"><a name="l00523"></a><span class="lineno">  523</span>&#160;      <a class="code" href="../../db/d66/namespace_kratos.html#a8ad9f38d847ff7742fb13b5098910b03a6c3a6944a808a7c0bbb6788dbec54a9f">Node</a> new_point(0,0.0,0.0,0.0);</div>
 <div class="line"><a name="l00524"></a><span class="lineno">  524</span>&#160; </div>
 <div class="line"><a name="l00525"></a><span class="lineno">  525</span>&#160; </div>
 <div class="line"><a name="l00526"></a><span class="lineno">  526</span>&#160;      <span class="keywordflow">for</span>(ModelPart::ConditionsContainerType::iterator ic = <a class="code" href="../../d4/dd2/class_kratos_1_1_refine_conditions_mesher_process.html#ae744a9156a7c677bae0c2eae84cba2b9">mrModelPart</a>.ConditionsBegin(); ic!= <a class="code" href="../../d4/dd2/class_kratos_1_1_refine_conditions_mesher_process.html#ae744a9156a7c677bae0c2eae84cba2b9">mrModelPart</a>.ConditionsEnd(); ic++)</div>
@@ -562,7 +562,7 @@ $(function() {
 <div class="line"><a name="l00534"></a><span class="lineno">  534</span>&#160;      tool_radius    = 0;</div>
 <div class="line"><a name="l00535"></a><span class="lineno">  535</span>&#160;      side_length    = 0;</div>
 <div class="line"><a name="l00536"></a><span class="lineno">  536</span>&#160; </div>
-<div class="line"><a name="l00537"></a><span class="lineno">  537</span>&#160;      Geometry&lt; Node&lt;3&gt; &gt; rConditionGeometry;</div>
+<div class="line"><a name="l00537"></a><span class="lineno">  537</span>&#160;      Geometry&lt; Node &gt; rConditionGeometry;</div>
 <div class="line"><a name="l00538"></a><span class="lineno">  538</span>&#160;      array_1d&lt;double,3&gt; tip_center;</div>
 <div class="line"><a name="l00539"></a><span class="lineno">  539</span>&#160;      tip_center.clear();</div>
 <div class="line"><a name="l00540"></a><span class="lineno">  540</span>&#160; </div>
@@ -571,7 +571,7 @@ $(function() {
 <div class="line"><a name="l00543"></a><span class="lineno">  543</span>&#160;      <span class="keywordflow">if</span>( ic-&gt;Is(CONTACT) )   <span class="comment">//Refine radius on the workpiece for the ContactDomain zone</span></div>
 <div class="line"><a name="l00544"></a><span class="lineno">  544</span>&#160;        {</div>
 <div class="line"><a name="l00545"></a><span class="lineno">  545</span>&#160; </div>
-<div class="line"><a name="l00546"></a><span class="lineno">  546</span>&#160;              Node&lt;3&gt;  MasterNode;</div>
+<div class="line"><a name="l00546"></a><span class="lineno">  546</span>&#160;              <a class="code" href="../../db/d66/namespace_kratos.html#a8ad9f38d847ff7742fb13b5098910b03a6c3a6944a808a7c0bbb6788dbec54a9f">Node</a>  MasterNode;</div>
 <div class="line"><a name="l00547"></a><span class="lineno">  547</span>&#160;              <span class="keywordtype">bool</span> condition_found = <span class="keyword">false</span>;</div>
 <div class="line"><a name="l00548"></a><span class="lineno">  548</span>&#160;              ConditionType::Pointer MasterCondition  = <a class="code" href="../../d4/dd2/class_kratos_1_1_refine_conditions_mesher_process.html#a471b3839077b95f55a679133dc195eb3">mMesherUtilities</a>.FindMasterCondition(*(ic.base()),MasterNode,<a class="code" href="../../db/d91/namespace_kratos_1_1_rans_variable_utilities.html#af0d227aa5521a639dd5f46737c54e84c">rModelPart</a>.Conditions(),condition_found);</div>
 <div class="line"><a name="l00549"></a><span class="lineno">  549</span>&#160; </div>
@@ -817,7 +817,7 @@ $(function() {
 <div class="line"><a name="l00789"></a><span class="lineno">  789</span>&#160;      <span class="keywordtype">bool</span> contact_semi_active = <span class="keyword">false</span>;</div>
 <div class="line"><a name="l00790"></a><span class="lineno">  790</span>&#160;      <span class="keywordtype">bool</span> tool_project = <span class="keyword">false</span>;</div>
 <div class="line"><a name="l00791"></a><span class="lineno">  791</span>&#160; </div>
-<div class="line"><a name="l00792"></a><span class="lineno">  792</span>&#160;      Node&lt;3&gt; new_point(0,0.0,0.0,0.0);</div>
+<div class="line"><a name="l00792"></a><span class="lineno">  792</span>&#160;      <a class="code" href="../../db/d66/namespace_kratos.html#a8ad9f38d847ff7742fb13b5098910b03a6c3a6944a808a7c0bbb6788dbec54a9f">Node</a> new_point(0,0.0,0.0,0.0);</div>
 <div class="line"><a name="l00793"></a><span class="lineno">  793</span>&#160; </div>
 <div class="line"><a name="l00794"></a><span class="lineno">  794</span>&#160;      std::vector&lt;bool&gt; semi_active_nodes;</div>
 <div class="line"><a name="l00795"></a><span class="lineno">  795</span>&#160; </div>
@@ -860,7 +860,7 @@ $(function() {
 <div class="line"><a name="l00832"></a><span class="lineno">  832</span>&#160;        plastic_power = 0;</div>
 <div class="line"><a name="l00833"></a><span class="lineno">  833</span>&#160; </div>
 <div class="line"><a name="l00834"></a><span class="lineno">  834</span>&#160;        <span class="comment">//double condition_radius = 0;</span></div>
-<div class="line"><a name="l00835"></a><span class="lineno">  835</span>&#160;        Geometry&lt; Node&lt;3&gt; &gt; rConditionGeometry;</div>
+<div class="line"><a name="l00835"></a><span class="lineno">  835</span>&#160;        Geometry&lt; Node &gt; rConditionGeometry;</div>
 <div class="line"><a name="l00836"></a><span class="lineno">  836</span>&#160;        array_1d&lt;double,3&gt; tip_center;</div>
 <div class="line"><a name="l00837"></a><span class="lineno">  837</span>&#160; </div>
 <div class="line"><a name="l00838"></a><span class="lineno">  838</span>&#160;        <span class="keywordflow">if</span>( ic-&gt;IsNot(TO_ERASE) ){</div>
@@ -940,7 +940,7 @@ $(function() {
 <div class="line"><a name="l00912"></a><span class="lineno">  912</span>&#160; </div>
 <div class="line"><a name="l00913"></a><span class="lineno">  913</span>&#160;          <span class="keywordflow">if</span>( on_radius &amp;&amp; on_tip ) <span class="comment">//master node in tool --&gt;  refine workpiece  // (tool_radius ==0 in workpiece nodes)</span></div>
 <div class="line"><a name="l00914"></a><span class="lineno">  914</span>&#160;            {</div>
-<div class="line"><a name="l00915"></a><span class="lineno">  915</span>&#160;              Node&lt;3&gt; center (0,tip_center[0],tip_center[1],tip_center[2]);</div>
+<div class="line"><a name="l00915"></a><span class="lineno">  915</span>&#160;              <a class="code" href="../../db/d66/namespace_kratos.html#a8ad9f38d847ff7742fb13b5098910b03a6c3a6944a808a7c0bbb6788dbec54a9f">Node</a> center (0,tip_center[0],tip_center[1],tip_center[2]);</div>
 <div class="line"><a name="l00916"></a><span class="lineno">  916</span>&#160;              array_1d&lt;double, 3 &gt; <a class="code" href="../../d0/df1/namespacemesh__to__mdpa__converter.html#a7036b7877987407aec21f49415487043">radius</a>;</div>
 <div class="line"><a name="l00917"></a><span class="lineno">  917</span>&#160;              <a class="code" href="../../d0/df1/namespacemesh__to__mdpa__converter.html#a7036b7877987407aec21f49415487043">radius</a>[0]=rConditionGeometry[0].X()-center.X();</div>
 <div class="line"><a name="l00918"></a><span class="lineno">  918</span>&#160;              <a class="code" href="../../d0/df1/namespacemesh__to__mdpa__converter.html#a7036b7877987407aec21f49415487043">radius</a>[1]=rConditionGeometry[0].Y()-center.Y();</div>
@@ -991,7 +991,7 @@ $(function() {
 <div class="line"><a name="l00963"></a><span class="lineno">  963</span>&#160;        MasterElement.GetValueOnIntegrationPoints(<a class="code" href="../../d4/dd2/class_kratos_1_1_refine_conditions_mesher_process.html#aa5c5e8121c917a2be342793bef1a8a59">mrRemesh</a>.Refine-&gt;GetThresholdVariable(),Value,CurrentProcessInfo);</div>
 <div class="line"><a name="l00964"></a><span class="lineno">  964</span>&#160; </div>
 <div class="line"><a name="l00965"></a><span class="lineno">  965</span>&#160; </div>
-<div class="line"><a name="l00966"></a><span class="lineno">  966</span>&#160;        Geometry&lt;Node&lt;3&gt; &gt;&amp; pGeom = MasterElement.GetGeometry();</div>
+<div class="line"><a name="l00966"></a><span class="lineno">  966</span>&#160;        Geometry&lt;Node &gt;&amp; pGeom = MasterElement.GetGeometry();</div>
 <div class="line"><a name="l00967"></a><span class="lineno">  967</span>&#160;        plastic_power = Value[0] * pGeom.Area();</div>
 <div class="line"><a name="l00968"></a><span class="lineno">  968</span>&#160; </div>
 <div class="line"><a name="l00969"></a><span class="lineno">  969</span>&#160;        <span class="comment">// if( Value[0] &gt; 0 )</span></div>
@@ -1038,7 +1038,7 @@ $(function() {
 <div class="line"><a name="l01010"></a><span class="lineno"> 1010</span>&#160;        <span class="comment">//std::cout&lt;&lt;&quot; MASTER_ELEMENT &quot;&lt;&lt;MasterElement.Id()&lt;&lt;std::endl;</span></div>
 <div class="line"><a name="l01011"></a><span class="lineno"> 1011</span>&#160; </div>
 <div class="line"><a name="l01012"></a><span class="lineno"> 1012</span>&#160; </div>
-<div class="line"><a name="l01013"></a><span class="lineno"> 1013</span>&#160;        Geometry&lt;Node&lt;3&gt; &gt;&amp; vertices = MasterElement.GetGeometry();</div>
+<div class="line"><a name="l01013"></a><span class="lineno"> 1013</span>&#160;        Geometry&lt;Node &gt;&amp; vertices = MasterElement.GetGeometry();</div>
 <div class="line"><a name="l01014"></a><span class="lineno"> 1014</span>&#160;        <span class="keywordtype">double</span> <a class="code" href="../../d7/d2b/namespacequadrature.html#a4532203fbec394c5ae3d7c541d464238">Alpha</a> =  <a class="code" href="../../d4/dd2/class_kratos_1_1_refine_conditions_mesher_process.html#aa5c5e8121c917a2be342793bef1a8a59">mrRemesh</a>.Refine-&gt;Alpha;</div>
 <div class="line"><a name="l01015"></a><span class="lineno"> 1015</span>&#160; </div>
 <div class="line"><a name="l01016"></a><span class="lineno"> 1016</span>&#160;        <span class="keywordtype">bool</span> accepted = <a class="code" href="../../d4/dd2/class_kratos_1_1_refine_conditions_mesher_process.html#a471b3839077b95f55a679133dc195eb3">mMesherUtilities</a>.AlphaShape(<a class="code" href="../../d7/d2b/namespacequadrature.html#a4532203fbec394c5ae3d7c541d464238">Alpha</a>,vertices,2);</div>
@@ -1293,8 +1293,8 @@ $(function() {
 <div class="ttc" id="aclass_kratos_1_1_dof_html_a53950a084e353e0bd4b8692a9f5eae0b"><div class="ttname"><a href="../../dc/d58/class_kratos_1_1_dof.html#a53950a084e353e0bd4b8692a9f5eae0b">Kratos::Dof::Pointer</a></div><div class="ttdeci">Dof * Pointer</div><div class="ttdoc">Pointer definition of Dof.</div><div class="ttdef"><b>Definition:</b> dof.h:95</div></div>
 <div class="ttc" id="aclass_kratos_1_1_dof_html_a87be91472b52c29332b2a78e5cd56893"><div class="ttname"><a href="../../dc/d58/class_kratos_1_1_dof.html#a87be91472b52c29332b2a78e5cd56893">Kratos::Dof::FreeDof</a></div><div class="ttdeci">void FreeDof()</div><div class="ttdef"><b>Definition:</b> dof.h:347</div></div>
 <div class="ttc" id="aclass_kratos_1_1_geometry_html"><div class="ttname"><a href="../../dc/dea/class_kratos_1_1_geometry.html">Kratos::Geometry</a></div><div class="ttdoc">Geometry base class.</div><div class="ttdef"><b>Definition:</b> geometry.h:71</div></div>
-<div class="ttc" id="aclass_kratos_1_1_node_html_a39ae1d5c6583cc44cdd5749979e58ed7"><div class="ttname"><a href="../../d5/ddd/class_kratos_1_1_node.html#a39ae1d5c6583cc44cdd5749979e58ed7">Kratos::Node::DofsContainerType</a></div><div class="ttdeci">std::vector&lt; std::unique_ptr&lt; TDofType &gt; &gt; DofsContainerType</div><div class="ttdef"><b>Definition:</b> node.h:91</div></div>
-<div class="ttc" id="aclass_kratos_1_1_node_html_a87dc5751e14cb9ca76cff901ad5d17cd"><div class="ttname"><a href="../../d5/ddd/class_kratos_1_1_node.html#a87dc5751e14cb9ca76cff901ad5d17cd">Kratos::Node::DofType</a></div><div class="ttdeci">TDofType DofType</div><div class="ttdef"><b>Definition:</b> node.h:85</div></div>
+<div class="ttc" id="aclass_kratos_1_1_node_html_a2b48615d91234a2685c3b5dd925b713a"><div class="ttname"><a href="../../d5/ddd/class_kratos_1_1_node.html#a2b48615d91234a2685c3b5dd925b713a">Kratos::Node::DofType</a></div><div class="ttdeci">Dof&lt; double &gt; DofType</div><div class="ttdoc">Dof type.</div><div class="ttdef"><b>Definition:</b> node.h:85</div></div>
+<div class="ttc" id="aclass_kratos_1_1_node_html_ad3f09644217dd785fa39566c72ce3083"><div class="ttname"><a href="../../d5/ddd/class_kratos_1_1_node.html#ad3f09644217dd785fa39566c72ce3083">Kratos::Node::DofsContainerType</a></div><div class="ttdeci">std::vector&lt; std::unique_ptr&lt; Dof&lt; double &gt; &gt;&gt; DofsContainerType</div><div class="ttdoc">The DoF container type definition.</div><div class="ttdef"><b>Definition:</b> node.h:94</div></div>
 <div class="ttc" id="aclass_kratos_1_1_pointer_vector_html"><div class="ttname"><a href="../../de/d83/class_kratos_1_1_pointer_vector.html">Kratos::PointerVector</a></div><div class="ttdoc">PointerVector is a container like stl vector but using a vector to store pointers to its data.</div><div class="ttdef"><b>Definition:</b> pointer_vector.h:72</div></div>
 <div class="ttc" id="aclass_kratos_1_1_pointer_vector_html_a7507e0e9fc8ab95622662b927f86e50f"><div class="ttname"><a href="../../de/d83/class_kratos_1_1_pointer_vector.html#a7507e0e9fc8ab95622662b927f86e50f">Kratos::PointerVector::reserve</a></div><div class="ttdeci">void reserve(size_type dim)</div><div class="ttdef"><b>Definition:</b> pointer_vector.h:319</div></div>
 <div class="ttc" id="aclass_kratos_1_1_pointer_vector_set_html"><div class="ttname"><a href="../../db/dc6/class_kratos_1_1_pointer_vector_set.html">Kratos::PointerVectorSet</a></div><div class="ttdoc">PointerVectorSet is a sorted associative container like stl set but using a vector to store pointers ...</div><div class="ttdef"><b>Definition:</b> pointer_vector_set.h:72</div></div>
@@ -1341,10 +1341,11 @@ $(function() {
 <div class="ttc" id="anamespace_kratos_html_a1514eea722d243fa5561f7050c071b9fa9e2941b3c81256fac10392aaca4ccfde"><div class="ttname"><a href="../../db/d66/namespace_kratos.html#a1514eea722d243fa5561f7050c071b9fa9e2941b3c81256fac10392aaca4ccfde">Kratos::DataLocation::Condition</a></div><div class="ttdeci">@ Condition</div></div>
 <div class="ttc" id="anamespace_kratos_html_a17f89de778d8d600451f92d65eaed478"><div class="ttname"><a href="../../db/d66/namespace_kratos.html#a17f89de778d8d600451f92d65eaed478">Kratos::PropertiesType</a></div><div class="ttdeci">Properties PropertiesType</div><div class="ttdef"><b>Definition:</b> regenerate_pfem_pressure_conditions_process.h:26</div></div>
 <div class="ttc" id="anamespace_kratos_html_a2382ac8a486c0d52da7ce94f4ccd6d70"><div class="ttname"><a href="../../db/d66/namespace_kratos.html#a2382ac8a486c0d52da7ce94f4ccd6d70">Kratos::Vector</a></div><div class="ttdeci">Internals::Matrix&lt; double, AMatrix::dynamic, 1 &gt; Vector</div><div class="ttdef"><b>Definition:</b> amatrix_interface.h:472</div></div>
+<div class="ttc" id="anamespace_kratos_html_a4e2ab605ef101fe7856e7f373e418478"><div class="ttname"><a href="../../db/d66/namespace_kratos.html#a4e2ab605ef101fe7856e7f373e418478">Kratos::NodeType</a></div><div class="ttdeci">Node NodeType</div><div class="ttdoc">The definition of the node.</div><div class="ttdef"><b>Definition:</b> mortar_classes.h:37</div></div>
 <div class="ttc" id="anamespace_kratos_html_a7dc336b27d63b48cb5a8be2c97b25dcc"><div class="ttname"><a href="../../db/d66/namespace_kratos.html#a7dc336b27d63b48cb5a8be2c97b25dcc">Kratos::ConditionsContainerType</a></div><div class="ttdeci">ModelPart::ConditionsContainerType ConditionsContainerType</div><div class="ttdef"><b>Definition:</b> find_conditions_neighbours_process.h:45</div></div>
+<div class="ttc" id="anamespace_kratos_html_a8ad9f38d847ff7742fb13b5098910b03a6c3a6944a808a7c0bbb6788dbec54a9f"><div class="ttname"><a href="../../db/d66/namespace_kratos.html#a8ad9f38d847ff7742fb13b5098910b03a6c3a6944a808a7c0bbb6788dbec54a9f">Kratos::StressTreatment::Node</a></div><div class="ttdeci">@ Node</div></div>
 <div class="ttc" id="anamespace_kratos_html_a9c6097d0b0a27d1cea94992b1087f56a"><div class="ttname"><a href="../../db/d66/namespace_kratos.html#a9c6097d0b0a27d1cea94992b1087f56a">Kratos::operator&gt;&gt;</a></div><div class="ttdeci">std::istream &amp; operator&gt;&gt;(std::istream &amp;rIStream, LinearMasterSlaveConstraint &amp;rThis)</div><div class="ttdoc">input stream function</div></div>
 <div class="ttc" id="anamespace_kratos_html_aaff3672cc52b90ee3d84713de272e1b5"><div class="ttname"><a href="../../db/d66/namespace_kratos.html#aaff3672cc52b90ee3d84713de272e1b5">Kratos::noalias</a></div><div class="ttdeci">T &amp; noalias(T &amp;TheMatrix)</div><div class="ttdef"><b>Definition:</b> amatrix_interface.h:484</div></div>
-<div class="ttc" id="anamespace_kratos_html_abb4d93a6f1ee35395fd178b0e96cbcb8"><div class="ttname"><a href="../../db/d66/namespace_kratos.html#abb4d93a6f1ee35395fd178b0e96cbcb8">Kratos::NodeType</a></div><div class="ttdeci">Node&lt; 3 &gt; NodeType</div><div class="ttdoc">The definition of the node.</div><div class="ttdef"><b>Definition:</b> mortar_classes.h:37</div></div>
 <div class="ttc" id="anamespace_kratos_html_acfc842a43d19dffc2d8105e5cbea17a9"><div class="ttname"><a href="../../db/d66/namespace_kratos.html#acfc842a43d19dffc2d8105e5cbea17a9">Kratos::operator&lt;&lt;</a></div><div class="ttdeci">std::ostream &amp; operator&lt;&lt;(std::ostream &amp;rOStream, const LinearMasterSlaveConstraint &amp;rThis)</div><div class="ttdoc">output stream function</div><div class="ttdef"><b>Definition:</b> linear_master_slave_constraint.h:432</div></div>
 <div class="ttc" id="anamespaceedgebased___pure_convection_html_a4b2ba243d5072905771aa99f3fb6dc75"><div class="ttname"><a href="../../d6/de1/namespaceedgebased___pure_convection.html#a4b2ba243d5072905771aa99f3fb6dc75">edgebased_PureConvection.ProcessInfo</a></div><div class="ttdeci">ProcessInfo</div><div class="ttdef"><b>Definition:</b> edgebased_PureConvection.py:116</div></div>
 <div class="ttc" id="anamespacemesh__to__mdpa__converter_html_a7036b7877987407aec21f49415487043"><div class="ttname"><a href="../../d0/df1/namespacemesh__to__mdpa__converter.html#a7036b7877987407aec21f49415487043">mesh_to_mdpa_converter.radius</a></div><div class="ttdeci">float radius</div><div class="ttdef"><b>Definition:</b> mesh_to_mdpa_converter.py:18</div></div>
@@ -1366,7 +1367,7 @@ $(function() {
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri May 12 2023 02:04:16 for KratosMultiphysics by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Sat May 13 2023 02:04:37 for KratosMultiphysics by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

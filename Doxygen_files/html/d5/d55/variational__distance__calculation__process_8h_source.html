@@ -238,7 +238,7 @@ $(function() {
 <div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;        <span class="comment">// Unfix the distances</span></div>
 <div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="../../d0/d79/namespacesensitivity_matrix.html#af14af89f05a917a288573a4b77c48c1f">nnodes</a> = <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(r_distance_model_part.NumberOfNodes());</div>
 <div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160; </div>
-<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;        <a class="code" href="../../db/d66/namespace_kratos.html#a382d1519b254c52c6699149b2192aa8c">block_for_each</a>(r_distance_model_part.Nodes(), [](<a class="code" href="../../d5/ddd/class_kratos_1_1_node.html">Node&lt;3&gt;</a>&amp; rNode){</div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;        <a class="code" href="../../db/d66/namespace_kratos.html#a382d1519b254c52c6699149b2192aa8c">block_for_each</a>(r_distance_model_part.Nodes(), [](<a class="code" href="../../d5/ddd/class_kratos_1_1_node.html">Node</a>&amp; rNode){</div>
 <div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;            double&amp; d = rNode.FastGetSolutionStepValue(DISTANCE);</div>
 <div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160; </div>
 <div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;            <span class="comment">// Free the DISTANCE values</span></div>
@@ -334,7 +334,7 @@ $(function() {
 <div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160; </div>
 <div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;        <span class="comment">// Assign the max dist to all of the non-fixed positive nodes</span></div>
 <div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;        <span class="comment">// and the minimum one to the non-fixed negatives</span></div>
-<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;        <a class="code" href="../../db/d66/namespace_kratos.html#a382d1519b254c52c6699149b2192aa8c">block_for_each</a>(r_distance_model_part.Nodes(), [&amp;min_dist, &amp;max_dist](Node&lt;3&gt;&amp; rNode){</div>
+<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;        <a class="code" href="../../db/d66/namespace_kratos.html#a382d1519b254c52c6699149b2192aa8c">block_for_each</a>(r_distance_model_part.Nodes(), [&amp;min_dist, &amp;max_dist](Node&amp; rNode){</div>
 <div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;            if(!rNode.IsFixed(DISTANCE)){</div>
 <div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;                double&amp; d = rNode.FastGetSolutionStepValue(DISTANCE);</div>
 <div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;                if(d&gt;0){</div>
@@ -478,7 +478,7 @@ $(function() {
 <div class="line"><a name="l00495"></a><span class="lineno">  495</span>&#160;        <span class="comment">// Note that above we have assigned the same geometry. Thus the flag is</span></div>
 <div class="line"><a name="l00496"></a><span class="lineno">  496</span>&#160;        <span class="comment">// set in the distance model part despite we are iterating the base one</span></div>
 <div class="line"><a name="l00497"></a><span class="lineno">  497</span>&#160;        <span class="keywordflow">for</span> (<span class="keyword">auto</span> it_cond = rBaseModelPart.ConditionsBegin(); it_cond != rBaseModelPart.ConditionsEnd(); ++it_cond){</div>
-<div class="line"><a name="l00498"></a><span class="lineno">  498</span>&#160;            <a class="code" href="../../dc/dea/class_kratos_1_1_geometry.html">Geometry&lt; Node&lt;3&gt;</a> &gt;&amp; geom = it_cond-&gt;GetGeometry();</div>
+<div class="line"><a name="l00498"></a><span class="lineno">  498</span>&#160;            <a class="code" href="../../dc/dea/class_kratos_1_1_geometry.html">Geometry&lt; Node &gt;</a>&amp; geom = it_cond-&gt;GetGeometry();</div>
 <div class="line"><a name="l00499"></a><span class="lineno">  499</span>&#160;            <span class="keywordflow">for</span>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="../../d2/db8/namespacetensors.html#a15a1da80aa773e2015eba781cababe05">i</a>=0; <a class="code" href="../../d2/db8/namespacetensors.html#a15a1da80aa773e2015eba781cababe05">i</a>&lt;geom.<a class="code" href="../../dc/dea/class_kratos_1_1_geometry.html#a2477b702b7e4972903ca29e31b6ded56">size</a>(); <a class="code" href="../../d2/db8/namespacetensors.html#a15a1da80aa773e2015eba781cababe05">i</a>++){</div>
 <div class="line"><a name="l00500"></a><span class="lineno">  500</span>&#160;                geom[<a class="code" href="../../d2/db8/namespacetensors.html#a15a1da80aa773e2015eba781cababe05">i</a>].Set(BOUNDARY,<span class="keyword">true</span>);</div>
 <div class="line"><a name="l00501"></a><span class="lineno">  501</span>&#160;            }</div>
@@ -619,7 +619,7 @@ $(function() {
 <div class="ttc" id="aclass_kratos_1_1_geometry_html"><div class="ttname"><a href="../../dc/dea/class_kratos_1_1_geometry.html">Kratos::Geometry</a></div><div class="ttdoc">Geometry base class.</div><div class="ttdef"><b>Definition:</b> geometry.h:71</div></div>
 <div class="ttc" id="aclass_kratos_1_1_geometry_html_a2477b702b7e4972903ca29e31b6ded56"><div class="ttname"><a href="../../dc/dea/class_kratos_1_1_geometry.html#a2477b702b7e4972903ca29e31b6ded56">Kratos::Geometry::size</a></div><div class="ttdeci">SizeType size() const</div><div class="ttdef"><b>Definition:</b> geometry.h:518</div></div>
 <div class="ttc" id="aclass_kratos_1_1_implicit_solving_strategy_html"><div class="ttname"><a href="../../d8/df2/class_kratos_1_1_implicit_solving_strategy.html">Kratos::ImplicitSolvingStrategy</a></div><div class="ttdoc">Implicit solving strategy base class This is the base class from which we will derive all the implici...</div><div class="ttdef"><b>Definition:</b> implicit_solving_strategy.h:61</div></div>
-<div class="ttc" id="aclass_kratos_1_1_node_html"><div class="ttname"><a href="../../d5/ddd/class_kratos_1_1_node.html">Kratos::Node</a></div><div class="ttdoc">This class defines the node.</div><div class="ttdef"><b>Definition:</b> node.h:68</div></div>
+<div class="ttc" id="aclass_kratos_1_1_node_html"><div class="ttname"><a href="../../d5/ddd/class_kratos_1_1_node.html">Kratos::Node</a></div><div class="ttdoc">This class defines the node.</div><div class="ttdef"><b>Definition:</b> node.h:67</div></div>
 <div class="ttc" id="aclass_kratos_1_1_process_html"><div class="ttname"><a href="../../d2/d8c/class_kratos_1_1_process.html">Kratos::Process</a></div><div class="ttdoc">The base class for all processes in Kratos.</div><div class="ttdef"><b>Definition:</b> process.h:49</div></div>
 <div class="ttc" id="aclass_kratos_1_1_scheme_html"><div class="ttname"><a href="../../d1/da3/class_kratos_1_1_scheme.html">Kratos::Scheme</a></div><div class="ttdoc">This class provides the implementation of the basic tasks that are needed by the solution strategy.</div><div class="ttdef"><b>Definition:</b> scheme.h:58</div></div>
 <div class="ttc" id="aclass_kratos_1_1_variable_html"><div class="ttname"><a href="../../d1/d66/class_kratos_1_1_variable.html">Kratos::Variable&lt; double &gt;</a></div></div>
@@ -685,7 +685,7 @@ $(function() {
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri May 12 2023 02:07:37 for KratosMultiphysics by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Sat May 13 2023 02:07:58 for KratosMultiphysics by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

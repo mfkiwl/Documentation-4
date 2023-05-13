@@ -108,7 +108,7 @@ $(function() {
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="keyword">public</span>:</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keyword">typedef</span> Node&lt;3&gt; <a class="code" href="../../db/d66/namespace_kratos.html#abb4d93a6f1ee35395fd178b0e96cbcb8">NodeType</a>;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keyword">typedef</span> <a class="code" href="../../db/d66/namespace_kratos.html#a8ad9f38d847ff7742fb13b5098910b03a6c3a6944a808a7c0bbb6788dbec54a9f">Node</a> <a class="code" href="../../db/d66/namespace_kratos.html#a4e2ab605ef101fe7856e7f373e418478">NodeType</a>;</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keyword">typedef</span> Geometry&lt;NodeType&gt; <a class="code" href="../../db/d66/namespace_kratos.html#a884ade0675a6a17a14d1bce5e3ae2fe3">GeometryType</a>;</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keyword">typedef</span> GeometryType::Pointer GeometryPtrType;</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
@@ -134,11 +134,11 @@ $(function() {
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160; </div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160; </div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    </div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    Tetrahedra3D10&lt;Node&lt;3&gt;&gt; GenerateTetrahedra(</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    Tetrahedra3D10&lt;Node&gt; GenerateTetrahedra(</div>
 <div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;        <a class="code" href="../../d4/d5e/class_model_part.html">ModelPart</a>&amp; rThisModelPart, </div>
 <div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;        <span class="keyword">const</span> std::vector&lt;int&gt;&amp; rNodeIds);</div>
 <div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160; </div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    Triangle3D6&lt;Node&lt;3&gt;&gt; GenerateTriangle3D6(</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    Triangle3D6&lt;Node&gt; GenerateTriangle3D6(</div>
 <div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;        <a class="code" href="../../d4/d5e/class_model_part.html">ModelPart</a>&amp; rThisModelPart, </div>
 <div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;        <span class="keyword">const</span> array_1d&lt;int, 6&gt;&amp; rNodeIds);</div>
 <div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160; </div>
@@ -169,15 +169,16 @@ $(function() {
 <div class="ttc" id="aclass_model_part_html"><div class="ttname"><a href="../../d4/d5e/class_model_part.html">ModelPart</a></div><div class="ttdoc">This class aims to manage meshes for multi-physics simulations.</div><div class="ttdef"><b>Definition:</b> model_part.h:66</div></div>
 <div class="ttc" id="alocal__refine__tetrahedra__mesh_8hpp_html"><div class="ttname"><a href="../../d8/d23/local__refine__tetrahedra__mesh_8hpp.html">local_refine_tetrahedra_mesh.hpp</a></div></div>
 <div class="ttc" id="anamespace_kratos_html"><div class="ttname"><a href="../../db/d66/namespace_kratos.html">Kratos</a></div><div class="ttdoc">REF: G. R. Cowper, GAUSSIAN QUADRATURE FORMULAS FOR TRIANGLES.</div><div class="ttdef"><b>Definition:</b> mesh_condition.cpp:21</div></div>
+<div class="ttc" id="anamespace_kratos_html_a4e2ab605ef101fe7856e7f373e418478"><div class="ttname"><a href="../../db/d66/namespace_kratos.html#a4e2ab605ef101fe7856e7f373e418478">Kratos::NodeType</a></div><div class="ttdeci">Node NodeType</div><div class="ttdoc">The definition of the node.</div><div class="ttdef"><b>Definition:</b> mortar_classes.h:37</div></div>
 <div class="ttc" id="anamespace_kratos_html_a884ade0675a6a17a14d1bce5e3ae2fe3"><div class="ttname"><a href="../../db/d66/namespace_kratos.html#a884ade0675a6a17a14d1bce5e3ae2fe3">Kratos::GeometryType</a></div><div class="ttdeci">Geometry&lt; NodeType &gt; GeometryType</div><div class="ttdoc">The definition of the geometry.</div><div class="ttdef"><b>Definition:</b> mortar_classes.h:38</div></div>
-<div class="ttc" id="anamespace_kratos_html_abb4d93a6f1ee35395fd178b0e96cbcb8"><div class="ttname"><a href="../../db/d66/namespace_kratos.html#abb4d93a6f1ee35395fd178b0e96cbcb8">Kratos::NodeType</a></div><div class="ttdeci">Node&lt; 3 &gt; NodeType</div><div class="ttdoc">The definition of the node.</div><div class="ttdef"><b>Definition:</b> mortar_classes.h:37</div></div>
+<div class="ttc" id="anamespace_kratos_html_a8ad9f38d847ff7742fb13b5098910b03a6c3a6944a808a7c0bbb6788dbec54a9f"><div class="ttname"><a href="../../db/d66/namespace_kratos.html#a8ad9f38d847ff7742fb13b5098910b03a6c3a6944a808a7c0bbb6788dbec54a9f">Kratos::StressTreatment::Node</a></div><div class="ttdeci">@ Node</div></div>
 <div class="ttc" id="aparallel__utilities_8h_html"><div class="ttname"><a href="../../de/d07/parallel__utilities_8h.html">parallel_utilities.h</a></div></div>
 <div class="ttc" id="atetrahedra__3d__10_8h_html"><div class="ttname"><a href="../../de/dca/tetrahedra__3d__10_8h.html">tetrahedra_3d_10.h</a></div></div>
 <div class="ttc" id="atransfer__utility_8h_html_a95ed76edc983cae239b65f370953d216"><div class="ttname"><a href="../../d6/d3f/transfer__utility_8h.html#a95ed76edc983cae239b65f370953d216">KRATOS_CLASS_POINTER_DEFINITION</a></div><div class="ttdeci">KRATOS_CLASS_POINTER_DEFINITION(TransferUtility)</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri May 12 2023 02:03:25 for KratosMultiphysics by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Sat May 13 2023 02:03:46 for KratosMultiphysics by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

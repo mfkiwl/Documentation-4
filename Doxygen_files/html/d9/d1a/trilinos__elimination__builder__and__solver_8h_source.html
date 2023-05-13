@@ -622,11 +622,11 @@ $(function() {
 <div class="line"><a name="l00617"></a><span class="lineno">  617</span>&#160;                {</div>
 <div class="line"><a name="l00618"></a><span class="lineno">  618</span>&#160;                    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> key = remote_keys[i_color][<a class="code" href="../../d0/daa/namespacescript___t_h_e_r_m_a_l___c_o_r_r_e_c_t.html#a37fe67255f2e1d30f90f0f02ceb60616">counter</a>++];</div>
 <div class="line"><a name="l00619"></a><span class="lineno">  619</span>&#160; </div>
-<div class="line"><a name="l00620"></a><span class="lineno">  620</span>&#160;                    <a class="code" href="../../d5/ddd/class_kratos_1_1_node.html">Node&lt;3&gt;::DofsContainerType::iterator</a> i_dof;</div>
-<div class="line"><a name="l00621"></a><span class="lineno">  621</span>&#160;                    <span class="keywordflow">for</span> (i_dof = it-&gt;<a class="code" href="../../d5/ddd/class_kratos_1_1_node.html#abdc766ad510c5cf4d0e5f7386d30243d">GetDofs</a>().begin() ; i_dof !=  it-&gt;<a class="code" href="../../d5/ddd/class_kratos_1_1_node.html#abdc766ad510c5cf4d0e5f7386d30243d">GetDofs</a>().end() ; i_dof++)</div>
+<div class="line"><a name="l00620"></a><span class="lineno">  620</span>&#160;                    Node::DofsContainerType::iterator i_dof;</div>
+<div class="line"><a name="l00621"></a><span class="lineno">  621</span>&#160;                    <span class="keywordflow">for</span> (i_dof = it-&gt;GetDofs().begin() ; i_dof !=  it-&gt;GetDofs().end() ; i_dof++)</div>
 <div class="line"><a name="l00622"></a><span class="lineno">  622</span>&#160;                        <span class="keywordflow">if</span> ((*i_dof)-&gt;GetVariable().Key() == key)</div>
 <div class="line"><a name="l00623"></a><span class="lineno">  623</span>&#160;                            <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00624"></a><span class="lineno">  624</span>&#160;                    <span class="keywordflow">if</span>(i_dof == it-&gt;<a class="code" href="../../d5/ddd/class_kratos_1_1_node.html#abdc766ad510c5cf4d0e5f7386d30243d">GetDofs</a>().end())</div>
+<div class="line"><a name="l00624"></a><span class="lineno">  624</span>&#160;                    <span class="keywordflow">if</span>(i_dof == it-&gt;GetDofs().end())</div>
 <div class="line"><a name="l00625"></a><span class="lineno">  625</span>&#160;                        <a class="code" href="../../df/d67/define_8h.html#a0bc8ca20163d926dc5090cf16a6adc06">KRATOS_THROW_ERROR</a>(std::logic_error,<span class="stringliteral">&quot;dof not found&quot;</span>,**i_dof);</div>
 <div class="line"><a name="l00626"></a><span class="lineno">  626</span>&#160; </div>
 <div class="line"><a name="l00627"></a><span class="lineno">  627</span>&#160;                    Doftemp.push_back( i_dof.base()-&gt;get() );</div>
@@ -732,8 +732,8 @@ $(function() {
 <div class="line"><a name="l00727"></a><span class="lineno">  727</span>&#160;                {</div>
 <div class="line"><a name="l00728"></a><span class="lineno">  728</span>&#160;                    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> key = remote_keys[i_color][<a class="code" href="../../d0/daa/namespacescript___t_h_e_r_m_a_l___c_o_r_r_e_c_t.html#a37fe67255f2e1d30f90f0f02ceb60616">counter</a>++];</div>
 <div class="line"><a name="l00729"></a><span class="lineno">  729</span>&#160; </div>
-<div class="line"><a name="l00730"></a><span class="lineno">  730</span>&#160;                    <a class="code" href="../../d5/ddd/class_kratos_1_1_node.html">Node&lt;3&gt;::DofsContainerType::iterator</a> i_dof;</div>
-<div class="line"><a name="l00731"></a><span class="lineno">  731</span>&#160;                    <span class="keywordflow">for</span> (i_dof = it-&gt;<a class="code" href="../../d5/ddd/class_kratos_1_1_node.html#abdc766ad510c5cf4d0e5f7386d30243d">GetDofs</a>().begin() ; i_dof !=  it-&gt;<a class="code" href="../../d5/ddd/class_kratos_1_1_node.html#abdc766ad510c5cf4d0e5f7386d30243d">GetDofs</a>().end() ; i_dof++)</div>
+<div class="line"><a name="l00730"></a><span class="lineno">  730</span>&#160;                    Node::DofsContainerType::iterator i_dof;</div>
+<div class="line"><a name="l00731"></a><span class="lineno">  731</span>&#160;                    <span class="keywordflow">for</span> (i_dof = it-&gt;GetDofs().begin() ; i_dof !=  it-&gt;GetDofs().end() ; i_dof++)</div>
 <div class="line"><a name="l00732"></a><span class="lineno">  732</span>&#160;                        <span class="keywordflow">if</span> ((*i_dof)-&gt;GetVariable().Key() == key)</div>
 <div class="line"><a name="l00733"></a><span class="lineno">  733</span>&#160;                            <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00734"></a><span class="lineno">  734</span>&#160; </div>
@@ -1317,8 +1317,6 @@ $(function() {
 <div class="ttc" id="aclass_kratos_1_1_builder_and_solver_html_ae8971ea9fbe6bfb776a4e3cb86b4b66e"><div class="ttname"><a href="../../d2/d88/class_kratos_1_1_builder_and_solver.html#ae8971ea9fbe6bfb776a4e3cb86b4b66e">Kratos::BuilderAndSolver::ElementsArrayType</a></div><div class="ttdeci">ModelPart::ElementsContainerType ElementsArrayType</div><div class="ttdef"><b>Definition:</b> builder_and_solver.h:110</div></div>
 <div class="ttc" id="aclass_kratos_1_1_element_html_a83ae9b09dd7a0ed7ab3bc1baa6429df5"><div class="ttname"><a href="../../d5/dd4/class_kratos_1_1_element.html#a83ae9b09dd7a0ed7ab3bc1baa6429df5">Kratos::Element::DofsVectorType</a></div><div class="ttdeci">std::vector&lt; DofType::Pointer &gt; DofsVectorType</div><div class="ttdef"><b>Definition:</b> element.h:100</div></div>
 <div class="ttc" id="aclass_kratos_1_1_element_html_ae71a1a55ae484b69ec9ec5f18919e324"><div class="ttname"><a href="../../d5/dd4/class_kratos_1_1_element.html#ae71a1a55ae484b69ec9ec5f18919e324">Kratos::Element::EquationIdVectorType</a></div><div class="ttdeci">std::vector&lt; std::size_t &gt; EquationIdVectorType</div><div class="ttdef"><b>Definition:</b> element.h:98</div></div>
-<div class="ttc" id="aclass_kratos_1_1_node_html"><div class="ttname"><a href="../../d5/ddd/class_kratos_1_1_node.html">Kratos::Node</a></div><div class="ttdoc">This class defines the node.</div><div class="ttdef"><b>Definition:</b> node.h:68</div></div>
-<div class="ttc" id="aclass_kratos_1_1_node_html_abdc766ad510c5cf4d0e5f7386d30243d"><div class="ttname"><a href="../../d5/ddd/class_kratos_1_1_node.html#abdc766ad510c5cf4d0e5f7386d30243d">Kratos::Node::GetDofs</a></div><div class="ttdeci">DofsContainerType &amp; GetDofs()</div><div class="ttdef"><b>Definition:</b> node.h:721</div></div>
 <div class="ttc" id="aclass_kratos_1_1_pointer_vector_set_html"><div class="ttname"><a href="../../db/dc6/class_kratos_1_1_pointer_vector_set.html">Kratos::PointerVectorSet</a></div><div class="ttdoc">PointerVectorSet is a sorted associative container like stl set but using a vector to store pointers ...</div><div class="ttdef"><b>Definition:</b> pointer_vector_set.h:72</div></div>
 <div class="ttc" id="aclass_kratos_1_1_scheme_html"><div class="ttname"><a href="../../d1/da3/class_kratos_1_1_scheme.html">Kratos::Scheme</a></div><div class="ttdoc">This class provides the implementation of the basic tasks that are needed by the solution strategy.</div><div class="ttdef"><b>Definition:</b> scheme.h:58</div></div>
 <div class="ttc" id="aclass_kratos_1_1_trilinos_residual_based_elimination_builder_and_solver_html"><div class="ttname"><a href="../../da/d0f/class_kratos_1_1_trilinos_residual_based_elimination_builder_and_solver.html">Kratos::TrilinosResidualBasedEliminationBuilderAndSolver</a></div><div class="ttdef"><b>Definition:</b> trilinos_elimination_builder_and_solver.h:117</div></div>
@@ -1389,7 +1387,7 @@ $(function() {
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri May 12 2023 02:05:41 for KratosMultiphysics by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Sat May 13 2023 02:06:03 for KratosMultiphysics by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

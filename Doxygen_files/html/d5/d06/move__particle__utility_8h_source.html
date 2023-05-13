@@ -203,10 +203,10 @@ $(function() {
 <div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;                    <a class="code" href="../../d4/ddc/class_kratos_1_1array__1d.html">array_1d&lt;double,3&gt;</a> position_node;</div>
 <div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;                    <span class="keywordtype">double</span> distance=0.0;</div>
 <div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;                    position_node = pnode-&gt;Coordinates();</div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;                    <a class="code" href="../../d4/dc2/class_kratos_1_1_global_pointers_vector.html">GlobalPointersVector&lt; Node&lt;3&gt;</a> &gt;&amp; rneigh = pnode-&gt;GetValue(NEIGHBOUR_NODES);</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;                    <a class="code" href="../../d4/dc2/class_kratos_1_1_global_pointers_vector.html">GlobalPointersVector&lt; Node &gt;</a>&amp; rneigh = pnode-&gt;GetValue(NEIGHBOUR_NODES);</div>
 <div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;                    <span class="comment">//we loop all the nodes to check all the edges</span></div>
 <div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;                    <span class="keyword">const</span> <span class="keywordtype">double</span> number_of_neighbours = <a class="code" href="../../db/d66/namespace_kratos.html#ac77084a57869cbecf89d3ee2c819c5d3">double</a>(rneigh.<a class="code" href="../../d4/dc2/class_kratos_1_1_global_pointers_vector.html#a930fdb3e8b0ff4e6453f464647e3ce73">size</a>());</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;                    <span class="keywordflow">for</span>( <a class="code" href="../../d4/dc2/class_kratos_1_1_global_pointers_vector.html">GlobalPointersVector</a>&lt;<a class="code" href="../../d5/ddd/class_kratos_1_1_node.html">Node&lt;3&gt;</a> &gt;::iterator inode = rneigh.<a class="code" href="../../d4/dc2/class_kratos_1_1_global_pointers_vector.html#a599125ad0e25d62480de5e84477b5f20">begin</a>(); inode!=rneigh.<a class="code" href="../../d4/dc2/class_kratos_1_1_global_pointers_vector.html#aecf3bbe94f6105274d86e19e7bbe3631">end</a>(); inode++)</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;                    <span class="keywordflow">for</span>( <a class="code" href="../../d4/dc2/class_kratos_1_1_global_pointers_vector.html#a7d62bec0687704a8de1c1466f89e04e9">GlobalPointersVector&lt;Node &gt;::iterator</a> inode = rneigh.<a class="code" href="../../d4/dc2/class_kratos_1_1_global_pointers_vector.html#a599125ad0e25d62480de5e84477b5f20">begin</a>(); inode!=rneigh.<a class="code" href="../../d4/dc2/class_kratos_1_1_global_pointers_vector.html#aecf3bbe94f6105274d86e19e7bbe3631">end</a>(); inode++)</div>
 <div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;                    {</div>
 <div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;                        <a class="code" href="../../d4/ddc/class_kratos_1_1array__1d.html">array_1d&lt;double,3&gt;</a> position_difference;</div>
 <div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;                        position_difference = inode-&gt;Coordinates() - position_node;</div>
@@ -307,7 +307,7 @@ $(function() {
 <div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;                <span class="keywordtype">int</span> &amp; number_of_particles = mnumber_of_particles_in_elems[ii];</div>
 <div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;                number_of_particles=0;</div>
 <div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160; </div>
-<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;                <a class="code" href="../../dc/dea/class_kratos_1_1_geometry.html">Geometry&lt; Node&lt;3&gt;</a> &gt;&amp; geom = ielem-&gt;GetGeometry();</div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;                <a class="code" href="../../dc/dea/class_kratos_1_1_geometry.html">Geometry&lt; Node &gt;</a>&amp; geom = ielem-&gt;GetGeometry();</div>
 <div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;                <span class="comment">//unsigned int elem_id = ielem-&gt;Id();</span></div>
 <div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;                <span class="comment">//mareas_vector[i_int]=CalculateArea(geom); UNUSED SO COMMENTED</span></div>
 <div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;                ComputeGaussPointPositions_initial(geom, pos, <a class="code" href="../../df/d42/mmio_8h.html#a3f620e88ba511ca5d32c93b84802ff6e">N</a>); <span class="comment">//we also have the standard (4), and 45</span></div>
@@ -410,7 +410,7 @@ $(function() {
 <div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;                <span class="keywordflow">for</span>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> ii=element_partition[kkk]; ii&lt;element_partition[kkk+1]; ii++)</div>
 <div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;                {</div>
 <div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;                    ModelPart::ElementsContainerType::iterator ielem = ielembegin+ii;</div>
-<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;                    <a class="code" href="../../dc/dea/class_kratos_1_1_geometry.html">Geometry&lt;Node&lt;3&gt;</a> &gt;&amp; geom = ielem-&gt;GetGeometry();</div>
+<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;                    <a class="code" href="../../dc/dea/class_kratos_1_1_geometry.html">Geometry&lt;Node &gt;</a>&amp; geom = ielem-&gt;GetGeometry();</div>
 <div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160; </div>
 <div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;                    <a class="code" href="../../d4/ddc/class_kratos_1_1array__1d.html">array_1d&lt;double, 3 &gt;</a>vector_mean_velocity=<a class="code" href="../../db/d66/namespace_kratos.html#a0060702fbd6c7d45c773436101c9ded3">ZeroVector</a>(3);</div>
 <div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160; </div>
@@ -728,7 +728,7 @@ $(function() {
 <div class="line"><a name="l00649"></a><span class="lineno">  649</span>&#160;                    <a class="code" href="../../d4/ddc/class_kratos_1_1array__1d.html">array_1d</a>&lt;<a class="code" href="../../db/d66/namespace_kratos.html#ac77084a57869cbecf89d3ee2c819c5d3">double</a>,(TDim+1)&gt; nodes_addedweights = <a class="code" href="../../db/d66/namespace_kratos.html#a0060702fbd6c7d45c773436101c9ded3">ZeroVector</a>((TDim+1));</div>
 <div class="line"><a name="l00650"></a><span class="lineno">  650</span>&#160;                    <span class="comment">//array_1d&lt;double,(TDim+1)&gt; weighting_inverse_divisor;</span></div>
 <div class="line"><a name="l00651"></a><span class="lineno">  651</span>&#160; </div>
-<div class="line"><a name="l00652"></a><span class="lineno">  652</span>&#160;                    <a class="code" href="../../dc/dea/class_kratos_1_1_geometry.html">Geometry&lt;Node&lt;3&gt;</a> &gt;&amp; geom = ielem-&gt;GetGeometry();</div>
+<div class="line"><a name="l00652"></a><span class="lineno">  652</span>&#160;                    <a class="code" href="../../dc/dea/class_kratos_1_1_geometry.html">Geometry&lt;Node &gt;</a>&amp; geom = ielem-&gt;GetGeometry();</div>
 <div class="line"><a name="l00653"></a><span class="lineno">  653</span>&#160; </div>
 <div class="line"><a name="l00654"></a><span class="lineno">  654</span>&#160;                    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> <a class="code" href="../../d2/db8/namespacetensors.html#a15a1da80aa773e2015eba781cababe05">i</a>=0 ; <a class="code" href="../../d2/db8/namespacetensors.html#a15a1da80aa773e2015eba781cababe05">i</a>!=(TDim+1) ; ++<a class="code" href="../../d2/db8/namespacetensors.html#a15a1da80aa773e2015eba781cababe05">i</a>)</div>
 <div class="line"><a name="l00655"></a><span class="lineno">  655</span>&#160;                    {</div>
@@ -899,7 +899,7 @@ $(function() {
 <div class="line"><a name="l00822"></a><span class="lineno">  822</span>&#160;                    <span class="comment">//mass_matrix_d = ZeroMatrix(TDim+1 , TDim+1 );  //resetting matrices</span></div>
 <div class="line"><a name="l00823"></a><span class="lineno">  823</span>&#160;                    rhs_scalar1 = <a class="code" href="../../db/d66/namespace_kratos.html#a0060702fbd6c7d45c773436101c9ded3">ZeroVector</a>((TDim+1));         <span class="comment">//resetting vectors</span></div>
 <div class="line"><a name="l00824"></a><span class="lineno">  824</span>&#160; </div>
-<div class="line"><a name="l00825"></a><span class="lineno">  825</span>&#160;                    <a class="code" href="../../dc/dea/class_kratos_1_1_geometry.html">Geometry&lt;Node&lt;3&gt;</a> &gt;&amp; geom = ielem-&gt;GetGeometry();</div>
+<div class="line"><a name="l00825"></a><span class="lineno">  825</span>&#160;                    <a class="code" href="../../dc/dea/class_kratos_1_1_geometry.html">Geometry&lt;Node &gt;</a>&amp; geom = ielem-&gt;GetGeometry();</div>
 <div class="line"><a name="l00826"></a><span class="lineno">  826</span>&#160;                    <span class="keyword">const</span> <span class="keywordtype">double</span> elem_volume = geom.<a class="code" href="../../dc/dea/class_kratos_1_1_geometry.html#afd51475099147b19ee8d4569115149ec">Area</a>();</div>
 <div class="line"><a name="l00827"></a><span class="lineno">  827</span>&#160; </div>
 <div class="line"><a name="l00828"></a><span class="lineno">  828</span>&#160;                    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> <a class="code" href="../../d2/db8/namespacetensors.html#a15a1da80aa773e2015eba781cababe05">i</a>=0 ; <a class="code" href="../../d2/db8/namespacetensors.html#a15a1da80aa773e2015eba781cababe05">i</a>!=(TDim+1) ; ++<a class="code" href="../../d2/db8/namespacetensors.html#a15a1da80aa773e2015eba781cababe05">i</a>)  <span class="comment">//saving the nodal positions for faster access</span></div>
@@ -1043,7 +1043,7 @@ $(function() {
 <div class="line"><a name="l00968"></a><span class="lineno">  968</span>&#160;                    <span class="comment">//const int &amp; elem_id = ielem-&gt;Id();</span></div>
 <div class="line"><a name="l00969"></a><span class="lineno">  969</span>&#160;                    ModelPart::ElementsContainerType::iterator ielem = ielembegin+ii;</div>
 <div class="line"><a name="l00970"></a><span class="lineno">  970</span>&#160;                    Element::Pointer pelement(*ielem.base());</div>
-<div class="line"><a name="l00971"></a><span class="lineno">  971</span>&#160;                    <a class="code" href="../../dc/dea/class_kratos_1_1_geometry.html">Geometry&lt;Node&lt;3&gt;</a> &gt;&amp; geom = ielem-&gt;GetGeometry();</div>
+<div class="line"><a name="l00971"></a><span class="lineno">  971</span>&#160;                    <a class="code" href="../../dc/dea/class_kratos_1_1_geometry.html">Geometry&lt;Node &gt;</a>&amp; geom = ielem-&gt;GetGeometry();</div>
 <div class="line"><a name="l00972"></a><span class="lineno">  972</span>&#160; </div>
 <div class="line"><a name="l00973"></a><span class="lineno">  973</span>&#160;                    <span class="comment">//ParticlePointerVector&amp;  element_particle_pointers =  (ielem-&gt;GetValue(BED_PARTICLE_POINTERS));</span></div>
 <div class="line"><a name="l00974"></a><span class="lineno">  974</span>&#160;                    <span class="comment">//int &amp; number_of_particles_in_elem=ielem-&gt;GetValue(NUMBER_OF_BED_PARTICLES);</span></div>
@@ -1145,7 +1145,7 @@ $(function() {
 <div class="line"><a name="l01070"></a><span class="lineno"> 1070</span>&#160;                    <span class="keywordflow">if</span> (number_of_particles_in_elem&lt;(minimum_number_of_particles))<span class="comment">// &amp;&amp; (ielem-&gt;GetGeometry())[0].Y()&lt;0.10 )</span></div>
 <div class="line"><a name="l01071"></a><span class="lineno"> 1071</span>&#160;                        {</div>
 <div class="line"><a name="l01072"></a><span class="lineno"> 1072</span>&#160;                        <span class="comment">//KRATOS_WATCH(&quot;elem with little particles&quot;)</span></div>
-<div class="line"><a name="l01073"></a><span class="lineno"> 1073</span>&#160;                        <a class="code" href="../../dc/dea/class_kratos_1_1_geometry.html">Geometry&lt; Node&lt;3&gt;</a> &gt;&amp; geom = ielem-&gt;GetGeometry();</div>
+<div class="line"><a name="l01073"></a><span class="lineno"> 1073</span>&#160;                        <a class="code" href="../../dc/dea/class_kratos_1_1_geometry.html">Geometry&lt; Node &gt;</a>&amp; geom = ielem-&gt;GetGeometry();</div>
 <div class="line"><a name="l01074"></a><span class="lineno"> 1074</span>&#160;                        ComputeGaussPointPositionsForPreReseed(geom, pos, <a class="code" href="../../df/d42/mmio_8h.html#a3f620e88ba511ca5d32c93b84802ff6e">N</a>);</div>
 <div class="line"><a name="l01075"></a><span class="lineno"> 1075</span>&#160;                        <span class="comment">//double conductivity = ielem-&gt;GetProperties()[CONDUCTIVITY];</span></div>
 <div class="line"><a name="l01076"></a><span class="lineno"> 1076</span>&#160;                        <span class="comment">//KRATOS_WATCH(conductivity);</span></div>
@@ -1238,7 +1238,7 @@ $(function() {
 <div class="line"><a name="l01163"></a><span class="lineno"> 1163</span>&#160;            <span class="comment">//KRATOS_WATCH(elem_partition_size);</span></div>
 <div class="line"><a name="l01164"></a><span class="lineno"> 1164</span>&#160;            <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="../../d2/db8/namespacetensors.html#a15a1da80aa773e2015eba781cababe05">i</a> = 1; <a class="code" href="../../d2/db8/namespacetensors.html#a15a1da80aa773e2015eba781cababe05">i</a> &lt; number_of_threads; <a class="code" href="../../d2/db8/namespacetensors.html#a15a1da80aa773e2015eba781cababe05">i</a>++)</div>
 <div class="line"><a name="l01165"></a><span class="lineno"> 1165</span>&#160;            elem_partition[<a class="code" href="../../d2/db8/namespacetensors.html#a15a1da80aa773e2015eba781cababe05">i</a>] = elem_partition[<a class="code" href="../../d2/db8/namespacetensors.html#a15a1da80aa773e2015eba781cababe05">i</a> - 1] + elem_partition_size;</div>
-<div class="line"><a name="l01166"></a><span class="lineno"> 1166</span>&#160;            <span class="comment">//typedef Node &lt; 3 &gt; PointType;</span></div>
+<div class="line"><a name="l01166"></a><span class="lineno"> 1166</span>&#160;            <span class="comment">//typedef Node PointType;</span></div>
 <div class="line"><a name="l01167"></a><span class="lineno"> 1167</span>&#160;            <span class="comment">//std::vector&lt;ModelPart::NodesContainerType&gt; aux;// aux;</span></div>
 <div class="line"><a name="l01168"></a><span class="lineno"> 1168</span>&#160;            <span class="comment">//aux.resize(number_of_threads);</span></div>
 <div class="line"><a name="l01169"></a><span class="lineno"> 1169</span>&#160; </div>
@@ -1278,7 +1278,7 @@ $(function() {
 <div class="line"><a name="l01203"></a><span class="lineno"> 1203</span>&#160;                    <span class="keywordtype">int</span> &amp; number_of_particles_in_elem= mnumber_of_particles_in_elems[ii];</div>
 <div class="line"><a name="l01204"></a><span class="lineno"> 1204</span>&#160;                    <a class="code" href="../../de/d83/class_kratos_1_1_pointer_vector.html">ParticlePointerVector</a>&amp;  element_particle_pointers =  mvector_of_particle_pointers_vectors[ii];</div>
 <div class="line"><a name="l01205"></a><span class="lineno"> 1205</span>&#160; </div>
-<div class="line"><a name="l01206"></a><span class="lineno"> 1206</span>&#160;                    <a class="code" href="../../dc/dea/class_kratos_1_1_geometry.html">Geometry&lt; Node&lt;3&gt;</a> &gt;&amp; geom = ielem-&gt;GetGeometry();</div>
+<div class="line"><a name="l01206"></a><span class="lineno"> 1206</span>&#160;                    <a class="code" href="../../dc/dea/class_kratos_1_1_geometry.html">Geometry&lt; Node &gt;</a>&amp; geom = ielem-&gt;GetGeometry();</div>
 <div class="line"><a name="l01207"></a><span class="lineno"> 1207</span>&#160;                    <span class="keywordflow">if</span> ( (number_of_particles_in_elem&lt;(minimum_number_of_particles)))<span class="comment">// &amp;&amp; (geom[0].Y()&lt;0.10) ) || (number_of_water_particles_in_elem&gt;2 &amp;&amp; number_of_particles_in_elem&lt;(minimum_number_of_particles) ) )</span></div>
 <div class="line"><a name="l01208"></a><span class="lineno"> 1208</span>&#160;                    {</div>
 <div class="line"><a name="l01209"></a><span class="lineno"> 1209</span>&#160; </div>
@@ -1378,9 +1378,9 @@ $(function() {
 <div class="line"><a name="l01303"></a><span class="lineno"> 1303</span>&#160; </div>
 <div class="line"><a name="l01304"></a><span class="lineno"> 1304</span>&#160;                <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="../../d2/db8/namespacetensors.html#a15a1da80aa773e2015eba781cababe05">i</a>=0; <a class="code" href="../../d2/db8/namespacetensors.html#a15a1da80aa773e2015eba781cababe05">i</a>!=((mmaximum_number_of_particles*mnelems)/mfilter_factor)+mfilter_factor; <a class="code" href="../../d2/db8/namespacetensors.html#a15a1da80aa773e2015eba781cababe05">i</a>++)</div>
 <div class="line"><a name="l01305"></a><span class="lineno"> 1305</span>&#160;                {</div>
-<div class="line"><a name="l01306"></a><span class="lineno"> 1306</span>&#160;                    <a class="code" href="../../d5/ddd/class_kratos_1_1_node.html">Node &lt; 3 &gt;</a> ::Pointer pnode = <a class="code" href="../../d2/db8/namespacelagrangian__droplet__test.html#a6bf2e6636f2a61fba626c85d3cf51209">lagrangian_model_part</a>.CreateNewNode( <a class="code" href="../../d2/db8/namespacetensors.html#a15a1da80aa773e2015eba781cababe05">i</a>+mlast_node_id+1 , 0.0, 0.0, 0.0);  <span class="comment">//recordar que es el nueevo model part!!</span></div>
+<div class="line"><a name="l01306"></a><span class="lineno"> 1306</span>&#160;                    Node ::Pointer pnode = <a class="code" href="../../d2/db8/namespacelagrangian__droplet__test.html#a6bf2e6636f2a61fba626c85d3cf51209">lagrangian_model_part</a>.CreateNewNode( <a class="code" href="../../d2/db8/namespacetensors.html#a15a1da80aa773e2015eba781cababe05">i</a>+mlast_node_id+1 , 0.0, 0.0, 0.0);  <span class="comment">//recordar que es el nueevo model part!!</span></div>
 <div class="line"><a name="l01307"></a><span class="lineno"> 1307</span>&#160;                    <span class="comment">//pnode-&gt;SetBufferSize(mr_model_part.NodesBegin()-&gt;GetBufferSize());</span></div>
-<div class="line"><a name="l01308"></a><span class="lineno"> 1308</span>&#160;                    pnode-&gt;<a class="code" href="../../d5/ddd/class_kratos_1_1_node.html#a50011b1006c97870d3eb1f76f6a8ad44">SetBufferSize</a>(1);</div>
+<div class="line"><a name="l01308"></a><span class="lineno"> 1308</span>&#160;                    pnode-&gt;SetBufferSize(1);</div>
 <div class="line"><a name="l01309"></a><span class="lineno"> 1309</span>&#160;                }</div>
 <div class="line"><a name="l01310"></a><span class="lineno"> 1310</span>&#160;                mparticle_printing_tool_initialized=<span class="keyword">true</span>;</div>
 <div class="line"><a name="l01311"></a><span class="lineno"> 1311</span>&#160;            }</div>
@@ -1457,7 +1457,7 @@ $(function() {
 <div class="line"><a name="l01385"></a><span class="lineno"> 1385</span>&#160;        <span class="keywordflow">if</span>(is_found == <span class="keyword">true</span>)</div>
 <div class="line"><a name="l01386"></a><span class="lineno"> 1386</span>&#160;        {</div>
 <div class="line"><a name="l01387"></a><span class="lineno"> 1387</span>&#160;            KEEP_INTEGRATING=<span class="keyword">true</span>;</div>
-<div class="line"><a name="l01388"></a><span class="lineno"> 1388</span>&#160;            <a class="code" href="../../dc/dea/class_kratos_1_1_geometry.html">Geometry&lt; Node&lt;3&gt;</a> &gt;&amp; geom = pelement-&gt;GetGeometry();<span class="comment">//the element we&#39;re in</span></div>
+<div class="line"><a name="l01388"></a><span class="lineno"> 1388</span>&#160;            <a class="code" href="../../dc/dea/class_kratos_1_1_geometry.html">Geometry&lt; Node &gt;</a>&amp; geom = pelement-&gt;GetGeometry();<span class="comment">//the element we&#39;re in</span></div>
 <div class="line"><a name="l01389"></a><span class="lineno"> 1389</span>&#160;            <a class="code" href="../../db/df4/namespacepure__conduction.html#ae09a2606ce877131c3666ac38c7d5525">vel</a>=<a class="code" href="../../db/d66/namespace_kratos.html#a0060702fbd6c7d45c773436101c9ded3">ZeroVector</a>(3);</div>
 <div class="line"><a name="l01390"></a><span class="lineno"> 1390</span>&#160; </div>
 <div class="line"><a name="l01391"></a><span class="lineno"> 1391</span>&#160;            <span class="keywordflow">for</span>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="../../d7/d2b/namespacequadrature.html#aae897447319c4634b1dcef7634fe5876">j</a>=0; <a class="code" href="../../d7/d2b/namespacequadrature.html#aae897447319c4634b1dcef7634fe5876">j</a>&lt;(TDim+1); <a class="code" href="../../d7/d2b/namespacequadrature.html#aae897447319c4634b1dcef7634fe5876">j</a>++)</div>
@@ -1484,7 +1484,7 @@ $(function() {
 <div class="line"><a name="l01413"></a><span class="lineno"> 1413</span>&#160;                  is_found = FindNodeOnMesh(position, <a class="code" href="../../df/d42/mmio_8h.html#a3f620e88ba511ca5d32c93b84802ff6e">N</a> ,pelement,elements_in_trajectory,number_of_elements_in_trajectory,check_from_element_number,result_begin,MaxNumberOfResults); <span class="comment">//good, now we know where this point is:</span></div>
 <div class="line"><a name="l01414"></a><span class="lineno"> 1414</span>&#160;                  <span class="keywordflow">if</span>(is_found == <span class="keyword">true</span>)</div>
 <div class="line"><a name="l01415"></a><span class="lineno"> 1415</span>&#160;                  {</div>
-<div class="line"><a name="l01416"></a><span class="lineno"> 1416</span>&#160;                    Geometry&lt; Node&lt;3&gt; &gt;&amp; geom = pelement-&gt;GetGeometry();<span class="comment">//the element we&#39;re in</span></div>
+<div class="line"><a name="l01416"></a><span class="lineno"> 1416</span>&#160;                    Geometry&lt; Node &gt;&amp; geom = pelement-&gt;GetGeometry();<span class="comment">//the element we&#39;re in</span></div>
 <div class="line"><a name="l01417"></a><span class="lineno"> 1417</span>&#160; </div>
 <div class="line"><a name="l01418"></a><span class="lineno"> 1418</span>&#160;                    <a class="code" href="../../db/df4/namespacepure__conduction.html#ae09a2606ce877131c3666ac38c7d5525">vel</a> = <a class="code" href="../../db/d66/namespace_kratos.html#a0060702fbd6c7d45c773436101c9ded3">ZeroVector</a>(3);</div>
 <div class="line"><a name="l01419"></a><span class="lineno"> 1419</span>&#160;                    <span class="keywordflow">for</span>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="../../d7/d2b/namespacequadrature.html#aae897447319c4634b1dcef7634fe5876">j</a>=0; <a class="code" href="../../d7/d2b/namespacequadrature.html#aae897447319c4634b1dcef7634fe5876">j</a>&lt;(TDim+1); <a class="code" href="../../d7/d2b/namespacequadrature.html#aae897447319c4634b1dcef7634fe5876">j</a>++)</div>
@@ -1522,7 +1522,7 @@ $(function() {
 <div class="line"><a name="l01451"></a><span class="lineno"> 1451</span>&#160;    <span class="keywordtype">void</span> CorrectParticleUsingDeltaVariables(</div>
 <div class="line"><a name="l01452"></a><span class="lineno"> 1452</span>&#160;                         Convection_Particle &amp; pparticle,</div>
 <div class="line"><a name="l01453"></a><span class="lineno"> 1453</span>&#160;                         Element::Pointer &amp; pelement,</div>
-<div class="line"><a name="l01454"></a><span class="lineno"> 1454</span>&#160;                         Geometry&lt; Node&lt;3&gt; &gt;&amp; geom)</div>
+<div class="line"><a name="l01454"></a><span class="lineno"> 1454</span>&#160;                         Geometry&lt; Node &gt;&amp; geom)</div>
 <div class="line"><a name="l01455"></a><span class="lineno"> 1455</span>&#160;    {</div>
 <div class="line"><a name="l01456"></a><span class="lineno"> 1456</span>&#160;        array_1d&lt;double,TDim+1&gt; <a class="code" href="../../df/d42/mmio_8h.html#a3f620e88ba511ca5d32c93b84802ff6e">N</a>;</div>
 <div class="line"><a name="l01457"></a><span class="lineno"> 1457</span>&#160; </div>
@@ -1580,7 +1580,7 @@ $(function() {
 <div class="line"><a name="l01509"></a><span class="lineno"> 1509</span>&#160;        <span class="keywordflow">if</span>(is_found == <span class="keyword">true</span>)</div>
 <div class="line"><a name="l01510"></a><span class="lineno"> 1510</span>&#160;        {</div>
 <div class="line"><a name="l01511"></a><span class="lineno"> 1511</span>&#160;            KEEP_INTEGRATING=<span class="keyword">true</span>;</div>
-<div class="line"><a name="l01512"></a><span class="lineno"> 1512</span>&#160;            Geometry&lt; Node&lt;3&gt; &gt;&amp; geom = pelement-&gt;GetGeometry();<span class="comment">//the element we&#39;re in</span></div>
+<div class="line"><a name="l01512"></a><span class="lineno"> 1512</span>&#160;            Geometry&lt; Node &gt;&amp; geom = pelement-&gt;GetGeometry();<span class="comment">//the element we&#39;re in</span></div>
 <div class="line"><a name="l01513"></a><span class="lineno"> 1513</span>&#160;            <a class="code" href="../../db/df4/namespacepure__conduction.html#ae09a2606ce877131c3666ac38c7d5525">vel</a>=<a class="code" href="../../db/d66/namespace_kratos.html#a0060702fbd6c7d45c773436101c9ded3">ZeroVector</a>(3);</div>
 <div class="line"><a name="l01514"></a><span class="lineno"> 1514</span>&#160;            scalar1=0.0;</div>
 <div class="line"><a name="l01515"></a><span class="lineno"> 1515</span>&#160; </div>
@@ -1602,7 +1602,7 @@ $(function() {
 <div class="line"><a name="l01531"></a><span class="lineno"> 1531</span>&#160;                is_found = FindNodeOnMesh(position, <a class="code" href="../../df/d42/mmio_8h.html#a3f620e88ba511ca5d32c93b84802ff6e">N</a> ,pelement,result_begin,MaxNumberOfResults); <span class="comment">//good, now we know where this point is:</span></div>
 <div class="line"><a name="l01532"></a><span class="lineno"> 1532</span>&#160;                <span class="keywordflow">if</span>(is_found == <span class="keyword">true</span>)</div>
 <div class="line"><a name="l01533"></a><span class="lineno"> 1533</span>&#160;                {</div>
-<div class="line"><a name="l01534"></a><span class="lineno"> 1534</span>&#160;                    Geometry&lt; Node&lt;3&gt; &gt;&amp; geom = pelement-&gt;GetGeometry();<span class="comment">//the element we&#39;re in</span></div>
+<div class="line"><a name="l01534"></a><span class="lineno"> 1534</span>&#160;                    Geometry&lt; Node &gt;&amp; geom = pelement-&gt;GetGeometry();<span class="comment">//the element we&#39;re in</span></div>
 <div class="line"><a name="l01535"></a><span class="lineno"> 1535</span>&#160; </div>
 <div class="line"><a name="l01536"></a><span class="lineno"> 1536</span>&#160;                    <a class="code" href="../../db/df4/namespacepure__conduction.html#ae09a2606ce877131c3666ac38c7d5525">vel</a>=<a class="code" href="../../db/d66/namespace_kratos.html#a0060702fbd6c7d45c773436101c9ded3">ZeroVector</a>(3);</div>
 <div class="line"><a name="l01537"></a><span class="lineno"> 1537</span>&#160;                    scalar1=0.0;</div>
@@ -1642,7 +1642,7 @@ $(function() {
 <div class="line"><a name="l01575"></a><span class="lineno"> 1575</span>&#160;        <span class="keyword">const</span> array_1d&lt;double,3&gt;&amp; coords = position;</div>
 <div class="line"><a name="l01576"></a><span class="lineno"> 1576</span>&#160;         array_1d&lt;double,TDim+1&gt; aux_N;</div>
 <div class="line"><a name="l01577"></a><span class="lineno"> 1577</span>&#160;        <span class="comment">//before using the bin to search for possible elements we check first the last element in which the particle was.</span></div>
-<div class="line"><a name="l01578"></a><span class="lineno"> 1578</span>&#160;        Geometry&lt;Node&lt;3&gt; &gt;&amp; geom_default = pelement-&gt;GetGeometry(); <span class="comment">//(*(i))-&gt;GetGeometry();</span></div>
+<div class="line"><a name="l01578"></a><span class="lineno"> 1578</span>&#160;        Geometry&lt;Node &gt;&amp; geom_default = pelement-&gt;GetGeometry(); <span class="comment">//(*(i))-&gt;GetGeometry();</span></div>
 <div class="line"><a name="l01579"></a><span class="lineno"> 1579</span>&#160;        <span class="keywordtype">bool</span> is_found_1 = CalculatePosition(geom_default,coords[0],coords[1],coords[2],<a class="code" href="../../df/d42/mmio_8h.html#a3f620e88ba511ca5d32c93b84802ff6e">N</a>);</div>
 <div class="line"><a name="l01580"></a><span class="lineno"> 1580</span>&#160;        <span class="keywordflow">if</span>(is_found_1 == <span class="keyword">true</span>) <span class="comment">//that was easy!</span></div>
 <div class="line"><a name="l01581"></a><span class="lineno"> 1581</span>&#160;        {</div>
@@ -1660,7 +1660,7 @@ $(function() {
 <div class="line"><a name="l01593"></a><span class="lineno"> 1593</span>&#160;<span class="comment">            if (N[i]&lt;0.0)</span></div>
 <div class="line"><a name="l01594"></a><span class="lineno"> 1594</span>&#160;<span class="comment">            {</span></div>
 <div class="line"><a name="l01595"></a><span class="lineno"> 1595</span>&#160;<span class="comment">                checked_element=i;</span></div>
-<div class="line"><a name="l01596"></a><span class="lineno"> 1596</span>&#160;<span class="comment">                Geometry&lt;Node&lt;3&gt; &gt;&amp; geom = neighb_elems[i].GetGeometry();</span></div>
+<div class="line"><a name="l01596"></a><span class="lineno"> 1596</span>&#160;<span class="comment">                Geometry&lt;Node &gt;&amp; geom = neighb_elems[i].GetGeometry();</span></div>
 <div class="line"><a name="l01597"></a><span class="lineno"> 1597</span>&#160;<span class="comment">                bool is_found_2 = CalculatePosition(geom,coords[0],coords[1],coords[2],aux_N);</span></div>
 <div class="line"><a name="l01598"></a><span class="lineno"> 1598</span>&#160;<span class="comment">                if (is_found_2)</span></div>
 <div class="line"><a name="l01599"></a><span class="lineno"> 1599</span>&#160;<span class="comment">                {</span></div>
@@ -1677,7 +1677,7 @@ $(function() {
 <div class="line"><a name="l01610"></a><span class="lineno"> 1610</span>&#160;        {</div>
 <div class="line"><a name="l01611"></a><span class="lineno"> 1611</span>&#160;            <span class="keywordflow">if</span>(neighb_elems(<a class="code" href="../../d2/db8/namespacetensors.html#a15a1da80aa773e2015eba781cababe05">i</a>).get()!=<span class="keyword">nullptr</span>)</div>
 <div class="line"><a name="l01612"></a><span class="lineno"> 1612</span>&#160;            {</div>
-<div class="line"><a name="l01613"></a><span class="lineno"> 1613</span>&#160;                Geometry&lt;Node&lt;3&gt; &gt;&amp; geom = neighb_elems[<a class="code" href="../../d2/db8/namespacetensors.html#a15a1da80aa773e2015eba781cababe05">i</a>].GetGeometry();</div>
+<div class="line"><a name="l01613"></a><span class="lineno"> 1613</span>&#160;                Geometry&lt;Node &gt;&amp; geom = neighb_elems[<a class="code" href="../../d2/db8/namespacetensors.html#a15a1da80aa773e2015eba781cababe05">i</a>].GetGeometry();</div>
 <div class="line"><a name="l01614"></a><span class="lineno"> 1614</span>&#160;                <span class="keywordtype">bool</span> is_found_2 = CalculatePosition(geom,coords[0],coords[1],coords[2],<a class="code" href="../../df/d42/mmio_8h.html#a3f620e88ba511ca5d32c93b84802ff6e">N</a>);</div>
 <div class="line"><a name="l01615"></a><span class="lineno"> 1615</span>&#160;                <span class="keywordflow">if</span> (is_found_2)</div>
 <div class="line"><a name="l01616"></a><span class="lineno"> 1616</span>&#160;                {</div>
@@ -1695,7 +1695,7 @@ $(function() {
 <div class="line"><a name="l01628"></a><span class="lineno"> 1628</span>&#160;        <span class="comment">//loop over the candidate elements and check if the particle falls within</span></div>
 <div class="line"><a name="l01629"></a><span class="lineno"> 1629</span>&#160;        <span class="keywordflow">for</span>(<a class="code" href="../../db/d66/namespace_kratos.html#a8b2d617fdb94b53f5f2bb88e1a7ebc18">SizeType</a> <a class="code" href="../../d2/db8/namespacetensors.html#a15a1da80aa773e2015eba781cababe05">i</a> = 0; <a class="code" href="../../d2/db8/namespacetensors.html#a15a1da80aa773e2015eba781cababe05">i</a>&lt; results_found; <a class="code" href="../../d2/db8/namespacetensors.html#a15a1da80aa773e2015eba781cababe05">i</a>++)</div>
 <div class="line"><a name="l01630"></a><span class="lineno"> 1630</span>&#160;        {</div>
-<div class="line"><a name="l01631"></a><span class="lineno"> 1631</span>&#160;            Geometry&lt;Node&lt;3&gt; &gt;&amp; geom = (*(result_begin+<a class="code" href="../../d2/db8/namespacetensors.html#a15a1da80aa773e2015eba781cababe05">i</a>))-&gt;GetGeometry();</div>
+<div class="line"><a name="l01631"></a><span class="lineno"> 1631</span>&#160;            Geometry&lt;Node &gt;&amp; geom = (*(result_begin+<a class="code" href="../../d2/db8/namespacetensors.html#a15a1da80aa773e2015eba781cababe05">i</a>))-&gt;GetGeometry();</div>
 <div class="line"><a name="l01632"></a><span class="lineno"> 1632</span>&#160; </div>
 <div class="line"><a name="l01633"></a><span class="lineno"> 1633</span>&#160;            <span class="comment">//find local position</span></div>
 <div class="line"><a name="l01634"></a><span class="lineno"> 1634</span>&#160;            <span class="keywordtype">bool</span> is_found = CalculatePosition(geom,coords[0],coords[1],coords[2],<a class="code" href="../../df/d42/mmio_8h.html#a3f620e88ba511ca5d32c93b84802ff6e">N</a>);</div>
@@ -1728,7 +1728,7 @@ $(function() {
 <div class="line"><a name="l01661"></a><span class="lineno"> 1661</span>&#160;        <span class="keyword">const</span> array_1d&lt;double,3&gt;&amp; coords = position;</div>
 <div class="line"><a name="l01662"></a><span class="lineno"> 1662</span>&#160;         array_1d&lt;double,TDim+1&gt; aux_N;</div>
 <div class="line"><a name="l01663"></a><span class="lineno"> 1663</span>&#160;        <span class="comment">//before using the bin to search for possible elements we check first the last element in which the particle was.</span></div>
-<div class="line"><a name="l01664"></a><span class="lineno"> 1664</span>&#160;        Geometry&lt;Node&lt;3&gt; &gt;&amp; geom_default = pelement-&gt;GetGeometry(); <span class="comment">//(*(i))-&gt;GetGeometry();</span></div>
+<div class="line"><a name="l01664"></a><span class="lineno"> 1664</span>&#160;        Geometry&lt;Node &gt;&amp; geom_default = pelement-&gt;GetGeometry(); <span class="comment">//(*(i))-&gt;GetGeometry();</span></div>
 <div class="line"><a name="l01665"></a><span class="lineno"> 1665</span>&#160;        <span class="keywordtype">bool</span> is_found_1 = CalculatePosition(geom_default,coords[0],coords[1],coords[2],<a class="code" href="../../df/d42/mmio_8h.html#a3f620e88ba511ca5d32c93b84802ff6e">N</a>);</div>
 <div class="line"><a name="l01666"></a><span class="lineno"> 1666</span>&#160;        <span class="keywordflow">if</span>(is_found_1 == <span class="keyword">true</span>)</div>
 <div class="line"><a name="l01667"></a><span class="lineno"> 1667</span>&#160;        {</div>
@@ -1738,7 +1738,7 @@ $(function() {
 <div class="line"><a name="l01671"></a><span class="lineno"> 1671</span>&#160;        <span class="comment">//if it was not found in the first element, we can proceed to check in the following elements (in the trajectory defined by previous particles that started from the same element.</span></div>
 <div class="line"><a name="l01672"></a><span class="lineno"> 1672</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="../../d2/db8/namespacetensors.html#a15a1da80aa773e2015eba781cababe05">i</a>=(check_from_element_number);<a class="code" href="../../d2/db8/namespacetensors.html#a15a1da80aa773e2015eba781cababe05">i</a>!=number_of_elements_in_trajectory;<a class="code" href="../../d2/db8/namespacetensors.html#a15a1da80aa773e2015eba781cababe05">i</a>++)</div>
 <div class="line"><a name="l01673"></a><span class="lineno"> 1673</span>&#160;        {</div>
-<div class="line"><a name="l01674"></a><span class="lineno"> 1674</span>&#160;            Geometry&lt;Node&lt;3&gt; &gt;&amp; geom = elements_in_trajectory[<a class="code" href="../../d2/db8/namespacetensors.html#a15a1da80aa773e2015eba781cababe05">i</a>].GetGeometry();</div>
+<div class="line"><a name="l01674"></a><span class="lineno"> 1674</span>&#160;            Geometry&lt;Node &gt;&amp; geom = elements_in_trajectory[<a class="code" href="../../d2/db8/namespacetensors.html#a15a1da80aa773e2015eba781cababe05">i</a>].GetGeometry();</div>
 <div class="line"><a name="l01675"></a><span class="lineno"> 1675</span>&#160;            <span class="keywordtype">bool</span> is_found_2 = CalculatePosition(geom,coords[0],coords[1],coords[2],aux_N);</div>
 <div class="line"><a name="l01676"></a><span class="lineno"> 1676</span>&#160;            <span class="keywordflow">if</span> (is_found_2)</div>
 <div class="line"><a name="l01677"></a><span class="lineno"> 1677</span>&#160;            {</div>
@@ -1761,7 +1761,7 @@ $(function() {
 <div class="line"><a name="l01694"></a><span class="lineno"> 1694</span>&#160;<span class="comment">            if (N[i]&lt;0.0)</span></div>
 <div class="line"><a name="l01695"></a><span class="lineno"> 1695</span>&#160;<span class="comment">            {</span></div>
 <div class="line"><a name="l01696"></a><span class="lineno"> 1696</span>&#160;<span class="comment">                checked_element=i;</span></div>
-<div class="line"><a name="l01697"></a><span class="lineno"> 1697</span>&#160;<span class="comment">                Geometry&lt;Node&lt;3&gt; &gt;&amp; geom = neighb_elems[i].GetGeometry();</span></div>
+<div class="line"><a name="l01697"></a><span class="lineno"> 1697</span>&#160;<span class="comment">                Geometry&lt;Node &gt;&amp; geom = neighb_elems[i].GetGeometry();</span></div>
 <div class="line"><a name="l01698"></a><span class="lineno"> 1698</span>&#160;<span class="comment">                bool is_found_2 = CalculatePosition(geom,coords[0],coords[1],coords[2],aux_N);</span></div>
 <div class="line"><a name="l01699"></a><span class="lineno"> 1699</span>&#160;<span class="comment">                if (is_found_2)</span></div>
 <div class="line"><a name="l01700"></a><span class="lineno"> 1700</span>&#160;<span class="comment">                {</span></div>
@@ -1778,7 +1778,7 @@ $(function() {
 <div class="line"><a name="l01711"></a><span class="lineno"> 1711</span>&#160;        {</div>
 <div class="line"><a name="l01712"></a><span class="lineno"> 1712</span>&#160;            <span class="keywordflow">if</span>(neighb_elems(<a class="code" href="../../d2/db8/namespacetensors.html#a15a1da80aa773e2015eba781cababe05">i</a>).get()!=<span class="keyword">nullptr</span>)</div>
 <div class="line"><a name="l01713"></a><span class="lineno"> 1713</span>&#160;            {</div>
-<div class="line"><a name="l01714"></a><span class="lineno"> 1714</span>&#160;                Geometry&lt;Node&lt;3&gt; &gt;&amp; geom = neighb_elems[<a class="code" href="../../d2/db8/namespacetensors.html#a15a1da80aa773e2015eba781cababe05">i</a>].GetGeometry();</div>
+<div class="line"><a name="l01714"></a><span class="lineno"> 1714</span>&#160;                Geometry&lt;Node &gt;&amp; geom = neighb_elems[<a class="code" href="../../d2/db8/namespacetensors.html#a15a1da80aa773e2015eba781cababe05">i</a>].GetGeometry();</div>
 <div class="line"><a name="l01715"></a><span class="lineno"> 1715</span>&#160;                <span class="keywordtype">bool</span> is_found_2 = CalculatePosition(geom,coords[0],coords[1],coords[2],<a class="code" href="../../df/d42/mmio_8h.html#a3f620e88ba511ca5d32c93b84802ff6e">N</a>);</div>
 <div class="line"><a name="l01716"></a><span class="lineno"> 1716</span>&#160;                <span class="keywordflow">if</span> (is_found_2)</div>
 <div class="line"><a name="l01717"></a><span class="lineno"> 1717</span>&#160;                {</div>
@@ -1804,7 +1804,7 @@ $(function() {
 <div class="line"><a name="l01737"></a><span class="lineno"> 1737</span>&#160;            <span class="comment">//loop over the candidate elements and check if the particle falls within</span></div>
 <div class="line"><a name="l01738"></a><span class="lineno"> 1738</span>&#160;            <span class="keywordflow">for</span>(<a class="code" href="../../db/d66/namespace_kratos.html#a8b2d617fdb94b53f5f2bb88e1a7ebc18">SizeType</a> <a class="code" href="../../d2/db8/namespacetensors.html#a15a1da80aa773e2015eba781cababe05">i</a> = 0; <a class="code" href="../../d2/db8/namespacetensors.html#a15a1da80aa773e2015eba781cababe05">i</a>&lt; results_found; <a class="code" href="../../d2/db8/namespacetensors.html#a15a1da80aa773e2015eba781cababe05">i</a>++)</div>
 <div class="line"><a name="l01739"></a><span class="lineno"> 1739</span>&#160;            {</div>
-<div class="line"><a name="l01740"></a><span class="lineno"> 1740</span>&#160;                Geometry&lt;Node&lt;3&gt; &gt;&amp; geom = (*(result_begin+<a class="code" href="../../d2/db8/namespacetensors.html#a15a1da80aa773e2015eba781cababe05">i</a>))-&gt;GetGeometry();</div>
+<div class="line"><a name="l01740"></a><span class="lineno"> 1740</span>&#160;                Geometry&lt;Node &gt;&amp; geom = (*(result_begin+<a class="code" href="../../d2/db8/namespacetensors.html#a15a1da80aa773e2015eba781cababe05">i</a>))-&gt;GetGeometry();</div>
 <div class="line"><a name="l01741"></a><span class="lineno"> 1741</span>&#160; </div>
 <div class="line"><a name="l01742"></a><span class="lineno"> 1742</span>&#160;                <span class="comment">//find local position</span></div>
 <div class="line"><a name="l01743"></a><span class="lineno"> 1743</span>&#160;                <span class="keywordtype">bool</span> is_found = CalculatePosition(geom,coords[0],coords[1],coords[2],<a class="code" href="../../df/d42/mmio_8h.html#a3f620e88ba511ca5d32c93b84802ff6e">N</a>);</div>
@@ -1832,7 +1832,7 @@ $(function() {
 <div class="line"><a name="l01765"></a><span class="lineno"> 1765</span>&#160;    <span class="comment">//***************************************</span></div>
 <div class="line"><a name="l01766"></a><span class="lineno"> 1766</span>&#160;        <span class="comment">//***************************************</span></div>
 <div class="line"><a name="l01767"></a><span class="lineno"> 1767</span>&#160; </div>
-<div class="line"><a name="l01768"></a><span class="lineno"> 1768</span>&#160;        <span class="keyword">inline</span> <span class="keywordtype">bool</span> CalculatePosition(Geometry&lt;Node &lt; 3 &gt; &gt;&amp;geom,</div>
+<div class="line"><a name="l01768"></a><span class="lineno"> 1768</span>&#160;        <span class="keyword">inline</span> <span class="keywordtype">bool</span> CalculatePosition(Geometry&lt;Node &gt;&amp;geom,</div>
 <div class="line"><a name="l01769"></a><span class="lineno"> 1769</span>&#160;                <span class="keyword">const</span> <span class="keywordtype">double</span> <a class="code" href="../../db/ddc/namespacerotating__cone.html#ade9c7a11e93e2bae00b8012bbf269545">xc</a>, <span class="keyword">const</span> <span class="keywordtype">double</span> <a class="code" href="../../db/ddc/namespacerotating__cone.html#afaf69d8d94d23c708e8651f6dd7102fb">yc</a>, <span class="keyword">const</span> <span class="keywordtype">double</span> zc,</div>
 <div class="line"><a name="l01770"></a><span class="lineno"> 1770</span>&#160;                array_1d&lt;double, 3 &gt; &amp; <a class="code" href="../../df/d42/mmio_8h.html#a3f620e88ba511ca5d32c93b84802ff6e">N</a></div>
 <div class="line"><a name="l01771"></a><span class="lineno"> 1771</span>&#160;                )</div>
@@ -1904,7 +1904,7 @@ $(function() {
 <div class="line"><a name="l01838"></a><span class="lineno"> 1838</span>&#160;        <span class="comment">//***************************************</span></div>
 <div class="line"><a name="l01839"></a><span class="lineno"> 1839</span>&#160;        <span class="comment">//***************************************</span></div>
 <div class="line"><a name="l01840"></a><span class="lineno"> 1840</span>&#160; </div>
-<div class="line"><a name="l01841"></a><span class="lineno"> 1841</span>&#160;        <span class="keyword">inline</span> <span class="keywordtype">bool</span> CalculatePosition(Geometry&lt;Node &lt; 3 &gt; &gt;&amp;geom,</div>
+<div class="line"><a name="l01841"></a><span class="lineno"> 1841</span>&#160;        <span class="keyword">inline</span> <span class="keywordtype">bool</span> CalculatePosition(Geometry&lt;Node &gt;&amp;geom,</div>
 <div class="line"><a name="l01842"></a><span class="lineno"> 1842</span>&#160;                <span class="keyword">const</span> <span class="keywordtype">double</span> <a class="code" href="../../db/ddc/namespacerotating__cone.html#ade9c7a11e93e2bae00b8012bbf269545">xc</a>, <span class="keyword">const</span> <span class="keywordtype">double</span> <a class="code" href="../../db/ddc/namespacerotating__cone.html#afaf69d8d94d23c708e8651f6dd7102fb">yc</a>, <span class="keyword">const</span> <span class="keywordtype">double</span> zc,</div>
 <div class="line"><a name="l01843"></a><span class="lineno"> 1843</span>&#160;                array_1d&lt;double, 4 &gt; &amp; <a class="code" href="../../df/d42/mmio_8h.html#a3f620e88ba511ca5d32c93b84802ff6e">N</a></div>
 <div class="line"><a name="l01844"></a><span class="lineno"> 1844</span>&#160;                )</div>
@@ -2026,7 +2026,7 @@ $(function() {
 <div class="line"><a name="l01961"></a><span class="lineno"> 1961</span>&#160; </div>
 <div class="line"><a name="l01962"></a><span class="lineno"> 1962</span>&#160; </div>
 <div class="line"><a name="l01963"></a><span class="lineno"> 1963</span>&#160; </div>
-<div class="line"><a name="l01964"></a><span class="lineno"> 1964</span>&#160;        <span class="keywordtype">void</span> ComputeGaussPointPositions_4(Geometry&lt; Node &lt; 3 &gt; &gt;&amp; geom, BoundedMatrix&lt;double, 7, 3 &gt; &amp; pos,BoundedMatrix&lt;double, 7, 3 &gt; &amp; <a class="code" href="../../df/d42/mmio_8h.html#a3f620e88ba511ca5d32c93b84802ff6e">N</a>)</div>
+<div class="line"><a name="l01964"></a><span class="lineno"> 1964</span>&#160;        <span class="keywordtype">void</span> ComputeGaussPointPositions_4(Geometry&lt; Node &gt;&amp; geom, BoundedMatrix&lt;double, 7, 3 &gt; &amp; pos,BoundedMatrix&lt;double, 7, 3 &gt; &amp; <a class="code" href="../../df/d42/mmio_8h.html#a3f620e88ba511ca5d32c93b84802ff6e">N</a>)</div>
 <div class="line"><a name="l01965"></a><span class="lineno"> 1965</span>&#160;        {</div>
 <div class="line"><a name="l01966"></a><span class="lineno"> 1966</span>&#160;            <span class="keywordtype">double</span> one_third = 1.0 / 3.0;</div>
 <div class="line"><a name="l01967"></a><span class="lineno"> 1967</span>&#160;            <span class="keywordtype">double</span> one_sixt = 0.15; <span class="comment">//1.0 / 6.0;</span></div>
@@ -2068,7 +2068,7 @@ $(function() {
 <div class="line"><a name="l02003"></a><span class="lineno"> 2003</span>&#160;        }</div>
 <div class="line"><a name="l02004"></a><span class="lineno"> 2004</span>&#160; </div>
 <div class="line"><a name="l02005"></a><span class="lineno"> 2005</span>&#160; </div>
-<div class="line"><a name="l02006"></a><span class="lineno"> 2006</span>&#160;        <span class="keywordtype">void</span> ComputeGaussPointPositionsForPostReseed(Geometry&lt; Node &lt; 3 &gt; &gt;&amp; geom, BoundedMatrix&lt;double, 7, 3 &gt; &amp; pos,BoundedMatrix&lt;double, 7, 3 &gt; &amp; <a class="code" href="../../df/d42/mmio_8h.html#a3f620e88ba511ca5d32c93b84802ff6e">N</a>) <span class="comment">//2d</span></div>
+<div class="line"><a name="l02006"></a><span class="lineno"> 2006</span>&#160;        <span class="keywordtype">void</span> ComputeGaussPointPositionsForPostReseed(Geometry&lt; Node &gt;&amp; geom, BoundedMatrix&lt;double, 7, 3 &gt; &amp; pos,BoundedMatrix&lt;double, 7, 3 &gt; &amp; <a class="code" href="../../df/d42/mmio_8h.html#a3f620e88ba511ca5d32c93b84802ff6e">N</a>) <span class="comment">//2d</span></div>
 <div class="line"><a name="l02007"></a><span class="lineno"> 2007</span>&#160;        {</div>
 <div class="line"><a name="l02008"></a><span class="lineno"> 2008</span>&#160;            <span class="keywordtype">double</span> one_third = 1.0 / 3.0;</div>
 <div class="line"><a name="l02009"></a><span class="lineno"> 2009</span>&#160;            <span class="keywordtype">double</span> one_eight = 0.12; <span class="comment">//1.0 / 6.0;</span></div>
@@ -2143,7 +2143,7 @@ $(function() {
 <div class="line"><a name="l02078"></a><span class="lineno"> 2078</span>&#160; </div>
 <div class="line"><a name="l02079"></a><span class="lineno"> 2079</span>&#160;        }</div>
 <div class="line"><a name="l02080"></a><span class="lineno"> 2080</span>&#160; </div>
-<div class="line"><a name="l02081"></a><span class="lineno"> 2081</span>&#160;        <span class="keywordtype">void</span> ComputeGaussPointPositionsForPostReseed(Geometry&lt; Node &lt; 3 &gt; &gt;&amp; geom, BoundedMatrix&lt;double, 9, 3 &gt; &amp; pos,BoundedMatrix&lt;double, 9, 4 &gt; &amp; <a class="code" href="../../df/d42/mmio_8h.html#a3f620e88ba511ca5d32c93b84802ff6e">N</a>) <span class="comment">//3D</span></div>
+<div class="line"><a name="l02081"></a><span class="lineno"> 2081</span>&#160;        <span class="keywordtype">void</span> ComputeGaussPointPositionsForPostReseed(Geometry&lt; Node &gt;&amp; geom, BoundedMatrix&lt;double, 9, 3 &gt; &amp; pos,BoundedMatrix&lt;double, 9, 4 &gt; &amp; <a class="code" href="../../df/d42/mmio_8h.html#a3f620e88ba511ca5d32c93b84802ff6e">N</a>) <span class="comment">//3D</span></div>
 <div class="line"><a name="l02082"></a><span class="lineno"> 2082</span>&#160;        {</div>
 <div class="line"><a name="l02083"></a><span class="lineno"> 2083</span>&#160;            <span class="keywordtype">double</span> one_quarter = 0.25;</div>
 <div class="line"><a name="l02084"></a><span class="lineno"> 2084</span>&#160;            <span class="keywordtype">double</span> small_fraction = 0.1; <span class="comment">//1.0 / 6.0;</span></div>
@@ -2211,7 +2211,7 @@ $(function() {
 <div class="line"><a name="l02146"></a><span class="lineno"> 2146</span>&#160; </div>
 <div class="line"><a name="l02147"></a><span class="lineno"> 2147</span>&#160; </div>
 <div class="line"><a name="l02148"></a><span class="lineno"> 2148</span>&#160; </div>
-<div class="line"><a name="l02149"></a><span class="lineno"> 2149</span>&#160;        <span class="keywordtype">void</span> ComputeGaussPointPositionsForPreReseed(Geometry&lt; Node &lt; 3 &gt; &gt;&amp; geom, BoundedMatrix&lt;double, 3, 3 &gt; &amp; pos,BoundedMatrix&lt;double, 3, 3 &gt; &amp; <a class="code" href="../../df/d42/mmio_8h.html#a3f620e88ba511ca5d32c93b84802ff6e">N</a>) <span class="comment">//2D</span></div>
+<div class="line"><a name="l02149"></a><span class="lineno"> 2149</span>&#160;        <span class="keywordtype">void</span> ComputeGaussPointPositionsForPreReseed(Geometry&lt; Node &gt;&amp; geom, BoundedMatrix&lt;double, 3, 3 &gt; &amp; pos,BoundedMatrix&lt;double, 3, 3 &gt; &amp; <a class="code" href="../../df/d42/mmio_8h.html#a3f620e88ba511ca5d32c93b84802ff6e">N</a>) <span class="comment">//2D</span></div>
 <div class="line"><a name="l02150"></a><span class="lineno"> 2150</span>&#160;        {</div>
 <div class="line"><a name="l02151"></a><span class="lineno"> 2151</span>&#160; </div>
 <div class="line"><a name="l02152"></a><span class="lineno"> 2152</span>&#160;            <a class="code" href="../../df/d42/mmio_8h.html#a3f620e88ba511ca5d32c93b84802ff6e">N</a>(0, 0) = 0.5;</div>
@@ -2243,7 +2243,7 @@ $(function() {
 <div class="line"><a name="l02178"></a><span class="lineno"> 2178</span>&#160; </div>
 <div class="line"><a name="l02179"></a><span class="lineno"> 2179</span>&#160;        }</div>
 <div class="line"><a name="l02180"></a><span class="lineno"> 2180</span>&#160; </div>
-<div class="line"><a name="l02181"></a><span class="lineno"> 2181</span>&#160;        <span class="keywordtype">void</span> ComputeGaussPointPositionsForPreReseed(Geometry&lt; Node &lt; 3 &gt; &gt;&amp; geom, BoundedMatrix&lt;double, 4, 3 &gt; &amp; pos,BoundedMatrix&lt;double, 4, 4 &gt; &amp; <a class="code" href="../../df/d42/mmio_8h.html#a3f620e88ba511ca5d32c93b84802ff6e">N</a>) <span class="comment">//3D</span></div>
+<div class="line"><a name="l02181"></a><span class="lineno"> 2181</span>&#160;        <span class="keywordtype">void</span> ComputeGaussPointPositionsForPreReseed(Geometry&lt; Node &gt;&amp; geom, BoundedMatrix&lt;double, 4, 3 &gt; &amp; pos,BoundedMatrix&lt;double, 4, 4 &gt; &amp; <a class="code" href="../../df/d42/mmio_8h.html#a3f620e88ba511ca5d32c93b84802ff6e">N</a>) <span class="comment">//3D</span></div>
 <div class="line"><a name="l02182"></a><span class="lineno"> 2182</span>&#160;        {</div>
 <div class="line"><a name="l02183"></a><span class="lineno"> 2183</span>&#160;            <span class="comment">//creating 4 particles, each will be closer to a node and equidistant to the other nodes</span></div>
 <div class="line"><a name="l02184"></a><span class="lineno"> 2184</span>&#160; </div>
@@ -2283,7 +2283,7 @@ $(function() {
 <div class="line"><a name="l02218"></a><span class="lineno"> 2218</span>&#160; </div>
 <div class="line"><a name="l02219"></a><span class="lineno"> 2219</span>&#160; </div>
 <div class="line"><a name="l02220"></a><span class="lineno"> 2220</span>&#160; </div>
-<div class="line"><a name="l02221"></a><span class="lineno"> 2221</span>&#160;        <span class="keywordtype">void</span> ComputeGaussPointPositions_45(Geometry&lt; Node &lt; 3 &gt; &gt;&amp; geom, BoundedMatrix&lt;double, 45, 3 &gt; &amp; pos,BoundedMatrix&lt;double, 45, 3 &gt; &amp; <a class="code" href="../../df/d42/mmio_8h.html#a3f620e88ba511ca5d32c93b84802ff6e">N</a>)</div>
+<div class="line"><a name="l02221"></a><span class="lineno"> 2221</span>&#160;        <span class="keywordtype">void</span> ComputeGaussPointPositions_45(Geometry&lt; Node &gt;&amp; geom, BoundedMatrix&lt;double, 45, 3 &gt; &amp; pos,BoundedMatrix&lt;double, 45, 3 &gt; &amp; <a class="code" href="../../df/d42/mmio_8h.html#a3f620e88ba511ca5d32c93b84802ff6e">N</a>)</div>
 <div class="line"><a name="l02222"></a><span class="lineno"> 2222</span>&#160;        {</div>
 <div class="line"><a name="l02223"></a><span class="lineno"> 2223</span>&#160;            <span class="comment">//std::cout &lt;&lt; &quot;NEW ELEMENT&quot; &lt;&lt; std::endl;</span></div>
 <div class="line"><a name="l02224"></a><span class="lineno"> 2224</span>&#160;            <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="../../d0/daa/namespacescript___t_h_e_r_m_a_l___c_o_r_r_e_c_t.html#a37fe67255f2e1d30f90f0f02ceb60616">counter</a>=0;</div>
@@ -2305,7 +2305,7 @@ $(function() {
 <div class="line"><a name="l02240"></a><span class="lineno"> 2240</span>&#160; </div>
 <div class="line"><a name="l02241"></a><span class="lineno"> 2241</span>&#160;        }</div>
 <div class="line"><a name="l02242"></a><span class="lineno"> 2242</span>&#160; </div>
-<div class="line"><a name="l02243"></a><span class="lineno"> 2243</span>&#160;        <span class="keywordtype">void</span> ComputeGaussPointPositions_initial(Geometry&lt; Node &lt; 3 &gt; &gt;&amp; geom, BoundedMatrix&lt;double, 15, 3 &gt; &amp; pos,BoundedMatrix&lt;double, 15, 3 &gt; &amp; <a class="code" href="../../df/d42/mmio_8h.html#a3f620e88ba511ca5d32c93b84802ff6e">N</a>) <span class="comment">//2D</span></div>
+<div class="line"><a name="l02243"></a><span class="lineno"> 2243</span>&#160;        <span class="keywordtype">void</span> ComputeGaussPointPositions_initial(Geometry&lt; Node &gt;&amp; geom, BoundedMatrix&lt;double, 15, 3 &gt; &amp; pos,BoundedMatrix&lt;double, 15, 3 &gt; &amp; <a class="code" href="../../df/d42/mmio_8h.html#a3f620e88ba511ca5d32c93b84802ff6e">N</a>) <span class="comment">//2D</span></div>
 <div class="line"><a name="l02244"></a><span class="lineno"> 2244</span>&#160;        {</div>
 <div class="line"><a name="l02245"></a><span class="lineno"> 2245</span>&#160;            <span class="comment">//std::cout &lt;&lt; &quot;NEW ELEMENT&quot; &lt;&lt; std::endl;</span></div>
 <div class="line"><a name="l02246"></a><span class="lineno"> 2246</span>&#160;            <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="../../d0/daa/namespacescript___t_h_e_r_m_a_l___c_o_r_r_e_c_t.html#a37fe67255f2e1d30f90f0f02ceb60616">counter</a>=0;</div>
@@ -2327,7 +2327,7 @@ $(function() {
 <div class="line"><a name="l02262"></a><span class="lineno"> 2262</span>&#160; </div>
 <div class="line"><a name="l02263"></a><span class="lineno"> 2263</span>&#160;        }</div>
 <div class="line"><a name="l02264"></a><span class="lineno"> 2264</span>&#160; </div>
-<div class="line"><a name="l02265"></a><span class="lineno"> 2265</span>&#160;        <span class="keywordtype">void</span> ComputeGaussPointPositions_initial(Geometry&lt; Node &lt; 3 &gt; &gt;&amp; geom, BoundedMatrix&lt;double, 20, 3 &gt; &amp; pos,BoundedMatrix&lt;double, 20, 4 &gt; &amp; <a class="code" href="../../df/d42/mmio_8h.html#a3f620e88ba511ca5d32c93b84802ff6e">N</a>) <span class="comment">//3D</span></div>
+<div class="line"><a name="l02265"></a><span class="lineno"> 2265</span>&#160;        <span class="keywordtype">void</span> ComputeGaussPointPositions_initial(Geometry&lt; Node &gt;&amp; geom, BoundedMatrix&lt;double, 20, 3 &gt; &amp; pos,BoundedMatrix&lt;double, 20, 4 &gt; &amp; <a class="code" href="../../df/d42/mmio_8h.html#a3f620e88ba511ca5d32c93b84802ff6e">N</a>) <span class="comment">//3D</span></div>
 <div class="line"><a name="l02266"></a><span class="lineno"> 2266</span>&#160;        {</div>
 <div class="line"><a name="l02267"></a><span class="lineno"> 2267</span>&#160;            <span class="comment">//std::cout &lt;&lt; &quot;NEW ELEMENT&quot; &lt;&lt; std::endl;</span></div>
 <div class="line"><a name="l02268"></a><span class="lineno"> 2268</span>&#160;            <span class="comment">//double total;</span></div>
@@ -2547,8 +2547,6 @@ $(function() {
 <div class="ttc" id="aclass_kratos_1_1_move_particle_utility_scalar_transport_html_ae4c97388a7490705180740fa3554595e"><div class="ttname"><a href="../../d2/db5/class_kratos_1_1_move_particle_utility_scalar_transport.html#ae4c97388a7490705180740fa3554595e">Kratos::MoveParticleUtilityScalarTransport::~MoveParticleUtilityScalarTransport</a></div><div class="ttdeci">virtual ~MoveParticleUtilityScalarTransport()</div><div class="ttdef"><b>Definition:</b> move_particle_utility.h:271</div></div>
 <div class="ttc" id="aclass_kratos_1_1_move_particle_utility_scalar_transport_html_ae93951abc67da6ab34acd618d75aac11"><div class="ttname"><a href="../../d2/db5/class_kratos_1_1_move_particle_utility_scalar_transport.html#ae93951abc67da6ab34acd618d75aac11">Kratos::MoveParticleUtilityScalarTransport::PostReseed</a></div><div class="ttdeci">void PostReseed(int minimum_number_of_particles)</div><div class="ttdef"><b>Definition:</b> move_particle_utility.h:1144</div></div>
 <div class="ttc" id="aclass_kratos_1_1_move_particle_utility_scalar_transport_html_afb2f6953b31f6a6a763814006af4d5d4"><div class="ttname"><a href="../../d2/db5/class_kratos_1_1_move_particle_utility_scalar_transport.html#afb2f6953b31f6a6a763814006af4d5d4">Kratos::MoveParticleUtilityScalarTransport::ResultContainerType</a></div><div class="ttdeci">Configure::ResultContainerType ResultContainerType</div><div class="ttdef"><b>Definition:</b> move_particle_utility.h:74</div></div>
-<div class="ttc" id="aclass_kratos_1_1_node_html"><div class="ttname"><a href="../../d5/ddd/class_kratos_1_1_node.html">Kratos::Node</a></div><div class="ttdoc">This class defines the node.</div><div class="ttdef"><b>Definition:</b> node.h:68</div></div>
-<div class="ttc" id="aclass_kratos_1_1_node_html_a50011b1006c97870d3eb1f76f6a8ad44"><div class="ttname"><a href="../../d5/ddd/class_kratos_1_1_node.html#a50011b1006c97870d3eb1f76f6a8ad44">Kratos::Node::SetBufferSize</a></div><div class="ttdeci">void SetBufferSize(IndexType NewBufferSize)</div><div class="ttdef"><b>Definition:</b> node.h:577</div></div>
 <div class="ttc" id="aclass_kratos_1_1_open_m_p_utils_html_a25ab2a1b4dca7ecf3a1e4aee1039507e"><div class="ttname"><a href="../../d6/d4e/class_kratos_1_1_open_m_p_utils.html#a25ab2a1b4dca7ecf3a1e4aee1039507e">Kratos::OpenMPUtils::ThisThread</a></div><div class="ttdeci">static int ThisThread()</div><div class="ttdoc">Wrapper for omp_get_thread_num().</div><div class="ttdef"><b>Definition:</b> openmp_utils.h:108</div></div>
 <div class="ttc" id="aclass_kratos_1_1_point_html"><div class="ttname"><a href="../../d3/d3f/class_kratos_1_1_point.html">Kratos::Point</a></div><div class="ttdoc">Point class.</div><div class="ttdef"><b>Definition:</b> point.h:59</div></div>
 <div class="ttc" id="aclass_kratos_1_1_point_html_a12b7c8b8adacb59d7ff5fbd19df090fa"><div class="ttname"><a href="../../d3/d3f/class_kratos_1_1_point.html#a12b7c8b8adacb59d7ff5fbd19df090fa">Kratos::Point::Coordinates</a></div><div class="ttdeci">CoordinatesArrayType const  &amp; Coordinates() const</div><div class="ttdef"><b>Definition:</b> point.h:215</div></div>
@@ -2626,7 +2624,7 @@ $(function() {
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri May 12 2023 02:02:49 for KratosMultiphysics by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Sat May 13 2023 02:03:10 for KratosMultiphysics by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

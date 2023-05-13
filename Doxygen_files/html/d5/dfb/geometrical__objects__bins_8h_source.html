@@ -94,431 +94,339 @@ $(function() {
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#pragma once</span></div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment">// System includes</span></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &lt;unordered_set&gt;</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &lt;unordered_set&gt;</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment">// External includes</span></div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment">// External includes</span></div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment">// Project includes</span></div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../df/d67/define_8h.html">includes/define.h</a>&quot;</span></div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d9/d26/bounding__box_8h.html">geometries/bounding_box.h</a>&quot;</span></div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d2/d91/point_8h.html">geometries/point.h</a>&quot;</span></div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d5/d6d/geometrical__object_8h.html">includes/geometrical_object.h</a>&quot;</span></div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d6/dd9/global__pointer_8h.html">includes/global_pointer.h</a>&quot;</span></div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#include &quot;utilities/geometry_utilities.h&quot;</span></div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../de/d6e/spatial__search__result_8h.html">spatial_containers/spatial_search_result.h</a>&quot;</span></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keyword">namespace </span><a class="code" href="../../db/d66/namespace_kratos.html">Kratos</a></div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;{</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
-<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="../../dd/d0d/class_kratos_1_1_geometrical_objects_bins.html">   48</a></span>&#160;<span class="keyword">class </span><a class="code" href="../../dd/d0d/class_kratos_1_1_geometrical_objects_bins.html">GeometricalObjectsBins</a></div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;{</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keyword">static</span> constexpr <span class="keywordtype">int</span> Dimension = 3;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keyword">static</span> constexpr <span class="keywordtype">double</span> Tolerance = 1e-12;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
-<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="../../dd/d0d/class_kratos_1_1_geometrical_objects_bins.html#a1f7c98ff5f7c1c2105ad95cd2083ba76">   57</a></span>&#160;    <a class="code" href="../../dd/d0d/class_kratos_1_1_geometrical_objects_bins.html#a1f7c98ff5f7c1c2105ad95cd2083ba76">KRATOS_CLASS_POINTER_DEFINITION</a>(<a class="code" href="../../dd/d0d/class_kratos_1_1_geometrical_objects_bins.html">GeometricalObjectsBins</a>);</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
-<div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="../../dd/d0d/class_kratos_1_1_geometrical_objects_bins.html#ae814f1fafa6ab88c82813a7966285436">   59</a></span>&#160;    <span class="keyword">using</span> <a class="code" href="../../dd/d0d/class_kratos_1_1_geometrical_objects_bins.html#ae814f1fafa6ab88c82813a7966285436">CellType</a> = std::vector&lt;GeometricalObject*&gt;;</div>
-<div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="../../dd/d0d/class_kratos_1_1_geometrical_objects_bins.html#a12a694ba91a6dc79d5457aed6d703d6b">   60</a></span>&#160;    <span class="keyword">using</span> <a class="code" href="../../dd/d09/class_kratos_1_1_spatial_search_result.html">ResultType</a> = <a class="code" href="../../dd/d09/class_kratos_1_1_spatial_search_result.html">SpatialSearchResult&lt;GeometricalObject&gt;</a>;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment">// Project includes</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d9/d26/bounding__box_8h.html">geometries/bounding_box.h</a>&quot;</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d2/d91/point_8h.html">geometries/point.h</a>&quot;</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../de/d6e/spatial__search__result_8h.html">spatial_containers/spatial_search_result.h</a>&quot;</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keyword">namespace </span><a class="code" href="../../db/d66/namespace_kratos.html">Kratos</a></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;{</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keyword">class </span><a class="code" href="../../d0/d48/class_geometrical_object.html">GeometricalObject</a>; <span class="comment">// forward declaration, to be included in the cpp. This is needed to reduce the compilation time. Can be done as we consider the GeometricalObject as a pointer</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="keyword">class </span>KRATOS_API(KRATOS_CORE) <a class="code" href="../../d5/def/class_geometrical_objects_bins.html">GeometricalObjectsBins</a></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;{</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <a class="code" href="../../d6/d3f/transfer__utility_8h.html#a95ed76edc983cae239b65f370953d216">KRATOS_CLASS_POINTER_DEFINITION</a>(<a class="code" href="../../d5/def/class_geometrical_objects_bins.html">GeometricalObjectsBins</a>);</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keyword">using</span> CellType = std::vector&lt;GeometricalObject*&gt;;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keyword">using</span> ResultType = SpatialSearchResult&lt;GeometricalObject&gt;;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
-<div class="line"><a name="l00067"></a><span class="lineno"><a class="line" href="../../dd/d0d/class_kratos_1_1_geometrical_objects_bins.html#abffac1755b5010485315df4d57f4b595">   67</a></span>&#160;    <a class="code" href="../../dd/d0d/class_kratos_1_1_geometrical_objects_bins.html#abffac1755b5010485315df4d57f4b595">GeometricalObjectsBins</a>() = <span class="keyword">delete</span>;</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> TIteratorType&gt;</div>
-<div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="../../dd/d0d/class_kratos_1_1_geometrical_objects_bins.html#a112e8de889edf79071ccf4306841eb58">   71</a></span>&#160;    <a class="code" href="../../dd/d0d/class_kratos_1_1_geometrical_objects_bins.html#a112e8de889edf79071ccf4306841eb58">GeometricalObjectsBins</a>(TIteratorType GeometricalObjectsBegin, TIteratorType GeometricalObjectsEnd) {</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        std::size_t number_of_objects = std::distance(GeometricalObjectsBegin, GeometricalObjectsEnd);</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        <span class="keywordflow">if</span>(number_of_objects &gt; 0){</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;            mBoundingBox.Set(GeometricalObjectsBegin-&gt;GetGeometry().begin(), GeometricalObjectsBegin-&gt;GetGeometry().end());</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;            <span class="keywordflow">for</span>(TIteratorType i_object = GeometricalObjectsBegin ; i_object != GeometricalObjectsEnd ; i_object++){</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;                mBoundingBox.Extend(i_object-&gt;GetGeometry().begin() , i_object-&gt;GetGeometry().end());</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;            }</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        }</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        mBoundingBox.Extend(Tolerance);</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        CalculateCellSize(number_of_objects);</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        mCells.resize(<a class="code" href="../../dd/d0d/class_kratos_1_1_geometrical_objects_bins.html#a2d7dac5f84b026ae1defd89088557562">GetTotalNumberOfCells</a>());</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        AddObjectsToCells(GeometricalObjectsBegin, GeometricalObjectsEnd);</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    }</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160; </div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
-<div class="line"><a name="l00087"></a><span class="lineno"><a class="line" href="../../dd/d0d/class_kratos_1_1_geometrical_objects_bins.html#a2d5aa6163c03ba84e09c1da367c4edab">   87</a></span>&#160;    <span class="keyword">virtual</span> <a class="code" href="../../dd/d0d/class_kratos_1_1_geometrical_objects_bins.html#a2d5aa6163c03ba84e09c1da367c4edab">~GeometricalObjectsBins</a>(){}</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160; </div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160; </div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160; </div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> TIteratorType&gt;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <a class="code" href="../../d5/def/class_geometrical_objects_bins.html">GeometricalObjectsBins</a>(</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        TIteratorType GeometricalObjectsBegin,</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        TIteratorType GeometricalObjectsEnd</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        )</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    {</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        <span class="keyword">const</span> std::size_t number_of_objects = std::distance(GeometricalObjectsBegin, GeometricalObjectsEnd);</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        <span class="keywordflow">if</span> (number_of_objects &gt; 0){</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;            mBoundingBox.Set(GeometricalObjectsBegin-&gt;GetGeometry().begin(), GeometricalObjectsBegin-&gt;GetGeometry().end());</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;            <span class="keywordflow">for</span> (TIteratorType i_object = GeometricalObjectsBegin ; i_object != GeometricalObjectsEnd ; i_object++){</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;                mBoundingBox.Extend(i_object-&gt;GetGeometry().begin() , i_object-&gt;GetGeometry().end());</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;            }</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        }</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        mBoundingBox.Extend(<a class="code" href="../../da/dec/namespace_kratos_1_1_mortar_utilities.html#a808341c5844f3b2b1b5120a0c95f8c4e">Tolerance</a>);</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        CalculateCellSize(number_of_objects);</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        mCells.resize(GetTotalNumberOfCells());</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        AddObjectsToCells(GeometricalObjectsBegin, GeometricalObjectsEnd);</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    }</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160; </div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> TContainer&gt;</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <a class="code" href="../../d5/def/class_geometrical_objects_bins.html">GeometricalObjectsBins</a>(TContainer&amp; rGeometricalObjectsVector)</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        : <a class="code" href="../../d5/def/class_geometrical_objects_bins.html">GeometricalObjectsBins</a>(rGeometricalObjectsVector.begin(), rGeometricalObjectsVector.<a class="code" href="../../d3/d1a/namespace_d_e_m__benchmarks.html#a9635268cbcd16b8b3f12c26323611b53">end</a>())</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    {</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    }</div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160; </div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160; </div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160; </div>
-<div class="line"><a name="l00104"></a><span class="lineno"><a class="line" href="../../dd/d0d/class_kratos_1_1_geometrical_objects_bins.html#afa27c1e3ef3a34d937eced24b7f9a3eb">  104</a></span>&#160;    <span class="keyword">const</span> <a class="code" href="../../dc/dd4/class_kratos_1_1_bounding_box.html">BoundingBox&lt;Point&gt;</a>&amp; <a class="code" href="../../dd/d0d/class_kratos_1_1_geometrical_objects_bins.html#afa27c1e3ef3a34d937eced24b7f9a3eb">GetBoundingBox</a>()<span class="keyword"> const </span>{</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;        <span class="keywordflow">return</span> mBoundingBox;</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    }</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160; </div>
-<div class="line"><a name="l00109"></a><span class="lineno"><a class="line" href="../../dd/d0d/class_kratos_1_1_geometrical_objects_bins.html#afb62203e90af48fe1fafe5db01c49f45">  109</a></span>&#160;    <span class="keyword">const</span> <a class="code" href="../../d4/ddc/class_kratos_1_1array__1d.html">array_1d&lt;double, 3&gt;</a>&amp; <a class="code" href="../../dd/d0d/class_kratos_1_1_geometrical_objects_bins.html#afb62203e90af48fe1fafe5db01c49f45">GetCellSizes</a>(){</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;        <span class="keywordflow">return</span> mCellSizes;</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    }</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160; </div>
-<div class="line"><a name="l00114"></a><span class="lineno"><a class="line" href="../../dd/d0d/class_kratos_1_1_geometrical_objects_bins.html#a2dc899949f208bf5aaa5deca12f6d23d">  114</a></span>&#160;    <span class="keyword">const</span> <a class="code" href="../../d4/ddc/class_kratos_1_1array__1d.html">array_1d&lt;std::size_t, 3&gt;</a>&amp; <a class="code" href="../../dd/d0d/class_kratos_1_1_geometrical_objects_bins.html#a2dc899949f208bf5aaa5deca12f6d23d">GetNumberOfCells</a>(){</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;        <span class="keywordflow">return</span> mNumberOfCells;</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    }</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160; </div>
-<div class="line"><a name="l00119"></a><span class="lineno"><a class="line" href="../../dd/d0d/class_kratos_1_1_geometrical_objects_bins.html#a2d7dac5f84b026ae1defd89088557562">  119</a></span>&#160;    std::size_t <a class="code" href="../../dd/d0d/class_kratos_1_1_geometrical_objects_bins.html#a2d7dac5f84b026ae1defd89088557562">GetTotalNumberOfCells</a>(){</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;        <span class="keywordflow">return</span> mNumberOfCells[0] * mNumberOfCells[1] * mNumberOfCells[2];</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    }</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="../../d5/def/class_geometrical_objects_bins.html">GeometricalObjectsBins</a>(){}</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160; </div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160; </div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160; </div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160; </div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    CellType&amp; GetCell(</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;        <span class="keyword">const</span> std::size_t I,</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;        <span class="keyword">const</span> std::size_t <a class="code" href="../../d0/d79/namespacesensitivity_matrix.html#a0dcc8fdbf3703c6395c0f78646371997">J</a>,</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;        <span class="keyword">const</span> std::size_t <a class="code" href="../../d0/d79/namespacesensitivity_matrix.html#ae2e72f013786901294eafb958eb6430c">K</a></div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;        );</div>
 <div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160; </div>
-<div class="line"><a name="l00124"></a><span class="lineno"><a class="line" href="../../dd/d0d/class_kratos_1_1_geometrical_objects_bins.html#a182794e53d13a2ca8c5a4ecced979bc1">  124</a></span>&#160;    <a class="code" href="../../dd/d0d/class_kratos_1_1_geometrical_objects_bins.html#ae814f1fafa6ab88c82813a7966285436">CellType</a>&amp; <a class="code" href="../../dd/d0d/class_kratos_1_1_geometrical_objects_bins.html#a182794e53d13a2ca8c5a4ecced979bc1">GetCell</a>(std::size_t I, std::size_t <a class="code" href="../../d0/d79/namespacesensitivity_matrix.html#a0dcc8fdbf3703c6395c0f78646371997">J</a>, std::size_t <a class="code" href="../../d0/d79/namespacesensitivity_matrix.html#ae2e72f013786901294eafb958eb6430c">K</a>){</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;        <a class="code" href="../../d5/d4d/group___kratos_core.html#gab957b416207ac826a58f2b9503cb0d38">KRATOS_DEBUG_ERROR_IF</a>(I &gt; mNumberOfCells[0]) &lt;&lt; <span class="stringliteral">&quot;Index &quot;</span> &lt;&lt; I &lt;&lt; <span class="stringliteral">&quot; is larger than number of cells in x direction : &quot;</span> &lt;&lt; mNumberOfCells[0] &lt;&lt; std::endl;</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;        <a class="code" href="../../d5/d4d/group___kratos_core.html#gab957b416207ac826a58f2b9503cb0d38">KRATOS_DEBUG_ERROR_IF</a>(<a class="code" href="../../d0/d79/namespacesensitivity_matrix.html#a0dcc8fdbf3703c6395c0f78646371997">J</a> &gt; mNumberOfCells[1]) &lt;&lt; <span class="stringliteral">&quot;Index &quot;</span> &lt;&lt; <a class="code" href="../../d0/d79/namespacesensitivity_matrix.html#a0dcc8fdbf3703c6395c0f78646371997">J</a> &lt;&lt; <span class="stringliteral">&quot; is larger than number of cells in y direction : &quot;</span> &lt;&lt; mNumberOfCells[1] &lt;&lt; std::endl;</div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;        <a class="code" href="../../d5/d4d/group___kratos_core.html#gab957b416207ac826a58f2b9503cb0d38">KRATOS_DEBUG_ERROR_IF</a>(<a class="code" href="../../d0/d79/namespacesensitivity_matrix.html#ae2e72f013786901294eafb958eb6430c">K</a> &gt; mNumberOfCells[2]) &lt;&lt; <span class="stringliteral">&quot;Index &quot;</span> &lt;&lt; <a class="code" href="../../d0/d79/namespacesensitivity_matrix.html#ae2e72f013786901294eafb958eb6430c">K</a> &lt;&lt; <span class="stringliteral">&quot; is larger than number of cells in z direction : &quot;</span> &lt;&lt; mNumberOfCells[2] &lt;&lt; std::endl;</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160; </div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;        <span class="keyword">const</span> std::size_t index = I + <a class="code" href="../../d0/d79/namespacesensitivity_matrix.html#a0dcc8fdbf3703c6395c0f78646371997">J</a> * mNumberOfCells[0] + <a class="code" href="../../d0/d79/namespacesensitivity_matrix.html#ae2e72f013786901294eafb958eb6430c">K</a> * mNumberOfCells[1] * mNumberOfCells[0];</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;        <span class="keywordflow">return</span> mCells[index];</div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    }</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160; </div>
-<div class="line"><a name="l00134"></a><span class="lineno"><a class="line" href="../../dd/d0d/class_kratos_1_1_geometrical_objects_bins.html#a82d2e8fda89457a137b1c39851473c11">  134</a></span>&#160;    <a class="code" href="../../dc/dd4/class_kratos_1_1_bounding_box.html">BoundingBox&lt;Point&gt;</a> <a class="code" href="../../dd/d0d/class_kratos_1_1_geometrical_objects_bins.html#a82d2e8fda89457a137b1c39851473c11">GetCellBoundingBox</a>(std::size_t I, std::size_t <a class="code" href="../../d0/d79/namespacesensitivity_matrix.html#a0dcc8fdbf3703c6395c0f78646371997">J</a>, std::size_t <a class="code" href="../../d0/d79/namespacesensitivity_matrix.html#ae2e72f013786901294eafb958eb6430c">K</a>){</div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;        <a class="code" href="../../d5/d4d/group___kratos_core.html#gab957b416207ac826a58f2b9503cb0d38">KRATOS_DEBUG_ERROR_IF</a>(I &gt; mNumberOfCells[0]) &lt;&lt; <span class="stringliteral">&quot;Index &quot;</span> &lt;&lt; I &lt;&lt; <span class="stringliteral">&quot; is larger than number of cells in x direction : &quot;</span> &lt;&lt; mNumberOfCells[0] &lt;&lt; std::endl;</div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;        <a class="code" href="../../d5/d4d/group___kratos_core.html#gab957b416207ac826a58f2b9503cb0d38">KRATOS_DEBUG_ERROR_IF</a>(<a class="code" href="../../d0/d79/namespacesensitivity_matrix.html#a0dcc8fdbf3703c6395c0f78646371997">J</a> &gt; mNumberOfCells[1]) &lt;&lt; <span class="stringliteral">&quot;Index &quot;</span> &lt;&lt; <a class="code" href="../../d0/d79/namespacesensitivity_matrix.html#a0dcc8fdbf3703c6395c0f78646371997">J</a> &lt;&lt; <span class="stringliteral">&quot; is larger than number of cells in y direction : &quot;</span> &lt;&lt; mNumberOfCells[1] &lt;&lt; std::endl;</div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;        <a class="code" href="../../d5/d4d/group___kratos_core.html#gab957b416207ac826a58f2b9503cb0d38">KRATOS_DEBUG_ERROR_IF</a>(<a class="code" href="../../d0/d79/namespacesensitivity_matrix.html#ae2e72f013786901294eafb958eb6430c">K</a> &gt; mNumberOfCells[2]) &lt;&lt; <span class="stringliteral">&quot;Index &quot;</span> &lt;&lt; <a class="code" href="../../d0/d79/namespacesensitivity_matrix.html#ae2e72f013786901294eafb958eb6430c">K</a> &lt;&lt; <span class="stringliteral">&quot; is larger than number of cells in z direction : &quot;</span> &lt;&lt; mNumberOfCells[2] &lt;&lt; std::endl;</div>
-<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160; </div>
-<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;        <a class="code" href="../../dc/dd4/class_kratos_1_1_bounding_box.html">BoundingBox&lt;Point&gt;</a> result;</div>
-<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160; </div>
-<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;        result.<a class="code" href="../../dc/dd4/class_kratos_1_1_bounding_box.html#a8e1a3dc94d466b218fce20591c70514f">GetMinPoint</a>()[0] = mBoundingBox.GetMinPoint()[0] + I * mCellSizes[0];</div>
-<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;        result.<a class="code" href="../../dc/dd4/class_kratos_1_1_bounding_box.html#a8e1a3dc94d466b218fce20591c70514f">GetMinPoint</a>()[1] = mBoundingBox.GetMinPoint()[1] + <a class="code" href="../../d0/d79/namespacesensitivity_matrix.html#a0dcc8fdbf3703c6395c0f78646371997">J</a> * mCellSizes[1];</div>
-<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;        result.<a class="code" href="../../dc/dd4/class_kratos_1_1_bounding_box.html#a8e1a3dc94d466b218fce20591c70514f">GetMinPoint</a>()[2] = mBoundingBox.GetMinPoint()[2] + <a class="code" href="../../d0/d79/namespacesensitivity_matrix.html#ae2e72f013786901294eafb958eb6430c">K</a> * mCellSizes[2];</div>
-<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160; </div>
-<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;        result.<a class="code" href="../../dc/dd4/class_kratos_1_1_bounding_box.html#afe2ee6a6238550bf14d17a36b5c11570">GetMaxPoint</a>()[0] = mBoundingBox.GetMinPoint()[0] + (I + 1) * mCellSizes[0];</div>
-<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;        result.<a class="code" href="../../dc/dd4/class_kratos_1_1_bounding_box.html#afe2ee6a6238550bf14d17a36b5c11570">GetMaxPoint</a>()[1] = mBoundingBox.GetMinPoint()[1] + (<a class="code" href="../../d0/d79/namespacesensitivity_matrix.html#a0dcc8fdbf3703c6395c0f78646371997">J</a> + 1) * mCellSizes[1];</div>
-<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;        result.<a class="code" href="../../dc/dd4/class_kratos_1_1_bounding_box.html#afe2ee6a6238550bf14d17a36b5c11570">GetMaxPoint</a>()[2] = mBoundingBox.GetMinPoint()[2] + (<a class="code" href="../../d0/d79/namespacesensitivity_matrix.html#ae2e72f013786901294eafb958eb6430c">K</a> + 1) * mCellSizes[2];</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    BoundingBox&lt;Point&gt; GetCellBoundingBox(</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;        <span class="keyword">const</span> std::size_t I,</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;        <span class="keyword">const</span> std::size_t <a class="code" href="../../d0/d79/namespacesensitivity_matrix.html#a0dcc8fdbf3703c6395c0f78646371997">J</a>,</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;        <span class="keyword">const</span> std::size_t <a class="code" href="../../d0/d79/namespacesensitivity_matrix.html#ae2e72f013786901294eafb958eb6430c">K</a></div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;        );</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160; </div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;    <span class="keywordtype">void</span> SearchInRadius(</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;        <span class="keyword">const</span> Point&amp; rPoint,</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">double</span> Radius,</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;        std::vector&lt;ResultType&gt;&amp; rResults</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;        );</div>
 <div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160; </div>
-<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;        <span class="keywordflow">return</span> result;</div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;    }</div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160; </div>
-<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> TPo<span class="keywordtype">int</span>Type&gt;</div>
-<div class="line"><a name="l00156"></a><span class="lineno"><a class="line" href="../../dd/d0d/class_kratos_1_1_geometrical_objects_bins.html#a977ca5f7db99ec004cd64010d8f25d52">  156</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../dd/d0d/class_kratos_1_1_geometrical_objects_bins.html#a977ca5f7db99ec004cd64010d8f25d52">SearchInRadius</a>(TPointType <span class="keyword">const</span>&amp; ThePoint, <span class="keywordtype">double</span> Radius, std::vector&lt;ResultType&gt;&amp; rResults) {</div>
-<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;        std::unordered_set&lt;GeometricalObject*&gt; <a class="code" href="../../db/d66/namespace_kratos.html#a6f2039a47d53dc7d9a555957a10fd06f">results</a>;</div>
-<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160; </div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;        <a class="code" href="../../d4/ddc/class_kratos_1_1array__1d.html">array_1d&lt; std::size_t, 3 &gt;</a> min_position;</div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;        <a class="code" href="../../d4/ddc/class_kratos_1_1array__1d.html">array_1d&lt; std::size_t, 3 &gt;</a> max_position;</div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160; </div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;        <span class="keywordflow">for</span>(<span class="keywordtype">int</span> <a class="code" href="../../d2/db8/namespacetensors.html#a15a1da80aa773e2015eba781cababe05">i</a> = 0; <a class="code" href="../../d2/db8/namespacetensors.html#a15a1da80aa773e2015eba781cababe05">i</a> &lt; 3; <a class="code" href="../../d2/db8/namespacetensors.html#a15a1da80aa773e2015eba781cababe05">i</a>++ ) {</div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;            min_position[<a class="code" href="../../d2/db8/namespacetensors.html#a15a1da80aa773e2015eba781cababe05">i</a>] = CalculatePosition(ThePoint[<a class="code" href="../../d2/db8/namespacetensors.html#a15a1da80aa773e2015eba781cababe05">i</a>] - Radius, <a class="code" href="../../d2/db8/namespacetensors.html#a15a1da80aa773e2015eba781cababe05">i</a>);</div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;            max_position[<a class="code" href="../../d2/db8/namespacetensors.html#a15a1da80aa773e2015eba781cababe05">i</a>] = CalculatePosition(ThePoint[<a class="code" href="../../d2/db8/namespacetensors.html#a15a1da80aa773e2015eba781cababe05">i</a>] + Radius, <a class="code" href="../../d2/db8/namespacetensors.html#a15a1da80aa773e2015eba781cababe05">i</a>) + 1;</div>
-<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;        }</div>
-<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;        <span class="keywordflow">for</span>(std::size_t <a class="code" href="../../d7/d2b/namespacequadrature.html#a56123f01f0d1e776d9a6d85aa0f27caa">k</a> = min_position[2] ; <a class="code" href="../../d7/d2b/namespacequadrature.html#a56123f01f0d1e776d9a6d85aa0f27caa">k</a> &lt; max_position[2] ; <a class="code" href="../../d7/d2b/namespacequadrature.html#a56123f01f0d1e776d9a6d85aa0f27caa">k</a>++){</div>
-<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;            <span class="keywordflow">for</span>(std::size_t <a class="code" href="../../d7/d2b/namespacequadrature.html#aae897447319c4634b1dcef7634fe5876">j</a> = min_position[1] ; <a class="code" href="../../d7/d2b/namespacequadrature.html#aae897447319c4634b1dcef7634fe5876">j</a> &lt; max_position[1] ; <a class="code" href="../../d7/d2b/namespacequadrature.html#aae897447319c4634b1dcef7634fe5876">j</a>++){</div>
-<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;                <span class="keywordflow">for</span>(std::size_t <a class="code" href="../../d2/db8/namespacetensors.html#a15a1da80aa773e2015eba781cababe05">i</a> = min_position[0] ; <a class="code" href="../../d2/db8/namespacetensors.html#a15a1da80aa773e2015eba781cababe05">i</a> &lt; max_position[0] ; <a class="code" href="../../d2/db8/namespacetensors.html#a15a1da80aa773e2015eba781cababe05">i</a>++){</div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;                    <span class="keyword">auto</span>&amp; cell = <a class="code" href="../../dd/d0d/class_kratos_1_1_geometrical_objects_bins.html#a182794e53d13a2ca8c5a4ecced979bc1">GetCell</a>(<a class="code" href="../../d2/db8/namespacetensors.html#a15a1da80aa773e2015eba781cababe05">i</a>,<a class="code" href="../../d7/d2b/namespacequadrature.html#aae897447319c4634b1dcef7634fe5876">j</a>,<a class="code" href="../../d7/d2b/namespacequadrature.html#a56123f01f0d1e776d9a6d85aa0f27caa">k</a>);</div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;                    SearchInRadiusInCell(cell, ThePoint, Radius, <a class="code" href="../../db/d66/namespace_kratos.html#a6f2039a47d53dc7d9a555957a10fd06f">results</a>);</div>
-<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;                }</div>
-<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;            }</div>
-<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;        }</div>
-<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160; </div>
-<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;        rResults.clear();</div>
-<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;        <span class="keywordflow">for</span>(<span class="keyword">auto</span> p_object : <a class="code" href="../../db/d66/namespace_kratos.html#a6f2039a47d53dc7d9a555957a10fd06f">results</a>){</div>
-<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;            rResults.push_back(<a class="code" href="../../dd/d0d/class_kratos_1_1_geometrical_objects_bins.html#a12a694ba91a6dc79d5457aed6d703d6b">ResultType</a>(p_object));</div>
-<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;        }</div>
-<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;    }</div>
-<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160; </div>
-<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;     <span class="keyword">template</span>&lt;<span class="keyword">typename</span> TPo<span class="keywordtype">int</span>Type&gt;</div>
-<div class="line"><a name="l00187"></a><span class="lineno"><a class="line" href="../../dd/d0d/class_kratos_1_1_geometrical_objects_bins.html#af6ccf07bfaeaf90b72a2feef8b470b8e">  187</a></span>&#160;    <a class="code" href="../../dd/d09/class_kratos_1_1_spatial_search_result.html">ResultType</a> <a class="code" href="../../dd/d0d/class_kratos_1_1_geometrical_objects_bins.html#af6ccf07bfaeaf90b72a2feef8b470b8e">SearchNearestInRadius</a>(TPointType <span class="keyword">const</span>&amp; ThePoint, <span class="keywordtype">double</span> Radius) {</div>
-<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;        <a class="code" href="../../dd/d09/class_kratos_1_1_spatial_search_result.html">ResultType</a> current_result;</div>
-<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;        current_result.<a class="code" href="../../dd/d09/class_kratos_1_1_spatial_search_result.html#a64bcb71385e1e1edc272dcb28b46f1d5">SetDistance</a>(<a class="code" href="../../d4/d8c/namespace_kratos_1_1_geometry_functions.html#a819e51c089a0d603f13c6ce87e7cbed5">std::numeric_limits&lt;double&gt;::max</a>());</div>
-<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160; </div>
-<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;        <span class="keywordtype">double</span> radius_increment = *std::max_element(mCellSizes.<a class="code" href="../../d4/ddc/class_kratos_1_1array__1d.html#ae8323ea08b822f9b79906234e9f1e33d">begin</a>(), mCellSizes.<a class="code" href="../../d4/ddc/class_kratos_1_1array__1d.html#aaef2a89bfb932228a64c24131efb4b8c">end</a>());</div>
-<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160; </div>
-<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;        <a class="code" href="../../d4/ddc/class_kratos_1_1array__1d.html">array_1d&lt; std::size_t, 3 &gt;</a> min_position;</div>
-<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;        <a class="code" href="../../d4/ddc/class_kratos_1_1array__1d.html">array_1d&lt; std::size_t, 3 &gt;</a> max_position;</div>
-<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160; </div>
-<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;        <span class="keywordflow">for</span>(<span class="keywordtype">double</span> current_radius = 0 ; current_radius &lt; Radius + radius_increment ; current_radius += radius_increment){</div>
-<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;            current_radius = (current_radius &gt; Radius) ? Radius : current_radius;</div>
-<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;            <span class="keywordflow">for</span>(<span class="keywordtype">int</span> <a class="code" href="../../d2/db8/namespacetensors.html#a15a1da80aa773e2015eba781cababe05">i</a> = 0; <a class="code" href="../../d2/db8/namespacetensors.html#a15a1da80aa773e2015eba781cababe05">i</a> &lt; 3; <a class="code" href="../../d2/db8/namespacetensors.html#a15a1da80aa773e2015eba781cababe05">i</a>++ ) {</div>
-<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;                min_position[<a class="code" href="../../d2/db8/namespacetensors.html#a15a1da80aa773e2015eba781cababe05">i</a>] = CalculatePosition(ThePoint[<a class="code" href="../../d2/db8/namespacetensors.html#a15a1da80aa773e2015eba781cababe05">i</a>] - current_radius, <a class="code" href="../../d2/db8/namespacetensors.html#a15a1da80aa773e2015eba781cababe05">i</a>);</div>
-<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;                max_position[<a class="code" href="../../d2/db8/namespacetensors.html#a15a1da80aa773e2015eba781cababe05">i</a>] = CalculatePosition(ThePoint[<a class="code" href="../../d2/db8/namespacetensors.html#a15a1da80aa773e2015eba781cababe05">i</a>] + current_radius, <a class="code" href="../../d2/db8/namespacetensors.html#a15a1da80aa773e2015eba781cababe05">i</a>) + 1;</div>
-<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;            }</div>
-<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160; </div>
-<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;            <span class="keywordflow">for</span>(std::size_t <a class="code" href="../../d7/d2b/namespacequadrature.html#a56123f01f0d1e776d9a6d85aa0f27caa">k</a> = min_position[2] ; <a class="code" href="../../d7/d2b/namespacequadrature.html#a56123f01f0d1e776d9a6d85aa0f27caa">k</a> &lt; max_position[2] ; <a class="code" href="../../d7/d2b/namespacequadrature.html#a56123f01f0d1e776d9a6d85aa0f27caa">k</a>++){</div>
-<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;                <span class="keywordflow">for</span>(std::size_t <a class="code" href="../../d7/d2b/namespacequadrature.html#aae897447319c4634b1dcef7634fe5876">j</a> = min_position[1] ; <a class="code" href="../../d7/d2b/namespacequadrature.html#aae897447319c4634b1dcef7634fe5876">j</a> &lt; max_position[1] ; <a class="code" href="../../d7/d2b/namespacequadrature.html#aae897447319c4634b1dcef7634fe5876">j</a>++){</div>
-<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;                    <span class="keywordflow">for</span>(std::size_t <a class="code" href="../../d2/db8/namespacetensors.html#a15a1da80aa773e2015eba781cababe05">i</a> = min_position[0] ; <a class="code" href="../../d2/db8/namespacetensors.html#a15a1da80aa773e2015eba781cababe05">i</a> &lt; max_position[0] ; <a class="code" href="../../d2/db8/namespacetensors.html#a15a1da80aa773e2015eba781cababe05">i</a>++){</div>
-<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;                        <span class="keyword">auto</span>&amp; cell = <a class="code" href="../../dd/d0d/class_kratos_1_1_geometrical_objects_bins.html#a182794e53d13a2ca8c5a4ecced979bc1">GetCell</a>(<a class="code" href="../../d2/db8/namespacetensors.html#a15a1da80aa773e2015eba781cababe05">i</a>,<a class="code" href="../../d7/d2b/namespacequadrature.html#aae897447319c4634b1dcef7634fe5876">j</a>,<a class="code" href="../../d7/d2b/namespacequadrature.html#a56123f01f0d1e776d9a6d85aa0f27caa">k</a>);</div>
-<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;                        SearchNearestInCell(cell, ThePoint, current_result, current_radius);</div>
-<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;                    }</div>
-<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;                }</div>
-<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;            }</div>
-<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;            <span class="keywordtype">bool</span> all_cells_are_covered = (min_position[0] == 0) &amp;&amp; (min_position[1] == 0) &amp;&amp; (min_position[2] == 0);</div>
-<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;            all_cells_are_covered &amp;= (max_position[0] == mNumberOfCells[0] - 1) &amp;&amp; (max_position[1] == mNumberOfCells[1] - 1) &amp;&amp; (max_position[2] == mNumberOfCells[2] - 1);</div>
-<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160; </div>
-<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;            <span class="keywordflow">if</span>(all_cells_are_covered || current_result.<a class="code" href="../../dd/d09/class_kratos_1_1_spatial_search_result.html#a0327bdd569a831593cc3847b19c2058f">IsObjectFound</a>()){</div>
-<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;                <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;            }</div>
-<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;        }</div>
-<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;        <span class="keywordflow">return</span> current_result;</div>
-<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;    }</div>
-<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160; </div>
-<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> TPo<span class="keywordtype">int</span>Type&gt;</div>
-<div class="line"><a name="l00226"></a><span class="lineno"><a class="line" href="../../dd/d0d/class_kratos_1_1_geometrical_objects_bins.html#a9bcd405e8e83552e750c025149edc60d">  226</a></span>&#160;    <a class="code" href="../../dd/d09/class_kratos_1_1_spatial_search_result.html">ResultType</a> <a class="code" href="../../dd/d0d/class_kratos_1_1_geometrical_objects_bins.html#a9bcd405e8e83552e750c025149edc60d">SearchNearest</a>(TPointType <span class="keyword">const</span>&amp; ThePoint) {</div>
-<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;        <a class="code" href="../../dd/d09/class_kratos_1_1_spatial_search_result.html">ResultType</a> current_result;</div>
-<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160; </div>
-<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;        <a class="code" href="../../d4/ddc/class_kratos_1_1array__1d.html">array_1d&lt;double, 3&gt;</a> box_size = mBoundingBox.GetMaxPoint() - mBoundingBox.GetMinPoint();</div>
-<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;        <span class="keywordtype">double</span> max_radius= *std::max_element(box_size.<a class="code" href="../../d4/ddc/class_kratos_1_1array__1d.html#ae8323ea08b822f9b79906234e9f1e33d">begin</a>(), box_size.<a class="code" href="../../d4/ddc/class_kratos_1_1array__1d.html#aaef2a89bfb932228a64c24131efb4b8c">end</a>());</div>
-<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160; </div>
-<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="../../dd/d0d/class_kratos_1_1_geometrical_objects_bins.html#af6ccf07bfaeaf90b72a2feef8b470b8e">SearchNearestInRadius</a>(ThePoint, max_radius);</div>
-<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;    }</div>
-<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160; </div>
-<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;     <span class="keyword">template</span>&lt;<span class="keyword">typename</span> TPo<span class="keywordtype">int</span>Type&gt;</div>
-<div class="line"><a name="l00242"></a><span class="lineno"><a class="line" href="../../dd/d0d/class_kratos_1_1_geometrical_objects_bins.html#a20e00506717855bb66bb0daacac0b050">  242</a></span>&#160;    <a class="code" href="../../dd/d09/class_kratos_1_1_spatial_search_result.html">ResultType</a> <a class="code" href="../../dd/d0d/class_kratos_1_1_geometrical_objects_bins.html#a20e00506717855bb66bb0daacac0b050">SearchIsInside</a>(TPointType <span class="keyword">const</span>&amp; ThePoint) {</div>
-<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;        <a class="code" href="../../dd/d09/class_kratos_1_1_spatial_search_result.html">ResultType</a> current_result;</div>
-<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;        current_result.<a class="code" href="../../dd/d09/class_kratos_1_1_spatial_search_result.html#a64bcb71385e1e1edc272dcb28b46f1d5">SetDistance</a>(<a class="code" href="../../d4/d8c/namespace_kratos_1_1_geometry_functions.html#a819e51c089a0d603f13c6ce87e7cbed5">std::numeric_limits&lt;double&gt;::max</a>());</div>
-<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160; </div>
-<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;        <a class="code" href="../../d4/ddc/class_kratos_1_1array__1d.html">array_1d&lt; std::size_t, 3 &gt;</a> position;</div>
-<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160; </div>
-<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;        <span class="keywordflow">for</span>(<span class="keywordtype">int</span> <a class="code" href="../../d2/db8/namespacetensors.html#a15a1da80aa773e2015eba781cababe05">i</a> = 0; <a class="code" href="../../d2/db8/namespacetensors.html#a15a1da80aa773e2015eba781cababe05">i</a> &lt; 3; <a class="code" href="../../d2/db8/namespacetensors.html#a15a1da80aa773e2015eba781cababe05">i</a>++ ) {</div>
-<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;            position[<a class="code" href="../../d2/db8/namespacetensors.html#a15a1da80aa773e2015eba781cababe05">i</a>] = CalculatePosition(ThePoint[<a class="code" href="../../d2/db8/namespacetensors.html#a15a1da80aa773e2015eba781cababe05">i</a>], <a class="code" href="../../d2/db8/namespacetensors.html#a15a1da80aa773e2015eba781cababe05">i</a>);</div>
-<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;        }</div>
-<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160; </div>
-<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;        <span class="keyword">auto</span>&amp; cell = <a class="code" href="../../dd/d0d/class_kratos_1_1_geometrical_objects_bins.html#a182794e53d13a2ca8c5a4ecced979bc1">GetCell</a>(position[0],position[1],position[2]);</div>
-<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;        SearchIsInsideInCell(cell, ThePoint, current_result);</div>
-<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160; </div>
-<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;        <span class="keywordflow">return</span> current_result;</div>
-<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;    }</div>
-<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160; </div>
-<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160; </div>
-<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160; </div>
-<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160; </div>
-<div class="line"><a name="l00268"></a><span class="lineno"><a class="line" href="../../dd/d0d/class_kratos_1_1_geometrical_objects_bins.html#a035a9ed41a05b41f6537fdc8a7876edc">  268</a></span>&#160;    <span class="keyword">virtual</span> std::string <a class="code" href="../../dd/d0d/class_kratos_1_1_geometrical_objects_bins.html#a035a9ed41a05b41f6537fdc8a7876edc">Info</a>()<span class="keyword"> const</span></div>
-<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;<span class="keyword">    </span>{</div>
-<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;        std::stringstream buffer;</div>
-<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;        buffer &lt;&lt; <span class="stringliteral">&quot;GeometricalObjectsBins&quot;</span> ;</div>
-<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;        <span class="keywordflow">return</span> buffer.str();</div>
-<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;    }</div>
-<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160; </div>
-<div class="line"><a name="l00276"></a><span class="lineno"><a class="line" href="../../dd/d0d/class_kratos_1_1_geometrical_objects_bins.html#a27581f210c0c180cf0b1543a71d8c92c">  276</a></span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="../../dd/d0d/class_kratos_1_1_geometrical_objects_bins.html#a27581f210c0c180cf0b1543a71d8c92c">PrintInfo</a>(std::ostream&amp; rOStream)<span class="keyword"> const </span>{rOStream &lt;&lt; <span class="stringliteral">&quot;GeometricalObjectsBins&quot;</span>;}</div>
-<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160; </div>
-<div class="line"><a name="l00279"></a><span class="lineno"><a class="line" href="../../dd/d0d/class_kratos_1_1_geometrical_objects_bins.html#aab092ac23243a31801e117332e1769f9">  279</a></span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="../../dd/d0d/class_kratos_1_1_geometrical_objects_bins.html#aab092ac23243a31801e117332e1769f9">PrintData</a>(std::ostream&amp; rOStream)<span class="keyword"> const </span>{}</div>
-<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160; </div>
-<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160; </div>
-<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160; </div>
-<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160; </div>
-<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160; </div>
-<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160; </div>
-<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160; </div>
-<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;    <a class="code" href="../../dc/dd4/class_kratos_1_1_bounding_box.html">BoundingBox&lt;Point&gt;</a> mBoundingBox;</div>
-<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;    <a class="code" href="../../d4/ddc/class_kratos_1_1array__1d.html">array_1d&lt;std::size_t, Dimension&gt;</a> mNumberOfCells;</div>
-<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;    <a class="code" href="../../d4/ddc/class_kratos_1_1array__1d.html">array_1d&lt;double, 3&gt;</a>  mCellSizes;</div>
-<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;    <a class="code" href="../../d4/ddc/class_kratos_1_1array__1d.html">array_1d&lt;double, 3&gt;</a>  mInverseOfCellSize;</div>
-<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;    std::vector&lt;CellType&gt; mCells;</div>
-<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160; </div>
-<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160; </div>
-<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160; </div>
-<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160; </div>
-<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160; </div>
-<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;    <span class="keywordtype">void</span> CalculateCellSize(std::size_t NumberOfCells) {</div>
-<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;        std::size_t avarage_number_of_cells = <span class="keyword">static_cast&lt;</span>std::size_t<span class="keyword">&gt;</span>(std::pow(<span class="keyword">static_cast&lt;</span><span class="keywordtype">double</span><span class="keyword">&gt;</span>(NumberOfCells), 1.00 / Dimension));</div>
-<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;        std::array&lt;double, 3&gt; lengths;</div>
-<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;        <span class="keywordtype">double</span> avarage_length = 0.00;</div>
-<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> <a class="code" href="../../d2/db8/namespacetensors.html#a15a1da80aa773e2015eba781cababe05">i</a> = 0; <a class="code" href="../../d2/db8/namespacetensors.html#a15a1da80aa773e2015eba781cababe05">i</a> &lt; Dimension; <a class="code" href="../../d2/db8/namespacetensors.html#a15a1da80aa773e2015eba781cababe05">i</a>++) {</div>
-<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;            lengths[<a class="code" href="../../d2/db8/namespacetensors.html#a15a1da80aa773e2015eba781cababe05">i</a>] = mBoundingBox.<a class="code" href="../../dc/dd4/class_kratos_1_1_bounding_box.html#afe2ee6a6238550bf14d17a36b5c11570">GetMaxPoint</a>()[<a class="code" href="../../d2/db8/namespacetensors.html#a15a1da80aa773e2015eba781cababe05">i</a>] - mBoundingBox.<a class="code" href="../../dc/dd4/class_kratos_1_1_bounding_box.html#a8e1a3dc94d466b218fce20591c70514f">GetMinPoint</a>()[<a class="code" href="../../d2/db8/namespacetensors.html#a15a1da80aa773e2015eba781cababe05">i</a>];</div>
-<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;            avarage_length += lengths[<a class="code" href="../../d2/db8/namespacetensors.html#a15a1da80aa773e2015eba781cababe05">i</a>];</div>
-<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;        }</div>
-<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;        avarage_length *= 1.00 / 3.00;</div>
-<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160; </div>
-<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;        <span class="keywordflow">if</span> (avarage_length &lt; std::numeric_limits&lt;double&gt;::epsilon()) {</div>
-<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;            mNumberOfCells = <a class="code" href="../../db/d66/namespace_kratos.html#a3a1ecd0fa0d3efbe1f885e5edc413996">ScalarVector</a>(3, 1);</div>
-<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;            <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;        }</div>
-<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160; </div>
-<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> <a class="code" href="../../d2/db8/namespacetensors.html#a15a1da80aa773e2015eba781cababe05">i</a> = 0; <a class="code" href="../../d2/db8/namespacetensors.html#a15a1da80aa773e2015eba781cababe05">i</a> &lt; <a class="code" href="../../da/dec/namespace_kratos_1_1_mortar_utilities.html#a67e0ac17841be88205ea3ffb7748688c">Dimension</a>; <a class="code" href="../../d2/db8/namespacetensors.html#a15a1da80aa773e2015eba781cababe05">i</a>++) {</div>
-<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;            mNumberOfCells[<a class="code" href="../../d2/db8/namespacetensors.html#a15a1da80aa773e2015eba781cababe05">i</a>] = <span class="keyword">static_cast&lt;</span>std::size_t<span class="keyword">&gt;</span>(lengths[<a class="code" href="../../d2/db8/namespacetensors.html#a15a1da80aa773e2015eba781cababe05">i</a>] / avarage_length * avarage_number_of_cells) + 1;</div>
-<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;            <span class="keywordflow">if</span> (mNumberOfCells[<a class="code" href="../../d2/db8/namespacetensors.html#a15a1da80aa773e2015eba781cababe05">i</a>] &gt; 1)</div>
-<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;                mCellSizes[<a class="code" href="../../d2/db8/namespacetensors.html#a15a1da80aa773e2015eba781cababe05">i</a>] = lengths[<a class="code" href="../../d2/db8/namespacetensors.html#a15a1da80aa773e2015eba781cababe05">i</a>] / mNumberOfCells[<a class="code" href="../../d2/db8/namespacetensors.html#a15a1da80aa773e2015eba781cababe05">i</a>];</div>
-<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;            <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;                mCellSizes[<a class="code" href="../../d2/db8/namespacetensors.html#a15a1da80aa773e2015eba781cababe05">i</a>] = avarage_length;</div>
-<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160; </div>
-<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;            mInverseOfCellSize[<a class="code" href="../../d2/db8/namespacetensors.html#a15a1da80aa773e2015eba781cababe05">i</a>] = 1.00 / mCellSizes[<a class="code" href="../../d2/db8/namespacetensors.html#a15a1da80aa773e2015eba781cababe05">i</a>];</div>
-<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;        }</div>
-<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160; </div>
-<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;    }</div>
-<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160; </div>
-<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> TIteratorType&gt;</div>
-<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;    <span class="keywordtype">void</span> AddObjectsToCells(TIteratorType GeometricalObjectsBegin, TIteratorType GeometricalObjectsEnd) {</div>
-<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;        <span class="keywordflow">for</span>(<span class="keyword">auto</span> i_geometrical_object = GeometricalObjectsBegin ; i_geometrical_object != GeometricalObjectsEnd ; i_geometrical_object++){</div>
-<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;            array_1d&lt;std::size_t, 3&gt; min_position(3,0);</div>
-<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;            array_1d&lt;std::size_t, 3&gt; max_position(3,0);</div>
-<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;            CalculateMinMaxPositions(i_geometrical_object-&gt;GetGeometry(), min_position, max_position);</div>
-<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;            <span class="keywordflow">for</span>(std::size_t <a class="code" href="../../d7/d2b/namespacequadrature.html#a56123f01f0d1e776d9a6d85aa0f27caa">k</a> = min_position[2] ; <a class="code" href="../../d7/d2b/namespacequadrature.html#a56123f01f0d1e776d9a6d85aa0f27caa">k</a> &lt; max_position[2] ; <a class="code" href="../../d7/d2b/namespacequadrature.html#a56123f01f0d1e776d9a6d85aa0f27caa">k</a>++){</div>
-<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;                <span class="keywordflow">for</span>(std::size_t <a class="code" href="../../d7/d2b/namespacequadrature.html#aae897447319c4634b1dcef7634fe5876">j</a> = min_position[1] ; <a class="code" href="../../d7/d2b/namespacequadrature.html#aae897447319c4634b1dcef7634fe5876">j</a> &lt; max_position[1] ; <a class="code" href="../../d7/d2b/namespacequadrature.html#aae897447319c4634b1dcef7634fe5876">j</a>++){</div>
-<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;                    <span class="keywordflow">for</span>(std::size_t <a class="code" href="../../d2/db8/namespacetensors.html#a15a1da80aa773e2015eba781cababe05">i</a> = min_position[0] ; <a class="code" href="../../d2/db8/namespacetensors.html#a15a1da80aa773e2015eba781cababe05">i</a> &lt; max_position[0] ; <a class="code" href="../../d2/db8/namespacetensors.html#a15a1da80aa773e2015eba781cababe05">i</a>++){</div>
-<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;                        <span class="keyword">auto</span> cell_bounding_box = <a class="code" href="../../dd/d0d/class_kratos_1_1_geometrical_objects_bins.html#a82d2e8fda89457a137b1c39851473c11">GetCellBoundingBox</a>(<a class="code" href="../../d2/db8/namespacetensors.html#a15a1da80aa773e2015eba781cababe05">i</a>,<a class="code" href="../../d7/d2b/namespacequadrature.html#aae897447319c4634b1dcef7634fe5876">j</a>,<a class="code" href="../../d7/d2b/namespacequadrature.html#a56123f01f0d1e776d9a6d85aa0f27caa">k</a>);</div>
-<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;                        <span class="keywordflow">if</span>(IsIntersected(i_geometrical_object-&gt;GetGeometry(), cell_bounding_box, Tolerance)){</div>
-<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;                            <a class="code" href="../../dd/d0d/class_kratos_1_1_geometrical_objects_bins.html#a182794e53d13a2ca8c5a4ecced979bc1">GetCell</a>(<a class="code" href="../../d2/db8/namespacetensors.html#a15a1da80aa773e2015eba781cababe05">i</a>,<a class="code" href="../../d7/d2b/namespacequadrature.html#aae897447319c4634b1dcef7634fe5876">j</a>,<a class="code" href="../../d7/d2b/namespacequadrature.html#a56123f01f0d1e776d9a6d85aa0f27caa">k</a>).push_back(&amp;(*i_geometrical_object));</div>
-<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;                        }</div>
-<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;                    }</div>
-<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;                }</div>
-<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;            }</div>
-<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;        }</div>
-<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;    }</div>
-<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160; </div>
-<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> TGeometryType&gt;</div>
-<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;    <span class="keywordtype">void</span> CalculateMinMaxPositions(TGeometryType <span class="keyword">const</span>&amp; TheGeometry, array_1d&lt; std::size_t, 3 &gt;&amp; MinPosition, array_1d&lt; std::size_t, 3 &gt;&amp; MaxPosition){</div>
-<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;        <span class="keywordflow">if</span>(TheGeometry.empty())</div>
-<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;            <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160; </div>
-<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;        BoundingBox&lt;Point&gt; bounding_box(TheGeometry.begin(), TheGeometry.end());</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> TPo<span class="keywordtype">int</span>IteratorType&gt;</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;    <span class="keywordtype">void</span> SearchInRadius(</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;        TPointIteratorType itPointBegin,</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;        TPointIteratorType itPointEnd,</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">double</span> Radius,</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;        std::vector&lt;std::vector&lt;ResultType&gt;&gt;&amp; rResults</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;        )</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;    {</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;        <span class="keyword">const</span> std::size_t number_of_points = std::distance(itPointBegin, itPointEnd);</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;        rResults.resize(number_of_points);</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;        <span class="keywordflow">for</span> (<span class="keyword">auto</span> it_point = itPointBegin ; it_point != itPointEnd ; it_point++){</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;            SearchInRadius(*it_point, Radius, rResults[it_point - itPointBegin]);</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;        }</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;    }</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160; </div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;    ResultType SearchNearestInRadius(</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;        <span class="keyword">const</span> Point&amp; rPoint,</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">double</span> Radius</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;        );</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160; </div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> TPo<span class="keywordtype">int</span>IteratorType&gt;</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;    std::vector&lt;ResultType&gt; SearchNearestInRadius(</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;        TPointIteratorType itPointBegin,</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;        TPointIteratorType itPointEnd,</div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">double</span> Radius</div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;        )</div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;    {</div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;        <span class="comment">// Doing a vector of results</span></div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;        std::vector&lt;ResultType&gt; <a class="code" href="../../db/d66/namespace_kratos.html#a6f2039a47d53dc7d9a555957a10fd06f">results</a>;</div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;        <span class="keyword">const</span> std::size_t number_of_points = std::distance(itPointBegin, itPointEnd);</div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;        <a class="code" href="../../db/d66/namespace_kratos.html#a6f2039a47d53dc7d9a555957a10fd06f">results</a>.resize(number_of_points);</div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;        <span class="keywordflow">for</span> (<span class="keyword">auto</span> it_point = itPointBegin ; it_point != itPointEnd ; it_point++){</div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;            <a class="code" href="../../db/d66/namespace_kratos.html#a6f2039a47d53dc7d9a555957a10fd06f">results</a>[it_point - itPointBegin] = SearchNearestInRadius(*it_point, Radius);</div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;        }</div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="../../db/d66/namespace_kratos.html#a6f2039a47d53dc7d9a555957a10fd06f">results</a>;</div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;    }</div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160; </div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;    ResultType SearchNearest(<span class="keyword">const</span> Point&amp; rPoint);</div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160; </div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> TPo<span class="keywordtype">int</span>IteratorType&gt;</div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;    std::vector&lt;ResultType&gt; SearchNearest(</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;        TPointIteratorType itPointBegin,</div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;        TPointIteratorType itPointEnd</div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;        )</div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;    {</div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;        <span class="comment">// Doing a vector of results</span></div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;        std::vector&lt;ResultType&gt; <a class="code" href="../../db/d66/namespace_kratos.html#a6f2039a47d53dc7d9a555957a10fd06f">results</a>;</div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;        <span class="keyword">const</span> std::size_t number_of_points = std::distance(itPointBegin, itPointEnd);</div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;        <a class="code" href="../../db/d66/namespace_kratos.html#a6f2039a47d53dc7d9a555957a10fd06f">results</a>.resize(number_of_points);</div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;        <span class="keywordflow">for</span> (<span class="keyword">auto</span> it_point = itPointBegin ; it_point != itPointEnd ; it_point++){</div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;            <a class="code" href="../../db/d66/namespace_kratos.html#a6f2039a47d53dc7d9a555957a10fd06f">results</a>[it_point - itPointBegin] = SearchNearest(*it_point);</div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;        }</div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="../../db/d66/namespace_kratos.html#a6f2039a47d53dc7d9a555957a10fd06f">results</a>;</div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;    }</div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160; </div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;    ResultType SearchIsInside(<span class="keyword">const</span> Point&amp; rPoint);</div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160; </div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> TPo<span class="keywordtype">int</span>IteratorType&gt;</div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;    std::vector&lt;ResultType&gt; SearchIsInside(</div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;        TPointIteratorType itPointBegin,</div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;        TPointIteratorType itPointEnd</div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;        )</div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;    {</div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;        <span class="comment">// Doing a vector of results</span></div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;        std::vector&lt;ResultType&gt; <a class="code" href="../../db/d66/namespace_kratos.html#a6f2039a47d53dc7d9a555957a10fd06f">results</a>;</div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;        <span class="keyword">const</span> std::size_t number_of_points = std::distance(itPointBegin, itPointEnd);</div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;        <a class="code" href="../../db/d66/namespace_kratos.html#a6f2039a47d53dc7d9a555957a10fd06f">results</a>.resize(number_of_points);</div>
+<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;        <span class="keywordflow">for</span> (<span class="keyword">auto</span> it_point = itPointBegin ; it_point != itPointEnd ; it_point++){</div>
+<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;            <a class="code" href="../../db/d66/namespace_kratos.html#a6f2039a47d53dc7d9a555957a10fd06f">results</a>[it_point - itPointBegin] = SearchIsInside(*it_point);</div>
+<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;        }</div>
+<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="../../db/d66/namespace_kratos.html#a6f2039a47d53dc7d9a555957a10fd06f">results</a>;</div>
+<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;    }</div>
+<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160; </div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160; </div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;    <span class="keyword">const</span> BoundingBox&lt;Point&gt;&amp; GetBoundingBox()<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;        <span class="keywordflow">return</span> mBoundingBox;</div>
+<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;    }</div>
+<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160; </div>
+<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;    <span class="keyword">const</span> array_1d&lt;double, 3&gt;&amp; GetCellSizes(){</div>
+<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;        <span class="keywordflow">return</span> mCellSizes;</div>
+<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;    }</div>
+<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160; </div>
+<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;    <span class="keyword">const</span> array_1d&lt;std::size_t, 3&gt;&amp; GetNumberOfCells(){</div>
+<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;        <span class="keywordflow">return</span> mNumberOfCells;</div>
+<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;    }</div>
+<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160; </div>
+<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;    std::size_t GetTotalNumberOfCells(){</div>
+<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;        <span class="keywordflow">return</span> mNumberOfCells[0] * mNumberOfCells[1] * mNumberOfCells[2];</div>
+<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;    }</div>
+<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160; </div>
+<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160; </div>
+<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160; </div>
+<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160; </div>
+<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;    <span class="keyword">virtual</span> std::string Info()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;<span class="keyword">    </span>{</div>
+<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;        std::stringstream buffer;</div>
+<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;        buffer &lt;&lt; <span class="stringliteral">&quot;GeometricalObjectsBins&quot;</span> ;</div>
+<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;        <span class="keywordflow">return</span> buffer.str();</div>
+<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;    }</div>
+<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160; </div>
+<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> PrintInfo(std::ostream&amp; rOStream)<span class="keyword"> const </span>{rOStream &lt;&lt; <span class="stringliteral">&quot;GeometricalObjectsBins&quot;</span>;}</div>
+<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160; </div>
+<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> PrintData(std::ostream&amp; rOStream)<span class="keyword"> const </span>{}</div>
+<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160; </div>
+<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160; </div>
+<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160; </div>
+<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;    <a class="code" href="../../d5/def/class_geometrical_objects_bins.html">GeometricalObjectsBins</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160; </div>
+<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160; </div>
+<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;    <span class="keyword">static</span> constexpr <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="../../da/dec/namespace_kratos_1_1_mortar_utilities.html#a67e0ac17841be88205ea3ffb7748688c">Dimension</a> = 3;    </div>
+<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;    <span class="keyword">static</span> constexpr <span class="keywordtype">double</span> <a class="code" href="../../da/dec/namespace_kratos_1_1_mortar_utilities.html#a808341c5844f3b2b1b5120a0c95f8c4e">Tolerance</a> = 1e-12;      </div>
+<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160; </div>
 <div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160; </div>
-<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;        <span class="keywordflow">for</span>(<span class="keywordtype">int</span> <a class="code" href="../../d2/db8/namespacetensors.html#a15a1da80aa773e2015eba781cababe05">i</a> = 0; <a class="code" href="../../d2/db8/namespacetensors.html#a15a1da80aa773e2015eba781cababe05">i</a> &lt; 3; <a class="code" href="../../d2/db8/namespacetensors.html#a15a1da80aa773e2015eba781cababe05">i</a>++ ) {</div>
-<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;            MinPosition[ <a class="code" href="../../d2/db8/namespacetensors.html#a15a1da80aa773e2015eba781cababe05">i</a> ] = CalculatePosition( bounding_box.GetMinPoint()[<a class="code" href="../../d2/db8/namespacetensors.html#a15a1da80aa773e2015eba781cababe05">i</a>], <a class="code" href="../../d2/db8/namespacetensors.html#a15a1da80aa773e2015eba781cababe05">i</a> );</div>
-<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;            MaxPosition[ <a class="code" href="../../d2/db8/namespacetensors.html#a15a1da80aa773e2015eba781cababe05">i</a> ] = CalculatePosition( bounding_box.GetMaxPoint()[<a class="code" href="../../d2/db8/namespacetensors.html#a15a1da80aa773e2015eba781cababe05">i</a>], <a class="code" href="../../d2/db8/namespacetensors.html#a15a1da80aa773e2015eba781cababe05">i</a> ) + 1;</div>
-<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;        }</div>
-<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;    }</div>
+<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;    BoundingBox&lt;Point&gt; mBoundingBox;                 </div>
+<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;    array_1d&lt;std::size_t, Dimension&gt; mNumberOfCells; </div>
+<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;    array_1d&lt;double, 3&gt;  mCellSizes;                 </div>
+<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;    array_1d&lt;double, 3&gt;  mInverseOfCellSize;         </div>
+<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;    std::vector&lt;CellType&gt; mCells;                    </div>
 <div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160; </div>
-<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;    std::size_t CalculatePosition( <span class="keywordtype">double</span> Coordinate, <span class="keywordtype">int</span> ThisDimension )<span class="keyword"> const </span>{</div>
-<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;        <span class="keyword">auto</span> distance = Coordinate - mBoundingBox.<a class="code" href="../../dc/dd4/class_kratos_1_1_bounding_box.html#a8e1a3dc94d466b218fce20591c70514f">GetMinPoint</a>()[ ThisDimension ];</div>
-<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;        distance = ( distance &lt; 0.00 ) ? 0.00 : distance;</div>
-<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;        std::size_t position =</div>
-<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;            <span class="keyword">static_cast&lt;</span> std::size_t <span class="keyword">&gt;</span>( distance * mInverseOfCellSize[ ThisDimension ] );</div>
-<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;        std::size_t result= ( position &gt; mNumberOfCells[ ThisDimension ] - 1 )</div>
-<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;                                ? mNumberOfCells[ ThisDimension ] - 1</div>
-<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;                                : position;</div>
-<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;        <span class="keywordflow">return</span> result;</div>
-<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;    }</div>
-<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160; </div>
-<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> TGeometryType&gt;</div>
-<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;    <span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">bool</span> IsIntersected(TGeometryType&amp; TheGeometry, BoundingBox&lt;Point&gt; Box, <span class="keyword">const</span> <span class="keywordtype">double</span> tolerance)</div>
-<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;    {</div>
-<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;        Point rLowPointTolerance;</div>
-<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;        Point rHighPointTolerance;</div>
-<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160; </div>
-<div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;        <span class="keywordflow">for</span>(std::size_t <a class="code" href="../../d2/db8/namespacetensors.html#a15a1da80aa773e2015eba781cababe05">i</a> = 0; <a class="code" href="../../d2/db8/namespacetensors.html#a15a1da80aa773e2015eba781cababe05">i</a>&lt;3; <a class="code" href="../../d2/db8/namespacetensors.html#a15a1da80aa773e2015eba781cababe05">i</a>++) {</div>
-<div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;            rLowPointTolerance[<a class="code" href="../../d2/db8/namespacetensors.html#a15a1da80aa773e2015eba781cababe05">i</a>]  =  Box.GetMinPoint()[<a class="code" href="../../d2/db8/namespacetensors.html#a15a1da80aa773e2015eba781cababe05">i</a>] - tolerance;</div>
-<div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;            rHighPointTolerance[<a class="code" href="../../d2/db8/namespacetensors.html#a15a1da80aa773e2015eba781cababe05">i</a>] =  Box.GetMaxPoint()[<a class="code" href="../../d2/db8/namespacetensors.html#a15a1da80aa773e2015eba781cababe05">i</a>] + tolerance;</div>
-<div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;        }</div>
-<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160; </div>
-<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;        <span class="keywordflow">return</span>  TheGeometry.HasIntersection(rLowPointTolerance,rHighPointTolerance);</div>
-<div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;    }</div>
-<div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160; </div>
-<div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> TPo<span class="keywordtype">int</span>Type&gt;</div>
-<div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;    <span class="keywordtype">void</span> SearchInRadiusInCell(<a class="code" href="../../dd/d0d/class_kratos_1_1_geometrical_objects_bins.html#ae814f1fafa6ab88c82813a7966285436">CellType</a> <span class="keyword">const</span>&amp; TheCell, TPointType <span class="keyword">const</span>&amp; ThePoint, <span class="keywordtype">double</span> Radius, std::unordered_set&lt;GeometricalObject*&gt;&amp; rResults) {</div>
-<div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;        <span class="keywordflow">for</span>(<span class="keyword">auto</span> p_geometrical_object : TheCell){  </div>
-<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;            <span class="keyword">auto</span>&amp; geometry = p_geometrical_object-&gt;GetGeometry();</div>
-<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;            <span class="comment">// TODO: Change this to new Distance method of the geometry to be more general</span></div>
-<div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;            <span class="keywordtype">double</span> distance = GeometryUtils::PointDistanceToTriangle3D(</div>
-<div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;            geometry[0],</div>
-<div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;            geometry[1],</div>
-<div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;            geometry[2],</div>
-<div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;            ThePoint);</div>
-<div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;            <span class="keywordflow">if</span>((Radius + Tolerance) &gt; distance){</div>
-<div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160;                rResults.insert(p_geometrical_object);</div>
-<div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;            }</div>
-<div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;        }</div>
-<div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160;    }</div>
-<div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160; </div>
-<div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> TPo<span class="keywordtype">int</span>Type&gt;</div>
-<div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160;    <span class="keywordtype">void</span> SearchNearestInCell(<a class="code" href="../../dd/d0d/class_kratos_1_1_geometrical_objects_bins.html#ae814f1fafa6ab88c82813a7966285436">CellType</a> <span class="keyword">const</span>&amp; TheCell, TPointType <span class="keyword">const</span>&amp; ThePoint, <a class="code" href="../../dd/d0d/class_kratos_1_1_geometrical_objects_bins.html#a12a694ba91a6dc79d5457aed6d703d6b">ResultType</a>&amp; rResult, <span class="keywordtype">double</span> MaxRadius) {</div>
-<div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;        <span class="keywordflow">for</span>(<span class="keyword">auto</span> p_geometrical_object : TheCell){  </div>
-<div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160;            <span class="keyword">auto</span>&amp; geometry = p_geometrical_object-&gt;GetGeometry();</div>
-<div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160;            <span class="comment">// TODO: Change this to new Distance method of the geometry to be more general</span></div>
-<div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160;            <span class="keywordtype">double</span> distance = GeometryUtils::PointDistanceToTriangle3D(</div>
-<div class="line"><a name="l00426"></a><span class="lineno">  426</span>&#160;            geometry[0],</div>
-<div class="line"><a name="l00427"></a><span class="lineno">  427</span>&#160;            geometry[1],</div>
-<div class="line"><a name="l00428"></a><span class="lineno">  428</span>&#160;            geometry[2],</div>
-<div class="line"><a name="l00429"></a><span class="lineno">  429</span>&#160;            ThePoint);</div>
-<div class="line"><a name="l00430"></a><span class="lineno">  430</span>&#160;            <span class="keywordflow">if</span> ((distance &lt; rResult.GetDistance()) &amp;&amp; (distance &lt; MaxRadius)) {</div>
-<div class="line"><a name="l00431"></a><span class="lineno">  431</span>&#160;                rResult.Set(p_geometrical_object);</div>
-<div class="line"><a name="l00432"></a><span class="lineno">  432</span>&#160;                rResult.SetDistance(distance);</div>
-<div class="line"><a name="l00433"></a><span class="lineno">  433</span>&#160;            }</div>
-<div class="line"><a name="l00434"></a><span class="lineno">  434</span>&#160;        }</div>
-<div class="line"><a name="l00435"></a><span class="lineno">  435</span>&#160;    }</div>
-<div class="line"><a name="l00436"></a><span class="lineno">  436</span>&#160; </div>
-<div class="line"><a name="l00438"></a><span class="lineno">  438</span>&#160;    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> TPo<span class="keywordtype">int</span>Type&gt;</div>
-<div class="line"><a name="l00439"></a><span class="lineno">  439</span>&#160;    <span class="keywordtype">void</span> SearchIsInsideInCell(<a class="code" href="../../dd/d0d/class_kratos_1_1_geometrical_objects_bins.html#ae814f1fafa6ab88c82813a7966285436">CellType</a> <span class="keyword">const</span>&amp; TheCell, TPointType <span class="keyword">const</span>&amp; ThePoint, <a class="code" href="../../dd/d0d/class_kratos_1_1_geometrical_objects_bins.html#a12a694ba91a6dc79d5457aed6d703d6b">ResultType</a>&amp; rResult) {</div>
-<div class="line"><a name="l00440"></a><span class="lineno">  440</span>&#160;        <span class="keywordflow">for</span>(<span class="keyword">auto</span> p_geometrical_object : TheCell){  </div>
-<div class="line"><a name="l00441"></a><span class="lineno">  441</span>&#160;            <span class="keyword">auto</span>&amp; geometry = p_geometrical_object-&gt;GetGeometry();</div>
-<div class="line"><a name="l00442"></a><span class="lineno">  442</span>&#160;            array_1d&lt;double, 3&gt; point_local_coordinates;</div>
-<div class="line"><a name="l00443"></a><span class="lineno">  443</span>&#160;            <span class="keywordtype">bool</span> is_inside = geometry.IsInside(ThePoint,point_local_coordinates,Tolerance);</div>
-<div class="line"><a name="l00444"></a><span class="lineno">  444</span>&#160;            <span class="keywordflow">if</span> (is_inside) {</div>
-<div class="line"><a name="l00445"></a><span class="lineno">  445</span>&#160;                rResult.Set(p_geometrical_object);</div>
-<div class="line"><a name="l00446"></a><span class="lineno">  446</span>&#160;                rResult.SetDistance(0.0);</div>
-<div class="line"><a name="l00447"></a><span class="lineno">  447</span>&#160;                <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00448"></a><span class="lineno">  448</span>&#160;            }</div>
-<div class="line"><a name="l00449"></a><span class="lineno">  449</span>&#160;        }</div>
-<div class="line"><a name="l00450"></a><span class="lineno">  450</span>&#160;    }</div>
+<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160; </div>
+<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160; </div>
+<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160; </div>
+<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160; </div>
+<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;    <span class="keywordtype">void</span> CalculateCellSize(<span class="keyword">const</span> std::size_t NumberOfCells);</div>
+<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160; </div>
+<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> TIteratorType&gt;</div>
+<div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;    <span class="keywordtype">void</span> AddObjectsToCells(</div>
+<div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;        TIteratorType GeometricalObjectsBegin,</div>
+<div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;        TIteratorType GeometricalObjectsEnd</div>
+<div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;        )</div>
+<div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;    {</div>
+<div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;        <span class="keywordflow">for</span>(<span class="keyword">auto</span> i_geometrical_object = GeometricalObjectsBegin ; i_geometrical_object != GeometricalObjectsEnd ; i_geometrical_object++){</div>
+<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;            array_1d&lt;std::size_t, 3&gt; min_position(3,0);</div>
+<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;            array_1d&lt;std::size_t, 3&gt; max_position(3,0);</div>
+<div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;            CalculateMinMaxPositions(i_geometrical_object-&gt;GetGeometry(), min_position, max_position);</div>
+<div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;            <span class="keywordflow">for</span>(std::size_t <a class="code" href="../../d7/d2b/namespacequadrature.html#a56123f01f0d1e776d9a6d85aa0f27caa">k</a> = min_position[2] ; <a class="code" href="../../d7/d2b/namespacequadrature.html#a56123f01f0d1e776d9a6d85aa0f27caa">k</a> &lt; max_position[2] ; <a class="code" href="../../d7/d2b/namespacequadrature.html#a56123f01f0d1e776d9a6d85aa0f27caa">k</a>++){</div>
+<div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;                <span class="keywordflow">for</span>(std::size_t <a class="code" href="../../d7/d2b/namespacequadrature.html#aae897447319c4634b1dcef7634fe5876">j</a> = min_position[1] ; <a class="code" href="../../d7/d2b/namespacequadrature.html#aae897447319c4634b1dcef7634fe5876">j</a> &lt; max_position[1] ; <a class="code" href="../../d7/d2b/namespacequadrature.html#aae897447319c4634b1dcef7634fe5876">j</a>++){</div>
+<div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;                    <span class="keywordflow">for</span>(std::size_t <a class="code" href="../../d2/db8/namespacetensors.html#a15a1da80aa773e2015eba781cababe05">i</a> = min_position[0] ; <a class="code" href="../../d2/db8/namespacetensors.html#a15a1da80aa773e2015eba781cababe05">i</a> &lt; max_position[0] ; <a class="code" href="../../d2/db8/namespacetensors.html#a15a1da80aa773e2015eba781cababe05">i</a>++){</div>
+<div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;                        <span class="keyword">auto</span> cell_bounding_box = GetCellBoundingBox(<a class="code" href="../../d2/db8/namespacetensors.html#a15a1da80aa773e2015eba781cababe05">i</a>,<a class="code" href="../../d7/d2b/namespacequadrature.html#aae897447319c4634b1dcef7634fe5876">j</a>,<a class="code" href="../../d7/d2b/namespacequadrature.html#a56123f01f0d1e776d9a6d85aa0f27caa">k</a>);</div>
+<div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;                        <span class="keywordflow">if</span>(IsIntersected(i_geometrical_object-&gt;GetGeometry(), cell_bounding_box, <a class="code" href="../../da/dec/namespace_kratos_1_1_mortar_utilities.html#a808341c5844f3b2b1b5120a0c95f8c4e">Tolerance</a>)){</div>
+<div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160;                            GetCell(<a class="code" href="../../d2/db8/namespacetensors.html#a15a1da80aa773e2015eba781cababe05">i</a>,<a class="code" href="../../d7/d2b/namespacequadrature.html#aae897447319c4634b1dcef7634fe5876">j</a>,<a class="code" href="../../d7/d2b/namespacequadrature.html#a56123f01f0d1e776d9a6d85aa0f27caa">k</a>).push_back(&amp;(*i_geometrical_object));</div>
+<div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;                        }</div>
+<div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;                    }</div>
+<div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160;                }</div>
+<div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160;            }</div>
+<div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160;        }</div>
+<div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;    }</div>
+<div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160; </div>
+<div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00426"></a><span class="lineno">  426</span>&#160; </div>
+<div class="line"><a name="l00430"></a><span class="lineno">  430</span>&#160; </div>
+<div class="line"><a name="l00440"></a><span class="lineno">  440</span>&#160;    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> TGeometryType&gt;</div>
+<div class="line"><a name="l00441"></a><span class="lineno">  441</span>&#160;    <span class="keywordtype">void</span> CalculateMinMaxPositions(</div>
+<div class="line"><a name="l00442"></a><span class="lineno">  442</span>&#160;        <span class="keyword">const</span> TGeometryType&amp; <a class="code" href="../../da/dec/namespace_kratos_1_1_mortar_utilities.html#a407333aa7d9b470dab6a9652f72a6ebd">rGeometry</a>,</div>
+<div class="line"><a name="l00443"></a><span class="lineno">  443</span>&#160;        array_1d&lt;std::size_t, 3&gt;&amp; rMinPosition,</div>
+<div class="line"><a name="l00444"></a><span class="lineno">  444</span>&#160;        array_1d&lt;std::size_t, 3&gt;&amp; rMaxPosition</div>
+<div class="line"><a name="l00445"></a><span class="lineno">  445</span>&#160;        )</div>
+<div class="line"><a name="l00446"></a><span class="lineno">  446</span>&#160;    {</div>
+<div class="line"><a name="l00447"></a><span class="lineno">  447</span>&#160;        <span class="keywordflow">if</span>(<a class="code" href="../../da/dec/namespace_kratos_1_1_mortar_utilities.html#a407333aa7d9b470dab6a9652f72a6ebd">rGeometry</a>.empty())</div>
+<div class="line"><a name="l00448"></a><span class="lineno">  448</span>&#160;            <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00449"></a><span class="lineno">  449</span>&#160; </div>
+<div class="line"><a name="l00450"></a><span class="lineno">  450</span>&#160;        BoundingBox&lt;Point&gt; bounding_box(<a class="code" href="../../da/dec/namespace_kratos_1_1_mortar_utilities.html#a407333aa7d9b470dab6a9652f72a6ebd">rGeometry</a>.<a class="code" href="../../d4/ddc/class_kratos_1_1array__1d.html#ae8323ea08b822f9b79906234e9f1e33d">begin</a>(), <a class="code" href="../../da/dec/namespace_kratos_1_1_mortar_utilities.html#a407333aa7d9b470dab6a9652f72a6ebd">rGeometry</a>.<a class="code" href="../../d4/ddc/class_kratos_1_1array__1d.html#aaef2a89bfb932228a64c24131efb4b8c">end</a>());</div>
 <div class="line"><a name="l00451"></a><span class="lineno">  451</span>&#160; </div>
-<div class="line"><a name="l00455"></a><span class="lineno">  455</span>&#160; </div>
-<div class="line"><a name="l00456"></a><span class="lineno">  456</span>&#160; </div>
-<div class="line"><a name="l00460"></a><span class="lineno">  460</span>&#160; </div>
-<div class="line"><a name="l00461"></a><span class="lineno">  461</span>&#160; </div>
-<div class="line"><a name="l00465"></a><span class="lineno">  465</span>&#160; </div>
-<div class="line"><a name="l00467"></a><span class="lineno">  467</span>&#160;    <a class="code" href="../../dd/d0d/class_kratos_1_1_geometrical_objects_bins.html#abffac1755b5010485315df4d57f4b595">GeometricalObjectsBins</a>&amp; operator=(<a class="code" href="../../dd/d0d/class_kratos_1_1_geometrical_objects_bins.html#abffac1755b5010485315df4d57f4b595">GeometricalObjectsBins</a> <span class="keyword">const</span>&amp; rOther) = <span class="keyword">delete</span>;</div>
+<div class="line"><a name="l00452"></a><span class="lineno">  452</span>&#160;        <span class="keywordflow">for</span>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="../../d2/db8/namespacetensors.html#a15a1da80aa773e2015eba781cababe05">i</a> = 0; <a class="code" href="../../d2/db8/namespacetensors.html#a15a1da80aa773e2015eba781cababe05">i</a> &lt; 3; <a class="code" href="../../d2/db8/namespacetensors.html#a15a1da80aa773e2015eba781cababe05">i</a>++ ) {</div>
+<div class="line"><a name="l00453"></a><span class="lineno">  453</span>&#160;            rMinPosition[<a class="code" href="../../d2/db8/namespacetensors.html#a15a1da80aa773e2015eba781cababe05">i</a>] = <a class="code" href="../../db/d66/namespace_kratos.html#a09b635fec7c488ecdae7a5966b6f8fc1">CalculatePosition</a>( bounding_box.GetMinPoint()[<a class="code" href="../../d2/db8/namespacetensors.html#a15a1da80aa773e2015eba781cababe05">i</a>], <a class="code" href="../../d2/db8/namespacetensors.html#a15a1da80aa773e2015eba781cababe05">i</a> );</div>
+<div class="line"><a name="l00454"></a><span class="lineno">  454</span>&#160;            rMaxPosition[<a class="code" href="../../d2/db8/namespacetensors.html#a15a1da80aa773e2015eba781cababe05">i</a>] = <a class="code" href="../../db/d66/namespace_kratos.html#a09b635fec7c488ecdae7a5966b6f8fc1">CalculatePosition</a>( bounding_box.GetMaxPoint()[<a class="code" href="../../d2/db8/namespacetensors.html#a15a1da80aa773e2015eba781cababe05">i</a>], <a class="code" href="../../d2/db8/namespacetensors.html#a15a1da80aa773e2015eba781cababe05">i</a> ) + 1;</div>
+<div class="line"><a name="l00455"></a><span class="lineno">  455</span>&#160;        }</div>
+<div class="line"><a name="l00456"></a><span class="lineno">  456</span>&#160;    }</div>
+<div class="line"><a name="l00457"></a><span class="lineno">  457</span>&#160; </div>
+<div class="line"><a name="l00464"></a><span class="lineno">  464</span>&#160;    std::size_t <a class="code" href="../../db/d66/namespace_kratos.html#a09b635fec7c488ecdae7a5966b6f8fc1">CalculatePosition</a>(</div>
+<div class="line"><a name="l00465"></a><span class="lineno">  465</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">double</span> Coordinate,</div>
+<div class="line"><a name="l00466"></a><span class="lineno">  466</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">int</span> ThisDimension</div>
+<div class="line"><a name="l00467"></a><span class="lineno">  467</span>&#160;        ) <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00468"></a><span class="lineno">  468</span>&#160; </div>
-<div class="line"><a name="l00470"></a><span class="lineno">  470</span>&#160;    <a class="code" href="../../dd/d0d/class_kratos_1_1_geometrical_objects_bins.html#abffac1755b5010485315df4d57f4b595">GeometricalObjectsBins</a>(<a class="code" href="../../dd/d0d/class_kratos_1_1_geometrical_objects_bins.html#abffac1755b5010485315df4d57f4b595">GeometricalObjectsBins</a> <span class="keyword">const</span>&amp; rOther) = <span class="keyword">delete</span>;</div>
-<div class="line"><a name="l00471"></a><span class="lineno">  471</span>&#160; </div>
-<div class="line"><a name="l00473"></a><span class="lineno">  473</span>&#160; </div>
-<div class="line"><a name="l00474"></a><span class="lineno">  474</span>&#160;}; <span class="comment">// Class GeometricalObjectsBins</span></div>
-<div class="line"><a name="l00475"></a><span class="lineno">  475</span>&#160; </div>
-<div class="line"><a name="l00477"></a><span class="lineno">  477</span>&#160; </div>
-<div class="line"><a name="l00480"></a><span class="lineno">  480</span>&#160; </div>
-<div class="line"><a name="l00481"></a><span class="lineno">  481</span>&#160; </div>
-<div class="line"><a name="l00485"></a><span class="lineno">  485</span>&#160; </div>
-<div class="line"><a name="l00486"></a><span class="lineno">  486</span>&#160; </div>
-<div class="line"><a name="l00488"></a><span class="lineno"><a class="line" href="../../d5/d4d/group___kratos_core.html#ga1a3ffaad634569afce6597af87fd58e4">  488</a></span>&#160;<span class="keyword">inline</span> std::istream&amp; <a class="code" href="../../db/d66/namespace_kratos.html#a9c6097d0b0a27d1cea94992b1087f56a">operator &gt;&gt; </a>(std::istream&amp; rIStream,</div>
-<div class="line"><a name="l00489"></a><span class="lineno">  489</span>&#160;                <a class="code" href="../../dd/d0d/class_kratos_1_1_geometrical_objects_bins.html">GeometricalObjectsBins</a>&amp; rThis){</div>
-<div class="line"><a name="l00490"></a><span class="lineno">  490</span>&#160;                    <span class="keywordflow">return</span> rIStream;</div>
-<div class="line"><a name="l00491"></a><span class="lineno">  491</span>&#160;                }</div>
+<div class="line"><a name="l00478"></a><span class="lineno">  478</span>&#160;    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> TGeometryType&gt;</div>
+<div class="line"><a name="l00479"></a><span class="lineno">  479</span>&#160;    <span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">bool</span> IsIntersected(</div>
+<div class="line"><a name="l00480"></a><span class="lineno">  480</span>&#160;        TGeometryType&amp; <a class="code" href="../../da/dec/namespace_kratos_1_1_mortar_utilities.html#a407333aa7d9b470dab6a9652f72a6ebd">rGeometry</a>,</div>
+<div class="line"><a name="l00481"></a><span class="lineno">  481</span>&#160;        <span class="keyword">const</span> BoundingBox&lt;Point&gt;&amp; rBox,</div>
+<div class="line"><a name="l00482"></a><span class="lineno">  482</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">double</span> ThisTolerance</div>
+<div class="line"><a name="l00483"></a><span class="lineno">  483</span>&#160;        )</div>
+<div class="line"><a name="l00484"></a><span class="lineno">  484</span>&#160;    {</div>
+<div class="line"><a name="l00485"></a><span class="lineno">  485</span>&#160;        Point low_point_tolerance;</div>
+<div class="line"><a name="l00486"></a><span class="lineno">  486</span>&#160;        Point high_point_tolerance;</div>
+<div class="line"><a name="l00487"></a><span class="lineno">  487</span>&#160; </div>
+<div class="line"><a name="l00488"></a><span class="lineno">  488</span>&#160;        <span class="keywordflow">for</span>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="../../d2/db8/namespacetensors.html#a15a1da80aa773e2015eba781cababe05">i</a> = 0; <a class="code" href="../../d2/db8/namespacetensors.html#a15a1da80aa773e2015eba781cababe05">i</a>&lt;3; <a class="code" href="../../d2/db8/namespacetensors.html#a15a1da80aa773e2015eba781cababe05">i</a>++) {</div>
+<div class="line"><a name="l00489"></a><span class="lineno">  489</span>&#160;            low_point_tolerance[<a class="code" href="../../d2/db8/namespacetensors.html#a15a1da80aa773e2015eba781cababe05">i</a>]  =  rBox.GetMinPoint()[<a class="code" href="../../d2/db8/namespacetensors.html#a15a1da80aa773e2015eba781cababe05">i</a>] - ThisTolerance;</div>
+<div class="line"><a name="l00490"></a><span class="lineno">  490</span>&#160;            high_point_tolerance[<a class="code" href="../../d2/db8/namespacetensors.html#a15a1da80aa773e2015eba781cababe05">i</a>] =  rBox.GetMaxPoint()[<a class="code" href="../../d2/db8/namespacetensors.html#a15a1da80aa773e2015eba781cababe05">i</a>] + ThisTolerance;</div>
+<div class="line"><a name="l00491"></a><span class="lineno">  491</span>&#160;        }</div>
 <div class="line"><a name="l00492"></a><span class="lineno">  492</span>&#160; </div>
-<div class="line"><a name="l00494"></a><span class="lineno"><a class="line" href="../../d5/d4d/group___kratos_core.html#gacda13ff2e0318bcbcc6afcd73303cbcc">  494</a></span>&#160;<span class="keyword">inline</span> std::ostream&amp; <a class="code" href="../../db/d66/namespace_kratos.html#acfc842a43d19dffc2d8105e5cbea17a9">operator &lt;&lt; </a>(std::ostream&amp; rOStream,</div>
-<div class="line"><a name="l00495"></a><span class="lineno">  495</span>&#160;                <span class="keyword">const</span> <a class="code" href="../../dd/d0d/class_kratos_1_1_geometrical_objects_bins.html">GeometricalObjectsBins</a>&amp; rThis)</div>
-<div class="line"><a name="l00496"></a><span class="lineno">  496</span>&#160;{</div>
-<div class="line"><a name="l00497"></a><span class="lineno">  497</span>&#160;    rThis.<a class="code" href="../../dd/d0d/class_kratos_1_1_geometrical_objects_bins.html#a27581f210c0c180cf0b1543a71d8c92c">PrintInfo</a>(rOStream);</div>
-<div class="line"><a name="l00498"></a><span class="lineno">  498</span>&#160;    rOStream &lt;&lt; std::endl;</div>
-<div class="line"><a name="l00499"></a><span class="lineno">  499</span>&#160;    rThis.<a class="code" href="../../dd/d0d/class_kratos_1_1_geometrical_objects_bins.html#aab092ac23243a31801e117332e1769f9">PrintData</a>(rOStream);</div>
-<div class="line"><a name="l00500"></a><span class="lineno">  500</span>&#160; </div>
-<div class="line"><a name="l00501"></a><span class="lineno">  501</span>&#160;    <span class="keywordflow">return</span> rOStream;</div>
-<div class="line"><a name="l00502"></a><span class="lineno">  502</span>&#160;}</div>
-<div class="line"><a name="l00504"></a><span class="lineno">  504</span>&#160; </div>
-<div class="line"><a name="l00506"></a><span class="lineno">  506</span>&#160; </div>
-<div class="line"><a name="l00507"></a><span class="lineno">  507</span>&#160;}  <span class="comment">// namespace Kratos.</span></div>
+<div class="line"><a name="l00493"></a><span class="lineno">  493</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="../../da/dec/namespace_kratos_1_1_mortar_utilities.html#a407333aa7d9b470dab6a9652f72a6ebd">rGeometry</a>.HasIntersection(low_point_tolerance,high_point_tolerance);</div>
+<div class="line"><a name="l00494"></a><span class="lineno">  494</span>&#160;    }</div>
+<div class="line"><a name="l00495"></a><span class="lineno">  495</span>&#160; </div>
+<div class="line"><a name="l00504"></a><span class="lineno">  504</span>&#160;    <span class="keywordtype">void</span> SearchInRadiusInCell(</div>
+<div class="line"><a name="l00505"></a><span class="lineno">  505</span>&#160;        <span class="keyword">const</span> CellType&amp; rCell,</div>
+<div class="line"><a name="l00506"></a><span class="lineno">  506</span>&#160;        <span class="keyword">const</span> Point&amp; rPoint,</div>
+<div class="line"><a name="l00507"></a><span class="lineno">  507</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">double</span> Radius,</div>
+<div class="line"><a name="l00508"></a><span class="lineno">  508</span>&#160;        std::unordered_set&lt;GeometricalObject*&gt;&amp; rResults</div>
+<div class="line"><a name="l00509"></a><span class="lineno">  509</span>&#160;        );</div>
+<div class="line"><a name="l00510"></a><span class="lineno">  510</span>&#160; </div>
+<div class="line"><a name="l00519"></a><span class="lineno">  519</span>&#160;    <span class="keywordtype">void</span> SearchNearestInCell(</div>
+<div class="line"><a name="l00520"></a><span class="lineno">  520</span>&#160;        <span class="keyword">const</span> CellType&amp; rCell,</div>
+<div class="line"><a name="l00521"></a><span class="lineno">  521</span>&#160;        <span class="keyword">const</span> Point&amp; rPoint,</div>
+<div class="line"><a name="l00522"></a><span class="lineno">  522</span>&#160;        ResultType&amp; rResult,</div>
+<div class="line"><a name="l00523"></a><span class="lineno">  523</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">double</span> MaxRadius</div>
+<div class="line"><a name="l00524"></a><span class="lineno">  524</span>&#160;        );</div>
+<div class="line"><a name="l00525"></a><span class="lineno">  525</span>&#160; </div>
+<div class="line"><a name="l00533"></a><span class="lineno">  533</span>&#160;    <span class="keywordtype">void</span> SearchIsInsideInCell(</div>
+<div class="line"><a name="l00534"></a><span class="lineno">  534</span>&#160;        <span class="keyword">const</span> CellType&amp; rCell,</div>
+<div class="line"><a name="l00535"></a><span class="lineno">  535</span>&#160;        <span class="keyword">const</span> Point&amp; rPoint,</div>
+<div class="line"><a name="l00536"></a><span class="lineno">  536</span>&#160;        ResultType&amp; rResult</div>
+<div class="line"><a name="l00537"></a><span class="lineno">  537</span>&#160;        );</div>
+<div class="line"><a name="l00538"></a><span class="lineno">  538</span>&#160; </div>
+<div class="line"><a name="l00542"></a><span class="lineno">  542</span>&#160; </div>
+<div class="line"><a name="l00543"></a><span class="lineno">  543</span>&#160; </div>
+<div class="line"><a name="l00547"></a><span class="lineno">  547</span>&#160; </div>
+<div class="line"><a name="l00548"></a><span class="lineno">  548</span>&#160; </div>
+<div class="line"><a name="l00552"></a><span class="lineno">  552</span>&#160; </div>
+<div class="line"><a name="l00554"></a><span class="lineno">  554</span>&#160;    <a class="code" href="../../d5/def/class_geometrical_objects_bins.html">GeometricalObjectsBins</a>&amp; operator=(<a class="code" href="../../d5/def/class_geometrical_objects_bins.html">GeometricalObjectsBins</a> <span class="keyword">const</span>&amp; rOther) = <span class="keyword">delete</span>;</div>
+<div class="line"><a name="l00555"></a><span class="lineno">  555</span>&#160; </div>
+<div class="line"><a name="l00557"></a><span class="lineno">  557</span>&#160;    <a class="code" href="../../d5/def/class_geometrical_objects_bins.html">GeometricalObjectsBins</a>(<a class="code" href="../../d5/def/class_geometrical_objects_bins.html">GeometricalObjectsBins</a> <span class="keyword">const</span>&amp; rOther) = <span class="keyword">delete</span>;</div>
+<div class="line"><a name="l00558"></a><span class="lineno">  558</span>&#160; </div>
+<div class="line"><a name="l00560"></a><span class="lineno">  560</span>&#160; </div>
+<div class="line"><a name="l00561"></a><span class="lineno">  561</span>&#160;}; <span class="comment">// Class GeometricalObjectsBins</span></div>
+<div class="line"><a name="l00562"></a><span class="lineno">  562</span>&#160; </div>
+<div class="line"><a name="l00564"></a><span class="lineno">  564</span>&#160; </div>
+<div class="line"><a name="l00567"></a><span class="lineno">  567</span>&#160; </div>
+<div class="line"><a name="l00568"></a><span class="lineno">  568</span>&#160; </div>
+<div class="line"><a name="l00572"></a><span class="lineno">  572</span>&#160; </div>
+<div class="line"><a name="l00573"></a><span class="lineno">  573</span>&#160;<span class="comment">// /// input stream function</span></div>
+<div class="line"><a name="l00574"></a><span class="lineno">  574</span>&#160;<span class="comment">// inline std::istream&amp; operator &gt;&gt; (std::istream&amp; rIStream,</span></div>
+<div class="line"><a name="l00575"></a><span class="lineno">  575</span>&#160;<span class="comment">//                 GeometricalObjectsBins&amp; rThis){</span></div>
+<div class="line"><a name="l00576"></a><span class="lineno">  576</span>&#160;<span class="comment">//                     return rIStream;</span></div>
+<div class="line"><a name="l00577"></a><span class="lineno">  577</span>&#160;<span class="comment">//                 }</span></div>
+<div class="line"><a name="l00578"></a><span class="lineno">  578</span>&#160; </div>
+<div class="line"><a name="l00579"></a><span class="lineno">  579</span>&#160;<span class="comment">// /// output stream function</span></div>
+<div class="line"><a name="l00580"></a><span class="lineno">  580</span>&#160;<span class="comment">// inline std::ostream&amp; operator &lt;&lt; (std::ostream&amp; rOStream,</span></div>
+<div class="line"><a name="l00581"></a><span class="lineno">  581</span>&#160;<span class="comment">//                 const GeometricalObjectsBins&amp; rThis)</span></div>
+<div class="line"><a name="l00582"></a><span class="lineno">  582</span>&#160;<span class="comment">// {</span></div>
+<div class="line"><a name="l00583"></a><span class="lineno">  583</span>&#160;<span class="comment">//     rThis.PrintInfo(rOStream);</span></div>
+<div class="line"><a name="l00584"></a><span class="lineno">  584</span>&#160;<span class="comment">//     rOStream &lt;&lt; std::endl;</span></div>
+<div class="line"><a name="l00585"></a><span class="lineno">  585</span>&#160;<span class="comment">//     rThis.PrintData(rOStream);</span></div>
+<div class="line"><a name="l00586"></a><span class="lineno">  586</span>&#160; </div>
+<div class="line"><a name="l00587"></a><span class="lineno">  587</span>&#160;<span class="comment">//     return rOStream;</span></div>
+<div class="line"><a name="l00588"></a><span class="lineno">  588</span>&#160;<span class="comment">// }</span></div>
+<div class="line"><a name="l00590"></a><span class="lineno">  590</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00592"></a><span class="lineno">  592</span>&#160; </div>
+<div class="line"><a name="l00593"></a><span class="lineno">  593</span>&#160;}  <span class="comment">// namespace Kratos.</span></div>
 <div class="ttc" id="abounding__box_8h_html"><div class="ttname"><a href="../../d9/d26/bounding__box_8h.html">bounding_box.h</a></div></div>
-<div class="ttc" id="aclass_kratos_1_1_bounding_box_html"><div class="ttname"><a href="../../dc/dd4/class_kratos_1_1_bounding_box.html">Kratos::BoundingBox</a></div><div class="ttdoc">Representing a bounding box by storing the min and max points.</div><div class="ttdef"><b>Definition:</b> bounding_box.h:39</div></div>
-<div class="ttc" id="aclass_kratos_1_1_bounding_box_html_a8e1a3dc94d466b218fce20591c70514f"><div class="ttname"><a href="../../dc/dd4/class_kratos_1_1_bounding_box.html#a8e1a3dc94d466b218fce20591c70514f">Kratos::BoundingBox::GetMinPoint</a></div><div class="ttdeci">TPointType &amp; GetMinPoint()</div><div class="ttdef"><b>Definition:</b> bounding_box.h:134</div></div>
-<div class="ttc" id="aclass_kratos_1_1_bounding_box_html_afe2ee6a6238550bf14d17a36b5c11570"><div class="ttname"><a href="../../dc/dd4/class_kratos_1_1_bounding_box.html#afe2ee6a6238550bf14d17a36b5c11570">Kratos::BoundingBox::GetMaxPoint</a></div><div class="ttdeci">TPointType &amp; GetMaxPoint()</div><div class="ttdef"><b>Definition:</b> bounding_box.h:138</div></div>
-<div class="ttc" id="aclass_kratos_1_1_geometrical_objects_bins_html"><div class="ttname"><a href="../../dd/d0d/class_kratos_1_1_geometrical_objects_bins.html">Kratos::GeometricalObjectsBins</a></div><div class="ttdoc">A bins container for 3 dimensional GeometricalObject entities.</div><div class="ttdef"><b>Definition:</b> geometrical_objects_bins.h:49</div></div>
-<div class="ttc" id="aclass_kratos_1_1_geometrical_objects_bins_html_a035a9ed41a05b41f6537fdc8a7876edc"><div class="ttname"><a href="../../dd/d0d/class_kratos_1_1_geometrical_objects_bins.html#a035a9ed41a05b41f6537fdc8a7876edc">Kratos::GeometricalObjectsBins::Info</a></div><div class="ttdeci">virtual std::string Info() const</div><div class="ttdoc">Turn back information as a string.</div><div class="ttdef"><b>Definition:</b> geometrical_objects_bins.h:268</div></div>
-<div class="ttc" id="aclass_kratos_1_1_geometrical_objects_bins_html_a112e8de889edf79071ccf4306841eb58"><div class="ttname"><a href="../../dd/d0d/class_kratos_1_1_geometrical_objects_bins.html#a112e8de889edf79071ccf4306841eb58">Kratos::GeometricalObjectsBins::GeometricalObjectsBins</a></div><div class="ttdeci">GeometricalObjectsBins(TIteratorType GeometricalObjectsBegin, TIteratorType GeometricalObjectsEnd)</div><div class="ttdoc">The constructor with all geometries to be stored. Please note that all of them should be available at...</div><div class="ttdef"><b>Definition:</b> geometrical_objects_bins.h:71</div></div>
-<div class="ttc" id="aclass_kratos_1_1_geometrical_objects_bins_html_a12a694ba91a6dc79d5457aed6d703d6b"><div class="ttname"><a href="../../dd/d0d/class_kratos_1_1_geometrical_objects_bins.html#a12a694ba91a6dc79d5457aed6d703d6b">Kratos::GeometricalObjectsBins::ResultType</a></div><div class="ttdeci">SpatialSearchResult&lt; GeometricalObject &gt; ResultType</div><div class="ttdef"><b>Definition:</b> geometrical_objects_bins.h:60</div></div>
-<div class="ttc" id="aclass_kratos_1_1_geometrical_objects_bins_html_a182794e53d13a2ca8c5a4ecced979bc1"><div class="ttname"><a href="../../dd/d0d/class_kratos_1_1_geometrical_objects_bins.html#a182794e53d13a2ca8c5a4ecced979bc1">Kratos::GeometricalObjectsBins::GetCell</a></div><div class="ttdeci">CellType &amp; GetCell(std::size_t I, std::size_t J, std::size_t K)</div><div class="ttdoc">Accessing cell_ijk giving the 3 indices.</div><div class="ttdef"><b>Definition:</b> geometrical_objects_bins.h:124</div></div>
-<div class="ttc" id="aclass_kratos_1_1_geometrical_objects_bins_html_a1f7c98ff5f7c1c2105ad95cd2083ba76"><div class="ttname"><a href="../../dd/d0d/class_kratos_1_1_geometrical_objects_bins.html#a1f7c98ff5f7c1c2105ad95cd2083ba76">Kratos::GeometricalObjectsBins::KRATOS_CLASS_POINTER_DEFINITION</a></div><div class="ttdeci">KRATOS_CLASS_POINTER_DEFINITION(GeometricalObjectsBins)</div><div class="ttdoc">Pointer definition of GeometricalObjectsBins.</div></div>
-<div class="ttc" id="aclass_kratos_1_1_geometrical_objects_bins_html_a20e00506717855bb66bb0daacac0b050"><div class="ttname"><a href="../../dd/d0d/class_kratos_1_1_geometrical_objects_bins.html#a20e00506717855bb66bb0daacac0b050">Kratos::GeometricalObjectsBins::SearchIsInside</a></div><div class="ttdeci">ResultType SearchIsInside(TPointType const &amp;ThePoint)</div><div class="ttdef"><b>Definition:</b> geometrical_objects_bins.h:242</div></div>
-<div class="ttc" id="aclass_kratos_1_1_geometrical_objects_bins_html_a27581f210c0c180cf0b1543a71d8c92c"><div class="ttname"><a href="../../dd/d0d/class_kratos_1_1_geometrical_objects_bins.html#a27581f210c0c180cf0b1543a71d8c92c">Kratos::GeometricalObjectsBins::PrintInfo</a></div><div class="ttdeci">virtual void PrintInfo(std::ostream &amp;rOStream) const</div><div class="ttdoc">Print information about this object.</div><div class="ttdef"><b>Definition:</b> geometrical_objects_bins.h:276</div></div>
-<div class="ttc" id="aclass_kratos_1_1_geometrical_objects_bins_html_a2d5aa6163c03ba84e09c1da367c4edab"><div class="ttname"><a href="../../dd/d0d/class_kratos_1_1_geometrical_objects_bins.html#a2d5aa6163c03ba84e09c1da367c4edab">Kratos::GeometricalObjectsBins::~GeometricalObjectsBins</a></div><div class="ttdeci">virtual ~GeometricalObjectsBins()</div><div class="ttdoc">Destructor.</div><div class="ttdef"><b>Definition:</b> geometrical_objects_bins.h:87</div></div>
-<div class="ttc" id="aclass_kratos_1_1_geometrical_objects_bins_html_a2d7dac5f84b026ae1defd89088557562"><div class="ttname"><a href="../../dd/d0d/class_kratos_1_1_geometrical_objects_bins.html#a2d7dac5f84b026ae1defd89088557562">Kratos::GeometricalObjectsBins::GetTotalNumberOfCells</a></div><div class="ttdeci">std::size_t GetTotalNumberOfCells()</div><div class="ttdoc">The total number of cells in the container.</div><div class="ttdef"><b>Definition:</b> geometrical_objects_bins.h:119</div></div>
-<div class="ttc" id="aclass_kratos_1_1_geometrical_objects_bins_html_a2dc899949f208bf5aaa5deca12f6d23d"><div class="ttname"><a href="../../dd/d0d/class_kratos_1_1_geometrical_objects_bins.html#a2dc899949f208bf5aaa5deca12f6d23d">Kratos::GeometricalObjectsBins::GetNumberOfCells</a></div><div class="ttdeci">const array_1d&lt; std::size_t, 3 &gt; &amp; GetNumberOfCells()</div><div class="ttdoc">returns a 3D array having the number of cells in direction x,y and z</div><div class="ttdef"><b>Definition:</b> geometrical_objects_bins.h:114</div></div>
-<div class="ttc" id="aclass_kratos_1_1_geometrical_objects_bins_html_a82d2e8fda89457a137b1c39851473c11"><div class="ttname"><a href="../../dd/d0d/class_kratos_1_1_geometrical_objects_bins.html#a82d2e8fda89457a137b1c39851473c11">Kratos::GeometricalObjectsBins::GetCellBoundingBox</a></div><div class="ttdeci">BoundingBox&lt; Point &gt; GetCellBoundingBox(std::size_t I, std::size_t J, std::size_t K)</div><div class="ttdoc">Calculating the cell_ijk bounding box.</div><div class="ttdef"><b>Definition:</b> geometrical_objects_bins.h:134</div></div>
-<div class="ttc" id="aclass_kratos_1_1_geometrical_objects_bins_html_a977ca5f7db99ec004cd64010d8f25d52"><div class="ttname"><a href="../../dd/d0d/class_kratos_1_1_geometrical_objects_bins.html#a977ca5f7db99ec004cd64010d8f25d52">Kratos::GeometricalObjectsBins::SearchInRadius</a></div><div class="ttdeci">void SearchInRadius(TPointType const &amp;ThePoint, double Radius, std::vector&lt; ResultType &gt; &amp;rResults)</div><div class="ttdef"><b>Definition:</b> geometrical_objects_bins.h:156</div></div>
-<div class="ttc" id="aclass_kratos_1_1_geometrical_objects_bins_html_a9bcd405e8e83552e750c025149edc60d"><div class="ttname"><a href="../../dd/d0d/class_kratos_1_1_geometrical_objects_bins.html#a9bcd405e8e83552e750c025149edc60d">Kratos::GeometricalObjectsBins::SearchNearest</a></div><div class="ttdeci">ResultType SearchNearest(TPointType const &amp;ThePoint)</div><div class="ttdef"><b>Definition:</b> geometrical_objects_bins.h:226</div></div>
-<div class="ttc" id="aclass_kratos_1_1_geometrical_objects_bins_html_aab092ac23243a31801e117332e1769f9"><div class="ttname"><a href="../../dd/d0d/class_kratos_1_1_geometrical_objects_bins.html#aab092ac23243a31801e117332e1769f9">Kratos::GeometricalObjectsBins::PrintData</a></div><div class="ttdeci">virtual void PrintData(std::ostream &amp;rOStream) const</div><div class="ttdoc">Print object's data.</div><div class="ttdef"><b>Definition:</b> geometrical_objects_bins.h:279</div></div>
-<div class="ttc" id="aclass_kratos_1_1_geometrical_objects_bins_html_abffac1755b5010485315df4d57f4b595"><div class="ttname"><a href="../../dd/d0d/class_kratos_1_1_geometrical_objects_bins.html#abffac1755b5010485315df4d57f4b595">Kratos::GeometricalObjectsBins::GeometricalObjectsBins</a></div><div class="ttdeci">GeometricalObjectsBins()=delete</div><div class="ttdoc">Default constructor deleted.</div></div>
-<div class="ttc" id="aclass_kratos_1_1_geometrical_objects_bins_html_ae814f1fafa6ab88c82813a7966285436"><div class="ttname"><a href="../../dd/d0d/class_kratos_1_1_geometrical_objects_bins.html#ae814f1fafa6ab88c82813a7966285436">Kratos::GeometricalObjectsBins::CellType</a></div><div class="ttdeci">std::vector&lt; GeometricalObject * &gt; CellType</div><div class="ttdef"><b>Definition:</b> geometrical_objects_bins.h:59</div></div>
-<div class="ttc" id="aclass_kratos_1_1_geometrical_objects_bins_html_af6ccf07bfaeaf90b72a2feef8b470b8e"><div class="ttname"><a href="../../dd/d0d/class_kratos_1_1_geometrical_objects_bins.html#af6ccf07bfaeaf90b72a2feef8b470b8e">Kratos::GeometricalObjectsBins::SearchNearestInRadius</a></div><div class="ttdeci">ResultType SearchNearestInRadius(TPointType const &amp;ThePoint, double Radius)</div><div class="ttdef"><b>Definition:</b> geometrical_objects_bins.h:187</div></div>
-<div class="ttc" id="aclass_kratos_1_1_geometrical_objects_bins_html_afa27c1e3ef3a34d937eced24b7f9a3eb"><div class="ttname"><a href="../../dd/d0d/class_kratos_1_1_geometrical_objects_bins.html#afa27c1e3ef3a34d937eced24b7f9a3eb">Kratos::GeometricalObjectsBins::GetBoundingBox</a></div><div class="ttdeci">const BoundingBox&lt; Point &gt; &amp; GetBoundingBox() const</div><div class="ttdoc">Getting the bins bounding box.</div><div class="ttdef"><b>Definition:</b> geometrical_objects_bins.h:104</div></div>
-<div class="ttc" id="aclass_kratos_1_1_geometrical_objects_bins_html_afb62203e90af48fe1fafe5db01c49f45"><div class="ttname"><a href="../../dd/d0d/class_kratos_1_1_geometrical_objects_bins.html#afb62203e90af48fe1fafe5db01c49f45">Kratos::GeometricalObjectsBins::GetCellSizes</a></div><div class="ttdeci">const array_1d&lt; double, 3 &gt; &amp; GetCellSizes()</div><div class="ttdoc">return an array with the x,y and z size of the cube</div><div class="ttdef"><b>Definition:</b> geometrical_objects_bins.h:109</div></div>
-<div class="ttc" id="aclass_kratos_1_1_spatial_search_result_html"><div class="ttname"><a href="../../dd/d09/class_kratos_1_1_spatial_search_result.html">Kratos::SpatialSearchResult</a></div><div class="ttdoc">This class is the result of the spatial searches.</div><div class="ttdef"><b>Definition:</b> spatial_search_result.h:41</div></div>
-<div class="ttc" id="aclass_kratos_1_1_spatial_search_result_html_a0327bdd569a831593cc3847b19c2058f"><div class="ttname"><a href="../../dd/d09/class_kratos_1_1_spatial_search_result.html#a0327bdd569a831593cc3847b19c2058f">Kratos::SpatialSearchResult::IsObjectFound</a></div><div class="ttdeci">bool IsObjectFound() const</div><div class="ttdoc">Returns true if the object is set.</div><div class="ttdef"><b>Definition:</b> spatial_search_result.h:131</div></div>
-<div class="ttc" id="aclass_kratos_1_1_spatial_search_result_html_a64bcb71385e1e1edc272dcb28b46f1d5"><div class="ttname"><a href="../../dd/d09/class_kratos_1_1_spatial_search_result.html#a64bcb71385e1e1edc272dcb28b46f1d5">Kratos::SpatialSearchResult::SetDistance</a></div><div class="ttdeci">void SetDistance(const double TheDistance)</div><div class="ttdoc">Setting the result distance.</div><div class="ttdef"><b>Definition:</b> spatial_search_result.h:121</div></div>
-<div class="ttc" id="aclass_kratos_1_1array__1d_html"><div class="ttname"><a href="../../d4/ddc/class_kratos_1_1array__1d.html">Kratos::array_1d&lt; double, 3 &gt;</a></div></div>
+<div class="ttc" id="aclass_geometrical_object_html"><div class="ttname"><a href="../../d0/d48/class_geometrical_object.html">GeometricalObject</a></div><div class="ttdoc">This defines the geometrical object, base definition of the element and condition entities.</div></div>
+<div class="ttc" id="aclass_geometrical_objects_bins_html"><div class="ttname"><a href="../../d5/def/class_geometrical_objects_bins.html">GeometricalObjectsBins</a></div><div class="ttdoc">A bins container for 3 dimensional GeometricalObject entities.</div><div class="ttdef"><b>Definition:</b> geometrical_objects_bins.h:33</div></div>
 <div class="ttc" id="aclass_kratos_1_1array__1d_html_aaef2a89bfb932228a64c24131efb4b8c"><div class="ttname"><a href="../../d4/ddc/class_kratos_1_1array__1d.html#aaef2a89bfb932228a64c24131efb4b8c">Kratos::array_1d::end</a></div><div class="ttdeci">BOOST_UBLAS_INLINE const_iterator end() const</div><div class="ttdef"><b>Definition:</b> array_1d.h:602</div></div>
 <div class="ttc" id="aclass_kratos_1_1array__1d_html_ae8323ea08b822f9b79906234e9f1e33d"><div class="ttname"><a href="../../d4/ddc/class_kratos_1_1array__1d.html#ae8323ea08b822f9b79906234e9f1e33d">Kratos::array_1d::begin</a></div><div class="ttdeci">BOOST_UBLAS_INLINE const_iterator begin() const</div><div class="ttdef"><b>Definition:</b> array_1d.h:597</div></div>
-<div class="ttc" id="adefine_8h_html"><div class="ttname"><a href="../../df/d67/define_8h.html">define.h</a></div></div>
-<div class="ttc" id="ageometrical__object_8h_html"><div class="ttname"><a href="../../d5/d6d/geometrical__object_8h.html">geometrical_object.h</a></div></div>
-<div class="ttc" id="aglobal__pointer_8h_html"><div class="ttname"><a href="../../d6/dd9/global__pointer_8h.html">global_pointer.h</a></div></div>
-<div class="ttc" id="agroup___kratos_core_html_gab957b416207ac826a58f2b9503cb0d38"><div class="ttname"><a href="../../d5/d4d/group___kratos_core.html#gab957b416207ac826a58f2b9503cb0d38">KRATOS_DEBUG_ERROR_IF</a></div><div class="ttdeci">#define KRATOS_DEBUG_ERROR_IF(conditional)</div><div class="ttdef"><b>Definition:</b> exception.h:171</div></div>
-<div class="ttc" id="anamespace_kratos_1_1_geometry_functions_html_a819e51c089a0d603f13c6ce87e7cbed5"><div class="ttname"><a href="../../d4/d8c/namespace_kratos_1_1_geometry_functions.html#a819e51c089a0d603f13c6ce87e7cbed5">Kratos::GeometryFunctions::max</a></div><div class="ttdeci">static double max(double a, double b)</div><div class="ttdef"><b>Definition:</b> GeometryFunctions.h:79</div></div>
+<div class="ttc" id="anamespace_d_e_m__benchmarks_html_a9635268cbcd16b8b3f12c26323611b53"><div class="ttname"><a href="../../d3/d1a/namespace_d_e_m__benchmarks.html#a9635268cbcd16b8b3f12c26323611b53">DEM_benchmarks.end</a></div><div class="ttdeci">end</div><div class="ttdef"><b>Definition:</b> DEM_benchmarks.py:180</div></div>
+<div class="ttc" id="anamespace_kratos_1_1_mortar_utilities_html_a407333aa7d9b470dab6a9652f72a6ebd"><div class="ttname"><a href="../../da/dec/namespace_kratos_1_1_mortar_utilities.html#a407333aa7d9b470dab6a9652f72a6ebd">Kratos::MortarUtilities::rGeometry</a></div><div class="ttdeci">array_1d&lt; double, 3 &gt; const GeometryType &amp; rGeometry</div><div class="ttdef"><b>Definition:</b> mortar_utilities.h:153</div></div>
 <div class="ttc" id="anamespace_kratos_1_1_mortar_utilities_html_a67e0ac17841be88205ea3ffb7748688c"><div class="ttname"><a href="../../da/dec/namespace_kratos_1_1_mortar_utilities.html#a67e0ac17841be88205ea3ffb7748688c">Kratos::MortarUtilities::Dimension</a></div><div class="ttdeci">void const array_1d&lt; double, 3 &gt; const std::size_t Dimension</div><div class="ttdef"><b>Definition:</b> mortar_utilities.h:212</div></div>
+<div class="ttc" id="anamespace_kratos_1_1_mortar_utilities_html_a808341c5844f3b2b1b5120a0c95f8c4e"><div class="ttname"><a href="../../da/dec/namespace_kratos_1_1_mortar_utilities.html#a808341c5844f3b2b1b5120a0c95f8c4e">Kratos::MortarUtilities::Tolerance</a></div><div class="ttdeci">bool const double Tolerance</div><div class="ttdef"><b>Definition:</b> mortar_utilities.h:105</div></div>
 <div class="ttc" id="anamespace_kratos_html"><div class="ttname"><a href="../../db/d66/namespace_kratos.html">Kratos</a></div><div class="ttdoc">REF: G. R. Cowper, GAUSSIAN QUADRATURE FORMULAS FOR TRIANGLES.</div><div class="ttdef"><b>Definition:</b> mesh_condition.cpp:21</div></div>
-<div class="ttc" id="anamespace_kratos_html_a3a1ecd0fa0d3efbe1f885e5edc413996"><div class="ttname"><a href="../../db/d66/namespace_kratos.html#a3a1ecd0fa0d3efbe1f885e5edc413996">Kratos::ScalarVector</a></div><div class="ttdeci">scalar_vector&lt; double &gt; ScalarVector</div><div class="ttdef"><b>Definition:</b> ublas_interface.h:66</div></div>
+<div class="ttc" id="anamespace_kratos_html_a09b635fec7c488ecdae7a5966b6f8fc1"><div class="ttname"><a href="../../db/d66/namespace_kratos.html#a09b635fec7c488ecdae7a5966b6f8fc1">Kratos::CalculatePosition</a></div><div class="ttdeci">bool CalculatePosition(Geometry&lt; Node &gt; &amp;geom, const double xc, const double yc, const double zc, array_1d&lt; double, 3 &gt; &amp;N)</div><div class="ttdef"><b>Definition:</b> transfer_utility.h:343</div></div>
 <div class="ttc" id="anamespace_kratos_html_a6f2039a47d53dc7d9a555957a10fd06f"><div class="ttname"><a href="../../db/d66/namespace_kratos.html#a6f2039a47d53dc7d9a555957a10fd06f">Kratos::results</a></div><div class="ttdeci">results</div><div class="ttdef"><b>Definition:</b> flags.cpp:58</div></div>
-<div class="ttc" id="anamespace_kratos_html_a9c6097d0b0a27d1cea94992b1087f56a"><div class="ttname"><a href="../../db/d66/namespace_kratos.html#a9c6097d0b0a27d1cea94992b1087f56a">Kratos::operator&gt;&gt;</a></div><div class="ttdeci">std::istream &amp; operator&gt;&gt;(std::istream &amp;rIStream, LinearMasterSlaveConstraint &amp;rThis)</div><div class="ttdoc">input stream function</div></div>
-<div class="ttc" id="anamespace_kratos_html_acfc842a43d19dffc2d8105e5cbea17a9"><div class="ttname"><a href="../../db/d66/namespace_kratos.html#acfc842a43d19dffc2d8105e5cbea17a9">Kratos::operator&lt;&lt;</a></div><div class="ttdeci">std::ostream &amp; operator&lt;&lt;(std::ostream &amp;rOStream, const LinearMasterSlaveConstraint &amp;rThis)</div><div class="ttdoc">output stream function</div><div class="ttdef"><b>Definition:</b> linear_master_slave_constraint.h:432</div></div>
 <div class="ttc" id="anamespacequadrature_html_a56123f01f0d1e776d9a6d85aa0f27caa"><div class="ttname"><a href="../../d7/d2b/namespacequadrature.html#a56123f01f0d1e776d9a6d85aa0f27caa">quadrature.k</a></div><div class="ttdeci">int k</div><div class="ttdef"><b>Definition:</b> quadrature.py:595</div></div>
 <div class="ttc" id="anamespacequadrature_html_aae897447319c4634b1dcef7634fe5876"><div class="ttname"><a href="../../d7/d2b/namespacequadrature.html#aae897447319c4634b1dcef7634fe5876">quadrature.j</a></div><div class="ttdeci">int j</div><div class="ttdef"><b>Definition:</b> quadrature.py:648</div></div>
 <div class="ttc" id="anamespacesensitivity_matrix_html_a0dcc8fdbf3703c6395c0f78646371997"><div class="ttname"><a href="../../d0/d79/namespacesensitivity_matrix.html#a0dcc8fdbf3703c6395c0f78646371997">sensitivityMatrix.J</a></div><div class="ttdeci">J</div><div class="ttdef"><b>Definition:</b> sensitivityMatrix.py:58</div></div>
@@ -526,10 +434,11 @@ $(function() {
 <div class="ttc" id="anamespacetensors_html_a15a1da80aa773e2015eba781cababe05"><div class="ttname"><a href="../../d2/db8/namespacetensors.html#a15a1da80aa773e2015eba781cababe05">tensors::i</a></div><div class="ttdeci">integer i</div><div class="ttdef"><b>Definition:</b> TensorModule.f:17</div></div>
 <div class="ttc" id="apoint_8h_html"><div class="ttname"><a href="../../d2/d91/point_8h.html">point.h</a></div></div>
 <div class="ttc" id="aspatial__search__result_8h_html"><div class="ttname"><a href="../../de/d6e/spatial__search__result_8h.html">spatial_search_result.h</a></div></div>
+<div class="ttc" id="atransfer__utility_8h_html_a95ed76edc983cae239b65f370953d216"><div class="ttname"><a href="../../d6/d3f/transfer__utility_8h.html#a95ed76edc983cae239b65f370953d216">KRATOS_CLASS_POINTER_DEFINITION</a></div><div class="ttdeci">KRATOS_CLASS_POINTER_DEFINITION(TransferUtility)</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri May 12 2023 02:08:12 for KratosMultiphysics by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Sat May 13 2023 02:08:33 for KratosMultiphysics by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

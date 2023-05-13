@@ -145,12 +145,12 @@ $(function() {
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160; </div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160; </div>
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160; </div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    <span class="keyword">const</span> DivideGeometry&lt;Node&lt;3&gt;&gt;::Pointer pGetSplittingUtil() <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    <span class="keyword">const</span> DivideGeometry&lt;Node&gt;::Pointer pGetSplittingUtil() <span class="keyword">const override</span>;</div>
 <div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160; </div>
 <div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;<span class="keyword">protected</span>:</div>
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160; </div>
 <div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160; </div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    DivideTriangle2D3&lt;Node&lt;3&gt;&gt;::Pointer mpTriangleSplitter;</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    DivideTriangle2D3&lt;Node&gt;::Pointer mpTriangleSplitter;</div>
 <div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160; </div>
 <div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160; </div>
 <div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160; </div>
@@ -175,7 +175,7 @@ $(function() {
 <div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160; </div>
 <div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;    Triangle2D3AusasModifiedShapeFunctions(Triangle2D3AusasModifiedShapeFunctions <span class="keyword">const</span>&amp; rOther) :</div>
 <div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;        AusasModifiedShapeFunctions(rOther.GetInputGeometry(), rOther.GetNodalDistances()),</div>
-<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;        mpTriangleSplitter(new DivideTriangle2D3&lt;<a class="code" href="../../db/d66/namespace_kratos.html#a8ad9f38d847ff7742fb13b5098910b03a6c3a6944a808a7c0bbb6788dbec54a9f">Node</a>&lt;3&gt;&gt;(*rOther.GetInputGeometry(), rOther.GetNodalDistances())) {</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;        mpTriangleSplitter(new DivideTriangle2D3&lt;<a class="code" href="../../db/d66/namespace_kratos.html#a8ad9f38d847ff7742fb13b5098910b03a6c3a6944a808a7c0bbb6788dbec54a9f">Node</a>&gt;(*rOther.GetInputGeometry(), rOther.GetNodalDistances())) {</div>
 <div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160; </div>
 <div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;        <span class="comment">// Perform the element splitting</span></div>
 <div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;        mpTriangleSplitter-&gt;GenerateDivision();</div>
@@ -202,7 +202,7 @@ $(function() {
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri May 12 2023 02:07:34 for KratosMultiphysics by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Sat May 13 2023 02:07:56 for KratosMultiphysics by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

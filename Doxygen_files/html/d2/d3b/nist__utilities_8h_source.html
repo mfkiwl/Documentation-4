@@ -180,7 +180,7 @@ $(function() {
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;        Properties::Pointer properties = OriginModelPart.GetMesh().pGetProperties(1);</div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;        <span class="keywordflow">for</span>(ModelPart::ElementsContainerType::iterator iii = OriginModelPart.ElementsBegin(); iii != OriginModelPart.ElementsEnd(); iii++)</div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;        {</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;            <a class="code" href="../../dc/dea/class_kratos_1_1_geometry.html">Geometry&lt; Node&lt;3&gt;</a> &gt;&amp; geom = iii-&gt;GetGeometry();</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;            <a class="code" href="../../dc/dea/class_kratos_1_1_geometry.html">Geometry&lt; Node &gt;</a>&amp; geom = iii-&gt;GetGeometry();</div>
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;            Element::Pointer p_element = rReferenceElement.<a class="code" href="../../d5/dd4/class_kratos_1_1_element.html#a9d3fcc73aa43b460715466d283803b61">Create</a>(<span class="keywordtype">id</span>, geom ,properties);</div>
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;            DestinationModelPart.Elements().push_back(p_element);</div>
 <div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;            <span class="keywordtype">id</span> = <span class="keywordtype">id</span> + 1;</div>
@@ -191,7 +191,7 @@ $(function() {
 <div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;        <span class="keywordtype">id</span> = 1;</div>
 <div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;        <span class="keywordflow">for</span>(ModelPart::ConditionsContainerType::iterator iii = OriginModelPart.ConditionsBegin(); iii != OriginModelPart.ConditionsEnd(); iii++)</div>
 <div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;        {</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;            <a class="code" href="../../dc/dea/class_kratos_1_1_geometry.html">Geometry&lt; Node&lt;3&gt;</a> &gt;&amp; geom = iii-&gt;GetGeometry();</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;            <a class="code" href="../../dc/dea/class_kratos_1_1_geometry.html">Geometry&lt; Node &gt;</a>&amp; geom = iii-&gt;GetGeometry();</div>
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;            <span class="keywordtype">double</span> nfree_surf = 0;</div>
 <div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;            <span class="keywordflow">for</span>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="../../d7/d2b/namespacequadrature.html#a56123f01f0d1e776d9a6d85aa0f27caa">k</a> = 0; <a class="code" href="../../d7/d2b/namespacequadrature.html#a56123f01f0d1e776d9a6d85aa0f27caa">k</a>&lt;geom.<a class="code" href="../../dc/dea/class_kratos_1_1_geometry.html#a2477b702b7e4972903ca29e31b6ded56">size</a>(); <a class="code" href="../../d7/d2b/namespacequadrature.html#a56123f01f0d1e776d9a6d85aa0f27caa">k</a>++)</div>
 <div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;                nfree_surf += geom[<a class="code" href="../../d7/d2b/namespacequadrature.html#a56123f01f0d1e776d9a6d85aa0f27caa">k</a>].FastGetSolutionStepValue(IS_FREE_SURFACE);</div>
@@ -286,7 +286,7 @@ $(function() {
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri May 12 2023 02:05:53 for KratosMultiphysics by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Sat May 13 2023 02:06:15 for KratosMultiphysics by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

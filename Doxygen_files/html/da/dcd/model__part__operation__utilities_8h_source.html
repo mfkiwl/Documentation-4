@@ -151,10 +151,10 @@ $(function() {
 <div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;        <a class="code" href="../../db/d66/namespace_kratos.html#a14ab8160ba3f8291244835400249c09d">ModelPart::NodesContainerType</a>&amp; rNodesContainer,</div>
 <div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;        TUnaryFunc&amp;&amp; rIsValidEntity)</div>
 <div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    {</div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;        <span class="keyword">using</span> p_entity_type = <a class="code" href="../../db/d66/namespace_kratos.html#abb4d93a6f1ee35395fd178b0e96cbcb8">ModelPart::NodeType</a>*;</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;        <span class="keyword">using</span> p_entity_type = <a class="code" href="../../db/d66/namespace_kratos.html#a4e2ab605ef101fe7856e7f373e418478">ModelPart::NodeType</a>*;</div>
 <div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160; </div>
 <div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;        <span class="keyword">const</span> <span class="keyword">auto</span>&amp; result = block_for_each&lt;AccumReduction&lt;p_entity_type&gt;&gt;(rNodesContainer, [&amp;rIsValidEntity](<span class="keyword">auto</span>&amp; rMainEntity) -&gt; p_entity_type {</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;            <a class="code" href="../../db/d66/namespace_kratos.html#abb4d93a6f1ee35395fd178b0e96cbcb8">ModelPart::NodeType</a> <span class="keyword">const</span>* p_entity = &amp;rMainEntity;</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;            <a class="code" href="../../db/d66/namespace_kratos.html#a4e2ab605ef101fe7856e7f373e418478">ModelPart::NodeType</a> <span class="keyword">const</span>* p_entity = &amp;rMainEntity;</div>
 <div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;            <span class="keywordflow">if</span> (rIsValidEntity(p_entity)) {</div>
 <div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;                <span class="keywordflow">return</span> &amp;rMainEntity;</div>
 <div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;            } <span class="keywordflow">else</span> {</div>
@@ -327,12 +327,12 @@ $(function() {
 <div class="ttc" id="anamespace_kratos_1_1_rans_variable_utilities_html_a2f23795bfd18a5c0e153aad48feaa4d7"><div class="ttname"><a href="../../db/d91/namespace_kratos_1_1_rans_variable_utilities.html#a2f23795bfd18a5c0e153aad48feaa4d7">Kratos::RansVariableUtilities::rNodes</a></div><div class="ttdeci">void const ModelPart::NodesContainerType &amp; rNodes</div><div class="ttdef"><b>Definition:</b> rans_variable_utilities.h:56</div></div>
 <div class="ttc" id="anamespace_kratos_html"><div class="ttname"><a href="../../db/d66/namespace_kratos.html">Kratos</a></div><div class="ttdoc">REF: G. R. Cowper, GAUSSIAN QUADRATURE FORMULAS FOR TRIANGLES.</div><div class="ttdef"><b>Definition:</b> mesh_condition.cpp:21</div></div>
 <div class="ttc" id="anamespace_kratos_html_a14ab8160ba3f8291244835400249c09d"><div class="ttname"><a href="../../db/d66/namespace_kratos.html#a14ab8160ba3f8291244835400249c09d">Kratos::NodesContainerType</a></div><div class="ttdeci">ModelPart::NodesContainerType NodesContainerType</div><div class="ttdef"><b>Definition:</b> find_conditions_neighbours_process.h:44</div></div>
-<div class="ttc" id="anamespace_kratos_html_abb4d93a6f1ee35395fd178b0e96cbcb8"><div class="ttname"><a href="../../db/d66/namespace_kratos.html#abb4d93a6f1ee35395fd178b0e96cbcb8">Kratos::NodeType</a></div><div class="ttdeci">Node&lt; 3 &gt; NodeType</div><div class="ttdoc">The definition of the node.</div><div class="ttdef"><b>Definition:</b> mortar_classes.h:37</div></div>
+<div class="ttc" id="anamespace_kratos_html_a4e2ab605ef101fe7856e7f373e418478"><div class="ttname"><a href="../../db/d66/namespace_kratos.html#a4e2ab605ef101fe7856e7f373e418478">Kratos::NodeType</a></div><div class="ttdeci">Node NodeType</div><div class="ttdoc">The definition of the node.</div><div class="ttdef"><b>Definition:</b> mortar_classes.h:37</div></div>
 <div class="ttc" id="anamespacetensors_html_a15a1da80aa773e2015eba781cababe05"><div class="ttname"><a href="../../d2/db8/namespacetensors.html#a15a1da80aa773e2015eba781cababe05">tensors::i</a></div><div class="ttdeci">integer i</div><div class="ttdef"><b>Definition:</b> TensorModule.f:17</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri May 12 2023 02:08:15 for KratosMultiphysics by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Sat May 13 2023 02:08:36 for KratosMultiphysics by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

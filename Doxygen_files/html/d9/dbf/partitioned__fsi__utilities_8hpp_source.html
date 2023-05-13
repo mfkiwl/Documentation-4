@@ -556,7 +556,7 @@ $(function() {
 <div class="line"><a name="l00634"></a><span class="lineno">  634</span>&#160;        }</div>
 <div class="line"><a name="l00635"></a><span class="lineno">  635</span>&#160; </div>
 <div class="line"><a name="l00636"></a><span class="lineno">  636</span>&#160;        <span class="comment">// Calculate the tractions from the pressure values</span></div>
-<div class="line"><a name="l00637"></a><span class="lineno">  637</span>&#160;        <a class="code" href="../../db/d66/namespace_kratos.html#a382d1519b254c52c6699149b2192aa8c">block_for_each</a>(<a class="code" href="../../db/d91/namespace_kratos_1_1_rans_variable_utilities.html#af0d227aa5521a639dd5f46737c54e84c">rModelPart</a>.Nodes(), [&amp;](<a class="code" href="../../d5/ddd/class_kratos_1_1_node.html">Node&lt;3&gt;</a>&amp; rNode){</div>
+<div class="line"><a name="l00637"></a><span class="lineno">  637</span>&#160;        <a class="code" href="../../db/d66/namespace_kratos.html#a382d1519b254c52c6699149b2192aa8c">block_for_each</a>(<a class="code" href="../../db/d91/namespace_kratos_1_1_rans_variable_utilities.html#af0d227aa5521a639dd5f46737c54e84c">rModelPart</a>.Nodes(), [&amp;](<a class="code" href="../../d5/ddd/class_kratos_1_1_node.html">Node</a>&amp; rNode){</div>
 <div class="line"><a name="l00638"></a><span class="lineno">  638</span>&#160;            const array_1d&lt;double,3&gt;&amp; r_normal = rNode.FastGetSolutionStepValue(NORMAL);</div>
 <div class="line"><a name="l00639"></a><span class="lineno">  639</span>&#160;            const double p_pos = rNode.FastGetSolutionStepValue(rPressureVariable);</div>
 <div class="line"><a name="l00640"></a><span class="lineno">  640</span>&#160;            noalias(rNode.FastGetSolutionStepValue(rTractionVariable)) = traction_modulus_func(p_pos, r_normal) * r_normal;</div>
@@ -585,7 +585,7 @@ $(function() {
 <div class="line"><a name="l00663"></a><span class="lineno">  663</span>&#160;        }</div>
 <div class="line"><a name="l00664"></a><span class="lineno">  664</span>&#160; </div>
 <div class="line"><a name="l00665"></a><span class="lineno">  665</span>&#160;        <span class="comment">// Calculate the tractions from the pressure values</span></div>
-<div class="line"><a name="l00666"></a><span class="lineno">  666</span>&#160;        <a class="code" href="../../db/d66/namespace_kratos.html#a382d1519b254c52c6699149b2192aa8c">block_for_each</a>(<a class="code" href="../../db/d91/namespace_kratos_1_1_rans_variable_utilities.html#af0d227aa5521a639dd5f46737c54e84c">rModelPart</a>.Nodes(), [&amp;](<a class="code" href="../../d5/ddd/class_kratos_1_1_node.html">Node&lt;3&gt;</a>&amp; rNode){</div>
+<div class="line"><a name="l00666"></a><span class="lineno">  666</span>&#160;        <a class="code" href="../../db/d66/namespace_kratos.html#a382d1519b254c52c6699149b2192aa8c">block_for_each</a>(<a class="code" href="../../db/d91/namespace_kratos_1_1_rans_variable_utilities.html#af0d227aa5521a639dd5f46737c54e84c">rModelPart</a>.Nodes(), [&amp;](<a class="code" href="../../d5/ddd/class_kratos_1_1_node.html">Node</a>&amp; rNode){</div>
 <div class="line"><a name="l00667"></a><span class="lineno">  667</span>&#160;            const array_1d&lt;double,3&gt;&amp; r_normal = rNode.FastGetSolutionStepValue(NORMAL);</div>
 <div class="line"><a name="l00668"></a><span class="lineno">  668</span>&#160;            const double p_pos = rNode.FastGetSolutionStepValue(rPositivePressureVariable);</div>
 <div class="line"><a name="l00669"></a><span class="lineno">  669</span>&#160;            const double p_neg = rNode.FastGetSolutionStepValue(rNegativePressureVariable);</div>
@@ -718,7 +718,7 @@ $(function() {
 <div class="ttc" id="aclass_kratos_1_1_geometry_html"><div class="ttname"><a href="../../dc/dea/class_kratos_1_1_geometry.html">Kratos::Geometry</a></div><div class="ttdoc">Geometry base class.</div><div class="ttdef"><b>Definition:</b> geometry.h:71</div></div>
 <div class="ttc" id="aclass_kratos_1_1_geometry_html_a31bbbe14cc77d6f9d1fd9b23eff8b00e"><div class="ttname"><a href="../../dc/dea/class_kratos_1_1_geometry.html#a31bbbe14cc77d6f9d1fd9b23eff8b00e">Kratos::Geometry::Length</a></div><div class="ttdeci">virtual double Length() const</div><div class="ttdef"><b>Definition:</b> geometry.h:1332</div></div>
 <div class="ttc" id="aclass_kratos_1_1_internals_1_1_matrix_html"><div class="ttname"><a href="../../d9/dbb/class_kratos_1_1_internals_1_1_matrix.html">Kratos::Internals::Matrix&lt; double, AMatrix::dynamic, 1 &gt;</a></div></div>
-<div class="ttc" id="aclass_kratos_1_1_node_html"><div class="ttname"><a href="../../d5/ddd/class_kratos_1_1_node.html">Kratos::Node</a></div><div class="ttdoc">This class defines the node.</div><div class="ttdef"><b>Definition:</b> node.h:68</div></div>
+<div class="ttc" id="aclass_kratos_1_1_node_html"><div class="ttname"><a href="../../d5/ddd/class_kratos_1_1_node.html">Kratos::Node</a></div><div class="ttdoc">This class defines the node.</div><div class="ttdef"><b>Definition:</b> node.h:67</div></div>
 <div class="ttc" id="aclass_kratos_1_1_partitioned_f_s_i_utilities_html"><div class="ttname"><a href="../../d8/d2d/class_kratos_1_1_partitioned_f_s_i_utilities.html">Kratos::PartitionedFSIUtilities</a></div><div class="ttdef"><b>Definition:</b> partitioned_fsi_utilities.hpp:67</div></div>
 <div class="ttc" id="aclass_kratos_1_1_partitioned_f_s_i_utilities_html_a04cfc245c4e0fc0d7ff453c15a1fadbc"><div class="ttname"><a href="../../d8/d2d/class_kratos_1_1_partitioned_f_s_i_utilities.html#a04cfc245c4e0fc0d7ff453c15a1fadbc">Kratos::PartitionedFSIUtilities::AuxSetLocalValue</a></div><div class="ttdeci">virtual void AuxSetLocalValue(VectorType &amp;rInterfaceResidual, const array_1d&lt; double, 3 &gt; &amp;rResidualValue, const int AuxPosition)</div><div class="ttdoc">Auxiliar call to SetLocalValue for array type This method serves as an auxiliar call to the SetLocalV...</div><div class="ttdef"><b>Definition:</b> partitioned_fsi_utilities.hpp:346</div></div>
 <div class="ttc" id="aclass_kratos_1_1_partitioned_f_s_i_utilities_html_a0c5d56fdcab3b9d9cbf23f90fba9c6cb"><div class="ttname"><a href="../../d8/d2d/class_kratos_1_1_partitioned_f_s_i_utilities.html#a0c5d56fdcab3b9d9cbf23f90fba9c6cb">Kratos::PartitionedFSIUtilities::VectorPointerType</a></div><div class="ttdeci">TSpace::VectorPointerType VectorPointerType</div><div class="ttdef"><b>Definition:</b> partitioned_fsi_utilities.hpp:78</div></div>
@@ -797,7 +797,7 @@ $(function() {
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri May 12 2023 02:03:12 for KratosMultiphysics by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Sat May 13 2023 02:03:34 for KratosMultiphysics by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

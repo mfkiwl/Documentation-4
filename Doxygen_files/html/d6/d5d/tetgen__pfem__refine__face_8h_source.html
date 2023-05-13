@@ -149,11 +149,11 @@ $(function() {
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160; </div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <span class="comment">//*******************************************************************************************</span></div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <span class="comment">//*******************************************************************************************</span></div>
-<div class="line"><a name="l00101"></a><span class="lineno"><a class="line" href="../../d5/d0b/class_kratos_1_1_tet_gen_pfem_refine_face.html#a333c1c0a8258ac83eef42b63c0d6efb7">  101</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../d5/d0b/class_kratos_1_1_tet_gen_pfem_refine_face.html#a333c1c0a8258ac83eef42b63c0d6efb7">ReGenerateMesh</a>(</div>
+<div class="line"><a name="l00101"></a><span class="lineno"><a class="line" href="../../d5/d0b/class_kratos_1_1_tet_gen_pfem_refine_face.html#a804f73d727a0750ee63497f55d682999">  101</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../d5/d0b/class_kratos_1_1_tet_gen_pfem_refine_face.html#a804f73d727a0750ee63497f55d682999">ReGenerateMesh</a>(</div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        <a class="code" href="../../d4/d5e/class_model_part.html">ModelPart</a>&amp; ThisModelPart , <a class="code" href="../../db/d66/namespace_kratos.html#aba5dbdf990a4567126376ad0aae1687e">ModelPart::ElementsContainerType</a>&amp; rElements,</div>
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;        <a class="code" href="../../d5/dd4/class_kratos_1_1_element.html">Element</a> <span class="keyword">const</span>&amp; rReferenceElement,</div>
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;        <a class="code" href="../../d1/d6e/class_kratos_1_1_condition.html">Condition</a> <span class="keyword">const</span>&amp; rReferenceBoundaryCondition,</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;        <a class="code" href="../../df/d88/class_entities_erase_process.html">EntitiesEraseProcess</a>&lt;<a class="code" href="../../d5/ddd/class_kratos_1_1_node.html">Node&lt;3&gt;</a>&gt;&amp; node_erase, <span class="keywordtype">bool</span> rem_nodes = <span class="keyword">true</span>, <span class="keywordtype">bool</span> <a class="code" href="../../df/d58/namespacescript.html#a524d80a42053f01743576fadbb56e130">add_nodes</a>=<span class="keyword">true</span>,</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;        <a class="code" href="../../df/d88/class_entities_erase_process.html">EntitiesEraseProcess&lt;Node&gt;</a>&amp; node_erase, <span class="keywordtype">bool</span> rem_nodes = <span class="keyword">true</span>, <span class="keywordtype">bool</span> <a class="code" href="../../df/d58/namespacescript.html#a524d80a42053f01743576fadbb56e130">add_nodes</a>=<span class="keyword">true</span>,</div>
 <div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;        <span class="keywordtype">double</span> alpha_param = 1.4, <span class="keywordtype">double</span> h_factor=0.5)</div>
 <div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    {</div>
 <div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160; </div>
@@ -203,8 +203,8 @@ $(function() {
 <div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;        ThisModelPart.Conditions().clear();</div>
 <div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160; </div>
 <div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;        boost::timer auxiliary;</div>
-<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;        <span class="keyword">typedef</span> <a class="code" href="../../d5/ddd/class_kratos_1_1_node.html">Node&lt;3&gt;</a> <a class="code" href="../../db/d66/namespace_kratos.html#aea0b34bb32b277d76c906c99e904f43d">PointType</a>;</div>
-<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;        <span class="keyword">typedef</span> <a class="code" href="../../d5/ddd/class_kratos_1_1_node.html">Node&lt;3&gt;::Pointer</a> PointPointerType;</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;        <span class="keyword">typedef</span> <a class="code" href="../../d5/ddd/class_kratos_1_1_node.html">Node</a> <a class="code" href="../../db/d66/namespace_kratos.html#aea0b34bb32b277d76c906c99e904f43d">PointType</a>;</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;        <span class="keyword">typedef</span> Node::Pointer PointPointerType;</div>
 <div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;        <span class="comment">//typedef PointerVector&lt;PointType&gt;           PointVector;</span></div>
 <div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;        <span class="keyword">typedef</span> std::vector&lt;PointType::Pointer&gt;           <a class="code" href="../../db/d66/namespace_kratos.html#aa8155351242bcfc8f8b9169ed3260d1c">PointVector</a>;</div>
 <div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;        <span class="keyword">typedef</span> PointVector::iterator <a class="code" href="../../db/d66/namespace_kratos.html#acebd5eae8dc538f274f9a9715ac37650">PointIterator</a>;</div>
@@ -232,7 +232,7 @@ $(function() {
 <div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;        <span class="comment">//NodeIterator res(max_results);</span></div>
 <div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;        <a class="code" href="../../db/d66/namespace_kratos.html#aa8155351242bcfc8f8b9169ed3260d1c">PointVector</a> <a class="code" href="../../d8/d57/namespacegenerate__convection__diffusion__explicit__element.html#a0f350657580a8b8b47213764da96394e">res</a>(max_results);</div>
 <div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;        <a class="code" href="../../db/d66/namespace_kratos.html#add8675b61cae5b580f3d7497d15035a3">DistanceVector</a> res_distances(max_results);</div>
-<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;        <a class="code" href="../../d5/ddd/class_kratos_1_1_node.html">Node&lt;3&gt;</a> work_point(0,0.0,0.0,0.0);</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;        <a class="code" href="../../d5/ddd/class_kratos_1_1_node.html">Node</a> work_point(0,0.0,0.0,0.0);</div>
 <div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;        <span class="comment">//if the remove_node switch is activated, we check if the nodes got too close</span></div>
 <div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;        <span class="keywordflow">if</span> (rem_nodes==<span class="keyword">true</span>)</div>
 <div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;        {</div>
@@ -302,7 +302,7 @@ $(function() {
 <div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;            }</div>
 <div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160; </div>
 <div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160; </div>
-<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;            node_erase.Execute();</div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;            node_erase.<a class="code" href="../../df/d88/class_entities_erase_process.html#a79b204b8afb4de1322ba9c4f56cd66a9">Execute</a>();</div>
 <div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160; </div>
 <div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;            <span class="comment">// KRATOS_WATCH(&quot;Number of nodes after erasing&quot;)</span></div>
 <div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;            <span class="comment">//KRATOS_WATCH(ThisModelPart.Nodes().size())</span></div>
@@ -615,8 +615,8 @@ $(function() {
 <div class="line"><a name="l00569"></a><span class="lineno">  569</span>&#160;        <span class="comment">//PointerVector&lt; Element &gt;&amp; neighb</span></div>
 <div class="line"><a name="l00570"></a><span class="lineno">  570</span>&#160; </div>
 <div class="line"><a name="l00571"></a><span class="lineno">  571</span>&#160;        <span class="comment">/*</span></div>
-<div class="line"><a name="l00572"></a><span class="lineno">  572</span>&#160;<span class="comment">        typedef Node&lt;3&gt; PointType;</span></div>
-<div class="line"><a name="l00573"></a><span class="lineno">  573</span>&#160;<span class="comment">        typedef Node&lt;3&gt;::Pointer PointPointerType;</span></div>
+<div class="line"><a name="l00572"></a><span class="lineno">  572</span>&#160;<span class="comment">        typedef Node PointType;</span></div>
+<div class="line"><a name="l00573"></a><span class="lineno">  573</span>&#160;<span class="comment">        typedef Node::Pointer PointPointerType;</span></div>
 <div class="line"><a name="l00574"></a><span class="lineno">  574</span>&#160;<span class="comment">        typedef std::vector&lt;PointType::Pointer&gt;           PointVector;</span></div>
 <div class="line"><a name="l00575"></a><span class="lineno">  575</span>&#160;<span class="comment">        typedef PointVector::iterator PointIterator;</span></div>
 <div class="line"><a name="l00576"></a><span class="lineno">  576</span>&#160;<span class="comment">        typedef std::vector&lt;double&gt;               DistanceVector;</span></div>
@@ -634,7 +634,7 @@ $(function() {
 <div class="line"><a name="l00588"></a><span class="lineno">  588</span>&#160;<span class="comment">        */</span></div>
 <div class="line"><a name="l00589"></a><span class="lineno">  589</span>&#160;        <a class="code" href="../../db/d66/namespace_kratos.html#aa8155351242bcfc8f8b9169ed3260d1c">PointVector</a> list_of_new_nodes;</div>
 <div class="line"><a name="l00590"></a><span class="lineno">  590</span>&#160; </div>
-<div class="line"><a name="l00591"></a><span class="lineno">  591</span>&#160;        <a class="code" href="../../d5/ddd/class_kratos_1_1_node.html#a39ae1d5c6583cc44cdd5749979e58ed7">Node&lt;3&gt;::DofsContainerType</a>&amp; reference_dofs = (ThisModelPart.NodesBegin())-&gt;GetDofs();</div>
+<div class="line"><a name="l00591"></a><span class="lineno">  591</span>&#160;        <a class="code" href="../../d5/ddd/class_kratos_1_1_node.html#ad3f09644217dd785fa39566c72ce3083">Node::DofsContainerType</a>&amp; reference_dofs = (ThisModelPart.NodesBegin())-&gt;GetDofs();</div>
 <div class="line"><a name="l00592"></a><span class="lineno">  592</span>&#160; </div>
 <div class="line"><a name="l00593"></a><span class="lineno">  593</span>&#160;        <span class="keywordtype">int</span> n_points_before_refinement = in2.numberofpoints;</div>
 <div class="line"><a name="l00594"></a><span class="lineno">  594</span>&#160;        <span class="comment">//if the refinement was performed, we need to add it to the model part.</span></div>
@@ -648,7 +648,7 @@ $(function() {
 <div class="line"><a name="l00602"></a><span class="lineno">  602</span>&#160;                <span class="keywordtype">double</span>&amp; y= outnew.pointlist[base+1];</div>
 <div class="line"><a name="l00603"></a><span class="lineno">  603</span>&#160;                <span class="keywordtype">double</span>&amp; <a class="code" href="../../d9/db1/namespace_generate_wind.html#aa0bcf7fb7009dc3ebb885f96b7124197">z</a>= outnew.pointlist[base+2];</div>
 <div class="line"><a name="l00604"></a><span class="lineno">  604</span>&#160; </div>
-<div class="line"><a name="l00605"></a><span class="lineno">  605</span>&#160;                <a class="code" href="../../d5/ddd/class_kratos_1_1_node.html">Node&lt;3&gt;::Pointer</a> pnode = ThisModelPart.CreateNewNode(<span class="keywordtype">id</span>,<a class="code" href="../../d0/d79/namespacesensitivity_matrix.html#a676f7f559f80bd5ebc1bd73cadbef39b">x</a>,y,<a class="code" href="../../d9/db1/namespace_generate_wind.html#aa0bcf7fb7009dc3ebb885f96b7124197">z</a>);</div>
+<div class="line"><a name="l00605"></a><span class="lineno">  605</span>&#160;                Node::Pointer pnode = ThisModelPart.CreateNewNode(<span class="keywordtype">id</span>,<a class="code" href="../../d0/d79/namespacesensitivity_matrix.html#a676f7f559f80bd5ebc1bd73cadbef39b">x</a>,y,<a class="code" href="../../d9/db1/namespace_generate_wind.html#aa0bcf7fb7009dc3ebb885f96b7124197">z</a>);</div>
 <div class="line"><a name="l00606"></a><span class="lineno">  606</span>&#160; </div>
 <div class="line"><a name="l00607"></a><span class="lineno">  607</span>&#160;                <span class="comment">//putting the new node also in an auxiliary list</span></div>
 <div class="line"><a name="l00608"></a><span class="lineno">  608</span>&#160;                <span class="comment">//KRATOS_WATCH(&quot;adding nodes to list&quot;)</span></div>
@@ -656,10 +656,10 @@ $(function() {
 <div class="line"><a name="l00610"></a><span class="lineno">  610</span>&#160; </div>
 <div class="line"><a name="l00611"></a><span class="lineno">  611</span>&#160;                <span class="comment">//std::cout &lt;&lt; &quot;new node id = &quot; &lt;&lt; pnode-&gt;Id() &lt;&lt; std::endl;</span></div>
 <div class="line"><a name="l00612"></a><span class="lineno">  612</span>&#160;                <span class="comment">//generating the dofs</span></div>
-<div class="line"><a name="l00613"></a><span class="lineno">  613</span>&#160;                <span class="keywordflow">for</span>(<a class="code" href="../../d5/ddd/class_kratos_1_1_node.html">Node&lt;3&gt;::DofsContainerType::iterator</a> iii = reference_dofs.<a class="code" href="../../d4/ddc/class_kratos_1_1array__1d.html#ae8323ea08b822f9b79906234e9f1e33d">begin</a>();    iii != reference_dofs.<a class="code" href="../../d4/ddc/class_kratos_1_1array__1d.html#aaef2a89bfb932228a64c24131efb4b8c">end</a>(); iii++)</div>
+<div class="line"><a name="l00613"></a><span class="lineno">  613</span>&#160;                <span class="keywordflow">for</span>(Node::DofsContainerType::iterator iii = reference_dofs.begin();    iii != reference_dofs.end(); iii++)</div>
 <div class="line"><a name="l00614"></a><span class="lineno">  614</span>&#160;                {</div>
-<div class="line"><a name="l00615"></a><span class="lineno">  615</span>&#160;                    <a class="code" href="../../dc/d58/class_kratos_1_1_dof.html">Node&lt;3&gt;::DofType</a> &amp;rDof = **iii;</div>
-<div class="line"><a name="l00616"></a><span class="lineno">  616</span>&#160;                    <a class="code" href="../../dc/d58/class_kratos_1_1_dof.html">Node&lt;3&gt;::DofType::Pointer</a> p_new_dof = pnode-&gt;<a class="code" href="../../d5/ddd/class_kratos_1_1_node.html#a60a4932af60ec2ce1b0c3aecca536795">pAddDof</a>( rDof );</div>
+<div class="line"><a name="l00615"></a><span class="lineno">  615</span>&#160;                    <a class="code" href="../../dc/d58/class_kratos_1_1_dof.html">Node::DofType</a> &amp;rDof = **iii;</div>
+<div class="line"><a name="l00616"></a><span class="lineno">  616</span>&#160;                    <a class="code" href="../../dc/d58/class_kratos_1_1_dof.html">Node::DofType::Pointer</a> p_new_dof = pnode-&gt;pAddDof( rDof );</div>
 <div class="line"><a name="l00617"></a><span class="lineno">  617</span>&#160; </div>
 <div class="line"><a name="l00618"></a><span class="lineno">  618</span>&#160;                    (p_new_dof)-&gt;FreeDof();</div>
 <div class="line"><a name="l00619"></a><span class="lineno">  619</span>&#160;                }</div>
@@ -693,7 +693,7 @@ $(function() {
 <div class="line"><a name="l00647"></a><span class="lineno">  647</span>&#160; </div>
 <div class="line"><a name="l00648"></a><span class="lineno">  648</span>&#160; </div>
 <div class="line"><a name="l00649"></a><span class="lineno">  649</span>&#160;        <span class="comment">//double* work_array;</span></div>
-<div class="line"><a name="l00650"></a><span class="lineno">  650</span>&#160;        <span class="comment">//Node&lt;3&gt; work_point(0,0.0,0.0,0.0);</span></div>
+<div class="line"><a name="l00650"></a><span class="lineno">  650</span>&#160;        <span class="comment">//Node work_point(0,0.0,0.0,0.0);</span></div>
 <div class="line"><a name="l00651"></a><span class="lineno">  651</span>&#160; </div>
 <div class="line"><a name="l00652"></a><span class="lineno">  652</span>&#160; </div>
 <div class="line"><a name="l00653"></a><span class="lineno">  653</span>&#160; </div>
@@ -784,7 +784,7 @@ $(function() {
 <div class="line"><a name="l00738"></a><span class="lineno">  738</span>&#160;                <span class="comment">//if inside interpolate</span></div>
 <div class="line"><a name="l00739"></a><span class="lineno">  739</span>&#160; </div>
 <div class="line"><a name="l00740"></a><span class="lineno">  740</span>&#160; </div>
-<div class="line"><a name="l00741"></a><span class="lineno">  741</span>&#160;                <a class="code" href="../../df/df1/class_kratos_1_1_tetrahedra3_d4.html">Tetrahedra3D4&lt;Node&lt;3&gt;</a> &gt; geom(</div>
+<div class="line"><a name="l00741"></a><span class="lineno">  741</span>&#160;                <a class="code" href="../../df/df1/class_kratos_1_1_tetrahedra3_d4.html">Tetrahedra3D4&lt;Node &gt;</a> geom(</div>
 <div class="line"><a name="l00742"></a><span class="lineno">  742</span>&#160;                    *( (nodes_begin +  in2.tetrahedronlist[base]-1).base()  ),</div>
 <div class="line"><a name="l00743"></a><span class="lineno">  743</span>&#160;                    *( (nodes_begin +  in2.tetrahedronlist[base+1]-1).base()    ),</div>
 <div class="line"><a name="l00744"></a><span class="lineno">  744</span>&#160;                    *( (nodes_begin +  in2.tetrahedronlist[base+2]-1).base()    ),</div>
@@ -855,7 +855,7 @@ $(function() {
 <div class="line"><a name="l00809"></a><span class="lineno">  809</span>&#160; </div>
 <div class="line"><a name="l00810"></a><span class="lineno">  810</span>&#160;            <span class="keywordtype">int</span> <span class="keywordtype">id</span> = iii + 1;</div>
 <div class="line"><a name="l00811"></a><span class="lineno">  811</span>&#160;            <span class="keywordtype">int</span> base = iii * 4;</div>
-<div class="line"><a name="l00812"></a><span class="lineno">  812</span>&#160;            <a class="code" href="../../df/df1/class_kratos_1_1_tetrahedra3_d4.html">Tetrahedra3D4&lt;Node&lt;3&gt;</a> &gt; geom(</div>
+<div class="line"><a name="l00812"></a><span class="lineno">  812</span>&#160;            <a class="code" href="../../df/df1/class_kratos_1_1_tetrahedra3_d4.html">Tetrahedra3D4&lt;Node &gt;</a> geom(</div>
 <div class="line"><a name="l00813"></a><span class="lineno">  813</span>&#160;                *( (nodes_begin +  outnew.tetrahedronlist[base]-1).base()       ),</div>
 <div class="line"><a name="l00814"></a><span class="lineno">  814</span>&#160;                *( (nodes_begin +  outnew.tetrahedronlist[base+1]-1).base()     ),</div>
 <div class="line"><a name="l00815"></a><span class="lineno">  815</span>&#160;                *( (nodes_begin +  outnew.tetrahedronlist[base+2]-1).base()     ),</div>
@@ -893,7 +893,7 @@ $(function() {
 <div class="line"><a name="l00847"></a><span class="lineno">  847</span>&#160;<span class="comment">                for(ModelPart::ElementsContainerType::const_iterator iii = ThisModelPart.ElementsBegin();</span></div>
 <div class="line"><a name="l00848"></a><span class="lineno">  848</span>&#160;<span class="comment">                    iii != ThisModelPart.ElementsEnd(); iii++)</span></div>
 <div class="line"><a name="l00849"></a><span class="lineno">  849</span>&#160;<span class="comment">                {</span></div>
-<div class="line"><a name="l00850"></a><span class="lineno">  850</span>&#160;<span class="comment">                    //Geometry&lt; Node&lt;3&gt; &gt;&amp; geom = iii-&gt;GetGeometry();</span></div>
+<div class="line"><a name="l00850"></a><span class="lineno">  850</span>&#160;<span class="comment">                    //Geometry&lt; Node &gt;&amp; geom = iii-&gt;GetGeometry();</span></div>
 <div class="line"><a name="l00851"></a><span class="lineno">  851</span>&#160;<span class="comment">                    int base = ( iii-&gt;Id() - 1 )*4;</span></div>
 <div class="line"><a name="l00852"></a><span class="lineno">  852</span>&#160;<span class="comment"></span> </div>
 <div class="line"><a name="l00853"></a><span class="lineno">  853</span>&#160;<span class="comment">                    (iii-&gt;GetValue(NEIGHBOUR_ELEMENTS)).resize(4);</span></div>
@@ -974,7 +974,7 @@ $(function() {
 <div class="line"><a name="l00928"></a><span class="lineno">  928</span>&#160;<span class="comment">//          for(ModelPart::ElementsContainerType::const_iterator iii = ThisModelPart.ElementsBegin();</span></div>
 <div class="line"><a name="l00929"></a><span class="lineno">  929</span>&#160;<span class="comment">//              iii != ThisModelPart.ElementsEnd(); iii++)</span></div>
 <div class="line"><a name="l00930"></a><span class="lineno">  930</span>&#160;<span class="comment">//          {</span></div>
-<div class="line"><a name="l00931"></a><span class="lineno">  931</span>&#160;<span class="comment">//              Geometry&lt; Node&lt;3&gt; &gt;&amp; geom = iii-&gt;GetGeometry();</span></div>
+<div class="line"><a name="l00931"></a><span class="lineno">  931</span>&#160;<span class="comment">//              Geometry&lt; Node &gt;&amp; geom = iii-&gt;GetGeometry();</span></div>
 <div class="line"><a name="l00932"></a><span class="lineno">  932</span>&#160;<span class="comment">//              int number_of_structure_nodes = int( geom[0].FastGetSolutionStepValue(IS_STRUCTURE) );</span></div>
 <div class="line"><a name="l00933"></a><span class="lineno">  933</span>&#160;<span class="comment">//              number_of_structure_nodes += int( geom[1].FastGetSolutionStepValue(IS_STRUCTURE) );</span></div>
 <div class="line"><a name="l00934"></a><span class="lineno">  934</span>&#160;<span class="comment">//              number_of_structure_nodes += int( geom[2].FastGetSolutionStepValue(IS_STRUCTURE) );</span></div>
@@ -1076,7 +1076,7 @@ $(function() {
 <div class="line"><a name="l01072"></a><span class="lineno"> 1072</span>&#160;    {</div>
 <div class="line"><a name="l01073"></a><span class="lineno"> 1073</span>&#160;        <a class="code" href="../../df/d67/define_8h.html#ab9c29d6a0d19ff26bbc4e45e3181fb3f">KRATOS_TRY</a></div>
 <div class="line"><a name="l01074"></a><span class="lineno"> 1074</span>&#160; </div>
-<div class="line"><a name="l01075"></a><span class="lineno"> 1075</span>&#160;        <a class="code" href="../../dc/dea/class_kratos_1_1_geometry.html">Geometry&lt;Node&lt;3&gt;</a> &gt;&amp; geom = origin_element-&gt;GetGeometry();</div>
+<div class="line"><a name="l01075"></a><span class="lineno"> 1075</span>&#160;        <a class="code" href="../../dc/dea/class_kratos_1_1_geometry.html">Geometry&lt;Node &gt;</a>&amp; geom = origin_element-&gt;GetGeometry();</div>
 <div class="line"><a name="l01076"></a><span class="lineno"> 1076</span>&#160;        <span class="comment">//mark the nodes as free surface</span></div>
 <div class="line"><a name="l01077"></a><span class="lineno"> 1077</span>&#160;        geom[i1].FastGetSolutionStepValue(IS_BOUNDARY) = 1;</div>
 <div class="line"><a name="l01078"></a><span class="lineno"> 1078</span>&#160;        geom[i2].FastGetSolutionStepValue(IS_BOUNDARY) = 1;</div>
@@ -1088,15 +1088,15 @@ $(function() {
 <div class="line"><a name="l01084"></a><span class="lineno"> 1084</span>&#160;        <a class="code" href="../../db/ddc/namespacerotating__cone.html#ab33bd86f7a31ca0d8e2b3e69609e3476">temp</a>.push_back(geom(i1));</div>
 <div class="line"><a name="l01085"></a><span class="lineno"> 1085</span>&#160;        <a class="code" href="../../db/ddc/namespacerotating__cone.html#ab33bd86f7a31ca0d8e2b3e69609e3476">temp</a>.push_back(geom(i2));</div>
 <div class="line"><a name="l01086"></a><span class="lineno"> 1086</span>&#160;        <a class="code" href="../../db/ddc/namespacerotating__cone.html#ab33bd86f7a31ca0d8e2b3e69609e3476">temp</a>.push_back(geom(i3));</div>
-<div class="line"><a name="l01087"></a><span class="lineno"> 1087</span>&#160;        <a class="code" href="../../dc/dea/class_kratos_1_1_geometry.html">Geometry&lt; Node&lt;3&gt;</a> &gt;::Pointer cond = <a class="code" href="../../dc/dea/class_kratos_1_1_geometry.html">Geometry&lt; Node&lt;3&gt;</a> &gt;::Pointer(<span class="keyword">new</span> <a class="code" href="../../de/d3e/class_kratos_1_1_triangle3_d3.html">Triangle3D3</a>&lt; <a class="code" href="../../d5/ddd/class_kratos_1_1_node.html">Node&lt;3&gt;</a> &gt;(<a class="code" href="../../db/ddc/namespacerotating__cone.html#ab33bd86f7a31ca0d8e2b3e69609e3476">temp</a>) );</div>
-<div class="line"><a name="l01088"></a><span class="lineno"> 1088</span>&#160;        <span class="comment">//Geometry&lt; Node&lt;3&gt; &gt;::Pointer cond = Geometry&lt; Node&lt;3&gt; &gt;::Pointer(new Triangle3D&lt; Node&lt;3&gt; &gt;(temp) );</span></div>
+<div class="line"><a name="l01087"></a><span class="lineno"> 1087</span>&#160;        <a class="code" href="../../dc/dea/class_kratos_1_1_geometry.html">Geometry&lt; Node &gt;::Pointer</a> cond = <a class="code" href="../../dc/dea/class_kratos_1_1_geometry.html">Geometry&lt; Node &gt;::Pointer</a>(<span class="keyword">new</span> <a class="code" href="../../de/d3e/class_kratos_1_1_triangle3_d3.html">Triangle3D3&lt; Node &gt;</a>(<a class="code" href="../../db/ddc/namespacerotating__cone.html#ab33bd86f7a31ca0d8e2b3e69609e3476">temp</a>) );</div>
+<div class="line"><a name="l01088"></a><span class="lineno"> 1088</span>&#160;        <span class="comment">//Geometry&lt; Node &gt;::Pointer cond = Geometry&lt; Node &gt;::Pointer(new Triangle3D&lt; Node &gt;(temp) );</span></div>
 <div class="line"><a name="l01089"></a><span class="lineno"> 1089</span>&#160;        <span class="keywordtype">int</span> <span class="keywordtype">id</span> = (origin_element-&gt;Id()-1)*4;</div>
 <div class="line"><a name="l01090"></a><span class="lineno"> 1090</span>&#160;        <span class="comment">//Condition::Pointer p_cond = Condition::Pointer(new Condition(id, cond, properties) );</span></div>
 <div class="line"><a name="l01091"></a><span class="lineno"> 1091</span>&#160;        <span class="comment">//Condition::Pointer p_cond = rReferenceBoundaryCondition::Pointer(new Condition(id, cond, properties) );</span></div>
 <div class="line"><a name="l01092"></a><span class="lineno"> 1092</span>&#160;        Condition::Pointer p_cond = rReferenceBoundaryCondition.<a class="code" href="../../d1/d6e/class_kratos_1_1_condition.html#a0c821c1542b62403c675b4dd16cc74c9">Create</a>(<span class="keywordtype">id</span>, <a class="code" href="../../db/ddc/namespacerotating__cone.html#ab33bd86f7a31ca0d8e2b3e69609e3476">temp</a>, properties);</div>
 <div class="line"><a name="l01093"></a><span class="lineno"> 1093</span>&#160;        <span class="comment">//assigning the neighbour node</span></div>
 <div class="line"><a name="l01094"></a><span class="lineno"> 1094</span>&#160;        (p_cond-&gt;GetValue(NEIGHBOUR_NODES)).clear();</div>
-<div class="line"><a name="l01095"></a><span class="lineno"> 1095</span>&#160;        (p_cond-&gt;GetValue(NEIGHBOUR_NODES)).push_back( <a class="code" href="../../d5/ddd/class_kratos_1_1_node.html">Node&lt;3&gt;::WeakPointer</a>( geom(outer_node_id) ) );</div>
+<div class="line"><a name="l01095"></a><span class="lineno"> 1095</span>&#160;        (p_cond-&gt;GetValue(NEIGHBOUR_NODES)).push_back( Node::WeakPointer( geom(outer_node_id) ) );</div>
 <div class="line"><a name="l01096"></a><span class="lineno"> 1096</span>&#160;        (p_cond-&gt;GetValue(NEIGHBOUR_ELEMENTS)).clear();</div>
 <div class="line"><a name="l01097"></a><span class="lineno"> 1097</span>&#160;        (p_cond-&gt;GetValue(NEIGHBOUR_ELEMENTS)).push_back( Element::WeakPointer( origin_element ) );</div>
 <div class="line"><a name="l01098"></a><span class="lineno"> 1098</span>&#160;        ThisModelPart.Conditions().push_back(p_cond);</div>
@@ -1104,9 +1104,9 @@ $(function() {
 <div class="line"><a name="l01100"></a><span class="lineno"> 1100</span>&#160; </div>
 <div class="line"><a name="l01101"></a><span class="lineno"> 1101</span>&#160;    }</div>
 <div class="line"><a name="l01102"></a><span class="lineno"> 1102</span>&#160; </div>
-<div class="line"><a name="l01105"></a><span class="lineno"> 1105</span>&#160;    <span class="keywordtype">void</span> Interpolate( Tetrahedra3D4&lt;Node&lt;3&gt; &gt;&amp; geom, <span class="keyword">const</span> array_1d&lt;double,4&gt;&amp; <a class="code" href="../../df/d42/mmio_8h.html#a3f620e88ba511ca5d32c93b84802ff6e">N</a>,</div>
+<div class="line"><a name="l01105"></a><span class="lineno"> 1105</span>&#160;    <span class="keywordtype">void</span> Interpolate( Tetrahedra3D4&lt;Node &gt;&amp; geom, <span class="keyword">const</span> array_1d&lt;double,4&gt;&amp; <a class="code" href="../../df/d42/mmio_8h.html#a3f620e88ba511ca5d32c93b84802ff6e">N</a>,</div>
 <div class="line"><a name="l01106"></a><span class="lineno"> 1106</span>&#160;                      <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> step_data_size,</div>
-<div class="line"><a name="l01107"></a><span class="lineno"> 1107</span>&#160;                      Node&lt;3&gt;::Pointer pnode, <span class="keywordtype">int</span> tet_attr)</div>
+<div class="line"><a name="l01107"></a><span class="lineno"> 1107</span>&#160;                      Node::Pointer pnode, <span class="keywordtype">int</span> tet_attr)</div>
 <div class="line"><a name="l01108"></a><span class="lineno"> 1108</span>&#160;    {</div>
 <div class="line"><a name="l01109"></a><span class="lineno"> 1109</span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> buffer_size = pnode-&gt;GetBufferSize();</div>
 <div class="line"><a name="l01110"></a><span class="lineno"> 1110</span>&#160; </div>
@@ -1499,7 +1499,7 @@ $(function() {
 <div class="line"><a name="l01505"></a><span class="lineno"> 1505</span>&#160;        <span class="keywordflow">for</span>(ModelPart::ElementsContainerType::iterator elem = rElements.begin();</div>
 <div class="line"><a name="l01506"></a><span class="lineno"> 1506</span>&#160;                elem!=rElements.end(); elem++)</div>
 <div class="line"><a name="l01507"></a><span class="lineno"> 1507</span>&#160;        {</div>
-<div class="line"><a name="l01508"></a><span class="lineno"> 1508</span>&#160;            Geometry&lt; Node&lt;3&gt; &gt;&amp; geom = elem-&gt;GetGeometry();</div>
+<div class="line"><a name="l01508"></a><span class="lineno"> 1508</span>&#160;            Geometry&lt; Node &gt;&amp; geom = elem-&gt;GetGeometry();</div>
 <div class="line"><a name="l01509"></a><span class="lineno"> 1509</span>&#160; </div>
 <div class="line"><a name="l01510"></a><span class="lineno"> 1510</span>&#160; </div>
 <div class="line"><a name="l01511"></a><span class="lineno"> 1511</span>&#160;            <span class="comment">//one segment is detected</span></div>
@@ -1518,7 +1518,7 @@ $(function() {
 <div class="line"><a name="l01524"></a><span class="lineno"> 1524</span>&#160; </div>
 <div class="line"><a name="l01525"></a><span class="lineno"> 1525</span>&#160;            <span class="keywordflow">if</span>(elem-&gt;GetValue(IS_WATER_ELEMENT) == 1.0)</div>
 <div class="line"><a name="l01526"></a><span class="lineno"> 1526</span>&#160;            {</div>
-<div class="line"><a name="l01527"></a><span class="lineno"> 1527</span>&#160;                Geometry&lt; Node&lt;3&gt; &gt;&amp; geom = elem-&gt;GetGeometry();</div>
+<div class="line"><a name="l01527"></a><span class="lineno"> 1527</span>&#160;                Geometry&lt; Node &gt;&amp; geom = elem-&gt;GetGeometry();</div>
 <div class="line"><a name="l01528"></a><span class="lineno"> 1528</span>&#160;                array_1d&lt;int,3&gt; str_pts = <a class="code" href="../../db/d66/namespace_kratos.html#a0060702fbd6c7d45c773436101c9ded3">ZeroVector</a>(3);</div>
 <div class="line"><a name="l01529"></a><span class="lineno"> 1529</span>&#160;<span class="comment">//                                int str_num = 0;</span></div>
 <div class="line"><a name="l01530"></a><span class="lineno"> 1530</span>&#160;<span class="comment">//                                int cnt = 0;</span></div>
@@ -1599,7 +1599,7 @@ $(function() {
 <div class="line"><a name="l01605"></a><span class="lineno"> 1605</span>&#160;        <span class="keywordflow">for</span>(ModelPart::ElementsContainerType::iterator elem = rElements.begin();</div>
 <div class="line"><a name="l01606"></a><span class="lineno"> 1606</span>&#160;                elem!=rElements.end(); elem++)</div>
 <div class="line"><a name="l01607"></a><span class="lineno"> 1607</span>&#160;        {</div>
-<div class="line"><a name="l01608"></a><span class="lineno"> 1608</span>&#160;            Geometry&lt; Node&lt;3&gt; &gt;&amp; geom = elem-&gt;GetGeometry();</div>
+<div class="line"><a name="l01608"></a><span class="lineno"> 1608</span>&#160;            Geometry&lt; Node &gt;&amp; geom = elem-&gt;GetGeometry();</div>
 <div class="line"><a name="l01609"></a><span class="lineno"> 1609</span>&#160; </div>
 <div class="line"><a name="l01610"></a><span class="lineno"> 1610</span>&#160;            shell_nodes.push_back(geom(0));</div>
 <div class="line"><a name="l01611"></a><span class="lineno"> 1611</span>&#160;            shell_nodes.push_back(geom(1));</div>
@@ -1617,7 +1617,7 @@ $(function() {
 <div class="line"><a name="l01623"></a><span class="lineno"> 1623</span>&#160;                elem!=rElements.end(); elem++)</div>
 <div class="line"><a name="l01624"></a><span class="lineno"> 1624</span>&#160;        {</div>
 <div class="line"><a name="l01625"></a><span class="lineno"> 1625</span>&#160;            ++shell_num;</div>
-<div class="line"><a name="l01626"></a><span class="lineno"> 1626</span>&#160;            Geometry&lt; Node&lt;3&gt; &gt;&amp; geom = elem-&gt;GetGeometry();</div>
+<div class="line"><a name="l01626"></a><span class="lineno"> 1626</span>&#160;            Geometry&lt; Node &gt;&amp; geom = elem-&gt;GetGeometry();</div>
 <div class="line"><a name="l01627"></a><span class="lineno"> 1627</span>&#160;            shell_list.push_back(geom[0].Id());</div>
 <div class="line"><a name="l01628"></a><span class="lineno"> 1628</span>&#160;            shell_list.push_back(geom[1].Id());</div>
 <div class="line"><a name="l01629"></a><span class="lineno"> 1629</span>&#160;            shell_list.push_back(geom[2].Id());</div>
@@ -1738,6 +1738,7 @@ $(function() {
 <div class="line"><a name="l01764"></a><span class="lineno"> 1764</span>&#160; </div>
 <div class="line"><a name="l01765"></a><span class="lineno"> 1765</span>&#160; </div>
 <div class="ttc" id="aclass_entities_erase_process_html"><div class="ttname"><a href="../../df/d88/class_entities_erase_process.html">EntitiesEraseProcess</a></div><div class="ttdoc">This process removes the entities from a model part with the flag TO_ERASE.</div><div class="ttdef"><b>Definition:</b> entity_erase_process.h:54</div></div>
+<div class="ttc" id="aclass_entities_erase_process_html_a79b204b8afb4de1322ba9c4f56cd66a9"><div class="ttname"><a href="../../df/d88/class_entities_erase_process.html#a79b204b8afb4de1322ba9c4f56cd66a9">EntitiesEraseProcess::Execute</a></div><div class="ttdeci">void Execute()</div><div class="ttdef"><b>Definition:</b> entity_erase_process.cpp:72</div></div>
 <div class="ttc" id="aclass_kratos_1_1_bins_html"><div class="ttname"><a href="../../dc/d3a/class_kratos_1_1_bins.html">Kratos::Bins</a></div><div class="ttdef"><b>Definition:</b> bins_static.h:35</div></div>
 <div class="ttc" id="aclass_kratos_1_1_condition_html"><div class="ttname"><a href="../../d1/d6e/class_kratos_1_1_condition.html">Kratos::Condition</a></div><div class="ttdoc">Base class for all Conditions.</div><div class="ttdef"><b>Definition:</b> condition.h:59</div></div>
 <div class="ttc" id="aclass_kratos_1_1_condition_html_a0c821c1542b62403c675b4dd16cc74c9"><div class="ttname"><a href="../../d1/d6e/class_kratos_1_1_condition.html#a0c821c1542b62403c675b4dd16cc74c9">Kratos::Condition::Create</a></div><div class="ttdeci">virtual Pointer Create(IndexType NewId, NodesArrayType const &amp;ThisNodes, PropertiesType::Pointer pProperties) const</div><div class="ttdoc">It creates a new condition pointer.</div><div class="ttdef"><b>Definition:</b> condition.h:205</div></div>
@@ -1747,9 +1748,8 @@ $(function() {
 <div class="ttc" id="aclass_kratos_1_1_geometry_html"><div class="ttname"><a href="../../dc/dea/class_kratos_1_1_geometry.html">Kratos::Geometry</a></div><div class="ttdoc">Geometry base class.</div><div class="ttdef"><b>Definition:</b> geometry.h:71</div></div>
 <div class="ttc" id="aclass_kratos_1_1_kratos_zero_matrix_html"><div class="ttname"><a href="../../db/d87/class_kratos_1_1_kratos_zero_matrix.html">Kratos::KratosZeroMatrix</a></div><div class="ttdef"><b>Definition:</b> amatrix_interface.h:497</div></div>
 <div class="ttc" id="aclass_kratos_1_1_kratos_zero_vector_html"><div class="ttname"><a href="../../d0/d6a/class_kratos_1_1_kratos_zero_vector.html">Kratos::KratosZeroVector</a></div><div class="ttdef"><b>Definition:</b> amatrix_interface.h:530</div></div>
-<div class="ttc" id="aclass_kratos_1_1_node_html"><div class="ttname"><a href="../../d5/ddd/class_kratos_1_1_node.html">Kratos::Node</a></div><div class="ttdoc">This class defines the node.</div><div class="ttdef"><b>Definition:</b> node.h:68</div></div>
-<div class="ttc" id="aclass_kratos_1_1_node_html_a39ae1d5c6583cc44cdd5749979e58ed7"><div class="ttname"><a href="../../d5/ddd/class_kratos_1_1_node.html#a39ae1d5c6583cc44cdd5749979e58ed7">Kratos::Node::DofsContainerType</a></div><div class="ttdeci">std::vector&lt; std::unique_ptr&lt; TDofType &gt; &gt; DofsContainerType</div><div class="ttdef"><b>Definition:</b> node.h:91</div></div>
-<div class="ttc" id="aclass_kratos_1_1_node_html_a60a4932af60ec2ce1b0c3aecca536795"><div class="ttname"><a href="../../d5/ddd/class_kratos_1_1_node.html#a60a4932af60ec2ce1b0c3aecca536795">Kratos::Node::pAddDof</a></div><div class="ttdeci">DofType::Pointer pAddDof(TVariableType const &amp;rDofVariable)</div><div class="ttdef"><b>Definition:</b> node.h:786</div></div>
+<div class="ttc" id="aclass_kratos_1_1_node_html"><div class="ttname"><a href="../../d5/ddd/class_kratos_1_1_node.html">Kratos::Node</a></div><div class="ttdoc">This class defines the node.</div><div class="ttdef"><b>Definition:</b> node.h:67</div></div>
+<div class="ttc" id="aclass_kratos_1_1_node_html_ad3f09644217dd785fa39566c72ce3083"><div class="ttname"><a href="../../d5/ddd/class_kratos_1_1_node.html#ad3f09644217dd785fa39566c72ce3083">Kratos::Node::DofsContainerType</a></div><div class="ttdeci">std::vector&lt; std::unique_ptr&lt; Dof&lt; double &gt; &gt;&gt; DofsContainerType</div><div class="ttdoc">The DoF container type definition.</div><div class="ttdef"><b>Definition:</b> node.h:94</div></div>
 <div class="ttc" id="aclass_kratos_1_1_point_html_a8cce3ed26cea2cbd14c71f8f1c85aa60"><div class="ttname"><a href="../../d3/d3f/class_kratos_1_1_point.html#a8cce3ed26cea2cbd14c71f8f1c85aa60">Kratos::Point::Y</a></div><div class="ttdeci">double Y() const</div><div class="ttdef"><b>Definition:</b> point.h:187</div></div>
 <div class="ttc" id="aclass_kratos_1_1_point_html_adb36ae5ffe567fb88b0aee7ee087c757"><div class="ttname"><a href="../../d3/d3f/class_kratos_1_1_point.html#adb36ae5ffe567fb88b0aee7ee087c757">Kratos::Point::Z</a></div><div class="ttdeci">double Z() const</div><div class="ttdef"><b>Definition:</b> point.h:193</div></div>
 <div class="ttc" id="aclass_kratos_1_1_point_html_aff0c4821bd73c97a33baf22ce14c0f55"><div class="ttname"><a href="../../d3/d3f/class_kratos_1_1_point.html#aff0c4821bd73c97a33baf22ce14c0f55">Kratos::Point::X</a></div><div class="ttdeci">double X() const</div><div class="ttdef"><b>Definition:</b> point.h:181</div></div>
@@ -1757,7 +1757,7 @@ $(function() {
 <div class="ttc" id="aclass_kratos_1_1_tet_gen_pfem_refine_face_html"><div class="ttname"><a href="../../d5/d0b/class_kratos_1_1_tet_gen_pfem_refine_face.html">Kratos::TetGenPfemRefineFace</a></div><div class="ttdoc">Short class definition.</div><div class="ttdef"><b>Definition:</b> tetgen_pfem_refine_face.h:66</div></div>
 <div class="ttc" id="aclass_kratos_1_1_tet_gen_pfem_refine_face_html_a07c408eb6e54ad6245ca27d20b9ed5fd"><div class="ttname"><a href="../../d5/d0b/class_kratos_1_1_tet_gen_pfem_refine_face.html#a07c408eb6e54ad6245ca27d20b9ed5fd">Kratos::TetGenPfemRefineFace::TetGenPfemRefineFace</a></div><div class="ttdeci">TetGenPfemRefineFace()</div><div class="ttdoc">Default constructor.</div><div class="ttdef"><b>Definition:</b> tetgen_pfem_refine_face.h:79</div></div>
 <div class="ttc" id="aclass_kratos_1_1_tet_gen_pfem_refine_face_html_a25acc9434519c8e27579772b9ec845da"><div class="ttname"><a href="../../d5/d0b/class_kratos_1_1_tet_gen_pfem_refine_face.html#a25acc9434519c8e27579772b9ec845da">Kratos::TetGenPfemRefineFace::PrintData</a></div><div class="ttdeci">virtual void PrintData(std::ostream &amp;rOStream) const</div><div class="ttdoc">Print object's data.</div><div class="ttdef"><b>Definition:</b> tetgen_pfem_refine_face.h:1010</div></div>
-<div class="ttc" id="aclass_kratos_1_1_tet_gen_pfem_refine_face_html_a333c1c0a8258ac83eef42b63c0d6efb7"><div class="ttname"><a href="../../d5/d0b/class_kratos_1_1_tet_gen_pfem_refine_face.html#a333c1c0a8258ac83eef42b63c0d6efb7">Kratos::TetGenPfemRefineFace::ReGenerateMesh</a></div><div class="ttdeci">void ReGenerateMesh(ModelPart &amp;ThisModelPart, ModelPart::ElementsContainerType &amp;rElements, Element const &amp;rReferenceElement, Condition const &amp;rReferenceBoundaryCondition, EntitiesEraseProcess&lt; Node&lt; 3 &gt;&gt; &amp;node_erase, bool rem_nodes=true, bool add_nodes=true, double alpha_param=1.4, double h_factor=0.5)</div><div class="ttdef"><b>Definition:</b> tetgen_pfem_refine_face.h:101</div></div>
+<div class="ttc" id="aclass_kratos_1_1_tet_gen_pfem_refine_face_html_a804f73d727a0750ee63497f55d682999"><div class="ttname"><a href="../../d5/d0b/class_kratos_1_1_tet_gen_pfem_refine_face.html#a804f73d727a0750ee63497f55d682999">Kratos::TetGenPfemRefineFace::ReGenerateMesh</a></div><div class="ttdeci">void ReGenerateMesh(ModelPart &amp;ThisModelPart, ModelPart::ElementsContainerType &amp;rElements, Element const &amp;rReferenceElement, Condition const &amp;rReferenceBoundaryCondition, EntitiesEraseProcess&lt; Node &gt; &amp;node_erase, bool rem_nodes=true, bool add_nodes=true, double alpha_param=1.4, double h_factor=0.5)</div><div class="ttdef"><b>Definition:</b> tetgen_pfem_refine_face.h:101</div></div>
 <div class="ttc" id="aclass_kratos_1_1_tet_gen_pfem_refine_face_html_a889d20d8b165bc835701ef7f751d1288"><div class="ttname"><a href="../../d5/d0b/class_kratos_1_1_tet_gen_pfem_refine_face.html#a889d20d8b165bc835701ef7f751d1288">Kratos::TetGenPfemRefineFace::Info</a></div><div class="ttdeci">virtual std::string Info() const</div><div class="ttdoc">Turn back information as a string.</div><div class="ttdef"><b>Definition:</b> tetgen_pfem_refine_face.h:1001</div></div>
 <div class="ttc" id="aclass_kratos_1_1_tet_gen_pfem_refine_face_html_a937668ff0876fd0cec36d770fa30456e"><div class="ttname"><a href="../../d5/d0b/class_kratos_1_1_tet_gen_pfem_refine_face.html#a937668ff0876fd0cec36d770fa30456e">Kratos::TetGenPfemRefineFace::KRATOS_CLASS_POINTER_DEFINITION</a></div><div class="ttdeci">KRATOS_CLASS_POINTER_DEFINITION(TetGenPfemRefineFace)</div><div class="ttdoc">Pointer definition of TetGenPfemRefineFace.</div></div>
 <div class="ttc" id="aclass_kratos_1_1_tet_gen_pfem_refine_face_html_aa10b29131319b22758b4046190d21a9d"><div class="ttname"><a href="../../d5/d0b/class_kratos_1_1_tet_gen_pfem_refine_face.html#aa10b29131319b22758b4046190d21a9d">Kratos::TetGenPfemRefineFace::~TetGenPfemRefineFace</a></div><div class="ttdeci">virtual ~TetGenPfemRefineFace()=default</div><div class="ttdoc">Destructor.</div></div>
@@ -1766,8 +1766,6 @@ $(function() {
 <div class="ttc" id="aclass_kratos_1_1_tree_html"><div class="ttname"><a href="../../d8/d13/class_kratos_1_1_tree.html">Kratos::Tree</a></div><div class="ttdoc">Short class definition.</div><div class="ttdef"><b>Definition:</b> tree.h:169</div></div>
 <div class="ttc" id="aclass_kratos_1_1_triangle3_d3_html"><div class="ttname"><a href="../../de/d3e/class_kratos_1_1_triangle3_d3.html">Kratos::Triangle3D3</a></div><div class="ttdoc">A three node 3D triangle geometry with linear shape functions.</div><div class="ttdef"><b>Definition:</b> triangle_3d_3.h:77</div></div>
 <div class="ttc" id="aclass_kratos_1_1array__1d_html"><div class="ttname"><a href="../../d4/ddc/class_kratos_1_1array__1d.html">Kratos::array_1d&lt; double, 3 &gt;</a></div></div>
-<div class="ttc" id="aclass_kratos_1_1array__1d_html_aaef2a89bfb932228a64c24131efb4b8c"><div class="ttname"><a href="../../d4/ddc/class_kratos_1_1array__1d.html#aaef2a89bfb932228a64c24131efb4b8c">Kratos::array_1d::end</a></div><div class="ttdeci">BOOST_UBLAS_INLINE const_iterator end() const</div><div class="ttdef"><b>Definition:</b> array_1d.h:602</div></div>
-<div class="ttc" id="aclass_kratos_1_1array__1d_html_ae8323ea08b822f9b79906234e9f1e33d"><div class="ttname"><a href="../../d4/ddc/class_kratos_1_1array__1d.html#ae8323ea08b822f9b79906234e9f1e33d">Kratos::array_1d::begin</a></div><div class="ttdeci">BOOST_UBLAS_INLINE const_iterator begin() const</div><div class="ttdef"><b>Definition:</b> array_1d.h:597</div></div>
 <div class="ttc" id="aclass_model_part_html"><div class="ttname"><a href="../../d4/d5e/class_model_part.html">ModelPart</a></div><div class="ttdoc">This class aims to manage meshes for multi-physics simulations.</div><div class="ttdef"><b>Definition:</b> model_part.h:66</div></div>
 <div class="ttc" id="adefine_8h_html"><div class="ttname"><a href="../../df/d67/define_8h.html">define.h</a></div></div>
 <div class="ttc" id="adefine_8h_html_a0bc8ca20163d926dc5090cf16a6adc06"><div class="ttname"><a href="../../df/d67/define_8h.html#a0bc8ca20163d926dc5090cf16a6adc06">KRATOS_THROW_ERROR</a></div><div class="ttdeci">#define KRATOS_THROW_ERROR(ExceptionType, ErrorMessage, MoreInfo)</div><div class="ttdef"><b>Definition:</b> define.h:75</div></div>
@@ -1822,7 +1820,7 @@ $(function() {
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri May 12 2023 02:03:25 for KratosMultiphysics by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Sat May 13 2023 02:03:47 for KratosMultiphysics by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

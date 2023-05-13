@@ -133,7 +133,7 @@ $(function() {
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160; </div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;      <span class="keywordflow">for</span> (<span class="keywordtype">int</span> <a class="code" href="../../d2/db8/namespacetensors.html#a15a1da80aa773e2015eba781cababe05">i</a> = 0; <a class="code" href="../../d2/db8/namespacetensors.html#a15a1da80aa773e2015eba781cababe05">i</a> &lt; n_dem_elements; <a class="code" href="../../d2/db8/namespacetensors.html#a15a1da80aa773e2015eba781cababe05">i</a>++){</div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;          <a class="code" href="../../de/d76/class_kratos_1_1_embedded_volume_tool.html#a3359275c54e6ea4f2401df4f80b8f410">ElementIteratorType</a> ielem = rfluid_model_part.ElementsBegin() + <a class="code" href="../../d2/db8/namespacetensors.html#a15a1da80aa773e2015eba781cababe05">i</a>;</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;          <a class="code" href="../../dc/dea/class_kratos_1_1_geometry.html">Geometry&lt; Node&lt;3&gt;</a> &gt;&amp; geom = ielem-&gt;GetGeometry();</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;          <a class="code" href="../../dc/dea/class_kratos_1_1_geometry.html">Geometry&lt; Node &gt;</a>&amp; geom = ielem-&gt;GetGeometry();</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;          <a class="code" href="../../d4/ddc/class_kratos_1_1array__1d.html">array_1d&lt;double, 4&gt;</a> distances;</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;          <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> n_negatives = 0;</div>
@@ -247,7 +247,7 @@ $(function() {
 <div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;    <span class="comment">//***************************************************************************************************************</span></div>
 <div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;    <span class="comment">//***************************************************************************************************************</span></div>
 <div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160; </div>
-<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">double</span> CalculateVol(<a class="code" href="../../dc/dea/class_kratos_1_1_geometry.html">Geometry</a>&lt;<a class="code" href="../../d5/ddd/class_kratos_1_1_node.html">Node&lt;3&gt;</a> &gt;&amp;geom)</div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">double</span> CalculateVol(<a class="code" href="../../dc/dea/class_kratos_1_1_geometry.html">Geometry&lt;Node &gt;</a>&amp;geom)</div>
 <div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;    {</div>
 <div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;      <span class="keywordflow">return</span> CalculateVol(geom[0].X(), geom[0].Y(), geom[0].Z(),</div>
 <div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;                          geom[1].X(), geom[1].Y(), geom[1].Z(),</div>
@@ -296,7 +296,7 @@ $(function() {
 <div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;    <span class="comment">//***************************************************************************************************************</span></div>
 <div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160; </div>
 <div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">double</span> CalculatePyramidVolume(<span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="../../d7/d2b/namespacequadrature.html#aae897447319c4634b1dcef7634fe5876">j</a>, <span class="comment">// tip of the pyramid</span></div>
-<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;                                         <span class="keyword">const</span> Geometry&lt;Node&lt;3&gt; &gt;&amp;geom,</div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;                                         <span class="keyword">const</span> Geometry&lt;Node &gt;&amp;geom,</div>
 <div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;                                         <span class="keyword">const</span> array_1d&lt;double, 4&gt;&amp; signed_dist) <span class="comment">// nodal signed distances</span></div>
 <div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;    {</div>
 <div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;      array_1d&lt;array_1d&lt;double, 3&gt;, 4 &gt; coor; <span class="comment">// coordinates of the pyramid vertices</span></div>
@@ -334,7 +334,7 @@ $(function() {
 <div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160; </div>
 <div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">double</span> CalculateHexahedronVolume(<span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="../../d7/d2b/namespacequadrature.html#aae897447319c4634b1dcef7634fe5876">j</a>, <span class="comment">// first node included in the volume</span></div>
 <div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;                                            <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="../../d7/d2b/namespacequadrature.html#a56123f01f0d1e776d9a6d85aa0f27caa">k</a>, <span class="comment">// second node included in the volume</span></div>
-<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;                                            <span class="keyword">const</span> Geometry&lt;Node&lt;3&gt; &gt;&amp;geom,</div>
+<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;                                            <span class="keyword">const</span> Geometry&lt;Node &gt;&amp;geom,</div>
 <div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;                                            <span class="keyword">const</span> array_1d&lt;double, 4&gt;&amp; signed_dist) <span class="comment">// nodal signed distances</span></div>
 <div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;    {</div>
 <div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;      array_1d&lt;array_1d&lt;double, 3&gt;, 4 &gt; coor; <span class="comment">// coordinates of the intersections</span></div>
@@ -436,7 +436,6 @@ $(function() {
 <div class="ttc" id="aclass_kratos_1_1_embedded_volume_tool_html_adc7c259eb0f7b7f4eede97bc0b8cd316"><div class="ttname"><a href="../../de/d76/class_kratos_1_1_embedded_volume_tool.html#adc7c259eb0f7b7f4eede97bc0b8cd316">Kratos::EmbeddedVolumeTool::ListIndexType</a></div><div class="ttdeci">std::size_t ListIndexType</div><div class="ttdef"><b>Definition:</b> embedded_volume_tool.h:56</div></div>
 <div class="ttc" id="aclass_kratos_1_1_embedded_volume_tool_html_ae7060c4748ce0109b3e005e83c1aad99"><div class="ttname"><a href="../../de/d76/class_kratos_1_1_embedded_volume_tool.html#ae7060c4748ce0109b3e005e83c1aad99">Kratos::EmbeddedVolumeTool::KRATOS_CLASS_POINTER_DEFINITION</a></div><div class="ttdeci">KRATOS_CLASS_POINTER_DEFINITION(EmbeddedVolumeTool&lt; TDim &gt;)</div><div class="ttdoc">Pointer definition of EmbeddedVolumeTool.</div></div>
 <div class="ttc" id="aclass_kratos_1_1_geometry_html"><div class="ttname"><a href="../../dc/dea/class_kratos_1_1_geometry.html">Kratos::Geometry</a></div><div class="ttdoc">Geometry base class.</div><div class="ttdef"><b>Definition:</b> geometry.h:71</div></div>
-<div class="ttc" id="aclass_kratos_1_1_node_html"><div class="ttname"><a href="../../d5/ddd/class_kratos_1_1_node.html">Kratos::Node</a></div><div class="ttdoc">This class defines the node.</div><div class="ttdef"><b>Definition:</b> node.h:68</div></div>
 <div class="ttc" id="aclass_kratos_1_1array__1d_html"><div class="ttname"><a href="../../d4/ddc/class_kratos_1_1array__1d.html">Kratos::array_1d&lt; double, 4 &gt;</a></div></div>
 <div class="ttc" id="aclass_model_part_html"><div class="ttname"><a href="../../d4/d5e/class_model_part.html">ModelPart</a></div><div class="ttdoc">This class aims to manage meshes for multi-physics simulations.</div><div class="ttdef"><b>Definition:</b> model_part.h:66</div></div>
 <div class="ttc" id="amodel__part_8h_html"><div class="ttname"><a href="../../dd/dfe/model__part_8h.html">model_part.h</a></div></div>
@@ -452,7 +451,7 @@ $(function() {
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri May 12 2023 02:05:33 for KratosMultiphysics by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Sat May 13 2023 02:05:55 for KratosMultiphysics by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

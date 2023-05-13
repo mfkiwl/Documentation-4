@@ -138,7 +138,7 @@ $(function() {
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="keyword">typedef</span> <a class="code" href="../../db/d66/namespace_kratos.html#a14ab8160ba3f8291244835400249c09d">ModelPart::NodesContainerType</a>                         <a class="code" href="../../db/d66/namespace_kratos.html#a8cc375c875cc5176998d59a7d3ea4803">NodesArrayType</a>;</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="keyword">typedef</span> <a class="code" href="../../d6/d3f/transfer__utility_8h.html#ad745855cfa0bc32dd5bb6b62cf53c55d">NodesArrayType::ContainerType</a>                         ResultNodesContainerType;</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="keyword">typedef</span> std::vector&lt;ResultNodesContainerType&gt;                 VectorResultNodesContainerType;</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="keyword">typedef</span> std::vector&lt;Node&lt;3&gt;::Pointer&gt;                         NodalPointersContainerType;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="keyword">typedef</span> std::vector&lt;Node::Pointer&gt;                         NodalPointersContainerType;</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="keyword">typedef</span> ModelPart::NodesContainerType::iterator               <a class="code" href="../../db/d66/namespace_kratos.html#a0ab45c528360c2d41b331bc19a9f0f3e">NodeIteratorType</a>;</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160; </div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="keyword">typedef</span> std::size_t                                           ListIndexType;</div>
@@ -306,15 +306,15 @@ $(function() {
 <div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160; </div>
 <div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;<span class="keywordtype">void</span> SetNeighboursAndWeights(<a class="code" href="../../d4/d5e/class_model_part.html">ModelPart</a>&amp; r_model_part);</div>
 <div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;<span class="keywordtype">void</span> SetNeighboursAndWeightsForTheLaplacian(<a class="code" href="../../d4/d5e/class_model_part.html">ModelPart</a>&amp; r_model_part);</div>
-<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;<span class="keywordtype">void</span> OrderByDistance(Node&lt;3&gt;::Pointer &amp;p_node, GlobalPointersVector&lt;Node&lt;3&gt; &gt;&amp; neigh_nodes);</div>
-<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;<span class="keywordtype">bool</span> SetInitialNeighboursAndWeights(<a class="code" href="../../d4/d5e/class_model_part.html">ModelPart</a>&amp; r_model_part, Node&lt;3&gt;::Pointer &amp;p_node);</div>
-<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;<span class="keywordtype">bool</span> SetNeighboursAndWeights(<a class="code" href="../../d4/d5e/class_model_part.html">ModelPart</a>&amp; r_model_part, Node&lt;3&gt;::Pointer&amp; p_node);</div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;<span class="keywordtype">void</span> OrderByDistance(Node::Pointer &amp;p_node, GlobalPointersVector&lt;Node &gt;&amp; neigh_nodes);</div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;<span class="keywordtype">bool</span> SetInitialNeighboursAndWeights(<a class="code" href="../../d4/d5e/class_model_part.html">ModelPart</a>&amp; r_model_part, Node::Pointer &amp;p_node);</div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;<span class="keywordtype">bool</span> SetNeighboursAndWeights(<a class="code" href="../../d4/d5e/class_model_part.html">ModelPart</a>&amp; r_model_part, Node::Pointer&amp; p_node);</div>
 <div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;<span class="keywordtype">double</span> SecondDegreeTestPolynomial(<span class="keyword">const</span> array_1d &lt;double, 3&gt;&amp; coordinates);</div>
 <div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;<span class="keywordtype">double</span> SecondDegreeGenericPolynomial(DenseMatrix&lt;double&gt; <a class="code" href="../../d3/da3/namespacegenerate__hyper__elastic__simo__taylor__neo__hookean.html#ab45a4283c7c6241bac04288dfdfbc7ff">C</a>, <span class="keyword">const</span> array_1d &lt;double, 3&gt;&amp; coordinates);</div>
 <div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;<span class="keyword">inline</span> <span class="keywordtype">int</span> Factorial(<span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="../../d2/df2/namespaceode__solve.html#af41b115f7d3a8f9529eb671ad53e1d25">n</a>);</div>
-<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;<span class="keywordtype">bool</span> SetWeightsAndRunLeastSquaresTest(<a class="code" href="../../d4/d5e/class_model_part.html">ModelPart</a>&amp; r_model_part, Node&lt;3&gt;::Pointer&amp; p_node);</div>
+<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;<span class="keywordtype">bool</span> SetWeightsAndRunLeastSquaresTest(<a class="code" href="../../d4/d5e/class_model_part.html">ModelPart</a>&amp; r_model_part, Node::Pointer&amp; p_node);</div>
 <div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> GetNumberOfUniqueNeighbours(<span class="keyword">const</span> <span class="keywordtype">int</span> my_id, <span class="keyword">const</span> GlobalPointersVector&lt;Element&gt;&amp; my_neighbour_elements);</div>
-<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;<span class="keywordtype">double</span> CalculateTheMaximumDistanceToNeighbours(Node&lt;3&gt;::Pointer&amp; p_node);</div>
+<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;<span class="keywordtype">double</span> CalculateTheMaximumDistanceToNeighbours(Node::Pointer&amp; p_node);</div>
 <div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;<span class="keywordtype">double</span> CalculateTheMaximumEdgeLength(<a class="code" href="../../d4/d5e/class_model_part.html">ModelPart</a>&amp; r_model_part);</div>
 <div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;<span class="keywordtype">double</span> CalculateTheMinumumEdgeLength(<a class="code" href="../../d4/d5e/class_model_part.html">ModelPart</a>&amp; r_model_part);</div>
 <div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160; </div>
@@ -381,7 +381,7 @@ $(function() {
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri May 12 2023 02:05:33 for KratosMultiphysics by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Sat May 13 2023 02:05:55 for KratosMultiphysics by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

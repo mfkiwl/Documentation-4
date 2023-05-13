@@ -130,10 +130,10 @@ $(function() {
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <a class="code" href="../../d6/d3f/transfer__utility_8h.html#a95ed76edc983cae239b65f370953d216">KRATOS_CLASS_POINTER_DEFINITION</a>(EmbeddedSkinUtility);</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keyword">typedef</span> std::unordered_map&lt;</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        Node&lt;3&gt;::Pointer,</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        Node::Pointer,</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        std::tuple&lt; const Element::Pointer, const unsigned int &gt;,</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        SharedPointerHasher&lt;Node&lt;3&gt;::Pointer&gt;,</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        SharedPointerComparator&lt;Node&lt;3&gt;::Pointer&gt; &gt; EdgeNodesMapType;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        SharedPointerHasher&lt;Node::Pointer&gt;,</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        SharedPointerComparator&lt;Node::Pointer&gt; &gt; EdgeNodesMapType;</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; </div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="keyword">enum</span> LevelSetTypeEnum</div>
@@ -213,7 +213,7 @@ $(function() {
 <div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;        <a class="code" href="../../db/d66/namespace_kratos.html#a7dc336b27d63b48cb5a8be2c97b25dcc">ModelPart::ConditionsContainerType</a> &amp;rNewCondsVect);</div>
 <div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160; </div>
 <div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;    <span class="keywordtype">bool</span> <span class="keyword">inline</span> ElementIsSplit(</div>
-<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;        <span class="keyword">const</span> Geometry&lt;Node&lt;3&gt;&gt; &amp;<a class="code" href="../../da/dec/namespace_kratos_1_1_mortar_utilities.html#a407333aa7d9b470dab6a9652f72a6ebd">rGeometry</a>,</div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;        <span class="keyword">const</span> Geometry&lt;Node&gt; &amp;<a class="code" href="../../da/dec/namespace_kratos_1_1_mortar_utilities.html#a407333aa7d9b470dab6a9652f72a6ebd">rGeometry</a>,</div>
 <div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;        <span class="keyword">const</span> <a class="code" href="../../db/d66/namespace_kratos.html#a2382ac8a486c0d52da7ce94f4ccd6d70">Vector</a> &amp;rNodalDistances);</div>
 <div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160; </div>
 <div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;    <span class="keyword">template</span>&lt;<span class="keyword">class</span> TVarType&gt;</div>
@@ -238,7 +238,7 @@ $(function() {
 <div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i_node = 0; i_node &lt; static_cast&lt;int&gt;(mrSkinModelPart.NumberOfNodes()); ++i_node) {</div>
 <div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;            <span class="comment">// Get the current node</span></div>
 <div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;            <span class="keyword">auto</span> it_node = mrSkinModelPart.NodesBegin() + i_node;</div>
-<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;            Node&lt;3&gt;::Pointer p_node = &amp;(*it_node);</div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;            Node::Pointer p_node = &amp;(*it_node);</div>
 <div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160; </div>
 <div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;            <span class="comment">// Search for the current node in the intersected edges map</span></div>
 <div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;            <span class="keyword">const</span> <span class="keyword">auto</span> i_node_info = mEdgeNodesMap.find(p_node);</div>
@@ -276,11 +276,11 @@ $(function() {
 <div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160; </div>
 <div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;    <span class="keyword">const</span> <a class="code" href="../../db/d66/namespace_kratos.html#a2382ac8a486c0d52da7ce94f4ccd6d70">Vector</a> SetDistancesVector(<span class="keyword">const</span> Element &amp;<a class="code" href="../../d7/d17/namespace_kratos_1_1_m_p_m_explicit_utilities.html#a196e53fcb7e0d12ead12723c8799e34b">rElement</a>);</div>
 <div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160; </div>
-<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;    DivideGeometry&lt;Node&lt;3&gt;&gt;::Pointer SetDivideGeometryUtility(</div>
-<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;        <span class="keyword">const</span> Geometry&lt;Node&lt;3&gt;&gt; &amp;<a class="code" href="../../da/dec/namespace_kratos_1_1_mortar_utilities.html#a407333aa7d9b470dab6a9652f72a6ebd">rGeometry</a>,</div>
+<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;    DivideGeometry&lt;Node&gt;::Pointer SetDivideGeometryUtility(</div>
+<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;        <span class="keyword">const</span> Geometry&lt;Node&gt; &amp;<a class="code" href="../../da/dec/namespace_kratos_1_1_mortar_utilities.html#a407333aa7d9b470dab6a9652f72a6ebd">rGeometry</a>,</div>
 <div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;        <span class="keyword">const</span> <a class="code" href="../../db/d66/namespace_kratos.html#a2382ac8a486c0d52da7ce94f4ccd6d70">Vector</a> &amp;rNodalDistances);</div>
 <div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160; </div>
-<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;    Geometry&lt; Node&lt;3&gt; &gt;::Pointer pCreateNewConditionGeometry(</div>
+<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;    Geometry&lt; Node &gt;::Pointer pCreateNewConditionGeometry(</div>
 <div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;        <span class="keyword">const</span> <a class="code" href="../../dc/d8c/class_kratos_1_1_geometry_data.html#a3bd412badaf6f2d8fcb56bbaa659346c">GeometryData::KratosGeometryType</a> &amp;rOriginGeometryType,</div>
 <div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;        <span class="keyword">const</span> <a class="code" href="../../d1/d6e/class_kratos_1_1_condition.html#a55e09e02b7d8367cac5617d9bf46e760">Condition::NodesArrayType</a> &amp;rNewNodesArray);</div>
 <div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160; </div>
@@ -295,7 +295,7 @@ $(function() {
 <div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;    Properties::Pointer SetSkinEntitiesProperties();</div>
 <div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160; </div>
 <div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;    ModifiedShapeFunctions::UniquePointer pCreateModifiedShapeFunctions(</div>
-<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;        <span class="keyword">const</span> Geometry&lt;Node&lt;3&gt;&gt;::Pointer pGeometry,</div>
+<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;        <span class="keyword">const</span> Geometry&lt;Node&gt;::Pointer pGeometry,</div>
 <div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;        <span class="keyword">const</span> <a class="code" href="../../db/d66/namespace_kratos.html#a2382ac8a486c0d52da7ce94f4ccd6d70">Vector</a>&amp; rNodalDistances);</div>
 <div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160; </div>
 <div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160;    <a class="code" href="../../db/d66/namespace_kratos.html#a546e4f1c8e62734795679d3b59448410">Matrix</a> GetModifiedShapeFunctionsValues(</div>
@@ -349,7 +349,7 @@ $(function() {
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri May 12 2023 02:08:13 for KratosMultiphysics by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Sat May 13 2023 02:08:34 for KratosMultiphysics by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

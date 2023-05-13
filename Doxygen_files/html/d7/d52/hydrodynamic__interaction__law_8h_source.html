@@ -101,7 +101,7 @@ $(function() {
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">class </span>KRATOS_API(SWIMMING_DEM_APPLICATION) HydrodynamicInteractionLaw : <span class="keyword">public</span> Flags {</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keyword">typedef</span> Node &lt;3&gt; <a class="code" href="../../db/d66/namespace_kratos.html#abb4d93a6f1ee35395fd178b0e96cbcb8">NodeType</a>;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keyword">typedef</span> <a class="code" href="../../db/d66/namespace_kratos.html#a8ad9f38d847ff7742fb13b5098910b03a6c3a6944a808a7c0bbb6788dbec54a9f">Node</a> <a class="code" href="../../db/d66/namespace_kratos.html#a4e2ab605ef101fe7856e7f373e418478">NodeType</a>;</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="comment">// Pointer types for HydrodynamicInteractionLaw</span></div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <a class="code" href="../../d6/d3f/transfer__utility_8h.html#a95ed76edc983cae239b65f370953d216">KRATOS_CLASS_POINTER_DEFINITION</a>(HydrodynamicInteractionLaw);</div>
@@ -140,7 +140,7 @@ $(function() {
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;                                         <span class="keyword">const</span> <span class="keywordtype">double</span> fluid_kinematic_viscosity,</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;                                         <span class="keyword">const</span> <span class="keywordtype">double</span> modulus_of_minus_slip_velocity);</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> ComputeBuoyancyForce(Geometry&lt;Node&lt;3&gt; &gt;&amp; r_geometry,</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> ComputeBuoyancyForce(Geometry&lt;Node &gt;&amp; r_geometry,</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;                                      <span class="keyword">const</span> <span class="keywordtype">double</span> fluid_density,</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;                                      <span class="keyword">const</span> <span class="keywordtype">double</span> displaced_volume,</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;                                      <span class="keyword">const</span> array_1d&lt;double, 3&gt;&amp; <a class="code" href="../../da/d67/namespacescript___e_l_a_s_t_i_c.html#a4ccbe6d2dd7bff2350d4fb653b97b696">body_force</a>,</div>
@@ -155,17 +155,17 @@ $(function() {
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;                                  array_1d&lt;double, 3&gt;&amp; drag_force,</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;                                  <span class="keyword">const</span> ProcessInfo&amp; r_current_process_info);</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160; </div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> ComputeInviscidForce(Geometry&lt;Node&lt;3&gt; &gt;&amp; r_geometry,</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> ComputeInviscidForce(Geometry&lt;Node &gt;&amp; r_geometry,</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;                                      <span class="keyword">const</span> <span class="keywordtype">double</span> fluid_density,</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;                                      <span class="keyword">const</span> <span class="keywordtype">double</span> displaced_volume,</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;                                      array_1d&lt;double, 3&gt;&amp; virtual_mass_plus_undisturbed_flow_force,</div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;                                      <span class="keyword">const</span> ProcessInfo&amp; r_current_process_info);</div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">double</span> GetInviscidAddedMass(Geometry&lt;Node&lt;3&gt; &gt;&amp; r_geometry,</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">double</span> GetInviscidAddedMass(Geometry&lt;Node &gt;&amp; r_geometry,</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;                                        <span class="keywordtype">double</span> fluid_density,</div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;                                        <span class="keyword">const</span> ProcessInfo&amp; r_current_process_info);</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160; </div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> ComputeHistoryForce(Geometry&lt;Node&lt;3&gt; &gt;&amp; r_geometry,</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> ComputeHistoryForce(Geometry&lt;Node &gt;&amp; r_geometry,</div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;                                     <span class="keywordtype">double</span> particle_radius,</div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;                                     <span class="keywordtype">double</span> fluid_density,</div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;                                     <span class="keywordtype">double</span> fluid_kinematic_viscosity,</div>
@@ -173,10 +173,10 @@ $(function() {
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;                                     array_1d&lt;double, 3&gt;&amp; drag_force,</div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;                                     <span class="keyword">const</span> ProcessInfo&amp; r_current_process_info);</div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160; </div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">double</span> GetHistoryForceAddedMass(Geometry&lt;Node&lt;3&gt; &gt;&amp; r_geometry,</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">double</span> GetHistoryForceAddedMass(Geometry&lt;Node &gt;&amp; r_geometry,</div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;                                            <span class="keyword">const</span> ProcessInfo&amp; r_current_process_info);</div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160; </div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> ComputeVorticityInducedLift(Geometry&lt;Node&lt;3&gt; &gt;&amp; r_geometry,</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> ComputeVorticityInducedLift(Geometry&lt;Node &gt;&amp; r_geometry,</div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;                                             <span class="keywordtype">double</span> particle_radius,</div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;                                             <span class="keywordtype">double</span> fluid_density,</div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;                                             <span class="keywordtype">double</span> fluid_kinematic_viscosity,</div>
@@ -184,7 +184,7 @@ $(function() {
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;                                             array_1d&lt;double, 3&gt;&amp; vorticity_induced_lift,</div>
 <div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;                                             <span class="keyword">const</span> ProcessInfo&amp; r_current_process_info);</div>
 <div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160; </div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> ComputeRotationInducedLift(Geometry&lt;Node&lt;3&gt; &gt;&amp; r_geometry,</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> ComputeRotationInducedLift(Geometry&lt;Node &gt;&amp; r_geometry,</div>
 <div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;                                            <span class="keywordtype">double</span> particle_radius,</div>
 <div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;                                            <span class="keywordtype">double</span> fluid_density,</div>
 <div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;                                            <span class="keywordtype">double</span> fluid_kinematic_viscosity,</div>
@@ -192,7 +192,7 @@ $(function() {
 <div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;                                            array_1d&lt;double, 3&gt;&amp; rotation_induced_lift,</div>
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;                                            <span class="keyword">const</span> ProcessInfo&amp; r_current_process_info);</div>
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160; </div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> ComputeSteadyViscousTorque(Geometry&lt;Node&lt;3&gt; &gt;&amp; r_geometry,</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> ComputeSteadyViscousTorque(Geometry&lt;Node &gt;&amp; r_geometry,</div>
 <div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;                                            <span class="keywordtype">double</span> particle_radius,</div>
 <div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;                                            <span class="keywordtype">double</span> fluid_density,</div>
 <div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;                                            <span class="keywordtype">double</span> fluid_kinematic_viscosity,</div>
@@ -244,7 +244,8 @@ $(function() {
 <div class="ttc" id="anamespace_kratos_1_1_cpp_tests_utilities_html_a9ede6dd3e9c2800a383b30d8c97601f7"><div class="ttname"><a href="../../de/da1/namespace_kratos_1_1_cpp_tests_utilities.html#a9ede6dd3e9c2800a383b30d8c97601f7">Kratos::CppTestsUtilities::Initialize</a></div><div class="ttdeci">void const std::string const bool Initialize</div><div class="ttdef"><b>Definition:</b> cpp_tests_utilities.h:65</div></div>
 <div class="ttc" id="anamespace_kratos_html"><div class="ttname"><a href="../../db/d66/namespace_kratos.html">Kratos</a></div><div class="ttdoc">REF: G. R. Cowper, GAUSSIAN QUADRATURE FORMULAS FOR TRIANGLES.</div><div class="ttdef"><b>Definition:</b> mesh_condition.cpp:21</div></div>
 <div class="ttc" id="anamespace_kratos_html_a1f9a41293ca1dd98ac7f5f718800942f"><div class="ttname"><a href="../../db/d66/namespace_kratos.html#a1f9a41293ca1dd98ac7f5f718800942f">Kratos::KRATOS_DEFINE_APPLICATION_VARIABLE</a></div><div class="ttdeci">KRATOS_DEFINE_APPLICATION_VARIABLE(CHIMERA_APPLICATION, double, CHIMERA_DISTANCE)</div></div>
-<div class="ttc" id="anamespace_kratos_html_abb4d93a6f1ee35395fd178b0e96cbcb8"><div class="ttname"><a href="../../db/d66/namespace_kratos.html#abb4d93a6f1ee35395fd178b0e96cbcb8">Kratos::NodeType</a></div><div class="ttdeci">Node&lt; 3 &gt; NodeType</div><div class="ttdoc">The definition of the node.</div><div class="ttdef"><b>Definition:</b> mortar_classes.h:37</div></div>
+<div class="ttc" id="anamespace_kratos_html_a4e2ab605ef101fe7856e7f373e418478"><div class="ttname"><a href="../../db/d66/namespace_kratos.html#a4e2ab605ef101fe7856e7f373e418478">Kratos::NodeType</a></div><div class="ttdeci">Node NodeType</div><div class="ttdoc">The definition of the node.</div><div class="ttdef"><b>Definition:</b> mortar_classes.h:37</div></div>
+<div class="ttc" id="anamespace_kratos_html_a8ad9f38d847ff7742fb13b5098910b03a6c3a6944a808a7c0bbb6788dbec54a9f"><div class="ttname"><a href="../../db/d66/namespace_kratos.html#a8ad9f38d847ff7742fb13b5098910b03a6c3a6944a808a7c0bbb6788dbec54a9f">Kratos::StressTreatment::Node</a></div><div class="ttdeci">@ Node</div></div>
 <div class="ttc" id="anamespaceode__solve_html_a0b266774af0a13d56a57cf1ada122768"><div class="ttname"><a href="../../d2/df2/namespaceode__solve.html#a0b266774af0a13d56a57cf1ada122768">ode_solve.load</a></div><div class="ttdeci">def load(f)</div><div class="ttdef"><b>Definition:</b> ode_solve.py:307</div></div>
 <div class="ttc" id="anamespacescript___e_l_a_s_t_i_c_html_a4ccbe6d2dd7bff2350d4fb653b97b696"><div class="ttname"><a href="../../da/d67/namespacescript___e_l_a_s_t_i_c.html#a4ccbe6d2dd7bff2350d4fb653b97b696">script_ELASTIC.body_force</a></div><div class="ttdeci">body_force</div><div class="ttdef"><b>Definition:</b> script_ELASTIC.py:102</div></div>
 <div class="ttc" id="arotation__induced__lift__law_8h_html"><div class="ttname"><a href="../../d8/dba/rotation__induced__lift__law_8h.html">rotation_induced_lift_law.h</a></div></div>
@@ -255,7 +256,7 @@ $(function() {
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri May 12 2023 02:05:28 for KratosMultiphysics by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Sat May 13 2023 02:05:50 for KratosMultiphysics by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

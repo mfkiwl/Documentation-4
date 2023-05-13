@@ -106,7 +106,7 @@ $(function() {
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keyword">namespace </span><a class="code" href="../../db/d66/namespace_kratos.html">Kratos</a> {</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">typedef</span> std::size_t <a class="code" href="../../db/d66/namespace_kratos.html#a8b2d617fdb94b53f5f2bb88e1a7ebc18">SizeType</a>;</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">typedef</span> Node&lt;3&gt; <a class="code" href="../../db/d66/namespace_kratos.html#abb4d93a6f1ee35395fd178b0e96cbcb8">NodeType</a>;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">typedef</span> <a class="code" href="../../db/d66/namespace_kratos.html#a8ad9f38d847ff7742fb13b5098910b03a6c3a6944a808a7c0bbb6788dbec54a9f">Node</a> <a class="code" href="../../db/d66/namespace_kratos.html#a4e2ab605ef101fe7856e7f373e418478">NodeType</a>;</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="keyword">typedef</span> ModelPart::NodesContainerType::iterator <a class="code" href="../../db/d66/namespace_kratos.html#a0ab45c528360c2d41b331bc19a9f0f3e">NodeIteratorType</a>;</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keyword">class </span>KRATOS_API(FEM_TO_DEM_APPLICATION) TransferNodalForcesToFem : <span class="keyword">public</span> Process </div>
@@ -145,8 +145,9 @@ $(function() {
 <div class="ttc" id="anamespace_kratos_1_1_rans_variable_utilities_html_af0d227aa5521a639dd5f46737c54e84c"><div class="ttname"><a href="../../db/d91/namespace_kratos_1_1_rans_variable_utilities.html#af0d227aa5521a639dd5f46737c54e84c">Kratos::RansVariableUtilities::rModelPart</a></div><div class="ttdeci">std::tuple&lt; unsigned int, unsigned int &gt; const double const Variable&lt; double &gt; ModelPart &amp; rModelPart</div><div class="ttdef"><b>Definition:</b> rans_variable_utilities.h:44</div></div>
 <div class="ttc" id="anamespace_kratos_html"><div class="ttname"><a href="../../db/d66/namespace_kratos.html">Kratos</a></div><div class="ttdoc">REF: G. R. Cowper, GAUSSIAN QUADRATURE FORMULAS FOR TRIANGLES.</div><div class="ttdef"><b>Definition:</b> mesh_condition.cpp:21</div></div>
 <div class="ttc" id="anamespace_kratos_html_a0ab45c528360c2d41b331bc19a9f0f3e"><div class="ttname"><a href="../../db/d66/namespace_kratos.html#a0ab45c528360c2d41b331bc19a9f0f3e">Kratos::NodeIteratorType</a></div><div class="ttdeci">ModelPart::NodesContainerType::iterator NodeIteratorType</div><div class="ttdef"><b>Definition:</b> fix_free_velocity_on_nodes_process.h:25</div></div>
+<div class="ttc" id="anamespace_kratos_html_a4e2ab605ef101fe7856e7f373e418478"><div class="ttname"><a href="../../db/d66/namespace_kratos.html#a4e2ab605ef101fe7856e7f373e418478">Kratos::NodeType</a></div><div class="ttdeci">Node NodeType</div><div class="ttdoc">The definition of the node.</div><div class="ttdef"><b>Definition:</b> mortar_classes.h:37</div></div>
+<div class="ttc" id="anamespace_kratos_html_a8ad9f38d847ff7742fb13b5098910b03a6c3a6944a808a7c0bbb6788dbec54a9f"><div class="ttname"><a href="../../db/d66/namespace_kratos.html#a8ad9f38d847ff7742fb13b5098910b03a6c3a6944a808a7c0bbb6788dbec54a9f">Kratos::StressTreatment::Node</a></div><div class="ttdeci">@ Node</div></div>
 <div class="ttc" id="anamespace_kratos_html_a8b2d617fdb94b53f5f2bb88e1a7ebc18"><div class="ttname"><a href="../../db/d66/namespace_kratos.html#a8b2d617fdb94b53f5f2bb88e1a7ebc18">Kratos::SizeType</a></div><div class="ttdeci">std::size_t SizeType</div><div class="ttdoc">The definition of the size type.</div><div class="ttdef"><b>Definition:</b> mortar_classes.h:44</div></div>
-<div class="ttc" id="anamespace_kratos_html_abb4d93a6f1ee35395fd178b0e96cbcb8"><div class="ttname"><a href="../../db/d66/namespace_kratos.html#abb4d93a6f1ee35395fd178b0e96cbcb8">Kratos::NodeType</a></div><div class="ttdeci">Node&lt; 3 &gt; NodeType</div><div class="ttdoc">The definition of the node.</div><div class="ttdef"><b>Definition:</b> mortar_classes.h:37</div></div>
 <div class="ttc" id="aprocess_8h_html"><div class="ttname"><a href="../../da/d42/process_8h.html">process.h</a></div></div>
 <div class="ttc" id="astructural__mechanics__application__variables_8h_html"><div class="ttname"><a href="../../db/d0c/structural__mechanics__application__variables_8h.html">structural_mechanics_application_variables.h</a></div></div>
 <div class="ttc" id="atransfer__utility_8h_html_a95ed76edc983cae239b65f370953d216"><div class="ttname"><a href="../../d6/d3f/transfer__utility_8h.html#a95ed76edc983cae239b65f370953d216">KRATOS_CLASS_POINTER_DEFINITION</a></div><div class="ttdeci">KRATOS_CLASS_POINTER_DEFINITION(TransferUtility)</div></div>
@@ -154,7 +155,7 @@ $(function() {
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri May 12 2023 02:02:55 for KratosMultiphysics by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Sat May 13 2023 02:03:16 for KratosMultiphysics by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

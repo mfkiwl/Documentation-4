@@ -122,7 +122,7 @@ $(function() {
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="keyword">struct </span>GradientDataHandler final</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;{</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keyword">using</span> <a class="code" href="../../d5/ddd/class_kratos_1_1_node.html">NodeType</a> = <span class="keyword">typename</span> <a class="code" href="../../db/d66/namespace_kratos.html#abb4d93a6f1ee35395fd178b0e96cbcb8">ModelPart::NodeType</a>;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keyword">using</span> <a class="code" href="../../d5/ddd/class_kratos_1_1_node.html">NodeType</a> = <span class="keyword">typename</span> <a class="code" href="../../db/d66/namespace_kratos.html#a4e2ab605ef101fe7856e7f373e418478">ModelPart::NodeType</a>;</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
 <div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="../../d8/de6/edge__based__gradient__recovery__process_8h.html#aa021180b9a1fef49400d2ca1af2308de">   62</a></span>&#160;    <span class="keyword">static</span> constexpr <span class="keywordtype">bool</span> <a class="code" href="../../d8/de6/edge__based__gradient__recovery__process_8h.html#aa021180b9a1fef49400d2ca1af2308de">IsDataTypeScalar</a> = std::is_same&lt;TDataType, double&gt;();</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
@@ -148,7 +148,7 @@ $(function() {
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="keyword">const</span> Variable&lt;double&gt;&amp; rOriginVar,</div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="keyword">const</span> std::size_t Component)</div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;{</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="keywordflow">return</span> rNode.<a class="code" href="../../d5/ddd/class_kratos_1_1_node.html#aa4d900d1176115687666a0d26efae677">FastGetSolutionStepValue</a>(rOriginVar);</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="keywordflow">return</span> rNode.<a class="code" href="../../d5/ddd/class_kratos_1_1_node.html#a3014bd9654b1b44fdc9d50b2656803c6">FastGetSolutionStepValue</a>(rOriginVar);</div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;}</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160; </div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="keyword">template</span>&lt;&gt;</div>
@@ -157,7 +157,7 @@ $(function() {
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <span class="keyword">const</span> Variable&lt;double&gt;&amp; rOriginVar,</div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <span class="keyword">const</span> std::size_t Component)</div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;{</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <span class="keywordflow">return</span> rNode.<a class="code" href="../../d5/ddd/class_kratos_1_1_node.html#a093fc2efe1af889fbfca7a4ed6d3197a">GetValue</a>(rOriginVar);</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <span class="keywordflow">return</span> rNode.<a class="code" href="../../d5/ddd/class_kratos_1_1_node.html#a6b7a00433c4864478b7a6e22f8ad6505">GetValue</a>(rOriginVar);</div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;}</div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160; </div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;<span class="keyword">template</span>&lt;&gt;</div>
@@ -166,7 +166,7 @@ $(function() {
 <div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    <span class="keyword">const</span> Variable&lt;array_1d&lt;double,3&gt;&gt;&amp; rOriginVar,</div>
 <div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    <span class="keyword">const</span> std::size_t Component)</div>
 <div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;{</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    <span class="keywordflow">return</span> rNode.<a class="code" href="../../d5/ddd/class_kratos_1_1_node.html#aa4d900d1176115687666a0d26efae677">FastGetSolutionStepValue</a>(rOriginVar)[Component];</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    <span class="keywordflow">return</span> rNode.<a class="code" href="../../d5/ddd/class_kratos_1_1_node.html#a3014bd9654b1b44fdc9d50b2656803c6">FastGetSolutionStepValue</a>(rOriginVar)[Component];</div>
 <div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;}</div>
 <div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160; </div>
 <div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;<span class="keyword">template</span>&lt;&gt;</div>
@@ -175,7 +175,7 @@ $(function() {
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    <span class="keyword">const</span> Variable&lt;array_1d&lt;double,3&gt;&gt;&amp; rOriginVar,</div>
 <div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    <span class="keyword">const</span> std::size_t Component)</div>
 <div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;{</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    <span class="keywordflow">return</span> rNode.<a class="code" href="../../d5/ddd/class_kratos_1_1_node.html#a093fc2efe1af889fbfca7a4ed6d3197a">GetValue</a>(rOriginVar)[Component];</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    <span class="keywordflow">return</span> rNode.<a class="code" href="../../d5/ddd/class_kratos_1_1_node.html#a6b7a00433c4864478b7a6e22f8ad6505">GetValue</a>(rOriginVar)[Component];</div>
 <div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;}</div>
 <div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160; </div>
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;<span class="keyword">template</span>&lt;&gt;</div>
@@ -185,7 +185,7 @@ $(function() {
 <div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    <span class="keyword">const</span> array_1d&lt;double,3&gt;&amp; rGradientValue,</div>
 <div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    <span class="keyword">const</span> std::size_t Component)</div>
 <div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;{</div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    <a class="code" href="../../db/d66/namespace_kratos.html#aaff3672cc52b90ee3d84713de272e1b5">noalias</a>(rNode.<a class="code" href="../../d5/ddd/class_kratos_1_1_node.html#aa4d900d1176115687666a0d26efae677">FastGetSolutionStepValue</a>(rGradientVar)) = rGradientValue;</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    <a class="code" href="../../db/d66/namespace_kratos.html#aaff3672cc52b90ee3d84713de272e1b5">noalias</a>(rNode.<a class="code" href="../../d5/ddd/class_kratos_1_1_node.html#a3014bd9654b1b44fdc9d50b2656803c6">FastGetSolutionStepValue</a>(rGradientVar)) = rGradientValue;</div>
 <div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;}</div>
 <div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160; </div>
 <div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;<span class="keyword">template</span>&lt;&gt;</div>
@@ -195,7 +195,7 @@ $(function() {
 <div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;    <span class="keyword">const</span> array_1d&lt;double,3&gt;&amp; rGradientValue,</div>
 <div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;    <span class="keyword">const</span> std::size_t Component)</div>
 <div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;{</div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;    <a class="code" href="../../db/d66/namespace_kratos.html#aaff3672cc52b90ee3d84713de272e1b5">noalias</a>(rNode.<a class="code" href="../../d5/ddd/class_kratos_1_1_node.html#a093fc2efe1af889fbfca7a4ed6d3197a">GetValue</a>(rGradientVar)) = rGradientValue;</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;    <a class="code" href="../../db/d66/namespace_kratos.html#aaff3672cc52b90ee3d84713de272e1b5">noalias</a>(rNode.<a class="code" href="../../d5/ddd/class_kratos_1_1_node.html#a6b7a00433c4864478b7a6e22f8ad6505">GetValue</a>(rGradientVar)) = rGradientValue;</div>
 <div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;}</div>
 <div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160; </div>
 <div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;<span class="keyword">template</span>&lt;&gt;</div>
@@ -205,7 +205,7 @@ $(function() {
 <div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;    <span class="keyword">const</span> array_1d&lt;double,3&gt;&amp; rGradientComponentValue,</div>
 <div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;    <span class="keyword">const</span> std::size_t Component)</div>
 <div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;{</div>
-<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;    <span class="keyword">auto</span> &amp;r_grad = rNode.<a class="code" href="../../d5/ddd/class_kratos_1_1_node.html#aa4d900d1176115687666a0d26efae677">FastGetSolutionStepValue</a>(rGradientVar);</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;    <span class="keyword">auto</span> &amp;r_grad = rNode.<a class="code" href="../../d5/ddd/class_kratos_1_1_node.html#a3014bd9654b1b44fdc9d50b2656803c6">FastGetSolutionStepValue</a>(rGradientVar);</div>
 <div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;    <span class="keywordflow">if</span> (r_grad.size1() != 3 || r_grad.size2() != 3) {</div>
 <div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;        r_grad = <a class="code" href="../../db/d66/namespace_kratos.html#a358df20da9726efb77013692eb628f08">ZeroMatrix</a>(3,3);</div>
 <div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;    }</div>
@@ -222,7 +222,7 @@ $(function() {
 <div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;    <span class="keyword">const</span> array_1d&lt;double,3&gt;&amp; rGradientComponentValue,</div>
 <div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;    <span class="keyword">const</span> std::size_t Component)</div>
 <div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;{</div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;    <span class="keyword">auto</span> &amp;r_grad = rNode.<a class="code" href="../../d5/ddd/class_kratos_1_1_node.html#a093fc2efe1af889fbfca7a4ed6d3197a">GetValue</a>(rGradientVar);</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;    <span class="keyword">auto</span> &amp;r_grad = rNode.<a class="code" href="../../d5/ddd/class_kratos_1_1_node.html#a6b7a00433c4864478b7a6e22f8ad6505">GetValue</a>(rGradientVar);</div>
 <div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;    <span class="keywordflow">if</span> (r_grad.size1() != 3 || r_grad.size2() != 3) {</div>
 <div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;        r_grad = <a class="code" href="../../db/d66/namespace_kratos.html#a358df20da9726efb77013692eb628f08">ZeroMatrix</a>(3,3);</div>
 <div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;    }</div>
@@ -244,7 +244,7 @@ $(function() {
 <div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160; </div>
 <div class="line"><a name="l00195"></a><span class="lineno"><a class="line" href="../../db/d71/class_kratos_1_1_edge_based_gradient_recovery_process.html#af888edea373e573358328d744c588401">  195</a></span>&#160;    <span class="keyword">using</span> <a class="code" href="../../db/d71/class_kratos_1_1_edge_based_gradient_recovery_process.html#af888edea373e573358328d744c588401">GradientDataType</a> = <span class="keyword">typename</span> std::conditional&lt;IsDataTypeScalar, array_1d&lt;double,3&gt;, <a class="code" href="../../d9/dbb/class_kratos_1_1_internals_1_1_matrix.html">Matrix</a>&gt;<a class="code" href="../../d2/dc8/namespacegenerate__gid__list__file.html#aa4f1535acc5fb04f33cfa038c36935f5">::type</a>;</div>
 <div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160; </div>
-<div class="line"><a name="l00197"></a><span class="lineno"><a class="line" href="../../db/d71/class_kratos_1_1_edge_based_gradient_recovery_process.html#a0a9856c91ca8c9fddb604d213bd6419f">  197</a></span>&#160;    <span class="keyword">using</span> <a class="code" href="../../db/d71/class_kratos_1_1_edge_based_gradient_recovery_process.html#a0a9856c91ca8c9fddb604d213bd6419f">NodeType</a> = <span class="keyword">typename</span> <a class="code" href="../../db/d66/namespace_kratos.html#abb4d93a6f1ee35395fd178b0e96cbcb8">ModelPart::NodeType</a>;</div>
+<div class="line"><a name="l00197"></a><span class="lineno"><a class="line" href="../../db/d71/class_kratos_1_1_edge_based_gradient_recovery_process.html#a0a9856c91ca8c9fddb604d213bd6419f">  197</a></span>&#160;    <span class="keyword">using</span> <a class="code" href="../../db/d71/class_kratos_1_1_edge_based_gradient_recovery_process.html#a0a9856c91ca8c9fddb604d213bd6419f">NodeType</a> = <span class="keyword">typename</span> <a class="code" href="../../db/d66/namespace_kratos.html#a4e2ab605ef101fe7856e7f373e418478">ModelPart::NodeType</a>;</div>
 <div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160; </div>
 <div class="line"><a name="l00199"></a><span class="lineno"><a class="line" href="../../db/d71/class_kratos_1_1_edge_based_gradient_recovery_process.html#ae341fb9623f0bc0839aae086b22b8cbd">  199</a></span>&#160;    <span class="keyword">using</span> <a class="code" href="../../db/d71/class_kratos_1_1_edge_based_gradient_recovery_process.html#ae341fb9623f0bc0839aae086b22b8cbd">OriginGetFunctionType</a> = std::function&lt;<a class="code" href="../../db/d66/namespace_kratos.html#ac77084a57869cbecf89d3ee2c819c5d3">double</a>(</div>
 <div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;        <span class="keyword">const</span> <a class="code" href="../../db/d71/class_kratos_1_1_edge_based_gradient_recovery_process.html#a0a9856c91ca8c9fddb604d213bd6419f">NodeType</a>&amp;,</div>
@@ -674,9 +674,9 @@ $(function() {
 <div class="ttc" id="aclass_kratos_1_1_geometry_data_html_ab787dae4572114859d96bd90baeab00aa5f08033f0b26050e74acef53e9d4e05a"><div class="ttname"><a href="../../dc/d8c/class_kratos_1_1_geometry_data.html#ab787dae4572114859d96bd90baeab00aa5f08033f0b26050e74acef53e9d4e05a">Kratos::GeometryData::KratosGeometryFamily::Kratos_Tetrahedra</a></div><div class="ttdeci">@ Kratos_Tetrahedra</div></div>
 <div class="ttc" id="aclass_kratos_1_1_implicit_solving_strategy_html"><div class="ttname"><a href="../../d8/df2/class_kratos_1_1_implicit_solving_strategy.html">Kratos::ImplicitSolvingStrategy</a></div><div class="ttdoc">Implicit solving strategy base class This is the base class from which we will derive all the implici...</div><div class="ttdef"><b>Definition:</b> implicit_solving_strategy.h:61</div></div>
 <div class="ttc" id="aclass_kratos_1_1_internals_1_1_matrix_html"><div class="ttname"><a href="../../d9/dbb/class_kratos_1_1_internals_1_1_matrix.html">Kratos::Internals::Matrix&lt; double, AMatrix::dynamic, AMatrix::dynamic &gt;</a></div></div>
-<div class="ttc" id="aclass_kratos_1_1_node_html"><div class="ttname"><a href="../../d5/ddd/class_kratos_1_1_node.html">Kratos::Node</a></div><div class="ttdoc">This class defines the node.</div><div class="ttdef"><b>Definition:</b> node.h:68</div></div>
-<div class="ttc" id="aclass_kratos_1_1_node_html_a093fc2efe1af889fbfca7a4ed6d3197a"><div class="ttname"><a href="../../d5/ddd/class_kratos_1_1_node.html#a093fc2efe1af889fbfca7a4ed6d3197a">Kratos::Node::GetValue</a></div><div class="ttdeci">TVariableType::Type &amp; GetValue(const TVariableType &amp;rThisVariable)</div><div class="ttdef"><b>Definition:</b> node.h:493</div></div>
-<div class="ttc" id="aclass_kratos_1_1_node_html_aa4d900d1176115687666a0d26efae677"><div class="ttname"><a href="../../d5/ddd/class_kratos_1_1_node.html#aa4d900d1176115687666a0d26efae677">Kratos::Node::FastGetSolutionStepValue</a></div><div class="ttdeci">TVariableType::Type &amp; FastGetSolutionStepValue(const TVariableType &amp;rThisVariable)</div><div class="ttdef"><b>Definition:</b> node.h:462</div></div>
+<div class="ttc" id="aclass_kratos_1_1_node_html"><div class="ttname"><a href="../../d5/ddd/class_kratos_1_1_node.html">Kratos::Node</a></div><div class="ttdoc">This class defines the node.</div><div class="ttdef"><b>Definition:</b> node.h:67</div></div>
+<div class="ttc" id="aclass_kratos_1_1_node_html_a3014bd9654b1b44fdc9d50b2656803c6"><div class="ttname"><a href="../../d5/ddd/class_kratos_1_1_node.html#a3014bd9654b1b44fdc9d50b2656803c6">Kratos::Node::FastGetSolutionStepValue</a></div><div class="ttdeci">TVariableType::Type &amp; FastGetSolutionStepValue(const TVariableType &amp;rThisVariable)</div><div class="ttdef"><b>Definition:</b> node.h:437</div></div>
+<div class="ttc" id="aclass_kratos_1_1_node_html_a6b7a00433c4864478b7a6e22f8ad6505"><div class="ttname"><a href="../../d5/ddd/class_kratos_1_1_node.html#a6b7a00433c4864478b7a6e22f8ad6505">Kratos::Node::GetValue</a></div><div class="ttdeci">TVariableType::Type &amp; GetValue(const TVariableType &amp;rThisVariable)</div><div class="ttdef"><b>Definition:</b> node.h:468</div></div>
 <div class="ttc" id="aclass_kratos_1_1_process_html"><div class="ttname"><a href="../../d2/d8c/class_kratos_1_1_process.html">Kratos::Process</a></div><div class="ttdoc">The base class for all processes in Kratos.</div><div class="ttdef"><b>Definition:</b> process.h:49</div></div>
 <div class="ttc" id="aclass_kratos_1_1_variable_html"><div class="ttname"><a href="../../d1/d66/class_kratos_1_1_variable.html">Kratos::Variable</a></div><div class="ttdoc">Variable class contains all information needed to store and retrive data from a data container.</div><div class="ttdef"><b>Definition:</b> variable.h:63</div></div>
 <div class="ttc" id="aclass_kratos_1_1array__1d_html"><div class="ttname"><a href="../../d4/ddc/class_kratos_1_1array__1d.html">Kratos::array_1d&lt; double, 3 &gt;</a></div></div>
@@ -695,10 +695,10 @@ $(function() {
 <div class="ttc" id="anamespace_kratos_1_1_move_mesh_utilities_html_a339be98e73c6a6019db115769ae02bce"><div class="ttname"><a href="../../d7/dc7/namespace_kratos_1_1_move_mesh_utilities.html#a339be98e73c6a6019db115769ae02bce">Kratos::MoveMeshUtilities::rOriginModelPart</a></div><div class="ttdeci">ModelPart &amp; rOriginModelPart</div><div class="ttdef"><b>Definition:</b> move_mesh_utilities.h:84</div></div>
 <div class="ttc" id="anamespace_kratos_html"><div class="ttname"><a href="../../db/d66/namespace_kratos.html">Kratos</a></div><div class="ttdoc">REF: G. R. Cowper, GAUSSIAN QUADRATURE FORMULAS FOR TRIANGLES.</div><div class="ttdef"><b>Definition:</b> mesh_condition.cpp:21</div></div>
 <div class="ttc" id="anamespace_kratos_html_a358df20da9726efb77013692eb628f08"><div class="ttname"><a href="../../db/d66/namespace_kratos.html#a358df20da9726efb77013692eb628f08">Kratos::ZeroMatrix</a></div><div class="ttdeci">KratosZeroMatrix&lt; double &gt; ZeroMatrix</div><div class="ttdef"><b>Definition:</b> amatrix_interface.h:559</div></div>
+<div class="ttc" id="anamespace_kratos_html_a4e2ab605ef101fe7856e7f373e418478"><div class="ttname"><a href="../../db/d66/namespace_kratos.html#a4e2ab605ef101fe7856e7f373e418478">Kratos::NodeType</a></div><div class="ttdeci">Node NodeType</div><div class="ttdoc">The definition of the node.</div><div class="ttdef"><b>Definition:</b> mortar_classes.h:37</div></div>
 <div class="ttc" id="anamespace_kratos_html_a546e4f1c8e62734795679d3b59448410"><div class="ttname"><a href="../../db/d66/namespace_kratos.html#a546e4f1c8e62734795679d3b59448410">Kratos::Matrix</a></div><div class="ttdeci">Internals::Matrix&lt; double, AMatrix::dynamic, AMatrix::dynamic &gt; Matrix</div><div class="ttdef"><b>Definition:</b> amatrix_interface.h:470</div></div>
 <div class="ttc" id="anamespace_kratos_html_a9c6097d0b0a27d1cea94992b1087f56a"><div class="ttname"><a href="../../db/d66/namespace_kratos.html#a9c6097d0b0a27d1cea94992b1087f56a">Kratos::operator&gt;&gt;</a></div><div class="ttdeci">std::istream &amp; operator&gt;&gt;(std::istream &amp;rIStream, LinearMasterSlaveConstraint &amp;rThis)</div><div class="ttdoc">input stream function</div></div>
 <div class="ttc" id="anamespace_kratos_html_aaff3672cc52b90ee3d84713de272e1b5"><div class="ttname"><a href="../../db/d66/namespace_kratos.html#aaff3672cc52b90ee3d84713de272e1b5">Kratos::noalias</a></div><div class="ttdeci">T &amp; noalias(T &amp;TheMatrix)</div><div class="ttdef"><b>Definition:</b> amatrix_interface.h:484</div></div>
-<div class="ttc" id="anamespace_kratos_html_abb4d93a6f1ee35395fd178b0e96cbcb8"><div class="ttname"><a href="../../db/d66/namespace_kratos.html#abb4d93a6f1ee35395fd178b0e96cbcb8">Kratos::NodeType</a></div><div class="ttdeci">Node&lt; 3 &gt; NodeType</div><div class="ttdoc">The definition of the node.</div><div class="ttdef"><b>Definition:</b> mortar_classes.h:37</div></div>
 <div class="ttc" id="anamespace_kratos_html_ac77084a57869cbecf89d3ee2c819c5d3"><div class="ttname"><a href="../../db/d66/namespace_kratos.html#ac77084a57869cbecf89d3ee2c819c5d3">Kratos::double</a></div><div class="ttdeci">TABLE_NUMBER_ANGULAR_VELOCITY TABLE_NUMBER_MOMENT I33 BEAM_INERTIA_ROT_UNIT_LENGHT_Y KRATOS_DEFINE_APPLICATION_VARIABLE(DEM_APPLICATION, double, BEAM_INERTIA_ROT_UNIT_LENGHT_Z) typedef std double</div><div class="ttdef"><b>Definition:</b> DEM_application_variables.h:182</div></div>
 <div class="ttc" id="anamespace_kratos_html_acfc842a43d19dffc2d8105e5cbea17a9"><div class="ttname"><a href="../../db/d66/namespace_kratos.html#acfc842a43d19dffc2d8105e5cbea17a9">Kratos::operator&lt;&lt;</a></div><div class="ttdeci">std::ostream &amp; operator&lt;&lt;(std::ostream &amp;rOStream, const LinearMasterSlaveConstraint &amp;rThis)</div><div class="ttdoc">output stream function</div><div class="ttdef"><b>Definition:</b> linear_master_slave_constraint.h:432</div></div>
 <div class="ttc" id="anamespaceface__heat_html_a2d3728c99da702b52ed000a0da5857aa"><div class="ttname"><a href="../../d6/dd7/namespaceface__heat.html#a2d3728c99da702b52ed000a0da5857aa">face_heat.domain_size</a></div><div class="ttdeci">int domain_size</div><div class="ttdef"><b>Definition:</b> face_heat.py:4</div></div>
@@ -714,7 +714,7 @@ $(function() {
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri May 12 2023 02:07:37 for KratosMultiphysics by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Sat May 13 2023 02:07:58 for KratosMultiphysics by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

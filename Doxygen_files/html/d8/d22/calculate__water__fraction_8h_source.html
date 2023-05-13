@@ -176,7 +176,7 @@ $(function() {
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;                    <span class="keywordtype">double</span> Area;</div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;                    <a class="code" href="../../d9/dbb/class_kratos_1_1_internals_1_1_matrix.html">BoundedMatrix</a>&lt;<a class="code" href="../../db/d66/namespace_kratos.html#ac77084a57869cbecf89d3ee2c819c5d3">double</a>, (TDim+1), TDim &gt; DN_DX;</div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;                    <a class="code" href="../../d4/ddc/class_kratos_1_1array__1d.html">array_1d</a>&lt;<a class="code" href="../../db/d66/namespace_kratos.html#ac77084a57869cbecf89d3ee2c819c5d3">double</a>, (TDim+1) &gt; <a class="code" href="../../df/d42/mmio_8h.html#a3f620e88ba511ca5d32c93b84802ff6e">N</a>;</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;                    <a class="code" href="../../dc/dea/class_kratos_1_1_geometry.html">Geometry&lt;Node&lt;3&gt;</a> &gt;&amp; geom = ielem-&gt;GetGeometry();</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;                    <a class="code" href="../../dc/dea/class_kratos_1_1_geometry.html">Geometry&lt;Node &gt;</a>&amp; geom = ielem-&gt;GetGeometry();</div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;                    <a class="code" href="../../d1/d7f/namespace_kratos_1_1_rans_calculation_utilities.html#ac82ad59313936d615db46ba650934ec4">GeometryUtils::CalculateGeometryData</a>(geom, DN_DX, <a class="code" href="../../df/d42/mmio_8h.html#a3f620e88ba511ca5d32c93b84802ff6e">N</a>, Area);</div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;                    <span class="comment">//sum_areas+=area;</span></div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;                    <span class="keywordtype">int</span> negative_nodes=0;</div>
@@ -459,7 +459,7 @@ $(function() {
 <div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;                    <span class="keywordflow">if</span> (ielem-&gt;Is(ACTIVE)) <span class="comment">//elements can be inactive to add temporary walls. fractional velocity is integrated by parts so walls are seen as having zero velocity without doing anything</span></div>
 <div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;                    {</div>
 <div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;                        <span class="comment">//double Area;</span></div>
-<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;                        <a class="code" href="../../dc/dea/class_kratos_1_1_geometry.html">Geometry&lt;Node&lt;3&gt;</a> &gt;&amp; geom = ielem-&gt;GetGeometry();</div>
+<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;                        <a class="code" href="../../dc/dea/class_kratos_1_1_geometry.html">Geometry&lt;Node &gt;</a>&amp; geom = ielem-&gt;GetGeometry();</div>
 <div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160; </div>
 <div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;                        <a class="code" href="../../d4/ddc/class_kratos_1_1array__1d.html">array_1d&lt;unsigned int, 4 &gt;</a> fixed_nodes; <span class="comment">//unordered : i position in the array might not correspond to i node of the element</span></div>
 <div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;                        <a class="code" href="../../d4/ddc/class_kratos_1_1array__1d.html">array_1d&lt;bool, 4 &gt;</a> is_node_fixed; <span class="comment">//i position belongs to i node of the element</span></div>
@@ -659,7 +659,7 @@ $(function() {
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri May 12 2023 02:03:51 for KratosMultiphysics by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Sat May 13 2023 02:04:13 for KratosMultiphysics by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

@@ -123,7 +123,7 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:a53cc99b9bafd17131084275d8738cba8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d16/vertex__utilities_8h.html#a53cc99b9bafd17131084275d8738cba8">KRATOS_DECLARE_VIRTUAL_VARIABLE_GETTER</a>(TValue)&#160;&#160;&#160;    virtual TValue GetValue(const Node&lt;3&gt;&amp; rNode, const Variable&lt;TValue&gt;&amp; rVariable) const = 0</td></tr>
+<tr class="memitem:a53cc99b9bafd17131084275d8738cba8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d16/vertex__utilities_8h.html#a53cc99b9bafd17131084275d8738cba8">KRATOS_DECLARE_VIRTUAL_VARIABLE_GETTER</a>(TValue)&#160;&#160;&#160;    virtual TValue GetValue(const Node&amp; rNode, const Variable&lt;TValue&gt;&amp; rVariable) const = 0</td></tr>
 <tr class="separator:a53cc99b9bafd17131084275d8738cba8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad3c1f03b3845bc221fccd64ed9219e7f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d16/vertex__utilities_8h.html#ad3c1f03b3845bc221fccd64ed9219e7f">KRATOS_DEFINE_HISTORICAL_VARIABLE_GETTER</a>(TValue)</td></tr>
 <tr class="separator:ad3c1f03b3845bc221fccd64ed9219e7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -147,7 +147,7 @@ Functions</h2></td></tr>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">TValue</td><td>)</td>
-          <td>&#160;&#160;&#160;    virtual TValue GetValue(const Node&lt;3&gt;&amp; rNode, const Variable&lt;TValue&gt;&amp; rVariable) const = 0</td>
+          <td>&#160;&#160;&#160;    virtual TValue GetValue(const Node&amp; rNode, const Variable&lt;TValue&gt;&amp; rVariable) const = 0</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -169,7 +169,7 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">    TValue <a class="code" href="../../da/d07/namespace_kratos_1_1_python.html#afdd2f70c75c8e7c828cbab4a370a6d35">GetValue</a>(<span class="keyword">const</span> Node&lt;3&gt;&amp; rNode, <span class="keyword">const</span> Variable&lt;TValue&gt;&amp; <a class="code" href="../../d7/dc7/namespace_kratos_1_1_move_mesh_utilities.html#aee4d4e75adb6cdde18e7be730037fb71">rVariable</a>) <span class="keyword">const</span> <span class="keyword">override</span> <span class="keyword">final</span> \</div>
+<b>Value:</b><div class="fragment"><div class="line">    TValue <a class="code" href="../../da/d07/namespace_kratos_1_1_python.html#afdd2f70c75c8e7c828cbab4a370a6d35">GetValue</a>(<span class="keyword">const</span> Node&amp; rNode, <span class="keyword">const</span> Variable&lt;TValue&gt;&amp; <a class="code" href="../../d7/dc7/namespace_kratos_1_1_move_mesh_utilities.html#aee4d4e75adb6cdde18e7be730037fb71">rVariable</a>) <span class="keyword">const</span> <span class="keyword">override</span> <span class="keyword">final</span> \</div>
 <div class="line">    {                                                                                             \</div>
 <div class="line">        return rNode.GetSolutionStepValue(<a class="code" href="../../d7/dc7/namespace_kratos_1_1_move_mesh_utilities.html#aee4d4e75adb6cdde18e7be730037fb71">rVariable</a>);                                             \</div>
 <div class="line">    }</div>
@@ -193,7 +193,7 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">    TValue <a class="code" href="../../da/d07/namespace_kratos_1_1_python.html#afdd2f70c75c8e7c828cbab4a370a6d35">GetValue</a>(<span class="keyword">const</span> Node&lt;3&gt;&amp; rNode, <span class="keyword">const</span> Variable&lt;TValue&gt;&amp; <a class="code" href="../../d7/dc7/namespace_kratos_1_1_move_mesh_utilities.html#aee4d4e75adb6cdde18e7be730037fb71">rVariable</a>) <span class="keyword">const</span> <span class="keyword">override</span> <span class="keyword">final</span> \</div>
+<b>Value:</b><div class="fragment"><div class="line">    TValue <a class="code" href="../../da/d07/namespace_kratos_1_1_python.html#afdd2f70c75c8e7c828cbab4a370a6d35">GetValue</a>(<span class="keyword">const</span> Node&amp; rNode, <span class="keyword">const</span> Variable&lt;TValue&gt;&amp; <a class="code" href="../../d7/dc7/namespace_kratos_1_1_move_mesh_utilities.html#aee4d4e75adb6cdde18e7be730037fb71">rVariable</a>) <span class="keyword">const</span> <span class="keyword">override</span> <span class="keyword">final</span> \</div>
 <div class="line">    {                                                                                             \</div>
 <div class="line">        return rNode.GetValue(<a class="code" href="../../d7/dc7/namespace_kratos_1_1_move_mesh_utilities.html#aee4d4e75adb6cdde18e7be730037fb71">rVariable</a>);                                                         \</div>
 <div class="line">    }</div>
@@ -203,7 +203,7 @@ Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri May 12 2023 02:08:25 for KratosMultiphysics by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Sat May 13 2023 02:08:46 for KratosMultiphysics by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

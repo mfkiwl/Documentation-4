@@ -141,13 +141,13 @@ $(function() {
 <div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;        <a class="code" href="../../de/d83/class_kratos_1_1_pointer_vector.html">PointerVector&lt; Element &gt;</a> elements_to_solve;</div>
 <div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;        elements_to_solve.<a class="code" href="../../de/d83/class_kratos_1_1_pointer_vector.html#a7507e0e9fc8ab95622662b927f86e50f">reserve</a>(rElements.size());</div>
 <div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160; </div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;        <a class="code" href="../../de/d83/class_kratos_1_1_pointer_vector.html">PointerVector&lt; Node &lt; 3 &gt;</a> &gt; active_nodes;</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;        <a class="code" href="../../de/d83/class_kratos_1_1_pointer_vector.html">PointerVector&lt; Node &gt;</a> active_nodes;</div>
 <div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;        active_nodes.<a class="code" href="../../de/d83/class_kratos_1_1_pointer_vector.html#a7507e0e9fc8ab95622662b927f86e50f">reserve</a>(rElements.size());</div>
 <div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160; </div>
 <div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;        std::vector&lt;double&gt; node_distance_values;</div>
 <div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;        node_distance_values.reserve(rElements.size());</div>
 <div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160; </div>
-<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;        <a class="code" href="../../de/d83/class_kratos_1_1_pointer_vector.html">PointerVector&lt; Node &lt; 3 &gt;</a> &gt; failed_nodes;</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;        <a class="code" href="../../de/d83/class_kratos_1_1_pointer_vector.html">PointerVector&lt; Node &gt;</a> failed_nodes;</div>
 <div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160; </div>
 <div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160; </div>
 <div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160; </div>
@@ -191,7 +191,7 @@ $(function() {
 <div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;            <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> current_position = 0; current_position != elements_to_solve.size(); current_position++)</div>
 <div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;            {</div>
 <div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;                <a class="code" href="../../de/d83/class_kratos_1_1_pointer_vector.html#a838d2e0ff727f7ad43af5dadfbb496b2">PointerVector&lt; Element &gt;::iterator</a> current_element = (elements_to_solve.begin() + current_position);</div>
-<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;                <a class="code" href="../../dc/dea/class_kratos_1_1_geometry.html">Geometry&lt; Node &lt; 3 &gt;</a> &gt;&amp; geom = current_element-&gt;GetGeometry();</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;                <a class="code" href="../../dc/dea/class_kratos_1_1_geometry.html">Geometry&lt; Node &gt;</a>&amp; geom = current_element-&gt;GetGeometry();</div>
 <div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160; </div>
 <div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;                <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> unknown_node_index = 0;</div>
 <div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160; </div>
@@ -273,7 +273,7 @@ $(function() {
 <div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160; </div>
 <div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160; </div>
 <div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;            <span class="comment">//CHAPUZA TEST</span></div>
-<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;<span class="comment">//                 for (PointerVector&lt; Node &lt; 3 &gt; &gt;::iterator it = failed_nodes.begin(); it != failed_nodes.end(); it++)</span></div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;<span class="comment">//                 for (PointerVector&lt; Node &gt;::iterator it = failed_nodes.begin(); it != failed_nodes.end(); it++)</span></div>
 <div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;<span class="comment">//                 {</span></div>
 <div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;<span class="comment">//                     if (it-&gt;GetValue(IS_VISITED) != 1) //it was not possible to calculate the distance</span></div>
 <div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;<span class="comment">//                     {</span></div>
@@ -287,7 +287,7 @@ $(function() {
 <div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;<span class="comment">//                KRATOS_WATCH(node_distance_values.size());</span></div>
 <div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;<span class="comment">//</span></div>
 <div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;<span class="comment">//                unsigned int k=0;</span></div>
-<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;<span class="comment">//                for (PointerVector&lt; Node &lt; 3 &gt; &gt;::iterator it = active_nodes.begin(); it != active_nodes.end(); it++)</span></div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;<span class="comment">//                for (PointerVector&lt; Node &gt;::iterator it = active_nodes.begin(); it != active_nodes.end(); it++)</span></div>
 <div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;<span class="comment">//                {</span></div>
 <div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;<span class="comment">//                    if (it-&gt;FastGetSolutionStepValue(rDistanceVar) &gt; node_distance_values[k])</span></div>
 <div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;<span class="comment">//                        it-&gt;FastGetSolutionStepValue(rDistanceVar) = node_distance_values[k];</span></div>
@@ -302,7 +302,7 @@ $(function() {
 <div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160; </div>
 <div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160; </div>
 <div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;            <span class="comment">//now loop over all of the active nodes, and assign the minimum value of distance</span></div>
-<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;            <span class="keywordflow">for</span> (<a class="code" href="../../de/d83/class_kratos_1_1_pointer_vector.html">PointerVector</a>&lt; <a class="code" href="../../d5/ddd/class_kratos_1_1_node.html">Node &lt; 3 &gt;</a> &gt;::iterator it = active_nodes.<a class="code" href="../../de/d83/class_kratos_1_1_pointer_vector.html#ae1f6f2135a6f233d4a64a2b2e8644836">begin</a>(); it != active_nodes.<a class="code" href="../../de/d83/class_kratos_1_1_pointer_vector.html#a67aac002f7b56f8be5c459bec161f7d1">end</a>(); it++)</div>
+<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;            <span class="keywordflow">for</span> (<a class="code" href="../../de/d83/class_kratos_1_1_pointer_vector.html#a838d2e0ff727f7ad43af5dadfbb496b2">PointerVector&lt; Node &gt;::iterator</a> it = active_nodes.<a class="code" href="../../de/d83/class_kratos_1_1_pointer_vector.html#ae1f6f2135a6f233d4a64a2b2e8644836">begin</a>(); it != active_nodes.<a class="code" href="../../de/d83/class_kratos_1_1_pointer_vector.html#a67aac002f7b56f8be5c459bec161f7d1">end</a>(); it++)</div>
 <div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;            {</div>
 <div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;                <span class="keywordflow">if</span>(it-&gt;FastGetSolutionStepValue(rDistanceVar) &lt; max_distance)</div>
 <div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;                {</div>
@@ -347,14 +347,14 @@ $(function() {
 <div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160; </div>
 <div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;        <span class="comment">//approximate computation of distance on failed nodes</span></div>
 <div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> confirmed_failures = 0;</div>
-<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;        <span class="keywordflow">for</span> (<a class="code" href="../../de/d83/class_kratos_1_1_pointer_vector.html">PointerVector</a>&lt; <a class="code" href="../../d5/ddd/class_kratos_1_1_node.html">Node &lt; 3 &gt;</a> &gt;::iterator it = failed_nodes.<a class="code" href="../../de/d83/class_kratos_1_1_pointer_vector.html#ae1f6f2135a6f233d4a64a2b2e8644836">begin</a>(); it != failed_nodes.<a class="code" href="../../de/d83/class_kratos_1_1_pointer_vector.html#a67aac002f7b56f8be5c459bec161f7d1">end</a>(); it++)</div>
+<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;        <span class="keywordflow">for</span> (<a class="code" href="../../de/d83/class_kratos_1_1_pointer_vector.html#a838d2e0ff727f7ad43af5dadfbb496b2">PointerVector&lt; Node &gt;::iterator</a> it = failed_nodes.<a class="code" href="../../de/d83/class_kratos_1_1_pointer_vector.html#ae1f6f2135a6f233d4a64a2b2e8644836">begin</a>(); it != failed_nodes.<a class="code" href="../../de/d83/class_kratos_1_1_pointer_vector.html#a67aac002f7b56f8be5c459bec161f7d1">end</a>(); it++)</div>
 <div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;        {</div>
 <div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;            <span class="keywordflow">if</span> (it-&gt;GetValue(IS_VISITED) != 1 ) <span class="comment">//it was not possible to calculate the distance</span></div>
 <div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;            {</div>
 <div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;                confirmed_failures++;</div>
 <div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;                <span class="keywordtype">double</span> davg = 0.0;</div>
 <div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;                <span class="keywordtype">double</span> <a class="code" href="../../d0/daa/namespacescript___t_h_e_r_m_a_l___c_o_r_r_e_c_t.html#a37fe67255f2e1d30f90f0f02ceb60616">counter</a> = 0.0;</div>
-<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;                <span class="keywordflow">for</span> (<a class="code" href="../../d4/dc2/class_kratos_1_1_global_pointers_vector.html">GlobalPointersVector</a>&lt; <a class="code" href="../../d5/ddd/class_kratos_1_1_node.html">Node &lt; 3 &gt;</a> &gt;::iterator in = it-&gt;<a class="code" href="../../d5/ddd/class_kratos_1_1_node.html#a093fc2efe1af889fbfca7a4ed6d3197a">GetValue</a>(NEIGHBOUR_NODES).begin(); in != it-&gt;GetValue(NEIGHBOUR_NODES).end(); in++)</div>
+<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;                <span class="keywordflow">for</span> (<a class="code" href="../../d4/dc2/class_kratos_1_1_global_pointers_vector.html#a7d62bec0687704a8de1c1466f89e04e9">GlobalPointersVector&lt; Node &gt;::iterator</a> in = it-&gt;GetValue(NEIGHBOUR_NODES).begin(); in != it-&gt;GetValue(NEIGHBOUR_NODES).end(); in++)</div>
 <div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;                {</div>
 <div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;                    <span class="keywordflow">if</span> (in-&gt;GetValue(IS_VISITED) == 1)</div>
 <div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;                    {</div>
@@ -433,10 +433,8 @@ $(function() {
 <div class="ttc" id="aclass_kratos_1_1_geometry_html"><div class="ttname"><a href="../../dc/dea/class_kratos_1_1_geometry.html">Kratos::Geometry</a></div><div class="ttdoc">Geometry base class.</div><div class="ttdef"><b>Definition:</b> geometry.h:71</div></div>
 <div class="ttc" id="aclass_kratos_1_1_geometry_html_a0eeca428fac9434755f761a5f74e795c"><div class="ttname"><a href="../../dc/dea/class_kratos_1_1_geometry.html#a0eeca428fac9434755f761a5f74e795c">Kratos::Geometry::push_back</a></div><div class="ttdeci">void push_back(PointPointerType x)</div><div class="ttdef"><b>Definition:</b> geometry.h:548</div></div>
 <div class="ttc" id="aclass_kratos_1_1_geometry_html_ad118a7d5327cec70de8c5ee81db7b91e"><div class="ttname"><a href="../../dc/dea/class_kratos_1_1_geometry.html#ad118a7d5327cec70de8c5ee81db7b91e">Kratos::Geometry::GetValue</a></div><div class="ttdeci">TVariableType::Type &amp; GetValue(const TVariableType &amp;rThisVariable)</div><div class="ttdef"><b>Definition:</b> geometry.h:627</div></div>
-<div class="ttc" id="aclass_kratos_1_1_global_pointers_vector_html"><div class="ttname"><a href="../../d4/dc2/class_kratos_1_1_global_pointers_vector.html">Kratos::GlobalPointersVector</a></div><div class="ttdoc">This class is a vector which stores global pointers.</div><div class="ttdef"><b>Definition:</b> global_pointers_vector.h:62</div></div>
+<div class="ttc" id="aclass_kratos_1_1_global_pointers_vector_html_a7d62bec0687704a8de1c1466f89e04e9"><div class="ttname"><a href="../../d4/dc2/class_kratos_1_1_global_pointers_vector.html#a7d62bec0687704a8de1c1466f89e04e9">Kratos::GlobalPointersVector::iterator</a></div><div class="ttdeci">boost::indirect_iterator&lt; typename TContainerType::iterator &gt; iterator</div><div class="ttdef"><b>Definition:</b> global_pointers_vector.h:81</div></div>
 <div class="ttc" id="aclass_kratos_1_1_internals_1_1_matrix_html"><div class="ttname"><a href="../../d9/dbb/class_kratos_1_1_internals_1_1_matrix.html">Kratos::Internals::Matrix</a></div><div class="ttdef"><b>Definition:</b> amatrix_interface.h:41</div></div>
-<div class="ttc" id="aclass_kratos_1_1_node_html"><div class="ttname"><a href="../../d5/ddd/class_kratos_1_1_node.html">Kratos::Node</a></div><div class="ttdoc">This class defines the node.</div><div class="ttdef"><b>Definition:</b> node.h:68</div></div>
-<div class="ttc" id="aclass_kratos_1_1_node_html_a093fc2efe1af889fbfca7a4ed6d3197a"><div class="ttname"><a href="../../d5/ddd/class_kratos_1_1_node.html#a093fc2efe1af889fbfca7a4ed6d3197a">Kratos::Node::GetValue</a></div><div class="ttdeci">TVariableType::Type &amp; GetValue(const TVariableType &amp;rThisVariable)</div><div class="ttdef"><b>Definition:</b> node.h:493</div></div>
 <div class="ttc" id="aclass_kratos_1_1_pointer_vector_html"><div class="ttname"><a href="../../de/d83/class_kratos_1_1_pointer_vector.html">Kratos::PointerVector</a></div><div class="ttdoc">PointerVector is a container like stl vector but using a vector to store pointers to its data.</div><div class="ttdef"><b>Definition:</b> pointer_vector.h:72</div></div>
 <div class="ttc" id="aclass_kratos_1_1_pointer_vector_html_a073ae94052f2b695f537a222dcb59fd4"><div class="ttname"><a href="../../de/d83/class_kratos_1_1_pointer_vector.html#a073ae94052f2b695f537a222dcb59fd4">Kratos::PointerVector::clear</a></div><div class="ttdeci">void clear()</div><div class="ttdef"><b>Definition:</b> pointer_vector.h:309</div></div>
 <div class="ttc" id="aclass_kratos_1_1_pointer_vector_html_a27bddb64ad2bd853f80d8e3246f22bcd"><div class="ttname"><a href="../../de/d83/class_kratos_1_1_pointer_vector.html#a27bddb64ad2bd853f80d8e3246f22bcd">Kratos::PointerVector::size</a></div><div class="ttdeci">size_type size() const</div><div class="ttdef"><b>Definition:</b> pointer_vector.h:255</div></div>
@@ -472,7 +470,7 @@ $(function() {
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri May 12 2023 02:08:13 for KratosMultiphysics by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Sat May 13 2023 02:08:34 for KratosMultiphysics by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

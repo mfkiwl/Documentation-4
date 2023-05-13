@@ -697,8 +697,8 @@ $(function() {
 <div class="line"><a name="l00787"></a><span class="lineno">  787</span>&#160;            <span class="keywordflow">if</span>(it-&gt;FastGetSolutionStepValue(IS_FLUID)!=0 &amp;&amp; (it-&gt;GetValue(NEIGHBOUR_NODES)).size() != 0 )</div>
 <div class="line"><a name="l00788"></a><span class="lineno">  788</span>&#160;            {</div>
 <div class="line"><a name="l00789"></a><span class="lineno">  789</span>&#160;                <span class="keywordtype">int</span> count_fluid_neighb=0;</div>
-<div class="line"><a name="l00790"></a><span class="lineno">  790</span>&#160;                GlobalPointersVector&lt; Node&lt;3&gt; &gt;&amp; neighb_nodes = it-&gt;GetValue(NEIGHBOUR_NODES);</div>
-<div class="line"><a name="l00791"></a><span class="lineno">  791</span>&#160;                <span class="keywordflow">for</span>( GlobalPointersVector&lt; Node&lt;3&gt; &gt;::iterator <a class="code" href="../../d2/db8/namespacetensors.html#a15a1da80aa773e2015eba781cababe05">i</a> =  neighb_nodes.begin();</div>
+<div class="line"><a name="l00790"></a><span class="lineno">  790</span>&#160;                GlobalPointersVector&lt; Node &gt;&amp; neighb_nodes = it-&gt;GetValue(NEIGHBOUR_NODES);</div>
+<div class="line"><a name="l00791"></a><span class="lineno">  791</span>&#160;                <span class="keywordflow">for</span>( <a class="code" href="../../d4/dc2/class_kratos_1_1_global_pointers_vector.html#a7d62bec0687704a8de1c1466f89e04e9">GlobalPointersVector&lt; Node &gt;::iterator</a> <a class="code" href="../../d2/db8/namespacetensors.html#a15a1da80aa773e2015eba781cababe05">i</a> = neighb_nodes.begin();</div>
 <div class="line"><a name="l00792"></a><span class="lineno">  792</span>&#160;                        <a class="code" href="../../d2/db8/namespacetensors.html#a15a1da80aa773e2015eba781cababe05">i</a> != neighb_nodes.end(); <a class="code" href="../../d2/db8/namespacetensors.html#a15a1da80aa773e2015eba781cababe05">i</a>++)</div>
 <div class="line"><a name="l00793"></a><span class="lineno">  793</span>&#160;                {</div>
 <div class="line"><a name="l00794"></a><span class="lineno">  794</span>&#160;                    <span class="keywordflow">if</span> (<a class="code" href="../../d2/db8/namespacetensors.html#a15a1da80aa773e2015eba781cababe05">i</a>-&gt;FastGetSolutionStepValue(IS_FLUID)!=0)</div>
@@ -721,7 +721,7 @@ $(function() {
 <div class="line"><a name="l00811"></a><span class="lineno">  811</span>&#160; </div>
 <div class="line"><a name="l00812"></a><span class="lineno">  812</span>&#160;        <span class="keywordflow">for</span> (<span class="keyword">typename</span> NodesArrayType::iterator it=r_model_part.NodesBegin(); it!=r_model_part.NodesEnd(); ++it)</div>
 <div class="line"><a name="l00813"></a><span class="lineno">  813</span>&#160;        {</div>
-<div class="line"><a name="l00814"></a><span class="lineno">  814</span>&#160;            GlobalPointersVector&lt; Node&lt;3&gt; &gt;&amp; neighb_nodes = it-&gt;GetValue(NEIGHBOUR_NODES);</div>
+<div class="line"><a name="l00814"></a><span class="lineno">  814</span>&#160;            GlobalPointersVector&lt; Node &gt;&amp; neighb_nodes = it-&gt;GetValue(NEIGHBOUR_NODES);</div>
 <div class="line"><a name="l00815"></a><span class="lineno">  815</span>&#160;            <span class="keywordflow">if</span>( neighb_nodes.size() != 0 &amp;&amp; it-&gt;FastGetSolutionStepValue(IS_FLUID)!=0)</div>
 <div class="line"><a name="l00816"></a><span class="lineno">  816</span>&#160;            {</div>
 <div class="line"><a name="l00817"></a><span class="lineno">  817</span>&#160;                <span class="comment">//first row in the block</span></div>
@@ -736,7 +736,7 @@ $(function() {
 <div class="line"><a name="l00826"></a><span class="lineno">  826</span>&#160;                }</div>
 <div class="line"><a name="l00827"></a><span class="lineno">  827</span>&#160; </div>
 <div class="line"><a name="l00828"></a><span class="lineno">  828</span>&#160;                <span class="comment">//filling and order the first neighbours list</span></div>
-<div class="line"><a name="l00829"></a><span class="lineno">  829</span>&#160;                <span class="keywordflow">for</span>( GlobalPointersVector&lt; Node&lt;3&gt; &gt;::iterator <a class="code" href="../../d2/db8/namespacetensors.html#a15a1da80aa773e2015eba781cababe05">i</a> =  neighb_nodes.begin();</div>
+<div class="line"><a name="l00829"></a><span class="lineno">  829</span>&#160;                <span class="keywordflow">for</span>( <a class="code" href="../../d4/dc2/class_kratos_1_1_global_pointers_vector.html#a7d62bec0687704a8de1c1466f89e04e9">GlobalPointersVector&lt; Node &gt;::iterator</a> <a class="code" href="../../d2/db8/namespacetensors.html#a15a1da80aa773e2015eba781cababe05">i</a> = neighb_nodes.begin();</div>
 <div class="line"><a name="l00830"></a><span class="lineno">  830</span>&#160;                        <a class="code" href="../../d2/db8/namespacetensors.html#a15a1da80aa773e2015eba781cababe05">i</a> != neighb_nodes.end(); <a class="code" href="../../d2/db8/namespacetensors.html#a15a1da80aa773e2015eba781cababe05">i</a>++)</div>
 <div class="line"><a name="l00831"></a><span class="lineno">  831</span>&#160;                {</div>
 <div class="line"><a name="l00832"></a><span class="lineno">  832</span>&#160;                    <span class="keywordflow">if</span> ( <a class="code" href="../../d2/db8/namespacetensors.html#a15a1da80aa773e2015eba781cababe05">i</a>-&gt;FastGetSolutionStepValue(IS_FLUID)!=0)</div>
@@ -813,7 +813,7 @@ $(function() {
 <div class="line"><a name="l00903"></a><span class="lineno">  903</span>&#160;        {</div>
 <div class="line"><a name="l00904"></a><span class="lineno">  904</span>&#160; </div>
 <div class="line"><a name="l00905"></a><span class="lineno">  905</span>&#160; </div>
-<div class="line"><a name="l00906"></a><span class="lineno">  906</span>&#160;            Geometry&lt; Node&lt;3&gt; &gt;&amp; geom = <a class="code" href="../../d2/db8/namespacetensors.html#a15a1da80aa773e2015eba781cababe05">i</a>-&gt;GetGeometry();</div>
+<div class="line"><a name="l00906"></a><span class="lineno">  906</span>&#160;            Geometry&lt; Node &gt;&amp; geom = <a class="code" href="../../d2/db8/namespacetensors.html#a15a1da80aa773e2015eba781cababe05">i</a>-&gt;GetGeometry();</div>
 <div class="line"><a name="l00907"></a><span class="lineno">  907</span>&#160;            <span class="comment">//counting the n-r of structure nodes</span></div>
 <div class="line"><a name="l00908"></a><span class="lineno">  908</span>&#160;            <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> str_nr=0;</div>
 <div class="line"><a name="l00909"></a><span class="lineno">  909</span>&#160; </div>
@@ -925,6 +925,7 @@ $(function() {
 <div class="line"><a name="l01048"></a><span class="lineno"> 1048</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* KRATOS_LAP_MODIFIED_LINEAR_STRATEGY  defined */</span><span class="preprocessor"></span></div>
 <div class="line"><a name="l01049"></a><span class="lineno"> 1049</span>&#160; </div>
 <div class="ttc" id="a_u_l_f__application_8h_html"><div class="ttname"><a href="../../d9/d45/_u_l_f__application_8h.html">ULF_application.h</a></div></div>
+<div class="ttc" id="aclass_kratos_1_1_global_pointers_vector_html_a7d62bec0687704a8de1c1466f89e04e9"><div class="ttname"><a href="../../d4/dc2/class_kratos_1_1_global_pointers_vector.html#a7d62bec0687704a8de1c1466f89e04e9">Kratos::GlobalPointersVector::iterator</a></div><div class="ttdeci">boost::indirect_iterator&lt; typename TContainerType::iterator &gt; iterator</div><div class="ttdef"><b>Definition:</b> global_pointers_vector.h:81</div></div>
 <div class="ttc" id="aclass_kratos_1_1_implicit_solving_strategy_html"><div class="ttname"><a href="../../d8/df2/class_kratos_1_1_implicit_solving_strategy.html">Kratos::ImplicitSolvingStrategy</a></div><div class="ttdoc">Implicit solving strategy base class This is the base class from which we will derive all the implici...</div><div class="ttdef"><b>Definition:</b> implicit_solving_strategy.h:61</div></div>
 <div class="ttc" id="aclass_kratos_1_1_implicit_solving_strategy_html_a02604f35bccb23ba024a708a5b7af8f2"><div class="ttname"><a href="../../d8/df2/class_kratos_1_1_implicit_solving_strategy.html#a02604f35bccb23ba024a708a5b7af8f2">Kratos::ImplicitSolvingStrategy::TSystemVectorType</a></div><div class="ttdeci">BaseType::TSystemVectorType TSystemVectorType</div><div class="ttdef"><b>Definition:</b> implicit_solving_strategy.h:72</div></div>
 <div class="ttc" id="aclass_kratos_1_1_implicit_solving_strategy_html_a103a76ae24ff7ca4978aee3b6fa775e9"><div class="ttname"><a href="../../d8/df2/class_kratos_1_1_implicit_solving_strategy.html#a103a76ae24ff7ca4978aee3b6fa775e9">Kratos::ImplicitSolvingStrategy::TSchemeType</a></div><div class="ttdeci">Scheme&lt; TSparseSpace, TDenseSpace &gt; TSchemeType</div><div class="ttdef"><b>Definition:</b> implicit_solving_strategy.h:82</div></div>
@@ -1012,7 +1013,7 @@ $(function() {
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri May 12 2023 02:05:52 for KratosMultiphysics by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Sat May 13 2023 02:06:13 for KratosMultiphysics by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

@@ -325,8 +325,8 @@ $(function() {
 <div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;<span class="comment">            double h_max = 0.0;</span></div>
 <div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;<span class="comment"></span> </div>
 <div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;<span class="comment">            //compute nodal h (by max edge size)</span></div>
-<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;<span class="comment">            GlobalPointersVector&lt;Node&lt;3&gt; &gt;&amp; neigbours = i-&gt;GetValue(NEIGHBOUR_NODES);</span></div>
-<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;<span class="comment">            for(GlobalPointersVector&lt;Node&lt;3&gt; &gt;::iterator ineighb=neigbours.begin(); ineighb!=neigbours.end(); ineighb++)</span></div>
+<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;<span class="comment">            GlobalPointersVector&lt;Node &gt;&amp; neigbours = i-&gt;GetValue(NEIGHBOUR_NODES);</span></div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;<span class="comment">            for(GlobalPointersVector&lt;Node &gt;::iterator ineighb=neigbours.begin(); ineighb!=neigbours.end(); ineighb++)</span></div>
 <div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;<span class="comment">            {</span></div>
 <div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;<span class="comment">                array_1d&lt;double,3&gt; aux = ineighb-&gt;Coordinates();</span></div>
 <div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;<span class="comment">                aux -=  xc;</span></div>
@@ -690,7 +690,7 @@ $(function() {
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri May 12 2023 02:03:02 for KratosMultiphysics by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Sat May 13 2023 02:03:23 for KratosMultiphysics by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

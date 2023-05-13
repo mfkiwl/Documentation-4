@@ -174,8 +174,8 @@ $(function() {
 <div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;        Properties::Pointer properties = rDestination_ModelPart.GetMesh().pGetProperties(1);</div>
 <div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160; </div>
 <div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;        <span class="comment">//defintions for spatial search</span></div>
-<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;        <span class="keyword">typedef</span> <a class="code" href="../../d5/ddd/class_kratos_1_1_node.html">Node&lt;3&gt;</a> <a class="code" href="../../db/d66/namespace_kratos.html#aea0b34bb32b277d76c906c99e904f43d">PointType</a>;</div>
-<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;        <span class="keyword">typedef</span> <a class="code" href="../../d5/ddd/class_kratos_1_1_node.html">Node&lt;3&gt;::Pointer</a> <a class="code" href="../../db/d66/namespace_kratos.html#ab6b9336e824811a932ab6163e81d63b3">PointTypePointer</a>;</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;        <span class="keyword">typedef</span> <a class="code" href="../../d5/ddd/class_kratos_1_1_node.html">Node</a> <a class="code" href="../../db/d66/namespace_kratos.html#aea0b34bb32b277d76c906c99e904f43d">PointType</a>;</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;        <span class="keyword">typedef</span> Node::Pointer <a class="code" href="../../db/d66/namespace_kratos.html#ab6b9336e824811a932ab6163e81d63b3">PointTypePointer</a>;</div>
 <div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;        <span class="keyword">typedef</span> std::vector&lt;PointType::Pointer&gt;           <a class="code" href="../../db/d66/namespace_kratos.html#aa8155351242bcfc8f8b9169ed3260d1c">PointVector</a>;</div>
 <div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;        <span class="keyword">typedef</span> std::vector&lt;PointType::Pointer&gt;::iterator <a class="code" href="../../db/d66/namespace_kratos.html#acebd5eae8dc538f274f9a9715ac37650">PointIterator</a>;</div>
 <div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;        <span class="keyword">typedef</span> std::vector&lt;double&gt;               <a class="code" href="../../db/d66/namespace_kratos.html#add8675b61cae5b580f3d7497d15035a3">DistanceVector</a>;</div>
@@ -212,7 +212,7 @@ $(function() {
 <div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;                node_it != rDestination_ModelPart.NodesEnd(); ++node_it)</div>
 <div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;        {</div>
 <div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;            <span class="comment">//PointType::Pointer pnode(new PointType(*node_it));</span></div>
-<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;            <a class="code" href="../../d5/ddd/class_kratos_1_1_node.html">Node&lt;3&gt;::Pointer</a> pnode = *(node_it.base());</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;            Node::Pointer pnode = *(node_it.base());</div>
 <div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160; </div>
 <div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;            <span class="comment">//putting the nodes of the destination_model part in an auxiliary list</span></div>
 <div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;            list_of_new_nodes.push_back( pnode );</div>
@@ -228,7 +228,7 @@ $(function() {
 <div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160; </div>
 <div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160; </div>
 <div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;        <span class="comment">//work arrays</span></div>
-<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;        <a class="code" href="../../d5/ddd/class_kratos_1_1_node.html">Node&lt;3&gt;</a> work_point(0,0.0,0.0,0.0);</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;        <a class="code" href="../../d5/ddd/class_kratos_1_1_node.html">Node</a> work_point(0,0.0,0.0,0.0);</div>
 <div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> MaximumNumberOfResults = 10000;</div>
 <div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;        <a class="code" href="../../db/d66/namespace_kratos.html#aa8155351242bcfc8f8b9169ed3260d1c">PointVector</a> Results(MaximumNumberOfResults);</div>
 <div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;        <a class="code" href="../../db/d66/namespace_kratos.html#add8675b61cae5b580f3d7497d15035a3">DistanceVector</a> ResultsDistances(MaximumNumberOfResults);</div>
@@ -246,7 +246,7 @@ $(function() {
 <div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;        <span class="keywordflow">for</span>( ModelPart::ElementsContainerType::iterator el_it = rOrigin_ModelPart.ElementsBegin();</div>
 <div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;                el_it != rOrigin_ModelPart.ElementsEnd(); el_it++)</div>
 <div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;        {</div>
-<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;            <a class="code" href="../../dc/dea/class_kratos_1_1_geometry.html">Geometry&lt;Node&lt;3&gt;</a> &gt;&amp;geom = el_it-&gt;GetGeometry();</div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;            <a class="code" href="../../dc/dea/class_kratos_1_1_geometry.html">Geometry&lt;Node &gt;</a>&amp;geom = el_it-&gt;GetGeometry();</div>
 <div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160; </div>
 <div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;            <span class="comment">//find the center and &quot;radius&quot; of the element</span></div>
 <div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;<span class="comment">//              double xc,  yc,  radius;</span></div>
@@ -345,8 +345,8 @@ $(function() {
 <div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;        Properties::Pointer properties = rDestination_ModelPart.GetMesh().pGetProperties(1);</div>
 <div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160; </div>
 <div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;        <span class="comment">//defintions for spatial search</span></div>
-<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;        <span class="keyword">typedef</span> <a class="code" href="../../d5/ddd/class_kratos_1_1_node.html">Node&lt;3&gt;</a> <a class="code" href="../../db/d66/namespace_kratos.html#aea0b34bb32b277d76c906c99e904f43d">PointType</a>;</div>
-<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;        <span class="keyword">typedef</span> <a class="code" href="../../d5/ddd/class_kratos_1_1_node.html">Node&lt;3&gt;::Pointer</a> <a class="code" href="../../db/d66/namespace_kratos.html#ab6b9336e824811a932ab6163e81d63b3">PointTypePointer</a>;</div>
+<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;        <span class="keyword">typedef</span> <a class="code" href="../../d5/ddd/class_kratos_1_1_node.html">Node</a> <a class="code" href="../../db/d66/namespace_kratos.html#aea0b34bb32b277d76c906c99e904f43d">PointType</a>;</div>
+<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;        <span class="keyword">typedef</span> Node::Pointer <a class="code" href="../../db/d66/namespace_kratos.html#ab6b9336e824811a932ab6163e81d63b3">PointTypePointer</a>;</div>
 <div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;        <span class="keyword">typedef</span> std::vector&lt;PointType::Pointer&gt;           <a class="code" href="../../db/d66/namespace_kratos.html#aa8155351242bcfc8f8b9169ed3260d1c">PointVector</a>;</div>
 <div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;        <span class="keyword">typedef</span> std::vector&lt;PointType::Pointer&gt;::iterator <a class="code" href="../../db/d66/namespace_kratos.html#acebd5eae8dc538f274f9a9715ac37650">PointIterator</a>;</div>
 <div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;        <span class="keyword">typedef</span> std::vector&lt;double&gt;               <a class="code" href="../../db/d66/namespace_kratos.html#add8675b61cae5b580f3d7497d15035a3">DistanceVector</a>;</div>
@@ -393,7 +393,7 @@ $(function() {
 <div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160; </div>
 <div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160; </div>
 <div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;            <span class="comment">//PointType::Pointer pnode(new PointType(*node_it));</span></div>
-<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;            <a class="code" href="../../d5/ddd/class_kratos_1_1_node.html">Node&lt;3&gt;::Pointer</a> pnode = *(node_it.base());</div>
+<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;            Node::Pointer pnode = *(node_it.base());</div>
 <div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160; </div>
 <div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;            <span class="comment">//putting the nodes of the destination_model part in an auxiliary list</span></div>
 <div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;            list_of_new_nodes.push_back( pnode );</div>
@@ -410,7 +410,7 @@ $(function() {
 <div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;        tree nodes_tree(list_of_new_nodes.begin(),list_of_new_nodes.end(),bucket_size);</div>
 <div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160; </div>
 <div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;        <span class="comment">//work arrays</span></div>
-<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;        <a class="code" href="../../d5/ddd/class_kratos_1_1_node.html">Node&lt;3&gt;</a> work_point(0,0.0,0.0,0.0);</div>
+<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;        <a class="code" href="../../d5/ddd/class_kratos_1_1_node.html">Node</a> work_point(0,0.0,0.0,0.0);</div>
 <div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> MaximumNumberOfResults = 10000;</div>
 <div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;        <a class="code" href="../../db/d66/namespace_kratos.html#aa8155351242bcfc8f8b9169ed3260d1c">PointVector</a> Results(MaximumNumberOfResults);</div>
 <div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;        <a class="code" href="../../db/d66/namespace_kratos.html#add8675b61cae5b580f3d7497d15035a3">DistanceVector</a> ResultsDistances(MaximumNumberOfResults);</div>
@@ -423,7 +423,7 @@ $(function() {
 <div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;        <span class="keywordflow">for</span>( ModelPart::ElementsContainerType::iterator el_it = rOrigin_ModelPart.ElementsBegin();</div>
 <div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;                el_it != rOrigin_ModelPart.ElementsEnd(); el_it++)</div>
 <div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;        {</div>
-<div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;            <a class="code" href="../../dc/dea/class_kratos_1_1_geometry.html">Geometry&lt;Node&lt;3&gt;</a> &gt;&amp;geom = el_it-&gt;GetGeometry();</div>
+<div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;            <a class="code" href="../../dc/dea/class_kratos_1_1_geometry.html">Geometry&lt;Node &gt;</a>&amp;geom = el_it-&gt;GetGeometry();</div>
 <div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160; </div>
 <div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;            <span class="comment">//find the center and &quot;radius&quot; of the element</span></div>
 <div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;<span class="comment">//              double xc,  yc,  radius;</span></div>
@@ -548,7 +548,7 @@ $(function() {
 <div class="line"><a name="l00559"></a><span class="lineno">  559</span>&#160; </div>
 <div class="line"><a name="l00560"></a><span class="lineno">  560</span>&#160; </div>
 <div class="line"><a name="l00561"></a><span class="lineno">  561</span>&#160; </div>
-<div class="line"><a name="l00562"></a><span class="lineno">  562</span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">void</span> CalculateCenterAndSearchRadius(<a class="code" href="../../dc/dea/class_kratos_1_1_geometry.html">Geometry</a>&lt;<a class="code" href="../../d5/ddd/class_kratos_1_1_node.html">Node&lt;3&gt;</a> &gt;&amp;geom,</div>
+<div class="line"><a name="l00562"></a><span class="lineno">  562</span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">void</span> CalculateCenterAndSearchRadius(<a class="code" href="../../dc/dea/class_kratos_1_1_geometry.html">Geometry&lt;Node &gt;</a>&amp;geom,</div>
 <div class="line"><a name="l00563"></a><span class="lineno">  563</span>&#160;            <span class="keywordtype">double</span>&amp; <a class="code" href="../../db/ddc/namespacerotating__cone.html#ade9c7a11e93e2bae00b8012bbf269545">xc</a>, <span class="keywordtype">double</span>&amp; <a class="code" href="../../db/ddc/namespacerotating__cone.html#afaf69d8d94d23c708e8651f6dd7102fb">yc</a>, <span class="keywordtype">double</span>&amp; zc, <span class="keywordtype">double</span>&amp; <a class="code" href="../../d3/d2b/namespaceisotropic__damage__automatic__differentiation.html#aa0167962704d7b7b2d6916a90cd6ef51">R</a>, <a class="code" href="../../d4/ddc/class_kratos_1_1array__1d.html">array_1d&lt;double,3&gt;</a>&amp; <a class="code" href="../../df/d42/mmio_8h.html#a3f620e88ba511ca5d32c93b84802ff6e">N</a></div>
 <div class="line"><a name="l00564"></a><span class="lineno">  564</span>&#160;                                              )</div>
 <div class="line"><a name="l00565"></a><span class="lineno">  565</span>&#160;    {</div>
@@ -576,7 +576,7 @@ $(function() {
 <div class="line"><a name="l00587"></a><span class="lineno">  587</span>&#160;    }</div>
 <div class="line"><a name="l00588"></a><span class="lineno">  588</span>&#160;    <span class="comment">//***************************************</span></div>
 <div class="line"><a name="l00589"></a><span class="lineno">  589</span>&#160;    <span class="comment">//***************************************</span></div>
-<div class="line"><a name="l00590"></a><span class="lineno">  590</span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">void</span> CalculateCenterAndSearchRadius(Geometry&lt;Node&lt;3&gt; &gt;&amp;geom,</div>
+<div class="line"><a name="l00590"></a><span class="lineno">  590</span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">void</span> CalculateCenterAndSearchRadius(Geometry&lt;Node &gt;&amp;geom,</div>
 <div class="line"><a name="l00591"></a><span class="lineno">  591</span>&#160;            <span class="keywordtype">double</span>&amp; <a class="code" href="../../db/ddc/namespacerotating__cone.html#ade9c7a11e93e2bae00b8012bbf269545">xc</a>, <span class="keywordtype">double</span>&amp; <a class="code" href="../../db/ddc/namespacerotating__cone.html#afaf69d8d94d23c708e8651f6dd7102fb">yc</a>, <span class="keywordtype">double</span>&amp; zc, <span class="keywordtype">double</span>&amp; <a class="code" href="../../d3/d2b/namespaceisotropic__damage__automatic__differentiation.html#aa0167962704d7b7b2d6916a90cd6ef51">R</a>, array_1d&lt;double,4&gt;&amp; <a class="code" href="../../df/d42/mmio_8h.html#a3f620e88ba511ca5d32c93b84802ff6e">N</a></div>
 <div class="line"><a name="l00592"></a><span class="lineno">  592</span>&#160; </div>
 <div class="line"><a name="l00593"></a><span class="lineno">  593</span>&#160;                                              )</div>
@@ -647,7 +647,7 @@ $(function() {
 <div class="line"><a name="l00658"></a><span class="lineno">  658</span>&#160;    }</div>
 <div class="line"><a name="l00659"></a><span class="lineno">  659</span>&#160;    <span class="comment">//***************************************</span></div>
 <div class="line"><a name="l00660"></a><span class="lineno">  660</span>&#160;    <span class="comment">//***************************************</span></div>
-<div class="line"><a name="l00661"></a><span class="lineno">  661</span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">bool</span> CalculatePosition(  Geometry&lt;Node&lt;3&gt; &gt;&amp;geom,</div>
+<div class="line"><a name="l00661"></a><span class="lineno">  661</span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">bool</span> CalculatePosition(  Geometry&lt;Node &gt;&amp;geom,</div>
 <div class="line"><a name="l00662"></a><span class="lineno">  662</span>&#160;                                    <span class="keyword">const</span> <span class="keywordtype">double</span> <a class="code" href="../../db/ddc/namespacerotating__cone.html#ade9c7a11e93e2bae00b8012bbf269545">xc</a>, <span class="keyword">const</span> <span class="keywordtype">double</span> <a class="code" href="../../db/ddc/namespacerotating__cone.html#afaf69d8d94d23c708e8651f6dd7102fb">yc</a>, <span class="keyword">const</span> <span class="keywordtype">double</span> zc,</div>
 <div class="line"><a name="l00663"></a><span class="lineno">  663</span>&#160;                                    array_1d&lt;double,3&gt;&amp; <a class="code" href="../../df/d42/mmio_8h.html#a3f620e88ba511ca5d32c93b84802ff6e">N</a></div>
 <div class="line"><a name="l00664"></a><span class="lineno">  664</span>&#160;                                 )</div>
@@ -689,7 +689,7 @@ $(function() {
 <div class="line"><a name="l00700"></a><span class="lineno">  700</span>&#160;    <span class="comment">//***************************************</span></div>
 <div class="line"><a name="l00701"></a><span class="lineno">  701</span>&#160;    <span class="comment">//***************************************</span></div>
 <div class="line"><a name="l00702"></a><span class="lineno">  702</span>&#160; </div>
-<div class="line"><a name="l00703"></a><span class="lineno">  703</span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">bool</span> CalculatePosition(  Geometry&lt;Node&lt;3&gt; &gt;&amp;geom,</div>
+<div class="line"><a name="l00703"></a><span class="lineno">  703</span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">bool</span> CalculatePosition(  Geometry&lt;Node &gt;&amp;geom,</div>
 <div class="line"><a name="l00704"></a><span class="lineno">  704</span>&#160;                                    <span class="keyword">const</span> <span class="keywordtype">double</span> <a class="code" href="../../db/ddc/namespacerotating__cone.html#ade9c7a11e93e2bae00b8012bbf269545">xc</a>, <span class="keyword">const</span> <span class="keywordtype">double</span> <a class="code" href="../../db/ddc/namespacerotating__cone.html#afaf69d8d94d23c708e8651f6dd7102fb">yc</a>, <span class="keyword">const</span> <span class="keywordtype">double</span> zc,</div>
 <div class="line"><a name="l00705"></a><span class="lineno">  705</span>&#160;                                    array_1d&lt;double,4&gt;&amp; <a class="code" href="../../df/d42/mmio_8h.html#a3f620e88ba511ca5d32c93b84802ff6e">N</a></div>
 <div class="line"><a name="l00706"></a><span class="lineno">  706</span>&#160;                                 )</div>
@@ -747,10 +747,10 @@ $(function() {
 <div class="line"><a name="l00758"></a><span class="lineno">  758</span>&#160;        ModelPart::ElementsContainerType::iterator el_it,</div>
 <div class="line"><a name="l00759"></a><span class="lineno">  759</span>&#160;        <span class="keyword">const</span> array_1d&lt;double,3&gt;&amp; <a class="code" href="../../df/d42/mmio_8h.html#a3f620e88ba511ca5d32c93b84802ff6e">N</a>,</div>
 <div class="line"><a name="l00760"></a><span class="lineno">  760</span>&#160;        <span class="keywordtype">int</span> step_data_size,</div>
-<div class="line"><a name="l00761"></a><span class="lineno">  761</span>&#160;        Node&lt;3&gt;::Pointer pnode)</div>
+<div class="line"><a name="l00761"></a><span class="lineno">  761</span>&#160;        Node::Pointer pnode)</div>
 <div class="line"><a name="l00762"></a><span class="lineno">  762</span>&#160;    {</div>
 <div class="line"><a name="l00763"></a><span class="lineno">  763</span>&#160;        <span class="comment">//Geometry element of the rOrigin_ModelPart</span></div>
-<div class="line"><a name="l00764"></a><span class="lineno">  764</span>&#160;        Geometry&lt; Node&lt;3&gt; &gt;&amp; geom = el_it-&gt;GetGeometry();</div>
+<div class="line"><a name="l00764"></a><span class="lineno">  764</span>&#160;        Geometry&lt; Node &gt;&amp; geom = el_it-&gt;GetGeometry();</div>
 <div class="line"><a name="l00765"></a><span class="lineno">  765</span>&#160; </div>
 <div class="line"><a name="l00766"></a><span class="lineno">  766</span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> buffer_size = pnode-&gt;GetBufferSize();</div>
 <div class="line"><a name="l00767"></a><span class="lineno">  767</span>&#160; </div>
@@ -777,10 +777,10 @@ $(function() {
 <div class="line"><a name="l00788"></a><span class="lineno">  788</span>&#160;        ModelPart::ElementsContainerType::iterator el_it,</div>
 <div class="line"><a name="l00789"></a><span class="lineno">  789</span>&#160;        <span class="keyword">const</span> array_1d&lt;double,4&gt;&amp; <a class="code" href="../../df/d42/mmio_8h.html#a3f620e88ba511ca5d32c93b84802ff6e">N</a>,</div>
 <div class="line"><a name="l00790"></a><span class="lineno">  790</span>&#160;        <span class="keywordtype">int</span> step_data_size,</div>
-<div class="line"><a name="l00791"></a><span class="lineno">  791</span>&#160;        Node&lt;3&gt;::Pointer pnode)<span class="comment">//dimension or number of nodes???</span></div>
+<div class="line"><a name="l00791"></a><span class="lineno">  791</span>&#160;        Node::Pointer pnode)<span class="comment">//dimension or number of nodes???</span></div>
 <div class="line"><a name="l00792"></a><span class="lineno">  792</span>&#160;    {</div>
 <div class="line"><a name="l00793"></a><span class="lineno">  793</span>&#160;        <span class="comment">//Geometry element of the rOrigin_ModelPart</span></div>
-<div class="line"><a name="l00794"></a><span class="lineno">  794</span>&#160;        Geometry&lt; Node&lt;3&gt; &gt;&amp; geom = el_it-&gt;GetGeometry();</div>
+<div class="line"><a name="l00794"></a><span class="lineno">  794</span>&#160;        Geometry&lt; Node &gt;&amp; geom = el_it-&gt;GetGeometry();</div>
 <div class="line"><a name="l00795"></a><span class="lineno">  795</span>&#160; </div>
 <div class="line"><a name="l00796"></a><span class="lineno">  796</span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> buffer_size = pnode-&gt;GetBufferSize();</div>
 <div class="line"><a name="l00797"></a><span class="lineno">  797</span>&#160; </div>
@@ -809,12 +809,12 @@ $(function() {
 <div class="line"><a name="l00820"></a><span class="lineno">  820</span>&#160;    <span class="keywordtype">void</span> Interpolate(</div>
 <div class="line"><a name="l00821"></a><span class="lineno">  821</span>&#160;        ModelPart::ElementsContainerType::iterator el_it,</div>
 <div class="line"><a name="l00822"></a><span class="lineno">  822</span>&#160;        <span class="keyword">const</span> array_1d&lt;double,3&gt;&amp; <a class="code" href="../../df/d42/mmio_8h.html#a3f620e88ba511ca5d32c93b84802ff6e">N</a>,</div>
-<div class="line"><a name="l00823"></a><span class="lineno">  823</span>&#160;        Node&lt;3&gt;::Pointer pnode,</div>
+<div class="line"><a name="l00823"></a><span class="lineno">  823</span>&#160;        Node::Pointer pnode,</div>
 <div class="line"><a name="l00824"></a><span class="lineno">  824</span>&#160;        Variable&lt;array_1d&lt;double,3&gt; &gt;&amp; rOriginVariable,</div>
 <div class="line"><a name="l00825"></a><span class="lineno">  825</span>&#160;        Variable&lt;array_1d&lt;double,3&gt; &gt;&amp; rDestinationVariable)</div>
 <div class="line"><a name="l00826"></a><span class="lineno">  826</span>&#160;    {</div>
 <div class="line"><a name="l00827"></a><span class="lineno">  827</span>&#160;        <span class="comment">//Geometry element of the rOrigin_ModelPart</span></div>
-<div class="line"><a name="l00828"></a><span class="lineno">  828</span>&#160;        Geometry&lt; Node&lt;3&gt; &gt;&amp; geom = el_it-&gt;GetGeometry();</div>
+<div class="line"><a name="l00828"></a><span class="lineno">  828</span>&#160;        Geometry&lt; Node &gt;&amp; geom = el_it-&gt;GetGeometry();</div>
 <div class="line"><a name="l00829"></a><span class="lineno">  829</span>&#160; </div>
 <div class="line"><a name="l00830"></a><span class="lineno">  830</span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> buffer_size = pnode-&gt;GetBufferSize();</div>
 <div class="line"><a name="l00831"></a><span class="lineno">  831</span>&#160; </div>
@@ -841,13 +841,13 @@ $(function() {
 <div class="line"><a name="l00852"></a><span class="lineno">  852</span>&#160;    <span class="keywordtype">void</span> Interpolate(</div>
 <div class="line"><a name="l00853"></a><span class="lineno">  853</span>&#160;        ModelPart::ElementsContainerType::iterator el_it,</div>
 <div class="line"><a name="l00854"></a><span class="lineno">  854</span>&#160;        <span class="keyword">const</span> array_1d&lt;double,4&gt;&amp; <a class="code" href="../../df/d42/mmio_8h.html#a3f620e88ba511ca5d32c93b84802ff6e">N</a>,</div>
-<div class="line"><a name="l00855"></a><span class="lineno">  855</span>&#160;        Node&lt;3&gt;::Pointer pnode,</div>
+<div class="line"><a name="l00855"></a><span class="lineno">  855</span>&#160;        Node::Pointer pnode,</div>
 <div class="line"><a name="l00856"></a><span class="lineno">  856</span>&#160;        Variable&lt;array_1d&lt;double,3&gt; &gt;&amp; rOriginVariable,</div>
 <div class="line"><a name="l00857"></a><span class="lineno">  857</span>&#160;        Variable&lt;array_1d&lt;double,3&gt; &gt;&amp; rDestinationVariable)</div>
 <div class="line"><a name="l00858"></a><span class="lineno">  858</span>&#160; </div>
 <div class="line"><a name="l00859"></a><span class="lineno">  859</span>&#160;    {</div>
 <div class="line"><a name="l00860"></a><span class="lineno">  860</span>&#160;        <span class="comment">//Geometry element of the rOrigin_ModelPart</span></div>
-<div class="line"><a name="l00861"></a><span class="lineno">  861</span>&#160;        Geometry&lt; Node&lt;3&gt; &gt;&amp; geom = el_it-&gt;GetGeometry();</div>
+<div class="line"><a name="l00861"></a><span class="lineno">  861</span>&#160;        Geometry&lt; Node &gt;&amp; geom = el_it-&gt;GetGeometry();</div>
 <div class="line"><a name="l00862"></a><span class="lineno">  862</span>&#160; </div>
 <div class="line"><a name="l00863"></a><span class="lineno">  863</span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> buffer_size = pnode-&gt;GetBufferSize();</div>
 <div class="line"><a name="l00864"></a><span class="lineno">  864</span>&#160; </div>
@@ -874,12 +874,12 @@ $(function() {
 <div class="line"><a name="l00885"></a><span class="lineno">  885</span>&#160;    <span class="keywordtype">void</span> Interpolate(</div>
 <div class="line"><a name="l00886"></a><span class="lineno">  886</span>&#160;        ModelPart::ElementsContainerType::iterator el_it,</div>
 <div class="line"><a name="l00887"></a><span class="lineno">  887</span>&#160;        <span class="keyword">const</span> array_1d&lt;double,3&gt;&amp; <a class="code" href="../../df/d42/mmio_8h.html#a3f620e88ba511ca5d32c93b84802ff6e">N</a>,</div>
-<div class="line"><a name="l00888"></a><span class="lineno">  888</span>&#160;        Node&lt;3&gt;::Pointer pnode,</div>
+<div class="line"><a name="l00888"></a><span class="lineno">  888</span>&#160;        Node::Pointer pnode,</div>
 <div class="line"><a name="l00889"></a><span class="lineno">  889</span>&#160;        Variable&lt;double&gt;&amp; rOriginVariable,</div>
 <div class="line"><a name="l00890"></a><span class="lineno">  890</span>&#160;        Variable&lt;double&gt;&amp; rDestinationVariable)</div>
 <div class="line"><a name="l00891"></a><span class="lineno">  891</span>&#160;    {</div>
 <div class="line"><a name="l00892"></a><span class="lineno">  892</span>&#160;        <span class="comment">//Geometry element of the rOrigin_ModelPart</span></div>
-<div class="line"><a name="l00893"></a><span class="lineno">  893</span>&#160;        Geometry&lt; Node&lt;3&gt; &gt;&amp; geom = el_it-&gt;GetGeometry();</div>
+<div class="line"><a name="l00893"></a><span class="lineno">  893</span>&#160;        Geometry&lt; Node &gt;&amp; geom = el_it-&gt;GetGeometry();</div>
 <div class="line"><a name="l00894"></a><span class="lineno">  894</span>&#160; </div>
 <div class="line"><a name="l00895"></a><span class="lineno">  895</span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> buffer_size = pnode-&gt;GetBufferSize();</div>
 <div class="line"><a name="l00896"></a><span class="lineno">  896</span>&#160;        <span class="comment">//facendo un loop sugli step temporali step_data come salva i dati al passo anteriore? Cioś dove passiamo l&#39;informazione ai nodi???</span></div>
@@ -904,12 +904,12 @@ $(function() {
 <div class="line"><a name="l00915"></a><span class="lineno">  915</span>&#160;    <span class="keywordtype">void</span> Interpolate(</div>
 <div class="line"><a name="l00916"></a><span class="lineno">  916</span>&#160;        ModelPart::ElementsContainerType::iterator el_it,</div>
 <div class="line"><a name="l00917"></a><span class="lineno">  917</span>&#160;        <span class="keyword">const</span> array_1d&lt;double,4&gt;&amp; <a class="code" href="../../df/d42/mmio_8h.html#a3f620e88ba511ca5d32c93b84802ff6e">N</a>,</div>
-<div class="line"><a name="l00918"></a><span class="lineno">  918</span>&#160;        Node&lt;3&gt;::Pointer pnode,</div>
+<div class="line"><a name="l00918"></a><span class="lineno">  918</span>&#160;        Node::Pointer pnode,</div>
 <div class="line"><a name="l00919"></a><span class="lineno">  919</span>&#160;        Variable&lt;double&gt;&amp; rOriginVariable,</div>
 <div class="line"><a name="l00920"></a><span class="lineno">  920</span>&#160;        Variable&lt;double&gt;&amp; rDestinationVariable)</div>
 <div class="line"><a name="l00921"></a><span class="lineno">  921</span>&#160;    {</div>
 <div class="line"><a name="l00922"></a><span class="lineno">  922</span>&#160;        <span class="comment">//Geometry element of the rOrigin_ModelPart</span></div>
-<div class="line"><a name="l00923"></a><span class="lineno">  923</span>&#160;        Geometry&lt; Node&lt;3&gt; &gt;&amp; geom = el_it-&gt;GetGeometry();</div>
+<div class="line"><a name="l00923"></a><span class="lineno">  923</span>&#160;        Geometry&lt; Node &gt;&amp; geom = el_it-&gt;GetGeometry();</div>
 <div class="line"><a name="l00924"></a><span class="lineno">  924</span>&#160; </div>
 <div class="line"><a name="l00925"></a><span class="lineno">  925</span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> buffer_size = pnode-&gt;GetBufferSize();</div>
 <div class="line"><a name="l00926"></a><span class="lineno">  926</span>&#160;        <span class="comment">//facendo un loop sugli step temporali step_data come salva i dati al passo anteriore? Cioś dove passiamo l&#39;informazione ai nodi???</span></div>
@@ -1018,7 +1018,7 @@ $(function() {
 <div class="ttc" id="aclass_kratos_1_1_mesh_transfer_html_a4eb789151ea8ec57bd032f0f25494ca4"><div class="ttname"><a href="../../de/dfb/class_kratos_1_1_mesh_transfer.html#a4eb789151ea8ec57bd032f0f25494ca4">Kratos::MeshTransfer::KRATOS_CLASS_POINTER_DEFINITION</a></div><div class="ttdeci">KRATOS_CLASS_POINTER_DEFINITION(MeshTransfer&lt; TDim &gt;)</div><div class="ttdoc">Pointer definition of MeshTransfer.</div></div>
 <div class="ttc" id="aclass_kratos_1_1_mesh_transfer_html_aac9ca1bc83d34cd65596375c66e46394"><div class="ttname"><a href="../../de/dfb/class_kratos_1_1_mesh_transfer.html#aac9ca1bc83d34cd65596375c66e46394">Kratos::MeshTransfer::MeshTransfer</a></div><div class="ttdeci">MeshTransfer()=default</div><div class="ttdoc">Default constructor.</div></div>
 <div class="ttc" id="aclass_kratos_1_1_mesh_transfer_html_ad15ab1c598c7175c50adc764967ba711"><div class="ttname"><a href="../../de/dfb/class_kratos_1_1_mesh_transfer.html#ad15ab1c598c7175c50adc764967ba711">Kratos::MeshTransfer::~MeshTransfer</a></div><div class="ttdeci">virtual ~MeshTransfer()=default</div><div class="ttdoc">Destructor.</div></div>
-<div class="ttc" id="aclass_kratos_1_1_node_html"><div class="ttname"><a href="../../d5/ddd/class_kratos_1_1_node.html">Kratos::Node</a></div><div class="ttdoc">This class defines the node.</div><div class="ttdef"><b>Definition:</b> node.h:68</div></div>
+<div class="ttc" id="aclass_kratos_1_1_node_html"><div class="ttname"><a href="../../d5/ddd/class_kratos_1_1_node.html">Kratos::Node</a></div><div class="ttdoc">This class defines the node.</div><div class="ttdef"><b>Definition:</b> node.h:67</div></div>
 <div class="ttc" id="aclass_kratos_1_1_point_html_a8cce3ed26cea2cbd14c71f8f1c85aa60"><div class="ttname"><a href="../../d3/d3f/class_kratos_1_1_point.html#a8cce3ed26cea2cbd14c71f8f1c85aa60">Kratos::Point::Y</a></div><div class="ttdeci">double Y() const</div><div class="ttdef"><b>Definition:</b> point.h:187</div></div>
 <div class="ttc" id="aclass_kratos_1_1_point_html_adb36ae5ffe567fb88b0aee7ee087c757"><div class="ttname"><a href="../../d3/d3f/class_kratos_1_1_point.html#adb36ae5ffe567fb88b0aee7ee087c757">Kratos::Point::Z</a></div><div class="ttdeci">double Z() const</div><div class="ttdef"><b>Definition:</b> point.h:193</div></div>
 <div class="ttc" id="aclass_kratos_1_1_point_html_aff0c4821bd73c97a33baf22ce14c0f55"><div class="ttname"><a href="../../d3/d3f/class_kratos_1_1_point.html#aff0c4821bd73c97a33baf22ce14c0f55">Kratos::Point::X</a></div><div class="ttdeci">double X() const</div><div class="ttdef"><b>Definition:</b> point.h:181</div></div>
@@ -1064,7 +1064,7 @@ $(function() {
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri May 12 2023 02:03:25 for KratosMultiphysics by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Sat May 13 2023 02:03:47 for KratosMultiphysics by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

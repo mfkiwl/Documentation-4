@@ -168,7 +168,7 @@ $(function() {
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;        <span class="keywordflow">for</span>(NodesContainerType::iterator in = <a class="code" href="../../db/d91/namespace_kratos_1_1_rans_variable_utilities.html#a2f23795bfd18a5c0e153aad48feaa4d7">rNodes</a>.begin(); in!=<a class="code" href="../../db/d91/namespace_kratos_1_1_rans_variable_utilities.html#a2f23795bfd18a5c0e153aad48feaa4d7">rNodes</a>.end(); ++in)</div>
 <div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;        {</div>
 <div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;            (in-&gt;GetValue(NEIGHBOUR_NODES)).reserve(mavg_nodes);</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;            <a class="code" href="../../d4/dc2/class_kratos_1_1_global_pointers_vector.html">GlobalPointersVector&lt;Node&lt;3&gt;</a> &gt;&amp; rN = in-&gt;GetValue(NEIGHBOUR_NODES);</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;            <a class="code" href="../../d4/dc2/class_kratos_1_1_global_pointers_vector.html">GlobalPointersVector&lt;Node &gt;</a>&amp; rN = in-&gt;GetValue(NEIGHBOUR_NODES);</div>
 <div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;            rN.<a class="code" href="../../d4/dc2/class_kratos_1_1_global_pointers_vector.html#a423f81a541b7017d9480d0cf127ae9db">erase</a>(rN.<a class="code" href="../../d4/dc2/class_kratos_1_1_global_pointers_vector.html#a599125ad0e25d62480de5e84477b5f20">begin</a>(),rN.<a class="code" href="../../d4/dc2/class_kratos_1_1_global_pointers_vector.html#aecf3bbe94f6105274d86e19e7bbe3631">end</a>() );</div>
 <div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;        </div>
 <div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;            (in-&gt;GetValue(NEIGHBOUR_CONDITIONS)).reserve(mavg_conds);</div>
@@ -203,7 +203,7 @@ $(function() {
 <div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;<span class="comment">//                         Element::NodeType::WeakPointer temp = pGeom(i);</span></div>
 <div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;            <span class="comment">//NOT SURE ABOUT THIS!!!!!!!!!</span></div>
 <div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;                        Condition::NodeType::WeakPointer <a class="code" href="../../db/ddc/namespacerotating__cone.html#ab33bd86f7a31ca0d8e2b3e69609e3476">temp</a> = pGeom(<a class="code" href="../../d2/db8/namespacetensors.html#a15a1da80aa773e2015eba781cababe05">i</a>);           </div>
-<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;                        AddUniqueWeakPointer&lt; Node&lt;3&gt; &gt;(in-&gt;GetValue(NEIGHBOUR_NODES), <a class="code" href="../../db/ddc/namespacerotating__cone.html#ab33bd86f7a31ca0d8e2b3e69609e3476">temp</a>);</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;                        AddUniqueWeakPointer&lt; Node &gt;(in-&gt;GetValue(NEIGHBOUR_NODES), <a class="code" href="../../db/ddc/namespacerotating__cone.html#ab33bd86f7a31ca0d8e2b3e69609e3476">temp</a>);</div>
 <div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;                    }</div>
 <div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;                }</div>
 <div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;            }</div>
@@ -218,7 +218,7 @@ $(function() {
 <div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;            <a class="code" href="../../d4/dc2/class_kratos_1_1_global_pointers_vector.html">GlobalPointersVector&lt;Condition &gt;</a>&amp; rC = in-&gt;GetValue(NEIGHBOUR_CONDITIONS);</div>
 <div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;            rC.<a class="code" href="../../d4/dc2/class_kratos_1_1_global_pointers_vector.html#a423f81a541b7017d9480d0cf127ae9db">erase</a>(rC.<a class="code" href="../../d4/dc2/class_kratos_1_1_global_pointers_vector.html#a599125ad0e25d62480de5e84477b5f20">begin</a>(),rC.<a class="code" href="../../d4/dc2/class_kratos_1_1_global_pointers_vector.html#aecf3bbe94f6105274d86e19e7bbe3631">end</a>());</div>
 <div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160; </div>
-<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;            <a class="code" href="../../d4/dc2/class_kratos_1_1_global_pointers_vector.html">GlobalPointersVector&lt;Node&lt;3&gt;</a> &gt;&amp; rN = in-&gt;GetValue(NEIGHBOUR_NODES);</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;            <a class="code" href="../../d4/dc2/class_kratos_1_1_global_pointers_vector.html">GlobalPointersVector&lt;Node &gt;</a>&amp; rN = in-&gt;GetValue(NEIGHBOUR_NODES);</div>
 <div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;            rN.<a class="code" href="../../d4/dc2/class_kratos_1_1_global_pointers_vector.html#a423f81a541b7017d9480d0cf127ae9db">erase</a>(rN.<a class="code" href="../../d4/dc2/class_kratos_1_1_global_pointers_vector.html#a599125ad0e25d62480de5e84477b5f20">begin</a>(),rN.<a class="code" href="../../d4/dc2/class_kratos_1_1_global_pointers_vector.html#aecf3bbe94f6105274d86e19e7bbe3631">end</a>() );</div>
 <div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;        }</div>
 <div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;    }</div>
@@ -369,7 +369,7 @@ $(function() {
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri May 12 2023 02:05:47 for KratosMultiphysics by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Sat May 13 2023 02:06:09 for KratosMultiphysics by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

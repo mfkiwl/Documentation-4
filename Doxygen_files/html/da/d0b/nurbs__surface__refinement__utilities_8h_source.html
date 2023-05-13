@@ -109,7 +109,7 @@ $(function() {
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keyword">typedef</span> std::size_t <a class="code" href="../../d5/d4d/group___kratos_core.html#ga1ba1e34f0af6a7cfcfa9b43e1f8e8c91">IndexType</a>;</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keyword">typedef</span> std::size_t <a class="code" href="../../db/d66/namespace_kratos.html#a8b2d617fdb94b53f5f2bb88e1a7ebc18">SizeType</a>;</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keyword">typedef</span> Node&lt;3&gt; <a class="code" href="../../db/d66/namespace_kratos.html#abb4d93a6f1ee35395fd178b0e96cbcb8">NodeType</a>;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keyword">typedef</span> <a class="code" href="../../db/d66/namespace_kratos.html#a8ad9f38d847ff7742fb13b5098910b03a6c3a6944a808a7c0bbb6788dbec54a9f">Node</a> <a class="code" href="../../db/d66/namespace_kratos.html#a4e2ab605ef101fe7856e7f373e418478">NodeType</a>;</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keyword">typedef</span> NurbsSurfaceGeometry&lt;3, PointerVector&lt;NodeType&gt;&gt; NurbsSurfaceGeometryType;</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keyword">typedef</span> <span class="keyword">typename</span> NurbsSurfaceGeometryType::Pointer NurbsSurfaceGeometryPointerType;</div>
@@ -219,15 +219,16 @@ $(function() {
 <div class="ttc" id="anamespace_kratos_1_1_mortar_utilities_html_a407333aa7d9b470dab6a9652f72a6ebd"><div class="ttname"><a href="../../da/dec/namespace_kratos_1_1_mortar_utilities.html#a407333aa7d9b470dab6a9652f72a6ebd">Kratos::MortarUtilities::rGeometry</a></div><div class="ttdeci">array_1d&lt; double, 3 &gt; const GeometryType &amp; rGeometry</div><div class="ttdef"><b>Definition:</b> mortar_utilities.h:153</div></div>
 <div class="ttc" id="anamespace_kratos_html"><div class="ttname"><a href="../../db/d66/namespace_kratos.html">Kratos</a></div><div class="ttdoc">REF: G. R. Cowper, GAUSSIAN QUADRATURE FORMULAS FOR TRIANGLES.</div><div class="ttdef"><b>Definition:</b> mesh_condition.cpp:21</div></div>
 <div class="ttc" id="anamespace_kratos_html_a2382ac8a486c0d52da7ce94f4ccd6d70"><div class="ttname"><a href="../../db/d66/namespace_kratos.html#a2382ac8a486c0d52da7ce94f4ccd6d70">Kratos::Vector</a></div><div class="ttdeci">Internals::Matrix&lt; double, AMatrix::dynamic, 1 &gt; Vector</div><div class="ttdef"><b>Definition:</b> amatrix_interface.h:472</div></div>
+<div class="ttc" id="anamespace_kratos_html_a4e2ab605ef101fe7856e7f373e418478"><div class="ttname"><a href="../../db/d66/namespace_kratos.html#a4e2ab605ef101fe7856e7f373e418478">Kratos::NodeType</a></div><div class="ttdeci">Node NodeType</div><div class="ttdoc">The definition of the node.</div><div class="ttdef"><b>Definition:</b> mortar_classes.h:37</div></div>
+<div class="ttc" id="anamespace_kratos_html_a8ad9f38d847ff7742fb13b5098910b03a6c3a6944a808a7c0bbb6788dbec54a9f"><div class="ttname"><a href="../../db/d66/namespace_kratos.html#a8ad9f38d847ff7742fb13b5098910b03a6c3a6944a808a7c0bbb6788dbec54a9f">Kratos::StressTreatment::Node</a></div><div class="ttdeci">@ Node</div></div>
 <div class="ttc" id="anamespace_kratos_html_a8b2d617fdb94b53f5f2bb88e1a7ebc18"><div class="ttname"><a href="../../db/d66/namespace_kratos.html#a8b2d617fdb94b53f5f2bb88e1a7ebc18">Kratos::SizeType</a></div><div class="ttdeci">std::size_t SizeType</div><div class="ttdoc">The definition of the size type.</div><div class="ttdef"><b>Definition:</b> mortar_classes.h:44</div></div>
-<div class="ttc" id="anamespace_kratos_html_abb4d93a6f1ee35395fd178b0e96cbcb8"><div class="ttname"><a href="../../db/d66/namespace_kratos.html#abb4d93a6f1ee35395fd178b0e96cbcb8">Kratos::NodeType</a></div><div class="ttdeci">Node&lt; 3 &gt; NodeType</div><div class="ttdoc">The definition of the node.</div><div class="ttdef"><b>Definition:</b> mortar_classes.h:37</div></div>
 <div class="ttc" id="anode_8h_html"><div class="ttname"><a href="../../d1/d77/node_8h.html">node.h</a></div></div>
 <div class="ttc" id="anurbs__surface__geometry_8h_html"><div class="ttname"><a href="../../d4/de6/nurbs__surface__geometry_8h.html">nurbs_surface_geometry.h</a></div></div>
 <div class="ttc" id="anurbs__utilities_8h_html"><div class="ttname"><a href="../../d1/d7f/nurbs__utilities_8h.html">nurbs_utilities.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri May 12 2023 02:06:31 for KratosMultiphysics by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Sat May 13 2023 02:06:52 for KratosMultiphysics by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

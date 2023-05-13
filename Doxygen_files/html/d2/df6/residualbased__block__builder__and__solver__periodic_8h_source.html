@@ -254,8 +254,8 @@ $(function() {
 <div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;<span class="keyword">private</span>:</div>
 <div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;    <span class="keyword">const</span> <a class="code" href="../../d1/d66/class_kratos_1_1_variable.html">Variable&lt;int&gt;</a>&amp; mPeriodicIdVar;</div>
 <div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160; </div>
-<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;    <span class="keywordtype">void</span> CopyEquationId(<a class="code" href="../../db/d66/namespace_kratos.html#abb4d93a6f1ee35395fd178b0e96cbcb8">ModelPart::NodeType</a>&amp; rOrigin,</div>
-<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;                        <a class="code" href="../../db/d66/namespace_kratos.html#abb4d93a6f1ee35395fd178b0e96cbcb8">ModelPart::NodeType</a>&amp; rDest)</div>
+<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;    <span class="keywordtype">void</span> CopyEquationId(<a class="code" href="../../db/d66/namespace_kratos.html#a4e2ab605ef101fe7856e7f373e418478">ModelPart::NodeType</a>&amp; rOrigin,</div>
+<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;                        <a class="code" href="../../db/d66/namespace_kratos.html#a4e2ab605ef101fe7856e7f373e418478">ModelPart::NodeType</a>&amp; rDest)</div>
 <div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;    {</div>
 <div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;        <span class="keywordflow">for</span> (<span class="keyword">auto</span> itDof = rOrigin.GetDofs().begin(); itDof != rOrigin.GetDofs().end(); itDof++)</div>
 <div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;            rDest.pGetDof( (*itDof)-&gt;GetVariable() )-&gt;SetEquationId( (*itDof)-&gt;EquationId() );</div>
@@ -307,8 +307,8 @@ $(function() {
 <div class="ttc" id="amodel__part_8h_html"><div class="ttname"><a href="../../dd/dfe/model__part_8h.html">model_part.h</a></div></div>
 <div class="ttc" id="anamespace_kratos_html"><div class="ttname"><a href="../../db/d66/namespace_kratos.html">Kratos</a></div><div class="ttdoc">REF: G. R. Cowper, GAUSSIAN QUADRATURE FORMULAS FOR TRIANGLES.</div><div class="ttdef"><b>Definition:</b> mesh_condition.cpp:21</div></div>
 <div class="ttc" id="anamespace_kratos_html_a45c3f64c0faa3bc691e32608a7b193c6"><div class="ttname"><a href="../../db/d66/namespace_kratos.html#a45c3f64c0faa3bc691e32608a7b193c6">Kratos::ConditionIterator</a></div><div class="ttdeci">ConditionsContainerType::iterator ConditionIterator</div><div class="ttdef"><b>Definition:</b> settle_model_structure_process.hpp:51</div></div>
+<div class="ttc" id="anamespace_kratos_html_a4e2ab605ef101fe7856e7f373e418478"><div class="ttname"><a href="../../db/d66/namespace_kratos.html#a4e2ab605ef101fe7856e7f373e418478">Kratos::NodeType</a></div><div class="ttdeci">Node NodeType</div><div class="ttdoc">The definition of the node.</div><div class="ttdef"><b>Definition:</b> mortar_classes.h:37</div></div>
 <div class="ttc" id="anamespace_kratos_html_a884ade0675a6a17a14d1bce5e3ae2fe3"><div class="ttname"><a href="../../db/d66/namespace_kratos.html#a884ade0675a6a17a14d1bce5e3ae2fe3">Kratos::GeometryType</a></div><div class="ttdeci">Geometry&lt; NodeType &gt; GeometryType</div><div class="ttdoc">The definition of the geometry.</div><div class="ttdef"><b>Definition:</b> mortar_classes.h:38</div></div>
-<div class="ttc" id="anamespace_kratos_html_abb4d93a6f1ee35395fd178b0e96cbcb8"><div class="ttname"><a href="../../db/d66/namespace_kratos.html#abb4d93a6f1ee35395fd178b0e96cbcb8">Kratos::NodeType</a></div><div class="ttdeci">Node&lt; 3 &gt; NodeType</div><div class="ttdoc">The definition of the node.</div><div class="ttdef"><b>Definition:</b> mortar_classes.h:37</div></div>
 <div class="ttc" id="anamespacegenerate__total__lagrangian__mixed__volumetric__strain__element_html_aa9be8bca3cd4b9f0c16093a9dda89988"><div class="ttname"><a href="../../d7/d33/namespacegenerate__total__lagrangian__mixed__volumetric__strain__element.html#aa9be8bca3cd4b9f0c16093a9dda89988">generate_total_lagrangian_mixed_volumetric_strain_element.b</a></div><div class="ttdeci">b</div><div class="ttdef"><b>Definition:</b> generate_total_lagrangian_mixed_volumetric_strain_element.py:31</div></div>
 <div class="ttc" id="anamespacequadrature_html_a56123f01f0d1e776d9a6d85aa0f27caa"><div class="ttname"><a href="../../d7/d2b/namespacequadrature.html#a56123f01f0d1e776d9a6d85aa0f27caa">quadrature.k</a></div><div class="ttdeci">int k</div><div class="ttdef"><b>Definition:</b> quadrature.py:595</div></div>
 <div class="ttc" id="anamespacesensitivity_matrix_html_a276ae82595c6ebe2f05987c7af893337"><div class="ttname"><a href="../../d0/d79/namespacesensitivity_matrix.html#a276ae82595c6ebe2f05987c7af893337">sensitivityMatrix.A</a></div><div class="ttdeci">A</div><div class="ttdef"><b>Definition:</b> sensitivityMatrix.py:70</div></div>
@@ -318,7 +318,7 @@ $(function() {
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri May 12 2023 02:03:04 for KratosMultiphysics by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Sat May 13 2023 02:03:25 for KratosMultiphysics by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

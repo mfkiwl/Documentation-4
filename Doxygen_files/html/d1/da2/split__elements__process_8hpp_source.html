@@ -118,7 +118,7 @@ $(function() {
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="keyword">typedef</span> <a class="code" href="../../db/d66/namespace_kratos.html#aba5dbdf990a4567126376ad0aae1687e">ModelPart::ElementsContainerType</a> <a class="code" href="../../db/d66/namespace_kratos.html#aba5dbdf990a4567126376ad0aae1687e">ElementsContainerType</a>;</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="keyword">typedef</span> <a class="code" href="../../da/d07/namespace_kratos_1_1_python.html#a9cd87c2c72b46a2ae84f89a5d673dc9e">ModelPart::MeshType::GeometryType::PointsArrayType</a> <a class="code" href="../../db/d66/namespace_kratos.html#aeebe5416d846dedd3696f07e4aa44cb6">PointsArrayType</a>;</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="keyword">typedef</span> GlobalPointersVector&lt;Node&lt;3&gt;&gt; <a class="code" href="../../db/d66/namespace_kratos.html#ae56ef975aa658e426e2f5201cca2c917">NodeWeakPtrVectorType</a>;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="keyword">typedef</span> GlobalPointersVector&lt;Node&gt; <a class="code" href="../../db/d66/namespace_kratos.html#a97c2433cd384840d71dc50ea0951a0d0">NodeWeakPtrVectorType</a>;</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="keyword">typedef</span> GlobalPointersVector&lt;Element&gt; <a class="code" href="../../d2/d72/group___fluid_dynamics_application.html#gaf38c9395df826a94c2481329cbd48e2d">ElementWeakPtrVectorType</a>;</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
@@ -262,7 +262,7 @@ $(function() {
 <div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;              <span class="keywordflow">if</span> (<a class="code" href="../../d3/d2b/namespaceisotropic__damage__automatic__differentiation.html#a3d30b20e72b60cc184b00182233472ba">dimension</a> == 2)</div>
 <div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;              {</div>
 <div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160; </div>
-<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;                <a class="code" href="../../d4/d5d/class_kratos_1_1_triangle2_d3.html">Triangle2D3&lt;Node&lt;3&gt;</a>&gt; firstGeom(newNode, vertices(0), vertices(1));</div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;                <a class="code" href="../../d4/d5d/class_kratos_1_1_triangle2_d3.html">Triangle2D3&lt;Node&gt;</a> firstGeom(newNode, vertices(0), vertices(1));</div>
 <div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;                rElementId = MesherUtilities::GetMaxElementId(mrModelPart) + 1;</div>
 <div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;                Element::Pointer newElement = i_elem-&gt;Create(rElementId, firstGeom, pProp);</div>
 <div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;                newElement-&gt;Set(ACTIVE, <span class="keyword">true</span>);</div>
@@ -271,7 +271,7 @@ $(function() {
 <div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;                newElement-&gt;Initialize(<a class="code" href="../../d2/d95/namespace_kratos_1_1_structural_mechanics_element_utilities.html#a13023981cd139d7bf702c24892a7ff10">rCurrentProcessInfo</a>);</div>
 <div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;                rComputingModelPart.AddElement(newElement);</div>
 <div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160; </div>
-<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;                <a class="code" href="../../d4/d5d/class_kratos_1_1_triangle2_d3.html">Triangle2D3&lt;Node&lt;3&gt;</a>&gt; secondGeom(newNode, vertices(2), vertices(0));</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;                <a class="code" href="../../d4/d5d/class_kratos_1_1_triangle2_d3.html">Triangle2D3&lt;Node&gt;</a> secondGeom(newNode, vertices(2), vertices(0));</div>
 <div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;                rElementId = MesherUtilities::GetMaxElementId(mrModelPart) + 1;</div>
 <div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;                newElement = i_elem-&gt;Create(rElementId, secondGeom, pProp);</div>
 <div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;                newElement-&gt;Set(ACTIVE, <span class="keyword">true</span>);</div>
@@ -280,7 +280,7 @@ $(function() {
 <div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;                newElement-&gt;Initialize(<a class="code" href="../../d2/d95/namespace_kratos_1_1_structural_mechanics_element_utilities.html#a13023981cd139d7bf702c24892a7ff10">rCurrentProcessInfo</a>);</div>
 <div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;                rComputingModelPart.AddElement(newElement);</div>
 <div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160; </div>
-<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;                <a class="code" href="../../d4/d5d/class_kratos_1_1_triangle2_d3.html">Triangle2D3&lt;Node&lt;3&gt;</a>&gt; thirdGeom(newNode, vertices(1), vertices(2));</div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;                <a class="code" href="../../d4/d5d/class_kratos_1_1_triangle2_d3.html">Triangle2D3&lt;Node&gt;</a> thirdGeom(newNode, vertices(1), vertices(2));</div>
 <div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;                rElementId = MesherUtilities::GetMaxElementId(mrModelPart) + 1;</div>
 <div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;                newElement = i_elem-&gt;Create(rElementId, thirdGeom, pProp);</div>
 <div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;                newElement-&gt;Set(ACTIVE, <span class="keyword">true</span>);</div>
@@ -292,7 +292,7 @@ $(function() {
 <div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;              <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code" href="../../d3/d2b/namespaceisotropic__damage__automatic__differentiation.html#a3d30b20e72b60cc184b00182233472ba">dimension</a> == 3)</div>
 <div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;              {</div>
 <div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160; </div>
-<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;                <a class="code" href="../../df/df1/class_kratos_1_1_tetrahedra3_d4.html">Tetrahedra3D4&lt;Node&lt;3&gt;</a>&gt; firstGeom(newNode, vertices(1), vertices(2), vertices(3));</div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;                <a class="code" href="../../df/df1/class_kratos_1_1_tetrahedra3_d4.html">Tetrahedra3D4&lt;Node&gt;</a> firstGeom(newNode, vertices(1), vertices(2), vertices(3));</div>
 <div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;                rElementId = MesherUtilities::GetMaxElementId(mrModelPart) + 1;</div>
 <div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;                Element::Pointer newElement = i_elem-&gt;Create(rElementId, firstGeom, pProp);</div>
 <div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;                newElement-&gt;Set(ACTIVE, <span class="keyword">true</span>);</div>
@@ -301,7 +301,7 @@ $(function() {
 <div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;                newElement-&gt;Initialize(<a class="code" href="../../d2/d95/namespace_kratos_1_1_structural_mechanics_element_utilities.html#a13023981cd139d7bf702c24892a7ff10">rCurrentProcessInfo</a>);</div>
 <div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;                rComputingModelPart.AddElement(newElement);</div>
 <div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160; </div>
-<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;                <a class="code" href="../../df/df1/class_kratos_1_1_tetrahedra3_d4.html">Tetrahedra3D4&lt;Node&lt;3&gt;</a>&gt; secondGeom(vertices(0), newNode, vertices(2), vertices(3));</div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;                <a class="code" href="../../df/df1/class_kratos_1_1_tetrahedra3_d4.html">Tetrahedra3D4&lt;Node&gt;</a> secondGeom(vertices(0), newNode, vertices(2), vertices(3));</div>
 <div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;                rElementId = MesherUtilities::GetMaxElementId(mrModelPart) + 1;</div>
 <div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;                newElement = i_elem-&gt;Create(rElementId, secondGeom, pProp);</div>
 <div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;                newElement-&gt;Set(ACTIVE, <span class="keyword">true</span>);</div>
@@ -310,7 +310,7 @@ $(function() {
 <div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;                newElement-&gt;Initialize(<a class="code" href="../../d2/d95/namespace_kratos_1_1_structural_mechanics_element_utilities.html#a13023981cd139d7bf702c24892a7ff10">rCurrentProcessInfo</a>);</div>
 <div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;                rComputingModelPart.AddElement(newElement);</div>
 <div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160; </div>
-<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;                <a class="code" href="../../df/df1/class_kratos_1_1_tetrahedra3_d4.html">Tetrahedra3D4&lt;Node&lt;3&gt;</a>&gt; thirdGeom(vertices(0), vertices(1), newNode, vertices(3));</div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;                <a class="code" href="../../df/df1/class_kratos_1_1_tetrahedra3_d4.html">Tetrahedra3D4&lt;Node&gt;</a> thirdGeom(vertices(0), vertices(1), newNode, vertices(3));</div>
 <div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;                rElementId = MesherUtilities::GetMaxElementId(mrModelPart) + 1;</div>
 <div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;                newElement = i_elem-&gt;Create(rElementId, thirdGeom, pProp);</div>
 <div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;                newElement-&gt;Set(ACTIVE, <span class="keyword">true</span>);</div>
@@ -319,7 +319,7 @@ $(function() {
 <div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;                newElement-&gt;Initialize(<a class="code" href="../../d2/d95/namespace_kratos_1_1_structural_mechanics_element_utilities.html#a13023981cd139d7bf702c24892a7ff10">rCurrentProcessInfo</a>);</div>
 <div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;                rComputingModelPart.AddElement(newElement);</div>
 <div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160; </div>
-<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;                <a class="code" href="../../df/df1/class_kratos_1_1_tetrahedra3_d4.html">Tetrahedra3D4&lt;Node&lt;3&gt;</a>&gt; fourthGeom(vertices(0), vertices(1), vertices(2), newNode);</div>
+<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;                <a class="code" href="../../df/df1/class_kratos_1_1_tetrahedra3_d4.html">Tetrahedra3D4&lt;Node&gt;</a> fourthGeom(vertices(0), vertices(1), vertices(2), newNode);</div>
 <div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;                rElementId = MesherUtilities::GetMaxElementId(mrModelPart) + 1;</div>
 <div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;                newElement = i_elem-&gt;Create(rElementId, fourthGeom, pProp);</div>
 <div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;                newElement-&gt;Set(ACTIVE, <span class="keyword">true</span>);</div>
@@ -402,7 +402,7 @@ $(function() {
 <div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;    <span class="keywordflow">for</span> (ModelPart::NodeType::DofsContainerType::iterator iii = reference_dofs.begin(); iii != reference_dofs.end(); iii++)</div>
 <div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;    {</div>
 <div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;      ModelPart::NodeType::DofType &amp;rDof = **iii;</div>
-<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;      <a class="code" href="../../dc/d58/class_kratos_1_1_dof.html">Node&lt;3&gt;::DofType::Pointer</a> p_new_dof = newNode-&gt;pAddDof(rDof);</div>
+<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;      <a class="code" href="../../dc/d58/class_kratos_1_1_dof.html">Node::DofType::Pointer</a> p_new_dof = newNode-&gt;pAddDof(rDof);</div>
 <div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;      (p_new_dof)-&gt;FreeDof();</div>
 <div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;    }</div>
 <div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160; </div>
@@ -418,7 +418,7 @@ $(function() {
 <div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;    newNode-&gt;Set(FLUID);</div>
 <div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;    newNode-&gt;Reset(FREE_SURFACE);</div>
 <div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;    <span class="keywordtype">bool</span> is_inside = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;    is_inside = <a class="code" href="../../db/d66/namespace_kratos.html#a8adf5c0201233323682d11f057e0d079">MesherUtilities::CalculatePosition</a>(ElementPointCoordinates, PointCoordinates, ShapeFunctionsN);</div>
+<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;    is_inside = <a class="code" href="../../db/d66/namespace_kratos.html#a09b635fec7c488ecdae7a5966b6f8fc1">MesherUtilities::CalculatePosition</a>(ElementPointCoordinates, PointCoordinates, ShapeFunctionsN);</div>
 <div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;    <span class="keywordflow">if</span> (is_inside == <span class="keyword">true</span>)</div>
 <div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;    {</div>
 <div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;      <span class="keywordtype">double</span> <a class="code" href="../../d8/d57/namespacegenerate__convection__diffusion__explicit__element.html#a4d8782e919bfddcf1bd9f5370f16f597">alpha</a> = 1; <span class="comment">//1 to interpolate, 0 to leave the original data</span></div>
@@ -434,7 +434,7 @@ $(function() {
 <div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;      <a class="code" href="../../d4/dc2/class_kratos_1_1_global_pointers_vector.html">NodeWeakPtrVectorType</a> &amp;rN = newNode-&gt;GetValue(NEIGHBOUR_NODES);</div>
 <div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;      <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> spn = 0; spn &lt; numNodes; spn++)</div>
 <div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;      {</div>
-<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;        this-&gt;AddUniquePointer&lt;Node&lt;3&gt;&gt;(rN, i_elem-&gt;GetGeometry()(spn));</div>
+<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;        this-&gt;AddUniquePointer&lt;Node&gt;(rN, i_elem-&gt;GetGeometry()(spn));</div>
 <div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;      }</div>
 <div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160; </div>
 <div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;      i_mp-&gt;Nodes().push_back(newNode);</div>
@@ -566,13 +566,13 @@ $(function() {
 <div class="ttc" id="anamespace_kratos_1_1_structural_mechanics_element_utilities_html_a13023981cd139d7bf702c24892a7ff10"><div class="ttname"><a href="../../d2/d95/namespace_kratos_1_1_structural_mechanics_element_utilities.html#a13023981cd139d7bf702c24892a7ff10">Kratos::StructuralMechanicsElementUtilities::rCurrentProcessInfo</a></div><div class="ttdeci">void Element::MatrixType const ProcessInfo &amp; rCurrentProcessInfo</div><div class="ttdef"><b>Definition:</b> structural_mechanics_element_utilities.h:210</div></div>
 <div class="ttc" id="anamespace_kratos_html"><div class="ttname"><a href="../../db/d66/namespace_kratos.html">Kratos</a></div><div class="ttdoc">REF: G. R. Cowper, GAUSSIAN QUADRATURE FORMULAS FOR TRIANGLES.</div><div class="ttdef"><b>Definition:</b> mesh_condition.cpp:21</div></div>
 <div class="ttc" id="anamespace_kratos_html_a0060702fbd6c7d45c773436101c9ded3"><div class="ttname"><a href="../../db/d66/namespace_kratos.html#a0060702fbd6c7d45c773436101c9ded3">Kratos::ZeroVector</a></div><div class="ttdeci">KratosZeroVector&lt; double &gt; ZeroVector</div><div class="ttdef"><b>Definition:</b> amatrix_interface.h:561</div></div>
+<div class="ttc" id="anamespace_kratos_html_a09b635fec7c488ecdae7a5966b6f8fc1"><div class="ttname"><a href="../../db/d66/namespace_kratos.html#a09b635fec7c488ecdae7a5966b6f8fc1">Kratos::CalculatePosition</a></div><div class="ttdeci">bool CalculatePosition(Geometry&lt; Node &gt; &amp;geom, const double xc, const double yc, const double zc, array_1d&lt; double, 3 &gt; &amp;N)</div><div class="ttdef"><b>Definition:</b> transfer_utility.h:343</div></div>
 <div class="ttc" id="anamespace_kratos_html_a14ab8160ba3f8291244835400249c09d"><div class="ttname"><a href="../../db/d66/namespace_kratos.html#a14ab8160ba3f8291244835400249c09d">Kratos::NodesContainerType</a></div><div class="ttdeci">ModelPart::NodesContainerType NodesContainerType</div><div class="ttdef"><b>Definition:</b> find_conditions_neighbours_process.h:44</div></div>
-<div class="ttc" id="anamespace_kratos_html_a8adf5c0201233323682d11f057e0d079"><div class="ttname"><a href="../../db/d66/namespace_kratos.html#a8adf5c0201233323682d11f057e0d079">Kratos::CalculatePosition</a></div><div class="ttdeci">bool CalculatePosition(Geometry&lt; Node&lt; 3 &gt; &gt; &amp;geom, const double xc, const double yc, const double zc, array_1d&lt; double, 3 &gt; &amp;N)</div><div class="ttdef"><b>Definition:</b> transfer_utility.h:343</div></div>
+<div class="ttc" id="anamespace_kratos_html_a97c2433cd384840d71dc50ea0951a0d0"><div class="ttname"><a href="../../db/d66/namespace_kratos.html#a97c2433cd384840d71dc50ea0951a0d0">Kratos::NodeWeakPtrVectorType</a></div><div class="ttdeci">GlobalPointersVector&lt; Node &gt; NodeWeakPtrVectorType</div><div class="ttdef"><b>Definition:</b> build_model_part_boundary_process.hpp:59</div></div>
 <div class="ttc" id="anamespace_kratos_html_a9c6097d0b0a27d1cea94992b1087f56a"><div class="ttname"><a href="../../db/d66/namespace_kratos.html#a9c6097d0b0a27d1cea94992b1087f56a">Kratos::operator&gt;&gt;</a></div><div class="ttdeci">std::istream &amp; operator&gt;&gt;(std::istream &amp;rIStream, LinearMasterSlaveConstraint &amp;rThis)</div><div class="ttdoc">input stream function</div></div>
 <div class="ttc" id="anamespace_kratos_html_aba5dbdf990a4567126376ad0aae1687e"><div class="ttname"><a href="../../db/d66/namespace_kratos.html#aba5dbdf990a4567126376ad0aae1687e">Kratos::ElementsContainerType</a></div><div class="ttdeci">ModelPart::ElementsContainerType ElementsContainerType</div><div class="ttdef"><b>Definition:</b> clear_contact_conditions_mesher_process.hpp:43</div></div>
 <div class="ttc" id="anamespace_kratos_html_ac77084a57869cbecf89d3ee2c819c5d3"><div class="ttname"><a href="../../db/d66/namespace_kratos.html#ac77084a57869cbecf89d3ee2c819c5d3">Kratos::double</a></div><div class="ttdeci">TABLE_NUMBER_ANGULAR_VELOCITY TABLE_NUMBER_MOMENT I33 BEAM_INERTIA_ROT_UNIT_LENGHT_Y KRATOS_DEFINE_APPLICATION_VARIABLE(DEM_APPLICATION, double, BEAM_INERTIA_ROT_UNIT_LENGHT_Z) typedef std double</div><div class="ttdef"><b>Definition:</b> DEM_application_variables.h:182</div></div>
 <div class="ttc" id="anamespace_kratos_html_acfc842a43d19dffc2d8105e5cbea17a9"><div class="ttname"><a href="../../db/d66/namespace_kratos.html#acfc842a43d19dffc2d8105e5cbea17a9">Kratos::operator&lt;&lt;</a></div><div class="ttdeci">std::ostream &amp; operator&lt;&lt;(std::ostream &amp;rOStream, const LinearMasterSlaveConstraint &amp;rThis)</div><div class="ttdoc">output stream function</div><div class="ttdef"><b>Definition:</b> linear_master_slave_constraint.h:432</div></div>
-<div class="ttc" id="anamespace_kratos_html_ae56ef975aa658e426e2f5201cca2c917"><div class="ttname"><a href="../../db/d66/namespace_kratos.html#ae56ef975aa658e426e2f5201cca2c917">Kratos::NodeWeakPtrVectorType</a></div><div class="ttdeci">GlobalPointersVector&lt; Node&lt; 3 &gt; &gt; NodeWeakPtrVectorType</div><div class="ttdef"><b>Definition:</b> build_model_part_boundary_process.hpp:59</div></div>
 <div class="ttc" id="anamespace_kratos_html_aeebe5416d846dedd3696f07e4aa44cb6"><div class="ttname"><a href="../../db/d66/namespace_kratos.html#aeebe5416d846dedd3696f07e4aa44cb6">Kratos::PointsArrayType</a></div><div class="ttdeci">GeometryType::PointsArrayType PointsArrayType</div><div class="ttdef"><b>Definition:</b> settle_model_structure_process.hpp:48</div></div>
 <div class="ttc" id="anamespacegenerate__convection__diffusion__explicit__element_html_a148e6b79cc167914310abbc3f842f75a"><div class="ttname"><a href="../../d8/d57/namespacegenerate__convection__diffusion__explicit__element.html#a148e6b79cc167914310abbc3f842f75a">generate_convection_diffusion_explicit_element.v</a></div><div class="ttdeci">v</div><div class="ttdef"><b>Definition:</b> generate_convection_diffusion_explicit_element.py:114</div></div>
 <div class="ttc" id="anamespacegenerate__convection__diffusion__explicit__element_html_a4d8782e919bfddcf1bd9f5370f16f597"><div class="ttname"><a href="../../d8/d57/namespacegenerate__convection__diffusion__explicit__element.html#a4d8782e919bfddcf1bd9f5370f16f597">generate_convection_diffusion_explicit_element.alpha</a></div><div class="ttdeci">alpha</div><div class="ttdef"><b>Definition:</b> generate_convection_diffusion_explicit_element.py:113</div></div>
@@ -583,7 +583,7 @@ $(function() {
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri May 12 2023 02:03:58 for KratosMultiphysics by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Sat May 13 2023 02:04:19 for KratosMultiphysics by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

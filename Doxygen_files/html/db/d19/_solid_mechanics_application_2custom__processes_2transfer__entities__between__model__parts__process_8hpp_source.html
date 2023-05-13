@@ -319,7 +319,7 @@ $(function() {
 <div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;    <span class="keyword">const</span> std::vector&lt;Flags&gt; mrAssignFlags;</div>
 <div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160; </div>
 <div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160; </div>
-<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;    <span class="keywordtype">bool</span> MatchTransferFlags(<span class="keyword">const</span> <a class="code" href="../../d5/ddd/class_kratos_1_1_node.html">Node&lt;3&gt;::Pointer</a>&amp; pNode)</div>
+<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;    <span class="keywordtype">bool</span> MatchTransferFlags(<span class="keyword">const</span> Node::Pointer&amp; pNode)</div>
 <div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;    {</div>
 <div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160; </div>
 <div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;      <span class="keywordflow">for</span>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="../../d2/db8/namespacetensors.html#a15a1da80aa773e2015eba781cababe05">i</a> = 0; <a class="code" href="../../d2/db8/namespacetensors.html#a15a1da80aa773e2015eba781cababe05">i</a>&lt;mrTransferFlags.size(); <a class="code" href="../../d2/db8/namespacetensors.html#a15a1da80aa773e2015eba781cababe05">i</a>++)</div>
@@ -332,7 +332,7 @@ $(function() {
 <div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160; </div>
 <div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;    }</div>
 <div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160; </div>
-<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;    <span class="keywordtype">void</span> AssignFlags(<span class="keyword">const</span> Node&lt;3&gt;::Pointer&amp; pNode)</div>
+<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;    <span class="keywordtype">void</span> AssignFlags(<span class="keyword">const</span> Node::Pointer&amp; pNode)</div>
 <div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;    {</div>
 <div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160; </div>
 <div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;      <span class="keywordflow">for</span>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="../../d2/db8/namespacetensors.html#a15a1da80aa773e2015eba781cababe05">i</a> = 0; <a class="code" href="../../d2/db8/namespacetensors.html#a15a1da80aa773e2015eba781cababe05">i</a>&lt;mrAssignFlags.size(); <a class="code" href="../../d2/db8/namespacetensors.html#a15a1da80aa773e2015eba781cababe05">i</a>++)</div>
@@ -414,7 +414,6 @@ $(function() {
 <div class="line"><a name="l00433"></a><span class="lineno">  433</span>&#160;}  <span class="comment">// namespace Kratos.</span></div>
 <div class="line"><a name="l00434"></a><span class="lineno">  434</span>&#160; </div>
 <div class="line"><a name="l00435"></a><span class="lineno">  435</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// KRATOS_TRANSFER_ENTITIES_BETWEEN_MODEL_PARTS_PROCESS_H_INCLUDED  defined</span></div>
-<div class="ttc" id="aclass_kratos_1_1_node_html"><div class="ttname"><a href="../../d5/ddd/class_kratos_1_1_node.html">Kratos::Node</a></div><div class="ttdoc">This class defines the node.</div><div class="ttdef"><b>Definition:</b> node.h:68</div></div>
 <div class="ttc" id="aclass_kratos_1_1_process_html"><div class="ttname"><a href="../../d2/d8c/class_kratos_1_1_process.html">Kratos::Process</a></div><div class="ttdoc">The base class for all processes in Kratos.</div><div class="ttdef"><b>Definition:</b> process.h:49</div></div>
 <div class="ttc" id="aclass_kratos_1_1_transfer_entities_between_model_parts_process_html"><div class="ttname"><a href="../../d2/dba/class_kratos_1_1_transfer_entities_between_model_parts_process.html">Kratos::TransferEntitiesBetweenModelPartsProcess</a></div><div class="ttdoc">The base class for assigning a value to scalar variables or array_1d components processes in Kratos.</div><div class="ttdef"><b>Definition:</b> transfer_entities_between_model_parts_process.hpp:37</div></div>
 <div class="ttc" id="aclass_kratos_1_1_transfer_entities_between_model_parts_process_html_a12d6ba477f6e064c0549e6bc7c5eb896"><div class="ttname"><a href="../../d2/dba/class_kratos_1_1_transfer_entities_between_model_parts_process.html#a12d6ba477f6e064c0549e6bc7c5eb896">Kratos::TransferEntitiesBetweenModelPartsProcess::TransferEntitiesBetweenModelPartsProcess</a></div><div class="ttdeci">TransferEntitiesBetweenModelPartsProcess(TransferEntitiesBetweenModelPartsProcess const &amp;rOther)</div><div class="ttdoc">Copy constructor.</div></div>
@@ -451,7 +450,7 @@ $(function() {
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri May 12 2023 02:02:55 for KratosMultiphysics by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Sat May 13 2023 02:03:16 for KratosMultiphysics by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

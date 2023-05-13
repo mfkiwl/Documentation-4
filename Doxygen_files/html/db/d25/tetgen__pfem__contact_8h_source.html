@@ -161,7 +161,7 @@ $(function() {
 <div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;        <span class="keywordflow">for</span>(ModelPart::ElementsContainerType::iterator elem = ThisModelPart.ElementsBegin();</div>
 <div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;                elem!=ThisModelPart.ElementsEnd(); elem++)</div>
 <div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;        {</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;            <a class="code" href="../../dc/dea/class_kratos_1_1_geometry.html">Geometry&lt; Node&lt;3&gt;</a> &gt;&amp; geom = elem-&gt;GetGeometry();</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;            <a class="code" href="../../dc/dea/class_kratos_1_1_geometry.html">Geometry&lt; Node &gt;</a>&amp; geom = elem-&gt;GetGeometry();</div>
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;<span class="comment">//KRATOS_WATCH(geom);</span></div>
 <div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160; </div>
 <div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;            shell_nodes.<a class="code" href="../../dc/dea/class_kratos_1_1_geometry.html#a0eeca428fac9434755f761a5f74e795c">push_back</a>(geom(0));</div>
@@ -180,7 +180,7 @@ $(function() {
 <div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;                elem!=ThisModelPart.ElementsEnd(); elem++)</div>
 <div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;        {</div>
 <div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;            ++shell_num;</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;            <a class="code" href="../../dc/dea/class_kratos_1_1_geometry.html">Geometry&lt; Node&lt;3&gt;</a> &gt;&amp; geom = elem-&gt;GetGeometry();</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;            <a class="code" href="../../dc/dea/class_kratos_1_1_geometry.html">Geometry&lt; Node &gt;</a>&amp; geom = elem-&gt;GetGeometry();</div>
 <div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;            shell_list.<a class="code" href="../../dc/dea/class_kratos_1_1_geometry.html#a0eeca428fac9434755f761a5f74e795c">push_back</a>(geom[0].Id());</div>
 <div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;            shell_list.push_back(geom[1].Id());</div>
 <div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;            shell_list.push_back(geom[2].Id());</div>
@@ -271,7 +271,7 @@ $(function() {
 <div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;            <span class="keywordtype">int</span> <span class="keywordtype">id</span> = iii + 1;</div>
 <div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;            <span class="keywordtype">int</span> base = iii * 4;</div>
 <div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;            <span class="comment">//KRATOS_WATCH(&quot;inside 1&quot;);</span></div>
-<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;            <a class="code" href="../../df/df1/class_kratos_1_1_tetrahedra3_d4.html">Tetrahedra3D4&lt;Node&lt;3&gt;</a> &gt; geom(</div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;            <a class="code" href="../../df/df1/class_kratos_1_1_tetrahedra3_d4.html">Tetrahedra3D4&lt;Node &gt;</a> geom(</div>
 <div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;                *( (nodes_begin +  out_shell.tetrahedronlist[base]-1).base()        ),</div>
 <div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;                *( (nodes_begin +  out_shell.tetrahedronlist[base+1]-1).base()  ),</div>
 <div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;                *( (nodes_begin +  out_shell.tetrahedronlist[base+2]-1).base()  ),</div>
@@ -298,7 +298,7 @@ $(function() {
 <div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;        <span class="keywordflow">for</span>(ModelPart::ElementsContainerType::const_iterator iii = ThisModelPart.ElementsBegin();</div>
 <div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;                iii != ThisModelPart.ElementsEnd(); iii++)</div>
 <div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;        {</div>
-<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;            <span class="comment">//Geometry&lt; Node&lt;3&gt; &gt;&amp; geom = iii-&gt;GetGeometry();</span></div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;            <span class="comment">//Geometry&lt; Node &gt;&amp; geom = iii-&gt;GetGeometry();</span></div>
 <div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;            <span class="keywordtype">int</span> base = ( iii-&gt;Id() - 1 )*4;</div>
 <div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160; </div>
 <div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;            (iii-&gt;GetValue(NEIGHBOUR_ELEMENTS)).resize(4);</div>
@@ -424,7 +424,7 @@ $(function() {
 <div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;<span class="comment">            {</span></div>
 <div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;<span class="comment">                KRATOS_TRY</span></div>
 <div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160;<span class="comment">    KRATOS_WATCH(&quot;inside create boundary&quot;);</span></div>
-<div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;<span class="comment">                Geometry&lt;Node&lt;3&gt; &gt;&amp; geom = origin_element-&gt;GetGeometry();</span></div>
+<div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;<span class="comment">                Geometry&lt;Node &gt;&amp; geom = origin_element-&gt;GetGeometry();</span></div>
 <div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;<span class="comment">                //mark the nodes as free surface</span></div>
 <div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160;<span class="comment">                geom[i1].FastGetSolutionStepValue(IS_BOUNDARY) = 1;</span></div>
 <div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160;<span class="comment">                geom[i2].FastGetSolutionStepValue(IS_BOUNDARY) = 1;</span></div>
@@ -440,8 +440,8 @@ $(function() {
 <div class="line"><a name="l00428"></a><span class="lineno">  428</span>&#160;<span class="comment">    KRATOS_WATCH(geom);</span></div>
 <div class="line"><a name="l00429"></a><span class="lineno">  429</span>&#160;<span class="comment">    KRATOS_WATCH(properties);</span></div>
 <div class="line"><a name="l00430"></a><span class="lineno">  430</span>&#160;<span class="comment">    KRATOS_WATCH(rReferenceBoundaryCondition);</span></div>
-<div class="line"><a name="l00431"></a><span class="lineno">  431</span>&#160;<span class="comment">                Geometry&lt; Node&lt;3&gt; &gt;::Pointer cond = Geometry&lt; Node&lt;3&gt; &gt;::Pointer(new Triangle3D3&lt; Node&lt;3&gt; &gt;(temp) );</span></div>
-<div class="line"><a name="l00432"></a><span class="lineno">  432</span>&#160;<span class="comment">                //Geometry&lt; Node&lt;3&gt; &gt;::Pointer cond = Geometry&lt; Node&lt;3&gt; &gt;::Pointer(new Triangle3D&lt; Node&lt;3&gt; &gt;(temp) );</span></div>
+<div class="line"><a name="l00431"></a><span class="lineno">  431</span>&#160;<span class="comment">                Geometry&lt; Node &gt;::Pointer cond = Geometry&lt; Node &gt;::Pointer(new Triangle3D3&lt; Node &gt;(temp) );</span></div>
+<div class="line"><a name="l00432"></a><span class="lineno">  432</span>&#160;<span class="comment">                //Geometry&lt; Node &gt;::Pointer cond = Geometry&lt; Node &gt;::Pointer(new Triangle3D&lt; Node &gt;(temp) );</span></div>
 <div class="line"><a name="l00433"></a><span class="lineno">  433</span>&#160;<span class="comment">                int id = (origin_element-&gt;Id()-1)*4;</span></div>
 <div class="line"><a name="l00434"></a><span class="lineno">  434</span>&#160;<span class="comment">                //Condition::Pointer p_cond = Condition::Pointer(new Condition(id, cond, properties) );</span></div>
 <div class="line"><a name="l00435"></a><span class="lineno">  435</span>&#160;<span class="comment">                //Condition::Pointer p_cond = rReferenceBoundaryCondition::Pointer(new Condition(id, cond, properties) );</span></div>
@@ -449,7 +449,7 @@ $(function() {
 <div class="line"><a name="l00437"></a><span class="lineno">  437</span>&#160;<span class="comment">                //assigning the neighbour node</span></div>
 <div class="line"><a name="l00438"></a><span class="lineno">  438</span>&#160;<span class="comment">    KRATOS_WATCH(&quot;face is created 2&quot;);</span></div>
 <div class="line"><a name="l00439"></a><span class="lineno">  439</span>&#160;<span class="comment">                (p_cond-&gt;GetValue(NEIGHBOUR_NODES)).clear();</span></div>
-<div class="line"><a name="l00440"></a><span class="lineno">  440</span>&#160;<span class="comment">                (p_cond-&gt;GetValue(NEIGHBOUR_NODES)).push_back( Node&lt;3&gt;::WeakPointer( geom(outer_node_id) ) );</span></div>
+<div class="line"><a name="l00440"></a><span class="lineno">  440</span>&#160;<span class="comment">                (p_cond-&gt;GetValue(NEIGHBOUR_NODES)).push_back( Node::WeakPointer( geom(outer_node_id) ) );</span></div>
 <div class="line"><a name="l00441"></a><span class="lineno">  441</span>&#160;<span class="comment">                (p_cond-&gt;GetValue(NEIGHBOUR_ELEMENTS)).clear();</span></div>
 <div class="line"><a name="l00442"></a><span class="lineno">  442</span>&#160;<span class="comment">                (p_cond-&gt;GetValue(NEIGHBOUR_ELEMENTS)).push_back( Element::WeakPointer( origin_element ) );</span></div>
 <div class="line"><a name="l00443"></a><span class="lineno">  443</span>&#160;<span class="comment">                ThisModelPart.Conditions().push_back(p_cond);</span></div>
@@ -541,7 +541,7 @@ $(function() {
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri May 12 2023 02:03:25 for KratosMultiphysics by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Sat May 13 2023 02:03:47 for KratosMultiphysics by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>
