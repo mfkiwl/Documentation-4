@@ -209,34 +209,7 @@ Macros</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">std::vector&lt;type&gt; MPIDataCommunicator::Gather(                                      \</div>
-<div class="line">    <span class="keyword">const</span> std::vector&lt;type&gt;&amp; rSendValues, <span class="keyword">const</span> <span class="keywordtype">int</span> DestinationRank)<span class="keyword"> const </span>{        \</div>
-<div class="line">    return GatherDetail(rSendValues, DestinationRank);                              \</div>
-<div class="line">}                                                                                   \</div>
-<div class="line">void MPIDataCommunicator::Gather(                                                   \</div>
-<div class="line">    <span class="keyword">const</span> std::vector&lt;type&gt;&amp; rSendValues, std::vector&lt;type&gt;&amp; rRecvValues,           \</div>
-<div class="line">    <span class="keyword">const</span> <span class="keywordtype">int</span> DestinationRank)<span class="keyword"> const </span>{                                              \</div>
-<div class="line">    GatherDetail(rSendValues, rRecvValues, DestinationRank);                        \</div>
-<div class="line">}                                                                                   \</div>
-<div class="line">std::vector&lt;std::vector&lt;type&gt;&gt; MPIDataCommunicator::Gatherv(                        \</div>
-<div class="line">    <span class="keyword">const</span> std::vector&lt;type&gt;&amp; rSendValues, <span class="keyword">const</span> <span class="keywordtype">int</span> DestinationRank)<span class="keyword"> const </span>{        \</div>
-<div class="line">    return GathervDetail(rSendValues, DestinationRank);                             \</div>
-<div class="line">}                                                                                   \</div>
-<div class="line">void MPIDataCommunicator::Gatherv(                                                  \</div>
-<div class="line">    <span class="keyword">const</span> std::vector&lt;type&gt;&amp; rSendValues, std::vector&lt;type&gt;&amp; rRecvValues,           \</div>
-<div class="line">    <span class="keyword">const</span> std::vector&lt;int&gt;&amp; rRecvCounts, <span class="keyword">const</span> std::vector&lt;int&gt;&amp; rRecvOffsets,      \</div>
-<div class="line">    <span class="keyword">const</span> <span class="keywordtype">int</span> DestinationRank)<span class="keyword"> const </span>{                                              \</div>
-<div class="line">    GathervDetail(rSendValues,rRecvValues,rRecvCounts,rRecvOffsets,DestinationRank);\</div>
-<div class="line">}                                                                                   \</div>
-<div class="line">std::vector&lt;type&gt; MPIDataCommunicator::AllGather(                                   \</div>
-<div class="line">    <span class="keyword">const</span> std::vector&lt;type&gt;&amp; rSendValues)<span class="keyword"> const </span>{                                   \</div>
-<div class="line">    return AllGatherDetail(rSendValues);                                            \</div>
-<div class="line">}                                                                                   \</div>
-<div class="line">void MPIDataCommunicator::AllGather(                                                \</div>
-<div class="line">    <span class="keyword">const</span> std::vector&lt;type&gt;&amp; rSendValues, std::vector&lt;type&gt;&amp; rRecvValues)<span class="keyword"> const </span>{   \</div>
-<div class="line">    AllGatherDetail(rSendValues,rRecvValues);                                       \</div>
-<div class="line">}                                                                                   \</div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a id="aa437922286d07eed83931fad8ad162b0"></a>
@@ -448,7 +421,7 @@ Macros</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon May 15 2023 02:15:00 for KratosMultiphysics by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Tue May 16 2023 02:14:10 for KratosMultiphysics by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

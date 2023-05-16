@@ -216,6 +216,9 @@ Functions</h2></td></tr>
 <div class="line">        <span class="keyword">const</span> <span class="keywordtype">int</span> DestinationRank) <span class="keyword">const override</span>;                                                          \</div>
 <div class="line">std::vector&lt;type&gt; AllGather(<span class="keyword">const</span> std::vector&lt;type&gt;&amp; rSendValues) <span class="keyword">const override</span>;                           \</div>
 <div class="line">void AllGather(<span class="keyword">const</span> std::vector&lt;type&gt;&amp; rSendValues, std::vector&lt;type&gt;&amp; rRecvValues) <span class="keyword">const override</span>;        \</div>
+<div class="line">std::vector&lt;std::vector&lt;type&gt;&gt; AllGatherv(<span class="keyword">const</span> std::vector&lt;type&gt;&amp; rSendValues) <span class="keyword">const  override</span>;            \</div>
+<div class="line">void AllGatherv(<span class="keyword">const</span> std::vector&lt;type&gt;&amp; rSendValues, std::vector&lt;type&gt;&amp; rRecvValues,                       \</div>
+<div class="line">    <span class="keyword">const</span> std::vector&lt;int&gt;&amp; rRecvCounts, <span class="keyword">const</span> std::vector&lt;int&gt;&amp; rRecvOffsets) <span class="keyword">const override</span>;</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -378,7 +381,7 @@ Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon May 15 2023 02:15:00 for KratosMultiphysics by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Tue May 16 2023 02:14:10 for KratosMultiphysics by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

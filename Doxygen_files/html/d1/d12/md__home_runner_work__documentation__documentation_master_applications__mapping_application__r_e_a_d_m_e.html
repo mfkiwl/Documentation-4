@@ -233,7 +233,7 @@ $(function() {
 <p><b>Supported mesh topologies</b>: This mapper only works with nodes and hence supports any mesh topology</p>
 <h3>Nearest Element</h3>
 <p>The <em>NearestElementMapper</em> projects nodes to the elements( or conditions) on other side of the inteface. Mapping is then done by interpolating the values of the nodes of the elements by using the shape functions at the projected position.</p>
-<p>This mapper is best suited for problems where the <em>NearestNeighborMapper</em> cannot be used, i.e. for cases where the discretization on the interfaces is different. Note that it is less robust than the <em>NearestNeighborMapper</em> due to the projections it performs. In case a projection fails it uses an approximation that is similar to the approach of the <em>NearestNeighborMapper</em>.</p>
+<p>This mapper is best suited for problems where the <em>NearestNeighborMapper</em> cannot be used, i.e. for cases where the discretization on the interfaces is different. Note that it is less robust than the <em>NearestNeighborMapper</em> due to the projections it performs. In case a projection fails, it uses an approximation that is similar to the approach of the <em>NearestNeighborMapper</em>. This can be disabled by setting <code>use_approximation</code> to <code>false</code> in the mapper-settings.</p>
 <p>Internally it constructs the mapping matrix, hence it offers the usage of the transposed mapping matrix. When using this, for very inhomogenous interface discretizations it can come to oscillations in the mapped quantities.</p>
 <p><b>Supported mesh topologies</b>: Any mesh topology available in <a class="el" href="../../db/d66/namespace_kratos.html" title="REF: G. R. Cowper, GAUSSIAN QUADRATURE FORMULAS FOR TRIANGLES.">Kratos</a>, which includes the most common linear and quadratic geometries, see <a href="../../../../kratos/geometries">here</a>.</p>
 <h3>Barycentric</h3>
@@ -356,7 +356,7 @@ $(function() {
 </div><!-- PageDoc -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon May 15 2023 02:15:02 for KratosMultiphysics by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Tue May 16 2023 02:14:12 for KratosMultiphysics by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>
