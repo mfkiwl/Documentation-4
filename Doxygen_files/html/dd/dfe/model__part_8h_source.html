@@ -287,7 +287,7 @@ $(function() {
 <div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160; </div>
 <div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;    <a class="code" href="../../db/d66/namespace_kratos.html#a8b2d617fdb94b53f5f2bb88e1a7ebc18">SizeType</a> NumberOfNodes(<a class="code" href="../../d5/d4d/group___kratos_core.html#ga1ba1e34f0af6a7cfcfa9b43e1f8e8c91">IndexType</a> ThisIndex = 0)<span class="keyword"> const</span></div>
 <div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;<span class="keyword">    </span>{</div>
-<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;        <span class="keywordflow">return</span> GetMesh(ThisIndex).NumberOfNodes();</div>
+<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="../../d7/db7/namespace_kratos_1_1_container_expression_helper_utilities.html#a6345d816e3f7fed110f6a659a058bfa2">GetMesh</a>(ThisIndex).NumberOfNodes();</div>
 <div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;    }</div>
 <div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160; </div>
 <div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;    <span class="keywordtype">void</span> AddNode(NodeType::Pointer pNewNode, <a class="code" href="../../d5/d4d/group___kratos_core.html#ga1ba1e34f0af6a7cfcfa9b43e1f8e8c91">IndexType</a> ThisIndex = 0);</div>
@@ -352,27 +352,27 @@ $(function() {
 <div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160; </div>
 <div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;    <span class="keywordtype">bool</span> HasNode(<a class="code" href="../../d5/d4d/group___kratos_core.html#ga1ba1e34f0af6a7cfcfa9b43e1f8e8c91">IndexType</a> NodeId, <a class="code" href="../../d5/d4d/group___kratos_core.html#ga1ba1e34f0af6a7cfcfa9b43e1f8e8c91">IndexType</a> ThisIndex = 0)<span class="keyword"> const</span></div>
 <div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;<span class="keyword">    </span>{</div>
-<div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160;        <span class="keywordflow">return</span> GetMesh(ThisIndex).HasNode(NodeId);</div>
+<div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="../../d7/db7/namespace_kratos_1_1_container_expression_helper_utilities.html#a6345d816e3f7fed110f6a659a058bfa2">GetMesh</a>(ThisIndex).HasNode(NodeId);</div>
 <div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160;    }</div>
 <div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160; </div>
 <div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160;    NodeType::Pointer pGetNode(<a class="code" href="../../d5/d4d/group___kratos_core.html#ga1ba1e34f0af6a7cfcfa9b43e1f8e8c91">IndexType</a> NodeId, <a class="code" href="../../d5/d4d/group___kratos_core.html#ga1ba1e34f0af6a7cfcfa9b43e1f8e8c91">IndexType</a> ThisIndex = 0)</div>
 <div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;    {</div>
-<div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160;        <span class="keywordflow">return</span> GetMesh(ThisIndex).pGetNode(NodeId);</div>
+<div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="../../d7/db7/namespace_kratos_1_1_container_expression_helper_utilities.html#a6345d816e3f7fed110f6a659a058bfa2">GetMesh</a>(ThisIndex).pGetNode(NodeId);</div>
 <div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160;    }</div>
 <div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160; </div>
 <div class="line"><a name="l00427"></a><span class="lineno">  427</span>&#160;    <span class="keyword">const</span> NodeType::Pointer pGetNode(<span class="keyword">const</span> <a class="code" href="../../d5/d4d/group___kratos_core.html#ga1ba1e34f0af6a7cfcfa9b43e1f8e8c91">IndexType</a> NodeId, <span class="keyword">const</span> <a class="code" href="../../d5/d4d/group___kratos_core.html#ga1ba1e34f0af6a7cfcfa9b43e1f8e8c91">IndexType</a> ThisIndex = 0)<span class="keyword"> const</span></div>
 <div class="line"><a name="l00428"></a><span class="lineno">  428</span>&#160;<span class="keyword">    </span>{</div>
-<div class="line"><a name="l00429"></a><span class="lineno">  429</span>&#160;        <span class="keywordflow">return</span> GetMesh(ThisIndex).pGetNode(NodeId);</div>
+<div class="line"><a name="l00429"></a><span class="lineno">  429</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="../../d7/db7/namespace_kratos_1_1_container_expression_helper_utilities.html#a6345d816e3f7fed110f6a659a058bfa2">GetMesh</a>(ThisIndex).pGetNode(NodeId);</div>
 <div class="line"><a name="l00430"></a><span class="lineno">  430</span>&#160;    }</div>
 <div class="line"><a name="l00431"></a><span class="lineno">  431</span>&#160; </div>
 <div class="line"><a name="l00433"></a><span class="lineno">  433</span>&#160;    <a class="code" href="../../d5/ddd/class_kratos_1_1_node.html">NodeType</a>&amp; GetNode(<a class="code" href="../../d5/d4d/group___kratos_core.html#ga1ba1e34f0af6a7cfcfa9b43e1f8e8c91">IndexType</a> NodeId, <a class="code" href="../../d5/d4d/group___kratos_core.html#ga1ba1e34f0af6a7cfcfa9b43e1f8e8c91">IndexType</a> ThisIndex = 0)</div>
 <div class="line"><a name="l00434"></a><span class="lineno">  434</span>&#160;    {</div>
-<div class="line"><a name="l00435"></a><span class="lineno">  435</span>&#160;        <span class="keywordflow">return</span> GetMesh(ThisIndex).GetNode(NodeId);</div>
+<div class="line"><a name="l00435"></a><span class="lineno">  435</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="../../d7/db7/namespace_kratos_1_1_container_expression_helper_utilities.html#a6345d816e3f7fed110f6a659a058bfa2">GetMesh</a>(ThisIndex).GetNode(NodeId);</div>
 <div class="line"><a name="l00436"></a><span class="lineno">  436</span>&#160;    }</div>
 <div class="line"><a name="l00437"></a><span class="lineno">  437</span>&#160; </div>
 <div class="line"><a name="l00438"></a><span class="lineno">  438</span>&#160;    <span class="keyword">const</span> <a class="code" href="../../d5/ddd/class_kratos_1_1_node.html">NodeType</a>&amp; GetNode(<a class="code" href="../../d5/d4d/group___kratos_core.html#ga1ba1e34f0af6a7cfcfa9b43e1f8e8c91">IndexType</a> NodeId, <a class="code" href="../../d5/d4d/group___kratos_core.html#ga1ba1e34f0af6a7cfcfa9b43e1f8e8c91">IndexType</a> ThisIndex = 0)<span class="keyword"> const</span></div>
 <div class="line"><a name="l00439"></a><span class="lineno">  439</span>&#160;<span class="keyword">    </span>{</div>
-<div class="line"><a name="l00440"></a><span class="lineno">  440</span>&#160;        <span class="keywordflow">return</span> GetMesh(ThisIndex).GetNode(NodeId);</div>
+<div class="line"><a name="l00440"></a><span class="lineno">  440</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="../../d7/db7/namespace_kratos_1_1_container_expression_helper_utilities.html#a6345d816e3f7fed110f6a659a058bfa2">GetMesh</a>(ThisIndex).GetNode(NodeId);</div>
 <div class="line"><a name="l00441"></a><span class="lineno">  441</span>&#160;    }</div>
 <div class="line"><a name="l00442"></a><span class="lineno">  442</span>&#160; </div>
 <div class="line"><a name="l00445"></a><span class="lineno">  445</span>&#160;    <span class="keywordtype">void</span> RemoveNode(<a class="code" href="../../d5/d4d/group___kratos_core.html#ga1ba1e34f0af6a7cfcfa9b43e1f8e8c91">IndexType</a> NodeId, <a class="code" href="../../d5/d4d/group___kratos_core.html#ga1ba1e34f0af6a7cfcfa9b43e1f8e8c91">IndexType</a> ThisIndex = 0);</div>
@@ -397,47 +397,47 @@ $(function() {
 <div class="line"><a name="l00486"></a><span class="lineno">  486</span>&#160; </div>
 <div class="line"><a name="l00487"></a><span class="lineno">  487</span>&#160;    NodeIterator NodesBegin(<a class="code" href="../../d5/d4d/group___kratos_core.html#ga1ba1e34f0af6a7cfcfa9b43e1f8e8c91">IndexType</a> ThisIndex = 0)</div>
 <div class="line"><a name="l00488"></a><span class="lineno">  488</span>&#160;    {</div>
-<div class="line"><a name="l00489"></a><span class="lineno">  489</span>&#160;        <span class="keywordflow">return</span> GetMesh(ThisIndex).NodesBegin();</div>
+<div class="line"><a name="l00489"></a><span class="lineno">  489</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="../../d7/db7/namespace_kratos_1_1_container_expression_helper_utilities.html#a6345d816e3f7fed110f6a659a058bfa2">GetMesh</a>(ThisIndex).NodesBegin();</div>
 <div class="line"><a name="l00490"></a><span class="lineno">  490</span>&#160;    }</div>
 <div class="line"><a name="l00491"></a><span class="lineno">  491</span>&#160; </div>
 <div class="line"><a name="l00492"></a><span class="lineno">  492</span>&#160;    NodeConstantIterator NodesBegin(<a class="code" href="../../d5/d4d/group___kratos_core.html#ga1ba1e34f0af6a7cfcfa9b43e1f8e8c91">IndexType</a> ThisIndex = 0)<span class="keyword"> const</span></div>
 <div class="line"><a name="l00493"></a><span class="lineno">  493</span>&#160;<span class="keyword">    </span>{</div>
-<div class="line"><a name="l00494"></a><span class="lineno">  494</span>&#160;        <span class="keywordflow">return</span> GetMesh(ThisIndex).NodesBegin();</div>
+<div class="line"><a name="l00494"></a><span class="lineno">  494</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="../../d7/db7/namespace_kratos_1_1_container_expression_helper_utilities.html#a6345d816e3f7fed110f6a659a058bfa2">GetMesh</a>(ThisIndex).NodesBegin();</div>
 <div class="line"><a name="l00495"></a><span class="lineno">  495</span>&#160;    }</div>
 <div class="line"><a name="l00496"></a><span class="lineno">  496</span>&#160; </div>
 <div class="line"><a name="l00497"></a><span class="lineno">  497</span>&#160;    NodeIterator NodesEnd(<a class="code" href="../../d5/d4d/group___kratos_core.html#ga1ba1e34f0af6a7cfcfa9b43e1f8e8c91">IndexType</a> ThisIndex = 0)</div>
 <div class="line"><a name="l00498"></a><span class="lineno">  498</span>&#160;    {</div>
-<div class="line"><a name="l00499"></a><span class="lineno">  499</span>&#160;        <span class="keywordflow">return</span> GetMesh(ThisIndex).NodesEnd();</div>
+<div class="line"><a name="l00499"></a><span class="lineno">  499</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="../../d7/db7/namespace_kratos_1_1_container_expression_helper_utilities.html#a6345d816e3f7fed110f6a659a058bfa2">GetMesh</a>(ThisIndex).NodesEnd();</div>
 <div class="line"><a name="l00500"></a><span class="lineno">  500</span>&#160;    }</div>
 <div class="line"><a name="l00501"></a><span class="lineno">  501</span>&#160; </div>
 <div class="line"><a name="l00502"></a><span class="lineno">  502</span>&#160;    NodeConstantIterator NodesEnd(<a class="code" href="../../d5/d4d/group___kratos_core.html#ga1ba1e34f0af6a7cfcfa9b43e1f8e8c91">IndexType</a> ThisIndex = 0)<span class="keyword"> const</span></div>
 <div class="line"><a name="l00503"></a><span class="lineno">  503</span>&#160;<span class="keyword">    </span>{</div>
-<div class="line"><a name="l00504"></a><span class="lineno">  504</span>&#160;        <span class="keywordflow">return</span> GetMesh(ThisIndex).NodesEnd();</div>
+<div class="line"><a name="l00504"></a><span class="lineno">  504</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="../../d7/db7/namespace_kratos_1_1_container_expression_helper_utilities.html#a6345d816e3f7fed110f6a659a058bfa2">GetMesh</a>(ThisIndex).NodesEnd();</div>
 <div class="line"><a name="l00505"></a><span class="lineno">  505</span>&#160;    }</div>
 <div class="line"><a name="l00506"></a><span class="lineno">  506</span>&#160; </div>
 <div class="line"><a name="l00507"></a><span class="lineno">  507</span>&#160;    <a class="code" href="../../db/d66/namespace_kratos.html#a14ab8160ba3f8291244835400249c09d">NodesContainerType</a>&amp; Nodes(<a class="code" href="../../d5/d4d/group___kratos_core.html#ga1ba1e34f0af6a7cfcfa9b43e1f8e8c91">IndexType</a> ThisIndex = 0)</div>
 <div class="line"><a name="l00508"></a><span class="lineno">  508</span>&#160;    {</div>
-<div class="line"><a name="l00509"></a><span class="lineno">  509</span>&#160;        <span class="keywordflow">return</span> GetMesh(ThisIndex).Nodes();</div>
+<div class="line"><a name="l00509"></a><span class="lineno">  509</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="../../d7/db7/namespace_kratos_1_1_container_expression_helper_utilities.html#a6345d816e3f7fed110f6a659a058bfa2">GetMesh</a>(ThisIndex).Nodes();</div>
 <div class="line"><a name="l00510"></a><span class="lineno">  510</span>&#160;    }</div>
 <div class="line"><a name="l00511"></a><span class="lineno">  511</span>&#160; </div>
 <div class="line"><a name="l00512"></a><span class="lineno">  512</span>&#160;    <span class="keyword">const</span> <a class="code" href="../../db/d66/namespace_kratos.html#a14ab8160ba3f8291244835400249c09d">NodesContainerType</a>&amp; Nodes(<a class="code" href="../../d5/d4d/group___kratos_core.html#ga1ba1e34f0af6a7cfcfa9b43e1f8e8c91">IndexType</a> ThisIndex = 0)<span class="keyword"> const</span></div>
 <div class="line"><a name="l00513"></a><span class="lineno">  513</span>&#160;<span class="keyword">    </span>{</div>
-<div class="line"><a name="l00514"></a><span class="lineno">  514</span>&#160;        <span class="keywordflow">return</span> GetMesh(ThisIndex).Nodes();</div>
+<div class="line"><a name="l00514"></a><span class="lineno">  514</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="../../d7/db7/namespace_kratos_1_1_container_expression_helper_utilities.html#a6345d816e3f7fed110f6a659a058bfa2">GetMesh</a>(ThisIndex).Nodes();</div>
 <div class="line"><a name="l00515"></a><span class="lineno">  515</span>&#160;    }</div>
 <div class="line"><a name="l00516"></a><span class="lineno">  516</span>&#160; </div>
 <div class="line"><a name="l00517"></a><span class="lineno">  517</span>&#160;    NodesContainerType::Pointer pNodes(<a class="code" href="../../d5/d4d/group___kratos_core.html#ga1ba1e34f0af6a7cfcfa9b43e1f8e8c91">IndexType</a> ThisIndex = 0)</div>
 <div class="line"><a name="l00518"></a><span class="lineno">  518</span>&#160;    {</div>
-<div class="line"><a name="l00519"></a><span class="lineno">  519</span>&#160;        <span class="keywordflow">return</span> GetMesh(ThisIndex).pNodes();</div>
+<div class="line"><a name="l00519"></a><span class="lineno">  519</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="../../d7/db7/namespace_kratos_1_1_container_expression_helper_utilities.html#a6345d816e3f7fed110f6a659a058bfa2">GetMesh</a>(ThisIndex).pNodes();</div>
 <div class="line"><a name="l00520"></a><span class="lineno">  520</span>&#160;    }</div>
 <div class="line"><a name="l00521"></a><span class="lineno">  521</span>&#160; </div>
 <div class="line"><a name="l00522"></a><span class="lineno">  522</span>&#160;    <span class="keywordtype">void</span> SetNodes(NodesContainerType::Pointer pOtherNodes, <a class="code" href="../../d5/d4d/group___kratos_core.html#ga1ba1e34f0af6a7cfcfa9b43e1f8e8c91">IndexType</a> ThisIndex = 0)</div>
 <div class="line"><a name="l00523"></a><span class="lineno">  523</span>&#160;    {</div>
-<div class="line"><a name="l00524"></a><span class="lineno">  524</span>&#160;        GetMesh(ThisIndex).SetNodes(pOtherNodes);</div>
+<div class="line"><a name="l00524"></a><span class="lineno">  524</span>&#160;        <a class="code" href="../../d7/db7/namespace_kratos_1_1_container_expression_helper_utilities.html#a6345d816e3f7fed110f6a659a058bfa2">GetMesh</a>(ThisIndex).SetNodes(pOtherNodes);</div>
 <div class="line"><a name="l00525"></a><span class="lineno">  525</span>&#160;    }</div>
 <div class="line"><a name="l00526"></a><span class="lineno">  526</span>&#160; </div>
 <div class="line"><a name="l00527"></a><span class="lineno">  527</span>&#160;    <a class="code" href="../../d6/d3f/transfer__utility_8h.html#ad745855cfa0bc32dd5bb6b62cf53c55d">NodesContainerType::ContainerType</a>&amp; NodesArray(<a class="code" href="../../d5/d4d/group___kratos_core.html#ga1ba1e34f0af6a7cfcfa9b43e1f8e8c91">IndexType</a> ThisIndex = 0)</div>
 <div class="line"><a name="l00528"></a><span class="lineno">  528</span>&#160;    {</div>
-<div class="line"><a name="l00529"></a><span class="lineno">  529</span>&#160;        <span class="keywordflow">return</span> GetMesh(ThisIndex).NodesArray();</div>
+<div class="line"><a name="l00529"></a><span class="lineno">  529</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="../../d7/db7/namespace_kratos_1_1_container_expression_helper_utilities.html#a6345d816e3f7fed110f6a659a058bfa2">GetMesh</a>(ThisIndex).NodesArray();</div>
 <div class="line"><a name="l00530"></a><span class="lineno">  530</span>&#160;    }</div>
 <div class="line"><a name="l00531"></a><span class="lineno">  531</span>&#160; </div>
 <div class="line"><a name="l00532"></a><span class="lineno">  532</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../da/d07/namespace_kratos_1_1_python.html#a3685e121a1028aabfad67be408247754">AddNodalSolutionStepVariable</a>(VariableData <span class="keyword">const</span>&amp; ThisVariable)</div>
@@ -545,37 +545,37 @@ $(function() {
 <div class="line"><a name="l00648"></a><span class="lineno">  648</span>&#160; </div>
 <div class="line"><a name="l00649"></a><span class="lineno">  649</span>&#160;    <a class="code" href="../../db/d66/namespace_kratos.html#a8b2d617fdb94b53f5f2bb88e1a7ebc18">SizeType</a> NumberOfMasterSlaveConstraints(<a class="code" href="../../d5/d4d/group___kratos_core.html#ga1ba1e34f0af6a7cfcfa9b43e1f8e8c91">IndexType</a> ThisIndex = 0)<span class="keyword"> const</span></div>
 <div class="line"><a name="l00650"></a><span class="lineno">  650</span>&#160;<span class="keyword">    </span>{</div>
-<div class="line"><a name="l00651"></a><span class="lineno">  651</span>&#160;        <span class="keywordflow">return</span> GetMesh(ThisIndex).NumberOfMasterSlaveConstraints();</div>
+<div class="line"><a name="l00651"></a><span class="lineno">  651</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="../../d7/db7/namespace_kratos_1_1_container_expression_helper_utilities.html#a6345d816e3f7fed110f6a659a058bfa2">GetMesh</a>(ThisIndex).NumberOfMasterSlaveConstraints();</div>
 <div class="line"><a name="l00652"></a><span class="lineno">  652</span>&#160;    }</div>
 <div class="line"><a name="l00653"></a><span class="lineno">  653</span>&#160; </div>
 <div class="line"><a name="l00654"></a><span class="lineno">  654</span>&#160;    MasterSlaveConstraintContainerType&amp; MasterSlaveConstraints(<a class="code" href="../../d5/d4d/group___kratos_core.html#ga1ba1e34f0af6a7cfcfa9b43e1f8e8c91">IndexType</a> ThisIndex = 0)</div>
 <div class="line"><a name="l00655"></a><span class="lineno">  655</span>&#160;    {</div>
-<div class="line"><a name="l00656"></a><span class="lineno">  656</span>&#160;        <span class="keywordflow">return</span> GetMesh(ThisIndex).MasterSlaveConstraints();</div>
+<div class="line"><a name="l00656"></a><span class="lineno">  656</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="../../d7/db7/namespace_kratos_1_1_container_expression_helper_utilities.html#a6345d816e3f7fed110f6a659a058bfa2">GetMesh</a>(ThisIndex).MasterSlaveConstraints();</div>
 <div class="line"><a name="l00657"></a><span class="lineno">  657</span>&#160;    }</div>
 <div class="line"><a name="l00658"></a><span class="lineno">  658</span>&#160; </div>
 <div class="line"><a name="l00659"></a><span class="lineno">  659</span>&#160;    <span class="keyword">const</span> MasterSlaveConstraintContainerType&amp; MasterSlaveConstraints(<a class="code" href="../../d5/d4d/group___kratos_core.html#ga1ba1e34f0af6a7cfcfa9b43e1f8e8c91">IndexType</a> ThisIndex = 0)<span class="keyword"> const</span></div>
 <div class="line"><a name="l00660"></a><span class="lineno">  660</span>&#160;<span class="keyword">    </span>{</div>
-<div class="line"><a name="l00661"></a><span class="lineno">  661</span>&#160;        <span class="keywordflow">return</span> GetMesh(ThisIndex).MasterSlaveConstraints();</div>
+<div class="line"><a name="l00661"></a><span class="lineno">  661</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="../../d7/db7/namespace_kratos_1_1_container_expression_helper_utilities.html#a6345d816e3f7fed110f6a659a058bfa2">GetMesh</a>(ThisIndex).MasterSlaveConstraints();</div>
 <div class="line"><a name="l00662"></a><span class="lineno">  662</span>&#160;    }</div>
 <div class="line"><a name="l00663"></a><span class="lineno">  663</span>&#160; </div>
 <div class="line"><a name="l00664"></a><span class="lineno">  664</span>&#160;    MasterSlaveConstraintConstantIteratorType  MasterSlaveConstraintsBegin(<a class="code" href="../../d5/d4d/group___kratos_core.html#ga1ba1e34f0af6a7cfcfa9b43e1f8e8c91">IndexType</a> ThisIndex = 0)<span class="keyword"> const</span></div>
 <div class="line"><a name="l00665"></a><span class="lineno">  665</span>&#160;<span class="keyword">    </span>{</div>
-<div class="line"><a name="l00666"></a><span class="lineno">  666</span>&#160;        <span class="keywordflow">return</span> GetMesh(ThisIndex).MasterSlaveConstraintsBegin();</div>
+<div class="line"><a name="l00666"></a><span class="lineno">  666</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="../../d7/db7/namespace_kratos_1_1_container_expression_helper_utilities.html#a6345d816e3f7fed110f6a659a058bfa2">GetMesh</a>(ThisIndex).MasterSlaveConstraintsBegin();</div>
 <div class="line"><a name="l00667"></a><span class="lineno">  667</span>&#160;    }</div>
 <div class="line"><a name="l00668"></a><span class="lineno">  668</span>&#160; </div>
 <div class="line"><a name="l00669"></a><span class="lineno">  669</span>&#160;    MasterSlaveConstraintConstantIteratorType  MasterSlaveConstraintsEnd(<a class="code" href="../../d5/d4d/group___kratos_core.html#ga1ba1e34f0af6a7cfcfa9b43e1f8e8c91">IndexType</a> ThisIndex = 0)<span class="keyword"> const</span></div>
 <div class="line"><a name="l00670"></a><span class="lineno">  670</span>&#160;<span class="keyword">    </span>{</div>
-<div class="line"><a name="l00671"></a><span class="lineno">  671</span>&#160;        <span class="keywordflow">return</span> GetMesh(ThisIndex).MasterSlaveConstraintsEnd();</div>
+<div class="line"><a name="l00671"></a><span class="lineno">  671</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="../../d7/db7/namespace_kratos_1_1_container_expression_helper_utilities.html#a6345d816e3f7fed110f6a659a058bfa2">GetMesh</a>(ThisIndex).MasterSlaveConstraintsEnd();</div>
 <div class="line"><a name="l00672"></a><span class="lineno">  672</span>&#160;    }</div>
 <div class="line"><a name="l00673"></a><span class="lineno">  673</span>&#160; </div>
 <div class="line"><a name="l00674"></a><span class="lineno">  674</span>&#160;    MasterSlaveConstraintIteratorType  MasterSlaveConstraintsBegin(<a class="code" href="../../d5/d4d/group___kratos_core.html#ga1ba1e34f0af6a7cfcfa9b43e1f8e8c91">IndexType</a> ThisIndex = 0)</div>
 <div class="line"><a name="l00675"></a><span class="lineno">  675</span>&#160;    {</div>
-<div class="line"><a name="l00676"></a><span class="lineno">  676</span>&#160;        <span class="keywordflow">return</span> GetMesh(ThisIndex).MasterSlaveConstraintsBegin();</div>
+<div class="line"><a name="l00676"></a><span class="lineno">  676</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="../../d7/db7/namespace_kratos_1_1_container_expression_helper_utilities.html#a6345d816e3f7fed110f6a659a058bfa2">GetMesh</a>(ThisIndex).MasterSlaveConstraintsBegin();</div>
 <div class="line"><a name="l00677"></a><span class="lineno">  677</span>&#160;    }</div>
 <div class="line"><a name="l00678"></a><span class="lineno">  678</span>&#160; </div>
 <div class="line"><a name="l00679"></a><span class="lineno">  679</span>&#160;    MasterSlaveConstraintIteratorType  MasterSlaveConstraintsEnd(<a class="code" href="../../d5/d4d/group___kratos_core.html#ga1ba1e34f0af6a7cfcfa9b43e1f8e8c91">IndexType</a> ThisIndex = 0)</div>
 <div class="line"><a name="l00680"></a><span class="lineno">  680</span>&#160;    {</div>
-<div class="line"><a name="l00681"></a><span class="lineno">  681</span>&#160;        <span class="keywordflow">return</span> GetMesh(ThisIndex).MasterSlaveConstraintsEnd();</div>
+<div class="line"><a name="l00681"></a><span class="lineno">  681</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="../../d7/db7/namespace_kratos_1_1_container_expression_helper_utilities.html#a6345d816e3f7fed110f6a659a058bfa2">GetMesh</a>(ThisIndex).MasterSlaveConstraintsEnd();</div>
 <div class="line"><a name="l00682"></a><span class="lineno">  682</span>&#160;    }</div>
 <div class="line"><a name="l00683"></a><span class="lineno">  683</span>&#160; </div>
 <div class="line"><a name="l00686"></a><span class="lineno">  686</span>&#160;    <span class="keywordtype">void</span> AddMasterSlaveConstraint(MasterSlaveConstraintType::Pointer pNewMasterSlaveConstraint, <a class="code" href="../../d5/d4d/group___kratos_core.html#ga1ba1e34f0af6a7cfcfa9b43e1f8e8c91">IndexType</a> ThisIndex = 0);</div>
@@ -662,7 +662,7 @@ $(function() {
 <div class="line"><a name="l00802"></a><span class="lineno">  802</span>&#160;        <a class="code" href="../../d5/d4d/group___kratos_core.html#ga1ba1e34f0af6a7cfcfa9b43e1f8e8c91">IndexType</a> ThisIndex = 0</div>
 <div class="line"><a name="l00803"></a><span class="lineno">  803</span>&#160;        )<span class="keyword"> const</span></div>
 <div class="line"><a name="l00804"></a><span class="lineno">  804</span>&#160;<span class="keyword">    </span>{</div>
-<div class="line"><a name="l00805"></a><span class="lineno">  805</span>&#160;        <span class="keywordflow">return</span> GetMesh(ThisIndex).HasMasterSlaveConstraint(MasterSlaveConstraintId);</div>
+<div class="line"><a name="l00805"></a><span class="lineno">  805</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="../../d7/db7/namespace_kratos_1_1_container_expression_helper_utilities.html#a6345d816e3f7fed110f6a659a058bfa2">GetMesh</a>(ThisIndex).HasMasterSlaveConstraint(MasterSlaveConstraintId);</div>
 <div class="line"><a name="l00806"></a><span class="lineno">  806</span>&#160;    }</div>
 <div class="line"><a name="l00807"></a><span class="lineno">  807</span>&#160; </div>
 <div class="line"><a name="l00809"></a><span class="lineno">  809</span>&#160;    MasterSlaveConstraintType::Pointer pGetMasterSlaveConstraint(<a class="code" href="../../d5/d4d/group___kratos_core.html#ga1ba1e34f0af6a7cfcfa9b43e1f8e8c91">IndexType</a> ConstraintId, <a class="code" href="../../d5/d4d/group___kratos_core.html#ga1ba1e34f0af6a7cfcfa9b43e1f8e8c91">IndexType</a> ThisIndex = 0);</div>
@@ -728,48 +728,48 @@ $(function() {
 <div class="line"><a name="l00977"></a><span class="lineno">  977</span>&#160; </div>
 <div class="line"><a name="l00978"></a><span class="lineno">  978</span>&#160;    PropertiesIterator PropertiesBegin(<a class="code" href="../../d5/d4d/group___kratos_core.html#ga1ba1e34f0af6a7cfcfa9b43e1f8e8c91">IndexType</a> ThisIndex = 0)</div>
 <div class="line"><a name="l00979"></a><span class="lineno">  979</span>&#160;    {</div>
-<div class="line"><a name="l00980"></a><span class="lineno">  980</span>&#160;        <span class="keywordflow">return</span> GetMesh(ThisIndex).PropertiesBegin();</div>
+<div class="line"><a name="l00980"></a><span class="lineno">  980</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="../../d7/db7/namespace_kratos_1_1_container_expression_helper_utilities.html#a6345d816e3f7fed110f6a659a058bfa2">GetMesh</a>(ThisIndex).PropertiesBegin();</div>
 <div class="line"><a name="l00981"></a><span class="lineno">  981</span>&#160;    }</div>
 <div class="line"><a name="l00982"></a><span class="lineno">  982</span>&#160; </div>
 <div class="line"><a name="l00983"></a><span class="lineno">  983</span>&#160;    PropertiesConstantIterator PropertiesBegin(<a class="code" href="../../d5/d4d/group___kratos_core.html#ga1ba1e34f0af6a7cfcfa9b43e1f8e8c91">IndexType</a> ThisIndex = 0)<span class="keyword"> const</span></div>
 <div class="line"><a name="l00984"></a><span class="lineno">  984</span>&#160;<span class="keyword">    </span>{</div>
-<div class="line"><a name="l00985"></a><span class="lineno">  985</span>&#160;        <span class="keywordflow">return</span> GetMesh(ThisIndex).PropertiesBegin();</div>
+<div class="line"><a name="l00985"></a><span class="lineno">  985</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="../../d7/db7/namespace_kratos_1_1_container_expression_helper_utilities.html#a6345d816e3f7fed110f6a659a058bfa2">GetMesh</a>(ThisIndex).PropertiesBegin();</div>
 <div class="line"><a name="l00986"></a><span class="lineno">  986</span>&#160;    }</div>
 <div class="line"><a name="l00987"></a><span class="lineno">  987</span>&#160; </div>
 <div class="line"><a name="l00988"></a><span class="lineno">  988</span>&#160;    PropertiesIterator PropertiesEnd(<a class="code" href="../../d5/d4d/group___kratos_core.html#ga1ba1e34f0af6a7cfcfa9b43e1f8e8c91">IndexType</a> ThisIndex = 0)</div>
 <div class="line"><a name="l00989"></a><span class="lineno">  989</span>&#160;    {</div>
-<div class="line"><a name="l00990"></a><span class="lineno">  990</span>&#160;        <span class="keywordflow">return</span> GetMesh(ThisIndex).PropertiesEnd();</div>
+<div class="line"><a name="l00990"></a><span class="lineno">  990</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="../../d7/db7/namespace_kratos_1_1_container_expression_helper_utilities.html#a6345d816e3f7fed110f6a659a058bfa2">GetMesh</a>(ThisIndex).PropertiesEnd();</div>
 <div class="line"><a name="l00991"></a><span class="lineno">  991</span>&#160;    }</div>
 <div class="line"><a name="l00992"></a><span class="lineno">  992</span>&#160; </div>
 <div class="line"><a name="l00993"></a><span class="lineno">  993</span>&#160;    PropertiesConstantIterator PropertiesEnd(<a class="code" href="../../d5/d4d/group___kratos_core.html#ga1ba1e34f0af6a7cfcfa9b43e1f8e8c91">IndexType</a> ThisIndex = 0)<span class="keyword"> const</span></div>
 <div class="line"><a name="l00994"></a><span class="lineno">  994</span>&#160;<span class="keyword">    </span>{</div>
-<div class="line"><a name="l00995"></a><span class="lineno">  995</span>&#160;        <span class="keywordflow">return</span> GetMesh(ThisIndex).PropertiesEnd();</div>
+<div class="line"><a name="l00995"></a><span class="lineno">  995</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="../../d7/db7/namespace_kratos_1_1_container_expression_helper_utilities.html#a6345d816e3f7fed110f6a659a058bfa2">GetMesh</a>(ThisIndex).PropertiesEnd();</div>
 <div class="line"><a name="l00996"></a><span class="lineno">  996</span>&#160;    }</div>
 <div class="line"><a name="l00997"></a><span class="lineno">  997</span>&#160; </div>
 <div class="line"><a name="l01003"></a><span class="lineno"> 1003</span>&#160;    <a class="code" href="../../db/d66/namespace_kratos.html#a66e636228ee5db9c059e26f3c9d41c22">PropertiesContainerType</a>&amp; rProperties(<a class="code" href="../../d5/d4d/group___kratos_core.html#ga1ba1e34f0af6a7cfcfa9b43e1f8e8c91">IndexType</a> ThisIndex = 0)</div>
 <div class="line"><a name="l01004"></a><span class="lineno"> 1004</span>&#160;    {</div>
-<div class="line"><a name="l01005"></a><span class="lineno"> 1005</span>&#160;        <span class="keywordflow">return</span> GetMesh(ThisIndex).Properties();</div>
+<div class="line"><a name="l01005"></a><span class="lineno"> 1005</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="../../d7/db7/namespace_kratos_1_1_container_expression_helper_utilities.html#a6345d816e3f7fed110f6a659a058bfa2">GetMesh</a>(ThisIndex).Properties();</div>
 <div class="line"><a name="l01006"></a><span class="lineno"> 1006</span>&#160;    }</div>
 <div class="line"><a name="l01007"></a><span class="lineno"> 1007</span>&#160; </div>
 <div class="line"><a name="l01008"></a><span class="lineno"> 1008</span>&#160;    PropertiesContainerType::Pointer <a class="code" href="../../d7/dc7/namespace_kratos_1_1_move_mesh_utilities.html#a615721662e0a3094ac8b56928ceb46df">pProperties</a>(<a class="code" href="../../d5/d4d/group___kratos_core.html#ga1ba1e34f0af6a7cfcfa9b43e1f8e8c91">IndexType</a> ThisIndex = 0)</div>
 <div class="line"><a name="l01009"></a><span class="lineno"> 1009</span>&#160;    {</div>
-<div class="line"><a name="l01010"></a><span class="lineno"> 1010</span>&#160;        <span class="keywordflow">return</span> GetMesh(ThisIndex).pProperties();</div>
+<div class="line"><a name="l01010"></a><span class="lineno"> 1010</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="../../d7/db7/namespace_kratos_1_1_container_expression_helper_utilities.html#a6345d816e3f7fed110f6a659a058bfa2">GetMesh</a>(ThisIndex).pProperties();</div>
 <div class="line"><a name="l01011"></a><span class="lineno"> 1011</span>&#160;    }</div>
 <div class="line"><a name="l01012"></a><span class="lineno"> 1012</span>&#160; </div>
 <div class="line"><a name="l01013"></a><span class="lineno"> 1013</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../d3/de8/namespacebeam__sections__python__utility.html#a593011fd32e09602aec2b61bf801358a">SetProperties</a>(PropertiesContainerType::Pointer pOtherProperties, <a class="code" href="../../d5/d4d/group___kratos_core.html#ga1ba1e34f0af6a7cfcfa9b43e1f8e8c91">IndexType</a> ThisIndex = 0)</div>
 <div class="line"><a name="l01014"></a><span class="lineno"> 1014</span>&#160;    {</div>
-<div class="line"><a name="l01015"></a><span class="lineno"> 1015</span>&#160;        GetMesh(ThisIndex).SetProperties(pOtherProperties);</div>
+<div class="line"><a name="l01015"></a><span class="lineno"> 1015</span>&#160;        <a class="code" href="../../d7/db7/namespace_kratos_1_1_container_expression_helper_utilities.html#a6345d816e3f7fed110f6a659a058bfa2">GetMesh</a>(ThisIndex).SetProperties(pOtherProperties);</div>
 <div class="line"><a name="l01016"></a><span class="lineno"> 1016</span>&#160;    }</div>
 <div class="line"><a name="l01017"></a><span class="lineno"> 1017</span>&#160; </div>
 <div class="line"><a name="l01018"></a><span class="lineno"> 1018</span>&#160;    <a class="code" href="../../db/dc6/class_kratos_1_1_pointer_vector_set.html#a7f7437e309afec6a04584cf94aa03156">PropertiesContainerType::ContainerType</a>&amp; PropertiesArray(<a class="code" href="../../d5/d4d/group___kratos_core.html#ga1ba1e34f0af6a7cfcfa9b43e1f8e8c91">IndexType</a> ThisIndex = 0)</div>
 <div class="line"><a name="l01019"></a><span class="lineno"> 1019</span>&#160;    {</div>
-<div class="line"><a name="l01020"></a><span class="lineno"> 1020</span>&#160;        <span class="keywordflow">return</span> GetMesh(ThisIndex).PropertiesArray();</div>
+<div class="line"><a name="l01020"></a><span class="lineno"> 1020</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="../../d7/db7/namespace_kratos_1_1_container_expression_helper_utilities.html#a6345d816e3f7fed110f6a659a058bfa2">GetMesh</a>(ThisIndex).PropertiesArray();</div>
 <div class="line"><a name="l01021"></a><span class="lineno"> 1021</span>&#160;    }</div>
 <div class="line"><a name="l01022"></a><span class="lineno"> 1022</span>&#160; </div>
 <div class="line"><a name="l01026"></a><span class="lineno"> 1026</span>&#160; </div>
 <div class="line"><a name="l01027"></a><span class="lineno"> 1027</span>&#160;    <a class="code" href="../../db/d66/namespace_kratos.html#a8b2d617fdb94b53f5f2bb88e1a7ebc18">SizeType</a> NumberOfElements(<a class="code" href="../../d5/d4d/group___kratos_core.html#ga1ba1e34f0af6a7cfcfa9b43e1f8e8c91">IndexType</a> ThisIndex = 0)<span class="keyword"> const</span></div>
 <div class="line"><a name="l01028"></a><span class="lineno"> 1028</span>&#160;<span class="keyword">    </span>{</div>
-<div class="line"><a name="l01029"></a><span class="lineno"> 1029</span>&#160;        <span class="keywordflow">return</span> GetMesh(ThisIndex).NumberOfElements();</div>
+<div class="line"><a name="l01029"></a><span class="lineno"> 1029</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="../../d7/db7/namespace_kratos_1_1_container_expression_helper_utilities.html#a6345d816e3f7fed110f6a659a058bfa2">GetMesh</a>(ThisIndex).NumberOfElements();</div>
 <div class="line"><a name="l01030"></a><span class="lineno"> 1030</span>&#160;    }</div>
 <div class="line"><a name="l01031"></a><span class="lineno"> 1031</span>&#160; </div>
 <div class="line"><a name="l01034"></a><span class="lineno"> 1034</span>&#160;    <span class="keywordtype">void</span> AddElement(ElementType::Pointer pNewElement, <a class="code" href="../../d5/d4d/group___kratos_core.html#ga1ba1e34f0af6a7cfcfa9b43e1f8e8c91">IndexType</a> ThisIndex = 0);</div>
@@ -835,27 +835,27 @@ $(function() {
 <div class="line"><a name="l01101"></a><span class="lineno"> 1101</span>&#160; </div>
 <div class="line"><a name="l01103"></a><span class="lineno"> 1103</span>&#160;    <span class="keywordtype">bool</span> HasElement(<a class="code" href="../../d5/d4d/group___kratos_core.html#ga1ba1e34f0af6a7cfcfa9b43e1f8e8c91">IndexType</a> ElementId, <a class="code" href="../../d5/d4d/group___kratos_core.html#ga1ba1e34f0af6a7cfcfa9b43e1f8e8c91">IndexType</a> ThisIndex = 0)<span class="keyword"> const</span></div>
 <div class="line"><a name="l01104"></a><span class="lineno"> 1104</span>&#160;<span class="keyword">    </span>{</div>
-<div class="line"><a name="l01105"></a><span class="lineno"> 1105</span>&#160;        <span class="keywordflow">return</span> GetMesh(ThisIndex).HasElement(ElementId);</div>
+<div class="line"><a name="l01105"></a><span class="lineno"> 1105</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="../../d7/db7/namespace_kratos_1_1_container_expression_helper_utilities.html#a6345d816e3f7fed110f6a659a058bfa2">GetMesh</a>(ThisIndex).HasElement(ElementId);</div>
 <div class="line"><a name="l01106"></a><span class="lineno"> 1106</span>&#160;    }</div>
 <div class="line"><a name="l01107"></a><span class="lineno"> 1107</span>&#160; </div>
 <div class="line"><a name="l01109"></a><span class="lineno"> 1109</span>&#160;    ElementType::Pointer pGetElement(<a class="code" href="../../d5/d4d/group___kratos_core.html#ga1ba1e34f0af6a7cfcfa9b43e1f8e8c91">IndexType</a> ElementId, <a class="code" href="../../d5/d4d/group___kratos_core.html#ga1ba1e34f0af6a7cfcfa9b43e1f8e8c91">IndexType</a> ThisIndex = 0)</div>
 <div class="line"><a name="l01110"></a><span class="lineno"> 1110</span>&#160;    {</div>
-<div class="line"><a name="l01111"></a><span class="lineno"> 1111</span>&#160;        <span class="keywordflow">return</span> GetMesh(ThisIndex).pGetElement(ElementId);</div>
+<div class="line"><a name="l01111"></a><span class="lineno"> 1111</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="../../d7/db7/namespace_kratos_1_1_container_expression_helper_utilities.html#a6345d816e3f7fed110f6a659a058bfa2">GetMesh</a>(ThisIndex).pGetElement(ElementId);</div>
 <div class="line"><a name="l01112"></a><span class="lineno"> 1112</span>&#160;    }</div>
 <div class="line"><a name="l01113"></a><span class="lineno"> 1113</span>&#160; </div>
 <div class="line"><a name="l01115"></a><span class="lineno"> 1115</span>&#160;    <span class="keyword">const</span> ElementType::Pointer pGetElement(<span class="keyword">const</span> <a class="code" href="../../d5/d4d/group___kratos_core.html#ga1ba1e34f0af6a7cfcfa9b43e1f8e8c91">IndexType</a> ElementId, <span class="keyword">const</span> <a class="code" href="../../d5/d4d/group___kratos_core.html#ga1ba1e34f0af6a7cfcfa9b43e1f8e8c91">IndexType</a> ThisIndex = 0)<span class="keyword"> const</span></div>
 <div class="line"><a name="l01116"></a><span class="lineno"> 1116</span>&#160;<span class="keyword">    </span>{</div>
-<div class="line"><a name="l01117"></a><span class="lineno"> 1117</span>&#160;        <span class="keywordflow">return</span> GetMesh(ThisIndex).pGetElement(ElementId);</div>
+<div class="line"><a name="l01117"></a><span class="lineno"> 1117</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="../../d7/db7/namespace_kratos_1_1_container_expression_helper_utilities.html#a6345d816e3f7fed110f6a659a058bfa2">GetMesh</a>(ThisIndex).pGetElement(ElementId);</div>
 <div class="line"><a name="l01118"></a><span class="lineno"> 1118</span>&#160;    }</div>
 <div class="line"><a name="l01119"></a><span class="lineno"> 1119</span>&#160; </div>
 <div class="line"><a name="l01121"></a><span class="lineno"> 1121</span>&#160;    <a class="code" href="../../d5/dd4/class_kratos_1_1_element.html">ElementType</a>&amp; GetElement(<a class="code" href="../../d5/d4d/group___kratos_core.html#ga1ba1e34f0af6a7cfcfa9b43e1f8e8c91">IndexType</a> ElementId, <a class="code" href="../../d5/d4d/group___kratos_core.html#ga1ba1e34f0af6a7cfcfa9b43e1f8e8c91">IndexType</a> ThisIndex = 0)</div>
 <div class="line"><a name="l01122"></a><span class="lineno"> 1122</span>&#160;    {</div>
-<div class="line"><a name="l01123"></a><span class="lineno"> 1123</span>&#160;        <span class="keywordflow">return</span> GetMesh(ThisIndex).GetElement(ElementId);</div>
+<div class="line"><a name="l01123"></a><span class="lineno"> 1123</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="../../d7/db7/namespace_kratos_1_1_container_expression_helper_utilities.html#a6345d816e3f7fed110f6a659a058bfa2">GetMesh</a>(ThisIndex).GetElement(ElementId);</div>
 <div class="line"><a name="l01124"></a><span class="lineno"> 1124</span>&#160;    }</div>
 <div class="line"><a name="l01125"></a><span class="lineno"> 1125</span>&#160; </div>
 <div class="line"><a name="l01126"></a><span class="lineno"> 1126</span>&#160;    <span class="keyword">const</span> <a class="code" href="../../d5/dd4/class_kratos_1_1_element.html">ElementType</a>&amp; GetElement(<a class="code" href="../../d5/d4d/group___kratos_core.html#ga1ba1e34f0af6a7cfcfa9b43e1f8e8c91">IndexType</a> ElementId, <a class="code" href="../../d5/d4d/group___kratos_core.html#ga1ba1e34f0af6a7cfcfa9b43e1f8e8c91">IndexType</a> ThisIndex = 0)<span class="keyword"> const</span></div>
 <div class="line"><a name="l01127"></a><span class="lineno"> 1127</span>&#160;<span class="keyword">    </span>{</div>
-<div class="line"><a name="l01128"></a><span class="lineno"> 1128</span>&#160;        <span class="keywordflow">return</span> GetMesh(ThisIndex).GetElement(ElementId);</div>
+<div class="line"><a name="l01128"></a><span class="lineno"> 1128</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="../../d7/db7/namespace_kratos_1_1_container_expression_helper_utilities.html#a6345d816e3f7fed110f6a659a058bfa2">GetMesh</a>(ThisIndex).GetElement(ElementId);</div>
 <div class="line"><a name="l01129"></a><span class="lineno"> 1129</span>&#160;    }</div>
 <div class="line"><a name="l01130"></a><span class="lineno"> 1130</span>&#160; </div>
 <div class="line"><a name="l01133"></a><span class="lineno"> 1133</span>&#160;    <span class="keywordtype">void</span> RemoveElement(<a class="code" href="../../d5/d4d/group___kratos_core.html#ga1ba1e34f0af6a7cfcfa9b43e1f8e8c91">IndexType</a> ElementId, <a class="code" href="../../d5/d4d/group___kratos_core.html#ga1ba1e34f0af6a7cfcfa9b43e1f8e8c91">IndexType</a> ThisIndex = 0);</div>
@@ -876,53 +876,53 @@ $(function() {
 <div class="line"><a name="l01168"></a><span class="lineno"> 1168</span>&#160; </div>
 <div class="line"><a name="l01169"></a><span class="lineno"> 1169</span>&#160;    <a class="code" href="../../db/d66/namespace_kratos.html#a07444ee73eddd0ebe0709aaf4d7a16ef">ElementIterator</a> ElementsBegin(<a class="code" href="../../d5/d4d/group___kratos_core.html#ga1ba1e34f0af6a7cfcfa9b43e1f8e8c91">IndexType</a> ThisIndex = 0)</div>
 <div class="line"><a name="l01170"></a><span class="lineno"> 1170</span>&#160;    {</div>
-<div class="line"><a name="l01171"></a><span class="lineno"> 1171</span>&#160;        <span class="keywordflow">return</span> GetMesh(ThisIndex).ElementsBegin();</div>
+<div class="line"><a name="l01171"></a><span class="lineno"> 1171</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="../../d7/db7/namespace_kratos_1_1_container_expression_helper_utilities.html#a6345d816e3f7fed110f6a659a058bfa2">GetMesh</a>(ThisIndex).ElementsBegin();</div>
 <div class="line"><a name="l01172"></a><span class="lineno"> 1172</span>&#160;    }</div>
 <div class="line"><a name="l01173"></a><span class="lineno"> 1173</span>&#160; </div>
 <div class="line"><a name="l01174"></a><span class="lineno"> 1174</span>&#160;    ElementConstantIterator ElementsBegin(<a class="code" href="../../d5/d4d/group___kratos_core.html#ga1ba1e34f0af6a7cfcfa9b43e1f8e8c91">IndexType</a> ThisIndex = 0)<span class="keyword"> const</span></div>
 <div class="line"><a name="l01175"></a><span class="lineno"> 1175</span>&#160;<span class="keyword">    </span>{</div>
-<div class="line"><a name="l01176"></a><span class="lineno"> 1176</span>&#160;        <span class="keywordflow">return</span> GetMesh(ThisIndex).ElementsBegin();</div>
+<div class="line"><a name="l01176"></a><span class="lineno"> 1176</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="../../d7/db7/namespace_kratos_1_1_container_expression_helper_utilities.html#a6345d816e3f7fed110f6a659a058bfa2">GetMesh</a>(ThisIndex).ElementsBegin();</div>
 <div class="line"><a name="l01177"></a><span class="lineno"> 1177</span>&#160;    }</div>
 <div class="line"><a name="l01178"></a><span class="lineno"> 1178</span>&#160; </div>
 <div class="line"><a name="l01179"></a><span class="lineno"> 1179</span>&#160;    <a class="code" href="../../db/d66/namespace_kratos.html#a07444ee73eddd0ebe0709aaf4d7a16ef">ElementIterator</a> ElementsEnd(<a class="code" href="../../d5/d4d/group___kratos_core.html#ga1ba1e34f0af6a7cfcfa9b43e1f8e8c91">IndexType</a> ThisIndex = 0)</div>
 <div class="line"><a name="l01180"></a><span class="lineno"> 1180</span>&#160;    {</div>
-<div class="line"><a name="l01181"></a><span class="lineno"> 1181</span>&#160;        <span class="keywordflow">return</span> GetMesh(ThisIndex).ElementsEnd();</div>
+<div class="line"><a name="l01181"></a><span class="lineno"> 1181</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="../../d7/db7/namespace_kratos_1_1_container_expression_helper_utilities.html#a6345d816e3f7fed110f6a659a058bfa2">GetMesh</a>(ThisIndex).ElementsEnd();</div>
 <div class="line"><a name="l01182"></a><span class="lineno"> 1182</span>&#160;    }</div>
 <div class="line"><a name="l01183"></a><span class="lineno"> 1183</span>&#160; </div>
 <div class="line"><a name="l01184"></a><span class="lineno"> 1184</span>&#160;    ElementConstantIterator ElementsEnd(<a class="code" href="../../d5/d4d/group___kratos_core.html#ga1ba1e34f0af6a7cfcfa9b43e1f8e8c91">IndexType</a> ThisIndex = 0)<span class="keyword"> const</span></div>
 <div class="line"><a name="l01185"></a><span class="lineno"> 1185</span>&#160;<span class="keyword">    </span>{</div>
-<div class="line"><a name="l01186"></a><span class="lineno"> 1186</span>&#160;        <span class="keywordflow">return</span> GetMesh(ThisIndex).ElementsEnd();</div>
+<div class="line"><a name="l01186"></a><span class="lineno"> 1186</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="../../d7/db7/namespace_kratos_1_1_container_expression_helper_utilities.html#a6345d816e3f7fed110f6a659a058bfa2">GetMesh</a>(ThisIndex).ElementsEnd();</div>
 <div class="line"><a name="l01187"></a><span class="lineno"> 1187</span>&#160;    }</div>
 <div class="line"><a name="l01188"></a><span class="lineno"> 1188</span>&#160; </div>
 <div class="line"><a name="l01189"></a><span class="lineno"> 1189</span>&#160;    <a class="code" href="../../db/d66/namespace_kratos.html#aba5dbdf990a4567126376ad0aae1687e">ElementsContainerType</a>&amp; <a class="code" href="../../de/da1/namespace_kratos_1_1_cpp_tests_utilities.html#ab9f7f0144943cf4067744d6b5b84d7a4">Elements</a>(<a class="code" href="../../d5/d4d/group___kratos_core.html#ga1ba1e34f0af6a7cfcfa9b43e1f8e8c91">IndexType</a> ThisIndex = 0)</div>
 <div class="line"><a name="l01190"></a><span class="lineno"> 1190</span>&#160;    {</div>
-<div class="line"><a name="l01191"></a><span class="lineno"> 1191</span>&#160;        <span class="keywordflow">return</span> GetMesh(ThisIndex).Elements();</div>
+<div class="line"><a name="l01191"></a><span class="lineno"> 1191</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="../../d7/db7/namespace_kratos_1_1_container_expression_helper_utilities.html#a6345d816e3f7fed110f6a659a058bfa2">GetMesh</a>(ThisIndex).Elements();</div>
 <div class="line"><a name="l01192"></a><span class="lineno"> 1192</span>&#160;    }</div>
 <div class="line"><a name="l01193"></a><span class="lineno"> 1193</span>&#160; </div>
 <div class="line"><a name="l01194"></a><span class="lineno"> 1194</span>&#160;    <span class="keyword">const</span> <a class="code" href="../../db/d66/namespace_kratos.html#aba5dbdf990a4567126376ad0aae1687e">ElementsContainerType</a>&amp; <a class="code" href="../../de/da1/namespace_kratos_1_1_cpp_tests_utilities.html#ab9f7f0144943cf4067744d6b5b84d7a4">Elements</a>(<a class="code" href="../../d5/d4d/group___kratos_core.html#ga1ba1e34f0af6a7cfcfa9b43e1f8e8c91">IndexType</a> ThisIndex = 0)<span class="keyword"> const</span></div>
 <div class="line"><a name="l01195"></a><span class="lineno"> 1195</span>&#160;<span class="keyword">    </span>{</div>
-<div class="line"><a name="l01196"></a><span class="lineno"> 1196</span>&#160;        <span class="keywordflow">return</span> GetMesh(ThisIndex).Elements();</div>
+<div class="line"><a name="l01196"></a><span class="lineno"> 1196</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="../../d7/db7/namespace_kratos_1_1_container_expression_helper_utilities.html#a6345d816e3f7fed110f6a659a058bfa2">GetMesh</a>(ThisIndex).Elements();</div>
 <div class="line"><a name="l01197"></a><span class="lineno"> 1197</span>&#160;    }</div>
 <div class="line"><a name="l01198"></a><span class="lineno"> 1198</span>&#160; </div>
 <div class="line"><a name="l01199"></a><span class="lineno"> 1199</span>&#160;    ElementsContainerType::Pointer pElements(<a class="code" href="../../d5/d4d/group___kratos_core.html#ga1ba1e34f0af6a7cfcfa9b43e1f8e8c91">IndexType</a> ThisIndex = 0)</div>
 <div class="line"><a name="l01200"></a><span class="lineno"> 1200</span>&#160;    {</div>
-<div class="line"><a name="l01201"></a><span class="lineno"> 1201</span>&#160;        <span class="keywordflow">return</span> GetMesh(ThisIndex).pElements();</div>
+<div class="line"><a name="l01201"></a><span class="lineno"> 1201</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="../../d7/db7/namespace_kratos_1_1_container_expression_helper_utilities.html#a6345d816e3f7fed110f6a659a058bfa2">GetMesh</a>(ThisIndex).pElements();</div>
 <div class="line"><a name="l01202"></a><span class="lineno"> 1202</span>&#160;    }</div>
 <div class="line"><a name="l01203"></a><span class="lineno"> 1203</span>&#160; </div>
 <div class="line"><a name="l01204"></a><span class="lineno"> 1204</span>&#160;    <span class="keywordtype">void</span> SetElements(ElementsContainerType::Pointer pOtherElements, <a class="code" href="../../d5/d4d/group___kratos_core.html#ga1ba1e34f0af6a7cfcfa9b43e1f8e8c91">IndexType</a> ThisIndex = 0)</div>
 <div class="line"><a name="l01205"></a><span class="lineno"> 1205</span>&#160;    {</div>
-<div class="line"><a name="l01206"></a><span class="lineno"> 1206</span>&#160;        GetMesh(ThisIndex).SetElements(pOtherElements);</div>
+<div class="line"><a name="l01206"></a><span class="lineno"> 1206</span>&#160;        <a class="code" href="../../d7/db7/namespace_kratos_1_1_container_expression_helper_utilities.html#a6345d816e3f7fed110f6a659a058bfa2">GetMesh</a>(ThisIndex).SetElements(pOtherElements);</div>
 <div class="line"><a name="l01207"></a><span class="lineno"> 1207</span>&#160;    }</div>
 <div class="line"><a name="l01208"></a><span class="lineno"> 1208</span>&#160; </div>
 <div class="line"><a name="l01209"></a><span class="lineno"> 1209</span>&#160;    <a class="code" href="../../d6/d3f/transfer__utility_8h.html#ad745855cfa0bc32dd5bb6b62cf53c55d">ElementsContainerType::ContainerType</a>&amp; ElementsArray(<a class="code" href="../../d5/d4d/group___kratos_core.html#ga1ba1e34f0af6a7cfcfa9b43e1f8e8c91">IndexType</a> ThisIndex = 0)</div>
 <div class="line"><a name="l01210"></a><span class="lineno"> 1210</span>&#160;    {</div>
-<div class="line"><a name="l01211"></a><span class="lineno"> 1211</span>&#160;        <span class="keywordflow">return</span> GetMesh(ThisIndex).ElementsArray();</div>
+<div class="line"><a name="l01211"></a><span class="lineno"> 1211</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="../../d7/db7/namespace_kratos_1_1_container_expression_helper_utilities.html#a6345d816e3f7fed110f6a659a058bfa2">GetMesh</a>(ThisIndex).ElementsArray();</div>
 <div class="line"><a name="l01212"></a><span class="lineno"> 1212</span>&#160;    }</div>
 <div class="line"><a name="l01213"></a><span class="lineno"> 1213</span>&#160; </div>
 <div class="line"><a name="l01217"></a><span class="lineno"> 1217</span>&#160; </div>
 <div class="line"><a name="l01218"></a><span class="lineno"> 1218</span>&#160;    <a class="code" href="../../db/d66/namespace_kratos.html#a8b2d617fdb94b53f5f2bb88e1a7ebc18">SizeType</a> NumberOfConditions(<a class="code" href="../../d5/d4d/group___kratos_core.html#ga1ba1e34f0af6a7cfcfa9b43e1f8e8c91">IndexType</a> ThisIndex = 0)<span class="keyword"> const</span></div>
 <div class="line"><a name="l01219"></a><span class="lineno"> 1219</span>&#160;<span class="keyword">    </span>{</div>
-<div class="line"><a name="l01220"></a><span class="lineno"> 1220</span>&#160;        <span class="keywordflow">return</span> GetMesh(ThisIndex).NumberOfConditions();</div>
+<div class="line"><a name="l01220"></a><span class="lineno"> 1220</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="../../d7/db7/namespace_kratos_1_1_container_expression_helper_utilities.html#a6345d816e3f7fed110f6a659a058bfa2">GetMesh</a>(ThisIndex).NumberOfConditions();</div>
 <div class="line"><a name="l01221"></a><span class="lineno"> 1221</span>&#160;    }</div>
 <div class="line"><a name="l01222"></a><span class="lineno"> 1222</span>&#160; </div>
 <div class="line"><a name="l01225"></a><span class="lineno"> 1225</span>&#160;    <span class="keywordtype">void</span> AddCondition(ConditionType::Pointer pNewCondition, <a class="code" href="../../d5/d4d/group___kratos_core.html#ga1ba1e34f0af6a7cfcfa9b43e1f8e8c91">IndexType</a> ThisIndex = 0);</div>
@@ -989,27 +989,27 @@ $(function() {
 <div class="line"><a name="l01293"></a><span class="lineno"> 1293</span>&#160; </div>
 <div class="line"><a name="l01295"></a><span class="lineno"> 1295</span>&#160;    <span class="keywordtype">bool</span> HasCondition(<a class="code" href="../../d5/d4d/group___kratos_core.html#ga1ba1e34f0af6a7cfcfa9b43e1f8e8c91">IndexType</a> ConditionId, <a class="code" href="../../d5/d4d/group___kratos_core.html#ga1ba1e34f0af6a7cfcfa9b43e1f8e8c91">IndexType</a> ThisIndex = 0)<span class="keyword"> const</span></div>
 <div class="line"><a name="l01296"></a><span class="lineno"> 1296</span>&#160;<span class="keyword">    </span>{</div>
-<div class="line"><a name="l01297"></a><span class="lineno"> 1297</span>&#160;        <span class="keywordflow">return</span> GetMesh(ThisIndex).HasCondition(ConditionId);</div>
+<div class="line"><a name="l01297"></a><span class="lineno"> 1297</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="../../d7/db7/namespace_kratos_1_1_container_expression_helper_utilities.html#a6345d816e3f7fed110f6a659a058bfa2">GetMesh</a>(ThisIndex).HasCondition(ConditionId);</div>
 <div class="line"><a name="l01298"></a><span class="lineno"> 1298</span>&#160;    }</div>
 <div class="line"><a name="l01299"></a><span class="lineno"> 1299</span>&#160; </div>
 <div class="line"><a name="l01301"></a><span class="lineno"> 1301</span>&#160;    ConditionType::Pointer pGetCondition(<a class="code" href="../../d5/d4d/group___kratos_core.html#ga1ba1e34f0af6a7cfcfa9b43e1f8e8c91">IndexType</a> ConditionId, <a class="code" href="../../d5/d4d/group___kratos_core.html#ga1ba1e34f0af6a7cfcfa9b43e1f8e8c91">IndexType</a> ThisIndex = 0)</div>
 <div class="line"><a name="l01302"></a><span class="lineno"> 1302</span>&#160;    {</div>
-<div class="line"><a name="l01303"></a><span class="lineno"> 1303</span>&#160;        <span class="keywordflow">return</span> GetMesh(ThisIndex).pGetCondition(ConditionId);</div>
+<div class="line"><a name="l01303"></a><span class="lineno"> 1303</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="../../d7/db7/namespace_kratos_1_1_container_expression_helper_utilities.html#a6345d816e3f7fed110f6a659a058bfa2">GetMesh</a>(ThisIndex).pGetCondition(ConditionId);</div>
 <div class="line"><a name="l01304"></a><span class="lineno"> 1304</span>&#160;    }</div>
 <div class="line"><a name="l01305"></a><span class="lineno"> 1305</span>&#160; </div>
 <div class="line"><a name="l01307"></a><span class="lineno"> 1307</span>&#160;    <span class="keyword">const</span> ConditionType::Pointer pGetCondition(<span class="keyword">const</span> <a class="code" href="../../d5/d4d/group___kratos_core.html#ga1ba1e34f0af6a7cfcfa9b43e1f8e8c91">IndexType</a> ConditionId, <span class="keyword">const</span> <a class="code" href="../../d5/d4d/group___kratos_core.html#ga1ba1e34f0af6a7cfcfa9b43e1f8e8c91">IndexType</a> ThisIndex = 0)<span class="keyword"> const</span></div>
 <div class="line"><a name="l01308"></a><span class="lineno"> 1308</span>&#160;<span class="keyword">    </span>{</div>
-<div class="line"><a name="l01309"></a><span class="lineno"> 1309</span>&#160;        <span class="keywordflow">return</span> GetMesh(ThisIndex).pGetCondition(ConditionId);</div>
+<div class="line"><a name="l01309"></a><span class="lineno"> 1309</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="../../d7/db7/namespace_kratos_1_1_container_expression_helper_utilities.html#a6345d816e3f7fed110f6a659a058bfa2">GetMesh</a>(ThisIndex).pGetCondition(ConditionId);</div>
 <div class="line"><a name="l01310"></a><span class="lineno"> 1310</span>&#160;    }</div>
 <div class="line"><a name="l01311"></a><span class="lineno"> 1311</span>&#160; </div>
 <div class="line"><a name="l01313"></a><span class="lineno"> 1313</span>&#160;    <a class="code" href="../../d1/d6e/class_kratos_1_1_condition.html">ConditionType</a>&amp; GetCondition(<a class="code" href="../../d5/d4d/group___kratos_core.html#ga1ba1e34f0af6a7cfcfa9b43e1f8e8c91">IndexType</a> ConditionId, <a class="code" href="../../d5/d4d/group___kratos_core.html#ga1ba1e34f0af6a7cfcfa9b43e1f8e8c91">IndexType</a> ThisIndex = 0)</div>
 <div class="line"><a name="l01314"></a><span class="lineno"> 1314</span>&#160;    {</div>
-<div class="line"><a name="l01315"></a><span class="lineno"> 1315</span>&#160;        <span class="keywordflow">return</span> GetMesh(ThisIndex).GetCondition(ConditionId);</div>
+<div class="line"><a name="l01315"></a><span class="lineno"> 1315</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="../../d7/db7/namespace_kratos_1_1_container_expression_helper_utilities.html#a6345d816e3f7fed110f6a659a058bfa2">GetMesh</a>(ThisIndex).GetCondition(ConditionId);</div>
 <div class="line"><a name="l01316"></a><span class="lineno"> 1316</span>&#160;    }</div>
 <div class="line"><a name="l01317"></a><span class="lineno"> 1317</span>&#160; </div>
 <div class="line"><a name="l01318"></a><span class="lineno"> 1318</span>&#160;    <span class="keyword">const</span> <a class="code" href="../../d1/d6e/class_kratos_1_1_condition.html">ConditionType</a>&amp; GetCondition(<a class="code" href="../../d5/d4d/group___kratos_core.html#ga1ba1e34f0af6a7cfcfa9b43e1f8e8c91">IndexType</a> ConditionId, <a class="code" href="../../d5/d4d/group___kratos_core.html#ga1ba1e34f0af6a7cfcfa9b43e1f8e8c91">IndexType</a> ThisIndex = 0)<span class="keyword"> const</span></div>
 <div class="line"><a name="l01319"></a><span class="lineno"> 1319</span>&#160;<span class="keyword">    </span>{</div>
-<div class="line"><a name="l01320"></a><span class="lineno"> 1320</span>&#160;        <span class="keywordflow">return</span> GetMesh(ThisIndex).GetCondition(ConditionId);</div>
+<div class="line"><a name="l01320"></a><span class="lineno"> 1320</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="../../d7/db7/namespace_kratos_1_1_container_expression_helper_utilities.html#a6345d816e3f7fed110f6a659a058bfa2">GetMesh</a>(ThisIndex).GetCondition(ConditionId);</div>
 <div class="line"><a name="l01321"></a><span class="lineno"> 1321</span>&#160;    }</div>
 <div class="line"><a name="l01322"></a><span class="lineno"> 1322</span>&#160; </div>
 <div class="line"><a name="l01325"></a><span class="lineno"> 1325</span>&#160;    <span class="keywordtype">void</span> RemoveCondition(<a class="code" href="../../d5/d4d/group___kratos_core.html#ga1ba1e34f0af6a7cfcfa9b43e1f8e8c91">IndexType</a> ConditionId, <a class="code" href="../../d5/d4d/group___kratos_core.html#ga1ba1e34f0af6a7cfcfa9b43e1f8e8c91">IndexType</a> ThisIndex = 0);</div>
@@ -1030,47 +1030,47 @@ $(function() {
 <div class="line"><a name="l01360"></a><span class="lineno"> 1360</span>&#160; </div>
 <div class="line"><a name="l01361"></a><span class="lineno"> 1361</span>&#160;    <a class="code" href="../../db/d66/namespace_kratos.html#a45c3f64c0faa3bc691e32608a7b193c6">ConditionIterator</a> ConditionsBegin(<a class="code" href="../../d5/d4d/group___kratos_core.html#ga1ba1e34f0af6a7cfcfa9b43e1f8e8c91">IndexType</a> ThisIndex = 0)</div>
 <div class="line"><a name="l01362"></a><span class="lineno"> 1362</span>&#160;    {</div>
-<div class="line"><a name="l01363"></a><span class="lineno"> 1363</span>&#160;        <span class="keywordflow">return</span> GetMesh(ThisIndex).ConditionsBegin();</div>
+<div class="line"><a name="l01363"></a><span class="lineno"> 1363</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="../../d7/db7/namespace_kratos_1_1_container_expression_helper_utilities.html#a6345d816e3f7fed110f6a659a058bfa2">GetMesh</a>(ThisIndex).ConditionsBegin();</div>
 <div class="line"><a name="l01364"></a><span class="lineno"> 1364</span>&#160;    }</div>
 <div class="line"><a name="l01365"></a><span class="lineno"> 1365</span>&#160; </div>
 <div class="line"><a name="l01366"></a><span class="lineno"> 1366</span>&#160;    <a class="code" href="../../db/d66/namespace_kratos.html#a63fa9de84250f1309b9d58274b5422be">ConditionConstantIterator</a> ConditionsBegin(<a class="code" href="../../d5/d4d/group___kratos_core.html#ga1ba1e34f0af6a7cfcfa9b43e1f8e8c91">IndexType</a> ThisIndex = 0)<span class="keyword"> const</span></div>
 <div class="line"><a name="l01367"></a><span class="lineno"> 1367</span>&#160;<span class="keyword">    </span>{</div>
-<div class="line"><a name="l01368"></a><span class="lineno"> 1368</span>&#160;        <span class="keywordflow">return</span> GetMesh(ThisIndex).ConditionsBegin();</div>
+<div class="line"><a name="l01368"></a><span class="lineno"> 1368</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="../../d7/db7/namespace_kratos_1_1_container_expression_helper_utilities.html#a6345d816e3f7fed110f6a659a058bfa2">GetMesh</a>(ThisIndex).ConditionsBegin();</div>
 <div class="line"><a name="l01369"></a><span class="lineno"> 1369</span>&#160;    }</div>
 <div class="line"><a name="l01370"></a><span class="lineno"> 1370</span>&#160; </div>
 <div class="line"><a name="l01371"></a><span class="lineno"> 1371</span>&#160;    <a class="code" href="../../db/d66/namespace_kratos.html#a45c3f64c0faa3bc691e32608a7b193c6">ConditionIterator</a> ConditionsEnd(<a class="code" href="../../d5/d4d/group___kratos_core.html#ga1ba1e34f0af6a7cfcfa9b43e1f8e8c91">IndexType</a> ThisIndex = 0)</div>
 <div class="line"><a name="l01372"></a><span class="lineno"> 1372</span>&#160;    {</div>
-<div class="line"><a name="l01373"></a><span class="lineno"> 1373</span>&#160;        <span class="keywordflow">return</span> GetMesh(ThisIndex).ConditionsEnd();</div>
+<div class="line"><a name="l01373"></a><span class="lineno"> 1373</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="../../d7/db7/namespace_kratos_1_1_container_expression_helper_utilities.html#a6345d816e3f7fed110f6a659a058bfa2">GetMesh</a>(ThisIndex).ConditionsEnd();</div>
 <div class="line"><a name="l01374"></a><span class="lineno"> 1374</span>&#160;    }</div>
 <div class="line"><a name="l01375"></a><span class="lineno"> 1375</span>&#160; </div>
 <div class="line"><a name="l01376"></a><span class="lineno"> 1376</span>&#160;    <a class="code" href="../../db/d66/namespace_kratos.html#a63fa9de84250f1309b9d58274b5422be">ConditionConstantIterator</a> ConditionsEnd(<a class="code" href="../../d5/d4d/group___kratos_core.html#ga1ba1e34f0af6a7cfcfa9b43e1f8e8c91">IndexType</a> ThisIndex = 0)<span class="keyword"> const</span></div>
 <div class="line"><a name="l01377"></a><span class="lineno"> 1377</span>&#160;<span class="keyword">    </span>{</div>
-<div class="line"><a name="l01378"></a><span class="lineno"> 1378</span>&#160;        <span class="keywordflow">return</span> GetMesh(ThisIndex).ConditionsEnd();</div>
+<div class="line"><a name="l01378"></a><span class="lineno"> 1378</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="../../d7/db7/namespace_kratos_1_1_container_expression_helper_utilities.html#a6345d816e3f7fed110f6a659a058bfa2">GetMesh</a>(ThisIndex).ConditionsEnd();</div>
 <div class="line"><a name="l01379"></a><span class="lineno"> 1379</span>&#160;    }</div>
 <div class="line"><a name="l01380"></a><span class="lineno"> 1380</span>&#160; </div>
 <div class="line"><a name="l01381"></a><span class="lineno"> 1381</span>&#160;    <a class="code" href="../../db/d66/namespace_kratos.html#a7dc336b27d63b48cb5a8be2c97b25dcc">ConditionsContainerType</a>&amp; Conditions(<a class="code" href="../../d5/d4d/group___kratos_core.html#ga1ba1e34f0af6a7cfcfa9b43e1f8e8c91">IndexType</a> ThisIndex = 0)</div>
 <div class="line"><a name="l01382"></a><span class="lineno"> 1382</span>&#160;    {</div>
-<div class="line"><a name="l01383"></a><span class="lineno"> 1383</span>&#160;        <span class="keywordflow">return</span> GetMesh(ThisIndex).Conditions();</div>
+<div class="line"><a name="l01383"></a><span class="lineno"> 1383</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="../../d7/db7/namespace_kratos_1_1_container_expression_helper_utilities.html#a6345d816e3f7fed110f6a659a058bfa2">GetMesh</a>(ThisIndex).Conditions();</div>
 <div class="line"><a name="l01384"></a><span class="lineno"> 1384</span>&#160;    }</div>
 <div class="line"><a name="l01385"></a><span class="lineno"> 1385</span>&#160; </div>
 <div class="line"><a name="l01386"></a><span class="lineno"> 1386</span>&#160;    <span class="keyword">const</span> <a class="code" href="../../db/d66/namespace_kratos.html#a7dc336b27d63b48cb5a8be2c97b25dcc">ConditionsContainerType</a>&amp; Conditions(<a class="code" href="../../d5/d4d/group___kratos_core.html#ga1ba1e34f0af6a7cfcfa9b43e1f8e8c91">IndexType</a> ThisIndex = 0)<span class="keyword"> const</span></div>
 <div class="line"><a name="l01387"></a><span class="lineno"> 1387</span>&#160;<span class="keyword">    </span>{</div>
-<div class="line"><a name="l01388"></a><span class="lineno"> 1388</span>&#160;        <span class="keywordflow">return</span> GetMesh(ThisIndex).Conditions();</div>
+<div class="line"><a name="l01388"></a><span class="lineno"> 1388</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="../../d7/db7/namespace_kratos_1_1_container_expression_helper_utilities.html#a6345d816e3f7fed110f6a659a058bfa2">GetMesh</a>(ThisIndex).Conditions();</div>
 <div class="line"><a name="l01389"></a><span class="lineno"> 1389</span>&#160;    }</div>
 <div class="line"><a name="l01390"></a><span class="lineno"> 1390</span>&#160; </div>
 <div class="line"><a name="l01391"></a><span class="lineno"> 1391</span>&#160;    ConditionsContainerType::Pointer pConditions(<a class="code" href="../../d5/d4d/group___kratos_core.html#ga1ba1e34f0af6a7cfcfa9b43e1f8e8c91">IndexType</a> ThisIndex = 0)</div>
 <div class="line"><a name="l01392"></a><span class="lineno"> 1392</span>&#160;    {</div>
-<div class="line"><a name="l01393"></a><span class="lineno"> 1393</span>&#160;        <span class="keywordflow">return</span> GetMesh(ThisIndex).pConditions();</div>
+<div class="line"><a name="l01393"></a><span class="lineno"> 1393</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="../../d7/db7/namespace_kratos_1_1_container_expression_helper_utilities.html#a6345d816e3f7fed110f6a659a058bfa2">GetMesh</a>(ThisIndex).pConditions();</div>
 <div class="line"><a name="l01394"></a><span class="lineno"> 1394</span>&#160;    }</div>
 <div class="line"><a name="l01395"></a><span class="lineno"> 1395</span>&#160; </div>
 <div class="line"><a name="l01396"></a><span class="lineno"> 1396</span>&#160;    <span class="keywordtype">void</span> SetConditions(ConditionsContainerType::Pointer pOtherConditions, <a class="code" href="../../d5/d4d/group___kratos_core.html#ga1ba1e34f0af6a7cfcfa9b43e1f8e8c91">IndexType</a> ThisIndex = 0)</div>
 <div class="line"><a name="l01397"></a><span class="lineno"> 1397</span>&#160;    {</div>
-<div class="line"><a name="l01398"></a><span class="lineno"> 1398</span>&#160;        GetMesh(ThisIndex).SetConditions(pOtherConditions);</div>
+<div class="line"><a name="l01398"></a><span class="lineno"> 1398</span>&#160;        <a class="code" href="../../d7/db7/namespace_kratos_1_1_container_expression_helper_utilities.html#a6345d816e3f7fed110f6a659a058bfa2">GetMesh</a>(ThisIndex).SetConditions(pOtherConditions);</div>
 <div class="line"><a name="l01399"></a><span class="lineno"> 1399</span>&#160;    }</div>
 <div class="line"><a name="l01400"></a><span class="lineno"> 1400</span>&#160; </div>
 <div class="line"><a name="l01401"></a><span class="lineno"> 1401</span>&#160;    <a class="code" href="../../d6/d3f/transfer__utility_8h.html#ad745855cfa0bc32dd5bb6b62cf53c55d">ConditionsContainerType::ContainerType</a>&amp; ConditionsArray(<a class="code" href="../../d5/d4d/group___kratos_core.html#ga1ba1e34f0af6a7cfcfa9b43e1f8e8c91">IndexType</a> ThisIndex = 0)</div>
 <div class="line"><a name="l01402"></a><span class="lineno"> 1402</span>&#160;    {</div>
-<div class="line"><a name="l01403"></a><span class="lineno"> 1403</span>&#160;        <span class="keywordflow">return</span> GetMesh(ThisIndex).ConditionsArray();</div>
+<div class="line"><a name="l01403"></a><span class="lineno"> 1403</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="../../d7/db7/namespace_kratos_1_1_container_expression_helper_utilities.html#a6345d816e3f7fed110f6a659a058bfa2">GetMesh</a>(ThisIndex).ConditionsArray();</div>
 <div class="line"><a name="l01404"></a><span class="lineno"> 1404</span>&#160;    }</div>
 <div class="line"><a name="l01405"></a><span class="lineno"> 1405</span>&#160; </div>
 <div class="line"><a name="l01409"></a><span class="lineno"> 1409</span>&#160; </div>
@@ -1351,12 +1351,12 @@ $(function() {
 <div class="line"><a name="l01788"></a><span class="lineno"> 1788</span>&#160;        <span class="keywordflow">return</span> mMeshes(ThisIndex);</div>
 <div class="line"><a name="l01789"></a><span class="lineno"> 1789</span>&#160;    }</div>
 <div class="line"><a name="l01790"></a><span class="lineno"> 1790</span>&#160; </div>
-<div class="line"><a name="l01791"></a><span class="lineno"> 1791</span>&#160;    <a class="code" href="../../db/d66/namespace_kratos.html#a9f04c0e5c21b574ef07daead07156f25">MeshType</a>&amp; GetMesh(<a class="code" href="../../d5/d4d/group___kratos_core.html#ga1ba1e34f0af6a7cfcfa9b43e1f8e8c91">IndexType</a> ThisIndex = 0)</div>
+<div class="line"><a name="l01791"></a><span class="lineno"> 1791</span>&#160;    <a class="code" href="../../db/d66/namespace_kratos.html#a9f04c0e5c21b574ef07daead07156f25">MeshType</a>&amp; <a class="code" href="../../d7/db7/namespace_kratos_1_1_container_expression_helper_utilities.html#a6345d816e3f7fed110f6a659a058bfa2">GetMesh</a>(<a class="code" href="../../d5/d4d/group___kratos_core.html#ga1ba1e34f0af6a7cfcfa9b43e1f8e8c91">IndexType</a> ThisIndex = 0)</div>
 <div class="line"><a name="l01792"></a><span class="lineno"> 1792</span>&#160;    {</div>
 <div class="line"><a name="l01793"></a><span class="lineno"> 1793</span>&#160;        <span class="keywordflow">return</span> mMeshes[ThisIndex];</div>
 <div class="line"><a name="l01794"></a><span class="lineno"> 1794</span>&#160;    }</div>
 <div class="line"><a name="l01795"></a><span class="lineno"> 1795</span>&#160; </div>
-<div class="line"><a name="l01796"></a><span class="lineno"> 1796</span>&#160;    <a class="code" href="../../db/d66/namespace_kratos.html#a9f04c0e5c21b574ef07daead07156f25">MeshType</a> <span class="keyword">const</span>&amp; GetMesh(<a class="code" href="../../d5/d4d/group___kratos_core.html#ga1ba1e34f0af6a7cfcfa9b43e1f8e8c91">IndexType</a> ThisIndex = 0)<span class="keyword"> const</span></div>
+<div class="line"><a name="l01796"></a><span class="lineno"> 1796</span>&#160;    <a class="code" href="../../db/d66/namespace_kratos.html#a9f04c0e5c21b574ef07daead07156f25">MeshType</a> <span class="keyword">const</span>&amp; <a class="code" href="../../d7/db7/namespace_kratos_1_1_container_expression_helper_utilities.html#a6345d816e3f7fed110f6a659a058bfa2">GetMesh</a>(<a class="code" href="../../d5/d4d/group___kratos_core.html#ga1ba1e34f0af6a7cfcfa9b43e1f8e8c91">IndexType</a> ThisIndex = 0)<span class="keyword"> const</span></div>
 <div class="line"><a name="l01797"></a><span class="lineno"> 1797</span>&#160;<span class="keyword">    </span>{</div>
 <div class="line"><a name="l01798"></a><span class="lineno"> 1798</span>&#160;        <span class="keywordflow">return</span> mMeshes[ThisIndex];</div>
 <div class="line"><a name="l01799"></a><span class="lineno"> 1799</span>&#160;    }</div>
@@ -1604,6 +1604,7 @@ $(function() {
 <div class="ttc" id="amesh_8h_html"><div class="ttname"><a href="../../d8/d3b/mesh_8h.html">mesh.h</a></div></div>
 <div class="ttc" id="anamespace_c_sharp_kratos_wrapper_html_a2e2643eb858b6ec11ecf3d3872800ef9"><div class="ttname"><a href="../../d1/d64/namespace_c_sharp_kratos_wrapper.html#a2e2643eb858b6ec11ecf3d3872800ef9">CSharpKratosWrapper::ModelPart</a></div><div class="ttdeci">Kratos::ModelPart ModelPart</div><div class="ttdef"><b>Definition:</b> kratos_wrapper.h:31</div></div>
 <div class="ttc" id="anamespace_generate_wind_html_aa0bcf7fb7009dc3ebb885f96b7124197"><div class="ttname"><a href="../../d9/db1/namespace_generate_wind.html#aa0bcf7fb7009dc3ebb885f96b7124197">GenerateWind.z</a></div><div class="ttdeci">z</div><div class="ttdef"><b>Definition:</b> GenerateWind.py:163</div></div>
+<div class="ttc" id="anamespace_kratos_1_1_container_expression_helper_utilities_html_a6345d816e3f7fed110f6a659a058bfa2"><div class="ttname"><a href="../../d7/db7/namespace_kratos_1_1_container_expression_helper_utilities.html#a6345d816e3f7fed110f6a659a058bfa2">Kratos::ContainerExpressionHelperUtilities::GetMesh</a></div><div class="ttdeci">ModelPart::MeshType &amp; GetMesh(ModelPart &amp;rModelPart)</div></div>
 <div class="ttc" id="anamespace_kratos_1_1_cpp_tests_utilities_html_ab9f7f0144943cf4067744d6b5b84d7a4"><div class="ttname"><a href="../../de/da1/namespace_kratos_1_1_cpp_tests_utilities.html#ab9f7f0144943cf4067744d6b5b84d7a4">Kratos::CppTestsUtilities::Elements</a></div><div class="ttdeci">void const std::string const bool const bool Elements</div><div class="ttdef"><b>Definition:</b> cpp_tests_utilities.h:66</div></div>
 <div class="ttc" id="anamespace_kratos_1_1_geometrical_transformation_utilities_html_a7c3b9a52c7004d968fe5d185778f03f7"><div class="ttname"><a href="../../de/da9/namespace_kratos_1_1_geometrical_transformation_utilities.html#a7c3b9a52c7004d968fe5d185778f03f7">Kratos::GeometricalTransformationUtilities::MatrixType</a></div><div class="ttdeci">Matrix MatrixType</div><div class="ttdef"><b>Definition:</b> geometrical_transformation_utilities.h:55</div></div>
 <div class="ttc" id="anamespace_kratos_1_1_move_mesh_utilities_html_a615721662e0a3094ac8b56928ceb46df"><div class="ttname"><a href="../../d7/dc7/namespace_kratos_1_1_move_mesh_utilities.html#a615721662e0a3094ac8b56928ceb46df">Kratos::MoveMeshUtilities::pProperties</a></div><div class="ttdeci">ModelPart Properties::Pointer pProperties</div><div class="ttdef"><b>Definition:</b> move_mesh_utilities.h:85</div></div>
@@ -1654,7 +1655,7 @@ $(function() {
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed May 17 2023 02:12:54 for KratosMultiphysics by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Thu May 18 2023 02:11:10 for KratosMultiphysics by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

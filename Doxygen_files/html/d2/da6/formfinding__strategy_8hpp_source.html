@@ -276,10 +276,10 @@ $(function() {
 <div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;                <a class="code" href="../../db/d66/namespace_kratos.html#a90e70c6a56c31aba51ccff0ef5a95870a3e6dbe94c6751f1c65677e502a149653">WriteConditionsFlag::WriteConditions</a>);</div>
 <div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160; </div>
 <div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;            mpIterationIO-&gt;InitializeMesh(0.0);</div>
-<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;            mpIterationIO-&gt;WriteMesh(<a class="code" href="../../de/d0a/class_kratos_1_1_solving_strategy.html#a6147a51a63c79eada32120eafc23b517">BaseType::GetModelPart</a>().GetMesh());</div>
-<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;            mpIterationIO-&gt;WriteNodeMesh(<a class="code" href="../../de/d0a/class_kratos_1_1_solving_strategy.html#a6147a51a63c79eada32120eafc23b517">BaseType::GetModelPart</a>().GetMesh());</div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;            mpIterationIO-&gt;WriteMesh(<a class="code" href="../../de/d0a/class_kratos_1_1_solving_strategy.html#a6147a51a63c79eada32120eafc23b517">BaseType::GetModelPart</a>().<a class="code" href="../../d7/db7/namespace_kratos_1_1_container_expression_helper_utilities.html#a6345d816e3f7fed110f6a659a058bfa2">GetMesh</a>());</div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;            mpIterationIO-&gt;WriteNodeMesh(<a class="code" href="../../de/d0a/class_kratos_1_1_solving_strategy.html#a6147a51a63c79eada32120eafc23b517">BaseType::GetModelPart</a>().<a class="code" href="../../d7/db7/namespace_kratos_1_1_container_expression_helper_utilities.html#a6345d816e3f7fed110f6a659a058bfa2">GetMesh</a>());</div>
 <div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;            mpIterationIO-&gt;FinalizeMesh();</div>
-<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;            mpIterationIO-&gt;InitializeResults(0.0, <a class="code" href="../../de/d0a/class_kratos_1_1_solving_strategy.html#a6147a51a63c79eada32120eafc23b517">BaseType::GetModelPart</a>().GetMesh());</div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;            mpIterationIO-&gt;InitializeResults(0.0, <a class="code" href="../../de/d0a/class_kratos_1_1_solving_strategy.html#a6147a51a63c79eada32120eafc23b517">BaseType::GetModelPart</a>().<a class="code" href="../../d7/db7/namespace_kratos_1_1_container_expression_helper_utilities.html#a6345d816e3f7fed110f6a659a058bfa2">GetMesh</a>());</div>
 <div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;        }</div>
 <div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;    }</div>
 <div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160; </div>
@@ -327,6 +327,7 @@ $(function() {
 <div class="ttc" id="agid__io_8h_html"><div class="ttname"><a href="../../db/d72/gid__io_8h.html">gid_io.h</a></div></div>
 <div class="ttc" id="agroup___kratos_core_html_ga376e02451bc7cc3a5fd77b57f0549e6b"><div class="ttname"><a href="../../d5/d4d/group___kratos_core.html#ga376e02451bc7cc3a5fd77b57f0549e6b">KRATOS_ERROR</a></div><div class="ttdeci">#define KRATOS_ERROR</div><div class="ttdef"><b>Definition:</b> exception.h:161</div></div>
 <div class="ttc" id="amodel__part__io_8h_html"><div class="ttname"><a href="../../da/d9e/model__part__io_8h.html">model_part_io.h</a></div></div>
+<div class="ttc" id="anamespace_kratos_1_1_container_expression_helper_utilities_html_a6345d816e3f7fed110f6a659a058bfa2"><div class="ttname"><a href="../../d7/db7/namespace_kratos_1_1_container_expression_helper_utilities.html#a6345d816e3f7fed110f6a659a058bfa2">Kratos::ContainerExpressionHelperUtilities::GetMesh</a></div><div class="ttdeci">ModelPart::MeshType &amp; GetMesh(ModelPart &amp;rModelPart)</div></div>
 <div class="ttc" id="anamespace_kratos_1_1_rans_calculation_utilities_html_a9a7c5c44bd54e9eb32335c0980e475ae"><div class="ttname"><a href="../../d1/d7f/namespace_kratos_1_1_rans_calculation_utilities.html#a9a7c5c44bd54e9eb32335c0980e475ae">Kratos::RansCalculationUtilities::MaxIterations</a></div><div class="ttdeci">double const double const int MaxIterations</div><div class="ttdef"><b>Definition:</b> rans_calculation_utilities.h:95</div></div>
 <div class="ttc" id="anamespace_kratos_1_1_rans_variable_utilities_html_af0d227aa5521a639dd5f46737c54e84c"><div class="ttname"><a href="../../db/d91/namespace_kratos_1_1_rans_variable_utilities.html#af0d227aa5521a639dd5f46737c54e84c">Kratos::RansVariableUtilities::rModelPart</a></div><div class="ttdeci">std::tuple&lt; unsigned int, unsigned int &gt; const double const Variable&lt; double &gt; ModelPart &amp; rModelPart</div><div class="ttdef"><b>Definition:</b> rans_variable_utilities.h:44</div></div>
 <div class="ttc" id="anamespace_kratos_1_1filesystem_html_a8bc80e74db02e4900acd1cb405873430"><div class="ttname"><a href="../../d6/d2f/namespace_kratos_1_1filesystem.html#a8bc80e74db02e4900acd1cb405873430">Kratos::filesystem::create_directory</a></div><div class="ttdeci">bool create_directory(const std::string &amp;rPath)</div><div class="ttdef"><b>Definition:</b> kratos_filesystem.cpp:45</div></div>
@@ -351,7 +352,7 @@ $(function() {
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed May 17 2023 02:10:51 for KratosMultiphysics by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Thu May 18 2023 02:09:07 for KratosMultiphysics by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>
