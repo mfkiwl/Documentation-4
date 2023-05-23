@@ -692,7 +692,7 @@ $(function() {
 <div class="line"><a name="l00692"></a><span class="lineno">  692</span>&#160;        <a class="code" href="../../d0/d46/class_kratos_1_1_r_o_m_builder_and_solver.html#acbbe2660a14a9798d7c0ab59945aae43">RomSystemVectorType</a> dxrom(GetNumberOfROMModes());</div>
 <div class="line"><a name="l00693"></a><span class="lineno">  693</span>&#160;        </div>
 <div class="line"><a name="l00694"></a><span class="lineno">  694</span>&#160;        <span class="keyword">const</span> <span class="keyword">auto</span> solving_timer = <a class="code" href="../../d3/d5a/class_kratos_1_1_builtin_timer.html">BuiltinTimer</a>();</div>
-<div class="line"><a name="l00695"></a><span class="lineno">  695</span>&#160;        <a class="code" href="../../d2/df1/class_kratos_1_1_math_utils.html">MathUtils&lt;double&gt;::Solve</a>(<a class="code" href="../../db/d66/namespace_kratos.html#a93c726046cc93621bfee008f1bc8265f">rA</a>, dxrom, rb);</div>
+<div class="line"><a name="l00695"></a><span class="lineno">  695</span>&#160;        <a class="code" href="../../d1/d84/class_math_utils.html">MathUtils&lt;double&gt;::Solve</a>(<a class="code" href="../../db/d66/namespace_kratos.html#a93c726046cc93621bfee008f1bc8265f">rA</a>, dxrom, rb);</div>
 <div class="line"><a name="l00696"></a><span class="lineno">  696</span>&#160;        <span class="comment">// KRATOS_WATCH(dxrom)</span></div>
 <div class="line"><a name="l00697"></a><span class="lineno">  697</span>&#160;        <a class="code" href="../../d1/d8c/logger_8h.html#a77c49181bec73a59e8ad275f8a56cdd0">KRATOS_INFO_IF</a>(<span class="stringliteral">&quot;ROMBuilderAndSolver&quot;</span>, (this-&gt;GetEchoLevel() &gt; 0)) &lt;&lt; <span class="stringliteral">&quot;Solve reduced system time: &quot;</span> &lt;&lt; solving_timer.ElapsedSeconds() &lt;&lt; std::endl;</div>
 <div class="line"><a name="l00698"></a><span class="lineno">  698</span>&#160; </div>
@@ -800,7 +800,6 @@ $(function() {
 <div class="ttc" id="aclass_kratos_1_1_internals_1_1_matrix_html_af3dfc9e4c9d0c966d2635bfc1e7156b4"><div class="ttname"><a href="../../d9/dbb/class_kratos_1_1_internals_1_1_matrix.html#af3dfc9e4c9d0c966d2635bfc1e7156b4">Kratos::Internals::Matrix::size_type</a></div><div class="ttdeci">std::size_t size_type</div><div class="ttdef"><b>Definition:</b> amatrix_interface.h:57</div></div>
 <div class="ttc" id="aclass_kratos_1_1_kratos_zero_matrix_html"><div class="ttname"><a href="../../db/d87/class_kratos_1_1_kratos_zero_matrix.html">Kratos::KratosZeroMatrix</a></div><div class="ttdef"><b>Definition:</b> amatrix_interface.h:497</div></div>
 <div class="ttc" id="aclass_kratos_1_1_kratos_zero_vector_html"><div class="ttname"><a href="../../d0/d6a/class_kratos_1_1_kratos_zero_vector.html">Kratos::KratosZeroVector</a></div><div class="ttdef"><b>Definition:</b> amatrix_interface.h:530</div></div>
-<div class="ttc" id="aclass_kratos_1_1_math_utils_html"><div class="ttname"><a href="../../d2/df1/class_kratos_1_1_math_utils.html">Kratos::MathUtils</a></div><div class="ttdoc">Various mathematical utilitiy functions.</div><div class="ttdef"><b>Definition:</b> math_utils.h:61</div></div>
 <div class="ttc" id="aclass_kratos_1_1_node_html"><div class="ttname"><a href="../../d5/ddd/class_kratos_1_1_node.html">Kratos::Node</a></div><div class="ttdoc">This class defines the node.</div><div class="ttdef"><b>Definition:</b> node.h:67</div></div>
 <div class="ttc" id="aclass_kratos_1_1_r_o_m_builder_and_solver_html"><div class="ttname"><a href="../../d0/d46/class_kratos_1_1_r_o_m_builder_and_solver.html">Kratos::ROMBuilderAndSolver</a></div><div class="ttdef"><b>Definition:</b> rom_builder_and_solver.h:62</div></div>
 <div class="ttc" id="aclass_kratos_1_1_r_o_m_builder_and_solver_html_a0365dceb13317c227500c32279d3c6a9"><div class="ttname"><a href="../../d0/d46/class_kratos_1_1_r_o_m_builder_and_solver.html#a0365dceb13317c227500c32279d3c6a9">Kratos::ROMBuilderAndSolver::PrintInfo</a></div><div class="ttdeci">virtual void PrintInfo(std::ostream &amp;rOStream) const override</div><div class="ttdoc">Print information about this object.</div><div class="ttdef"><b>Definition:</b> rom_builder_and_solver.h:357</div></div>
@@ -861,6 +860,7 @@ $(function() {
 <div class="ttc" id="aclass_kratos_1_1_variable_html"><div class="ttname"><a href="../../d1/d66/class_kratos_1_1_variable.html">Kratos::Variable&lt; double &gt;</a></div></div>
 <div class="ttc" id="aclass_kratos_1_1_variable_html_a2a900fb79af5316938c8a15e789d1b02"><div class="ttname"><a href="../../d1/d66/class_kratos_1_1_variable.html#a2a900fb79af5316938c8a15e789d1b02">Kratos::Variable::GetValue</a></div><div class="ttdeci">TDataType &amp; GetValue(void *pSource) const</div><div class="ttdef"><b>Definition:</b> variable.h:318</div></div>
 <div class="ttc" id="aclass_master_slave_constraint_html"><div class="ttname"><a href="../../d6/de3/class_master_slave_constraint.html">MasterSlaveConstraint</a></div><div class="ttdoc">A class that implements the interface for different master-slave constraints to be applied on a syste...</div></div>
+<div class="ttc" id="aclass_math_utils_html"><div class="ttname"><a href="../../d1/d84/class_math_utils.html">MathUtils</a></div><div class="ttdoc">Various mathematical utilitiy functions.</div></div>
 <div class="ttc" id="aclass_model_part_html"><div class="ttname"><a href="../../d4/d5e/class_model_part.html">ModelPart</a></div><div class="ttdoc">This class aims to manage meshes for multi-physics simulations.</div><div class="ttdef"><b>Definition:</b> model_part.h:66</div></div>
 <div class="ttc" id="aclass_parameters_html"><div class="ttname"><a href="../../da/d39/class_parameters.html">Parameters</a></div><div class="ttdoc">This class provides to Kratos a data structure for I/O based on the standard of JSON.</div></div>
 <div class="ttc" id="adefine_8h_html"><div class="ttname"><a href="../../df/d67/define_8h.html">define.h</a></div></div>
@@ -919,7 +919,7 @@ $(function() {
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon May 22 2023 02:14:25 for KratosMultiphysics by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Tue May 23 2023 02:10:51 for KratosMultiphysics by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

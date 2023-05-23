@@ -430,12 +430,12 @@ $(function() {
 <div class="line"><a name="l00589"></a><span class="lineno">  589</span>&#160; </div>
 <div class="line"><a name="l00590"></a><span class="lineno">  590</span>&#160;            <a class="code" href="../../db/d66/namespace_kratos.html#aaff3672cc52b90ee3d84713de272e1b5">noalias</a>( rResult ) += DeltaXi;</div>
 <div class="line"><a name="l00591"></a><span class="lineno">  591</span>&#160; </div>
-<div class="line"><a name="l00592"></a><span class="lineno">  592</span>&#160;            <span class="keywordflow">if</span> ( <a class="code" href="../../d2/df1/class_kratos_1_1_math_utils.html">MathUtils&lt;double&gt;::Norm3</a>( DeltaXi ) &gt; 30 )</div>
+<div class="line"><a name="l00592"></a><span class="lineno">  592</span>&#160;            <span class="keywordflow">if</span> ( <a class="code" href="../../d1/d84/class_math_utils.html">MathUtils&lt;double&gt;::Norm3</a>( DeltaXi ) &gt; 30 )</div>
 <div class="line"><a name="l00593"></a><span class="lineno">  593</span>&#160;            {</div>
 <div class="line"><a name="l00594"></a><span class="lineno">  594</span>&#160;                <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00595"></a><span class="lineno">  595</span>&#160;            }</div>
 <div class="line"><a name="l00596"></a><span class="lineno">  596</span>&#160; </div>
-<div class="line"><a name="l00597"></a><span class="lineno">  597</span>&#160;            <span class="keywordflow">if</span> ( <a class="code" href="../../d2/df1/class_kratos_1_1_math_utils.html">MathUtils&lt;double&gt;::Norm3</a>( DeltaXi ) &lt; <a class="code" href="../../d6/d93/namespacehinsberg__optimization.html#a7bc0db444ce9f1806a325d9f1f0ebf08">tol</a> )</div>
+<div class="line"><a name="l00597"></a><span class="lineno">  597</span>&#160;            <span class="keywordflow">if</span> ( <a class="code" href="../../d1/d84/class_math_utils.html">MathUtils&lt;double&gt;::Norm3</a>( DeltaXi ) &lt; <a class="code" href="../../d6/d93/namespacehinsberg__optimization.html#a7bc0db444ce9f1806a325d9f1f0ebf08">tol</a> )</div>
 <div class="line"><a name="l00598"></a><span class="lineno">  598</span>&#160;            {</div>
 <div class="line"><a name="l00599"></a><span class="lineno">  599</span>&#160;                <span class="keywordflow">if</span> ( !( std::abs( CurrentGlobalCoords( orientation[2] ) ) &lt;= <a class="code" href="../../d6/d93/namespacehinsberg__optimization.html#a7bc0db444ce9f1806a325d9f1f0ebf08">tol</a> ) )</div>
 <div class="line"><a name="l00600"></a><span class="lineno">  600</span>&#160;                    rResult( 0 ) = 2.0;</div>
@@ -1297,7 +1297,6 @@ $(function() {
 <div class="ttc" id="aclass_kratos_1_1_internals_1_1_matrix_html_a3d36c583d63e7eeda493a7abdc97d874"><div class="ttname"><a href="../../d9/dbb/class_kratos_1_1_internals_1_1_matrix.html#a3d36c583d63e7eeda493a7abdc97d874">Kratos::Internals::Matrix::resize</a></div><div class="ttdeci">void resize(std::size_t NewSize1, std::size_t NewSize2, bool preserve=0)</div><div class="ttdef"><b>Definition:</b> amatrix_interface.h:224</div></div>
 <div class="ttc" id="aclass_kratos_1_1_internals_1_1_matrix_html_aa7c1e058bd1a48f7421a6fbb24d9361d"><div class="ttname"><a href="../../d9/dbb/class_kratos_1_1_internals_1_1_matrix.html#aa7c1e058bd1a48f7421a6fbb24d9361d">Kratos::Internals::Matrix::clear</a></div><div class="ttdeci">void clear()</div><div class="ttdef"><b>Definition:</b> amatrix_interface.h:284</div></div>
 <div class="ttc" id="aclass_kratos_1_1_line3_d3_html"><div class="ttname"><a href="../../de/daa/class_kratos_1_1_line3_d3.html">Kratos::Line3D3</a></div><div class="ttdoc">An three node 3D line geometry with quadratic shape functions.</div><div class="ttdef"><b>Definition:</b> line_3d_3.h:64</div></div>
-<div class="ttc" id="aclass_kratos_1_1_math_utils_html"><div class="ttname"><a href="../../d2/df1/class_kratos_1_1_math_utils.html">Kratos::MathUtils</a></div><div class="ttdoc">Various mathematical utilitiy functions.</div><div class="ttdef"><b>Definition:</b> math_utils.h:61</div></div>
 <div class="ttc" id="aclass_kratos_1_1_node_html"><div class="ttname"><a href="../../d5/ddd/class_kratos_1_1_node.html">Kratos::Node</a></div><div class="ttdoc">This class defines the node.</div><div class="ttdef"><b>Definition:</b> node.h:67</div></div>
 <div class="ttc" id="aclass_kratos_1_1_point_html"><div class="ttname"><a href="../../d3/d3f/class_kratos_1_1_point.html">Kratos::Point</a></div><div class="ttdoc">Point class.</div><div class="ttdef"><b>Definition:</b> point.h:59</div></div>
 <div class="ttc" id="aclass_kratos_1_1_point_html_a8cce3ed26cea2cbd14c71f8f1c85aa60"><div class="ttname"><a href="../../d3/d3f/class_kratos_1_1_point.html#a8cce3ed26cea2cbd14c71f8f1c85aa60">Kratos::Point::Y</a></div><div class="ttdeci">double Y() const</div><div class="ttdef"><b>Definition:</b> point.h:187</div></div>
@@ -1367,6 +1366,7 @@ $(function() {
 <div class="ttc" id="aclass_kratos_1_1array__1d_html"><div class="ttname"><a href="../../d4/ddc/class_kratos_1_1array__1d.html">Kratos::array_1d</a></div><div class="ttdoc">Short class definition.</div><div class="ttdef"><b>Definition:</b> array_1d.h:63</div></div>
 <div class="ttc" id="aclass_kratos_1_1array__1d_html_a460da1efd1801dc00e9844418fbc6d58"><div class="ttname"><a href="../../d4/ddc/class_kratos_1_1array__1d.html#a460da1efd1801dc00e9844418fbc6d58">Kratos::array_1d::resize</a></div><div class="ttdeci">BOOST_UBLAS_INLINE void resize(size_type array_size, bool preserve=true)</div><div class="ttdef"><b>Definition:</b> array_1d.h:233</div></div>
 <div class="ttc" id="aclass_kratos_1_1array__1d_html_a90c970d470ef873d2d7b4fcd0e9a3621"><div class="ttname"><a href="../../d4/ddc/class_kratos_1_1array__1d.html#a90c970d470ef873d2d7b4fcd0e9a3621">Kratos::array_1d::size</a></div><div class="ttdeci">BOOST_UBLAS_INLINE size_type size() const</div><div class="ttdef"><b>Definition:</b> array_1d.h:361</div></div>
+<div class="ttc" id="aclass_math_utils_html"><div class="ttname"><a href="../../d1/d84/class_math_utils.html">MathUtils</a></div><div class="ttdoc">Various mathematical utilitiy functions.</div></div>
 <div class="ttc" id="aclass_serializer_html"><div class="ttname"><a href="../../d0/dc2/class_serializer.html">Serializer</a></div><div class="ttdoc">The serialization consists in storing the state of an object into a storage format like data file or ...</div></div>
 <div class="ttc" id="adefine_8h_html_a534cb8a7eac3e4cf5d2c482b87b505a4"><div class="ttname"><a href="../../df/d67/define_8h.html#a534cb8a7eac3e4cf5d2c482b87b505a4">KRATOS_SERIALIZE_SAVE_BASE_CLASS</a></div><div class="ttdeci">#define KRATOS_SERIALIZE_SAVE_BASE_CLASS(Serializer, BaseType)</div><div class="ttdef"><b>Definition:</b> define.h:810</div></div>
 <div class="ttc" id="adefine_8h_html_ac41b129afec253cba3e0fc8efa241fd1"><div class="ttname"><a href="../../df/d67/define_8h.html#ac41b129afec253cba3e0fc8efa241fd1">KRATOS_SERIALIZE_LOAD_BASE_CLASS</a></div><div class="ttdeci">#define KRATOS_SERIALIZE_LOAD_BASE_CLASS(Serializer, BaseType)</div><div class="ttdef"><b>Definition:</b> define.h:813</div></div>
@@ -1399,7 +1399,7 @@ $(function() {
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon May 22 2023 02:16:46 for KratosMultiphysics by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Tue May 23 2023 02:13:45 for KratosMultiphysics by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

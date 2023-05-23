@@ -84,6 +84,9 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
+<p>A template class to proxy results, whether they are locally or remotely owned.  
+ <a href="../../de/d5e/class_kratos_1_1_results_proxy.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="../../dc/dbe/pointer__communicator_8h_source.html">pointer_communicator.h</a>&gt;</code></p>
 <div class="dynheader">
 Collaboration diagram for Kratos::ResultsProxy&lt; TPointerDataType, TFunctorType &gt;:</div>
@@ -94,30 +97,49 @@ Collaboration diagram for Kratos::ResultsProxy&lt; TPointerDataType, TFunctorTyp
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:adf89f75b4a7f668db62090a6e134064d"><td class="memItemLeft" align="right" valign="top">typedef std::result_of&lt; TFunctorType(<a class="el" href="../../dd/d1e/class_kratos_1_1_global_pointer.html">GlobalPointer</a>&lt; TPointerDataType &gt; &amp;)&gt;::type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d5e/class_kratos_1_1_results_proxy.html#adf89f75b4a7f668db62090a6e134064d">TSendType</a></td></tr>
-<tr class="separator:adf89f75b4a7f668db62090a6e134064d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae5d4e1036efb7cb01f2651dc16e8a775"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d5e/class_kratos_1_1_results_proxy.html#ae5d4e1036efb7cb01f2651dc16e8a775">TSendType</a> = typename std::result_of&lt; TFunctorType(<a class="el" href="../../dd/d1e/class_kratos_1_1_global_pointer.html">GlobalPointer</a>&lt; TPointerDataType &gt; &amp;)&gt;::type</td></tr>
+<tr class="memdesc:ae5d4e1036efb7cb01f2651dc16e8a775"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type alias for the result of applying the functor to a global pointer of TPointerDataType.  <a href="../../de/d5e/class_kratos_1_1_results_proxy.html#ae5d4e1036efb7cb01f2651dc16e8a775">More...</a><br /></td></tr>
+<tr class="separator:ae5d4e1036efb7cb01f2651dc16e8a775"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a2842998d4db0629c19937aac63dc90f1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d5e/class_kratos_1_1_results_proxy.html#a2842998d4db0629c19937aac63dc90f1">ResultsProxy</a> (<a class="el" href="../../db/d66/namespace_kratos.html#ac398e9982e45de7167981e05b7f5ff57">int</a> current_rank, <a class="el" href="../../d1/d31/class_kratos_1_1_global_pointers_unordered_map.html">GlobalPointersUnorderedMap</a>&lt; TPointerDataType, <a class="el" href="../../de/d5e/class_kratos_1_1_results_proxy.html#adf89f75b4a7f668db62090a6e134064d">TSendType</a> &gt; NonLocalData, TFunctorType user_functor, <a class="el" href="../../da/de1/class_kratos_1_1_global_pointer_communicator.html">GlobalPointerCommunicator</a>&lt; TPointerDataType &gt; *pPointerComm)</td></tr>
-<tr class="separator:a2842998d4db0629c19937aac63dc90f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51bbbc06698a1c407e60bd9a65dd2f79"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d5e/class_kratos_1_1_results_proxy.html#a51bbbc06698a1c407e60bd9a65dd2f79">ResultsProxy</a> (<a class="el" href="../../db/d66/namespace_kratos.html#ac398e9982e45de7167981e05b7f5ff57">int</a> current_rank, <a class="el" href="../../d1/d31/class_kratos_1_1_global_pointers_unordered_map.html">GlobalPointersUnorderedMap</a>&lt; TPointerDataType, <a class="el" href="../../de/d5e/class_kratos_1_1_results_proxy.html#ae5d4e1036efb7cb01f2651dc16e8a775">TSendType</a> &gt; NonLocalData, TFunctorType UserFunctor, <a class="el" href="../../da/de1/class_kratos_1_1_global_pointer_communicator.html">GlobalPointerCommunicator</a>&lt; TPointerDataType &gt; *pPointerComm)</td></tr>
+<tr class="memdesc:a51bbbc06698a1c407e60bd9a65dd2f79"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="../../de/d5e/class_kratos_1_1_results_proxy.html#a51bbbc06698a1c407e60bd9a65dd2f79">More...</a><br /></td></tr>
+<tr class="separator:a51bbbc06698a1c407e60bd9a65dd2f79"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af70d58eaef35d184cece53c786a2d04c"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d5e/class_kratos_1_1_results_proxy.html#af70d58eaef35d184cece53c786a2d04c">~ResultsProxy</a> ()</td></tr>
 <tr class="memdesc:af70d58eaef35d184cece53c786a2d04c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor.  <a href="../../de/d5e/class_kratos_1_1_results_proxy.html#af70d58eaef35d184cece53c786a2d04c">More...</a><br /></td></tr>
 <tr class="separator:af70d58eaef35d184cece53c786a2d04c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a84959e9861e49371154bf5d8c7e95044"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../de/d5e/class_kratos_1_1_results_proxy.html#adf89f75b4a7f668db62090a6e134064d">TSendType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d5e/class_kratos_1_1_results_proxy.html#a84959e9861e49371154bf5d8c7e95044">Get</a> (<a class="el" href="../../dd/d1e/class_kratos_1_1_global_pointer.html">GlobalPointer</a>&lt; TPointerDataType &gt; &amp;rGlobalPointer) const</td></tr>
+<tr class="memitem:a84959e9861e49371154bf5d8c7e95044"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../de/d5e/class_kratos_1_1_results_proxy.html#ae5d4e1036efb7cb01f2651dc16e8a775">TSendType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d5e/class_kratos_1_1_results_proxy.html#a84959e9861e49371154bf5d8c7e95044">Get</a> (<a class="el" href="../../dd/d1e/class_kratos_1_1_global_pointer.html">GlobalPointer</a>&lt; TPointerDataType &gt; &amp;rGlobalPointer) const</td></tr>
+<tr class="memdesc:a84959e9861e49371154bf5d8c7e95044"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the effect of "user_function(rGlobalPointer)" whether the rGlobalPointer is locally or remotely owned.  <a href="../../de/d5e/class_kratos_1_1_results_proxy.html#a84959e9861e49371154bf5d8c7e95044">More...</a><br /></td></tr>
 <tr class="separator:a84959e9861e49371154bf5d8c7e95044"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a72e93025600ca6289f41f55870b16072"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../de/d5e/class_kratos_1_1_results_proxy.html#adf89f75b4a7f668db62090a6e134064d">TSendType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d5e/class_kratos_1_1_results_proxy.html#a72e93025600ca6289f41f55870b16072">Get</a> (const <a class="el" href="../../dd/d1e/class_kratos_1_1_global_pointer.html">GlobalPointer</a>&lt; TPointerDataType &gt; &amp;rGlobalPointer) const</td></tr>
+<tr class="memitem:a72e93025600ca6289f41f55870b16072"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../de/d5e/class_kratos_1_1_results_proxy.html#ae5d4e1036efb7cb01f2651dc16e8a775">TSendType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d5e/class_kratos_1_1_results_proxy.html#a72e93025600ca6289f41f55870b16072">Get</a> (const <a class="el" href="../../dd/d1e/class_kratos_1_1_global_pointer.html">GlobalPointer</a>&lt; TPointerDataType &gt; &amp;rGlobalPointer) const</td></tr>
+<tr class="memdesc:a72e93025600ca6289f41f55870b16072"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overload for constant <a class="el" href="../../dd/d1e/class_kratos_1_1_global_pointer.html">GlobalPointer</a>.  <a href="../../de/d5e/class_kratos_1_1_results_proxy.html#a72e93025600ca6289f41f55870b16072">More...</a><br /></td></tr>
 <tr class="separator:a72e93025600ca6289f41f55870b16072"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a958d85644ab7da46ef27ae1f232ab04e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../db/d66/namespace_kratos.html#a14b9d687ed53c882489400b57cdf34cd">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d5e/class_kratos_1_1_results_proxy.html#a958d85644ab7da46ef27ae1f232ab04e">Has</a> (<a class="el" href="../../dd/d1e/class_kratos_1_1_global_pointer.html">GlobalPointer</a>&lt; TPointerDataType &gt; &amp;rGlobalPointer) const</td></tr>
+<tr class="memdesc:a958d85644ab7da46ef27ae1f232ab04e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if the node has the <a class="el" href="../../dd/d1e/class_kratos_1_1_global_pointer.html">GlobalPointer</a>.  <a href="../../de/d5e/class_kratos_1_1_results_proxy.html#a958d85644ab7da46ef27ae1f232ab04e">More...</a><br /></td></tr>
 <tr class="separator:a958d85644ab7da46ef27ae1f232ab04e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab1310c12d994d9b3c8b3c8abd91608ba"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../db/d66/namespace_kratos.html#a14b9d687ed53c882489400b57cdf34cd">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d5e/class_kratos_1_1_results_proxy.html#ab1310c12d994d9b3c8b3c8abd91608ba">Has</a> (const <a class="el" href="../../dd/d1e/class_kratos_1_1_global_pointer.html">GlobalPointer</a>&lt; TPointerDataType &gt; &amp;rGlobalPointer) const</td></tr>
+<tr class="memdesc:ab1310c12d994d9b3c8b3c8abd91608ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overload for constant <a class="el" href="../../dd/d1e/class_kratos_1_1_global_pointer.html">GlobalPointer</a>.  <a href="../../de/d5e/class_kratos_1_1_results_proxy.html#ab1310c12d994d9b3c8b3c8abd91608ba">More...</a><br /></td></tr>
 <tr class="separator:ab1310c12d994d9b3c8b3c8abd91608ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a06e72d4613f16d7d6a4064cd1ca6cce4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d5e/class_kratos_1_1_results_proxy.html#a06e72d4613f16d7d6a4064cd1ca6cce4">Update</a> ()</td></tr>
+<tr class="memdesc:a06e72d4613f16d7d6a4064cd1ca6cce4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates the NonLocalData using the user functor and communicator.  <a href="../../de/d5e/class_kratos_1_1_results_proxy.html#a06e72d4613f16d7d6a4064cd1ca6cce4">More...</a><br /></td></tr>
 <tr class="separator:a06e72d4613f16d7d6a4064cd1ca6cce4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Typedef Documentation</h2>
-<a id="adf89f75b4a7f668db62090a6e134064d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adf89f75b4a7f668db62090a6e134064d">&#9670;&nbsp;</a></span>TSendType</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><h3>template&lt;class TPointerDataType, class TFunctorType&gt;<br />
+class Kratos::ResultsProxy&lt; TPointerDataType, TFunctorType &gt;</h3>
+
+<p>A template class to proxy results, whether they are locally or remotely owned. </p>
+<p>This class acts as a proxy for results. It holds data in a map and applies the user-provided functor to it. If data is locally owned, it applies the functor directly. If the data is remotely owned, it retrieves it from the map. </p><dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">TPointerDataType</td><td>- The datatype for the pointer. </td></tr>
+    <tr><td class="paramname">TFunctorType</td><td>- The functor type to be used in processing. </td></tr>
+  </table>
+  </dd>
+</dl>
+</div><h2 class="groupheader">Member Typedef Documentation</h2>
+<a id="ae5d4e1036efb7cb01f2651dc16e8a775"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae5d4e1036efb7cb01f2651dc16e8a775">&#9670;&nbsp;</a></span>TSendType</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -125,16 +147,18 @@ Public Member Functions</h2></td></tr>
 template&lt;class TPointerDataType , class TFunctorType &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">typedef std::result_of&lt; TFunctorType(<a class="el" href="../../dd/d1e/class_kratos_1_1_global_pointer.html">GlobalPointer</a>&lt;TPointerDataType&gt;&amp;)&gt;::type <a class="el" href="../../de/d5e/class_kratos_1_1_results_proxy.html">Kratos::ResultsProxy</a>&lt; TPointerDataType, TFunctorType &gt;::<a class="el" href="../../de/d5e/class_kratos_1_1_results_proxy.html#adf89f75b4a7f668db62090a6e134064d">TSendType</a></td>
+          <td class="memname">using <a class="el" href="../../de/d5e/class_kratos_1_1_results_proxy.html">Kratos::ResultsProxy</a>&lt; TPointerDataType, TFunctorType &gt;::<a class="el" href="../../de/d5e/class_kratos_1_1_results_proxy.html#ae5d4e1036efb7cb01f2651dc16e8a775">TSendType</a> =  typename std::result_of&lt; TFunctorType(<a class="el" href="../../dd/d1e/class_kratos_1_1_global_pointer.html">GlobalPointer</a>&lt;TPointerDataType&gt;&amp;)&gt;::type</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
+<p>Type alias for the result of applying the functor to a global pointer of TPointerDataType. </p>
+
 </div>
 </div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a2842998d4db0629c19937aac63dc90f1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2842998d4db0629c19937aac63dc90f1">&#9670;&nbsp;</a></span>ResultsProxy()</h2>
+<a id="a51bbbc06698a1c407e60bd9a65dd2f79"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a51bbbc06698a1c407e60bd9a65dd2f79">&#9670;&nbsp;</a></span>ResultsProxy()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -153,14 +177,14 @@ template&lt;class TPointerDataType , class TFunctorType &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../d1/d31/class_kratos_1_1_global_pointers_unordered_map.html">GlobalPointersUnorderedMap</a>&lt; TPointerDataType, <a class="el" href="../../de/d5e/class_kratos_1_1_results_proxy.html#adf89f75b4a7f668db62090a6e134064d">TSendType</a> &gt;&#160;</td>
+          <td class="paramtype"><a class="el" href="../../d1/d31/class_kratos_1_1_global_pointers_unordered_map.html">GlobalPointersUnorderedMap</a>&lt; TPointerDataType, <a class="el" href="../../de/d5e/class_kratos_1_1_results_proxy.html#ae5d4e1036efb7cb01f2651dc16e8a775">TSendType</a> &gt;&#160;</td>
           <td class="paramname"><em>NonLocalData</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">TFunctorType&#160;</td>
-          <td class="paramname"><em>user_functor</em>, </td>
+          <td class="paramname"><em>UserFunctor</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -180,6 +204,17 @@ template&lt;class TPointerDataType , class TFunctorType &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Constructor. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">current_rank</td><td>Current rank of the node. </td></tr>
+    <tr><td class="paramname">NonLocalData</td><td>Data that is not local to the node. </td></tr>
+    <tr><td class="paramname">UserFunctor</td><td>Functor to be used for computation. </td></tr>
+    <tr><td class="paramname">pPointerComm</td><td>Pointer to the communicator. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -225,7 +260,7 @@ template&lt;class TPointerDataType , class TFunctorType &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../de/d5e/class_kratos_1_1_results_proxy.html#adf89f75b4a7f668db62090a6e134064d">TSendType</a> <a class="el" href="../../de/d5e/class_kratos_1_1_results_proxy.html">Kratos::ResultsProxy</a>&lt; TPointerDataType, TFunctorType &gt;::Get </td>
+          <td class="memname"><a class="el" href="../../de/d5e/class_kratos_1_1_results_proxy.html#ae5d4e1036efb7cb01f2651dc16e8a775">TSendType</a> <a class="el" href="../../de/d5e/class_kratos_1_1_results_proxy.html">Kratos::ResultsProxy</a>&lt; TPointerDataType, TFunctorType &gt;::Get </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="../../dd/d1e/class_kratos_1_1_global_pointer.html">GlobalPointer</a>&lt; TPointerDataType &gt; &amp;&#160;</td>
           <td class="paramname"><em>rGlobalPointer</em></td><td>)</td>
@@ -238,6 +273,15 @@ template&lt;class TPointerDataType , class TFunctorType &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Overload for constant <a class="el" href="../../dd/d1e/class_kratos_1_1_global_pointer.html">GlobalPointer</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">rGlobalPointer</td><td>The constant pointer that is being checked. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The result of applying the functor to the pointer. </dd></dl>
 
 </div>
 </div>
@@ -253,7 +297,7 @@ template&lt;class TPointerDataType , class TFunctorType &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../de/d5e/class_kratos_1_1_results_proxy.html#adf89f75b4a7f668db62090a6e134064d">TSendType</a> <a class="el" href="../../de/d5e/class_kratos_1_1_results_proxy.html">Kratos::ResultsProxy</a>&lt; TPointerDataType, TFunctorType &gt;::Get </td>
+          <td class="memname"><a class="el" href="../../de/d5e/class_kratos_1_1_results_proxy.html#ae5d4e1036efb7cb01f2651dc16e8a775">TSendType</a> <a class="el" href="../../de/d5e/class_kratos_1_1_results_proxy.html">Kratos::ResultsProxy</a>&lt; TPointerDataType, TFunctorType &gt;::Get </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="../../dd/d1e/class_kratos_1_1_global_pointer.html">GlobalPointer</a>&lt; TPointerDataType &gt; &amp;&#160;</td>
           <td class="paramname"><em>rGlobalPointer</em></td><td>)</td>
@@ -266,7 +310,15 @@ template&lt;class TPointerDataType , class TFunctorType &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>this function returns the effect of "user_function(rGlobalPointer)" both if the rGlobalPointer is locally owned and if it is remotely owned </p>
+
+<p>Returns the effect of "user_function(rGlobalPointer)" whether the rGlobalPointer is locally or remotely owned. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">rGlobalPointer</td><td>The pointer that is being checked. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The result of applying the functor to the pointer. </dd></dl>
 
 </div>
 </div>
@@ -296,6 +348,15 @@ template&lt;class TPointerDataType , class TFunctorType &gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p>Overload for constant <a class="el" href="../../dd/d1e/class_kratos_1_1_global_pointer.html">GlobalPointer</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">rGlobalPointer</td><td>The constant pointer that is being checked. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if the node has the pointer, otherwise False. </dd></dl>
+
 </div>
 </div>
 <a id="a958d85644ab7da46ef27ae1f232ab04e"></a>
@@ -324,6 +385,15 @@ template&lt;class TPointerDataType , class TFunctorType &gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p>Checks if the node has the <a class="el" href="../../dd/d1e/class_kratos_1_1_global_pointer.html">GlobalPointer</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">rGlobalPointer</td><td>The pointer that is being checked. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if the node has the pointer, otherwise False. </dd></dl>
+
 </div>
 </div>
 <a id="a06e72d4613f16d7d6a4064cd1ca6cce4"></a>
@@ -351,6 +421,8 @@ template&lt;class TPointerDataType , class TFunctorType &gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p>Updates the NonLocalData using the user functor and communicator. </p>
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
@@ -359,7 +431,7 @@ template&lt;class TPointerDataType , class TFunctorType &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon May 22 2023 02:18:40 for KratosMultiphysics by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Tue May 23 2023 02:16:08 for KratosMultiphysics by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

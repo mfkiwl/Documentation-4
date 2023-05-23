@@ -1971,14 +1971,14 @@ $(function() {
 <div class="line"><a name="l01917"></a><span class="lineno"> 1917</span>&#160;        <a class="code" href="../../db/d66/namespace_kratos.html#aaff3672cc52b90ee3d84713de272e1b5">noalias</a>(Vy) = LeftPointCoordinates - CenterPoint;</div>
 <div class="line"><a name="l01918"></a><span class="lineno"> 1918</span>&#160;        <span class="comment">// Unitary vector in local z direction</span></div>
 <div class="line"><a name="l01919"></a><span class="lineno"> 1919</span>&#160;        array_1d&lt;double, 3&gt; Vz;</div>
-<div class="line"><a name="l01920"></a><span class="lineno"> 1920</span>&#160;        <a class="code" href="../../d2/df1/class_kratos_1_1_math_utils.html#a3f3809a3e2d5bbf26534499077572992">MathUtils&lt;double&gt;::CrossProduct</a>(Vz, Vx, Vy);</div>
+<div class="line"><a name="l01920"></a><span class="lineno"> 1920</span>&#160;        <a class="code" href="../../d0/d64/namespacedefine__wake__process__3d.html#a16cc6530d73fbc1ad0783d0d830bf2ad">MathUtils&lt;double&gt;::CrossProduct</a>(Vz, Vx, Vy);</div>
 <div class="line"><a name="l01921"></a><span class="lineno"> 1921</span>&#160;        inv_norm = 1.0/<a class="code" href="../../db/d66/namespace_kratos.html#a0c30d2b162b4757f7012f7006a8f1628">norm_2</a>(Vz);</div>
 <div class="line"><a name="l01922"></a><span class="lineno"> 1922</span>&#160;        Vz[0] *= inv_norm;</div>
 <div class="line"><a name="l01923"></a><span class="lineno"> 1923</span>&#160;        Vz[1] *= inv_norm;</div>
 <div class="line"><a name="l01924"></a><span class="lineno"> 1924</span>&#160;        Vz[2] *= inv_norm;</div>
 <div class="line"><a name="l01925"></a><span class="lineno"> 1925</span>&#160; </div>
 <div class="line"><a name="l01926"></a><span class="lineno"> 1926</span>&#160;        <span class="comment">// Unitary vector in local y direction</span></div>
-<div class="line"><a name="l01927"></a><span class="lineno"> 1927</span>&#160;        <a class="code" href="../../d2/df1/class_kratos_1_1_math_utils.html#a3f3809a3e2d5bbf26534499077572992">MathUtils&lt;double&gt;::CrossProduct</a>( Vy, Vz, Vx);</div>
+<div class="line"><a name="l01927"></a><span class="lineno"> 1927</span>&#160;        <a class="code" href="../../d0/d64/namespacedefine__wake__process__3d.html#a16cc6530d73fbc1ad0783d0d830bf2ad">MathUtils&lt;double&gt;::CrossProduct</a>( Vy, Vz, Vx);</div>
 <div class="line"><a name="l01928"></a><span class="lineno"> 1928</span>&#160; </div>
 <div class="line"><a name="l01929"></a><span class="lineno"> 1929</span>&#160;        <span class="comment">// Rotation Matrix</span></div>
 <div class="line"><a name="l01930"></a><span class="lineno"> 1930</span>&#160;        rRotationMatrix(0,0) = Vx[0];</div>
@@ -2040,14 +2040,14 @@ $(function() {
 <div class="line"><a name="l01988"></a><span class="lineno"> 1988</span>&#160;        <a class="code" href="../../db/d66/namespace_kratos.html#aaff3672cc52b90ee3d84713de272e1b5">noalias</a>(Vy) = LeftPoint - CenterPoint;</div>
 <div class="line"><a name="l01989"></a><span class="lineno"> 1989</span>&#160;        <span class="comment">// Unitary vector in local z direction</span></div>
 <div class="line"><a name="l01990"></a><span class="lineno"> 1990</span>&#160;        array_1d&lt;double,3&gt; Vz;</div>
-<div class="line"><a name="l01991"></a><span class="lineno"> 1991</span>&#160;        <a class="code" href="../../d2/df1/class_kratos_1_1_math_utils.html#a3f3809a3e2d5bbf26534499077572992">MathUtils&lt;double&gt;::CrossProduct</a>(Vz,Vx,Vy);</div>
+<div class="line"><a name="l01991"></a><span class="lineno"> 1991</span>&#160;        <a class="code" href="../../d0/d64/namespacedefine__wake__process__3d.html#a16cc6530d73fbc1ad0783d0d830bf2ad">MathUtils&lt;double&gt;::CrossProduct</a>(Vz,Vx,Vy);</div>
 <div class="line"><a name="l01992"></a><span class="lineno"> 1992</span>&#160;        inv_norm = 1.0/<a class="code" href="../../db/d66/namespace_kratos.html#a0c30d2b162b4757f7012f7006a8f1628">norm_2</a>(Vz);</div>
 <div class="line"><a name="l01993"></a><span class="lineno"> 1993</span>&#160;        Vz[0] *= inv_norm;</div>
 <div class="line"><a name="l01994"></a><span class="lineno"> 1994</span>&#160;        Vz[1] *= inv_norm;</div>
 <div class="line"><a name="l01995"></a><span class="lineno"> 1995</span>&#160;        Vz[2] *= inv_norm;</div>
 <div class="line"><a name="l01996"></a><span class="lineno"> 1996</span>&#160; </div>
 <div class="line"><a name="l01997"></a><span class="lineno"> 1997</span>&#160;        <span class="comment">// Unitary vector in local y direction</span></div>
-<div class="line"><a name="l01998"></a><span class="lineno"> 1998</span>&#160;        <a class="code" href="../../d2/df1/class_kratos_1_1_math_utils.html#a3f3809a3e2d5bbf26534499077572992">MathUtils&lt;double&gt;::CrossProduct</a>(Vy, Vz, Vx);</div>
+<div class="line"><a name="l01998"></a><span class="lineno"> 1998</span>&#160;        <a class="code" href="../../d0/d64/namespacedefine__wake__process__3d.html#a16cc6530d73fbc1ad0783d0d830bf2ad">MathUtils&lt;double&gt;::CrossProduct</a>(Vy, Vz, Vx);</div>
 <div class="line"><a name="l01999"></a><span class="lineno"> 1999</span>&#160; </div>
 <div class="line"><a name="l02000"></a><span class="lineno"> 2000</span>&#160;        <span class="comment">// Rotation Matrix</span></div>
 <div class="line"><a name="l02001"></a><span class="lineno"> 2001</span>&#160;        rAuxPropagationVariables.RotationMatrix(0,0) = Vx[0];</div>
@@ -2094,7 +2094,6 @@ $(function() {
 <div class="ttc" id="aclass_kratos_1_1_geometry_html_a6d2b05ee63064ed2a21c828b19d6d273"><div class="ttname"><a href="../../dc/dea/class_kratos_1_1_geometry.html#a6d2b05ee63064ed2a21c828b19d6d273">Kratos::Geometry::DeterminantOfJacobian</a></div><div class="ttdeci">Vector &amp; DeterminantOfJacobian(Vector &amp;rResult) const</div><div class="ttdef"><b>Definition:</b> geometry.h:3154</div></div>
 <div class="ttc" id="aclass_kratos_1_1_geometry_html_ad186709ed81b9bd6c9846ac6781de1be"><div class="ttname"><a href="../../dc/dea/class_kratos_1_1_geometry.html#ad186709ed81b9bd6c9846ac6781de1be">Kratos::Geometry::IntegrationPoints</a></div><div class="ttdeci">const IntegrationPointsArrayType &amp; IntegrationPoints() const</div><div class="ttdef"><b>Definition:</b> geometry.h:2284</div></div>
 <div class="ttc" id="aclass_kratos_1_1_internals_1_1_matrix_html"><div class="ttname"><a href="../../d9/dbb/class_kratos_1_1_internals_1_1_matrix.html">Kratos::Internals::Matrix</a></div><div class="ttdef"><b>Definition:</b> amatrix_interface.h:41</div></div>
-<div class="ttc" id="aclass_kratos_1_1_math_utils_html_a3f3809a3e2d5bbf26534499077572992"><div class="ttname"><a href="../../d2/df1/class_kratos_1_1_math_utils.html#a3f3809a3e2d5bbf26534499077572992">Kratos::MathUtils::CrossProduct</a></div><div class="ttdeci">static T CrossProduct(const T &amp;a, const T &amp;b)</div><div class="ttdoc">Performs the vector product of the two input vectors a,b.</div><div class="ttdef"><b>Definition:</b> math_utils.h:771</div></div>
 <div class="ttc" id="aclass_kratos_1_1_open_m_p_utils_html_a25ab2a1b4dca7ecf3a1e4aee1039507e"><div class="ttname"><a href="../../d6/d4e/class_kratos_1_1_open_m_p_utils.html#a25ab2a1b4dca7ecf3a1e4aee1039507e">Kratos::OpenMPUtils::ThisThread</a></div><div class="ttdeci">static int ThisThread()</div><div class="ttdoc">Wrapper for omp_get_thread_num().</div><div class="ttdef"><b>Definition:</b> openmp_utils.h:108</div></div>
 <div class="ttc" id="aclass_kratos_1_1array__1d_html"><div class="ttname"><a href="../../d4/ddc/class_kratos_1_1array__1d.html">Kratos::array_1d&lt; double, 3 &gt;</a></div></div>
 <div class="ttc" id="aclass_model_part_html"><div class="ttname"><a href="../../d4/d5e/class_model_part.html">ModelPart</a></div><div class="ttdoc">This class aims to manage meshes for multi-physics simulations.</div><div class="ttdef"><b>Definition:</b> model_part.h:66</div></div>
@@ -2112,6 +2111,7 @@ $(function() {
 <div class="ttc" id="anamespace_kratos_html_aaff3672cc52b90ee3d84713de272e1b5"><div class="ttname"><a href="../../db/d66/namespace_kratos.html#aaff3672cc52b90ee3d84713de272e1b5">Kratos::noalias</a></div><div class="ttdeci">T &amp; noalias(T &amp;TheMatrix)</div><div class="ttdef"><b>Definition:</b> amatrix_interface.h:484</div></div>
 <div class="ttc" id="anamespace_kratos_html_abe689ad156630b755bfd4a6b92ded2c0"><div class="ttname"><a href="../../db/d66/namespace_kratos.html#abe689ad156630b755bfd4a6b92ded2c0">Kratos::trans</a></div><div class="ttdeci">AMatrix::TransposeMatrix&lt; const T &gt; trans(const T &amp;TheMatrix)</div><div class="ttdef"><b>Definition:</b> amatrix_interface.h:486</div></div>
 <div class="ttc" id="anamespace_kratos_html_ac398e9982e45de7167981e05b7f5ff57"><div class="ttname"><a href="../../db/d66/namespace_kratos.html#ac398e9982e45de7167981e05b7f5ff57">Kratos::int</a></div><div class="ttdeci">REACTION_CHECK_STIFFNESS_FACTOR int</div><div class="ttdef"><b>Definition:</b> contact_structural_mechanics_application_variables.h:64</div></div>
+<div class="ttc" id="anamespacedefine__wake__process__3d_html_a16cc6530d73fbc1ad0783d0d830bf2ad"><div class="ttname"><a href="../../d0/d64/namespacedefine__wake__process__3d.html#a16cc6530d73fbc1ad0783d0d830bf2ad">define_wake_process_3d.CrossProduct</a></div><div class="ttdeci">def CrossProduct(A, B)</div><div class="ttdef"><b>Definition:</b> define_wake_process_3d.py:13</div></div>
 <div class="ttc" id="anamespaceedgebased___pure_convection_html_a4b2ba243d5072905771aa99f3fb6dc75"><div class="ttname"><a href="../../d6/de1/namespaceedgebased___pure_convection.html#a4b2ba243d5072905771aa99f3fb6dc75">edgebased_PureConvection.ProcessInfo</a></div><div class="ttdeci">ProcessInfo</div><div class="ttdef"><b>Definition:</b> edgebased_PureConvection.py:116</div></div>
 <div class="ttc" id="anamespaceisotropic__damage__automatic__differentiation_html_a2cbf2df80be3a61f5f354b83e60da066"><div class="ttname"><a href="../../d3/d2b/namespaceisotropic__damage__automatic__differentiation.html#a2cbf2df80be3a61f5f354b83e60da066">isotropic_damage_automatic_differentiation.out</a></div><div class="ttdeci">out</div><div class="ttdef"><b>Definition:</b> isotropic_damage_automatic_differentiation.py:200</div></div>
 <div class="ttc" id="anamespacequadrature_html_a56123f01f0d1e776d9a6d85aa0f27caa"><div class="ttname"><a href="../../d7/d2b/namespacequadrature.html#a56123f01f0d1e776d9a6d85aa0f27caa">quadrature.k</a></div><div class="ttdeci">int k</div><div class="ttdef"><b>Definition:</b> quadrature.py:595</div></div>
@@ -2187,7 +2187,7 @@ $(function() {
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon May 22 2023 02:14:17 for KratosMultiphysics by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Tue May 23 2023 02:10:42 for KratosMultiphysics by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

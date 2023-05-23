@@ -181,7 +181,7 @@ $(function() {
 <div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160; </div>
 <div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;                mass    = in-&gt;FastGetSolutionStepValue(NODAL_MASS);</div>
 <div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;                <a class="code" href="../../db/df4/namespacepure__conduction.html#ae09a2606ce877131c3666ac38c7d5525">vel</a>     = in-&gt;FastGetSolutionStepValue(VELOCITY);</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;                vel_arg = <a class="code" href="../../d2/df1/class_kratos_1_1_math_utils.html#a7b2eab287f67cf69dcc536fe4f533db5">MathUtils&lt;double&gt;::Norm3</a>(<a class="code" href="../../db/df4/namespacepure__conduction.html#ae09a2606ce877131c3666ac38c7d5525">vel</a>);</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;                vel_arg = <a class="code" href="../../d1/d84/class_math_utils.html">MathUtils&lt;double&gt;::Norm3</a>(<a class="code" href="../../db/df4/namespacepure__conduction.html#ae09a2606ce877131c3666ac38c7d5525">vel</a>);</div>
 <div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;                KinematicEnergyPartition[<a class="code" href="../../d7/d2b/namespacequadrature.html#a56123f01f0d1e776d9a6d85aa0f27caa">k</a>] += 0.5*vel_arg*vel_arg*mass;</div>
 <div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;            }</div>
 <div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;        }</div>
@@ -507,9 +507,9 @@ $(function() {
 <div class="ttc" id="aclass_kratos_1_1_geometry_html_a3cc5848cd4aba1954d1671419bd5c60c"><div class="ttname"><a href="../../dc/dea/class_kratos_1_1_geometry.html#a3cc5848cd4aba1954d1671419bd5c60c">Kratos::Geometry::IntegrationPointsArrayType</a></div><div class="ttdeci">std::vector&lt; IntegrationPointType &gt; IntegrationPointsArrayType</div><div class="ttdef"><b>Definition:</b> geometry.h:161</div></div>
 <div class="ttc" id="aclass_kratos_1_1_geometry_html_af101daf1b13c174f9c51c13721db1857"><div class="ttname"><a href="../../dc/dea/class_kratos_1_1_geometry.html#af101daf1b13c174f9c51c13721db1857">Kratos::Geometry::WorkingSpaceDimension</a></div><div class="ttdeci">SizeType WorkingSpaceDimension() const</div><div class="ttdef"><b>Definition:</b> geometry.h:1287</div></div>
 <div class="ttc" id="aclass_kratos_1_1_internals_1_1_matrix_html"><div class="ttname"><a href="../../d9/dbb/class_kratos_1_1_internals_1_1_matrix.html">Kratos::Internals::Matrix&lt; double, AMatrix::dynamic, 1 &gt;</a></div></div>
-<div class="ttc" id="aclass_kratos_1_1_math_utils_html_a7b2eab287f67cf69dcc536fe4f533db5"><div class="ttname"><a href="../../d2/df1/class_kratos_1_1_math_utils.html#a7b2eab287f67cf69dcc536fe4f533db5">Kratos::MathUtils::Norm3</a></div><div class="ttdeci">static TDataType Norm3(const TVectorType &amp;a)</div><div class="ttdoc">Calculates the norm of vector &quot;a&quot; which is assumed to be of size 3.</div><div class="ttdef"><b>Definition:</b> math_utils.h:700</div></div>
 <div class="ttc" id="aclass_kratos_1_1_open_m_p_utils_html_a25ab2a1b4dca7ecf3a1e4aee1039507e"><div class="ttname"><a href="../../d6/d4e/class_kratos_1_1_open_m_p_utils.html#a25ab2a1b4dca7ecf3a1e4aee1039507e">Kratos::OpenMPUtils::ThisThread</a></div><div class="ttdeci">static int ThisThread()</div><div class="ttdoc">Wrapper for omp_get_thread_num().</div><div class="ttdef"><b>Definition:</b> openmp_utils.h:108</div></div>
 <div class="ttc" id="aclass_kratos_1_1array__1d_html"><div class="ttname"><a href="../../d4/ddc/class_kratos_1_1array__1d.html">Kratos::array_1d&lt; double, 3 &gt;</a></div></div>
+<div class="ttc" id="aclass_math_utils_html"><div class="ttname"><a href="../../d1/d84/class_math_utils.html">MathUtils</a></div><div class="ttdoc">Various mathematical utilitiy functions.</div></div>
 <div class="ttc" id="aclass_model_part_html"><div class="ttname"><a href="../../d4/d5e/class_model_part.html">ModelPart</a></div><div class="ttdoc">This class aims to manage meshes for multi-physics simulations.</div><div class="ttdef"><b>Definition:</b> model_part.h:66</div></div>
 <div class="ttc" id="adefine_8h_html_a5eac541f5e39bf0360a12f51f0248513"><div class="ttname"><a href="../../df/d67/define_8h.html#a5eac541f5e39bf0360a12f51f0248513">KRATOS_CATCH</a></div><div class="ttdeci">#define KRATOS_CATCH(MoreInfo)</div><div class="ttdef"><b>Definition:</b> define.h:108</div></div>
 <div class="ttc" id="adefine_8h_html_ab9c29d6a0d19ff26bbc4e45e3181fb3f"><div class="ttname"><a href="../../df/d67/define_8h.html#ab9c29d6a0d19ff26bbc4e45e3181fb3f">KRATOS_TRY</a></div><div class="ttdeci">#define KRATOS_TRY</div><div class="ttdef"><b>Definition:</b> define.h:107</div></div>
@@ -534,7 +534,7 @@ $(function() {
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon May 22 2023 02:14:46 for KratosMultiphysics by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Tue May 23 2023 02:11:17 for KratosMultiphysics by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

@@ -139,7 +139,7 @@ $(function() {
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        <span class="comment">// Compute the unit normal</span></div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        <a class="code" href="../../d4/ddc/class_kratos_1_1array__1d.html">array_1d&lt;double,3&gt;</a> v_1 = Point2 - Point1;</div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        <a class="code" href="../../d4/ddc/class_kratos_1_1array__1d.html">array_1d&lt;double,3&gt;</a> v_2 = Point3 - Point1;</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        <a class="code" href="../../d2/df1/class_kratos_1_1_math_utils.html#a3f3809a3e2d5bbf26534499077572992">MathUtils&lt;double&gt;::CrossProduct</a>(mNormal, v_1, v_2);</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        <a class="code" href="../../d0/d64/namespacedefine__wake__process__3d.html#a16cc6530d73fbc1ad0783d0d830bf2ad">MathUtils&lt;double&gt;::CrossProduct</a>(mNormal, v_1, v_2);</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        <span class="keyword">auto</span> normal_length = <a class="code" href="../../db/d66/namespace_kratos.html#a0c30d2b162b4757f7012f7006a8f1628">norm_2</a>(mNormal);</div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        <a class="code" href="../../d5/d4d/group___kratos_core.html#ga23006b059b45582a9c994bcccb12ab7e">KRATOS_DEBUG_CHECK_GREATER</a>(normal_length, std::numeric_limits&lt;double&gt;::epsilon());</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        mNormal /= normal_length;</div>
@@ -220,7 +220,6 @@ $(function() {
 <div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160; </div>
 <div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160; </div>
 <div class="ttc" id="achecks_8h_html"><div class="ttname"><a href="../../d5/d16/checks_8h.html">checks.h</a></div></div>
-<div class="ttc" id="aclass_kratos_1_1_math_utils_html_a3f3809a3e2d5bbf26534499077572992"><div class="ttname"><a href="../../d2/df1/class_kratos_1_1_math_utils.html#a3f3809a3e2d5bbf26534499077572992">Kratos::MathUtils::CrossProduct</a></div><div class="ttdeci">static T CrossProduct(const T &amp;a, const T &amp;b)</div><div class="ttdoc">Performs the vector product of the two input vectors a,b.</div><div class="ttdef"><b>Definition:</b> math_utils.h:771</div></div>
 <div class="ttc" id="aclass_kratos_1_1_plane3_d_html"><div class="ttname"><a href="../../dc/dff/class_kratos_1_1_plane3_d.html">Kratos::Plane3D</a></div><div class="ttdef"><b>Definition:</b> plane_3d.h:51</div></div>
 <div class="ttc" id="aclass_kratos_1_1_plane3_d_html_a1c4fe4a50aa524945866be581ad11517"><div class="ttname"><a href="../../dc/dff/class_kratos_1_1_plane3_d.html#a1c4fe4a50aa524945866be581ad11517">Kratos::Plane3D::~Plane3D</a></div><div class="ttdeci">~Plane3D()</div><div class="ttdoc">Destructor. Do nothing!!!</div><div class="ttdef"><b>Definition:</b> plane_3d.h:93</div></div>
 <div class="ttc" id="aclass_kratos_1_1_plane3_d_html_a26d17a47a74fb9e5488709e291906129"><div class="ttname"><a href="../../dc/dff/class_kratos_1_1_plane3_d.html#a26d17a47a74fb9e5488709e291906129">Kratos::Plane3D::PrintData</a></div><div class="ttdeci">void PrintData(std::ostream &amp;rOStream) const</div><div class="ttdef"><b>Definition:</b> plane_3d.h:155</div></div>
@@ -245,11 +244,12 @@ $(function() {
 <div class="ttc" id="anamespace_kratos_html_a656fecfa2a6cca4ac7b95d43ee8ef0b2"><div class="ttname"><a href="../../db/d66/namespace_kratos.html#a656fecfa2a6cca4ac7b95d43ee8ef0b2">Kratos::inner_prod</a></div><div class="ttdeci">TExpression1Type::data_type inner_prod(AMatrix::MatrixExpression&lt; TExpression1Type, TCategory1 &gt; const &amp;First, AMatrix::MatrixExpression&lt; TExpression2Type, TCategory2 &gt; const &amp;Second)</div><div class="ttdef"><b>Definition:</b> amatrix_interface.h:592</div></div>
 <div class="ttc" id="anamespace_kratos_html_a9c6097d0b0a27d1cea94992b1087f56a"><div class="ttname"><a href="../../db/d66/namespace_kratos.html#a9c6097d0b0a27d1cea94992b1087f56a">Kratos::operator&gt;&gt;</a></div><div class="ttdeci">std::istream &amp; operator&gt;&gt;(std::istream &amp;rIStream, LinearMasterSlaveConstraint &amp;rThis)</div><div class="ttdoc">input stream function</div></div>
 <div class="ttc" id="anamespace_kratos_html_acfc842a43d19dffc2d8105e5cbea17a9"><div class="ttname"><a href="../../db/d66/namespace_kratos.html#acfc842a43d19dffc2d8105e5cbea17a9">Kratos::operator&lt;&lt;</a></div><div class="ttdeci">std::ostream &amp; operator&lt;&lt;(std::ostream &amp;rOStream, const LinearMasterSlaveConstraint &amp;rThis)</div><div class="ttdoc">output stream function</div><div class="ttdef"><b>Definition:</b> linear_master_slave_constraint.h:432</div></div>
+<div class="ttc" id="anamespacedefine__wake__process__3d_html_a16cc6530d73fbc1ad0783d0d830bf2ad"><div class="ttname"><a href="../../d0/d64/namespacedefine__wake__process__3d.html#a16cc6530d73fbc1ad0783d0d830bf2ad">define_wake_process_3d.CrossProduct</a></div><div class="ttdeci">def CrossProduct(A, B)</div><div class="ttdef"><b>Definition:</b> define_wake_process_3d.py:13</div></div>
 <div class="ttc" id="apoint_8h_html"><div class="ttname"><a href="../../d2/d91/point_8h.html">point.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon May 22 2023 02:16:18 for KratosMultiphysics by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Tue May 23 2023 02:13:11 for KratosMultiphysics by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

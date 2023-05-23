@@ -131,7 +131,7 @@ $(function() {
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="comment">//1.) inverse K22</span></div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <a class="code" href="../../d9/dbb/class_kratos_1_1_internals_1_1_matrix.html">MatrixType</a> K_temp = <a class="code" href="../../db/d66/namespace_kratos.html#a358df20da9726efb77013692eb628f08">ZeroMatrix</a>(sub_matrices[3].size1());</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keywordtype">double</span> detK22 = 0.00;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <a class="code" href="../../d2/df1/class_kratos_1_1_math_utils.html#a77b59ae1a710a746bcaffc5b2a9066e1">MathUtils&lt;double&gt;::InvertMatrix</a>(sub_matrices[3],K_temp,detK22);</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <a class="code" href="../../d1/d84/class_math_utils.html">MathUtils&lt;double&gt;::InvertMatrix</a>(sub_matrices[3],K_temp,detK22);</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <a class="code" href="../../d5/d4d/group___kratos_core.html#ga9fdd4e0364598f28a529107663707cf3">KRATOS_ERROR_IF</a>(std::abs(detK22) &lt; numerical_limit) &lt;&lt; <span class="stringliteral">&quot;Element &quot;</span> &lt;&lt; rTheElement.Id()</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;                                                        &lt;&lt; <span class="stringliteral">&quot; is singular !&quot;</span> &lt;&lt; std::endl;</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
@@ -272,7 +272,7 @@ $(function() {
 <div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;    <span class="comment">//2.) inverse K22</span></div>
 <div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;    <a class="code" href="../../d9/dbb/class_kratos_1_1_internals_1_1_matrix.html">MatrixType</a> K22_inv = <a class="code" href="../../db/d66/namespace_kratos.html#a358df20da9726efb77013692eb628f08">ZeroMatrix</a>(sub_matrices[3].size1());</div>
 <div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;    <span class="keywordtype">double</span> detK22 = 0.00;</div>
-<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;    <a class="code" href="../../d2/df1/class_kratos_1_1_math_utils.html#a77b59ae1a710a746bcaffc5b2a9066e1">MathUtils&lt;double&gt;::InvertMatrix</a>(sub_matrices[3], K22_inv, detK22);</div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;    <a class="code" href="../../d1/d84/class_math_utils.html">MathUtils&lt;double&gt;::InvertMatrix</a>(sub_matrices[3], K22_inv, detK22);</div>
 <div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160; </div>
 <div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;    <a class="code" href="../../d5/d4d/group___kratos_core.html#ga9fdd4e0364598f28a529107663707cf3">KRATOS_ERROR_IF</a>(std::abs(detK22) &lt; numerical_limit) &lt;&lt; <span class="stringliteral">&quot;Element &quot;</span> &lt;&lt; rTheElement.Id() &lt;&lt; <span class="stringliteral">&quot; is singular !&quot;</span> &lt;&lt; std::endl;</div>
 <div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160; </div>
@@ -343,7 +343,7 @@ $(function() {
 <div class="ttc" id="aclass_kratos_1_1_geo_static_condensation_utility_html_aebcc1c9e1c7a0b5223f16ca1fae4a54c"><div class="ttname"><a href="../../dd/ddb/class_kratos_1_1_geo_static_condensation_utility.html#aebcc1c9e1c7a0b5223f16ca1fae4a54c">Kratos::GeoStaticCondensationUtility::CreateRemainingDofList</a></div><div class="ttdeci">static std::vector&lt; int &gt; CreateRemainingDofList(ElementType &amp;rTheElement, const std::vector&lt; int &gt; &amp;rDofList)</div><div class="ttdoc">This function creates a list containing all dofs to remain by using the following inputs:</div><div class="ttdef"><b>Definition:</b> static_condensation_utility.h:144</div></div>
 <div class="ttc" id="aclass_kratos_1_1_internals_1_1_matrix_html"><div class="ttname"><a href="../../d9/dbb/class_kratos_1_1_internals_1_1_matrix.html">Kratos::Internals::Matrix&lt; double, AMatrix::dynamic, AMatrix::dynamic &gt;</a></div></div>
 <div class="ttc" id="aclass_kratos_1_1_internals_1_1_matrix_html_aa7c1e058bd1a48f7421a6fbb24d9361d"><div class="ttname"><a href="../../d9/dbb/class_kratos_1_1_internals_1_1_matrix.html#aa7c1e058bd1a48f7421a6fbb24d9361d">Kratos::Internals::Matrix::clear</a></div><div class="ttdeci">void clear()</div><div class="ttdef"><b>Definition:</b> amatrix_interface.h:284</div></div>
-<div class="ttc" id="aclass_kratos_1_1_math_utils_html_a77b59ae1a710a746bcaffc5b2a9066e1"><div class="ttname"><a href="../../d2/df1/class_kratos_1_1_math_utils.html#a77b59ae1a710a746bcaffc5b2a9066e1">Kratos::MathUtils::InvertMatrix</a></div><div class="ttdeci">static BoundedMatrix&lt; TDataType, TDim, TDim &gt; InvertMatrix(const BoundedMatrix&lt; TDataType, TDim, TDim &gt; &amp;rInputMatrix, TDataType &amp;rInputMatrixDet, const TDataType Tolerance=ZeroTolerance)</div><div class="ttdoc">Calculates the inverse of a 2x2, 3x3 and 4x4 matrices (using bounded matrix for performance)</div><div class="ttdef"><b>Definition:</b> math_utils.h:197</div></div>
+<div class="ttc" id="aclass_math_utils_html"><div class="ttname"><a href="../../d1/d84/class_math_utils.html">MathUtils</a></div><div class="ttdoc">Various mathematical utilitiy functions.</div></div>
 <div class="ttc" id="adefine_8h_html"><div class="ttname"><a href="../../df/d67/define_8h.html">define.h</a></div></div>
 <div class="ttc" id="adefine_8h_html_a5eac541f5e39bf0360a12f51f0248513"><div class="ttname"><a href="../../df/d67/define_8h.html#a5eac541f5e39bf0360a12f51f0248513">KRATOS_CATCH</a></div><div class="ttdeci">#define KRATOS_CATCH(MoreInfo)</div><div class="ttdef"><b>Definition:</b> define.h:108</div></div>
 <div class="ttc" id="adefine_8h_html_ab9c29d6a0d19ff26bbc4e45e3181fb3f"><div class="ttname"><a href="../../df/d67/define_8h.html#ab9c29d6a0d19ff26bbc4e45e3181fb3f">KRATOS_TRY</a></div><div class="ttdeci">#define KRATOS_TRY</div><div class="ttdef"><b>Definition:</b> define.h:107</div></div>
@@ -359,7 +359,7 @@ $(function() {
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon May 22 2023 02:13:14 for KratosMultiphysics by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Tue May 23 2023 02:09:24 for KratosMultiphysics by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

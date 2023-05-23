@@ -136,6 +136,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a5224349919781b5628d6ff9d4f6d5251"><td class="memItemLeft" align="right" valign="top">BufferedDict&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d9e/classoptimization__problem_1_1_optimization_problem.html#a5224349919781b5628d6ff9d4f6d5251">GetProblemDataContainer</a> (self)</td></tr>
 <tr class="memdesc:a5224349919781b5628d6ff9d4f6d5251"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the global problem data container.  <a href="../../d7/d9e/classoptimization__problem_1_1_optimization_problem.html#a5224349919781b5628d6ff9d4f6d5251">More...</a><br /></td></tr>
 <tr class="separator:a5224349919781b5628d6ff9d4f6d5251"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b7719a24758e9e25b6d446b051aad54"><td class="memItemLeft" align="right" valign="top"> 'dict[Any, dict[str, Any]]'&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d9e/classoptimization__problem_1_1_optimization_problem.html#a5b7719a24758e9e25b6d446b051aad54">GetComponentContainer</a> (self)</td></tr>
+<tr class="separator:a5b7719a24758e9e25b6d446b051aad54"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a372807971734c628d809ae6aff0f1e"><td class="memItemLeft" align="right" valign="top">Any&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d9e/classoptimization__problem_1_1_optimization_problem.html#a1a372807971734c628d809ae6aff0f1e">GetComponent</a> (self, str name, Any component_type)</td></tr>
+<tr class="separator:a1a372807971734c628d809ae6aff0f1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89aa39c67f2329be63ffd716e38cee30"><td class="memItemLeft" align="right" valign="top">None&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d9e/classoptimization__problem_1_1_optimization_problem.html#a89aa39c67f2329be63ffd716e38cee30">RemoveComponent</a> (self, str name, Any component_type)</td></tr>
+<tr class="separator:a89aa39c67f2329be63ffd716e38cee30"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This is the main data holder for optimization problems. </p>
@@ -268,6 +274,58 @@ and the problem data generated while solving the optimization problem.
       <table class="memname">
         <tr>
           <td class="memname"> 'list[str]' optimization_problem.OptimizationProblem.GetAvailableProcessTypes </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1a372807971734c628d809ae6aff0f1e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1a372807971734c628d809ae6aff0f1e">&#9670;&nbsp;</a></span>GetComponent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"> Any optimization_problem.OptimizationProblem.GetComponent </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">str&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Any&#160;</td>
+          <td class="paramname"><em>component_type</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5b7719a24758e9e25b6d446b051aad54"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5b7719a24758e9e25b6d446b051aad54">&#9670;&nbsp;</a></span>GetComponentContainer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"> 'dict[Any, dict[str, Any]]' optimization_problem.OptimizationProblem.GetComponentContainer </td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname"><em>self</em></td><td>)</td>
@@ -544,6 +602,40 @@ and the problem data generated while solving the optimization problem.
 </pre> 
 </div>
 </div>
+<a id="a89aa39c67f2329be63ffd716e38cee30"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a89aa39c67f2329be63ffd716e38cee30">&#9670;&nbsp;</a></span>RemoveComponent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"> None optimization_problem.OptimizationProblem.RemoveComponent </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">str&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Any&#160;</td>
+          <td class="paramname"><em>component_type</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a010584f84074c35e9cb102e359698218"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a010584f84074c35e9cb102e359698218">&#9670;&nbsp;</a></span>RemoveControl()</h2>
 
@@ -634,7 +726,7 @@ and the problem data generated while solving the optimization problem.
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon May 22 2023 02:21:28 for KratosMultiphysics by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Tue May 23 2023 02:19:36 for KratosMultiphysics by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

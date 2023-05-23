@@ -208,7 +208,7 @@ $(function() {
 <div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;        .def(py::init&lt;const container_type&amp;&gt;(), py::arg(<span class="stringliteral">&quot;other_container_expression_to_copy_from&quot;</span>), py::doc(<span class="stringliteral">&quot;Creates a new same type container expression object by copying data from other_container_expression_to_copy_from.&quot;</span>))</div>
 <div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;        .def(py::init&lt;const typename container_type::BaseType&amp;&gt;(), py::arg(<span class="stringliteral">&quot;other_container_expression_to_copy_from&quot;</span>), py::doc(<span class="stringliteral">&quot;Creates a new destination type container expression object by copying data from compatible other_container_expression_to_copy_from.&quot;</span>))</div>
 <div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;        .def(<span class="stringliteral">&quot;Evaluate&quot;</span>, [](<span class="keyword">const</span> container_type&amp; rSelf){</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;            <span class="keyword">const</span> <span class="keyword">auto</span>&amp; r_shape = rSelf.GetShape();</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;            <span class="keyword">const</span> <span class="keyword">auto</span>&amp; r_shape = rSelf.GetItemShape();</div>
 <div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;            <span class="keyword">auto</span> array = AllocateNumpyArray&lt;double&gt;(rSelf.GetContainer().size(), r_shape);</div>
 <div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160; </div>
 <div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;            std::vector&lt;int&gt; <a class="code" href="../../d3/d55/namespaceshape.html">shape</a>(r_shape.size());</div>
@@ -312,7 +312,7 @@ $(function() {
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon May 22 2023 02:17:20 for KratosMultiphysics by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Tue May 23 2023 02:14:27 for KratosMultiphysics by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>
