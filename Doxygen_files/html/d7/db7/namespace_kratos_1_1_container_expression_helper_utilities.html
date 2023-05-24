@@ -132,6 +132,12 @@ Functions</h2></td></tr>
 <tr class="memitem:abd19b5dcaa12eeab3f943065298651d4"><td class="memItemLeft" align="right" valign="top">template&lt;&gt; </td></tr>
 <tr class="memitem:abd19b5dcaa12eeab3f943065298651d4"><td class="memTemplItemLeft" align="right" valign="top">const ModelPart::ElementsContainerType &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d7/db7/namespace_kratos_1_1_container_expression_helper_utilities.html#abd19b5dcaa12eeab3f943065298651d4">GetContainer&lt; ModelPart::ElementsContainerType &gt;</a> (const ModelPart::MeshType &amp;rMesh)</td></tr>
 <tr class="separator:abd19b5dcaa12eeab3f943065298651d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa55e439f877c3b1628914a0632727b8d"><td class="memTemplParams" colspan="2">template&lt;class TRawDataType , class TContainerExpressionType &gt; </td></tr>
+<tr class="memitem:aa55e439f877c3b1628914a0632727b8d"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d7/db7/namespace_kratos_1_1_container_expression_helper_utilities.html#aa55e439f877c3b1628914a0632727b8d">Read</a> (TContainerExpressionType &amp;rContainerExpression, TRawDataType const *pBegin, const <a class="el" href="../../db/d66/namespace_kratos.html#ac398e9982e45de7167981e05b7f5ff57">int</a> NumberOfEntities, <a class="el" href="../../db/d66/namespace_kratos.html#ac398e9982e45de7167981e05b7f5ff57">int</a> const *pShapeBegin, const <a class="el" href="../../db/d66/namespace_kratos.html#ac398e9982e45de7167981e05b7f5ff57">int</a> ShapeSize)</td></tr>
+<tr class="separator:aa55e439f877c3b1628914a0632727b8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a30ee309965d2d8a401c25f02f8ae14bb"><td class="memTemplParams" colspan="2">template&lt;class TRawDataType , class TContainerExpressionType &gt; </td></tr>
+<tr class="memitem:a30ee309965d2d8a401c25f02f8ae14bb"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d7/db7/namespace_kratos_1_1_container_expression_helper_utilities.html#a30ee309965d2d8a401c25f02f8ae14bb">MoveFrom</a> (TContainerExpressionType &amp;rContainerExpression, TRawDataType *pBegin, const <a class="el" href="../../db/d66/namespace_kratos.html#ac398e9982e45de7167981e05b7f5ff57">int</a> NumberOfEntities, <a class="el" href="../../db/d66/namespace_kratos.html#ac398e9982e45de7167981e05b7f5ff57">int</a> const *pShapeBegin, const <a class="el" href="../../db/d66/namespace_kratos.html#ac398e9982e45de7167981e05b7f5ff57">int</a> ShapeSize)</td></tr>
+<tr class="separator:a30ee309965d2d8a401c25f02f8ae14bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="a7cd57ce9ab4b190f21cf7c3855ae9784"></a>
@@ -454,10 +460,106 @@ template&lt;&gt; </div>
 
 </div>
 </div>
+<a id="a30ee309965d2d8a401c25f02f8ae14bb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a30ee309965d2d8a401c25f02f8ae14bb">&#9670;&nbsp;</a></span>MoveFrom()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class TRawDataType , class TContainerExpressionType &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void Kratos::ContainerExpressionHelperUtilities::MoveFrom </td>
+          <td>(</td>
+          <td class="paramtype">TContainerExpressionType &amp;&#160;</td>
+          <td class="paramname"><em>rContainerExpression</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">TRawDataType *&#160;</td>
+          <td class="paramname"><em>pBegin</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../db/d66/namespace_kratos.html#ac398e9982e45de7167981e05b7f5ff57">int</a>&#160;</td>
+          <td class="paramname"><em>NumberOfEntities</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../db/d66/namespace_kratos.html#ac398e9982e45de7167981e05b7f5ff57">int</a> const *&#160;</td>
+          <td class="paramname"><em>pShapeBegin</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../db/d66/namespace_kratos.html#ac398e9982e45de7167981e05b7f5ff57">int</a>&#160;</td>
+          <td class="paramname"><em>ShapeSize</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa55e439f877c3b1628914a0632727b8d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa55e439f877c3b1628914a0632727b8d">&#9670;&nbsp;</a></span>Read()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class TRawDataType , class TContainerExpressionType &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void Kratos::ContainerExpressionHelperUtilities::Read </td>
+          <td>(</td>
+          <td class="paramtype">TContainerExpressionType &amp;&#160;</td>
+          <td class="paramname"><em>rContainerExpression</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">TRawDataType const *&#160;</td>
+          <td class="paramname"><em>pBegin</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../db/d66/namespace_kratos.html#ac398e9982e45de7167981e05b7f5ff57">int</a>&#160;</td>
+          <td class="paramname"><em>NumberOfEntities</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../db/d66/namespace_kratos.html#ac398e9982e45de7167981e05b7f5ff57">int</a> const *&#160;</td>
+          <td class="paramname"><em>pShapeBegin</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../db/d66/namespace_kratos.html#ac398e9982e45de7167981e05b7f5ff57">int</a>&#160;</td>
+          <td class="paramname"><em>ShapeSize</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue May 23 2023 02:19:29 for KratosMultiphysics by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Wed May 24 2023 02:19:53 for KratosMultiphysics by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>
