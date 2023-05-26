@@ -351,27 +351,28 @@ var sectionId = 'dynsection-1';
 <g id="node6" class="node">
 <title>Node6</title>
 <g id="a_node6"><a xlink:href="../../d4/ddc/class_kratos_1_1array__1d.html" target="_top" xlink:title=" ">
-<polygon fill="none" stroke="black" points="96,-1840 96,-2634 260,-2634 260,-1840 96,-1840"/>
-<text text-anchor="middle" x="178" y="-2622" font-family="Helvetica,sans-Serif" font-size="10.00">Kratos::array_1d&lt; double, 3 &gt;</text>
-<polyline fill="none" stroke="black" points="96,-2615 260,-2615 "/>
-<text text-anchor="middle" x="178" y="-2603" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
-<polyline fill="none" stroke="black" points="96,-2596 260,-2596 "/>
+<polygon fill="none" stroke="black" points="96,-1829 96,-2645 260,-2645 260,-1829 96,-1829"/>
+<text text-anchor="middle" x="178" y="-2633" font-family="Helvetica,sans-Serif" font-size="10.00">Kratos::array_1d&lt; double, 3 &gt;</text>
+<polyline fill="none" stroke="black" points="96,-2626 260,-2626 "/>
+<text text-anchor="middle" x="178" y="-2614" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
+<polyline fill="none" stroke="black" points="96,-2607 260,-2607 "/>
+<text text-anchor="start" x="104" y="-2595" font-family="Helvetica,sans-Serif" font-size="10.00">+ array_1d()</text>
 <text text-anchor="start" x="104" y="-2584" font-family="Helvetica,sans-Serif" font-size="10.00">+ array_1d()</text>
 <text text-anchor="start" x="104" y="-2573" font-family="Helvetica,sans-Serif" font-size="10.00">+ array_1d()</text>
 <text text-anchor="start" x="104" y="-2562" font-family="Helvetica,sans-Serif" font-size="10.00">+ array_1d()</text>
 <text text-anchor="start" x="104" y="-2551" font-family="Helvetica,sans-Serif" font-size="10.00">+ array_1d()</text>
 <text text-anchor="start" x="104" y="-2540" font-family="Helvetica,sans-Serif" font-size="10.00">+ array_1d()</text>
 <text text-anchor="start" x="104" y="-2529" font-family="Helvetica,sans-Serif" font-size="10.00">+ array_1d()</text>
-<text text-anchor="start" x="104" y="-2518" font-family="Helvetica,sans-Serif" font-size="10.00">+ array_1d()</text>
+<text text-anchor="start" x="104" y="-2518" font-family="Helvetica,sans-Serif" font-size="10.00">+ operator()()</text>
 <text text-anchor="start" x="104" y="-2507" font-family="Helvetica,sans-Serif" font-size="10.00">+ operator()()</text>
-<text text-anchor="start" x="104" y="-2496" font-family="Helvetica,sans-Serif" font-size="10.00">+ operator()()</text>
+<text text-anchor="start" x="104" y="-2496" font-family="Helvetica,sans-Serif" font-size="10.00">+ operator[]()</text>
 <text text-anchor="start" x="104" y="-2485" font-family="Helvetica,sans-Serif" font-size="10.00">+ operator[]()</text>
-<text text-anchor="start" x="104" y="-2474" font-family="Helvetica,sans-Serif" font-size="10.00">+ operator[]()</text>
+<text text-anchor="start" x="104" y="-2474" font-family="Helvetica,sans-Serif" font-size="10.00">+ operator=()</text>
 <text text-anchor="start" x="104" y="-2463" font-family="Helvetica,sans-Serif" font-size="10.00">+ operator=()</text>
-<text text-anchor="start" x="104" y="-2452" font-family="Helvetica,sans-Serif" font-size="10.00">+ operator=()</text>
-<text text-anchor="start" x="104" y="-2441" font-family="Helvetica,sans-Serif" font-size="10.00">+ operator+=()</text>
-<text text-anchor="start" x="104" y="-2430" font-family="Helvetica,sans-Serif" font-size="10.00">+ operator&#45;=()</text>
-<text text-anchor="start" x="104" y="-2419" font-family="Helvetica,sans-Serif" font-size="10.00">+ operator/=()</text>
+<text text-anchor="start" x="104" y="-2452" font-family="Helvetica,sans-Serif" font-size="10.00">+ operator+=()</text>
+<text text-anchor="start" x="104" y="-2441" font-family="Helvetica,sans-Serif" font-size="10.00">+ operator&#45;=()</text>
+<text text-anchor="start" x="104" y="-2430" font-family="Helvetica,sans-Serif" font-size="10.00">+ operator/=()</text>
+<text text-anchor="start" x="104" y="-2419" font-family="Helvetica,sans-Serif" font-size="10.00">+ operator==()</text>
 <text text-anchor="start" x="104" y="-2408" font-family="Helvetica,sans-Serif" font-size="10.00">* size_type</text>
 <text text-anchor="start" x="104" y="-2397" font-family="Helvetica,sans-Serif" font-size="10.00">* difference_type</text>
 <text text-anchor="start" x="104" y="-2386" font-family="Helvetica,sans-Serif" font-size="10.00">* value_type</text>
@@ -414,30 +415,31 @@ var sectionId = 'dynsection-1';
 <text text-anchor="start" x="104" y="-1979" font-family="Helvetica,sans-Serif" font-size="10.00">* operator+=()</text>
 <text text-anchor="start" x="104" y="-1968" font-family="Helvetica,sans-Serif" font-size="10.00">* operator&#45;=()</text>
 <text text-anchor="start" x="104" y="-1957" font-family="Helvetica,sans-Serif" font-size="10.00">* operator/=()</text>
-<text text-anchor="start" x="104" y="-1946" font-family="Helvetica,sans-Serif" font-size="10.00">* resize()</text>
-<text text-anchor="start" x="104" y="-1935" font-family="Helvetica,sans-Serif" font-size="10.00">* assign_temporary()</text>
-<text text-anchor="start" x="104" y="-1924" font-family="Helvetica,sans-Serif" font-size="10.00">* operator*=()</text>
-<text text-anchor="start" x="104" y="-1913" font-family="Helvetica,sans-Serif" font-size="10.00">* plus_assign()</text>
-<text text-anchor="start" x="104" y="-1902" font-family="Helvetica,sans-Serif" font-size="10.00">* assign()</text>
-<text text-anchor="start" x="104" y="-1891" font-family="Helvetica,sans-Serif" font-size="10.00">* swap()</text>
-<text text-anchor="start" x="104" y="-1880" font-family="Helvetica,sans-Serif" font-size="10.00">* insert_element()</text>
-<text text-anchor="start" x="104" y="-1869" font-family="Helvetica,sans-Serif" font-size="10.00">* erase_element()</text>
-<text text-anchor="start" x="104" y="-1858" font-family="Helvetica,sans-Serif" font-size="10.00">* clear()</text>
-<text text-anchor="start" x="104" y="-1847" font-family="Helvetica,sans-Serif" font-size="10.00">* swap</text>
+<text text-anchor="start" x="104" y="-1946" font-family="Helvetica,sans-Serif" font-size="10.00">* operator==()</text>
+<text text-anchor="start" x="104" y="-1935" font-family="Helvetica,sans-Serif" font-size="10.00">* resize()</text>
+<text text-anchor="start" x="104" y="-1924" font-family="Helvetica,sans-Serif" font-size="10.00">* assign_temporary()</text>
+<text text-anchor="start" x="104" y="-1913" font-family="Helvetica,sans-Serif" font-size="10.00">* operator*=()</text>
+<text text-anchor="start" x="104" y="-1902" font-family="Helvetica,sans-Serif" font-size="10.00">* plus_assign()</text>
+<text text-anchor="start" x="104" y="-1891" font-family="Helvetica,sans-Serif" font-size="10.00">* assign()</text>
+<text text-anchor="start" x="104" y="-1880" font-family="Helvetica,sans-Serif" font-size="10.00">* swap()</text>
+<text text-anchor="start" x="104" y="-1869" font-family="Helvetica,sans-Serif" font-size="10.00">* insert_element()</text>
+<text text-anchor="start" x="104" y="-1858" font-family="Helvetica,sans-Serif" font-size="10.00">* erase_element()</text>
+<text text-anchor="start" x="104" y="-1847" font-family="Helvetica,sans-Serif" font-size="10.00">* clear()</text>
+<text text-anchor="start" x="104" y="-1836" font-family="Helvetica,sans-Serif" font-size="10.00">* swap</text>
 </a>
 </g>
 </g>
 <!-- Node6&#45;&gt;Node1 -->
 <g id="edge8" class="edge">
 <title>Node6&#45;&gt;Node1</title>
-<path fill="none" stroke="#404040" d="M145.51,-1839.75C127.74,-1605.31 107.3,-1302.44 97,-1033 90.94,-874.4 89.02,-697.09 88.7,-553.54"/>
+<path fill="none" stroke="#404040" d="M144.68,-1828.78C127.11,-1595.92 107.14,-1298.26 97,-1033 90.94,-874.4 89.02,-697.09 88.7,-553.54"/>
 <polygon fill="none" stroke="#404040" points="88.7,-553.52 84.69,-547.53 88.67,-541.52 92.69,-547.51 88.7,-553.52"/>
 <text text-anchor="middle" x="140.5" y="-1054" font-family="Helvetica,sans-Serif" font-size="10.00"> #m_unit_normal</text>
 </g>
 <!-- Node6&#45;&gt;Node2 -->
 <g id="edge7" class="edge">
 <title>Node6&#45;&gt;Node2</title>
-<path fill="none" stroke="#404040" d="M177.19,-1839.68C177.71,-1616.49 180,-1332.66 187,-1080 187.32,-1068.56 187.69,-1056.85 188.1,-1045.03"/>
+<path fill="none" stroke="#404040" d="M177.22,-1828.67C177.79,-1607.2 180.12,-1328.52 187,-1080 187.32,-1068.56 187.69,-1056.85 188.1,-1045.03"/>
 <polygon fill="none" stroke="#404040" points="188.12,-1044.66 184.34,-1038.52 188.55,-1032.67 192.33,-1038.81 188.12,-1044.66"/>
 <text text-anchor="middle" x="255.5" y="-1414.5" font-family="Helvetica,sans-Serif" font-size="10.00"> #m_imposed_acceleration</text>
 <text text-anchor="middle" x="255.5" y="-1403.5" font-family="Helvetica,sans-Serif" font-size="10.00">#m_imposed_displacement</text>
@@ -472,7 +474,7 @@ var sectionId = 'dynsection-1';
 <!-- Node7&#45;&gt;Node6 -->
 <g id="edge6" class="edge">
 <title>Node7&#45;&gt;Node6</title>
-<path fill="none" stroke="midnightblue" d="M178,-2678.01C178,-2665.27 178,-2650.49 178,-2634.24"/>
+<path fill="none" stroke="midnightblue" d="M178,-2678.1C178,-2668.32 178,-2657.35 178,-2645.43"/>
 <polygon fill="none" stroke="midnightblue" points="174.5,-2678.22 178,-2688.22 181.5,-2678.22 174.5,-2678.22"/>
 </g>
 </g>

@@ -85,6 +85,7 @@ $(function() {
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a2c4877a6d969d4ea293ebcf668c8b120"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/db0/namespacetesting_1_1run__python__mpi__tests.html#a2c4877a6d969d4ea293ebcf668c8b120">main</a> ()</td></tr>
+<tr class="memdesc:a2c4877a6d969d4ea293ebcf668c8b120"><td class="mdescLeft">&#160;</td><td class="mdescRight">This script executes the MPI tests.  <a href="../../d3/db0/namespacetesting_1_1run__python__mpi__tests.html#a2c4877a6d969d4ea293ebcf668c8b120">More...</a><br /></td></tr>
 <tr class="separator:a2c4877a6d969d4ea293ebcf668c8b120"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
@@ -103,12 +104,17 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>This script executes the MPI tests. </p>
+<p>It takes no parameters and returns no values. The variables that are set by this function, as well as the tests that are executed, are determined by the command line arguments passed to the function. These arguments include:</p>
+<p>-c, &ndash;command: The command to use to launch test cases. If not provided, the default 'runkratos' executable is used. -l, &ndash;level: The minimum level of detail of the tests. Choices are 'mpi_all' (default), 'mpi_nightly', 'mpi_small', and 'mpi_validation'. -v, &ndash;verbosity: The verbosity level. Choices are 0, 1 (default), and 2. -a, &ndash;applications: A list of applications to run, separated by ':'. All compiled applications will be run by default. -n, &ndash;processes: The number of processes to consider. Default is the number of cores of the system. -m, &ndash;mpi_command: The MPI command to consider. Default is mpiexec. -f, &ndash;mpi_flags: The additional MPI flags to consider. Default is empty. -p, &ndash;num_processes_flag: The flag used in order to introduce the number of processes considered. -t, &ndash;timer: The custom time limit for the execution. If not provided, the default values are used.</p>
+<p>In addition to setting default values and parsing command line arguments, the function also runs tests for the 'KratosMPICore' application and for any other applications specified by the user. The tests are run using the specified command and number of processes, and the results are printed to the console. </p>
+
 </div>
 </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu May 25 2023 02:18:17 for KratosMultiphysics by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Fri May 26 2023 02:17:18 for KratosMultiphysics by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

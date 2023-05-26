@@ -149,6 +149,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ab500406afb7616531746c64e76cb26f5"><td class="memTemplParams" colspan="2">template&lt;class AT &gt; </td></tr>
 <tr class="memitem:ab500406afb7616531746c64e76cb26f5"><td class="memTemplItemLeft" align="right" valign="top">BOOST_UBLAS_INLINE <a class="el" href="../../d4/ddc/class_kratos_1_1array__1d.html">array_1d</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d4/ddc/class_kratos_1_1array__1d.html#ab500406afb7616531746c64e76cb26f5">operator/=</a> (const AT &amp;at)</td></tr>
 <tr class="separator:ab500406afb7616531746c64e76cb26f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae51da0ca3fe9c147b13a7939f5baf239"><td class="memItemLeft" align="right" valign="top">BOOST_UBLAS_INLINE <a class="el" href="../../db/d66/namespace_kratos.html#a14b9d687ed53c882489400b57cdf34cd">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/ddc/class_kratos_1_1array__1d.html#ae51da0ca3fe9c147b13a7939f5baf239">operator==</a> (const <a class="el" href="../../d4/ddc/class_kratos_1_1array__1d.html">array_1d</a> &amp;v) const</td></tr>
+<tr class="memdesc:ae51da0ca3fe9c147b13a7939f5baf239"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compares whether this <a class="el" href="../../d4/ddc/class_kratos_1_1array__1d.html" title="Short class definition.">array_1d</a> is equal to the given <a class="el" href="../../d4/ddc/class_kratos_1_1array__1d.html" title="Short class definition.">array_1d</a>.  <a href="../../d4/ddc/class_kratos_1_1array__1d.html#ae51da0ca3fe9c147b13a7939f5baf239">More...</a><br /></td></tr>
+<tr class="separator:ae51da0ca3fe9c147b13a7939f5baf239"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader">Type Definitions</h2></td></tr>
 <tr class="memitem:a203a23f4de15b26b12c20e45827d9c10"><td class="memItemLeft" align="right" valign="top">typedef std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/ddc/class_kratos_1_1array__1d.html#a203a23f4de15b26b12c20e45827d9c10">size_type</a></td></tr>
@@ -1346,6 +1349,43 @@ template&lt;class AE &gt; </div>
 
 </div>
 </div>
+<a id="ae51da0ca3fe9c147b13a7939f5baf239"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae51da0ca3fe9c147b13a7939f5baf239">&#9670;&nbsp;</a></span>operator==()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T , std::size_t N&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOST_UBLAS_INLINE <a class="el" href="../../db/d66/namespace_kratos.html#a14b9d687ed53c882489400b57cdf34cd">bool</a> <a class="el" href="../../d4/ddc/class_kratos_1_1array__1d.html">Kratos::array_1d</a>&lt; T, <a class="el" href="../../df/d42/mmio_8h.html#a3f620e88ba511ca5d32c93b84802ff6e">N</a> &gt;::operator== </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d4/ddc/class_kratos_1_1array__1d.html">array_1d</a>&lt; T, <a class="el" href="../../df/d42/mmio_8h.html#a3f620e88ba511ca5d32c93b84802ff6e">N</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>v</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Compares whether this <a class="el" href="../../d4/ddc/class_kratos_1_1array__1d.html" title="Short class definition.">array_1d</a> is equal to the given <a class="el" href="../../d4/ddc/class_kratos_1_1array__1d.html" title="Short class definition.">array_1d</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">v</td><td>the <a class="el" href="../../d4/ddc/class_kratos_1_1array__1d.html" title="Short class definition.">array_1d</a> to compare to </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if the two arrays are equal, false otherwise </dd></dl>
+
+</div>
+</div>
 <a id="ad20fac4f4297e0fe218eb60aa279948a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad20fac4f4297e0fe218eb60aa279948a">&#9670;&nbsp;</a></span>operator[]() <span class="overload">[1/2]</span></h2>
 
@@ -1678,7 +1718,7 @@ template&lt;class T , std::size_t N&gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu May 25 2023 02:14:44 for KratosMultiphysics by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Fri May 26 2023 02:13:53 for KratosMultiphysics by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

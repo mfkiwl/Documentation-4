@@ -83,7 +83,6 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="../../d1/d4e/dof_8h_source.html">includes/dof.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../d9/d4c/includes_2indexed__object_8h_source.html">includes/indexed_object.h</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for key_hash.h:</div>
 <div class="dyncontent">
@@ -106,18 +105,6 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d9b/struct_kratos_1_1_key_hasher_range.html">Kratos::KeyHasherRange&lt; TClassType &gt;</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is a hasher of general pourpose.  <a href="../../dc/d9b/struct_kratos_1_1_key_hasher_range.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/df9/struct_kratos_1_1_variable_hasher.html">Kratos::VariableHasher&lt; TVariable &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is a hasher for variables.  <a href="../../d7/df9/struct_kratos_1_1_variable_hasher.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d5c/struct_kratos_1_1_variable_comparator.html">Kratos::VariableComparator&lt; TVariable &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is a key comparer between two variables.  <a href="../../d4/d5c/struct_kratos_1_1_variable_comparator.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/ddc/struct_kratos_1_1p_variable_hasher.html">Kratos::pVariableHasher&lt; TVariable &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is a hasher for variables pointers.  <a href="../../d2/ddc/struct_kratos_1_1p_variable_hasher.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d43/struct_kratos_1_1p_variable_comparator.html">Kratos::pVariableComparator&lt; TVariable &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is a key comparer between two variables pointers.  <a href="../../de/d43/struct_kratos_1_1p_variable_comparator.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dcb/struct_kratos_1_1_indexed_object_hasher.html">Kratos::IndexedObjectHasher&lt; TIndexedObject &gt;</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is a hasher for indexed objects.  <a href="../../d1/dcb/struct_kratos_1_1_indexed_object_hasher.html#details">More...</a><br /></td></tr>
@@ -168,9 +155,9 @@ Typedefs</h2></td></tr>
 <tr class="memitem:ga1ba1e34f0af6a7cfcfa9b43e1f8e8c91"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d4d/group___kratos_core.html#ga1ba1e34f0af6a7cfcfa9b43e1f8e8c91">Kratos::IndexType</a> = std::size_t</td></tr>
 <tr class="memdesc:ga1ba1e34f0af6a7cfcfa9b43e1f8e8c91"><td class="mdescLeft">&#160;</td><td class="mdescRight">The definition of the index type.  <a href="../../d5/d4d/group___kratos_core.html#ga1ba1e34f0af6a7cfcfa9b43e1f8e8c91">More...</a><br /></td></tr>
 <tr class="separator:ga1ba1e34f0af6a7cfcfa9b43e1f8e8c91"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga1caa8e9351af7e8e673c579a06c67e42"><td class="memItemLeft" align="right" valign="top">typedef std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d4d/group___kratos_core.html#ga1caa8e9351af7e8e673c579a06c67e42">Kratos::HashType</a></td></tr>
-<tr class="memdesc:ga1caa8e9351af7e8e673c579a06c67e42"><td class="mdescLeft">&#160;</td><td class="mdescRight">The definition of the hash type.  <a href="../../d5/d4d/group___kratos_core.html#ga1caa8e9351af7e8e673c579a06c67e42">More...</a><br /></td></tr>
-<tr class="separator:ga1caa8e9351af7e8e673c579a06c67e42"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf25bb2cc9c29713185f41b42afcce07f"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d4d/group___kratos_core.html#gaf25bb2cc9c29713185f41b42afcce07f">Kratos::HashType</a> = std::size_t</td></tr>
+<tr class="memdesc:gaf25bb2cc9c29713185f41b42afcce07f"><td class="mdescLeft">&#160;</td><td class="mdescRight">The definition of the hash type.  <a href="../../d5/d4d/group___kratos_core.html#gaf25bb2cc9c29713185f41b42afcce07f">More...</a><br /></td></tr>
+<tr class="separator:gaf25bb2cc9c29713185f41b42afcce07f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -183,11 +170,15 @@ Functions</h2></td></tr>
 <tr class="memitem:gae7c3093250c093a11256be0bb1d3824a"><td class="memTemplItemLeft" align="right" valign="top">HashType&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d5/d4d/group___kratos_core.html#gae7c3093250c093a11256be0bb1d3824a">Kratos::HashRange</a> (TClassType First, TClassType Last)</td></tr>
 <tr class="memdesc:gae7c3093250c093a11256be0bb1d3824a"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method combines hash until it reaches the last class in order to obtain a corresponding seed.  <a href="../../d5/d4d/group___kratos_core.html#gae7c3093250c093a11256be0bb1d3824a">More...</a><br /></td></tr>
 <tr class="separator:gae7c3093250c093a11256be0bb1d3824a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader">Kratos Classes</div></td></tr>
+<tr class="memitem:ga4f55d39fe5317b02d70fd077fdb824b5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dc/d25/kratos__export__api_8h.html#a20d062bb43c96bc60d989953a4527098">KRATOS_API_EXTERN</a> template class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d4d/group___kratos_core.html#ga4f55d39fe5317b02d70fd077fdb824b5">Kratos::KRATOS_API</a> (KRATOS_CORE) VariableHasher</td></tr>
+<tr class="memdesc:ga4f55d39fe5317b02d70fd077fdb824b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is a hasher for variables.  <a href="../../d5/d4d/group___kratos_core.html#ga4f55d39fe5317b02d70fd077fdb824b5">More...</a><br /></td></tr>
+<tr class="separator:ga4f55d39fe5317b02d70fd077fdb824b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu May 25 2023 02:14:24 for KratosMultiphysics by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Fri May 26 2023 02:13:34 for KratosMultiphysics by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>
