@@ -173,14 +173,31 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ad2ce2494d241f6c8db80934cad53550a"><td class="memTemplParams" colspan="2">template&lt;class TVariableType &gt; </td></tr>
 <tr class="memitem:ad2ce2494d241f6c8db80934cad53550a"><td class="memTemplItemLeft" align="right" valign="top">TVariableType::Type&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d7/d7a/class_kratos_1_1_properties.html#ad2ce2494d241f6c8db80934cad53550a">GetValue</a> (const TVariableType &amp;rVariable, const <a class="el" href="../../d7/d7a/class_kratos_1_1_properties.html#a72042f877ce32840e2896797cbc53027">GeometryType</a> &amp;rGeometry, const <a class="el" href="../../db/d66/namespace_kratos.html#a2382ac8a486c0d52da7ce94f4ccd6d70">Vector</a> &amp;rShapeFunctionVector, const ProcessInfo &amp;rProcessInfo) const</td></tr>
 <tr class="separator:ad2ce2494d241f6c8db80934cad53550a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4dc07c1e8187e4f09548cff5e29edfe9"><td class="memTemplParams" colspan="2">template&lt;class TVariableType &gt; </td></tr>
-<tr class="memitem:a4dc07c1e8187e4f09548cff5e29edfe9"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d7/d7a/class_kratos_1_1_properties.html#a4dc07c1e8187e4f09548cff5e29edfe9">SetAccessor</a> (const TVariableType &amp;rVariable, <a class="el" href="../../d7/d7a/class_kratos_1_1_properties.html#a6d0fce19240202a19d3e20bc3c1ef139">AccessorPointerType</a> pAccessor)</td></tr>
-<tr class="separator:a4dc07c1e8187e4f09548cff5e29edfe9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab3a16b3c1464f9c0d9786c64bb51b6c0"><td class="memTemplParams" colspan="2">template&lt;class TVariableType &gt; </td></tr>
 <tr class="memitem:ab3a16b3c1464f9c0d9786c64bb51b6c0"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d7/d7a/class_kratos_1_1_properties.html#ab3a16b3c1464f9c0d9786c64bb51b6c0">SetValue</a> (TVariableType const &amp;rV, typename TVariableType::Type const &amp;rValue)</td></tr>
 <tr class="separator:ab3a16b3c1464f9c0d9786c64bb51b6c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7d09abeae7134689520eaa80092078c0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../db/d66/namespace_kratos.html#a14b9d687ed53c882489400b57cdf34cd">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d7a/class_kratos_1_1_properties.html#a7d09abeae7134689520eaa80092078c0">HasVariables</a> () const</td></tr>
 <tr class="separator:a7d09abeae7134689520eaa80092078c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4dc07c1e8187e4f09548cff5e29edfe9"><td class="memTemplParams" colspan="2">template&lt;class TVariableType &gt; </td></tr>
+<tr class="memitem:a4dc07c1e8187e4f09548cff5e29edfe9"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d7/d7a/class_kratos_1_1_properties.html#a4dc07c1e8187e4f09548cff5e29edfe9">SetAccessor</a> (const TVariableType &amp;rVariable, <a class="el" href="../../d7/d7a/class_kratos_1_1_properties.html#a6d0fce19240202a19d3e20bc3c1ef139">AccessorPointerType</a> pAccessor)</td></tr>
+<tr class="memdesc:a4dc07c1e8187e4f09548cff5e29edfe9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the <a class="el" href="../../dd/d64/class_accessor.html" title="This class defines the way a certain property is accessed.">Accessor</a> object This method sets a variable-accessor pair in current properties accessor container.  <a href="../../d7/d7a/class_kratos_1_1_properties.html#a4dc07c1e8187e4f09548cff5e29edfe9">More...</a><br /></td></tr>
+<tr class="separator:a4dc07c1e8187e4f09548cff5e29edfe9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a70bdbcbb912b28d2e439b18852d5425e"><td class="memTemplParams" colspan="2">template&lt;class TVariableType &gt; </td></tr>
+<tr class="memitem:a70bdbcbb912b28d2e439b18852d5425e"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="../../dd/d64/class_accessor.html">Accessor</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d7/d7a/class_kratos_1_1_properties.html#a70bdbcbb912b28d2e439b18852d5425e">GetAccessor</a> (const TVariableType &amp;rVariable)</td></tr>
+<tr class="memdesc:a70bdbcbb912b28d2e439b18852d5425e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the <a class="el" href="../../dd/d64/class_accessor.html" title="This class defines the way a certain property is accessed.">Accessor</a> object If exists, this method returns a pointer to the requested variable accessor If doesn't exist, the method throws an error.  <a href="../../d7/d7a/class_kratos_1_1_properties.html#a70bdbcbb912b28d2e439b18852d5425e">More...</a><br /></td></tr>
+<tr class="separator:a70bdbcbb912b28d2e439b18852d5425e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab044a6948c12bd3dcbaec7469f029d9f"><td class="memTemplParams" colspan="2">template&lt;class TVariableType &gt; </td></tr>
+<tr class="memitem:ab044a6948c12bd3dcbaec7469f029d9f"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="../../dd/d64/class_accessor.html">Accessor</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d7/d7a/class_kratos_1_1_properties.html#ab044a6948c12bd3dcbaec7469f029d9f">GetAccessor</a> (const TVariableType &amp;rVariable) const</td></tr>
+<tr class="memdesc:ab044a6948c12bd3dcbaec7469f029d9f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the <a class="el" href="../../dd/d64/class_accessor.html" title="This class defines the way a certain property is accessed.">Accessor</a> object If exists, this method returns a pointer to the requested variable accessor If doesn't exist, the method throws an error.  <a href="../../d7/d7a/class_kratos_1_1_properties.html#ab044a6948c12bd3dcbaec7469f029d9f">More...</a><br /></td></tr>
+<tr class="separator:ab044a6948c12bd3dcbaec7469f029d9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c5996e7ef1508028abbbae5ce595712"><td class="memTemplParams" colspan="2">template&lt;class TVariableType &gt; </td></tr>
+<tr class="memitem:a9c5996e7ef1508028abbbae5ce595712"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="../../d7/d7a/class_kratos_1_1_properties.html#a6d0fce19240202a19d3e20bc3c1ef139">AccessorPointerType</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d7/d7a/class_kratos_1_1_properties.html#a9c5996e7ef1508028abbbae5ce595712">pGetAccessor</a> (const TVariableType &amp;rVariable)</td></tr>
+<tr class="memdesc:a9c5996e7ef1508028abbbae5ce595712"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the <a class="el" href="../../dd/d64/class_accessor.html" title="This class defines the way a certain property is accessed.">Accessor</a> object If exists, this method returns a pointer to the requested variable accessor If doesn't exist, the method throws an error.  <a href="../../d7/d7a/class_kratos_1_1_properties.html#a9c5996e7ef1508028abbbae5ce595712">More...</a><br /></td></tr>
+<tr class="separator:a9c5996e7ef1508028abbbae5ce595712"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad751e179e7c363458106ebd1b354bca1"><td class="memTemplParams" colspan="2">template&lt;class TVariableType &gt; </td></tr>
+<tr class="memitem:ad751e179e7c363458106ebd1b354bca1"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="../../db/d66/namespace_kratos.html#a14b9d687ed53c882489400b57cdf34cd">bool</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d7/d7a/class_kratos_1_1_properties.html#ad751e179e7c363458106ebd1b354bca1">HasAccessor</a> (const TVariableType &amp;rVariable) const</td></tr>
+<tr class="memdesc:ad751e179e7c363458106ebd1b354bca1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if current properties have an accessor This method checks if current properties have an accessor for the requested variable.  <a href="../../d7/d7a/class_kratos_1_1_properties.html#ad751e179e7c363458106ebd1b354bca1">More...</a><br /></td></tr>
+<tr class="separator:ad751e179e7c363458106ebd1b354bca1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad0d4e15cdba483f492432c516b663b75"><td class="memTemplParams" colspan="2">template&lt;class TXVariableType , class TYVariableType &gt; </td></tr>
 <tr class="memitem:ad0d4e15cdba483f492432c516b663b75"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="../../d7/d7a/class_kratos_1_1_properties.html#a1d1a9420792ba31f50b5e146a4240509">TableType</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d7/d7a/class_kratos_1_1_properties.html#ad0d4e15cdba483f492432c516b663b75">GetTable</a> (const TXVariableType &amp;XVariable, const TYVariableType &amp;YVariable)</td></tr>
 <tr class="separator:ad0d4e15cdba483f492432c516b663b75"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -712,6 +729,92 @@ template&lt;class TVariableType &gt; </div>
 
 </div>
 </div>
+<a id="a70bdbcbb912b28d2e439b18852d5425e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a70bdbcbb912b28d2e439b18852d5425e">&#9670;&nbsp;</a></span>GetAccessor() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class TVariableType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dd/d64/class_accessor.html">Accessor</a>&amp; Kratos::Properties::GetAccessor </td>
+          <td>(</td>
+          <td class="paramtype">const TVariableType &amp;&#160;</td>
+          <td class="paramname"><em>rVariable</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the <a class="el" href="../../dd/d64/class_accessor.html" title="This class defines the way a certain property is accessed.">Accessor</a> object If exists, this method returns a pointer to the requested variable accessor If doesn't exist, the method throws an error. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">TVariableType</td><td>The variable type </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">rVariable</td><td><a class="el" href="../../d1/d66/class_kratos_1_1_variable.html" title="Variable class contains all information needed to store and retrive data from a data container.">Variable</a> to which the accessor refers to </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>AccessorPointerType&amp; Pointer to the requested variable accessor </dd></dl>
+
+</div>
+</div>
+<a id="ab044a6948c12bd3dcbaec7469f029d9f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab044a6948c12bd3dcbaec7469f029d9f">&#9670;&nbsp;</a></span>GetAccessor() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class TVariableType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dd/d64/class_accessor.html">Accessor</a>&amp; Kratos::Properties::GetAccessor </td>
+          <td>(</td>
+          <td class="paramtype">const TVariableType &amp;&#160;</td>
+          <td class="paramname"><em>rVariable</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the <a class="el" href="../../dd/d64/class_accessor.html" title="This class defines the way a certain property is accessed.">Accessor</a> object If exists, this method returns a pointer to the requested variable accessor If doesn't exist, the method throws an error. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">TVariableType</td><td>The variable type </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">rVariable</td><td><a class="el" href="../../d1/d66/class_kratos_1_1_variable.html" title="Variable class contains all information needed to store and retrive data from a data container.">Variable</a> to which the accessor refers to </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>AccessorPointerType&amp; Pointer to the requested variable accessor </dd></dl>
+
+</div>
+</div>
 <a id="a1b95a0c2674e3d62d40edcd7bc528b19"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1b95a0c2674e3d62d40edcd7bc528b19">&#9670;&nbsp;</a></span>GetSubProperties() <span class="overload">[1/4]</span></h2>
 
@@ -1209,6 +1312,51 @@ template&lt;class TVariableType &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad751e179e7c363458106ebd1b354bca1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad751e179e7c363458106ebd1b354bca1">&#9670;&nbsp;</a></span>HasAccessor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class TVariableType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../db/d66/namespace_kratos.html#a14b9d687ed53c882489400b57cdf34cd">bool</a> Kratos::Properties::HasAccessor </td>
+          <td>(</td>
+          <td class="paramtype">const TVariableType &amp;&#160;</td>
+          <td class="paramname"><em>rVariable</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Check if current properties have an accessor This method checks if current properties have an accessor for the requested variable. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">TVariableType</td><td>The variable type </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">rVariable</td><td><a class="el" href="../../d1/d66/class_kratos_1_1_variable.html" title="Variable class contains all information needed to store and retrive data from a data container.">Variable</a> to which we are checking if an accessor exists </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true If there is accessor for the requested variable </dd>
+<dd>
+false If there is no accessor for the requested variable </dd></dl>
 
 </div>
 </div>
@@ -1865,6 +2013,49 @@ template&lt;class TVariableType &gt; </div>
 
 </div>
 </div>
+<a id="a9c5996e7ef1508028abbbae5ce595712"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9c5996e7ef1508028abbbae5ce595712">&#9670;&nbsp;</a></span>pGetAccessor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class TVariableType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d7/d7a/class_kratos_1_1_properties.html#a6d0fce19240202a19d3e20bc3c1ef139">AccessorPointerType</a>&amp; Kratos::Properties::pGetAccessor </td>
+          <td>(</td>
+          <td class="paramtype">const TVariableType &amp;&#160;</td>
+          <td class="paramname"><em>rVariable</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the <a class="el" href="../../dd/d64/class_accessor.html" title="This class defines the way a certain property is accessed.">Accessor</a> object If exists, this method returns a pointer to the requested variable accessor If doesn't exist, the method throws an error. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">TVariableType</td><td>The variable type </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">rVariable</td><td><a class="el" href="../../d1/d66/class_kratos_1_1_variable.html" title="Variable class contains all information needed to store and retrive data from a data container.">Variable</a> to which the accessor refers to </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>AccessorPointerType&amp; Pointer to the requested variable accessor </dd></dl>
+
+</div>
+</div>
 <a id="a1a5d25f8c74f64730469ef768836878c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1a5d25f8c74f64730469ef768836878c">&#9670;&nbsp;</a></span>pGetSubProperties() <span class="overload">[1/2]</span></h2>
 
@@ -2030,6 +2221,21 @@ template&lt;class TVariableType &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Set the <a class="el" href="../../dd/d64/class_accessor.html" title="This class defines the way a certain property is accessed.">Accessor</a> object This method sets a variable-accessor pair in current properties accessor container. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">TVariableType</td><td>The variable type </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">rVariable</td><td><a class="el" href="../../d1/d66/class_kratos_1_1_variable.html" title="Variable class contains all information needed to store and retrive data from a data container.">Variable</a> to which the accessor will refer to </td></tr>
+    <tr><td class="paramname">pAccessor</td><td>Pointer to the accessor instance </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -2234,7 +2440,7 @@ template&lt;class TVariableType &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed May 31 2023 02:36:01 for KratosMultiphysics by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Thu Jun 1 2023 02:57:22 for KratosMultiphysics by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

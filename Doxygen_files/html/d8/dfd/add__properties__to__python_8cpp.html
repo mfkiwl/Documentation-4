@@ -83,14 +83,13 @@ $(function() {
 <div class="title">add_properties_to_python.cpp File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;pybind11/pybind11.h&gt;</code><br />
-<code>#include &quot;<a class="el" href="../../dd/d62/define__python_8h_source.html">includes/define_python.h</a>&quot;</code><br />
+<div class="textblock"><code>#include &quot;<a class="el" href="../../dd/d62/define__python_8h_source.html">includes/define_python.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="../../d8/d3b/mesh_8h_source.html">includes/mesh.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="../../d4/dfe/element_8h_source.html">includes/element.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="../../d7/d6c/condition_8h_source.html">includes/condition.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="../../d8/dbb/properties_8h_source.html">includes/properties.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="../../d6/ddf/constitutive__law_8h_source.html">includes/constitutive_law.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../da/d14/add__mesh__to__python_8h_source.html">python/add_mesh_to_python.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../db/da2/add__properties__to__python_8h_source.html">python/add_properties_to_python.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="../../df/d61/containers__interface_8h_source.html">python/containers_interface.h</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for add_properties_to_python.cpp:</div>
@@ -109,11 +108,15 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:ae0c4a62a7260dd7b1115eba2c439be02"><td class="memItemLeft" align="right" valign="top">typedef PointerVectorSet&lt; Properties, IndexedObject &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d07/namespace_kratos_1_1_python.html#ae0c4a62a7260dd7b1115eba2c439be02">Kratos::Python::PropertiesContainerType</a></td></tr>
+<tr class="memitem:a9d21f7c6a66f5580791da8acd943dbef"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dfd/add__properties__to__python_8cpp.html#a9d21f7c6a66f5580791da8acd943dbef">AccessorBindType</a> = std::unique_ptr&lt; Kratos::Accessor &gt;</td></tr>
+<tr class="separator:a9d21f7c6a66f5580791da8acd943dbef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae0c4a62a7260dd7b1115eba2c439be02"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d07/namespace_kratos_1_1_python.html#ae0c4a62a7260dd7b1115eba2c439be02">Kratos::Python::PropertiesContainerType</a> = PointerVectorSet&lt; Properties, IndexedObject &gt;</td></tr>
 <tr class="separator:ae0c4a62a7260dd7b1115eba2c439be02"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:a6111894c678b0ab8c8bcd8d07b0b32c4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dfd/add__properties__to__python_8cpp.html#a6111894c678b0ab8c8bcd8d07b0b32c4">PYBIND11_MAKE_OPAQUE</a> (<a class="el" href="../../da/d72/add__accessors__to__python_8cpp.html#a9d21f7c6a66f5580791da8acd943dbef">AccessorBindType</a>)</td></tr>
+<tr class="separator:a6111894c678b0ab8c8bcd8d07b0b32c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a26c50fa2f7c4147a75f1ec785c4d4208"><td class="memTemplParams" colspan="2">template&lt;class TContainerType , class TVariableType &gt; </td></tr>
 <tr class="memitem:a26c50fa2f7c4147a75f1ec785c4d4208"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../da/d07/namespace_kratos_1_1_python.html#a26c50fa2f7c4147a75f1ec785c4d4208">Kratos::Python::PropertiesHasHelperFunction</a> (TContainerType &amp;rProperties, const TVariableType &amp;rVar)</td></tr>
 <tr class="separator:a26c50fa2f7c4147a75f1ec785c4d4208"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -147,13 +150,53 @@ Functions</h2></td></tr>
 <tr class="memitem:a395c83eced18757ce71e3cf25e2e90a3"><td class="memTemplParams" colspan="2">template&lt;class TContainerType , class XVariableType , class YVariableType &gt; </td></tr>
 <tr class="memitem:a395c83eced18757ce71e3cf25e2e90a3"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../da/d07/namespace_kratos_1_1_python.html#a395c83eced18757ce71e3cf25e2e90a3">Kratos::Python::HasTableHelperFunction1</a> (TContainerType &amp;rContainer, const XVariableType &amp;XVar, const YVariableType &amp;YVar)</td></tr>
 <tr class="separator:a395c83eced18757ce71e3cf25e2e90a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a74e7adb23cc100966f64dd9263777de4"><td class="memTemplParams" colspan="2">template&lt;typename TVariableType &gt; </td></tr>
+<tr class="memitem:a74e7adb23cc100966f64dd9263777de4"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../da/d07/namespace_kratos_1_1_python.html#a74e7adb23cc100966f64dd9263777de4">Kratos::Python::AddInterfaceToAccessorFold</a> (pybind11::class_&lt; Properties, Properties::Pointer, Properties::BaseType &gt; &amp;pyProperties)</td></tr>
+<tr class="separator:a74e7adb23cc100966f64dd9263777de4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a91a2f08fa95f756a2d79dcf4fadbe73d"><td class="memTemplParams" colspan="2">template&lt;typename... TArgs&gt; </td></tr>
+<tr class="memitem:a91a2f08fa95f756a2d79dcf4fadbe73d"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../da/d07/namespace_kratos_1_1_python.html#a91a2f08fa95f756a2d79dcf4fadbe73d">Kratos::Python::AddInterfaceToAccessor</a> (pybind11::class_&lt; Properties, Properties::Pointer, Properties::BaseType &gt; &amp;pyProperties)</td></tr>
+<tr class="separator:a91a2f08fa95f756a2d79dcf4fadbe73d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa96c5ccfff43b2e86d517f1cb822c970"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d07/namespace_kratos_1_1_python.html#aa96c5ccfff43b2e86d517f1cb822c970">Kratos::Python::AddPropertiesToPython</a> (pybind11::module &amp;m)</td></tr>
 <tr class="separator:aa96c5ccfff43b2e86d517f1cb822c970"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Typedef Documentation</h2>
+<a id="a9d21f7c6a66f5580791da8acd943dbef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9d21f7c6a66f5580791da8acd943dbef">&#9670;&nbsp;</a></span>AccessorBindType</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="../../da/d72/add__accessors__to__python_8cpp.html#a9d21f7c6a66f5580791da8acd943dbef">AccessorBindType</a> =  std::unique_ptr&lt;Kratos::Accessor&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="a6111894c678b0ab8c8bcd8d07b0b32c4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6111894c678b0ab8c8bcd8d07b0b32c4">&#9670;&nbsp;</a></span>PYBIND11_MAKE_OPAQUE()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">PYBIND11_MAKE_OPAQUE </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../da/d72/add__accessors__to__python_8cpp.html#a9d21f7c6a66f5580791da8acd943dbef">AccessorBindType</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed May 31 2023 02:35:36 for KratosMultiphysics by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Thu Jun 1 2023 02:57:03 for KratosMultiphysics by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>
