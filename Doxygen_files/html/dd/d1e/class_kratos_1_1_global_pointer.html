@@ -134,6 +134,9 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ad2d030134e2390a705c5665a83af5e6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a01d0fc54111ec11c31afdaa69475a2bc"><td class="memItemLeft" align="right" valign="top">TDataType const  *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d1e/class_kratos_1_1_global_pointer.html#a01d0fc54111ec11c31afdaa69475a2bc">operator-&gt;</a> () const</td></tr>
 <tr class="separator:a01d0fc54111ec11c31afdaa69475a2bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a453a2734f1b4f91b21b69416a4f01ed7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../db/d66/namespace_kratos.html#a14b9d687ed53c882489400b57cdf34cd">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d1e/class_kratos_1_1_global_pointer.html#a453a2734f1b4f91b21b69416a4f01ed7">operator==</a> (const <a class="el" href="../../dd/d1e/class_kratos_1_1_global_pointer.html">GlobalPointer</a> &amp;rOther)</td></tr>
+<tr class="memdesc:a453a2734f1b4f91b21b69416a4f01ed7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overloads the '==' operator to compare two <a class="el" href="../../dd/d1e/class_kratos_1_1_global_pointer.html">GlobalPointer</a> objects of the same template type. Returns true if the underlying pointers are equal.  <a href="../../dd/d1e/class_kratos_1_1_global_pointer.html#a453a2734f1b4f91b21b69416a4f01ed7">More...</a><br /></td></tr>
+<tr class="separator:a453a2734f1b4f91b21b69416a4f01ed7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aea265720cbd3c9c64e6e66947cfc8929"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d1e/class_kratos_1_1_global_pointer.html#aea265720cbd3c9c64e6e66947cfc8929">save</a> (char *buffer) const</td></tr>
 <tr class="separator:aea265720cbd3c9c64e6e66947cfc8929"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7c7383d55830dc588ea8136b290a8b50"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d1e/class_kratos_1_1_global_pointer.html#a7c7383d55830dc588ea8136b290a8b50">load</a> (char *buffer)</td></tr>
@@ -789,6 +792,43 @@ template&lt;class TDataType &gt; </div>
 
 </div>
 </div>
+<a id="a453a2734f1b4f91b21b69416a4f01ed7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a453a2734f1b4f91b21b69416a4f01ed7">&#9670;&nbsp;</a></span>operator==()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class TDataType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../db/d66/namespace_kratos.html#a14b9d687ed53c882489400b57cdf34cd">bool</a> <a class="el" href="../../dd/d1e/class_kratos_1_1_global_pointer.html">Kratos::GlobalPointer</a>&lt; TDataType &gt;::operator== </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../dd/d1e/class_kratos_1_1_global_pointer.html">GlobalPointer</a>&lt; TDataType &gt; &amp;&#160;</td>
+          <td class="paramname"><em>rOther</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Overloads the '==' operator to compare two <a class="el" href="../../dd/d1e/class_kratos_1_1_global_pointer.html">GlobalPointer</a> objects of the same template type. Returns true if the underlying pointers are equal. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">rOther</td><td>The <a class="el" href="../../dd/d1e/class_kratos_1_1_global_pointer.html">GlobalPointer</a> object to be compared. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if the underlying pointers are equal, false otherwise. </dd></dl>
+
+</div>
+</div>
 <a id="aea265720cbd3c9c64e6e66947cfc8929"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aea265720cbd3c9c64e6e66947cfc8929">&#9670;&nbsp;</a></span>save()</h2>
 
@@ -854,7 +894,7 @@ template&lt;class TDataType &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Jun 1 2023 02:57:21 for KratosMultiphysics by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Fri Jun 2 2023 02:34:53 for KratosMultiphysics by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>
