@@ -312,7 +312,7 @@ $(function() {
 <div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">int</span> world_size = rDataCommunicator.Size();</div>
 <div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160; </div>
 <div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;        <span class="comment">// Getting number of entities</span></div>
-<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">int</span> number_of_entities = rContainer.size();</div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;        <span class="keyword">const</span> std::size_t number_of_entities = rContainer.size();</div>
 <div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160; </div>
 <div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;        <span class="comment">// Getting global number of points</span></div>
 <div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;        std::vector&lt;int&gt; number_of_entities_per_partition(world_size);</div>
@@ -321,7 +321,7 @@ $(function() {
 <div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160; </div>
 <div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;        <span class="comment">// Retrieve the ids</span></div>
 <div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;        std::vector&lt;int&gt; global_id_list, local_id_list;</div>
-<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;        local_id_list.reserve(rContainer.size());</div>
+<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;        local_id_list.reserve(number_of_entities);</div>
 <div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;        <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; r_entity : rContainer) {</div>
 <div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;            local_id_list.push_back(r_entity.Id());</div>
 <div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;        }</div>
@@ -524,7 +524,7 @@ $(function() {
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jun 6 2023 02:34:33 for KratosMultiphysics by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Wed Jun 7 2023 02:37:48 for KratosMultiphysics by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

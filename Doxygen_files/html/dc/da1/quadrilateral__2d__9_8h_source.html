@@ -908,84 +908,91 @@ $(function() {
 <div class="line"><a name="l01221"></a><span class="lineno"> 1221</span>&#160;                Quadrature &lt; QuadrilateralGaussLegendreIntegrationPoints3,</div>
 <div class="line"><a name="l01222"></a><span class="lineno"> 1222</span>&#160;                2, IntegrationPoint&lt;3&gt; &gt;::GenerateIntegrationPoints(),</div>
 <div class="line"><a name="l01223"></a><span class="lineno"> 1223</span>&#160;                Quadrature &lt; QuadrilateralGaussLegendreIntegrationPoints4,</div>
-<div class="line"><a name="l01224"></a><span class="lineno"> 1224</span>&#160;                2, IntegrationPoint&lt;3&gt; &gt;::GenerateIntegrationPoints()</div>
-<div class="line"><a name="l01225"></a><span class="lineno"> 1225</span>&#160;            }</div>
-<div class="line"><a name="l01226"></a><span class="lineno"> 1226</span>&#160;        };</div>
-<div class="line"><a name="l01227"></a><span class="lineno"> 1227</span>&#160;        <span class="keywordflow">return</span> integration_points;</div>
-<div class="line"><a name="l01228"></a><span class="lineno"> 1228</span>&#160;    }</div>
-<div class="line"><a name="l01229"></a><span class="lineno"> 1229</span>&#160; </div>
-<div class="line"><a name="l01233"></a><span class="lineno"> 1233</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="../../d8/df8/class_kratos_1_1_quadrilateral2_d9.html#a6643e530fb404547a020578057e3d7d5">ShapeFunctionsValuesContainerType</a> AllShapeFunctionsValues()</div>
-<div class="line"><a name="l01234"></a><span class="lineno"> 1234</span>&#160;    {</div>
-<div class="line"><a name="l01235"></a><span class="lineno"> 1235</span>&#160;        <a class="code" href="../../d8/df8/class_kratos_1_1_quadrilateral2_d9.html#a6643e530fb404547a020578057e3d7d5">ShapeFunctionsValuesContainerType</a> shape_functions_values =</div>
-<div class="line"><a name="l01236"></a><span class="lineno"> 1236</span>&#160;        {</div>
-<div class="line"><a name="l01237"></a><span class="lineno"> 1237</span>&#160;            {</div>
-<div class="line"><a name="l01238"></a><span class="lineno"> 1238</span>&#160;                Quadrilateral2D9&lt;TPointType&gt;::CalculateShapeFunctionsIntegrationPointsValues(</div>
-<div class="line"><a name="l01239"></a><span class="lineno"> 1239</span>&#160;                    <a class="code" href="../../dc/d8c/class_kratos_1_1_geometry_data.html#a86f17c328cce116053a8786b7a0f404fac865d92aa445dbb1943a3ea35d55a52e">GeometryData::IntegrationMethod::GI_GAUSS_1</a> ),</div>
+<div class="line"><a name="l01224"></a><span class="lineno"> 1224</span>&#160;                2, IntegrationPoint&lt;3&gt; &gt;::GenerateIntegrationPoints(),</div>
+<div class="line"><a name="l01225"></a><span class="lineno"> 1225</span>&#160;                Quadrature &lt; QuadrilateralGaussLegendreIntegrationPoints5,</div>
+<div class="line"><a name="l01226"></a><span class="lineno"> 1226</span>&#160;                2, IntegrationPoint&lt;3&gt; &gt;::GenerateIntegrationPoints()</div>
+<div class="line"><a name="l01227"></a><span class="lineno"> 1227</span>&#160;            }</div>
+<div class="line"><a name="l01228"></a><span class="lineno"> 1228</span>&#160;        };</div>
+<div class="line"><a name="l01229"></a><span class="lineno"> 1229</span>&#160;        <span class="keywordflow">return</span> integration_points;</div>
+<div class="line"><a name="l01230"></a><span class="lineno"> 1230</span>&#160;    }</div>
+<div class="line"><a name="l01231"></a><span class="lineno"> 1231</span>&#160; </div>
+<div class="line"><a name="l01235"></a><span class="lineno"> 1235</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="../../d8/df8/class_kratos_1_1_quadrilateral2_d9.html#a6643e530fb404547a020578057e3d7d5">ShapeFunctionsValuesContainerType</a> AllShapeFunctionsValues()</div>
+<div class="line"><a name="l01236"></a><span class="lineno"> 1236</span>&#160;    {</div>
+<div class="line"><a name="l01237"></a><span class="lineno"> 1237</span>&#160;        <a class="code" href="../../d8/df8/class_kratos_1_1_quadrilateral2_d9.html#a6643e530fb404547a020578057e3d7d5">ShapeFunctionsValuesContainerType</a> shape_functions_values =</div>
+<div class="line"><a name="l01238"></a><span class="lineno"> 1238</span>&#160;        {</div>
+<div class="line"><a name="l01239"></a><span class="lineno"> 1239</span>&#160;            {</div>
 <div class="line"><a name="l01240"></a><span class="lineno"> 1240</span>&#160;                Quadrilateral2D9&lt;TPointType&gt;::CalculateShapeFunctionsIntegrationPointsValues(</div>
-<div class="line"><a name="l01241"></a><span class="lineno"> 1241</span>&#160;                    <a class="code" href="../../dc/d8c/class_kratos_1_1_geometry_data.html#a86f17c328cce116053a8786b7a0f404fae2cedfa1aef3c412f3530688f51acc5d">GeometryData::IntegrationMethod::GI_GAUSS_2</a> ),</div>
+<div class="line"><a name="l01241"></a><span class="lineno"> 1241</span>&#160;                    <a class="code" href="../../dc/d8c/class_kratos_1_1_geometry_data.html#a86f17c328cce116053a8786b7a0f404fac865d92aa445dbb1943a3ea35d55a52e">GeometryData::IntegrationMethod::GI_GAUSS_1</a> ),</div>
 <div class="line"><a name="l01242"></a><span class="lineno"> 1242</span>&#160;                Quadrilateral2D9&lt;TPointType&gt;::CalculateShapeFunctionsIntegrationPointsValues(</div>
-<div class="line"><a name="l01243"></a><span class="lineno"> 1243</span>&#160;                    <a class="code" href="../../dc/d8c/class_kratos_1_1_geometry_data.html#a86f17c328cce116053a8786b7a0f404fafcb35549294c506ea4670ec08dacd31c">GeometryData::IntegrationMethod::GI_GAUSS_3</a> ),</div>
+<div class="line"><a name="l01243"></a><span class="lineno"> 1243</span>&#160;                    <a class="code" href="../../dc/d8c/class_kratos_1_1_geometry_data.html#a86f17c328cce116053a8786b7a0f404fae2cedfa1aef3c412f3530688f51acc5d">GeometryData::IntegrationMethod::GI_GAUSS_2</a> ),</div>
 <div class="line"><a name="l01244"></a><span class="lineno"> 1244</span>&#160;                Quadrilateral2D9&lt;TPointType&gt;::CalculateShapeFunctionsIntegrationPointsValues(</div>
-<div class="line"><a name="l01245"></a><span class="lineno"> 1245</span>&#160;                    <a class="code" href="../../dc/d8c/class_kratos_1_1_geometry_data.html#a86f17c328cce116053a8786b7a0f404faed8616dd9d149dde998143b383b9861a">GeometryData::IntegrationMethod::GI_GAUSS_4</a> ),</div>
-<div class="line"><a name="l01246"></a><span class="lineno"> 1246</span>&#160;            }</div>
-<div class="line"><a name="l01247"></a><span class="lineno"> 1247</span>&#160;        };</div>
-<div class="line"><a name="l01248"></a><span class="lineno"> 1248</span>&#160;        <span class="keywordflow">return</span> shape_functions_values;</div>
-<div class="line"><a name="l01249"></a><span class="lineno"> 1249</span>&#160;    }</div>
-<div class="line"><a name="l01250"></a><span class="lineno"> 1250</span>&#160; </div>
-<div class="line"><a name="l01254"></a><span class="lineno"> 1254</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="../../d8/df8/class_kratos_1_1_quadrilateral2_d9.html#af9b2414974034a89c6d54f4b807c6dea">ShapeFunctionsLocalGradientsContainerType</a> AllShapeFunctionsLocalGradients()</div>
-<div class="line"><a name="l01255"></a><span class="lineno"> 1255</span>&#160;    {</div>
-<div class="line"><a name="l01256"></a><span class="lineno"> 1256</span>&#160;        <a class="code" href="../../d8/df8/class_kratos_1_1_quadrilateral2_d9.html#af9b2414974034a89c6d54f4b807c6dea">ShapeFunctionsLocalGradientsContainerType</a> shape_functions_local_gradients =</div>
-<div class="line"><a name="l01257"></a><span class="lineno"> 1257</span>&#160;        {</div>
-<div class="line"><a name="l01258"></a><span class="lineno"> 1258</span>&#160;            {</div>
-<div class="line"><a name="l01259"></a><span class="lineno"> 1259</span>&#160;                Quadrilateral2D9&lt;TPointType&gt;::CalculateShapeFunctionsIntegrationPointsLocalGradients</div>
-<div class="line"><a name="l01260"></a><span class="lineno"> 1260</span>&#160;                ( <a class="code" href="../../dc/d8c/class_kratos_1_1_geometry_data.html#a86f17c328cce116053a8786b7a0f404fac865d92aa445dbb1943a3ea35d55a52e">GeometryData::IntegrationMethod::GI_GAUSS_1</a> ),</div>
-<div class="line"><a name="l01261"></a><span class="lineno"> 1261</span>&#160;                Quadrilateral2D9&lt;TPointType&gt;::CalculateShapeFunctionsIntegrationPointsLocalGradients</div>
-<div class="line"><a name="l01262"></a><span class="lineno"> 1262</span>&#160;                ( <a class="code" href="../../dc/d8c/class_kratos_1_1_geometry_data.html#a86f17c328cce116053a8786b7a0f404fae2cedfa1aef3c412f3530688f51acc5d">GeometryData::IntegrationMethod::GI_GAUSS_2</a> ),</div>
+<div class="line"><a name="l01245"></a><span class="lineno"> 1245</span>&#160;                    <a class="code" href="../../dc/d8c/class_kratos_1_1_geometry_data.html#a86f17c328cce116053a8786b7a0f404fafcb35549294c506ea4670ec08dacd31c">GeometryData::IntegrationMethod::GI_GAUSS_3</a> ),</div>
+<div class="line"><a name="l01246"></a><span class="lineno"> 1246</span>&#160;                Quadrilateral2D9&lt;TPointType&gt;::CalculateShapeFunctionsIntegrationPointsValues(</div>
+<div class="line"><a name="l01247"></a><span class="lineno"> 1247</span>&#160;                    <a class="code" href="../../dc/d8c/class_kratos_1_1_geometry_data.html#a86f17c328cce116053a8786b7a0f404faed8616dd9d149dde998143b383b9861a">GeometryData::IntegrationMethod::GI_GAUSS_4</a> ),</div>
+<div class="line"><a name="l01248"></a><span class="lineno"> 1248</span>&#160;                Quadrilateral2D9&lt;TPointType&gt;::CalculateShapeFunctionsIntegrationPointsValues(</div>
+<div class="line"><a name="l01249"></a><span class="lineno"> 1249</span>&#160;                    <a class="code" href="../../dc/d8c/class_kratos_1_1_geometry_data.html#a86f17c328cce116053a8786b7a0f404fab8e55895af8a242a5791cd7aba1b7890">GeometryData::IntegrationMethod::GI_GAUSS_5</a> ),</div>
+<div class="line"><a name="l01250"></a><span class="lineno"> 1250</span>&#160;            }</div>
+<div class="line"><a name="l01251"></a><span class="lineno"> 1251</span>&#160;        };</div>
+<div class="line"><a name="l01252"></a><span class="lineno"> 1252</span>&#160;        <span class="keywordflow">return</span> shape_functions_values;</div>
+<div class="line"><a name="l01253"></a><span class="lineno"> 1253</span>&#160;    }</div>
+<div class="line"><a name="l01254"></a><span class="lineno"> 1254</span>&#160; </div>
+<div class="line"><a name="l01258"></a><span class="lineno"> 1258</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> <a class="code" href="../../d8/df8/class_kratos_1_1_quadrilateral2_d9.html#af9b2414974034a89c6d54f4b807c6dea">ShapeFunctionsLocalGradientsContainerType</a> AllShapeFunctionsLocalGradients()</div>
+<div class="line"><a name="l01259"></a><span class="lineno"> 1259</span>&#160;    {</div>
+<div class="line"><a name="l01260"></a><span class="lineno"> 1260</span>&#160;        <a class="code" href="../../d8/df8/class_kratos_1_1_quadrilateral2_d9.html#af9b2414974034a89c6d54f4b807c6dea">ShapeFunctionsLocalGradientsContainerType</a> shape_functions_local_gradients =</div>
+<div class="line"><a name="l01261"></a><span class="lineno"> 1261</span>&#160;        {</div>
+<div class="line"><a name="l01262"></a><span class="lineno"> 1262</span>&#160;            {</div>
 <div class="line"><a name="l01263"></a><span class="lineno"> 1263</span>&#160;                Quadrilateral2D9&lt;TPointType&gt;::CalculateShapeFunctionsIntegrationPointsLocalGradients</div>
-<div class="line"><a name="l01264"></a><span class="lineno"> 1264</span>&#160;                ( <a class="code" href="../../dc/d8c/class_kratos_1_1_geometry_data.html#a86f17c328cce116053a8786b7a0f404fafcb35549294c506ea4670ec08dacd31c">GeometryData::IntegrationMethod::GI_GAUSS_3</a> ),</div>
+<div class="line"><a name="l01264"></a><span class="lineno"> 1264</span>&#160;                ( <a class="code" href="../../dc/d8c/class_kratos_1_1_geometry_data.html#a86f17c328cce116053a8786b7a0f404fac865d92aa445dbb1943a3ea35d55a52e">GeometryData::IntegrationMethod::GI_GAUSS_1</a> ),</div>
 <div class="line"><a name="l01265"></a><span class="lineno"> 1265</span>&#160;                Quadrilateral2D9&lt;TPointType&gt;::CalculateShapeFunctionsIntegrationPointsLocalGradients</div>
-<div class="line"><a name="l01266"></a><span class="lineno"> 1266</span>&#160;                ( <a class="code" href="../../dc/d8c/class_kratos_1_1_geometry_data.html#a86f17c328cce116053a8786b7a0f404faed8616dd9d149dde998143b383b9861a">GeometryData::IntegrationMethod::GI_GAUSS_4</a> ),</div>
-<div class="line"><a name="l01267"></a><span class="lineno"> 1267</span>&#160;            }</div>
-<div class="line"><a name="l01268"></a><span class="lineno"> 1268</span>&#160;        };</div>
-<div class="line"><a name="l01269"></a><span class="lineno"> 1269</span>&#160;        <span class="keywordflow">return</span> shape_functions_local_gradients;</div>
-<div class="line"><a name="l01270"></a><span class="lineno"> 1270</span>&#160;    }</div>
-<div class="line"><a name="l01271"></a><span class="lineno"> 1271</span>&#160; </div>
-<div class="line"><a name="l01276"></a><span class="lineno"><a class="line" href="../../d8/df8/class_kratos_1_1_quadrilateral2_d9.html#ada14bc07c50ebd541bda365e933cc8d6"> 1276</a></span>&#160;    <span class="keyword">template</span>&lt;<span class="keyword">class</span> TOtherPo<span class="keywordtype">int</span>Type&gt; <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="../../d8/df8/class_kratos_1_1_quadrilateral2_d9.html">Quadrilateral2D9</a>;</div>
+<div class="line"><a name="l01266"></a><span class="lineno"> 1266</span>&#160;                ( <a class="code" href="../../dc/d8c/class_kratos_1_1_geometry_data.html#a86f17c328cce116053a8786b7a0f404fae2cedfa1aef3c412f3530688f51acc5d">GeometryData::IntegrationMethod::GI_GAUSS_2</a> ),</div>
+<div class="line"><a name="l01267"></a><span class="lineno"> 1267</span>&#160;                Quadrilateral2D9&lt;TPointType&gt;::CalculateShapeFunctionsIntegrationPointsLocalGradients</div>
+<div class="line"><a name="l01268"></a><span class="lineno"> 1268</span>&#160;                ( <a class="code" href="../../dc/d8c/class_kratos_1_1_geometry_data.html#a86f17c328cce116053a8786b7a0f404fafcb35549294c506ea4670ec08dacd31c">GeometryData::IntegrationMethod::GI_GAUSS_3</a> ),</div>
+<div class="line"><a name="l01269"></a><span class="lineno"> 1269</span>&#160;                Quadrilateral2D9&lt;TPointType&gt;::CalculateShapeFunctionsIntegrationPointsLocalGradients</div>
+<div class="line"><a name="l01270"></a><span class="lineno"> 1270</span>&#160;                ( <a class="code" href="../../dc/d8c/class_kratos_1_1_geometry_data.html#a86f17c328cce116053a8786b7a0f404faed8616dd9d149dde998143b383b9861a">GeometryData::IntegrationMethod::GI_GAUSS_4</a> ),</div>
+<div class="line"><a name="l01271"></a><span class="lineno"> 1271</span>&#160;                Quadrilateral2D9&lt;TPointType&gt;::CalculateShapeFunctionsIntegrationPointsLocalGradients</div>
+<div class="line"><a name="l01272"></a><span class="lineno"> 1272</span>&#160;                ( <a class="code" href="../../dc/d8c/class_kratos_1_1_geometry_data.html#a86f17c328cce116053a8786b7a0f404fab8e55895af8a242a5791cd7aba1b7890">GeometryData::IntegrationMethod::GI_GAUSS_5</a> ),</div>
+<div class="line"><a name="l01273"></a><span class="lineno"> 1273</span>&#160;            }</div>
+<div class="line"><a name="l01274"></a><span class="lineno"> 1274</span>&#160;        };</div>
+<div class="line"><a name="l01275"></a><span class="lineno"> 1275</span>&#160;        <span class="keywordflow">return</span> shape_functions_local_gradients;</div>
+<div class="line"><a name="l01276"></a><span class="lineno"> 1276</span>&#160;    }</div>
 <div class="line"><a name="l01277"></a><span class="lineno"> 1277</span>&#160; </div>
-<div class="line"><a name="l01282"></a><span class="lineno"> 1282</span>&#160;}; <span class="comment">// Class Quadrilateral2D9</span></div>
+<div class="line"><a name="l01282"></a><span class="lineno"><a class="line" href="../../d8/df8/class_kratos_1_1_quadrilateral2_d9.html#ada14bc07c50ebd541bda365e933cc8d6"> 1282</a></span>&#160;    <span class="keyword">template</span>&lt;<span class="keyword">class</span> TOtherPo<span class="keywordtype">int</span>Type&gt; <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="../../d8/df8/class_kratos_1_1_quadrilateral2_d9.html">Quadrilateral2D9</a>;</div>
 <div class="line"><a name="l01283"></a><span class="lineno"> 1283</span>&#160; </div>
-<div class="line"><a name="l01289"></a><span class="lineno"><a class="line" href="../../db/d66/namespace_kratos.html#a715bef4b399a43a6d90606eed6a7c06f"> 1289</a></span>&#160;<span class="keyword">template</span>&lt; <span class="keyword">class</span> TPo<span class="keywordtype">int</span>Type &gt; <span class="keyword">inline</span> std::istream&amp; <a class="code" href="../../db/d66/namespace_kratos.html#a9c6097d0b0a27d1cea94992b1087f56a">operator &gt;&gt; </a>(</div>
-<div class="line"><a name="l01290"></a><span class="lineno"> 1290</span>&#160;    std::istream&amp; rIStream,</div>
-<div class="line"><a name="l01291"></a><span class="lineno"> 1291</span>&#160;    <a class="code" href="../../d8/df8/class_kratos_1_1_quadrilateral2_d9.html">Quadrilateral2D9&lt;TPointType&gt;</a>&amp; rThis );</div>
-<div class="line"><a name="l01292"></a><span class="lineno"> 1292</span>&#160; </div>
-<div class="line"><a name="l01294"></a><span class="lineno"><a class="line" href="../../db/d66/namespace_kratos.html#adb60b3bc0a617078cc06a065a035fa2f"> 1294</a></span>&#160;<span class="keyword">template</span>&lt; <span class="keyword">class</span> TPo<span class="keywordtype">int</span>Type &gt; <span class="keyword">inline</span> std::ostream&amp; <a class="code" href="../../db/d66/namespace_kratos.html#acfc842a43d19dffc2d8105e5cbea17a9">operator &lt;&lt; </a>(</div>
-<div class="line"><a name="l01295"></a><span class="lineno"> 1295</span>&#160;    std::ostream&amp; rOStream,</div>
-<div class="line"><a name="l01296"></a><span class="lineno"> 1296</span>&#160;    <span class="keyword">const</span> <a class="code" href="../../d8/df8/class_kratos_1_1_quadrilateral2_d9.html">Quadrilateral2D9&lt;TPointType&gt;</a>&amp; rThis )</div>
-<div class="line"><a name="l01297"></a><span class="lineno"> 1297</span>&#160;{</div>
-<div class="line"><a name="l01298"></a><span class="lineno"> 1298</span>&#160;    rThis.<a class="code" href="../../d8/df8/class_kratos_1_1_quadrilateral2_d9.html#ad9efe0f02dc01b4d8ec2c6b1ded06b3d">PrintInfo</a>( rOStream );</div>
-<div class="line"><a name="l01299"></a><span class="lineno"> 1299</span>&#160;    rOStream &lt;&lt; std::endl;</div>
-<div class="line"><a name="l01300"></a><span class="lineno"> 1300</span>&#160;    rThis.<a class="code" href="../../d8/df8/class_kratos_1_1_quadrilateral2_d9.html#a226692d53aa5c0a0d0dbef7ad63c8cc5">PrintData</a>( rOStream );</div>
-<div class="line"><a name="l01301"></a><span class="lineno"> 1301</span>&#160;    <span class="keywordflow">return</span> rOStream;</div>
-<div class="line"><a name="l01302"></a><span class="lineno"> 1302</span>&#160;}</div>
-<div class="line"><a name="l01303"></a><span class="lineno"> 1303</span>&#160; </div>
-<div class="line"><a name="l01304"></a><span class="lineno"> 1304</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">class</span> TPo<span class="keywordtype">int</span>Type&gt;</div>
-<div class="line"><a name="l01305"></a><span class="lineno"> 1305</span>&#160;<span class="keyword">const</span> GeometryData Quadrilateral2D9&lt;TPointType&gt;::msGeometryData(</div>
-<div class="line"><a name="l01306"></a><span class="lineno"> 1306</span>&#160;    &amp;<a class="code" href="../../db/d66/namespace_kratos.html#aabf4ae56b3a49bad4a3537aaf6316f78">msGeometryDimension</a>,</div>
-<div class="line"><a name="l01307"></a><span class="lineno"> 1307</span>&#160;    <a class="code" href="../../dc/d8c/class_kratos_1_1_geometry_data.html#a86f17c328cce116053a8786b7a0f404fafcb35549294c506ea4670ec08dacd31c">GeometryData::IntegrationMethod::GI_GAUSS_3</a>,</div>
-<div class="line"><a name="l01308"></a><span class="lineno"> 1308</span>&#160;    Quadrilateral2D9&lt;TPointType&gt;::AllIntegrationPoints(),</div>
-<div class="line"><a name="l01309"></a><span class="lineno"> 1309</span>&#160;    Quadrilateral2D9&lt;TPointType&gt;::AllShapeFunctionsValues(),</div>
-<div class="line"><a name="l01310"></a><span class="lineno"> 1310</span>&#160;    AllShapeFunctionsLocalGradients()</div>
-<div class="line"><a name="l01311"></a><span class="lineno"> 1311</span>&#160;);</div>
-<div class="line"><a name="l01312"></a><span class="lineno"> 1312</span>&#160; </div>
-<div class="line"><a name="l01313"></a><span class="lineno"> 1313</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">class</span> TPo<span class="keywordtype">int</span>Type&gt;</div>
-<div class="line"><a name="l01314"></a><span class="lineno"> 1314</span>&#160;<span class="keyword">const</span> GeometryDimension <a class="code" href="../../db/d66/namespace_kratos.html#ad7c63d593aa239c6f2c15a3e0d23f08c">Quadrilateral2D9&lt;TPointType&gt;::msGeometryDimension</a>(2, 2);</div>
-<div class="line"><a name="l01315"></a><span class="lineno"> 1315</span>&#160; </div>
-<div class="line"><a name="l01316"></a><span class="lineno"> 1316</span>&#160;}  <span class="comment">// namespace Kratos.</span></div>
+<div class="line"><a name="l01288"></a><span class="lineno"> 1288</span>&#160;}; <span class="comment">// Class Quadrilateral2D9</span></div>
+<div class="line"><a name="l01289"></a><span class="lineno"> 1289</span>&#160; </div>
+<div class="line"><a name="l01295"></a><span class="lineno"><a class="line" href="../../db/d66/namespace_kratos.html#a715bef4b399a43a6d90606eed6a7c06f"> 1295</a></span>&#160;<span class="keyword">template</span>&lt; <span class="keyword">class</span> TPo<span class="keywordtype">int</span>Type &gt; <span class="keyword">inline</span> std::istream&amp; <a class="code" href="../../db/d66/namespace_kratos.html#a9c6097d0b0a27d1cea94992b1087f56a">operator &gt;&gt; </a>(</div>
+<div class="line"><a name="l01296"></a><span class="lineno"> 1296</span>&#160;    std::istream&amp; rIStream,</div>
+<div class="line"><a name="l01297"></a><span class="lineno"> 1297</span>&#160;    <a class="code" href="../../d8/df8/class_kratos_1_1_quadrilateral2_d9.html">Quadrilateral2D9&lt;TPointType&gt;</a>&amp; rThis );</div>
+<div class="line"><a name="l01298"></a><span class="lineno"> 1298</span>&#160; </div>
+<div class="line"><a name="l01300"></a><span class="lineno"><a class="line" href="../../db/d66/namespace_kratos.html#adb60b3bc0a617078cc06a065a035fa2f"> 1300</a></span>&#160;<span class="keyword">template</span>&lt; <span class="keyword">class</span> TPo<span class="keywordtype">int</span>Type &gt; <span class="keyword">inline</span> std::ostream&amp; <a class="code" href="../../db/d66/namespace_kratos.html#acfc842a43d19dffc2d8105e5cbea17a9">operator &lt;&lt; </a>(</div>
+<div class="line"><a name="l01301"></a><span class="lineno"> 1301</span>&#160;    std::ostream&amp; rOStream,</div>
+<div class="line"><a name="l01302"></a><span class="lineno"> 1302</span>&#160;    <span class="keyword">const</span> <a class="code" href="../../d8/df8/class_kratos_1_1_quadrilateral2_d9.html">Quadrilateral2D9&lt;TPointType&gt;</a>&amp; rThis )</div>
+<div class="line"><a name="l01303"></a><span class="lineno"> 1303</span>&#160;{</div>
+<div class="line"><a name="l01304"></a><span class="lineno"> 1304</span>&#160;    rThis.<a class="code" href="../../d8/df8/class_kratos_1_1_quadrilateral2_d9.html#ad9efe0f02dc01b4d8ec2c6b1ded06b3d">PrintInfo</a>( rOStream );</div>
+<div class="line"><a name="l01305"></a><span class="lineno"> 1305</span>&#160;    rOStream &lt;&lt; std::endl;</div>
+<div class="line"><a name="l01306"></a><span class="lineno"> 1306</span>&#160;    rThis.<a class="code" href="../../d8/df8/class_kratos_1_1_quadrilateral2_d9.html#a226692d53aa5c0a0d0dbef7ad63c8cc5">PrintData</a>( rOStream );</div>
+<div class="line"><a name="l01307"></a><span class="lineno"> 1307</span>&#160;    <span class="keywordflow">return</span> rOStream;</div>
+<div class="line"><a name="l01308"></a><span class="lineno"> 1308</span>&#160;}</div>
+<div class="line"><a name="l01309"></a><span class="lineno"> 1309</span>&#160; </div>
+<div class="line"><a name="l01310"></a><span class="lineno"> 1310</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">class</span> TPo<span class="keywordtype">int</span>Type&gt;</div>
+<div class="line"><a name="l01311"></a><span class="lineno"> 1311</span>&#160;<span class="keyword">const</span> GeometryData Quadrilateral2D9&lt;TPointType&gt;::msGeometryData(</div>
+<div class="line"><a name="l01312"></a><span class="lineno"> 1312</span>&#160;    &amp;<a class="code" href="../../db/d66/namespace_kratos.html#aabf4ae56b3a49bad4a3537aaf6316f78">msGeometryDimension</a>,</div>
+<div class="line"><a name="l01313"></a><span class="lineno"> 1313</span>&#160;    <a class="code" href="../../dc/d8c/class_kratos_1_1_geometry_data.html#a86f17c328cce116053a8786b7a0f404fafcb35549294c506ea4670ec08dacd31c">GeometryData::IntegrationMethod::GI_GAUSS_3</a>,</div>
+<div class="line"><a name="l01314"></a><span class="lineno"> 1314</span>&#160;    Quadrilateral2D9&lt;TPointType&gt;::AllIntegrationPoints(),</div>
+<div class="line"><a name="l01315"></a><span class="lineno"> 1315</span>&#160;    Quadrilateral2D9&lt;TPointType&gt;::AllShapeFunctionsValues(),</div>
+<div class="line"><a name="l01316"></a><span class="lineno"> 1316</span>&#160;    AllShapeFunctionsLocalGradients()</div>
+<div class="line"><a name="l01317"></a><span class="lineno"> 1317</span>&#160;);</div>
+<div class="line"><a name="l01318"></a><span class="lineno"> 1318</span>&#160; </div>
+<div class="line"><a name="l01319"></a><span class="lineno"> 1319</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">class</span> TPo<span class="keywordtype">int</span>Type&gt;</div>
+<div class="line"><a name="l01320"></a><span class="lineno"> 1320</span>&#160;<span class="keyword">const</span> GeometryDimension <a class="code" href="../../db/d66/namespace_kratos.html#ad7c63d593aa239c6f2c15a3e0d23f08c">Quadrilateral2D9&lt;TPointType&gt;::msGeometryDimension</a>(2, 2);</div>
+<div class="line"><a name="l01321"></a><span class="lineno"> 1321</span>&#160; </div>
+<div class="line"><a name="l01322"></a><span class="lineno"> 1322</span>&#160;}  <span class="comment">// namespace Kratos.</span></div>
 <div class="ttc" id="aclass_kratos_1_1_geometry_data_html"><div class="ttname"><a href="../../dc/d8c/class_kratos_1_1_geometry_data.html">Kratos::GeometryData</a></div><div class="ttdef"><b>Definition:</b> geometry_data.h:60</div></div>
 <div class="ttc" id="aclass_kratos_1_1_geometry_data_html_a3bd412badaf6f2d8fcb56bbaa659346c"><div class="ttname"><a href="../../dc/d8c/class_kratos_1_1_geometry_data.html#a3bd412badaf6f2d8fcb56bbaa659346c">Kratos::GeometryData::KratosGeometryType</a></div><div class="ttdeci">KratosGeometryType</div><div class="ttdef"><b>Definition:</b> geometry_data.h:110</div></div>
 <div class="ttc" id="aclass_kratos_1_1_geometry_data_html_a3bd412badaf6f2d8fcb56bbaa659346ca89a7ec4ccaa0d2dfdf961a0ef65635d1"><div class="ttname"><a href="../../dc/d8c/class_kratos_1_1_geometry_data.html#a3bd412badaf6f2d8fcb56bbaa659346ca89a7ec4ccaa0d2dfdf961a0ef65635d1">Kratos::GeometryData::KratosGeometryType::Kratos_Quadrilateral2D9</a></div><div class="ttdeci">@ Kratos_Quadrilateral2D9</div></div>
 <div class="ttc" id="aclass_kratos_1_1_geometry_data_html_a77b0a474d31a0e64807f501043c952d0"><div class="ttname"><a href="../../dc/d8c/class_kratos_1_1_geometry_data.html#a77b0a474d31a0e64807f501043c952d0">Kratos::GeometryData::IntegrationPointsNumber</a></div><div class="ttdeci">SizeType IntegrationPointsNumber() const</div><div class="ttdef"><b>Definition:</b> geometry_data.h:430</div></div>
 <div class="ttc" id="aclass_kratos_1_1_geometry_data_html_a86f17c328cce116053a8786b7a0f404f"><div class="ttname"><a href="../../dc/d8c/class_kratos_1_1_geometry_data.html#a86f17c328cce116053a8786b7a0f404f">Kratos::GeometryData::IntegrationMethod</a></div><div class="ttdeci">IntegrationMethod</div><div class="ttdef"><b>Definition:</b> geometry_data.h:76</div></div>
+<div class="ttc" id="aclass_kratos_1_1_geometry_data_html_a86f17c328cce116053a8786b7a0f404fab8e55895af8a242a5791cd7aba1b7890"><div class="ttname"><a href="../../dc/d8c/class_kratos_1_1_geometry_data.html#a86f17c328cce116053a8786b7a0f404fab8e55895af8a242a5791cd7aba1b7890">Kratos::GeometryData::IntegrationMethod::GI_GAUSS_5</a></div><div class="ttdeci">@ GI_GAUSS_5</div></div>
 <div class="ttc" id="aclass_kratos_1_1_geometry_data_html_a86f17c328cce116053a8786b7a0f404fac865d92aa445dbb1943a3ea35d55a52e"><div class="ttname"><a href="../../dc/d8c/class_kratos_1_1_geometry_data.html#a86f17c328cce116053a8786b7a0f404fac865d92aa445dbb1943a3ea35d55a52e">Kratos::GeometryData::IntegrationMethod::GI_GAUSS_1</a></div><div class="ttdeci">@ GI_GAUSS_1</div></div>
 <div class="ttc" id="aclass_kratos_1_1_geometry_data_html_a86f17c328cce116053a8786b7a0f404fae2cedfa1aef3c412f3530688f51acc5d"><div class="ttname"><a href="../../dc/d8c/class_kratos_1_1_geometry_data.html#a86f17c328cce116053a8786b7a0f404fae2cedfa1aef3c412f3530688f51acc5d">Kratos::GeometryData::IntegrationMethod::GI_GAUSS_2</a></div><div class="ttdeci">@ GI_GAUSS_2</div></div>
 <div class="ttc" id="aclass_kratos_1_1_geometry_data_html_a86f17c328cce116053a8786b7a0f404faed8616dd9d149dde998143b383b9861a"><div class="ttname"><a href="../../dc/d8c/class_kratos_1_1_geometry_data.html#a86f17c328cce116053a8786b7a0f404faed8616dd9d149dde998143b383b9861a">Kratos::GeometryData::IntegrationMethod::GI_GAUSS_4</a></div><div class="ttdeci">@ GI_GAUSS_4</div></div>
@@ -1068,7 +1075,7 @@ $(function() {
 <div class="ttc" id="aclass_kratos_1_1_quadrilateral2_d9_html_ad0ef3f992f8995ac41d3518ef530747e"><div class="ttname"><a href="../../d8/df8/class_kratos_1_1_quadrilateral2_d9.html#ad0ef3f992f8995ac41d3518ef530747e">Kratos::Quadrilateral2D9::GeometriesArrayType</a></div><div class="ttdeci">BaseType::GeometriesArrayType GeometriesArrayType</div><div class="ttdef"><b>Definition:</b> quadrilateral_2d_9.h:79</div></div>
 <div class="ttc" id="aclass_kratos_1_1_quadrilateral2_d9_html_ad1d379075e6d4c5add9f7a638b02e246"><div class="ttname"><a href="../../d8/df8/class_kratos_1_1_quadrilateral2_d9.html#ad1d379075e6d4c5add9f7a638b02e246">Kratos::Quadrilateral2D9::~Quadrilateral2D9</a></div><div class="ttdeci">~Quadrilateral2D9() override</div><div class="ttdef"><b>Definition:</b> quadrilateral_2d_9.h:289</div></div>
 <div class="ttc" id="aclass_kratos_1_1_quadrilateral2_d9_html_ad9efe0f02dc01b4d8ec2c6b1ded06b3d"><div class="ttname"><a href="../../d8/df8/class_kratos_1_1_quadrilateral2_d9.html#ad9efe0f02dc01b4d8ec2c6b1ded06b3d">Kratos::Quadrilateral2D9::PrintInfo</a></div><div class="ttdeci">void PrintInfo(std::ostream &amp;rOStream) const override</div><div class="ttdef"><b>Definition:</b> quadrilateral_2d_9.h:630</div></div>
-<div class="ttc" id="aclass_kratos_1_1_quadrilateral2_d9_html_ada14bc07c50ebd541bda365e933cc8d6"><div class="ttname"><a href="../../d8/df8/class_kratos_1_1_quadrilateral2_d9.html#ada14bc07c50ebd541bda365e933cc8d6">Kratos::Quadrilateral2D9::Quadrilateral2D9</a></div><div class="ttdeci">friend class Quadrilateral2D9</div><div class="ttdef"><b>Definition:</b> quadrilateral_2d_9.h:1276</div></div>
+<div class="ttc" id="aclass_kratos_1_1_quadrilateral2_d9_html_ada14bc07c50ebd541bda365e933cc8d6"><div class="ttname"><a href="../../d8/df8/class_kratos_1_1_quadrilateral2_d9.html#ada14bc07c50ebd541bda365e933cc8d6">Kratos::Quadrilateral2D9::Quadrilateral2D9</a></div><div class="ttdeci">friend class Quadrilateral2D9</div><div class="ttdef"><b>Definition:</b> quadrilateral_2d_9.h:1282</div></div>
 <div class="ttc" id="aclass_kratos_1_1_quadrilateral2_d9_html_ae02fec421e9886dc415215d79be0fdf9"><div class="ttname"><a href="../../d8/df8/class_kratos_1_1_quadrilateral2_d9.html#ae02fec421e9886dc415215d79be0fdf9">Kratos::Quadrilateral2D9::GetGeometryType</a></div><div class="ttdeci">GeometryData::KratosGeometryType GetGeometryType() const override</div><div class="ttdef"><b>Definition:</b> quadrilateral_2d_9.h:296</div></div>
 <div class="ttc" id="aclass_kratos_1_1_quadrilateral2_d9_html_ae72f89aab3eb4e5e444fed5bbe7f051e"><div class="ttname"><a href="../../d8/df8/class_kratos_1_1_quadrilateral2_d9.html#ae72f89aab3eb4e5e444fed5bbe7f051e">Kratos::Quadrilateral2D9::ShapeFunctionValue</a></div><div class="ttdeci">double ShapeFunctionValue(IndexType ShapeFunctionIndex, const CoordinatesArrayType &amp;rPoint) const override</div><div class="ttdef"><b>Definition:</b> quadrilateral_2d_9.h:535</div></div>
 <div class="ttc" id="aclass_kratos_1_1_quadrilateral2_d9_html_ae85d3cd2e510a0a6ff6664928d7b671c"><div class="ttname"><a href="../../d8/df8/class_kratos_1_1_quadrilateral2_d9.html#ae85d3cd2e510a0a6ff6664928d7b671c">Kratos::Quadrilateral2D9::ShapeFunctionsThirdDerivativesType</a></div><div class="ttdeci">BaseType::ShapeFunctionsThirdDerivativesType ShapeFunctionsThirdDerivativesType</div><div class="ttdef"><b>Definition:</b> quadrilateral_2d_9.h:177</div></div>
@@ -1104,7 +1111,7 @@ $(function() {
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jun 6 2023 02:33:19 for KratosMultiphysics by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Wed Jun 7 2023 02:35:58 for KratosMultiphysics by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>
