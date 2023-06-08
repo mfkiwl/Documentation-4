@@ -124,12 +124,8 @@ Functions</h2></td></tr>
 <tr class="separator:a965b70666d333cb6d0717ec0c2a0b9d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a890ce93151bade39fff44c64ab88eb24"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../de/dd2/namespace_kratos_1_1_mapper_utilities.html#a6a65c10aee33a478319f994ef053a29b">BoundingBoxType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/dd2/namespace_kratos_1_1_mapper_utilities.html#a890ce93151bade39fff44c64ab88eb24">ComputeGlobalBoundingBox</a> (const <a class="el" href="../../d4/d5e/class_model_part.html">ModelPart</a> &amp;rModelPart)</td></tr>
 <tr class="separator:a890ce93151bade39fff44c64ab88eb24"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abf4afb669a33fd10570934ce75c6197a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/dd2/namespace_kratos_1_1_mapper_utilities.html#abf4afb669a33fd10570934ce75c6197a">ComputeBoundingBoxesWithTolerance</a> (const std::vector&lt; <a class="el" href="../../db/d66/namespace_kratos.html#ac77084a57869cbecf89d3ee2c819c5d3">double</a> &gt; &amp;rBoundingBoxes, const <a class="el" href="../../db/d66/namespace_kratos.html#ac77084a57869cbecf89d3ee2c819c5d3">double</a> Tolerance, std::vector&lt; <a class="el" href="../../db/d66/namespace_kratos.html#ac77084a57869cbecf89d3ee2c819c5d3">double</a> &gt; &amp;rBoundingBoxesWithTolerance)</td></tr>
-<tr class="separator:abf4afb669a33fd10570934ce75c6197a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad80bd8d77546464099cc1400e1f45460"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/dd2/namespace_kratos_1_1_mapper_utilities.html#ad80bd8d77546464099cc1400e1f45460">BoundingBoxStringStream</a> (const <a class="el" href="../../de/dd2/namespace_kratos_1_1_mapper_utilities.html#a6a65c10aee33a478319f994ef053a29b">BoundingBoxType</a> &amp;rBoundingBox)</td></tr>
 <tr class="separator:ad80bd8d77546464099cc1400e1f45460"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a11a0b47673b97e9c374b1f76fa67096d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../db/d66/namespace_kratos.html#a14b9d687ed53c882489400b57cdf34cd">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/dd2/namespace_kratos_1_1_mapper_utilities.html#a11a0b47673b97e9c374b1f76fa67096d">PointIsInsideBoundingBox</a> (const <a class="el" href="../../de/dd2/namespace_kratos_1_1_mapper_utilities.html#a6a65c10aee33a478319f994ef053a29b">BoundingBoxType</a> &amp;rBoundingBox, const <a class="el" href="../../d4/ddc/class_kratos_1_1array__1d.html">array_1d</a>&lt; <a class="el" href="../../db/d66/namespace_kratos.html#ac77084a57869cbecf89d3ee2c819c5d3">double</a>, 3 &gt; &amp;rCoords)</td></tr>
-<tr class="separator:a11a0b47673b97e9c374b1f76fa67096d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa69bc23f75b3a4d81fbbf7a5f93f92f9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/dd2/namespace_kratos_1_1_mapper_utilities.html#aa69bc23f75b3a4d81fbbf7a5f93f92f9">CreateMapperLocalSystemsFromNodes</a> (const <a class="el" href="../../d6/dbc/class_kratos_1_1_mapper_local_system.html">MapperLocalSystem</a> &amp;rMapperLocalSystemPrototype, const Communicator &amp;rModelPartCommunicator, std::vector&lt; <a class="el" href="../../db/d66/namespace_kratos.html#a3af372ea08f0c45365786d82a166d8a3">Kratos::unique_ptr</a>&lt; <a class="el" href="../../d6/dbc/class_kratos_1_1_mapper_local_system.html">MapperLocalSystem</a> &gt;&gt; &amp;rLocalSystems)</td></tr>
 <tr class="separator:aa69bc23f75b3a4d81fbbf7a5f93f92f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a82527c4ea6580b5247b9360fdc1a457e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/dd2/namespace_kratos_1_1_mapper_utilities.html#a82527c4ea6580b5247b9360fdc1a457e">CreateMapperLocalSystemsFromGeometries</a> (const <a class="el" href="../../d6/dbc/class_kratos_1_1_mapper_local_system.html">MapperLocalSystem</a> &amp;rMapperLocalSystemPrototype, const Communicator &amp;rModelPartCommunicator, std::vector&lt; <a class="el" href="../../db/d66/namespace_kratos.html#a3af372ea08f0c45365786d82a166d8a3">Kratos::unique_ptr</a>&lt; <a class="el" href="../../d6/dbc/class_kratos_1_1_mapper_local_system.html">MapperLocalSystem</a> &gt;&gt; &amp;rLocalSystems)</td></tr>
@@ -411,40 +407,6 @@ Functions</h2></td></tr>
           <td class="paramtype">const <a class="el" href="../../db/d66/namespace_kratos.html#ac398e9982e45de7167981e05b7f5ff57">int</a>&#160;</td>
           <td class="paramname"><em>CommRank</em></td><td>)</td>
           <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="abf4afb669a33fd10570934ce75c6197a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abf4afb669a33fd10570934ce75c6197a">&#9670;&nbsp;</a></span>ComputeBoundingBoxesWithTolerance()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Kratos::MapperUtilities::ComputeBoundingBoxesWithTolerance </td>
-          <td>(</td>
-          <td class="paramtype">const std::vector&lt; <a class="el" href="../../db/d66/namespace_kratos.html#ac77084a57869cbecf89d3ee2c819c5d3">double</a> &gt; &amp;&#160;</td>
-          <td class="paramname"><em>rBoundingBoxes</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="../../db/d66/namespace_kratos.html#ac77084a57869cbecf89d3ee2c819c5d3">double</a>&#160;</td>
-          <td class="paramname"><em>Tolerance</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">std::vector&lt; <a class="el" href="../../db/d66/namespace_kratos.html#ac77084a57869cbecf89d3ee2c819c5d3">double</a> &gt; &amp;&#160;</td>
-          <td class="paramname"><em>rBoundingBoxesWithTolerance</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1049,34 +1011,6 @@ template&lt;class TDataType &gt; </div>
 
 </div>
 </div>
-<a id="a11a0b47673b97e9c374b1f76fa67096d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a11a0b47673b97e9c374b1f76fa67096d">&#9670;&nbsp;</a></span>PointIsInsideBoundingBox()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="../../db/d66/namespace_kratos.html#a14b9d687ed53c882489400b57cdf34cd">bool</a> Kratos::MapperUtilities::PointIsInsideBoundingBox </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="../../de/dd2/namespace_kratos_1_1_mapper_utilities.html#a6a65c10aee33a478319f994ef053a29b">BoundingBoxType</a> &amp;&#160;</td>
-          <td class="paramname"><em>rBoundingBox</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="../../d4/ddc/class_kratos_1_1array__1d.html">array_1d</a>&lt; <a class="el" href="../../db/d66/namespace_kratos.html#ac77084a57869cbecf89d3ee2c819c5d3">double</a>, 3 &gt; &amp;&#160;</td>
-          <td class="paramname"><em>rCoords</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="a23c2b346242fac4494e72ff06239f24d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a23c2b346242fac4494e72ff06239f24d">&#9670;&nbsp;</a></span>PointsAreCollinear()</h2>
 
@@ -1440,7 +1374,7 @@ template&lt;class TVectorType , bool TParallel = true&gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jun 7 2023 02:43:03 for KratosMultiphysics by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Thu Jun 8 2023 02:37:06 for KratosMultiphysics by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>
