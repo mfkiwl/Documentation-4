@@ -301,9 +301,9 @@ $(function() {
 <div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;        }</div>
 <div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160; </div>
 <div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;        <span class="keyword">template</span>&lt;<span class="keyword">class</span> TOtherDataType&gt;</div>
-<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;        <span class="keywordtype">void</span> push_back(TOtherDataType <span class="keyword">const</span>&amp; <a class="code" href="../../d0/d79/namespacesensitivity_matrix.html#a676f7f559f80bd5ebc1bd73cadbef39b">x</a>)</div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;        <span class="keywordtype">void</span> push_back(TOtherDataType <span class="keyword">const</span>&amp; <a class="code" href="../../d2/dac/namespace_kratos_1_1_polynomial_utilities.html#abf58725ac9eba736ec9e7ee7e4e3da0c">x</a>)</div>
 <div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;        {</div>
-<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;            Add(<a class="code" href="../../d0/d79/namespacesensitivity_matrix.html#a676f7f559f80bd5ebc1bd73cadbef39b">x</a>);</div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;            Add(<a class="code" href="../../d2/dac/namespace_kratos_1_1_polynomial_utilities.html#abf58725ac9eba736ec9e7ee7e4e3da0c">x</a>);</div>
 <div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;        }</div>
 <div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160; </div>
 <div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;        <span class="keywordtype">void</span> clear()</div>
@@ -485,16 +485,16 @@ $(function() {
 <div class="line"><a name="l00443"></a><span class="lineno">  443</span>&#160;        <span class="comment">//this block is needed for refcounting</span></div>
 <div class="line"><a name="l00444"></a><span class="lineno">  444</span>&#160;        <span class="keyword">mutable</span> std::atomic&lt;int&gt; mReferenceCounter{0};</div>
 <div class="line"><a name="l00445"></a><span class="lineno">  445</span>&#160; </div>
-<div class="line"><a name="l00446"></a><span class="lineno">  446</span>&#160;        <span class="keyword">friend</span> <span class="keywordtype">void</span> intrusive_ptr_add_ref(<span class="keyword">const</span> VariablesList* <a class="code" href="../../d0/d79/namespacesensitivity_matrix.html#a676f7f559f80bd5ebc1bd73cadbef39b">x</a>)</div>
+<div class="line"><a name="l00446"></a><span class="lineno">  446</span>&#160;        <span class="keyword">friend</span> <span class="keywordtype">void</span> intrusive_ptr_add_ref(<span class="keyword">const</span> VariablesList* <a class="code" href="../../d2/dac/namespace_kratos_1_1_polynomial_utilities.html#abf58725ac9eba736ec9e7ee7e4e3da0c">x</a>)</div>
 <div class="line"><a name="l00447"></a><span class="lineno">  447</span>&#160;        {</div>
-<div class="line"><a name="l00448"></a><span class="lineno">  448</span>&#160;            <a class="code" href="../../d0/d79/namespacesensitivity_matrix.html#a676f7f559f80bd5ebc1bd73cadbef39b">x</a>-&gt;mReferenceCounter.fetch_add(1, std::memory_order_relaxed);</div>
+<div class="line"><a name="l00448"></a><span class="lineno">  448</span>&#160;            <a class="code" href="../../d2/dac/namespace_kratos_1_1_polynomial_utilities.html#abf58725ac9eba736ec9e7ee7e4e3da0c">x</a>-&gt;mReferenceCounter.fetch_add(1, std::memory_order_relaxed);</div>
 <div class="line"><a name="l00449"></a><span class="lineno">  449</span>&#160;        }</div>
 <div class="line"><a name="l00450"></a><span class="lineno">  450</span>&#160; </div>
-<div class="line"><a name="l00451"></a><span class="lineno">  451</span>&#160;        <span class="keyword">friend</span> <span class="keywordtype">void</span> intrusive_ptr_release(<span class="keyword">const</span> VariablesList* <a class="code" href="../../d0/d79/namespacesensitivity_matrix.html#a676f7f559f80bd5ebc1bd73cadbef39b">x</a>)</div>
+<div class="line"><a name="l00451"></a><span class="lineno">  451</span>&#160;        <span class="keyword">friend</span> <span class="keywordtype">void</span> intrusive_ptr_release(<span class="keyword">const</span> VariablesList* <a class="code" href="../../d2/dac/namespace_kratos_1_1_polynomial_utilities.html#abf58725ac9eba736ec9e7ee7e4e3da0c">x</a>)</div>
 <div class="line"><a name="l00452"></a><span class="lineno">  452</span>&#160;        {</div>
-<div class="line"><a name="l00453"></a><span class="lineno">  453</span>&#160;            <span class="keywordflow">if</span> (<a class="code" href="../../d0/d79/namespacesensitivity_matrix.html#a676f7f559f80bd5ebc1bd73cadbef39b">x</a>-&gt;mReferenceCounter.fetch_sub(1, std::memory_order_release) == 1) {</div>
+<div class="line"><a name="l00453"></a><span class="lineno">  453</span>&#160;            <span class="keywordflow">if</span> (<a class="code" href="../../d2/dac/namespace_kratos_1_1_polynomial_utilities.html#abf58725ac9eba736ec9e7ee7e4e3da0c">x</a>-&gt;mReferenceCounter.fetch_sub(1, std::memory_order_release) == 1) {</div>
 <div class="line"><a name="l00454"></a><span class="lineno">  454</span>&#160;            std::atomic_thread_fence(std::memory_order_acquire);</div>
-<div class="line"><a name="l00455"></a><span class="lineno">  455</span>&#160;            <span class="keyword">delete</span> <a class="code" href="../../d0/d79/namespacesensitivity_matrix.html#a676f7f559f80bd5ebc1bd73cadbef39b">x</a>;</div>
+<div class="line"><a name="l00455"></a><span class="lineno">  455</span>&#160;            <span class="keyword">delete</span> <a class="code" href="../../d2/dac/namespace_kratos_1_1_polynomial_utilities.html#abf58725ac9eba736ec9e7ee7e4e3da0c">x</a>;</div>
 <div class="line"><a name="l00456"></a><span class="lineno">  456</span>&#160;            }</div>
 <div class="line"><a name="l00457"></a><span class="lineno">  457</span>&#160;        }</div>
 <div class="line"><a name="l00458"></a><span class="lineno">  458</span>&#160; </div>
@@ -589,6 +589,7 @@ $(function() {
 <div class="ttc" id="anamespace_d_e_m__benchmarks_html_a9635268cbcd16b8b3f12c26323611b53"><div class="ttname"><a href="../../d3/d1a/namespace_d_e_m__benchmarks.html#a9635268cbcd16b8b3f12c26323611b53">DEM_benchmarks.end</a></div><div class="ttdeci">end</div><div class="ttdef"><b>Definition:</b> DEM_benchmarks.py:180</div></div>
 <div class="ttc" id="anamespace_kratos_1_1_mortar_utilities_html_a72a55cf992d313db29c96c1cb7b7649b"><div class="ttname"><a href="../../da/dec/namespace_kratos_1_1_mortar_utilities.html#a72a55cf992d313db29c96c1cb7b7649b">Kratos::MortarUtilities::rThisVariable</a></div><div class="ttdeci">void const TVarType &amp; rThisVariable</div><div class="ttdef"><b>Definition:</b> mortar_utilities.h:512</div></div>
 <div class="ttc" id="anamespace_kratos_1_1_mortar_utilities_html_ab760d3f1c6c454fff50350af7ec2dc7a"><div class="ttname"><a href="../../da/dec/namespace_kratos_1_1_mortar_utilities.html#ab760d3f1c6c454fff50350af7ec2dc7a">Kratos::MortarUtilities::Index</a></div><div class="ttdeci">void const TVarType Vector const std::size_t Index</div><div class="ttdef"><b>Definition:</b> mortar_utilities.h:593</div></div>
+<div class="ttc" id="anamespace_kratos_1_1_polynomial_utilities_html_abf58725ac9eba736ec9e7ee7e4e3da0c"><div class="ttname"><a href="../../d2/dac/namespace_kratos_1_1_polynomial_utilities.html#abf58725ac9eba736ec9e7ee7e4e3da0c">Kratos::PolynomialUtilities::x</a></div><div class="ttdeci">double double x</div><div class="ttdef"><b>Definition:</b> polynomial_utilities.h:33</div></div>
 <div class="ttc" id="anamespace_kratos_html"><div class="ttname"><a href="../../db/d66/namespace_kratos.html">Kratos</a></div><div class="ttdoc">REF: G. R. Cowper, GAUSSIAN QUADRATURE FORMULAS FOR TRIANGLES.</div><div class="ttdef"><b>Definition:</b> mesh_condition.cpp:21</div></div>
 <div class="ttc" id="anamespace_kratos_html_a44de11b0ae8050ce96a1dbb5eb9bd97b"><div class="ttname"><a href="../../db/d66/namespace_kratos.html#a44de11b0ae8050ce96a1dbb5eb9bd97b">Kratos::operator==</a></div><div class="ttdeci">bool operator==(const Flags &amp;Left, const Flags &amp;Right)</div><div class="ttdef"><b>Definition:</b> flags.cpp:45</div></div>
 <div class="ttc" id="anamespace_kratos_html_a8b2d617fdb94b53f5f2bb88e1a7ebc18"><div class="ttname"><a href="../../db/d66/namespace_kratos.html#a8b2d617fdb94b53f5f2bb88e1a7ebc18">Kratos::SizeType</a></div><div class="ttdeci">std::size_t SizeType</div><div class="ttdoc">The definition of the size type.</div><div class="ttdef"><b>Definition:</b> mortar_classes.h:44</div></div>
@@ -598,7 +599,6 @@ $(function() {
 <div class="ttc" id="anamespaceode__solve_html_a0b266774af0a13d56a57cf1ada122768"><div class="ttname"><a href="../../d2/df2/namespaceode__solve.html#a0b266774af0a13d56a57cf1ada122768">ode_solve.load</a></div><div class="ttdeci">def load(f)</div><div class="ttdef"><b>Definition:</b> ode_solve.py:307</div></div>
 <div class="ttc" id="anamespaceode__solve_html_aae8a035c92cd801f6cf64409406c371b"><div class="ttname"><a href="../../d2/df2/namespaceode__solve.html#aae8a035c92cd801f6cf64409406c371b">ode_solve.const</a></div><div class="ttdeci">tuple const</div><div class="ttdef"><b>Definition:</b> ode_solve.py:403</div></div>
 <div class="ttc" id="anamespacerotating__cone_html_ab33bd86f7a31ca0d8e2b3e69609e3476"><div class="ttname"><a href="../../db/ddc/namespacerotating__cone.html#ab33bd86f7a31ca0d8e2b3e69609e3476">rotating_cone.temp</a></div><div class="ttdeci">float temp</div><div class="ttdef"><b>Definition:</b> rotating_cone.py:85</div></div>
-<div class="ttc" id="anamespacesensitivity_matrix_html_a676f7f559f80bd5ebc1bd73cadbef39b"><div class="ttname"><a href="../../d0/d79/namespacesensitivity_matrix.html#a676f7f559f80bd5ebc1bd73cadbef39b">sensitivityMatrix.x</a></div><div class="ttdeci">x</div><div class="ttdef"><b>Definition:</b> sensitivityMatrix.py:49</div></div>
 <div class="ttc" id="anamespacetensors_html_a15a1da80aa773e2015eba781cababe05"><div class="ttname"><a href="../../d2/db8/namespacetensors.html#a15a1da80aa773e2015eba781cababe05">tensors::i</a></div><div class="ttdeci">integer i</div><div class="ttdef"><b>Definition:</b> TensorModule.f:17</div></div>
 <div class="ttc" id="anamespaceutilities_1_1custom__math_html_a7d30c97e9749c160aa1262212c0c9619"><div class="ttname"><a href="../../dc/dab/namespaceutilities_1_1custom__math.html#a7d30c97e9749c160aa1262212c0c9619">utilities.custom_math.IsEmpty</a></div><div class="ttdeci">def IsEmpty(_A)</div><div class="ttdef"><b>Definition:</b> custom_math.py:33</div></div>
 <div class="ttc" id="aopenmp__utils_8h_html"><div class="ttname"><a href="../../d1/db8/openmp__utils_8h.html">openmp_utils.h</a></div></div>
@@ -607,7 +607,7 @@ $(function() {
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Jun 8 2023 02:31:16 for KratosMultiphysics by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Fri Jun 9 2023 02:35:10 for KratosMultiphysics by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>
