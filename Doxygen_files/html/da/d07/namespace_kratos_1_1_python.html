@@ -310,6 +310,8 @@ Functions</h2></td></tr>
 <tr class="separator:ae7f173d9d93296c2a03352d7b8a6b3fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af3e775fafcff8f72ce22e46561e96682"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d07/namespace_kratos_1_1_python.html#af3e775fafcff8f72ce22e46561e96682">AddMPIDebugUtilitiesToPython</a> (pybind11::module &amp;m)</td></tr>
 <tr class="separator:af3e775fafcff8f72ce22e46561e96682"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1f232fefe5ebdb47406f49e6c8f0912"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d07/namespace_kratos_1_1_python.html#ab1f232fefe5ebdb47406f49e6c8f0912">AddMPISearchStrategiesToPython</a> (pybind11::module &amp;m)</td></tr>
+<tr class="separator:ab1f232fefe5ebdb47406f49e6c8f0912"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aca84ef16762817bab9da5a656f2e3cfd"><td class="memItemLeft" align="right" valign="top">const DataCommunicator &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d07/namespace_kratos_1_1_python.html#aca84ef16762817bab9da5a656f2e3cfd">CreateFromListOfRanks</a> (const DataCommunicator &amp;rReferenceComm, pybind11::list &amp;rRanks, const std::string &amp;rNewName)</td></tr>
 <tr class="separator:aca84ef16762817bab9da5a656f2e3cfd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1e3022d66b7bd9d54d6a87582408e180"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d07/namespace_kratos_1_1_python.html#a1e3022d66b7bd9d54d6a87582408e180">AddMPIUtilitiesToPython</a> (pybind11::module &amp;m)</td></tr>
@@ -1032,6 +1034,13 @@ Functions</h2></td></tr>
 <tr class="memitem:a31139132445f360f4ea17f6d0174af93"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d07/namespace_kratos_1_1_python.html#a31139132445f360f4ea17f6d0174af93">CopyRadiusArrayToPython</a> (const pybind11::list &amp;rListOfRadius, SpatialSearch::RadiusArrayType &amp;rRadiusArray)</td></tr>
 <tr class="memdesc:a31139132445f360f4ea17f6d0174af93"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copies a list of doubles to a radius array.  <a href="../../da/d07/namespace_kratos_1_1_python.html#a31139132445f360f4ea17f6d0174af93">More...</a><br /></td></tr>
 <tr class="separator:a31139132445f360f4ea17f6d0174af93"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a43e62a70915141e887cc997095ed2c19"><td class="memItemLeft" align="right" valign="top">SpatialSearch::RadiusArrayType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d07/namespace_kratos_1_1_python.html#a43e62a70915141e887cc997095ed2c19">CopyRadiusArrayToPython</a> (const pybind11::list &amp;rListOfRadius)</td></tr>
+<tr class="memdesc:a43e62a70915141e887cc997095ed2c19"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copies a <a class="el" href="../../da/d07/namespace_kratos_1_1_python.html">Python</a> list of radius to a C++ radius array.  <a href="../../da/d07/namespace_kratos_1_1_python.html#a43e62a70915141e887cc997095ed2c19">More...</a><br /></td></tr>
+<tr class="separator:a43e62a70915141e887cc997095ed2c19"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1bd41bca2b90ceeca299aa656caf733"><td class="memTemplParams" colspan="2">template&lt;class TClass &gt; </td></tr>
+<tr class="memitem:ae1bd41bca2b90ceeca299aa656caf733"><td class="memTemplItemLeft" align="right" valign="top">std::tuple&lt; pybind11::list, pybind11::list &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../da/d07/namespace_kratos_1_1_python.html#ae1bd41bca2b90ceeca299aa656caf733">GenerateSpatialSearchSolutionTuple</a> (const TClass &amp;rResults, SpatialSearch::VectorDistanceType &amp;rDistances)</td></tr>
+<tr class="memdesc:ae1bd41bca2b90ceeca299aa656caf733"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generates a tuple of two python lists containing the elements and distances of a spatial search result.  <a href="../../da/d07/namespace_kratos_1_1_python.html#ae1bd41bca2b90ceeca299aa656caf733">More...</a><br /></td></tr>
+<tr class="separator:ae1bd41bca2b90ceeca299aa656caf733"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a16d16f485f12bb6cb7288c918ba9ac02"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d07/namespace_kratos_1_1_python.html#a16d16f485f12bb6cb7288c918ba9ac02">AddSearchStrategiesToPython</a> (pybind11::module &amp;m)</td></tr>
 <tr class="separator:a16d16f485f12bb6cb7288c918ba9ac02"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7d4a1c39f45b87383817bfd5c4108285"><td class="memTemplParams" colspan="2">template&lt;class TObjectType &gt; </td></tr>
@@ -4463,6 +4472,24 @@ template&lt;class TSparseSpace , class TDenseSpace &gt; </div>
 
 </div>
 </div>
+<a id="ab1f232fefe5ebdb47406f49e6c8f0912"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab1f232fefe5ebdb47406f49e6c8f0912">&#9670;&nbsp;</a></span>AddMPISearchStrategiesToPython()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Kratos::Python::AddMPISearchStrategiesToPython </td>
+          <td>(</td>
+          <td class="paramtype">pybind11::module &amp;&#160;</td>
+          <td class="paramname"><em>m</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a1e3022d66b7bd9d54d6a87582408e180"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1e3022d66b7bd9d54d6a87582408e180">&#9670;&nbsp;</a></span>AddMPIUtilitiesToPython()</h2>
 
@@ -6938,8 +6965,35 @@ template&lt;class TVarType &gt; </div>
 
 </div>
 </div>
+<a id="a43e62a70915141e887cc997095ed2c19"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a43e62a70915141e887cc997095ed2c19">&#9670;&nbsp;</a></span>CopyRadiusArrayToPython() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">SpatialSearch::RadiusArrayType Kratos::Python::CopyRadiusArrayToPython </td>
+          <td>(</td>
+          <td class="paramtype">const pybind11::list &amp;&#160;</td>
+          <td class="paramname"><em>rListOfRadius</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Copies a <a class="el" href="../../da/d07/namespace_kratos_1_1_python.html">Python</a> list of radius to a C++ radius array. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">rListOfRadius</td><td>list of radius to copy </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Radius array with copied radius </dd></dl>
+
+</div>
+</div>
 <a id="a31139132445f360f4ea17f6d0174af93"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a31139132445f360f4ea17f6d0174af93">&#9670;&nbsp;</a></span>CopyRadiusArrayToPython()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a31139132445f360f4ea17f6d0174af93">&#9670;&nbsp;</a></span>CopyRadiusArrayToPython() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -8839,6 +8893,52 @@ template&lt;class TClass &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae1bd41bca2b90ceeca299aa656caf733"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae1bd41bca2b90ceeca299aa656caf733">&#9670;&nbsp;</a></span>GenerateSpatialSearchSolutionTuple()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class TClass &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">std::tuple&lt;pybind11::list, pybind11::list&gt; Kratos::Python::GenerateSpatialSearchSolutionTuple </td>
+          <td>(</td>
+          <td class="paramtype">const TClass &amp;&#160;</td>
+          <td class="paramname"><em>rResults</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">SpatialSearch::VectorDistanceType &amp;&#160;</td>
+          <td class="paramname"><em>rDistances</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Generates a tuple of two python lists containing the elements and distances of a spatial search result. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">rResults</td><td>a reference to a vector containing the result elements to be copied to the python list </td></tr>
+    <tr><td class="paramname">rDistances</td><td>a reference to a vector containing the distances to be copied to the python list </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A tuple containing two python lists, the first one containing the result elements and the second one containing the distances </dd></dl>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">TClass</td><td>The type of the class. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -17981,7 +18081,7 @@ template&lt;class TValue &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jun 12 2023 02:40:06 for KratosMultiphysics by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Tue Jun 13 2023 02:27:38 for KratosMultiphysics by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>
