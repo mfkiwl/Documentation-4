@@ -337,7 +337,7 @@ $(function() {
 <div class="line">    <span class="comment"># solve the time step</span></div>
 <div class="line"> </div>
 <div class="line">    CoSimIO::ExportData(...) <span class="comment"># send new data to the CoSimulationApplication</span></div>
-<div class="ttc" id="anamespace_kratos_1_1_python_1_1_co_sim_i_o___wrappers_html_a35360c148adfc0ae5733d9969cd109ee"><div class="ttname"><a href="../../d5/d0b/namespace_kratos_1_1_python_1_1_co_sim_i_o___wrappers.html#a35360c148adfc0ae5733d9969cd109ee">Kratos::Python::CoSimIO_Wrappers::ExportMesh</a></div><div class="ttdeci">void ExportMesh(CoSimIO::Info &amp;rInfo, const Kratos::ModelPart &amp;rModelPart)</div><div class="ttdef"><b>Definition:</b> add_co_sim_io_to_python.cpp:51</div></div>
+<div class="ttc" id="anamespace_kratos_1_1_python_1_1_co_sim_i_o___wrappers_html_a35360c148adfc0ae5733d9969cd109ee"><div class="ttname"><a href="../../d5/d0b/namespace_kratos_1_1_python_1_1_co_sim_i_o___wrappers.html#a35360c148adfc0ae5733d9969cd109ee">Kratos::Python::CoSimIO_Wrappers::ExportMesh</a></div><div class="ttdeci">void ExportMesh(CoSimIO::Info &amp;rInfo, const Kratos::ModelPart &amp;rModelPart)</div><div class="ttdef"><b>Definition:</b> add_co_sim_io_to_python.cpp:53</div></div>
 </div><!-- fragment --><p>An example for an FSI problem where the structural solver of <a class="el" href="../../db/d66/namespace_kratos.html" title="REF: G. R. Cowper, GAUSSIAN QUADRATURE FORMULAS FOR TRIANGLES.">Kratos</a> is used as an external solver can be found <a href="https://github.com/KratosMultiphysics/Kratos/blob/master/applications/CoSimulationApplication/tests/structural_mechanics_analysis_with_co_sim_io.py">here</a>. The <em>CoSimIO</em> is used for communicating between the <em><a class="el" href="../../de/dbc/namespace_co_simulation_application.html">CoSimulationApplication</a></em> and the structural solver</p>
 <p>While this approach is commonly used, it has the significant drawback that the coupling sequence has to be duplicated, which not only has the potential for bugs and deadlocks but also severly limits the useability when it comes to trying different coupling algorithms. Then not only the input for the <em><a class="el" href="../../de/dbc/namespace_co_simulation_application.html">CoSimulationApplication</a></em> has to be changed but also the source code in the external solver!</p>
 <p>Hence a better solution is proposed in the next section:</p>
@@ -433,7 +433,7 @@ $(function() {
 </div><!-- PageDoc -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jun 13 2023 02:23:54 for KratosMultiphysics by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Wed Jun 14 2023 02:26:12 for KratosMultiphysics by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

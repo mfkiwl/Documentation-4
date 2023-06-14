@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>KratosMultiphysics: /home/runner/work/Documentation/Documentation/master/kratos/containers/container_expression/container_expression.cpp File Reference</title>
+<title>KratosMultiphysics: /home/runner/work/Documentation/Documentation/master/kratos/expression/container_expression.cpp File Reference</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -71,23 +71,29 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="../../dir_8fc3e8efef0bfca4a113d719cbd52afb.html">kratos</a></li><li class="navelem"><a class="el" href="../../dir_80b24cd11685060440d77842b83d8f07.html">containers</a></li><li class="navelem"><a class="el" href="../../dir_09c17475665def07b5d559d8581b0478.html">container_expression</a></li>  </ul>
+<li class="navelem"><a class="el" href="../../dir_8fc3e8efef0bfca4a113d719cbd52afb.html">kratos</a></li><li class="navelem"><a class="el" href="../../dir_b40bdb8f3afbd709f43c9948ecf2ca76.html">expression</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#namespaces">Namespaces</a> &#124;
+<a href="#define-members">Macros</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">container_expression.cpp File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;sstream&gt;</code><br />
+<div class="textblock"><code>#include &lt;numeric&gt;</code><br />
+<code>#include &lt;sstream&gt;</code><br />
 <code>#include &quot;<a class="el" href="../../df/d67/define_8h_source.html">includes/define.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../dd/dfe/model__part_8h_source.html">includes/model_part.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../de/d07/parallel__utilities_8h_source.html">utilities/parallel_utilities.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../d9/db1/literal__expression_8h_source.html">containers/container_expression/expressions/literal/literal_expression.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../d4/d65/literal__flat__expression_8h_source.html">containers/container_expression/expressions/literal/literal_flat_expression.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d4/d1e/unary__combine__expression_8h_source.html">expression/unary_combine_expression.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../df/d53/unary__reshape__expression_8h_source.html">expression/unary_reshape_expression.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d9/d5c/unary__slice__expression_8h_source.html">expression/unary_slice_expression.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d9/db1/literal__expression_8h_source.html">expression/literal_expression.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d4/d65/literal__flat__expression_8h_source.html">expression/literal_flat_expression.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d5/d26/c__array__expression__io_8h_source.html">expression/c_array_expression_io.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d3/d0c/arithmetic__operators_8h_source.html">expression/arithmetic_operators.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d6/d71/view__operators_8h_source.html">expression/view_operators.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="../../d0/d97/container__expression_8h_source.html">container_expression.h</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for container_expression.cpp:</div>
@@ -104,9 +110,22 @@ Namespaces</h2></td></tr>
 <tr class="memitem:d7/db7/namespace_kratos_1_1_container_expression_helper_utilities"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/db7/namespace_kratos_1_1_container_expression_helper_utilities.html">Kratos::ContainerExpressionHelperUtilities</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:a66ce8ba6e479e2d7d0d6fce0faf31d96"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d95/container__expression_8cpp.html#a66ce8ba6e479e2d7d0d6fce0faf31d96">KRATOS_DEFINE_BINARY_CONTAINER_EXPRESSION_OPERATOR</a>(OPERATOR_NAME)</td></tr>
+<tr class="separator:a66ce8ba6e479e2d7d0d6fce0faf31d96"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2aa959ddb324980e9b9afaa1093c7b3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d95/container__expression_8cpp.html#af2aa959ddb324980e9b9afaa1093c7b3">KRATOS_INSTANTIATE_BINARY_CONTAINER_EXPRESSION_OPERATOR</a>( OPERATOR_NAME,  CONTAINER_TYPE,  MESH_TYPE)</td></tr>
+<tr class="separator:af2aa959ddb324980e9b9afaa1093c7b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a201ed175b60ce8cf056cfeda0a977f2c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d95/container__expression_8cpp.html#a201ed175b60ce8cf056cfeda0a977f2c">KRATOS_INSTANTIATE_UNARY_CONTAINER_EXPRESSION_OPERATOR</a>( OPERATOR_NAME,  EXPRESSION_OPERATOR_NAME,  CONTAINER_TYPE,  MESH_TYPE)</td></tr>
+<tr class="separator:a201ed175b60ce8cf056cfeda0a977f2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3332198b24636854c127eea9bd5854e2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d95/container__expression_8cpp.html#a3332198b24636854c127eea9bd5854e2">KRATOS_INSTANTIATE_CONTAINER_EXPRESSION_OPERATOR_GROUP</a>(CONTAINER_TYPE,  MESH_TYPE)</td></tr>
+<tr class="separator:a3332198b24636854c127eea9bd5854e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47695aa26868e83ffd9e3fde1109a29f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d95/container__expression_8cpp.html#a47695aa26868e83ffd9e3fde1109a29f">KRATOS_INSTANTIATE_CONTAINER_EXPRESSION_OPERATOR_GROUP_CONTAINER_TYPE</a>(CONTAINER_TYPE)</td></tr>
+<tr class="separator:a47695aa26868e83ffd9e3fde1109a29f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a6345d816e3f7fed110f6a659a058bfa2"><td class="memTemplParams" colspan="2">template&lt;class TMeshType &gt; </td></tr>
+<tr class="memitem:a6345d816e3f7fed110f6a659a058bfa2"><td class="memTemplParams" colspan="2">template&lt;MeshType TMeshType&gt; </td></tr>
 <tr class="memitem:a6345d816e3f7fed110f6a659a058bfa2"><td class="memTemplItemLeft" align="right" valign="top">ModelPart::MeshType &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d7/db7/namespace_kratos_1_1_container_expression_helper_utilities.html#a6345d816e3f7fed110f6a659a058bfa2">Kratos::ContainerExpressionHelperUtilities::GetMesh</a> (<a class="el" href="../../d4/d5e/class_model_part.html">ModelPart</a> &amp;rModelPart)</td></tr>
 <tr class="separator:a6345d816e3f7fed110f6a659a058bfa2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a75208e4e3fc6bf615bb2d471161f6c36"><td class="memItemLeft" align="right" valign="top">template&lt;&gt; </td></tr>
@@ -118,7 +137,7 @@ Functions</h2></td></tr>
 <tr class="memitem:aec36a73491c74a434673c0977751a126"><td class="memItemLeft" align="right" valign="top">template&lt;&gt; </td></tr>
 <tr class="memitem:aec36a73491c74a434673c0977751a126"><td class="memTemplItemLeft" align="right" valign="top">ModelPart::MeshType &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d7/db7/namespace_kratos_1_1_container_expression_helper_utilities.html#aec36a73491c74a434673c0977751a126">Kratos::ContainerExpressionHelperUtilities::GetMesh&lt; MeshType::Interface &gt;</a> (<a class="el" href="../../d4/d5e/class_model_part.html">ModelPart</a> &amp;rModelPart)</td></tr>
 <tr class="separator:aec36a73491c74a434673c0977751a126"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a30ec439b4eda8f3fab3b6fecc3f10e55"><td class="memTemplParams" colspan="2">template&lt;class TMeshType &gt; </td></tr>
+<tr class="memitem:a30ec439b4eda8f3fab3b6fecc3f10e55"><td class="memTemplParams" colspan="2">template&lt;MeshType TMeshType&gt; </td></tr>
 <tr class="memitem:a30ec439b4eda8f3fab3b6fecc3f10e55"><td class="memTemplItemLeft" align="right" valign="top">const ModelPart::MeshType &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d7/db7/namespace_kratos_1_1_container_expression_helper_utilities.html#a30ec439b4eda8f3fab3b6fecc3f10e55">Kratos::ContainerExpressionHelperUtilities::GetMesh</a> (const <a class="el" href="../../d4/d5e/class_model_part.html">ModelPart</a> &amp;rModelPart)</td></tr>
 <tr class="separator:a30ec439b4eda8f3fab3b6fecc3f10e55"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7fe40f288d9f9d628b46292c905046a0"><td class="memItemLeft" align="right" valign="top">template&lt;&gt; </td></tr>
@@ -161,10 +180,208 @@ Functions</h2></td></tr>
 <tr class="memitem:a30ee309965d2d8a401c25f02f8ae14bb"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d7/db7/namespace_kratos_1_1_container_expression_helper_utilities.html#a30ee309965d2d8a401c25f02f8ae14bb">Kratos::ContainerExpressionHelperUtilities::MoveFrom</a> (TContainerExpressionType &amp;rContainerExpression, TRawDataType *pBegin, const int NumberOfEntities, int const *pShapeBegin, const int ShapeSize)</td></tr>
 <tr class="separator:a30ee309965d2d8a401c25f02f8ae14bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="a66ce8ba6e479e2d7d0d6fce0faf31d96"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a66ce8ba6e479e2d7d0d6fce0faf31d96">&#9670;&nbsp;</a></span>KRATOS_DEFINE_BINARY_CONTAINER_EXPRESSION_OPERATOR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define KRATOS_DEFINE_BINARY_CONTAINER_EXPRESSION_OPERATOR</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">OPERATOR_NAME</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line">    <span class="keyword">template</span> &lt;<span class="keyword">class</span> TContainerType, MeshType TMeshType&gt;                                  \</div>
+<div class="line">    ContainerExpression&lt;TContainerType, TMeshType&gt; OPERATOR_NAME(                        \</div>
+<div class="line">        <span class="keyword">const</span> ContainerExpression&lt;TContainerType, TMeshType&gt;&amp; rLeft, <span class="keyword">const</span> <span class="keywordtype">double</span> <a class="code" href="../../db/d66/namespace_kratos.html#a249f5334f3276fa48bc0116c28722d4c">Right</a>) \</div>
+<div class="line">    {                                                                                    \</div>
+<div class="line">        ContainerExpression&lt;TContainerType, TMeshType&gt; result(*rLeft.pGetModelPart());   \</div>
+<div class="line">        result.SetExpression(Kratos::OPERATOR_NAME(rLeft.pGetExpression(), <a class="code" href="../../db/d66/namespace_kratos.html#a249f5334f3276fa48bc0116c28722d4c">Right</a>));      \</div>
+<div class="line">        return result;                                                                   \</div>
+<div class="line">    }                                                                                    \</div>
+<div class="line">                                                                                         \</div>
+<div class="line">    template &lt;class TContainerType, MeshType TMeshType&gt;                                  \</div>
+<div class="line">    ContainerExpression&lt;TContainerType, TMeshType&gt; OPERATOR_NAME(                        \</div>
+<div class="line">        <span class="keyword">const</span> <span class="keywordtype">double</span> Left, <span class="keyword">const</span> ContainerExpression&lt;TContainerType, TMeshType&gt;&amp; rRight) \</div>
+<div class="line">    {                                                                                    \</div>
+<div class="line">        ContainerExpression&lt;TContainerType, TMeshType&gt; result(*rRight.pGetModelPart());  \</div>
+<div class="line">        result.SetExpression(Kratos::OPERATOR_NAME(Left, rRight.pGetExpression()));      \</div>
+<div class="line">        return result;                                                                   \</div>
+<div class="line">    }                                                                                    \</div>
+<div class="line">                                                                                         \</div>
+<div class="line">    template &lt;class TContainerType, MeshType TMeshType&gt;                                  \</div>
+<div class="line">    ContainerExpression&lt;TContainerType, TMeshType&gt; OPERATOR_NAME(                        \</div>
+<div class="line">        <span class="keyword">const</span> ContainerExpression&lt;TContainerType, TMeshType&gt;&amp; rLeft,                     \</div>
+<div class="line">        <span class="keyword">const</span> ContainerExpression&lt;TContainerType, TMeshType&gt;&amp; rRight)                    \</div>
+<div class="line">    {                                                                                    \</div>
+<div class="line">        ContainerExpression&lt;TContainerType, TMeshType&gt; result(*rLeft.pGetModelPart());   \</div>
+<div class="line">        result.SetExpression(Kratos::OPERATOR_NAME(rLeft.pGetExpression(),               \</div>
+<div class="line">                                                   rRight.pGetExpression()));            \</div>
+<div class="line">        return result;                                                                   \</div>
+<div class="line">    }</div>
+<div class="ttc" id="anamespace_kratos_html_a249f5334f3276fa48bc0116c28722d4c"><div class="ttname"><a href="../../db/d66/namespace_kratos.html#a249f5334f3276fa48bc0116c28722d4c">Kratos::Right</a></div><div class="ttdeci">Flags const Flags &amp; Right</div><div class="ttdef"><b>Definition:</b> flags.cpp:56</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="af2aa959ddb324980e9b9afaa1093c7b3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af2aa959ddb324980e9b9afaa1093c7b3">&#9670;&nbsp;</a></span>KRATOS_INSTANTIATE_BINARY_CONTAINER_EXPRESSION_OPERATOR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define KRATOS_INSTANTIATE_BINARY_CONTAINER_EXPRESSION_OPERATOR</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">OPERATOR_NAME, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">CONTAINER_TYPE, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">MESH_TYPE&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line">    <span class="keyword">template</span> <a class="code" href="../../df/d42/mmio_8h.html#a7df73a6dfc48ef4319bb914b8b246c53">KRATOS_API</a>(KRATOS_CORE) ContainerExpression&lt;CONTAINER_TYPE, MESH_TYPE&gt; OPERATOR_NAME( \</div>
+<div class="line">        <span class="keyword">const</span> ContainerExpression&lt;CONTAINER_TYPE, MESH_TYPE&gt;&amp;, <span class="keyword">const</span> <span class="keywordtype">double</span>);                      \</div>
+<div class="line">    template <a class="code" href="../../df/d42/mmio_8h.html#a7df73a6dfc48ef4319bb914b8b246c53">KRATOS_API</a>(KRATOS_CORE) ContainerExpression&lt;CONTAINER_TYPE, MESH_TYPE&gt; OPERATOR_NAME( \</div>
+<div class="line">        <span class="keyword">const</span> <span class="keywordtype">double</span>, <span class="keyword">const</span> ContainerExpression&lt;CONTAINER_TYPE, MESH_TYPE&gt;&amp;);                      \</div>
+<div class="line">    template <a class="code" href="../../df/d42/mmio_8h.html#a7df73a6dfc48ef4319bb914b8b246c53">KRATOS_API</a>(KRATOS_CORE) ContainerExpression&lt;CONTAINER_TYPE, MESH_TYPE&gt; OPERATOR_NAME( \</div>
+<div class="line">        <span class="keyword">const</span> ContainerExpression&lt;CONTAINER_TYPE, MESH_TYPE&gt;&amp;,                                     \</div>
+<div class="line">        <span class="keyword">const</span> ContainerExpression&lt;CONTAINER_TYPE, MESH_TYPE&gt;&amp;);</div>
+<div class="ttc" id="ammio_8h_html_a7df73a6dfc48ef4319bb914b8b246c53"><div class="ttname"><a href="../../df/d42/mmio_8h.html#a7df73a6dfc48ef4319bb914b8b246c53">KRATOS_API</a></div><div class="ttdeci">KRATOS_API(KRATOS_CORE) char *mm_typecode_to_str(MM_typecode matcode)</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a3332198b24636854c127eea9bd5854e2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3332198b24636854c127eea9bd5854e2">&#9670;&nbsp;</a></span>KRATOS_INSTANTIATE_CONTAINER_EXPRESSION_OPERATOR_GROUP</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define KRATOS_INSTANTIATE_CONTAINER_EXPRESSION_OPERATOR_GROUP</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">CONTAINER_TYPE, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">MESH_TYPE&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a47695aa26868e83ffd9e3fde1109a29f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a47695aa26868e83ffd9e3fde1109a29f">&#9670;&nbsp;</a></span>KRATOS_INSTANTIATE_CONTAINER_EXPRESSION_OPERATOR_GROUP_CONTAINER_TYPE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define KRATOS_INSTANTIATE_CONTAINER_EXPRESSION_OPERATOR_GROUP_CONTAINER_TYPE</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">CONTAINER_TYPE</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line">    <a class="code" href="../../d4/d95/container__expression_8cpp.html#a3332198b24636854c127eea9bd5854e2">KRATOS_INSTANTIATE_CONTAINER_EXPRESSION_OPERATOR_GROUP</a>(CONTAINER_TYPE, <a class="code" href="../../db/d66/namespace_kratos.html#a38c7c962acc31bf3c5e7956a50af845da3b9747280dd65cef0a16ecedda57fbe5">MeshType::Local</a>)     \</div>
+<div class="line">    KRATOS_INSTANTIATE_CONTAINER_EXPRESSION_OPERATOR_GROUP(CONTAINER_TYPE, <a class="code" href="../../db/d66/namespace_kratos.html#a38c7c962acc31bf3c5e7956a50af845da96139b6ec3b4f5c7e43fd48a024272c6">MeshType::Interface</a>) \</div>
+<div class="line">    KRATOS_INSTANTIATE_CONTAINER_EXPRESSION_OPERATOR_GROUP(CONTAINER_TYPE, <a class="code" href="../../db/d66/namespace_kratos.html#a38c7c962acc31bf3c5e7956a50af845da6778831f3ef4e01321bd34bdf2c7419b">MeshType::Ghost</a>)</div>
+<div class="ttc" id="acontainer__expression_8cpp_html_a3332198b24636854c127eea9bd5854e2"><div class="ttname"><a href="../../d4/d95/container__expression_8cpp.html#a3332198b24636854c127eea9bd5854e2">KRATOS_INSTANTIATE_CONTAINER_EXPRESSION_OPERATOR_GROUP</a></div><div class="ttdeci">#define KRATOS_INSTANTIATE_CONTAINER_EXPRESSION_OPERATOR_GROUP(CONTAINER_TYPE, MESH_TYPE)</div><div class="ttdef"><b>Definition:</b> container_expression.cpp:510</div></div>
+<div class="ttc" id="anamespace_kratos_html_a38c7c962acc31bf3c5e7956a50af845da3b9747280dd65cef0a16ecedda57fbe5"><div class="ttname"><a href="../../db/d66/namespace_kratos.html#a38c7c962acc31bf3c5e7956a50af845da3b9747280dd65cef0a16ecedda57fbe5">Kratos::Local</a></div><div class="ttdeci">@ Local</div><div class="ttdef"><b>Definition:</b> traits.h:20</div></div>
+<div class="ttc" id="anamespace_kratos_html_a38c7c962acc31bf3c5e7956a50af845da6778831f3ef4e01321bd34bdf2c7419b"><div class="ttname"><a href="../../db/d66/namespace_kratos.html#a38c7c962acc31bf3c5e7956a50af845da6778831f3ef4e01321bd34bdf2c7419b">Kratos::Ghost</a></div><div class="ttdeci">@ Ghost</div><div class="ttdef"><b>Definition:</b> traits.h:21</div></div>
+<div class="ttc" id="anamespace_kratos_html_a38c7c962acc31bf3c5e7956a50af845da96139b6ec3b4f5c7e43fd48a024272c6"><div class="ttname"><a href="../../db/d66/namespace_kratos.html#a38c7c962acc31bf3c5e7956a50af845da96139b6ec3b4f5c7e43fd48a024272c6">Kratos::Interface</a></div><div class="ttdeci">@ Interface</div><div class="ttdef"><b>Definition:</b> traits.h:22</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a201ed175b60ce8cf056cfeda0a977f2c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a201ed175b60ce8cf056cfeda0a977f2c">&#9670;&nbsp;</a></span>KRATOS_INSTANTIATE_UNARY_CONTAINER_EXPRESSION_OPERATOR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define KRATOS_INSTANTIATE_UNARY_CONTAINER_EXPRESSION_OPERATOR</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">OPERATOR_NAME, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">EXPRESSION_OPERATOR_NAME, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">CONTAINER_TYPE, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">MESH_TYPE&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line">    <span class="keyword">template</span> &lt;&gt;                                                                                                    \</div>
+<div class="line">    ContainerExpression&lt;CONTAINER_TYPE, MESH_TYPE&gt;&amp; ContainerExpression&lt;CONTAINER_TYPE, MESH_TYPE&gt;::OPERATOR_NAME( \</div>
+<div class="line">        <span class="keyword">const</span> <span class="keywordtype">double</span> Value)                                                                                        \</div>
+<div class="line">    {                                                                                                              \</div>
+<div class="line">        this-&gt;mpExpression = EXPRESSION_OPERATOR_NAME(*this-&gt;mpExpression, Value);                                 \</div>
+<div class="line">        return *<span class="keyword">this</span>;                                                                                              \</div>
+<div class="line">    }                                                                                                              \</div>
+<div class="line">    template &lt;&gt;                                                                                                    \</div>
+<div class="line">    ContainerExpression&lt;CONTAINER_TYPE, MESH_TYPE&gt;&amp; ContainerExpression&lt;CONTAINER_TYPE, MESH_TYPE&gt;::OPERATOR_NAME( \</div>
+<div class="line">        <span class="keyword">const</span> ContainerExpression&lt;CONTAINER_TYPE, MESH_TYPE&gt;&amp; Value)                                               \</div>
+<div class="line">    {                                                                                                              \</div>
+<div class="line">        this-&gt;mpExpression =                                                                                       \</div>
+<div class="line">            EXPRESSION_OPERATOR_NAME(*this-&gt;mpExpression, Value.pGetExpression());                                 \</div>
+<div class="line">        return *<span class="keyword">this</span>;                                                                                              \</div>
+<div class="line">    }</div>
+</div><!-- fragment -->
+</div>
+</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jun 13 2023 02:23:45 for KratosMultiphysics by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Wed Jun 14 2023 02:26:02 for KratosMultiphysics by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

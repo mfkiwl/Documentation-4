@@ -93,52 +93,61 @@ $(function() {
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">//</span></div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">//</span></div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#if !defined(KRATOS_GLOBAL_VARIABLES_H_INCLUDED )</span></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#define  KRATOS_GLOBAL_VARIABLES_H_INCLUDED</span></div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment">// System includes</span></div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment">// External includes</span></div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment">// Project includes</span></div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">namespace </span><a class="code" href="../../db/d66/namespace_kratos.html">Kratos</a></div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;{</div>
-<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="../../d5/dc0/namespace_kratos_1_1_globals.html">   28</a></span>&#160;<span class="keyword">namespace </span>Globals</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;{</div>
-<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="../../d5/dc0/namespace_kratos_1_1_globals.html#ae57da311aaf349aa883363f673e534fc">   30</a></span>&#160;    constexpr <span class="keywordtype">double</span> <a class="code" href="../../d5/dc0/namespace_kratos_1_1_globals.html#ae57da311aaf349aa883363f673e534fc">Pi</a>   = 3.14159265358979323846264338327950288419716939937510582097494459230781640628620899862803482534211706798214808651L;</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
-<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="../../d5/dc0/namespace_kratos_1_1_globals.html#a4825592305aa3f7f3555ce147e131722">   32</a></span>&#160;    <span class="keyword">static</span> constexpr <span class="keywordtype">int</span> <a class="code" href="../../d5/dc0/namespace_kratos_1_1_globals.html#a4825592305aa3f7f3555ce147e131722">MaxAllowedThreads</a> = 128; <span class="comment">//we assume that no more than MaxAllowedThreads is used in SMP</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment">// System includes</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment">// External includes</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment">// Project includes</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="../../d5/dc0/namespace_kratos_1_1_globals.html">   23</a></span>&#160;<span class="keyword">namespace </span><a class="code" href="../../d5/dc0/namespace_kratos_1_1_globals.html">Kratos::Globals</a></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;{</div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="../../d5/dc0/namespace_kratos_1_1_globals.html#ae57da311aaf349aa883363f673e534fc">   25</a></span>&#160;    constexpr <span class="keywordtype">double</span> <a class="code" href="../../d5/dc0/namespace_kratos_1_1_globals.html#ae57da311aaf349aa883363f673e534fc">Pi</a>   = 3.14159265358979323846264338327950288419716939937510582097494459230781640628620899862803482534211706798214808651L;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="../../d5/dc0/namespace_kratos_1_1_globals.html#a4825592305aa3f7f3555ce147e131722">   27</a></span>&#160;    <span class="keyword">static</span> constexpr <span class="keywordtype">int</span> <a class="code" href="../../d5/dc0/namespace_kratos_1_1_globals.html#a4825592305aa3f7f3555ce147e131722">MaxAllowedThreads</a> = 128; <span class="comment">//we assume that no more than MaxAllowedThreads is used in SMP</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
-<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="../../d5/dc0/namespace_kratos_1_1_globals.html#a0823f4a5f24f6b12ac9290e1dd28eb2d">   42</a></span>&#160;    <span class="keyword">enum class</span> <a class="code" href="../../d5/dc0/namespace_kratos_1_1_globals.html#a0823f4a5f24f6b12ac9290e1dd28eb2d">Configuration</a></div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    {</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        <a class="code" href="../../d5/dc0/namespace_kratos_1_1_globals.html#a0823f4a5f24f6b12ac9290e1dd28eb2da4f2a91e15af2631ff9424564b8a45fb2">Initial</a> = 0,</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        <a class="code" href="../../d5/dc0/namespace_kratos_1_1_globals.html#a0823f4a5f24f6b12ac9290e1dd28eb2da222a267cc5778206b253be35ee3ddab5">Current</a> = 1</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    };</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="../../d5/dc0/namespace_kratos_1_1_globals.html#a0823f4a5f24f6b12ac9290e1dd28eb2d">   37</a></span>&#160;    <span class="keyword">enum class</span> <a class="code" href="../../d5/dc0/namespace_kratos_1_1_globals.html#a0823f4a5f24f6b12ac9290e1dd28eb2d">Configuration</a></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    {</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        <a class="code" href="../../d5/dc0/namespace_kratos_1_1_globals.html#a0823f4a5f24f6b12ac9290e1dd28eb2da4f2a91e15af2631ff9424564b8a45fb2">Initial</a> = 0,</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        <a class="code" href="../../d5/dc0/namespace_kratos_1_1_globals.html#a0823f4a5f24f6b12ac9290e1dd28eb2da222a267cc5778206b253be35ee3ddab5">Current</a> = 1</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    };</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="../../d5/dc0/namespace_kratos_1_1_globals.html#ad083ce574e7f81d175b3dd5bcf71b813">   47</a></span>&#160;    <span class="keyword">enum class</span> <a class="code" href="../../d5/dc0/namespace_kratos_1_1_globals.html#ad083ce574e7f81d175b3dd5bcf71b813">DataLocation</a></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    {</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        <a class="code" href="../../d5/dc0/namespace_kratos_1_1_globals.html#ad083ce574e7f81d175b3dd5bcf71b813a17af9c0d63a5bf16c4c5724b43273ffe">NodeHistorical</a>,</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        <a class="code" href="../../d5/dc0/namespace_kratos_1_1_globals.html#ad083ce574e7f81d175b3dd5bcf71b813a90c8c5d285491827e6e306367f1b210d">NodeNonHistorical</a>,</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        <a class="code" href="../../d5/dc0/namespace_kratos_1_1_globals.html#ad083ce574e7f81d175b3dd5bcf71b813a231afe47f3f37d3808096b36c28b4ded">Element</a>,</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        <a class="code" href="../../d5/dc0/namespace_kratos_1_1_globals.html#ad083ce574e7f81d175b3dd5bcf71b813a9e2941b3c81256fac10392aaca4ccfde">Condition</a>,</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        <a class="code" href="../../d5/dc0/namespace_kratos_1_1_globals.html#ad083ce574e7f81d175b3dd5bcf71b813ab9b97615eabc734527645475fb66bd6c">ModelPart</a>,</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        <a class="code" href="../../d5/dc0/namespace_kratos_1_1_globals.html#ad083ce574e7f81d175b3dd5bcf71b813a72b048930550a0e11889dd0ac17b0439">ProcessInfo</a></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    };</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;}</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;}  <span class="comment">// namespace Kratos.</span></div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// KRATOS_GLOBAL_VARIABLES_H_INCLUDED  defined</span></div>
-<div class="ttc" id="anamespace_kratos_1_1_globals_html_a0823f4a5f24f6b12ac9290e1dd28eb2d"><div class="ttname"><a href="../../d5/dc0/namespace_kratos_1_1_globals.html#a0823f4a5f24f6b12ac9290e1dd28eb2d">Kratos::Globals::Configuration</a></div><div class="ttdeci">Configuration</div><div class="ttdoc">Enum for Initial and Current configurations.</div><div class="ttdef"><b>Definition:</b> global_variables.h:43</div></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;}  <span class="comment">// namespace Kratos::Globals</span></div>
+<div class="ttc" id="anamespace_kratos_1_1_globals_html"><div class="ttname"><a href="../../d5/dc0/namespace_kratos_1_1_globals.html">Kratos::Globals</a></div><div class="ttdef"><b>Definition:</b> global_variables.h:24</div></div>
+<div class="ttc" id="anamespace_kratos_1_1_globals_html_a0823f4a5f24f6b12ac9290e1dd28eb2d"><div class="ttname"><a href="../../d5/dc0/namespace_kratos_1_1_globals.html#a0823f4a5f24f6b12ac9290e1dd28eb2d">Kratos::Globals::Configuration</a></div><div class="ttdeci">Configuration</div><div class="ttdoc">Enum for Initial and Current configurations.</div><div class="ttdef"><b>Definition:</b> global_variables.h:38</div></div>
 <div class="ttc" id="anamespace_kratos_1_1_globals_html_a0823f4a5f24f6b12ac9290e1dd28eb2da222a267cc5778206b253be35ee3ddab5"><div class="ttname"><a href="../../d5/dc0/namespace_kratos_1_1_globals.html#a0823f4a5f24f6b12ac9290e1dd28eb2da222a267cc5778206b253be35ee3ddab5">Kratos::Globals::Configuration::Current</a></div><div class="ttdeci">@ Current</div></div>
 <div class="ttc" id="anamespace_kratos_1_1_globals_html_a0823f4a5f24f6b12ac9290e1dd28eb2da4f2a91e15af2631ff9424564b8a45fb2"><div class="ttname"><a href="../../d5/dc0/namespace_kratos_1_1_globals.html#a0823f4a5f24f6b12ac9290e1dd28eb2da4f2a91e15af2631ff9424564b8a45fb2">Kratos::Globals::Configuration::Initial</a></div><div class="ttdeci">@ Initial</div></div>
-<div class="ttc" id="anamespace_kratos_1_1_globals_html_a4825592305aa3f7f3555ce147e131722"><div class="ttname"><a href="../../d5/dc0/namespace_kratos_1_1_globals.html#a4825592305aa3f7f3555ce147e131722">Kratos::Globals::MaxAllowedThreads</a></div><div class="ttdeci">static constexpr int MaxAllowedThreads</div><div class="ttdef"><b>Definition:</b> global_variables.h:32</div></div>
-<div class="ttc" id="anamespace_kratos_1_1_globals_html_ae57da311aaf349aa883363f673e534fc"><div class="ttname"><a href="../../d5/dc0/namespace_kratos_1_1_globals.html#ae57da311aaf349aa883363f673e534fc">Kratos::Globals::Pi</a></div><div class="ttdeci">constexpr double Pi</div><div class="ttdef"><b>Definition:</b> global_variables.h:30</div></div>
-<div class="ttc" id="anamespace_kratos_html"><div class="ttname"><a href="../../db/d66/namespace_kratos.html">Kratos</a></div><div class="ttdoc">REF: G. R. Cowper, GAUSSIAN QUADRATURE FORMULAS FOR TRIANGLES.</div><div class="ttdef"><b>Definition:</b> mesh_condition.cpp:21</div></div>
+<div class="ttc" id="anamespace_kratos_1_1_globals_html_a4825592305aa3f7f3555ce147e131722"><div class="ttname"><a href="../../d5/dc0/namespace_kratos_1_1_globals.html#a4825592305aa3f7f3555ce147e131722">Kratos::Globals::MaxAllowedThreads</a></div><div class="ttdeci">static constexpr int MaxAllowedThreads</div><div class="ttdef"><b>Definition:</b> global_variables.h:27</div></div>
+<div class="ttc" id="anamespace_kratos_1_1_globals_html_ad083ce574e7f81d175b3dd5bcf71b813"><div class="ttname"><a href="../../d5/dc0/namespace_kratos_1_1_globals.html#ad083ce574e7f81d175b3dd5bcf71b813">Kratos::Globals::DataLocation</a></div><div class="ttdeci">DataLocation</div><div class="ttdoc">Enum for location of data.</div><div class="ttdef"><b>Definition:</b> global_variables.h:48</div></div>
+<div class="ttc" id="anamespace_kratos_1_1_globals_html_ad083ce574e7f81d175b3dd5bcf71b813a17af9c0d63a5bf16c4c5724b43273ffe"><div class="ttname"><a href="../../d5/dc0/namespace_kratos_1_1_globals.html#ad083ce574e7f81d175b3dd5bcf71b813a17af9c0d63a5bf16c4c5724b43273ffe">Kratos::Globals::DataLocation::NodeHistorical</a></div><div class="ttdeci">@ NodeHistorical</div></div>
+<div class="ttc" id="anamespace_kratos_1_1_globals_html_ad083ce574e7f81d175b3dd5bcf71b813a231afe47f3f37d3808096b36c28b4ded"><div class="ttname"><a href="../../d5/dc0/namespace_kratos_1_1_globals.html#ad083ce574e7f81d175b3dd5bcf71b813a231afe47f3f37d3808096b36c28b4ded">Kratos::Globals::DataLocation::Element</a></div><div class="ttdeci">@ Element</div></div>
+<div class="ttc" id="anamespace_kratos_1_1_globals_html_ad083ce574e7f81d175b3dd5bcf71b813a72b048930550a0e11889dd0ac17b0439"><div class="ttname"><a href="../../d5/dc0/namespace_kratos_1_1_globals.html#ad083ce574e7f81d175b3dd5bcf71b813a72b048930550a0e11889dd0ac17b0439">Kratos::Globals::DataLocation::ProcessInfo</a></div><div class="ttdeci">@ ProcessInfo</div></div>
+<div class="ttc" id="anamespace_kratos_1_1_globals_html_ad083ce574e7f81d175b3dd5bcf71b813a90c8c5d285491827e6e306367f1b210d"><div class="ttname"><a href="../../d5/dc0/namespace_kratos_1_1_globals.html#ad083ce574e7f81d175b3dd5bcf71b813a90c8c5d285491827e6e306367f1b210d">Kratos::Globals::DataLocation::NodeNonHistorical</a></div><div class="ttdeci">@ NodeNonHistorical</div></div>
+<div class="ttc" id="anamespace_kratos_1_1_globals_html_ad083ce574e7f81d175b3dd5bcf71b813a9e2941b3c81256fac10392aaca4ccfde"><div class="ttname"><a href="../../d5/dc0/namespace_kratos_1_1_globals.html#ad083ce574e7f81d175b3dd5bcf71b813a9e2941b3c81256fac10392aaca4ccfde">Kratos::Globals::DataLocation::Condition</a></div><div class="ttdeci">@ Condition</div></div>
+<div class="ttc" id="anamespace_kratos_1_1_globals_html_ad083ce574e7f81d175b3dd5bcf71b813ab9b97615eabc734527645475fb66bd6c"><div class="ttname"><a href="../../d5/dc0/namespace_kratos_1_1_globals.html#ad083ce574e7f81d175b3dd5bcf71b813ab9b97615eabc734527645475fb66bd6c">Kratos::Globals::DataLocation::ModelPart</a></div><div class="ttdeci">@ ModelPart</div></div>
+<div class="ttc" id="anamespace_kratos_1_1_globals_html_ae57da311aaf349aa883363f673e534fc"><div class="ttname"><a href="../../d5/dc0/namespace_kratos_1_1_globals.html#ae57da311aaf349aa883363f673e534fc">Kratos::Globals::Pi</a></div><div class="ttdeci">constexpr double Pi</div><div class="ttdef"><b>Definition:</b> global_variables.h:25</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jun 13 2023 02:22:32 for KratosMultiphysics by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Wed Jun 14 2023 02:24:29 for KratosMultiphysics by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

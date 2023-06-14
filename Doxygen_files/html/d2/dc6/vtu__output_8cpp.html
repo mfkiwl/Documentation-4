@@ -85,15 +85,17 @@ $(function() {
 <div class="textblock"><code>#include &lt;vector&gt;</code><br />
 <code>#include &lt;iomanip&gt;</code><br />
 <code>#include &lt;numeric&gt;</code><br />
-<code>#include &quot;<a class="el" href="../../d4/d65/literal__flat__expression_8h_source.html">containers/container_expression/expressions/literal/literal_flat_expression.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../db/d19/specialized__container__expression_8h_source.html">containers/container_expression/specialized_container_expression.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d0/d97/container__expression_8h_source.html">expression/container_expression.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d6/d94/variable__expression__io_8h_source.html">expression/variable_expression_io.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d4/d65/literal__flat__expression_8h_source.html">expression/literal_flat_expression.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../db/d19/specialized__container__expression_8h_source.html">expression/specialized_container_expression.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="../../d9/dd1/data__communicator_8h_source.html">includes/data_communicator.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d7/d10/base__64__encoded__output_8h_source.html">input_output/base_64_encoded_output.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../da/d1d/vtk__definitions_8h_source.html">input_output/vtk_definitions.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="../../d1/dd4/global__pointer__utilities_8h_source.html">utilities/global_pointer_utilities.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="../../de/d07/parallel__utilities_8h_source.html">utilities/parallel_utilities.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="../../dc/dbe/pointer__communicator_8h_source.html">utilities/pointer_communicator.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="../../d9/d9f/string__utilities_8h_source.html">utilities/string_utilities.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../d7/d10/base__64__encoded__output_8h_source.html">input_output/base_64_encoded_output.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../da/d1d/vtk__definitions_8h_source.html">input_output/vtk_definitions.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="../../dc/ded/xml__expression__element_8h_source.html">utilities/xml_utilities/xml_expression_element.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="../../d3/dd4/xml__ostream__ascii__writer_8h_source.html">utilities/xml_utilities/xml_ostream_ascii_writer.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="../../d7/dda/xml__ostream__base64__binary__writer_8h_source.html">utilities/xml_utilities/xml_ostream_base64_binary_writer.h</a>&quot;</code><br />
@@ -121,11 +123,11 @@ Functions</h2></td></tr>
 <tr class="separator:a55e4b367c52f119f3f9e1569c2f01d4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a685c20104b56114b407811ecb2f2a7ca"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d66/namespace_kratos.html#a685c20104b56114b407811ecb2f2a7ca">Kratos::KRATOS_CREATE_LOCAL_FLAG</a> (<a class="el" href="../../d5/d2a/class_vtu_output.html">VtuOutput</a>, ELEMENTS, 3)</td></tr>
 <tr class="separator:a685c20104b56114b407811ecb2f2a7ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8733089608a686edfad7c1b6e227e79f"><td class="memItemLeft" align="right" valign="top">Expression::Pointer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/df4/namespace_kratos_1_1_vtu_output_helper_utilities.html#a8733089608a686edfad7c1b6e227e79f">Kratos::VtuOutputHelperUtilities::CreatePositionsExpression</a> (const ModelPart::NodesContainerType &amp;rNodes, const bool IsInitialConfiguration)</td></tr>
-<tr class="separator:a8733089608a686edfad7c1b6e227e79f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b22fcb0f3913526bcc7e686ff764f89"><td class="memItemLeft" align="right" valign="top">Expression::ConstPointer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/df4/namespace_kratos_1_1_vtu_output_helper_utilities.html#a9b22fcb0f3913526bcc7e686ff764f89">Kratos::VtuOutputHelperUtilities::CreatePositionsExpression</a> (const ModelPart::NodesContainerType &amp;rNodes, const bool IsInitialConfiguration)</td></tr>
+<tr class="separator:a9b22fcb0f3913526bcc7e686ff764f89"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8d5cd054effcbb2459a2563d520ca39c"><td class="memItemLeft" align="right" valign="top">XmlExpressionElement::Pointer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/df4/namespace_kratos_1_1_vtu_output_helper_utilities.html#a8d5cd054effcbb2459a2563d520ca39c">Kratos::VtuOutputHelperUtilities::CreateDataArrayElement</a> (const std::string &amp;rDataArrayName, const std::vector&lt; const Expression * &gt; &amp;rExpressions)</td></tr>
 <tr class="separator:a8d5cd054effcbb2459a2563d520ca39c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a821d5a35a40f9c0341ec5acc45681aa4"><td class="memTemplParams" colspan="2">template&lt;class TContainerType , class TMeshType &gt; </td></tr>
+<tr class="memitem:a821d5a35a40f9c0341ec5acc45681aa4"><td class="memTemplParams" colspan="2">template&lt;class TContainerType , MeshType TMeshType&gt; </td></tr>
 <tr class="memitem:a821d5a35a40f9c0341ec5acc45681aa4"><td class="memTemplItemLeft" align="right" valign="top">const Expression *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d7/df4/namespace_kratos_1_1_vtu_output_helper_utilities.html#a821d5a35a40f9c0341ec5acc45681aa4">Kratos::VtuOutputHelperUtilities::pGetExpression</a> (const ContainerExpression&lt; TContainerType, TMeshType &gt; &amp;rContainerExpression)</td></tr>
 <tr class="separator:a821d5a35a40f9c0341ec5acc45681aa4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aebe498eb9f8734a9625326c573c1e8ac"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/df4/namespace_kratos_1_1_vtu_output_helper_utilities.html#aebe498eb9f8734a9625326c573c1e8ac">Kratos::VtuOutputHelperUtilities::AddDataArrayElement</a> (XmlExpressionElement::Pointer pParentElement, XmlExpressionElement::Pointer pDataArrayElement)</td></tr>
@@ -182,7 +184,7 @@ Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jun 13 2023 02:23:50 for KratosMultiphysics by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Wed Jun 14 2023 02:26:07 for KratosMultiphysics by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

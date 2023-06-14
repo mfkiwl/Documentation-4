@@ -169,8 +169,8 @@ $(function() {
 <div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;    std::string mIntegrationControlVariableName;</div>
 <div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;    <span class="keyword">enum</span> TimeAveragingContainers</div>
 <div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;    {</div>
-<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;        NodalHistorical,</div>
-<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;        NodalNonHistorical,</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;        <a class="code" href="../../db/d66/namespace_kratos.html#ab25fc12793da5c77d1e897f3dc5e4014a59f9132780bedd60d7ec9596a497c2c2">NodalHistorical</a>,</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;        <a class="code" href="../../db/d66/namespace_kratos.html#ab25fc12793da5c77d1e897f3dc5e4014a638530fcd1d7c1aabe8c8afa845c4bf2">NodalNonHistorical</a>,</div>
 <div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;        ElementalNonHistorical</div>
 <div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;    };</div>
 <div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;    TimeAveragingContainers mTimeAveragingContainer;</div>
@@ -230,7 +230,7 @@ $(function() {
 <div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160; </div>
 <div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160; </div>
 <div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160; </div>
-<div class="line"><a name="l00252"></a><span class="lineno"><a class="line" href="../../df/da3/group___kratos.html#ga57685f8ffad3978e5dc27cf20dc94de2">  252</a></span>&#160;<span class="keyword">inline</span> std::ostream&amp; <a class="code" href="../../db/d66/namespace_kratos.html#acfc842a43d19dffc2d8105e5cbea17a9">operator&lt;&lt;</a>(std::ostream&amp; rOStream, <span class="keyword">const</span> TimeAveragingProcess&amp; rThis);</div>
+<div class="line"><a name="l00252"></a><span class="lineno"><a class="line" href="../../d4/dbe/group___application_name_application.html#ga57685f8ffad3978e5dc27cf20dc94de2">  252</a></span>&#160;<span class="keyword">inline</span> std::ostream&amp; <a class="code" href="../../db/d66/namespace_kratos.html#acfc842a43d19dffc2d8105e5cbea17a9">operator&lt;&lt;</a>(std::ostream&amp; rOStream, <span class="keyword">const</span> TimeAveragingProcess&amp; rThis);</div>
 <div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160; </div>
 <div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160; </div>
 <div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160; </div>
@@ -238,7 +238,7 @@ $(function() {
 <div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160; </div>
 <div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// KRATOS_TIME_AVERAGING_PROCESS_H_INCLUDED defined</span></div>
 <div class="ttc" id="aclass_kratos_1_1_element_html"><div class="ttname"><a href="../../d5/dd4/class_kratos_1_1_element.html">Kratos::Element</a></div><div class="ttdoc">Base class for all Elements.</div><div class="ttdef"><b>Definition:</b> element.h:60</div></div>
-<div class="ttc" id="aclass_kratos_1_1_node_html"><div class="ttname"><a href="../../d5/ddd/class_kratos_1_1_node.html">Kratos::Node</a></div><div class="ttdoc">This class defines the node.</div><div class="ttdef"><b>Definition:</b> node.h:67</div></div>
+<div class="ttc" id="aclass_kratos_1_1_node_html"><div class="ttname"><a href="../../d5/ddd/class_kratos_1_1_node.html">Kratos::Node</a></div><div class="ttdoc">This class defines the node.</div><div class="ttdef"><b>Definition:</b> node.h:65</div></div>
 <div class="ttc" id="aclass_model_html"><div class="ttname"><a href="../../d0/de3/class_model.html">Model</a></div><div class="ttdoc">This class aims to manage different model parts across multi-physics simulations.</div></div>
 <div class="ttc" id="aclass_parameters_html"><div class="ttname"><a href="../../da/d39/class_parameters.html">Parameters</a></div><div class="ttdoc">This class provides to Kratos a data structure for I/O based on the standard of JSON.</div></div>
 <div class="ttc" id="aelement__external__bindings_8cpp_html_a162817daeac17ee089d5b9520904d762"><div class="ttname"><a href="../../d8/d1d/element__external__bindings_8cpp.html#a162817daeac17ee089d5b9520904d762">ElementType</a></div><div class="ttdeci">Kratos::Element ElementType</div><div class="ttdef"><b>Definition:</b> element_external_bindings.cpp:7</div></div>
@@ -248,6 +248,8 @@ $(function() {
 <div class="ttc" id="anamespace_kratos_html"><div class="ttname"><a href="../../db/d66/namespace_kratos.html">Kratos</a></div><div class="ttdoc">REF: G. R. Cowper, GAUSSIAN QUADRATURE FORMULAS FOR TRIANGLES.</div><div class="ttdef"><b>Definition:</b> mesh_condition.cpp:21</div></div>
 <div class="ttc" id="anamespace_kratos_html_a14ab8160ba3f8291244835400249c09d"><div class="ttname"><a href="../../db/d66/namespace_kratos.html#a14ab8160ba3f8291244835400249c09d">Kratos::NodesContainerType</a></div><div class="ttdeci">ModelPart::NodesContainerType NodesContainerType</div><div class="ttdef"><b>Definition:</b> find_conditions_neighbours_process.h:44</div></div>
 <div class="ttc" id="anamespace_kratos_html_a4e2ab605ef101fe7856e7f373e418478"><div class="ttname"><a href="../../db/d66/namespace_kratos.html#a4e2ab605ef101fe7856e7f373e418478">Kratos::NodeType</a></div><div class="ttdeci">Node NodeType</div><div class="ttdoc">The definition of the node.</div><div class="ttdef"><b>Definition:</b> mortar_classes.h:37</div></div>
+<div class="ttc" id="anamespace_kratos_html_ab25fc12793da5c77d1e897f3dc5e4014a59f9132780bedd60d7ec9596a497c2c2"><div class="ttname"><a href="../../db/d66/namespace_kratos.html#ab25fc12793da5c77d1e897f3dc5e4014a59f9132780bedd60d7ec9596a497c2c2">Kratos::NodalHistorical</a></div><div class="ttdeci">@ NodalHistorical</div><div class="ttdef"><b>Definition:</b> traits.h:27</div></div>
+<div class="ttc" id="anamespace_kratos_html_ab25fc12793da5c77d1e897f3dc5e4014a638530fcd1d7c1aabe8c8afa845c4bf2"><div class="ttname"><a href="../../db/d66/namespace_kratos.html#ab25fc12793da5c77d1e897f3dc5e4014a638530fcd1d7c1aabe8c8afa845c4bf2">Kratos::NodalNonHistorical</a></div><div class="ttdeci">@ NodalNonHistorical</div><div class="ttdef"><b>Definition:</b> traits.h:28</div></div>
 <div class="ttc" id="anamespace_kratos_html_acfc842a43d19dffc2d8105e5cbea17a9"><div class="ttname"><a href="../../db/d66/namespace_kratos.html#acfc842a43d19dffc2d8105e5cbea17a9">Kratos::operator&lt;&lt;</a></div><div class="ttdeci">std::ostream &amp; operator&lt;&lt;(std::ostream &amp;rOStream, const LinearMasterSlaveConstraint &amp;rThis)</div><div class="ttdoc">output stream function</div><div class="ttdef"><b>Definition:</b> linear_master_slave_constraint.h:432</div></div>
 <div class="ttc" id="anamespaceinitial__time__bounds_html_ac78b045ae7c7a41fb95b530c69369ebd"><div class="ttname"><a href="../../d1/df3/namespaceinitial__time__bounds.html#ac78b045ae7c7a41fb95b530c69369ebd">initial_time_bounds.Average</a></div><div class="ttdeci">def Average(vector_container, current_values, k_calc, pp)</div><div class="ttdef"><b>Definition:</b> initial_time_bounds.py:102</div></div>
 <div class="ttc" id="aprocess_8h_html"><div class="ttname"><a href="../../da/d42/process_8h.html">process.h</a></div></div>
@@ -255,7 +257,7 @@ $(function() {
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jun 13 2023 02:22:41 for KratosMultiphysics by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Wed Jun 14 2023 02:24:41 for KratosMultiphysics by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

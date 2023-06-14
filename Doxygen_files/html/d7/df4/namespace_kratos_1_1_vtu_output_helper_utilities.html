@@ -84,12 +84,12 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a8733089608a686edfad7c1b6e227e79f"><td class="memItemLeft" align="right" valign="top">Expression::Pointer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/df4/namespace_kratos_1_1_vtu_output_helper_utilities.html#a8733089608a686edfad7c1b6e227e79f">CreatePositionsExpression</a> (const ModelPart::NodesContainerType &amp;rNodes, const <a class="el" href="../../db/d66/namespace_kratos.html#a14b9d687ed53c882489400b57cdf34cd">bool</a> IsInitialConfiguration)</td></tr>
-<tr class="separator:a8733089608a686edfad7c1b6e227e79f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b22fcb0f3913526bcc7e686ff764f89"><td class="memItemLeft" align="right" valign="top">Expression::ConstPointer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/df4/namespace_kratos_1_1_vtu_output_helper_utilities.html#a9b22fcb0f3913526bcc7e686ff764f89">CreatePositionsExpression</a> (const ModelPart::NodesContainerType &amp;rNodes, const <a class="el" href="../../db/d66/namespace_kratos.html#a14b9d687ed53c882489400b57cdf34cd">bool</a> IsInitialConfiguration)</td></tr>
+<tr class="separator:a9b22fcb0f3913526bcc7e686ff764f89"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8d5cd054effcbb2459a2563d520ca39c"><td class="memItemLeft" align="right" valign="top">XmlExpressionElement::Pointer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/df4/namespace_kratos_1_1_vtu_output_helper_utilities.html#a8d5cd054effcbb2459a2563d520ca39c">CreateDataArrayElement</a> (const std::string &amp;rDataArrayName, const std::vector&lt; const Expression * &gt; &amp;rExpressions)</td></tr>
 <tr class="separator:a8d5cd054effcbb2459a2563d520ca39c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a821d5a35a40f9c0341ec5acc45681aa4"><td class="memTemplParams" colspan="2">template&lt;class TContainerType , class TMeshType &gt; </td></tr>
-<tr class="memitem:a821d5a35a40f9c0341ec5acc45681aa4"><td class="memTemplItemLeft" align="right" valign="top">const Expression *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d7/df4/namespace_kratos_1_1_vtu_output_helper_utilities.html#a821d5a35a40f9c0341ec5acc45681aa4">pGetExpression</a> (const ContainerExpression&lt; TContainerType, TMeshType &gt; &amp;rContainerExpression)</td></tr>
+<tr class="memitem:a821d5a35a40f9c0341ec5acc45681aa4"><td class="memTemplParams" colspan="2">template&lt;class TContainerType , MeshType TMeshType&gt; </td></tr>
+<tr class="memitem:a821d5a35a40f9c0341ec5acc45681aa4"><td class="memTemplItemLeft" align="right" valign="top">const Expression *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d7/df4/namespace_kratos_1_1_vtu_output_helper_utilities.html#a821d5a35a40f9c0341ec5acc45681aa4">pGetExpression</a> (const <a class="el" href="../../d7/d11/class_kratos_1_1_container_expression.html">ContainerExpression</a>&lt; TContainerType, TMeshType &gt; &amp;rContainerExpression)</td></tr>
 <tr class="separator:a821d5a35a40f9c0341ec5acc45681aa4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aebe498eb9f8734a9625326c573c1e8ac"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/df4/namespace_kratos_1_1_vtu_output_helper_utilities.html#aebe498eb9f8734a9625326c573c1e8ac">AddDataArrayElement</a> (XmlExpressionElement::Pointer pParentElement, XmlExpressionElement::Pointer pDataArrayElement)</td></tr>
 <tr class="separator:aebe498eb9f8734a9625326c573c1e8ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -119,7 +119,7 @@ Functions</h2></td></tr>
 <tr class="memitem:a2ce0fffc28a9569697d46433c10fcb01"><td class="memItemLeft" align="right" valign="top">Expression::Pointer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/df4/namespace_kratos_1_1_vtu_output_helper_utilities.html#a2ce0fffc28a9569697d46433c10fcb01">CreateGhostNodeExpression</a> (const DataCommunicator &amp;rDataCommunicator, const Expression &amp;rLocalNodesExpression, const ModelPart::NodesContainerType &amp;rLocalNodes, const ModelPart::NodesContainerType &amp;rGhostNodes, const std::unordered_map&lt; <a class="el" href="../../d5/d4d/group___kratos_core.html#ga1ba1e34f0af6a7cfcfa9b43e1f8e8c91">IndexType</a>, <a class="el" href="../../d5/d4d/group___kratos_core.html#ga1ba1e34f0af6a7cfcfa9b43e1f8e8c91">IndexType</a> &gt; &amp;rKratosVtuIndicesMap)</td></tr>
 <tr class="separator:a2ce0fffc28a9569697d46433c10fcb01"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a94a4bb61962e6cdfe4344e44c46b07d7"><td class="memTemplParams" colspan="2">template&lt;class TContainerType &gt; </td></tr>
-<tr class="memitem:a94a4bb61962e6cdfe4344e44c46b07d7"><td class="memTemplItemLeft" align="right" valign="top">XmlExpressionElement::Pointer&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d7/df4/namespace_kratos_1_1_vtu_output_helper_utilities.html#a94a4bb61962e6cdfe4344e44c46b07d7">CreateContainerExpressionXmlElement</a> (const std::string &amp;rExpressionName, const ContainerExpression&lt; TContainerType &gt; &amp;rContainerExpression, const std::unordered_map&lt; <a class="el" href="../../d5/d4d/group___kratos_core.html#ga1ba1e34f0af6a7cfcfa9b43e1f8e8c91">IndexType</a>, <a class="el" href="../../d5/d4d/group___kratos_core.html#ga1ba1e34f0af6a7cfcfa9b43e1f8e8c91">IndexType</a> &gt; &amp;rKratosVtuIndicesMap)</td></tr>
+<tr class="memitem:a94a4bb61962e6cdfe4344e44c46b07d7"><td class="memTemplItemLeft" align="right" valign="top">XmlExpressionElement::Pointer&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d7/df4/namespace_kratos_1_1_vtu_output_helper_utilities.html#a94a4bb61962e6cdfe4344e44c46b07d7">CreateContainerExpressionXmlElement</a> (const std::string &amp;rExpressionName, const <a class="el" href="../../d7/d11/class_kratos_1_1_container_expression.html">ContainerExpression</a>&lt; TContainerType &gt; &amp;rContainerExpression, const std::unordered_map&lt; <a class="el" href="../../d5/d4d/group___kratos_core.html#ga1ba1e34f0af6a7cfcfa9b43e1f8e8c91">IndexType</a>, <a class="el" href="../../d5/d4d/group___kratos_core.html#ga1ba1e34f0af6a7cfcfa9b43e1f8e8c91">IndexType</a> &gt; &amp;rKratosVtuIndicesMap)</td></tr>
 <tr class="separator:a94a4bb61962e6cdfe4344e44c46b07d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afad4edeb444100498ad39021f7e84c93"><td class="memTemplParams" colspan="2">template&lt;class... TLists&gt; </td></tr>
 <tr class="memitem:afad4edeb444100498ad39021f7e84c93"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d7/df4/namespace_kratos_1_1_vtu_output_helper_utilities.html#afad4edeb444100498ad39021f7e84c93">CheckDataArrayName</a> (const std::string &amp;rName, TLists &amp;... rLists)</td></tr>
@@ -426,7 +426,7 @@ template&lt;class TContainerType &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const ContainerExpression&lt; TContainerType &gt; &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="../../d7/d11/class_kratos_1_1_container_expression.html">ContainerExpression</a>&lt; TContainerType &gt; &amp;&#160;</td>
           <td class="paramname"><em>rContainerExpression</em>, </td>
         </tr>
         <tr>
@@ -681,14 +681,14 @@ template&lt;class TContainerType &gt; </div>
 
 </div>
 </div>
-<a id="a8733089608a686edfad7c1b6e227e79f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8733089608a686edfad7c1b6e227e79f">&#9670;&nbsp;</a></span>CreatePositionsExpression()</h2>
+<a id="a9b22fcb0f3913526bcc7e686ff764f89"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9b22fcb0f3913526bcc7e686ff764f89">&#9670;&nbsp;</a></span>CreatePositionsExpression()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">Expression::Pointer Kratos::VtuOutputHelperUtilities::CreatePositionsExpression </td>
+          <td class="memname">Expression::ConstPointer Kratos::VtuOutputHelperUtilities::CreatePositionsExpression </td>
           <td>(</td>
           <td class="paramtype">const ModelPart::NodesContainerType &amp;&#160;</td>
           <td class="paramname"><em>rNodes</em>, </td>
@@ -762,12 +762,12 @@ template&lt;class TDataType , class TContainerType , class TContainerDataIOTag &
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class TContainerType , class TMeshType &gt; </div>
+template&lt;class TContainerType , MeshType TMeshType&gt; </div>
       <table class="memname">
         <tr>
           <td class="memname">const Expression* Kratos::VtuOutputHelperUtilities::pGetExpression </td>
           <td>(</td>
-          <td class="paramtype">const ContainerExpression&lt; TContainerType, TMeshType &gt; &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="../../d7/d11/class_kratos_1_1_container_expression.html">ContainerExpression</a>&lt; TContainerType, TMeshType &gt; &amp;&#160;</td>
           <td class="paramname"><em>rContainerExpression</em></td><td>)</td>
           <td></td>
         </tr>
@@ -819,7 +819,7 @@ template&lt;class TContainerType , class TMeshType &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jun 13 2023 02:27:38 for KratosMultiphysics by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Wed Jun 14 2023 02:30:56 for KratosMultiphysics by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>
